@@ -8,29 +8,29 @@ Assembly and reference repository for the merged manuscript on the certified sta
 
 This repository assembles the common mathematical framework and manuscript-level comparison for the one-parameter, constant-volume spheroid family
 
-\[
+$$
 K_\lambda=\left\{(x,y,z)\in\mathbb R^3:
-\frac{x^2+y^2}{R_{\rm eq}(\lambda)^2}+\frac{z^2}{R_{\rm pol}(\lambda)^2}\le 1\right\},
-\]
+\frac{x^2+y^2}{R_{\rm eq}(\lambda)^2}+\frac{z^2}{R_{\rm pol}(\lambda)^2}\le 1\right\}.
+$$
 
 with
 
-\[
+$$
 R_{\rm eq}(\lambda)=R\lambda^{-1/3},\qquad
 R_{\rm pol}(\lambda)=R\lambda^{2/3}.
-\]
+$$
 
 Hence
 
-\[
+$$
 R_{\rm eq}(\lambda)^2R_{\rm pol}(\lambda)=R^3,
-\]
+$$
 
 so the enclosed volume is constant:
 
-\[
+$$
 \operatorname{Vol}(K_\lambda)=\frac{4\pi}{3}R^3.
-\]
+$$
 
 The parameter convention is
 
@@ -69,11 +69,12 @@ Short SHAs, floating branch names, and unpinned `main` references are not accept
 
 | Regime | Repository | Role |
 |---|---|---|
-| Prolate | `cotaxxxx/bg-prolate-spheroid` | Prolate research / diagnostic history |
+| Prolate research history | `cotaxxxx/bg-prolate-spheroid` | Prolate research branch; currently `NOT_BINDING / DIAGNOSTIC_ONLY`, with no migrated certified result set yet |
+| Prolate certified evidence | `cotaxxxx/basepoint-geometry` | Binding evidence repository for the established prolate certificates; formerly `cotaxxxx/geometric-dual-topology` (same repository ID, with prior Actions runs and receipts retained under the renamed repository) |
 | Oblate | `cotaxxxx/bg-oblate-spheroid` | Oblate research / diagnostic history |
 | Sphere | analytic reference case | symmetry and exact comparison point |
 
-Binding certificate repositories and exact immutable pins are recorded separately in `UPSTREAM_PINS.md` only after verification.
+Binding certificate repositories and exact immutable pins are recorded separately in `UPSTREAM_PINS.md` only after direct verification.
 
 ## Planned manuscript structure
 
