@@ -71,7 +71,7 @@ Short SHAs, floating branch names, and unpinned `main` references are not accept
 |---|---|---|
 | Prolate research history | `cotaxxxx/bg-prolate-spheroid` | Prolate research branch; currently `NOT_BINDING / DIAGNOSTIC_ONLY`, with no migrated certified result set yet |
 | Prolate certified evidence | `cotaxxxx/basepoint-geometry` | Binding evidence repository for the established prolate certificates; formerly `cotaxxxx/geometric-dual-topology` (same repository ID, with prior Actions runs and receipts retained under the renamed repository) |
-| Oblate | `cotaxxxx/bg-oblate-spheroid` | Oblate research / diagnostic history |
+| Oblate research + retained evidence | `cotaxxxx/bg-oblate-spheroid` | Active research repository for the oblate regime; formerly `cotaxxxx/Oblate-Spheroid-Research` (same repository, renamed). Binding evidence and other audit/receipt states are retained on named implementation branches; see `UPSTREAM_PINS.md`. This does not imply integration into `main`. |
 | Sphere | analytic reference case | symmetry and exact comparison point |
 
 Binding certificate repositories and exact immutable pins are recorded separately in `UPSTREAM_PINS.md` only after direct verification.
