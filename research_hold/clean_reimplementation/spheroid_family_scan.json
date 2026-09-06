@@ -1,0 +1,89 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_BINDING / NOT_CERTIFIED",
+  "note": "chat-side clean re-implementation; double precision",
+  "control_sphere": {
+    "Q": [
+      1.3333333344494056,
+      1.3333333344494391,
+      1.3333333344495761
+    ],
+    "max_dev_from_4_3": 1.116242875909279e-09,
+    "series_r": 0.1,
+    "dE": 0.006644430445245541,
+    "series_model": 0.006644444444444446,
+    "series_diff_O_r6": -1.3999198905136068e-08
+  },
+  "control_spheroid_line": {
+    "Q3_at_az_ref": 1.4084104253223964e-08,
+    "Q1_at_ac_ref": -4.194041410462053e-07,
+    "az_root": 0.4079588596396558,
+    "az_ref": 0.40795886135,
+    "az_diff": -1.7103441996013657e-09,
+    "ac_root": 4.724383426038582,
+    "ac_ref_bracket": [
+      4.72438,
+      4.72439
+    ],
+    "ac_in_certified_bracket": true
+  },
+  "control_S3": {
+    "max_dev": 4.629630012686903e-14
+  },
+  "triangle": {
+    "r_vertex": 1.2678045010492311,
+    "r_edge_midpoint": 0.7320618071744913,
+    "straight_inradius": 0.6339022505246156,
+    "edge_bulges_outward": true,
+    "Q3_at_vertex": 0.2653143015834969,
+    "Q1_at_edge_midpoint": 0.8539159072231314
+  },
+  "vertex_crossing": {
+    "grad_Q1_pq": [
+      1.7457075373224682,
+      -1.5417472964684986
+    ],
+    "grad_Q2_pq": [
+      -1.7457075373224682,
+      -1.5417472964684986
+    ],
+    "angle_deg": 97.10038743342835,
+    "angle_acute_deg": 82.89961256657165
+  },
+  "splitting_at_ac": {
+    "delta_step": 0.02,
+    "Q_at_0": [
+      -3.700743415417189e-12,
+      -3.700743415417189e-12,
+      0.2653143015834969
+    ],
+    "dQ_ddelta_central": [
+      1.2344604983875278,
+      -1.2344604983135128,
+      -6.938893903907228e-11
+    ],
+    "dQ_ddelta_forward_secant": [
+      1.2103657191046373,
+      -1.258555277670418,
+      -0.0010155813319950857
+    ],
+    "dQ_ddelta_backward_secant": [
+      1.258555277670418,
+      -1.2103657189566075,
+      0.0010155811932172076
+    ],
+    "remark": "a1<->a2 swap gives Q1(delta)=Q2(-delta), so the true derivatives satisfy dQ1/dd = -dQ2/dd exactly at delta=0; unequal magnitudes (e.g. +1.18 vs -1.29) arise from one-sided secants picking up the O(delta) curvature term."
+  },
+  "scan": {
+    "n": 61,
+    "extent": 1.8,
+    "nmu": 64,
+    "nphi": 64,
+    "index_values_present": [
+      0,
+      1,
+      2
+    ],
+    "seconds": 1.7775194644927979
+  },
+  "total_seconds": 2.2814533710479736
+}
