@@ -5,6 +5,12 @@
 - priority through November: C1b and D only.
 - rule: no further triaxial design work before December. If any computation is run before then, limit it to a float 50x50 diagnostic scan only.
 
+## December restart — one-line anchor
+
+回転楕円体族は 2 次元形状空間の対称部分族、その認証済み分岐点が校正アンカー、対称性を外すと中心 Hessian の退化条件が曲線群へ展開し停留円が離散点群へ分裂しうる。
+
+The exploratory observations recorded below are retained only as local diagnostic support for this direction. They are NOT_BINDING and are not to be used as theorem evidence or manuscript claims.
+
 ## 1. Program position
 
 Basepoint Geometry is the primary research program. The volume-preserving ellipsoid family is the first model family.
