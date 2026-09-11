@@ -124,3 +124,97 @@ prototype unchanged is `basepoint_geometry.adapters.prolate_entry`.
 
 `a_entry_pro_diagnostic.py` is left exactly as it is. The old value and the new
 one are both of interest, and the difference between them is the diagnostic.
+
+---
+
+# Follow-up: the endpoint is a proper integral
+
+- **Claim class:** `VALIDATED_ENCLOSURE` for the signs below; `DIAGNOSTIC_ONLY`
+  for every numerical value.
+- **Still nothing is promoted.** No entry is added to `UPSTREAM_PINS.md`, and
+  `a_entry_pro_diagnostic.py` remains unmodified.
+
+## The `s` ladder is avoidable
+
+Expand the `dE/dr` integrand at `r = 1` about `(theta, phi) = (pi/2, 0)`, with
+`theta = pi/2 - a` and `phi = b`:
+
+```text
+q -> lam^2 a^2 + b^2,   gamma -> 0,   N -> -q,   gamma_r -> -q^(-1/2),
+integrand -> -pi^2/4.
+```
+
+The integrand is **bounded** at the corner — non-analytic, which costs spectral
+convergence, but not singular. So `b_pro(a)` is the value of a proper integral
+at `r = 1`, not a limit that has to be approached.
+
+Evaluating it directly, on a `gauss 256x512` grid:
+
+| `a` | direct at `r = 1` | extrapolated `s`-ladder limit | difference |
+|---|---:|---:|---:|
+| 1.8 | +0.063216923214105 | +0.063216923214105 | `0.00e+00` |
+| 2.0 | +0.014619074281089 | +0.014619074281089 | `-6.94e-18` |
+| 2.4 | −0.065785510022537 | −0.065785510022537 | `0.00e+00` |
+
+Agreement at double-precision roundoff. The endpoint regularization `r = 1 - s^2`
+and the polynomial extrapolation in `s^2` are solving a problem that is not
+there. This does not make the prototype wrong — the two routes agree on the same
+grid to `2e-08` — it makes the machinery unnecessary, and it removes the
+extrapolation as something that has to be justified.
+
+## Why the rigorous path was failing, and what fixes it
+
+The upstream kernel writes `q = ell - 2 r u + r^2`, a difference of nearly equal
+quantities near the corner. Its *interval* enclosure therefore contains zero
+across a box far wider than the true zero set, and `gamma_r = (lam/w) N q^(-3/2)`
+encloses an infinite range. Measured at `a = 2.0`, `tol = 1e-3`:
+
+| form | result at `r = 1` | time |
+|---|---|---:|
+| `q = ell - 2 r u + r^2` (upstream `F_arb`) | `nan`, radius `+/- inf` | 11.7 s |
+| sum-of-squares `q` | `+0.0146 +/- 7.94e-03`, sign `+1` | 18.7 s |
+
+At `r = 1`, with `P = ell - u^2 = s^2 sin^2(phi) + lam^2 cos^2(theta) >= 0` and
+`V = 1 - u >= 0`,
+
+```text
+q = P + V^2,      N = -(u P + V^2 (1 + u)).
+```
+
+No cancellation. The earlier `nan` at `(r, a) = (0.99, 2.4)` recorded above has
+the same cause, and is not evidence that the rigorous path is unsuited to this
+problem.
+
+## Certified sign brackets
+
+| bracket | tolerance | enclosure at low | enclosure at high | width |
+|---|---|---|---|---:|
+| `(2.0, 2.4)` | `1e-3` | `+0.014748681 +/- 7.94e-03` → `+1` | `-0.065654807 +/- 8.32e-03` → `-1` | 0.4000 |
+| `(2.060, 2.071)` | `1e-4` | `+0.001187516 +/- 4.19e-04` → `+1` | `-0.001220752 +/- 4.19e-04` → `-1` | **0.0110** |
+
+Both enclosures in each row exclude zero, so the signs are validated and
+opposite. Given continuity of `b_pro` in `a` — assumed, not proved — an entry
+ratio lies strictly inside each bracket. Both brackets contain the
+`DIAGNOSTIC_ONLY` value `2.065382293627`, and the wider one also contains the
+prototype's `2.065421231115`.
+
+Nothing here establishes uniqueness, and nothing rules out sign changes outside
+the interval searched. These are enclosures produced by one implementation
+against one hand-derived corner bound, with no independent checker and no
+provenance record pinned to a run; they are not certificates in the sense
+`RESEARCH_STATUS.md` uses.
+
+## Consequence for `a_entry_pro_diagnostic.py`
+
+Three of its parts are now known to be unnecessary rather than merely
+uncertain: `r_from_s`, `extrapolate_b_pro`, and the `k0`/`k1`/`order` parameters
+that feed them. What the file still needs is what it never had — a functional of
+its own, evaluated on a quadrature whose rule and resolution are arguments.
+
+## Reproduction
+
+`cotaxxxx/basepoint-geometry-lab`, branch
+`claude/root-spread-convergence-systeu`,
+`experiments/exp13_interval_sign_bracket/` — `python run_bracket.py`, with
+`bracket_receipt.json` alongside it. The enclosures need `python-flint`; the
+first section runs without it.
