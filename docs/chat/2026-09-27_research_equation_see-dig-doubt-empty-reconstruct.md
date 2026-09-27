@@ -139,7 +139,7 @@ X_{n+1}\in\mathcal R(X_n;I_{n+1}),
 }
 \]
 
-を **decision-level stagnation** と呼ぶ。特に、
+を **decision-level no-change** と呼ぶ。1ステップで判断が変わらないことは通常あり得るため、それだけでは停滞とはしない。固定した観測窓 \(k\ge2\) に対して \(\pi(X_{n+j})=\pi(X_n)\ (j=1,\ldots,k)\) が続く状態を、その窓に関する **decision-level stagnation** と呼ぶ。\(k\) は観測コストと更新頻度に応じて事前に定める。特に、
 
 \[
 X_{n+1}\neq X_n,
@@ -155,7 +155,7 @@ X_{n+1}\neq X_n,
 
 Empty は Doubt の直後に自動的に削除する操作ではない。「根拠を失った」という判定自体が証拠を必要とする。これを欠けば、まだ生きている主張を過剰に削除する危険がある。
 
-現在の研究状態にある主張を \(C\)、その役割を \(\rho\)、証拠 guard を \(G(E,C,\rho)\) とする。概念的には、
+現在の研究状態にある主張を \(C\)、その役割を \(\sigma\)、証拠 guard を \(G(E,C,\sigma)\) とする。概念的には、
 
 \[
 \boxed{
@@ -175,14 +175,13 @@ C,
 
 > **Empty = 主張の記録された証拠強度が、その主張に割り当てられた役割を支えなくなったときに、除去または降格する操作。**
 
-これにより REDDS と証拠規律を接続する。作業上の証拠強度は区別して扱う：
+これにより REDDS と証拠規律を接続する。証拠区分は一列の序列に潰さず、方針書 §6 と同じく別軸として扱う：
 
-- **Established**
-- **Diagnostic hypothesis**
-- **Strong diagnostic evidence**
-- **Proof only with lemma**
+1. **事実の軸** — Established。
+2. **仕組みについての主張の軸** — Diagnostic hypothesis → Strong diagnostic evidence → Proof only with lemma。
+3. **設計判断の軸** — Design inference。
 
-これらは交換可能ではない。主張は Empty によって消去されず、より弱い証拠上の役割へ降格して生き残る場合もある。
+したがって Empty の guard は、強弱だけでなく、主張がどの軸のどの役割を担っているかを確認する。
 
 **Empty があるから Rebuild は単なる修繕ではなく再構築になる。**
 
@@ -208,45 +207,36 @@ C,
 
 以下は方法論上の研究史記録であり、**D-OB machine evidence、producer/checker evidence、proof artifact ではない**。
 
-高水準の問いはおおむね同じままだった：
+高水準の問いはおおむね同じだった： **Can \(H>0\) be closed mechanically?** 問い \(Q\) が同じでも、研究状態 \(X=(Q,E,H,D)\) は大きく動いた。
 
-> **Can \(H>0\) be closed mechanically?**
+計算上の出来事は二種類に分ける。実行そのものが3回失われた件は、セッションのパイプ、PC の再起動、プロセスの消滅によるもので、アルゴリズムの失敗ではない。一方、resumable 版 smoke が §7 の gate に不合格となった件は、アルゴリズム／certification design 側の結果である。
 
-問い \(Q\) だけを見れば停滞しているように見える。しかし研究状態 \(X=(Q,E,H,D)\) は大きく動いた。証拠状態は smoke の連続失敗、resumable execution、約15,000 node に達する failure map へと推移した。
+ledger には約15,400 node の判定記録があり、split と accepted も含む。unresolved は約7,200件（4,078 + 3,140）である。点の極限診断では、深さ12で unresolved だった点のうち **62/186** が accept に移った。また帯 B は、near column の作り方、すなわち除外球の中心を軸上に置く構成から構造的に生じていた。これらは機械側の構成を直す選択肢も開く。
 
-ここで重要なのは、同じ問いに対する licensed judgment 自体も「純機械的に閉じる設計」から「純機械だけでは閉じない方向を疑い、解析への委譲を含む設計を検討する」方向へ更新されたことである。これは \(\pi(X)\) の変化の具体例である。ただし、この方法論ノート自体はその数学的結論を証明しない。
+### Empty が正しく働いた例
 
-この期間には少なくとも次の Empty 操作があった：
+- 「細分の力技は死んだ」という主張は、強い結論として保持せず **Design inference** へ格下げした。
+- 「\(B_{\rm cut}=0\) なので (ii) は除外される」という一般化は、監査側がいったん受け入れた後、翌日に撤回した。
 
-1. \(U_{\rm check}\) の global cover という主張を撤回した。
-2. 「細分の力技は死んだ」という主張を、より強い結論として保持せず **design inference** へ格下げした。
-3. canonical push が「済み」であるという主張を、確認不足のため未確定へ差し戻した。
+### Empty が過剰に働いた例：canonical push
 
-いずれも「疑ったから消す」のではない。証拠が従来の役割を支えなくなったため、guard に従って撤回または降格した例である。
+canonical push を「済み」とする主張は、監査側が別の repository `basepoint-geometry` を照合したため「origin にない」と判定され、一度 UNRESOLVED に差し戻された。その後、正しい repository `bg-oblate-spheroid` で照合し直すと commit は push 済みで、ファイル SHA もすべて一致し、RESOLVED に復帰した。
 
-その後の Rebuild は「cap を深くして再試行する」という修繕だけではなく、**machine core + analytic delegation** を含む certification architecture の再構築へ向かう。
+これは、**guard の根拠・照合対象・provenance 自体も監査対象でなければならない**ことを示す、過剰な Empty の実例である。
 
-\[
-\boxed{
-\mathrm{Doubt}
-\rightarrow
-\mathrm{Empty\ unsupported\ roles}
-\rightarrow
-\mathrm{Rebuild\ the\ certification\ architecture}
-}
-\]
+### \(U_{\rm check}\) に関する記録境界
 
-したがって、この episode は refined REDDS equation
+以前の版では global cover を「撤回した」例として記載したが、現在確認できた一次記録からはその経過を裏付けられないため、Empty の実例から外す。確認できる範囲では、C-side は「各 component は条件付きで閉じているが global cover は未確認」とされ、\(U_{\rm check}\) は receipt-based verification が必要な領域として扱われていた。撤回の時点と対象主張が一次記録で確定するまで、それ以上の研究史を補わない。
+
+### Rebuild の現在位置
+
+Rebuild の方向を一つに固定しない。現在は、**解析への委譲や、near column の作り方の見直しを含む再設計を検討する方向**にある。これは同じ問いに対する licensed judgment、すなわち \(\pi(X)\) が動いた具体例でもある。ただし、この方法論ノート自体は数学的結論を証明しない。
 
 \[
 \boxed{
-X_{n+1}\in\mathrm{REDDS}(X_n;I_{n+1}),
-\qquad
-\text{progress is judged through changes in }\pi(X)
+X_{n+1}\in\mathrm{REDDS}(X_n;I_{n+1})
 }
 \]
-
-の operational example である。
 
 🐟 REDDS の目的は \(X\) 内部の変化量を最大化することではない。**新しい問いと、証拠に裏付けられた新しい判断が生まれる条件を維持すること**である。
 
