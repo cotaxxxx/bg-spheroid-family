@@ -121,3 +121,146 @@ AI共同研究では、全ての役割を一つのAIに求める必要はない�
 \circlearrowleft
 }
 ]
+
+
+## SDDER Research Cycle / 🐟 REDDS Operator
+
+The time-order research cycle is
+
+[
+oxed{
+mathrm{S}ee
+ightarrow
+mathrm{D}ig
+ightarrow
+mathrm{D}oubt
+ightarrow
+mathrm{E}mpty
+ightarrow
+mathrm{R}ebuild
+}
+]
+
+and is named the **SDDER Research Cycle**.
+
+As a composition of operators, the order is written in reverse:
+
+[
+oxed{
+mathcal R
+=
+Rcirc Ecirc D_{m doubt}circ D_{m dig}circ S
+}
+]
+
+Hence the operator name is **REDDS**:
+
+[
+oxed{
+Q_{n+1}=mathrm{REDDS}(Q_n)
+}
+]
+
+The name has an accidental but useful second meaning: *redds* are fish spawning beds. In this methodology, REDDS is therefore also a metaphorical **spawning ground for new questions**. The fish mark 🐟 may be used informally as the symbol of the research cycle.
+
+## Empty as an independent operation
+
+**Empty is not merely a pause between Doubt and Rebuild.**
+
+Its methodological role is:
+
+[
+oxed{
+mathrm{Empty}
+=
+	ext{remove claims or structures that have lost sufficient support before rebuilding}
+}
+]
+
+When a claim is downgraded, withdrawn, or found to rest on insufficient evidence, it should not remain as a hidden foundation for the next reconstruction. Empty explicitly clears that unsupported structure.
+
+Thus,
+
+[
+mathrm{Doubt}ightarrowmathrm{Empty}ightarrowmathrm{Rebuild}
+]
+
+differs from immediately patching a doubtful claim. **Empty makes Rebuild reconstruction rather than repair.**
+
+A concrete pattern is:
+
+[
+	ext{claim}
+ightarrow
+	ext{doubt / audit}
+ightarrow
+	ext{downgrade or withdrawal}
+ightarrow
+	ext{reclassify evidence}
+ightarrow
+	ext{rebuild the claim}
+]
+
+Evidence labels such as **Established / Diagnostic hypothesis / Strong diagnostic evidence / Proof** belong to the rebuilt state and should not be conflated.
+
+## REDDS as a research-state operator
+
+Using only the question (Q_n) is sometimes too coarse. The wording of a question can remain unchanged even when its evidential state has advanced.
+
+Define a research state
+
+[
+X_n=(Q_n,E_n,H_n,D_n),
+]
+
+where (Q) is the question, (E) the evidence state, (H) the current hypotheses, and (D) the operative definitions.
+
+Then the stronger form of the research equation is
+
+[
+oxed{
+X_{n+1}=mathrm{REDDS}(X_n).
+}
+]
+
+A true stagnation point is therefore better represented by
+
+[
+oxed{
+X^*=mathrm{REDDS}(X^*)
+}
+]
+
+rather than merely (Q_{n+1}=Q_n). Returning to the same question is not stagnation if evidence, hypotheses, or definitions have changed.
+
+The healthy cycle is one in which REDDS continues to produce a materially updated research state and thereby gives rise to the next question.
+
+## Human–AI functional roles
+
+A compact role decomposition used with this cycle is
+
+[
+oxed{
+	ext{Human: conception}
+quad	imesquad
+	ext{ChatGPT: excavation}
+quad	imesquad
+	ext{Claude / Code: audit}
+}
+]
+
+or, operationally,
+
+[
+	ext{Conceive}
+ightarrow
+	ext{Excavate}
+ightarrow
+	ext{Audit}
+ightarrow
+	ext{Empty if necessary}
+ightarrow
+	ext{Rebuild}.
+]
+
+These are functional roles in the workflow, not claims that any one system is intrinsically reliable. Excavation and audit are intentionally separable: a system capable of digging deeply can also dig deeply in a wrong direction, so independent criticism and checking remain part of the cycle.
