@@ -264,3 +264,136 @@ or, operationally,
 ]
 
 These are functional roles in the workflow, not claims that any one system is intrinsically reliable. Excavation and audit are intentionally separable: a system capable of digging deeply can also dig deeply in a wrong direction, so independent criticism and checking remain part of the cycle.
+
+
+## Refinement: external input, decision projection, and guarded Empty
+
+The first research-state form,
+
+[
+X_{n+1}=mathrm{REDDS}(X_n),
+]
+
+is useful but too deterministic. Research receives responses from outside the current state: numerical experiments, audits, counterexamples, proofs, failures, and other observations. Let (I_{n+1}) denote this new external input. A more faithful formulation is
+
+[
+oxed{
+X_{n+1}inmathcal R(X_n;I_{n+1}),
+qquad mathcal R=mathrm{REDDS}.
+}
+]
+
+The set-valued notation allows more than one legitimate reconstruction from the same state and evidence. Whether the process returns to an equivalent state is therefore not a property of REDDS alone; it also depends on the response supplied by the mathematical or computational world.
+
+### Decision-level stagnation
+
+Literal equality (X_{n+1}=X_n) is too strong as a definition of stagnation. A new sample can change (E_n) without changing any research-relevant judgment.
+
+Introduce a decision projection
+
+[
+pi:Xlongrightarrowmathcal J,
+]
+
+where (mathcal J) records the judgments, claims, or decisions currently licensed by the research state.
+
+Then
+
+[
+oxed{
+pi(X_{n+1})=pi(X_n)
+}
+]
+
+expresses **decision-level stagnation**. In particular,
+
+[
+X_{n+1}
+eq X_n,
+qquad
+pi(X_{n+1})=pi(X_n)
+]
+
+means that information has accumulated but no decision-relevant state has changed.
+
+Conversely, a cycle can revisit the same verbal question (Q) without stagnating whenever evidence, hypotheses, definitions, or licensed judgments have materially changed.
+
+### Guarded Empty
+
+Empty must itself be evidence-disciplined. Doubt alone is not permission to erase a claim. Otherwise the method risks deleting claims that remain legitimately supported.
+
+Let (C) be a claim in the current research state and let (G(E,C,ho)) be an evidence guard testing whether the current evidence (E) supports claim (C) in its assigned role (ho). Then schematically,
+
+[
+oxed{
+mathrm{Empty}_G(C)=
+egin{cases}
+C, & G 	ext{ supports the present role},\
+operatorname{downgrade}(C), & G 	ext{ supports only a weaker role},\
+arnothing, & G 	ext{ no longer supports a role in the rebuilt structure}.
+end{cases}
+}
+]
+
+Thus Empty means:
+
+> **remove or downgrade a claim when its recorded evidence strength no longer supports the role assigned to it.**
+
+This connects REDDS directly to the evidence discipline used in the project. The working evidence-strength distinctions include:
+
+- **Established**
+- **Diagnostic hypothesis**
+- **Strong diagnostic evidence**
+- **Proof only with lemma**
+
+These labels are not interchangeable. A claim may survive Empty while being downgraded to a weaker evidential role.
+
+## Worked example: D-OB, September 2026
+
+The D-OB work during the week of 2026-09-27 provides an operational example of the cycle. This section is a methodology record only; it is **not D-OB machine evidence, producer/checker evidence, or a proof artifact**.
+
+The high-level question remained approximately unchanged:
+
+> **Can (H>0) be closed mechanically?**
+
+At the level of (Q), the project could therefore appear stationary. At the level of the research state (X=(Q,E,H,D)), however, it changed substantially.
+
+The evidence state moved through repeated smoke failures, a resumable execution design, and a failure map reaching roughly 15,000 nodes. The question text remained stable while the evidential and diagnostic state changed. This is precisely why (Q) alone is an insufficient state variable.
+
+Several Empty operations also occurred in the working process:
+
+1. a claimed global cover for (U_{m check}) was withdrawn;
+2. the statement that brute-force subdivision was dead was downgraded to a **design inference** rather than retained as a stronger conclusion;
+3. a claim that the canonical push was complete was returned to an unresolved/unconfirmed state when confirmation was insufficient.
+
+These are examples of guarded Empty: the record is not erased merely because it is doubted; rather, its status is withdrawn or downgraded when the evidence no longer licenses the role it had been given.
+
+The subsequent reconstruction is correspondingly not just “increase the cap and try again.” The design direction is being reformulated around a **machine core plus analytic delegation**. In REDDS terminology:
+
+[
+	ext{Doubt}
+ightarrow
+	ext{Empty unsupported roles}
+ightarrow
+	ext{Rebuild the certification architecture}.
+]
+
+This episode also illustrates the role of the decision projection. Large changes in raw computational evidence need not themselves constitute progress if they leave (pi(X)) unchanged; conversely, a single audit result can materially change (pi(X)) by forcing a withdrawal, downgrade, or new admissible claim.
+
+The worked example therefore motivates the refined equation:
+
+[
+oxed{
+X_{n+1}inmathrm{REDDS}(X_n;I_{n+1}),
+qquad
+	ext{progress judged through changes in }pi(X).
+}
+]
+
+The purpose of 🐟 REDDS is not to maximize motion inside (X), but to create disciplined conditions under which genuinely new questions and justified research decisions can emerge.
+
+## Placement
+
+This file is the canonical methodology/history note for the SDDER/REDDS formulation.
+
+If the D-OB episode is later used in a formal project paper or engineering/process record, only the relevant project-specific portion should be carried over, with its claims re-grounded in the appropriate D-OB artifacts. This methodology note must not be promoted into machine evidence merely because it records the history accurately.
