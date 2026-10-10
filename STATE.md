@@ -1,6 +1,6 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.11（2026-10-10、chat 起草。v1.2→v1.11 の主な変更：出願期間と指定提出物の確定、O2 P0–P1 採用、O2 v1.1-r1（O2-A3）と P2 事前宣言 v1-r1 の FREEZE、R1 の FAIL-CLOSED、R2 枠組みの FREEZE、凍結文書の pin 確定（fbadfc4d）、扁長の窓 [2, 5]。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
+版：v1.12（2026-10-10、chat 起草。v1.11→v1.12 の変更：No.13 U_check 照合（未被覆を確定）、pin 昇格第1号（南側 39′ を V1 登録、扁長局所 68bc9828 は FAIL-CLOSED）。監査記録＝`audits/CHAT_AUDIT_NO13_UCHECK_AND_PIN_PROMOTION_2026-10-10.md`。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
 更新：chat が起草 → ユーザーが commit。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
@@ -29,8 +29,8 @@
 ### 扁平（D-OB）
 | # | 部品 | 状態 | 根拠（1行） | 次の関門 | 担当 |
 |---|---|---|---|---|---|
-| C | 軸上 C 系列（C0, C1a–d, 帯） | 部品は条件付き CLOSED。global cover 未検証 | bg-oblate-spheroid の receipt 群 | U_check 照合 → 被覆図 → 統合 | ChatGPT/Code |
-| D1 | 極 corner 境界面 FT_q | DISCHARGED（P1 監査条件付き） | 南側 39′ canonical `bbcfe662`、C45/C43、22″ v1.2 `d445b302` | pin 昇格 | chat |
+| C | 軸上 C 系列（C0, C1a–d, 帯） | 部品は条件付き CLOSED。**global cover に空白2か所（10/10 照合）**：① U_check＝{1/2<t≤1, 2/5≤λ<9/20} 全域（t=1 を含む。C1b の amendment `8e04e2ef` が C1b を [9/20,5/8] に移した際に、t>1/2 の被覆が抜けた。この中に λ∈(λ_x,9/20) の根の枝がある）、② 31/32<t<1 の非クランプ C1b slab 上（少なくとも λ∈[9/20,931/1600)） | bg-oblate-spheroid `design/d-ob-p2` の receipt 群、監査記録 | 空白の事前宣言（ChatGPT 起草、Judge 10/10）→ 監査 → FREEZE → 実行 → 被覆図 → 統合 | ChatGPT/Code |
+| D1 | 極 corner 境界面 FT_q | DISCHARGED（P1 監査条件付き）。南側 39′ は readback 済みで CLOSED（P1 条件付き） | 南側 39′ は `UPSTREAM_PINS.md` V1（`bbcfe662`、照合済み・再実行一致）、C45/C43、22″ v1.2 `d445b302` | 残りの構成部品の pin 昇格 | chat |
 | D2 | 極 corner 内部 L1 | O1 CLOSED（P1 条件付き）。O2：v1・v1.1-r1（O2-A3）FROZEN、P0–P1 ADOPTED。R1＝FAIL-CLOSED（項ごとの絶対値上界が成功条件の約 3×10⁶ 倍）。**R2 枠組み FROZEN**（Judge 2026-10-10、v0＋v0-r1 差分）：M_+ を (λ,τ,r) の閉箱（r=1・τ=1 を含む）ごとに符号付き積分下界・有理包囲・Bernstein で直接認証、全箱共通の h_*>0（P 単位）。補題 R2-L1：D²≥(a−|ξ|)²+(λμ−z)²。t 積分の許容方式 R2-T1（τ≤τ₁、正確な割線）／R2-T2（τ≥τ₁、ξ=0 展開、g⁽⁴⁾ が必要）。10/31 CLOSED は保証なし | pin：basepoint-geometry `chatgpt/d-p2-o1-predeclare-v1-20261009` commit `fbadfc4d`（R2 v0 `764c1860…e8be`、v0-r1 差分 `957b7d00…6aa`、v1.1-r1 `7dcbd6d6…12c5`、P2 v1-r1 `3f0fcdb3…6b5d`、chat が GitHub 上で照合済み） | P2-b（R2 の実行事前宣言：箱・セル数・近似次数・誤差予算・τ₁・g の包み・工数見積り）→ 監査 → FREEZE → 実行 → 独立検証 → O3 → O4–O6 | ChatGPT |
 | D3 | L3–L1 接続 | UNDETERMINED | 仕様 v1 `ecd31446` | D2 に従う | — |
 | D4 | 中心帯（λ≈0.6–0.66） | 未着手 | — | 方式決定 | Astra |
@@ -41,7 +41,7 @@
 | # | 部品 | 状態 | 根拠（1行） | 次の関門 | 担当 |
 |---|---|---|---|---|---|
 | P0 | 扁長側の主張範囲 | **裁定済み**：窓 [2, 5]（2026-10-10） | basepoint-geometry main `abf704b8`：CERTIFICATES/prolate（Item 0、local_bifurcation） | — | — |
-| P1 | a_c の局所分岐 | 認証済み（未昇格） | basepoint-geometry `68bc9828` | pin 昇格 | chat |
+| P1 | a_c の局所分岐 | 認証済み（未昇格）。`68bc9828` は後続 commit に置き換えられ、昇格は FAIL-CLOSED。後継 `abf704b8`（12 objects、manifest 一致、再実行一致） | basepoint-geometry main `abf704b8`（SHA256SUMS `3b6fc57d…c11d`） | 第二系統の独立検証を事前宣言 → 監査 → 実行 → PASS 後に登録（Judge 10/10） | ChatGPT/Code |
 | P2 | 停留円の接続枝 λ_∂^pro→a_c（item2_circle を含む） | pilot 単一スライスのみ | basepoint-geometry Actions receipt | C1b 契約の移植設計 | Code/ChatGPT |
 | P3 | 有界域の子午面排除 | 未着手 | D-OB の道具を雛形に | 設計 | ChatGPT |
 | P4 | 窓の端での境界処理（窓外へ枝が出ないこと） | 未着手 | — | 設計 | ChatGPT |
@@ -50,13 +50,13 @@
 | 項目 | 状態 | 根拠 |
 |---|---|---|
 | 骨格 | v0.2 | `MANUSCRIPT_SKELETON.md` |
-| pin 登録簿 | 昇格済み 0 件 | `UPSTREAM_PINS.md` |
+| pin 登録簿 | 昇格済み 1 件（V1 南側 39′） | `UPSTREAM_PINS.md` |
 | 球の定理（§6） | 出典未特定 | 要調査 |
 
 ## 5. 次の関門（日付順）
 | 期限 | 関門 |
 |---|---|
-| 10/17 | D5 契約再裁定・本走開始／D4 方式決定／U_check 照合／pin 昇格の第1号（南側 39′、扁長局所）／原稿 §1–3・§7 局所部分の起草 |
+| 10/17 | D5 契約再裁定（本走開始は契約再裁定と研究用 PC の準備の完了後）／D4 方式決定（Astra）／C 空白①②の事前宣言の監査／扁長局所の独立検証の事前宣言／原稿 §1–3 の起草（確定結果と未認証の主張を分ける） |
 | 10/31 | D2 O2 CLOSED／D4 証明書／P3 設計凍結 |
 | 11/07 | チェックポイント1：両側の残量を数値化し、投稿月を確定 |
 | 11/30 | 扁平側の大域 CLOSED |

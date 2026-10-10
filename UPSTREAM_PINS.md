@@ -26,13 +26,29 @@ For retention auditing, a pinned commit need not be an ancestor of the upstream 
 
 ## Verified pins
 
-No pins have yet been promoted in this repository.
+### V1 — oblate, south 39′ (promoted 2026-10-10: chat audit PASS, Judge approved 2026-10-10)
+
+| Field | Value |
+|---|---|
+| Regime | oblate (D-OB P2 / D-AN-1 FT_q, boundary face, south side) |
+| Repository | `cotaxxxx/bg-oblate-spheroid` |
+| Git commit | `bbcfe6628a074d1f7b48e1f818542ee205e88f50` (retaining ref at audit: `design/d-ob-p2`, tip) |
+| Evidence manifest | `analysis/ftq_cert/chat_audit_39prime/CHAT_AUDIT_SOUTH_39PRIME_2026-10-10.md` (§1 and §4 list the SHA-256 of the other 17 files of the commit) |
+| Manifest SHA-256 | `6effc828c1b764b9dd8ddee13b4d1dbb06f6766cc799d78f8885a0a808a8db2b` (blob `7447ea4c`) |
+| Upstream status | `CHAT AUDIT PASS (mathematics + machine evidence)`; canonical readback done 2026-10-10, so **CLOSED within scope**, conditional on D-OB P1 Lemma 6.1 and the P1 trap −1 ≤ R_γ ≤ 0 (No.15a, external audit pending) |
+| Certified statement | On λ ∈ [2/5,93/200], τ ∈ [7/8,1], boundary face, P units: ∫_{−1}^{1/2} G dμ ≥ S″_lb = 635530452759/817216000000, and G > 0 on (1/2, μ_C). Not claimed: north/near residual, c_FT, m0, D-P2 |
+| Verification note | All 18 files re-hashed and equal to the pins. The proof file equals the basepoint-geometry source `05668a47` (SHA-256 `f320acb9…3d3c`). Seven pinned scripts were replayed unchanged; every stdout is byte-identical to the committed output, and the Astra JSON regenerates identically. Two lineages: Astra produced the coefficients and chat `chk144.py` checked them independently. Dependencies (FT_q reduction, P decomposition, root structure, B1 ordering, contracts 20″–23″ and v1.1) are present with matching SHA-256. Audit record: `audits/CHAT_AUDIT_NO13_UCHECK_AND_PIN_PROMOTION_2026-10-10.md` |
 
 ## Candidate / pending references
 
 Upstream prolate and oblate research histories exist, but their binding evidence locations and current immutable states must be verified before promotion here.
 
 Do not infer certification from this section.
+
+### Prolate local bifurcation — promotion FAIL-CLOSED for `68bc9828` (2026-10-10)
+
+`cotaxxxx/basepoint-geometry` `68bc9828c3476e9db2d73d338e731c48c0931f54` is superseded on main by `d5ac2f4` (h-chain symbolic audit added) and by `abf704b8701f3da8eb41d8a99408570a413b2214` (Qz gate tied to the R3 manuscript bound 0.0885587746621582; Qz symbolic audit replaced). It is not promoted.
+Candidate: `abf704b8701f3da8eb41d8a99408570a413b2214`, manifest `CERTIFICATES/prolate/local_bifurcation/SHA256SUMS.txt`, SHA-256 `3b6fc57de63c6154165bb22ea96905cc669e8be89680175aadb0b36a9f05c11d`. 12 of 12 objects match and the replay is identical. Open: independent second-lineage verification. Judge 2026-10-10: re-audit on `abf704b8`; an independent second lineage is required before registration.
 
 ## Oblate named-ref retention audit — not promoted
 
