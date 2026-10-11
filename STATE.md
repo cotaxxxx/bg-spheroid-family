@@ -1,6 +1,6 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.24（2026-10-11、chat 起草。v1.23→v1.24 の変更：① 実装 v0.2（eb5f6e86）を chat が監査し F4・F5・B2 は PASS。Judge 裁定：A1（根拠文書 pin）と A7（checker の通し番号）を v0.3 で修正、B8–B12 は受理。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
+版：v1.25（2026-10-11、chat 起草。v1.24→v1.25 の変更：① 実装 v0.3（2ec6e70f、ChatGPT 実装・main へ直接 push）を chat が監査し A1・A7 PASS、新しい指摘なし。Judge 裁定：実行順は C 空白①→D5、C 空白① は FREEZE＋実行許可。作業手順の変更：ChatGPT が実装・push、手順上の指摘は次版にまとめ、数学的指摘のみ止めて Judge 裁定。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
 更新：chat が起草 → ユーザーが commit。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
@@ -23,13 +23,14 @@
 - 論文の主役は停留構造。分岐はその λ 変化、認証は方法。
 - D-OB の内部（L1）は Form II（一様下界）を目標とする。ROUTE は δ_L1 確定まで UNDETERMINED。
 - 統治：事前宣言 → 監査 → FREEZE → 実行許可。診断は証拠にしない。版上げのみ。fail-closed。
-- 監査役は chat（一系統）。ChatGPT は Dig（調査・起草）、Code・Astra は Judge が必要時に使う（`audits/CHAT_RECORD_AUDIT_ROLES_2026-10-11.md`）。正の台帳はこの STATE.md と `UPSTREAM_PINS.md`。
+- 監査役は chat（一系統）。ChatGPT は Dig（調査・起草・実装、研究用 PC と GitHub に直接アクセスし main へ push）、Code・Astra は Judge が必要時に使う（`audits/CHAT_RECORD_AUDIT_ROLES_2026-10-11.md`）。
+- 効率規則（Judge 10/11、`audits/CHAT_DIFF_AUDIT_C_GAP1_IMPL_V0_3_2026-10-11.md` 末尾）：数学的指摘は慎重に止めて Judge 裁定（数学的結果を誤記する台帳欄を含む）。手順上の指摘（pin・ラベル・文言・resume 配管）は次版にまとめ、追加の監査往復やボタンを作らない。ファイルは ChatGPT→GitHub→chat で流し、Judge の中継を求めない。正の台帳はこの STATE.md と `UPSTREAM_PINS.md`。
 
 ## 4. 部品表
 ### 扁平（D-OB）
 | # | 部品 | 状態 | 根拠（1行） | 次の関門 | 担当 |
 |---|---|---|---|---|---|
-| C | 軸上 C 系列（C0, C1a–d, 帯） | 部品は条件付き CLOSED。global cover の空白2か所（10/10 照合）：① U_check＝{1/2<t≤1, 2/5≤λ<9/20}、② 31/32<t<1 の非クランプ C1b slab 上 | 文面は監査済み（`drafts/2026-10-10/`）：① 事前宣言 v6、② v3、実装設計 v1（v2 へ文面修正のみ）、端点追補 v2、数値契約 v1。方式：①は λ を 1/3200 刻み 160 slab（L・X・R の3群）、R は 9/20 から左へ C1b の予測規則（P2＝ROOT_TARGET 1/128）、端点は t_e からの累積平均値形（g は t_e の1点、[t_e,1] は幅 ≤1/512 の Gt 箱、粗い定数 C_Λ は使わない）、B_ob は帰結（receipt は照合のみ）。統合補題 G0/E1 v3 PASS（C2 恒等式の記号検算・機械 Gt のソース一致を含む） | FREEZE 前：① 契約 v7 は FREEZE 対象として確定（`drafts/2026-10-11/C_GAP1_CONTRACT_DRAFT_V7.md`、a4914818、文面 PASS、補足2点は記録で拘束、監査文面との同一性確認済み `audits/CHAT_RECORD_V7_EXACT_FILE_IDENTITY_2026-10-11.md`）。D6＝**充足**（Judge 10/11）：5afa815f・7cb9b809 は CROSS_LINEAGE_AI_AUDIT_PASS（補題監査 ChatGPT・Code、closure record `drafts/2026-10-11/D6_GAP_CLOSURE_RECORD_V0.md` d7a8d28c を chat・Code が監査、拘束読み B1・B2・K1・K2 は `audits/CHAT_AUDIT_D6_GAP_CLOSURE_RECORD_V0_2026-10-11.md` §3・§5）。論文で CLOSED と書く条件：補題 v1.1（closure 11 項目と B1・B2・K1・K2 を反映）とその監査、Astra（指示書 v2 `drafts/2026-10-11/ASTRA_D6_LEMMA_AND_CLOSURE_AUDIT_INSTRUCTION_V2_2026-10-11.md`）、人間の外部監査。残る FREEZE 前の関門：① の実装 v0.3（v0.2 は F4・F5 PASS、A1・A7 を修正、`audits/CHAT_DIFF_AUDIT_C_GAP1_IMPL_V0_2_2026-10-11.md`、指示 `drafts/2026-10-11/CODE_INSTRUCTION_C_GAP1_IMPL_V0_3_2026-10-11.md`。Code、指示書 v2 `drafts/2026-10-11/C_GAP1_CODE_IMPLEMENTATION_INSTRUCTION_DRAFT_V2_2026-10-11.md` ＋発出メモ `drafts/2026-10-11/ISSUE_NOTE_C_GAP1_IMPLEMENTATION_INSTRUCTION_V2_2026-10-11.md`）と差分監査（7本＋import 17本＝当初15本＋c0a_four_group_v2 の2本、`audits/CHAT_RECORD_GAP1_IMPORT_CLOSURE_17_2026-10-11.md`。ChatGPT と chat が独立に監査、両方 PASS で FREEZE 審査へ）、実行順の Judge 裁定（D5 と同時占有禁止）。② の封印ディレクトリは確認済み | ChatGPT/Code |
+| C | 軸上 C 系列（C0, C1a–d, 帯） | 部品は条件付き CLOSED。global cover の空白2か所（10/10 照合）：① U_check＝{1/2<t≤1, 2/5≤λ<9/20}、② 31/32<t<1 の非クランプ C1b slab 上 | 文面は監査済み（`drafts/2026-10-10/`）：① 事前宣言 v6、② v3、実装設計 v1（v2 へ文面修正のみ）、端点追補 v2、数値契約 v1。方式：①は λ を 1/3200 刻み 160 slab（L・X・R の3群）、R は 9/20 から左へ C1b の予測規則（P2＝ROOT_TARGET 1/128）、端点は t_e からの累積平均値形（g は t_e の1点、[t_e,1] は幅 ≤1/512 の Gt 箱、粗い定数 C_Λ は使わない）、B_ob は帰結（receipt は照合のみ）。統合補題 G0/E1 v3 PASS（C2 恒等式の記号検算・機械 Gt のソース一致を含む） | FREEZE 前：① 契約 v7 は FREEZE 対象として確定（`drafts/2026-10-11/C_GAP1_CONTRACT_DRAFT_V7.md`、a4914818、文面 PASS、補足2点は記録で拘束、監査文面との同一性確認済み `audits/CHAT_RECORD_V7_EXACT_FILE_IDENTITY_2026-10-11.md`）。D6＝**充足**（Judge 10/11）：5afa815f・7cb9b809 は CROSS_LINEAGE_AI_AUDIT_PASS（補題監査 ChatGPT・Code、closure record `drafts/2026-10-11/D6_GAP_CLOSURE_RECORD_V0.md` d7a8d28c を chat・Code が監査、拘束読み B1・B2・K1・K2 は `audits/CHAT_AUDIT_D6_GAP_CLOSURE_RECORD_V0_2026-10-11.md` §3・§5）。論文で CLOSED と書く条件：補題 v1.1（closure 11 項目と B1・B2・K1・K2 を反映）とその監査、Astra（指示書 v2 `drafts/2026-10-11/ASTRA_D6_LEMMA_AND_CLOSURE_AUDIT_INSTRUCTION_V2_2026-10-11.md`）、人間の外部監査。残る FREEZE 前の関門：① の実装は **v0.3 PASS（static）**（`submissions/2026-10-11/C_GAP1_IMPL_V0_3_SUBMISSION_2026-10-11.tar.gz` 2ec6e70f、監査 `audits/CHAT_DIFF_AUDIT_C_GAP1_IMPL_V0_3_2026-10-11.md`。import 17本 `audits/CHAT_RECORD_GAP1_IMPORT_CLOSURE_17_2026-10-11.md`、F1–F5・A1・A7 解消、B1–B12 受理）。**FREEZE＋実行許可済み**（Judge 10/11、`drafts/2026-10-11/C_GAP1_FREEZE_AND_RUN_INSTRUCTION_V1_2026-10-11.md`：実行ブランチ bg-oblate-spheroid `run/c-gap1-v0-3`、25 blob 固定、import-only→preflight（stub 11件）→producer 160 slab→checker→push、STOP は終了・報告）。実行順は C 空白①→D5（同時占有禁止）。次：ChatGPT 実行 → chat が結果を監査 → Judge が CLOSED 裁定。② の封印ディレクトリは確認済み | ChatGPT |
 | D1 | 極 corner 境界面 FT_q | DISCHARGED（P1 監査条件付き）。南側 39′ は readback 済みで CLOSED（P1 条件付き） | 南側 39′ は `UPSTREAM_PINS.md` V1（`bbcfe662`、照合済み・再実行一致）、C45/C43、22″ v1.2 `d445b302` | 残りの構成部品の pin 昇格 | chat |
 | D2 | 極 corner 内部 L1 | O1 CLOSED（P1 条件付き）。O2：v1・v1.1-r1（O2-A3）FROZEN、P0–P1 ADOPTED。R1＝FAIL-CLOSED（項ごとの絶対値上界が成功条件の約 3×10⁶ 倍）。**R2 枠組み FROZEN**（Judge 2026-10-10、v0＋v0-r1 差分）：M_+ を (λ,τ,r) の閉箱（r=1・τ=1 を含む）ごとに符号付き積分下界・有理包囲・Bernstein で直接認証、全箱共通の h_*>0（P 単位）。補題 R2-L1：D²≥(a−|ξ|)²+(λμ−z)²。t 積分の許容方式 R2-T1（τ≤τ₁、正確な割線）／R2-T2（τ≥τ₁、ξ=0 展開、g⁽⁴⁾ が必要）。10/31 CLOSED は保証なし | pin：basepoint-geometry `chatgpt/d-p2-o1-predeclare-v1-20261009` commit `fbadfc4d`（R2 v0 `764c1860…e8be`、v0-r1 差分 `957b7d00…6aa`、v1.1-r1 `7dcbd6d6…12c5`、P2 v1-r1 `3f0fcdb3…6b5d`、chat が GitHub 上で照合済み） | P2-b（R2 の実行事前宣言：箱・セル数・近似次数・誤差予算・τ₁・g の包み・工数見積り）→ 監査 → FREEZE → 実行 → 独立検証 → O3 → O4–O6 | ChatGPT |
 | D3 | L3–L1 接続 | UNDETERMINED | 仕様 v1 `ecd31446` | D2 に従う | — |
@@ -56,7 +57,7 @@
 ## 5. 次の関門（日付順）
 | 期限 | 関門 |
 |---|---|
-| 10/17 | D5 契約再裁定（本走開始は契約再裁定と研究用 PC の準備の完了後）／D4 方式決定（Astra）／G0/E1 v3 整理と C 空白①の実装設計／扁長第二系統の入力一式と積分契約／計算資源の順序（D5 と C 空白・扁長の同時占有禁止、Judge が決定）／原稿 §1–3 の起草（確定結果と未認証の主張を分ける） |
+| 10/17 | D5 契約再裁定（本走開始は契約再裁定と研究用 PC の準備の完了後）／D4 方式決定（Astra）／G0/E1 v3 整理／扁長第二系統の入力一式と積分契約／C 空白① 本走（ChatGPT）と結果監査／原稿 §1–3 の起草（確定結果と未認証の主張を分ける） |
 | 10/31 | D2 O2 CLOSED／D4 証明書／P3 設計凍結 |
 | 11/07 | チェックポイント1：両側の残量を数値化し、投稿月を確定 |
 | 11/30 | 扁平側の大域 CLOSED |
