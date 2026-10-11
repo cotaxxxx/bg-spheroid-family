@@ -1,0 +1,4 @@
+NOT_EVIDENCE — superseded interrupted run, Judge ruling 2026-10-11.
+All existing files in this directory except run2/ and this marker are from the stopped first attempt; do not reuse them as mathematical evidence.
+Producer ledger contains 3 lines, SHA-256 37657bbda8d6f16053d742188f695394a2fc54320b0bff1b3f90ea202eb0224f.
+Checker preflight stdout was saved as-is at stop; it must not be represented as a completed successful process.

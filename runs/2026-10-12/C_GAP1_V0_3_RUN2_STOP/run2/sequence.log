@@ -1,0 +1,8 @@
+START producer_preflight 2026-10-11T21:01:29+09:00
+EXIT_ZERO producer_preflight 2026-10-11T21:06:15+09:00
+PREFLIGHT_PASS /home/daybreak/gap1-run-v0-3-out/run2/producer_preflight.stdout
+START checker_preflight 2026-10-11T21:06:15+09:00
+EXIT_ZERO checker_preflight 2026-10-11T21:11:01+09:00
+PREFLIGHT_PASS /home/daybreak/gap1-run-v0-3-out/run2/checker_preflight.stdout
+START producer_run 2026-10-11T21:11:01+09:00
+STOP producer_run EXIT_NONZERO 2026-10-12T03:08:22+09:00
