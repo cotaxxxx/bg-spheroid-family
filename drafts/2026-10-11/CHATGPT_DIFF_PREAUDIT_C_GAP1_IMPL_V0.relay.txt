@@ -1,0 +1,37 @@
+ChatGPT 独立差分監査 — C 空白① 実装案 v0（2026-10-11）
+添付版の独立予備監査判定：FAIL — 差分監査PASS不可、FREEZE審査への送付不可。 ただし、提出物の整合性、baselineの同一性、17本のimport pin、保護対象の主要関数本体についてはPASS。以下のF1–F3は実装の静的な意味と契約の照合で見つかった。数値的反例や証明の不成立を意味しない。
+監査者： ChatGPT（GPT-6）。Codeの自己点検・自己申告は独立監査の結論として採用していない。chatの独立監査記録は読んでいない。
+保存条件： Judge発出メモN2は「mainに保存された版に対する差分監査」を要求する。本報告は、現時点でmainへの保存を確認していない添付tar.gzの内容に対する独立予備監査であり、main保存版への正式な監査記録を代替しない。指摘F1–F3は提出されたソースから直接検証でき、main保存前でも修正判断の根拠となる。
+監査対象： ユーザー添付 C_GAP1_IMPL_V0_SUBMISSION_2026-10-11(3).tar.gz、SHA-256 d4ddd33db5a024a930dd3cfef21aa2b9bcd5c37e4cb5f536f02c75147156d6e8。内部 C_GAP1_IMPL_V0_SUBMISSION/。比較基準：実装指示書v2 SHA-256 48204988953911195a00789536956657556984cea1067486120e70e610cb9e6f、Judge発出メモ SHA-256 51a167c7d37c244195df7d2f55a0d761f60593010ec22dba4f649eb7bdcbac5b、baseline commit 85eca2288732a3cac65f4d5f87ecfd2ba5ce2e9b。発出記録main e34f6a098f8376cf8f64c606ddda9400f1c66079、STATE v1.20。
+1. 独立検証の実績
+1. tar.gz内の全32通常ファイルを確認。MANIFEST.sha256は31行で、自己ファイルを除く31ファイルを漏れなく列挙し、全31件SHA-256一致。MANIFEST.sha256自身のSHA-256は 7bbb656c39cbac369bb0525613b6c062c0bc42923ee359157061b1e6d883691c。
+2. 新規Python 7本はすべてAST parse成功。提出 diffs/ALL_7_FILES.diff には49 hunk。
+3. 提出された各full unified diffを逆適用してbaseline 7本を別作業領域に復元。復元した各ファイルのGit blob SHA-1を計算し、指示書v2 §1.2の7本の期待blobに7/7一致。したがって、提出差分と新規7本の組は、指定baselineの7本から実際に再構成可能。
+4. 研究用PC上の bg-oblate-spheroid-c1b に対して、commit 85eca228 のimport 17 pathを git rev-parse COMMIT:path で照合し、17/17一致。追加2本 producer/c0a_four_group_v2.py と checker/c0a_four_group_v2.py を含む。
+5. 復元baselineと新規kernelのASTを独立比較。g_box、gt_box、predictor_scan、select_predictor_candidate、choose_predictor、tube_stage、tube_first_pass、root_localize、exterior_cover、eval_exterior、mono_closure_box、_attempt_with_tc、attempt／attempt_replay、predictor_accept の、存在する保護対象関数のASTは一致。checker新規ファイルから gap1_producer.* への直接importは0件。
+6. endpointの固定partition（31/32、16×1/512）、seed g_box 1回、16個のgt_box、上界の累積と U_cum<0 判定をソースで確認。ここでは数値実行はしていない。
+2. Blocking findings
+F1 — Xのnegative blockが未承認のmono閉包を許す（契約逸脱）
+場所： new_files/gap1_producer/global_axial_c1b_kernel.py L1378–1395, L1764–1823, L1825–1861；checkerの対応箇所 L1357–1374, L1743–1802, L1804–1840。
+attempt_x は [5/8,31/32] に exterior_cover(slab,T_LO,GAP1_X_SPLIT_T) を使う。この関数は各boxで直接 g_box を試した後、直接判定できなかったboxに対して mono_closure_box を実行する。mono_closure_box は gt_box(tp,box.tr) と壁 g_box(tp,tp) で証明を閉じられるため、当該boxのdirect g_box<0が成立しなくてもXがACCEPTし得る。
+しかし実装指示書v2 §4.2、実装設計v2 §7、数値契約v1 §5は、X negative blockをdirect g_box<0 の固定経路として指定している。Xの数値契約§5は MONO_WORK_CAP を列挙せず、これはLの§4にのみ記載されている。Codeの OPEN_QUESTIONS.md Q3もこの差異を認識しているが、裁定前に経路を実装した。これは静的control C5（predictor/root不使用）だけでは検出できない。
+必要な対応： 原則としてX専用のdirect-only negative gridをDIFF-Bで作り、未解決boxをmonoで閉じず所定E0/E1/E2・refine後に CERTIFICATE_INCONCLUSIVE とする。Lのmono使用はnumeric contractにcapがあるため、別途「Lで許容するmono閉包の範囲」をJudgeが確認する。Xでもmonoを許可したい場合は、数学的方法と数値契約の明示的な改訂・事前監査が必要。単なる自己点検PASSでは代替できない。
+F2 — Xの根数を ROOT_FREE_REGION と誤記録する（意味的誤り）
+場所： new_files/gap1_checker/global_axial_c1b_gating.py L725–739；LEDGER_AND_REPLAY_SCHEMA_V0.md §2「checker_root_outcome はL/XではROOT_FREE_REGION」。
+checkerは region != "R" なら無条件に checker_root_outcome="ROOT_FREE_REGION" と記録する。しかし契約v7 §5.2・指示書v2 §4.2は、Xのうち g(1/2,λ)>0 のλでは (1/2,5/8) に単純根が1個ある、と規定する。C1aの右端正符号によりX全域をroot-freeと扱うことはできない。T_star を構成しないことと、根が存在しないことは別概念である。
+必要な対応： Lだけを ROOT_FREE_REGION とし、Xには例えば ROOT_COUNT_BY_C1A_SIGN / NO_T_STAR_REQUIRED のような根数ゼロを意味しない専用ラベルを設ける。Xの根数は各λでの g(1/2,λ) の符号に依存する条件付き分類としてledger schemaに明記する。checkerのACCEPT判定とschema文書も一致させる。未承認のλ_x近似による数値分岐は追加しない。
+F3 — 資源上限ABORTが RESOURCE_CAP として記録されない（fail-closed ledgerの欠陥）
+場所： new_files/gap1_producer/global_axial_c1b_gating.py L162–173, L703–751；checkerの同種分類 L162–173と上限判定 L721–735。
+gap1_serialize_record(..., reason="PASS") が先に result.gap1.failure_class=None を確定する。その後でglobal/accepted work ceilingまたはMAX_ACCEPTEDに達すると decision="ABORT" に変更される。slab_record にはdecision ABORTだけが入り、result.gap1.failure_class はNone、result.reason はPASSのまま。segment_end は汎用 reason="failure"。Codeのコメントにある「RESOURCE_CAP (decision field)」は実際のフィールド値（ABORT）と一致しない。
+必要な対応： resource capに由来するABORTを明示的に区別し、ledgerの機械可読フィールドに RESOURCE_CAP と具体的cap名を記録する。成功理由PASSとの矛盾を除去し、resume/replayで同じ分類を再現できるようにする。checkerのcap停止でも失敗理由と記録の一貫性を確認する。数値計算は不要で、静的分岐とschemaの修正・再監査で対応可能。
+3. Judge確認が残る事項（上のblocking findingとは区別）
+- OPEN_QUESTIONS.md Q1：gap1_analysis/GAP1_RESUMABLE_PINS.json は未作成。実行時に必須だが、今回の新規7本の外で、後の環境事前宣言に委ねる提案。実行許可の前に作成・監査・pinが必要。
+- Q2：__init__.py なしのnamespace packageは静的には整合的だが、実際の sys.path / 動的gating解決はNOT_VERIFIED。実行環境確定後に別途許可のもとで検証。
+- Q4：Rのright clampを拒否してREFINEする扱いが契約上適切かJudge確認。
+- Q5・Q6：L/Xも含む降順処理と、C1b参照領域定数を残して GAP1_* を追加した方式をJudge確認。
+- Q10・Q11：kernelの旧self-checkは17本全体を検査しない。共通driverの24本pin manifestで補う案。さらに _v211_schema_counts が未pinの analysis/c1b_cross_lineage_compare.py をASTとして読む点について、実行前の信頼境界を決める必要がある。
+- Q15：L/X/endpoint用の合成stub preflight controls未追加。これは本監査では数値実行せず、追加すべきかはJudge判断。
+4. 総合裁定案と次工程
+添付版の独立予備監査結果：CHATGPT_PREAUDIT_FAIL（F1–F3）。 提出物の形式・baseline identity・保護body・import pinsはPASSだが、v0のまま IMPLEMENTATION_DIFF_AUDIT_PASS とはできない。
+Codeに対して、JudgeがF1の許可経路を裁定した後、F1–F3の最小修正をv0.1として提出するよう求める。新規7本の範囲・DIFF allowlist・元7本と17 importsの不変性を維持し、修正した全diff・静的controls・MANIFESTを新しいtar.gzで提出する。修正版をJudgeがmainに保存し、そのexact SHA-256をpinした後、ChatGPTとchatは互いの監査記録を読まずに正式な差分監査を行う。両方がPASSした場合にのみJudgeのFREEZE審査へ進む。
+実施していない操作： producer/checker/driverのimportまたは実行、数値探索、g_box/gt_box呼出し、証明書生成、研究用リポジトリのファイル変更、commit、push、FREEZE。研究用PCへの照会は既存Git objectのread-only pin照合だけ。
