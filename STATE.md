@@ -1,6 +1,6 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.22（2026-10-11、chat 起草。v1.21→v1.22 の変更：① 実装 v0.1（df2a6915）は差分監査で不合格（ChatGPT F4・F5、chat は再び見落とし CHAT-DIFF-003/004）。Judge 裁定：v0.2 で F4・F5 を修正、B1–B7 は両監査の一致どおり受理。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
+版：v1.23（2026-10-11、chat 起草。v1.22→v1.23 の変更：体制の裁定＝差分監査は chat が単独で正式に行い、ChatGPT は Dig（調査・起草）、Code・Astra は Judge が必要時に使う（発出メモ N3 を置き換え、`audits/CHAT_RECORD_AUDIT_ROLES_2026-10-11.md`）。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
 更新：chat が起草 → ユーザーが commit。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
@@ -23,7 +23,7 @@
 - 論文の主役は停留構造。分岐はその λ 変化、認証は方法。
 - D-OB の内部（L1）は Form II（一様下界）を目標とする。ROUTE は δ_L1 確定まで UNDETERMINED。
 - 統治：事前宣言 → 監査 → FREEZE → 実行許可。診断は証拠にしない。版上げのみ。fail-closed。
-- 監査役は chat（一系統）。正の台帳はこの STATE.md と `UPSTREAM_PINS.md`。
+- 監査役は chat（一系統）。ChatGPT は Dig（調査・起草）、Code・Astra は Judge が必要時に使う（`audits/CHAT_RECORD_AUDIT_ROLES_2026-10-11.md`）。正の台帳はこの STATE.md と `UPSTREAM_PINS.md`。
 
 ## 4. 部品表
 ### 扁平（D-OB）
