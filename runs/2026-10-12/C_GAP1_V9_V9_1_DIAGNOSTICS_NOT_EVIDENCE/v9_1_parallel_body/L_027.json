@@ -1,0 +1,1 @@
+{"region": "L", "slab": 27, "PASS": true, "leaves": [{"region": "L", "coarse": 27, "depth": 0, "lo": "1307/3200", "hi": "327/800", "pass_": true, "attempt_reason": "PASS", "work": {"predictor": 0, "tube": 0, "root": 0, "exterior": 212992, "endpoint": 0}}], "NOT_EVIDENCE": true}

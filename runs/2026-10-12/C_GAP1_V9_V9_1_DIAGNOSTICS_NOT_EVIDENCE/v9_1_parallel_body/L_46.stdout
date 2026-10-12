@@ -1,0 +1,5 @@
+C1B_E0_ALLOCATION 46 0 left_t_boxes 0 right_t_boxes 24 left_range (Fraction(1, 2), Fraction(1, 2)) right_range (Fraction(1, 2), Fraction(31, 32))
+C1B_EXTERIOR_STAGE 46 0 E0 input 192 resolved_now 192 unresolved 0 live_terminal 192 worst_left_lower None worst_right_upper [0.0080097028712281517165583903088045325440386445472839 +/- 2.9e-55] nonfinite 0
+C1B_EXTERIOR_MONO 46 0 E0 attempted 16 closed 16 skipped_cap 0 work 32768 worst_gt_upper [-0.048725614208987631937951013370312509641591137376733 +/- 1.29e-52] worst_wall [-0.012266187453976816620881008808783043724867782359036 +/- 1.12e-53]
+C1B_EXTERIOR_FIRST_PASS 46 0 E0
+L 46 PASS 1
