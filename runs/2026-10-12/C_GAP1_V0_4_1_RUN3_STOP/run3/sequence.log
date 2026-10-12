@@ -1,0 +1,12 @@
+START producer_preflight 2026-10-12T05:57:37+09:00
+EXIT_ZERO producer_preflight 2026-10-12T06:02:30+09:00
+STOP PREFLIGHT_FAIL /home/daybreak/gap1-run-v0-4-out/run3/producer_preflight.stdout 2026-10-12T06:02:30+09:00
+PREFLIGHT_PASS /home/daybreak/gap1-run-v0-4-out/run3/producer_preflight.stdout
+START checker_preflight 2026-10-12T06:53:53+09:00
+EXIT_ZERO checker_preflight 2026-10-12T06:58:37+09:00
+PREFLIGHT_PASS /home/daybreak/gap1-run-v0-4-out/run3/checker_preflight.stdout
+STOP NEGATIVE_FAIL_LINES_MISMATCH /home/daybreak/gap1-run-v0-4-out/run3/checker_preflight.stdout 2026-10-12T06:58:37+09:00
+PREFLIGHT_PASS /home/daybreak/gap1-run-v0-4-out/run3/producer_preflight.stdout
+PREFLIGHT_PASS /home/daybreak/gap1-run-v0-4-out/run3/checker_preflight.stdout
+START producer_run 2026-10-12T07:01:16+09:00
+STOP producer_run EXIT_NONZERO 2026-10-12T10:56:50+09:00
