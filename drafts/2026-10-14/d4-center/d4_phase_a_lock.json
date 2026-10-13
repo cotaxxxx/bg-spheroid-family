@@ -1,0 +1,9 @@
+{
+  "fixed_at_utc": "2026-10-13T20:12:42.196863+00:00",
+  "counterpart_access": "not yet accessed",
+  "files": {
+    "D4_PHASE_A_INDEPENDENT_DERIVATION.md": "5271d5d89626f1db18939b3d3dae5547cbc12d35168ad26fb4765211aaaa55d1",
+    "d4_phase_a_independent.py": "4b8fe0c9a7368ad758be70aa79a6e86a1a91960b3fc79939d3019f266e300653"
+  },
+  "sympy_local": "unavailable; no assertion of completed SymPy check"
+}
