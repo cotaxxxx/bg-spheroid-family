@@ -657,7 +657,15 @@ Thus the only stationary point retained by this local certificate is the symmetr
 
 The mathematical content used here is the combination of two independently audited signed certificates.
 
-**Packaging note.** The labels `audit7`–`audit10` below are working names only. At commit packaging they are to be replaced by the actual audit filenames and their SHA-256 values.
+The independent chat audit package is:
+
+`d4_chat_audit_records_20261015.zip`
+
+with SHA-256
+
+`da0238890bc3366b2bbe90ec216b9f93c9f678eb6777fc930c8a48b57baa3f3e`.
+
+Its `pkg/d4_chat_audit_SHA256SUMS.txt` records the audit-script and rerun-log hashes used below.
 
 ### \(M_{40}^{-}\)
 
@@ -673,7 +681,15 @@ Primary full-kernel route:
   \[
   c_{\min}=\frac{1411}{2500}
   \]
-- chat audit records: **audit7 / audit8**
+
+Independent chat audit records:
+
+- `pkg/d4_chat_audit_M40_identities_and_weight.py`
+  SHA-256 `6b2add92a26c39a4f449820c67b868efce098b98b4e99dd428f8aa1c90b109a5`
+- `pkg/d4_chat_audit_M40_bernstein_256.py`
+  SHA-256 `50a16b3dcf6a2b1f6fbdc61c0d7276b695d5462c55e9b15b54a7477996a58d91`
+
+These are the records previously denoted audit7 / audit8.
 
 The finite/tail bridge is reference-only in this certificate.
 
@@ -688,7 +704,29 @@ The finite/tail bridge is reference-only in this certificate.
   E_{22}(\lambda=1)=-\frac{16}{9}
   \]
 - exact rational weight and Taylor-margin checks
-- chat audit records: **audit9 / audit10**
+
+Independent chat audit records:
+
+- `pkg/d4_chat_audit_M22_kernel_bernstein_64.py`
+  SHA-256 `b5d4b1570a79d466c0104c233dc00055ca0a4e33435b3e4f05069ebeb2314d71`
+- `pkg/d4_chat_audit_M22_rationalization.py`
+  SHA-256 `ea3e714ea6370eb7d402c0faac7af0afd5d4d4b93d43f26c8f8c291c6884ea60`
+- `pkg/d4_chat_audit_rerun_20261015.log`
+  SHA-256 `a6a234a01a8f80e7038a8f6f8a94e150d1d578ce591559da42ba2fbb991c6b6c`
+
+These correspond to audit9 / audit10 plus the combined rerun log.
+
+**M22 rerun-log note.** The first line reported by
+`d4_chat_audit_M22_kernel_bernstein_64.py`,
+`K22 rational form matches audited composite: False`,
+is a procedural false caused by omitting the explicit substitution
+\[
+b=\sqrt{1-\zeta^2}=\frac{2r}{1+r^2}
+\]
+in that first comparison. The authoritative rational-form check is
+`d4_chat_audit_M22_rationalization.py`, which returns `match: True`.
+The Bernstein certificate, exact rational bound, Taylor margin, and sphere control in
+`d4_chat_audit_M22_kernel_bernstein_64.py` are independently PASS and remain valid.
 
 The submitted V0 certificate reports
 
@@ -795,23 +833,31 @@ Remaining external conditions / process items:
 
 ---
 
-## 12. Packaging target
+## 12. Packaging record
 
-Planned provenance package:
-
-- Astra \(M_{40}^{-}\) corrected V0.1
-- chat \(M_{40}^{-}\) audit records audit7 / audit8
-- Codex \(M_{22}^{-}\) V0
-- chat \(M_{22}^{-}\) audit records audit9 / audit10
-- this D4 positivity certificate
-- exact result files / SHA-256 records
-
-Planned branch:
+The provenance package is recorded on:
 
 `candidate/d4-offcentre-phiavg-20261014`
 
-Planned base:
+with the non-rewritten two-commit topology
 
-`ec8d243f84b922f95f60d1e4a28193d2a30181b2`
+\[
+oxed{
+	exttt{ec8d243f84b922f95f60d1e4a28193d2a30181b2}
 
-No repository write, commit, push, or branch modification is authorized by this draft itself.
+\rightarrow
+	exttt{990df66cbd5d4ff8c90c1b1e1cc315fccb40208e}
+
+\rightarrow
+	ext{provenance child commit}
+}
+\]
+
+The first child contains this certificate V0.1 alone. The second child packages:
+
+- Astra `D4_M40_SIGNED_CERTIFICATE_V0_1.md`
+- Codex `D4_M22_SIGNED_CERTIFICATE_V0.md`
+- `d4_chat_audit_records_20261015.zip`
+- this certificate with the exact §8 audit filenames and SHA-256 values
+
+No history rewrite is used. This replaces the earlier planning phrase “ec8d243f direct child / one commit” with the actual `ec8d243f` lineage / two-commit provenance record.
