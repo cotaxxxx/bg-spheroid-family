@@ -1,7 +1,7 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.29（2026-10-13、chat 起草。v1.28→v1.29 の変更：C 空白① v0.5 run4 両系統 PASS、Judge CONDITIONAL_CLOSED。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
-更新：chat が起草 → ユーザーが commit。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
+版：v1.30（2026-10-18、ChatGPT 起草。v1.29→v1.30 の変更：D5 V3 ABORTED / NOT_EVIDENCE、再設計へ移行、運用規則の更新。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
+更新：ChatGPT 起草・push → chat が GitHub で照合。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
 形の数学的研究とは、ものが持つ要素を削ぎ落とした「形（shape）」そのものを見ること。
@@ -35,7 +35,7 @@
 | D2 | 極 corner 内部 L1 | O1 CLOSED（P1 条件付き）。O2：v1・v1.1-r1（O2-A3）FROZEN、P0–P1 ADOPTED。R1＝FAIL-CLOSED（項ごとの絶対値上界が成功条件の約 3×10⁶ 倍）。**R2 枠組み FROZEN**（Judge 2026-10-10、v0＋v0-r1 差分）：M_+ を (λ,τ,r) の閉箱（r=1・τ=1 を含む）ごとに符号付き積分下界・有理包囲・Bernstein で直接認証、全箱共通の h_*>0（P 単位）。補題 R2-L1：D²≥(a−|ξ|)²+(λμ−z)²。t 積分の許容方式 R2-T1（τ≤τ₁、正確な割線）／R2-T2（τ≥τ₁、ξ=0 展開、g⁽⁴⁾ が必要）。10/31 CLOSED は保証なし | pin：basepoint-geometry `chatgpt/d-p2-o1-predeclare-v1-20261009` commit `fbadfc4d`（R2 v0 `764c1860…e8be`、v0-r1 差分 `957b7d00…6aa`、v1.1-r1 `7dcbd6d6…12c5`、P2 v1-r1 `3f0fcdb3…6b5d`、chat が GitHub 上で照合済み） | P2-b（R2 の実行事前宣言：箱・セル数・近似次数・誤差予算・τ₁・g の包み・工数見積り）→ 監査 → FREEZE → 実行 → 独立検証 → O3 → O4–O6 | ChatGPT |
 | D3 | L3–L1 接続 | UNDETERMINED | 仕様 v1 `ecd31446` | D2 に従う | — |
 | D4 | 中心帯（`0,0,3` 系の 3584 箱、r∈[1/64,1/8]、τ∈[0,1/8]、λ∈[119/200,33/50]、z/λ≤2/65。所在＝`full_terminal_map.tsv` `0584…26f8`、DIAGNOSTIC） | Astra が原典調査に着手。補遺 v2 で D4-0 を「中心での H の挙動」に訂正（λ_∂^ob との関連は撤回、CHAT-D4-K4-001） | — | 指示書全文と補遺 v2 の送付 → 原典調査・方式比較（10/17）→ 監査 → Judge 方式裁定 | Astra |
-| D5 | 一般域（区間認証本走） | 未実施。概算 150〜170 h（256 箱 / 12 並列、9/22 見積り・保証値ではない） | SPEC/contract V2、resume `c0f099f9`、smoke #4 | 契約再裁定 → 外部 backup（SHA 照合）→ 環境固定 → 本走 → machine receipt → 成果物保全 → Judge | Code |
+| D5 | 一般域（区間認証本走） | **V3 ABORTED / NOT_EVIDENCE（10/18）・再設計中**。254 箱の完走ではなく途中停止。43,654 unresolved は診断資料であり証明書ではない。 | `bg-oblate-spheroid` `design/d-ob-p2`：`analysis/D5_V3_RUN_ABORT_RECORD_2026-10-18.md`（commit `4ab57090`、原本 SHA-256 `57af512d…`）。ledger `5c74c09d…` / log `a171d530…` | i_r=0（r≤1/8）の原因を paper-only で解析、D4 中心下界を λ∈[2/5,33/50] に拡張して独立監査、V4 事前宣言→監査→Judge。V3 resume 未承認。 | Code / Astra / chat |
 | D6 | 外部監査（P1 Lemma V、C 側 5 件） | 未送付 | — | 監査一式の送付、または付録に全証明 | ユーザー |
 
 ### 扁長（D-PRO）
