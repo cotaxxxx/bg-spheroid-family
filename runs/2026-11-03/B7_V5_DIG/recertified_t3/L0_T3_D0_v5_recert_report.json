@@ -1,0 +1,41 @@
+{
+  "changed_bound_source": 4712,
+  "improved_selected_leaves": 8028,
+  "key": "L0_T3_D0",
+  "new_J_exact": "4205188643582434766461700932962677081/5316911983139663491615228241121378304",
+  "new_contact_loss_exact": "237875000/4000000000001",
+  "new_final_exact": "117710501108292902726473333924829129608268978739567/584860318145509199157211447269371032216630837903360",
+  "new_final_positive": true,
+  "old_J_exact": "-872032093750344497042928818383130076149/340282366920938463463374607431768211456",
+  "old_constant": "859375/64",
+  "old_contact_loss_exact": "92919921875/8000000000002",
+  "old_final_exact": "-612931912160309359403935345053040048361168281503173777/816677680610456481732251620914321732258859060926873600",
+  "old_heap_live_uids": 60575,
+  "old_leaf_count": 61814,
+  "old_source_counts": {
+    "K_FLOOR": 3316,
+    "MIDPOINT": 44779,
+    "ZEROTH": 13719
+  },
+  "origin_checkpoint_path": "/home/daybreak/B7_work/b7_v41/full_v41_t3/L0_T3_D0_full.checkpoint",
+  "origin_checkpoint_sha256": "c914bf4c6a9bfd2daf073035b7225e4ad76737823c36ce738823ce4c39bac9bc",
+  "origin_fingerprint": "827ee93a8ed446eba6f39c442d62b44e23a2ccdc89e26f5b94eef2a125b6851f",
+  "origin_source_copy": "/home/daybreak/B7_work/b7_v5_dig/recertified_t3/snapshots/L0_T3_D0_full.checkpoint.source_copy",
+  "origin_source_sha256": "017cf2726efaddbb1716af7e451708a4248ad195ad6581520e48fdc817247dfe",
+  "preliminary_status": "POSITIVE_AWAITING_INDEPENDENT_AUDIT",
+  "requeued_from_old_heap_absence": 836,
+  "schema": "DIG-B7-V5-CHECKPOINT-RECERT-v1",
+  "v5_checkpoint_sha256": "8e6ab39863f5e59fa416c64e501b3ccc8a1b0f4f3b43de3ef5db971ab28e58af",
+  "v5_constant": "275/4",
+  "v5_constants_sha256": "3d766084caabc5738ea3de70068d688635e6b565a0a8fbe29d14c18ccec3c9c0",
+  "v5_fingerprint": "60af4bcff222e9cd411b61926e22e6e1a784a6ef2d1935851a815a623aeab2dd",
+  "v5_heap_live_uids": 61411,
+  "v5_producer_sha256": "3e7752ef6258246aefbbefb85c0e04b8a25ec02196a585692f85d301fb7e9f8f",
+  "v5_source_counts": {
+    "K_FLOOR": 8028,
+    "MIDPOINT": 44779,
+    "ZEROTH": 9007
+  },
+  "version_origin": "v41",
+  "warning": "This is transformed solver state, not an independently certified PASS; full leaf coverage and kernel intervals require audit."
+}
