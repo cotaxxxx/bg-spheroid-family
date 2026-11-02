@@ -1,0 +1,45 @@
+=== Dig B7 V5 preflight audit (producer v5) === 2026-11-03 07:52:40 | python 3.14.4
+result /home/daybreak/B7_work/b7_v5_dig/recertified_v4_t2/L0_T2_D0_full.json
+work /home/daybreak/B7_work/b7_v5_dig
+
+[1] source SHA-256 vs manifest
+  v3_fixed_128.py                ed724a764c7e3c9b… MATCH
+  v6_b_ad2_128.py                9621a4e967f88b8e… MATCH
+  v6_b7_safe_128.py              ff0e93dc75d8114b… MATCH
+  v6_b7_adaptive_128.py          b2389bf8a908373a… MATCH
+  v6_b7_priority_128.py          10877b81df9bb97d… MATCH
+  v6_b7_hybrid_128.py            506f1beedc753bda… MATCH
+  v6_b7_unified_outerrem_v5.py   3e7752ef6258246a… MATCH
+  v6_b7_delta_local_128.py       7f5ee03f03d256aa… MATCH
+  b7_constants_v3.py             d96b1ef70c3c67bb… MATCH
+  b7_constants_v5.py             3d766084caabc573… MATCH
+
+[2] result / leaf file
+  status PASS | leaves 97996 | final_lower 21722292125298578657434938691790866112229273261467/1701411834605117670275524210238170275539289710264320 | seconds 6
+  leaf file L0_T2_D0_full.leaves.json 764fc0f92037ed62… SHA MATCH
+  fingerprint recomputed 60af4bcff222e9cd… MATCH cfg
+  key L0_T2_D0 | outer [['2/5', '173/400'], ['15/16', '31/32'], ['3/100000000', '1/10000']] | bound_policy max_midpoint_K_floor_zeroth_outerrem_v5_Astra_F_ge_minus_275_over_4
+
+[3] per-leaf exact bookkeeping (97996 leaves)
+  leaves failing bookkeeping: 0 | max depth 13
+
+[4] exact partition proof of the inner domain
+  PARTITION PASS | tree nodes 195991 | 2.2s
+
+[5] aggregate and final lower (independent constants)
+  J lower (sum selected) = 0.05039054660395157 | exact matches result: True
+  prefactor part        = 0.012826684590096765
+  contact loss          = 5.946874999998513e-05
+  FINAL LOWER           = 0.012767215840096779 (exact rational recomputed, matches result: True )
+  FINAL LOWER > 0       : True
+
+[6] statistics
+  bound source counts {'K_FLOOR': 62279, 'ZEROTH': 20029, 'MIDPOINT': 15688}
+  sum positive selected 1.52721 | sum negative selected -1.47682 | sum over K-floor leaves -0.0266268 | sum over ZEROTH leaves -0.549297
+  minimum selected per leaf -0.002751
+  margin: final lower / contact loss = 215
+
+[8] exact recomputation of sampled leaves with the PRODUCTION kernel (consistency of recorded values; uses production code)
+  recomputed 16 leaves | rem_parts {4: 12, 2: 1, 1: 3} | multi-delta 2 | sources {'K_FLOOR': 10, 'MIDPOINT': 4, 'ZEROTH': 2} | mismatches 0 | 4s
+
+=== VERDICT (sections 1-5 and 8, exact): ALL CHECKS PASS ===
