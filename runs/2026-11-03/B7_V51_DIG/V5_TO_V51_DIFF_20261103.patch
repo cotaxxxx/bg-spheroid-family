@@ -1,0 +1,31 @@
+--- v6_b7_unified_outerrem_v5.py
++++ v6_b7_unified_outerrem_v51.py
+@@ -13,7 +13,7 @@
+ from v6_b7_delta_local_128 import split_geometric
+ from b7_constants_v5 import KQ, P0, SIGMA0
+ 
+-SOURCES=('v3_fixed_128.py','v6_b_ad2_128.py','v6_b7_safe_128.py','v6_b7_adaptive_128.py','v6_b7_priority_128.py','v6_b7_hybrid_128.py','v6_b7_unified_outerrem_v5.py','v6_b7_delta_local_128.py','b7_constants_v3.py','b7_constants_v5.py')
++SOURCES=('v3_fixed_128.py','v6_b_ad2_128.py','v6_b7_safe_128.py','v6_b7_adaptive_128.py','v6_b7_priority_128.py','v6_b7_hybrid_128.py','v6_b7_unified_outerrem_v51.py','v6_b7_delta_local_128.py','b7_constants_v3.py','b7_constants_v5.py')
+ def fingerprint():
+     h=hashlib.sha256()
+     for name in SOURCES:
+@@ -303,7 +303,9 @@
+             choices.append(('inner',max(0,lower-old['total_lo_selected']),(lc,rc,lval,rval),None,None))
+         if not choices:continue
+         action,gain,arg,rem,z=max(choices,key=lambda entry:entry[1])
+-        if gain<=0:continue
++        if gain<=0:
++            if not can_inner:continue
++            action,gain,arg,rem,z=[c for c in choices if c[0]=='inner'][0]
+         remove(uid)
+         if action=='inner':
+             lc,rc,lval,rval=arg
+@@ -330,7 +332,7 @@
+           'initial_cells':grid_count() if mode=='full' else 1,
+           'initialization_seconds':state['initialization_seconds'],
+           'remainder_kernel_evaluation_calls':state['kernel_evaluation_calls'],
+-          'priority_rule':'V4.1 retained: 3-way selected gain; cached child candidates; non-MIDPOINT heap score capped by abs(selected); zero-gain leaves can leave queue',
++          'priority_rule':'V5.1: three-way selected gain; on gain<=0 use INNER when can_inner; heap scores as V5',
+           'split_counts':dict(zip('yptu',state['counts'])),
+           'main_lower':str(Q(state['main_lo'],S)),
+           'zeroth_lower':str(Q(state['zeroth_lo'],S)),
