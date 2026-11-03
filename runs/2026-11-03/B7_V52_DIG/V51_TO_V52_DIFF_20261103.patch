@@ -1,0 +1,129 @@
+--- v6_b7_unified_outerrem_v51.py
++++ v6_b7_unified_outerrem_v52.py
+@@ -1,4 +1,4 @@
+-"""B7 V5 producer: V4.1 search, proved F>=-275/4 contact and K floor.
++"""B7 V5.2 producer candidate: V5.1 + Astra3 fourth cellwise floor.
+ 
+ NOT an independent verifier. Frozen v4.1 sources are not changed.
+ """
+@@ -12,8 +12,9 @@
+ from v6_b7_hybrid_128 import main_interval
+ from v6_b7_delta_local_128 import split_geometric
+ from b7_constants_v5 import KQ, P0, SIGMA0
+-
+-SOURCES=('v3_fixed_128.py','v6_b_ad2_128.py','v6_b7_safe_128.py','v6_b7_adaptive_128.py','v6_b7_priority_128.py','v6_b7_hybrid_128.py','v6_b7_unified_outerrem_v51.py','v6_b7_delta_local_128.py','b7_constants_v3.py','b7_constants_v5.py')
++from b7_astra3_v52 import astra3_floor_raw
++
++SOURCES=('v3_fixed_128.py','v6_b_ad2_128.py','v6_b7_safe_128.py','v6_b7_adaptive_128.py','v6_b7_priority_128.py','v6_b7_hybrid_128.py','v6_b7_unified_outerrem_v52.py','b7_astra3_v52.py','v6_b7_delta_local_128.py','b7_constants_v3.py','b7_constants_v5.py')
+ def fingerprint():
+     h=hashlib.sha256()
+     for name in SOURCES:
+@@ -128,7 +129,7 @@
+     key,outer,mode,limit,depth,outdir,every,fp,max_parts,max_delta,max_rem_parts,max_rem_kernel_boxes,grid_far=job
+     out=Path(outdir);result=out/(key+'_'+mode+'.json');ckpt=out/(key+'_'+mode+'.checkpoint')
+     leaf_path=out/(key+'_'+mode+'.leaves.json')
+-    cfg={'key':key,'outer':encode_cell(outer),'mode':mode,'limit':limit,'depth':depth,'max_parts':list(max_parts),'max_delta':max_delta,'grid_count':grid_count(),'p_cut':str(P_CUT),'sigma_cut':str(SIGMA_CUT),'bound_policy':'max_midpoint_K_floor_zeroth_outerrem_v5_Astra_F_ge_minus_275_over_4','max_rem_parts':max_rem_parts,'max_rem_kernel_boxes':max_rem_kernel_boxes,'grid_far':grid_far,'KQ':str(KQ),'fingerprint':fp}
++    cfg={'key':key,'outer':encode_cell(outer),'mode':mode,'limit':limit,'depth':depth,'max_parts':list(max_parts),'max_delta':max_delta,'grid_count':grid_count(),'p_cut':str(P_CUT),'sigma_cut':str(SIGMA_CUT),'bound_policy':'max_midpoint_K_floor_zeroth_ASTRA3_outerrem_v52_rho_G2_T2','astra3_policy':'B3_CELL_8_4_2_GEOMETRIC_DELTA_RHO_G2_T2_WITH_NONNEGATIVE_CUTOFF','max_rem_parts':max_rem_parts,'max_rem_kernel_boxes':max_rem_kernel_boxes,'grid_far':grid_far,'KQ':str(KQ),'fingerprint':fp}
+     if result.exists():
+         prior=json.loads(result.read_text())
+         if prior.get('config')==cfg and prior.get('status') in ('PASS','DIAGNOSTIC_POSITIVE','LIMIT_REACHED','DOMAIN_FAIL'):
+@@ -183,12 +184,13 @@
+         return mulq_interval(
+             I.raw(min(row[4].lo for row in cache),
+                   max(row[4].hi for row in cache)),v)
+-    def select_lower(main,rem,zeroth,floor_raw):
++    def select_lower(main,rem,zeroth,floor_raw,astra3_raw):
+         midpoint=main+sum(rem,iv(0))
+-        # Stable tie order preserves V3: K floor, then midpoint, then zeroth.
++        # Legacy three-way tie priority is preserved; ASTRA3 is fourth.
+         source,lower=max((('K_FLOOR',floor_raw),
+                           ('MIDPOINT',midpoint.lo),
+-                          ('ZEROTH',zeroth.lo)),key=lambda entry:entry[1])
++                          ('ZEROTH',zeroth.lo),
++                          ('ASTRA3',astra3_raw)),key=lambda entry:entry[1])
+         return lower,source,midpoint
+     def evaluate(cell,d,parts,delta_boxes=None,precomputed=None,pre_rem=None,pre_cache=None,rem_parts=1,pre_zeroth=None):
+         if delta_boxes is None:delta_boxes=[outer]
+@@ -214,11 +216,13 @@
+         zeroth_width=max(0,zeroth.hi-zeroth.lo)
+         inner_score=3*max(0,-rem[axis].lo)//4 if d<depth else 0
+         floor_raw=k_floor_raw(cell)
+-        selected,source,midpoint=select_lower(main,rem,zeroth,floor_raw)
++        astra_raw=astra3_floor_raw(outer,cell)
++        selected,source,midpoint=select_lower(main,rem,zeroth,floor_raw,astra_raw)
+         score=max(inner_score,main_width,rem_width,zeroth_width)
+         if source!='MIDPOINT':score=min(score,abs(selected))
+         return {'cell':cell,'depth':d,'parts':parts,'delta_boxes':delta_boxes,'rem_parts':rem_parts,'derivative_cache':cache,
+                 'main':main,'rem':rem,'midpoint':midpoint,'zeroth':zeroth,'k_floor_raw':floor_raw,
++                'astra3_floor_raw':astra_raw,
+                 'bound_source':source,'total_lo_selected':selected,'total':midpoint,
+                 'axis':axis,'score':score,'next_parts':next_parts,
+                 'inner_score':inner_score,'main_width':main_width,'rem_width':rem_width,'zeroth_width':zeroth_width}
+@@ -267,7 +271,7 @@
+         choices=[]
+         if can_outer:
+             candidate=main_scaled(old['cell'],old['next_parts'])
+-            lower,_,_=select_lower(candidate,old['rem'],old['zeroth'],old['k_floor_raw'])
++            lower,_,_=select_lower(candidate,old['rem'],old['zeroth'],old['k_floor_raw'],old['astra3_floor_raw'])
+             choices.append(('outer',max(0,lower-old['total_lo_selected']),candidate,old['rem'],old['zeroth']))
+         if can_delta:
+             boxes=list(old['delta_boxes'])
+@@ -282,7 +286,7 @@
+                     cache[j*n*n:(j+1)*n*n]=[derivative_row(sub,old['cell']) for sub in lambda_tau_boxes(pair,n)]
+                     rem=remainder_from_cache(old['cell'],cache)
+                     z=zeroth_from_cache(old['cell'],cache)
+-                    lower,_,_=select_lower(old['main'],rem,z,old['k_floor_raw'])
++                    lower,_,_=select_lower(old['main'],rem,z,old['k_floor_raw'],old['astra3_floor_raw'])
+                     choices.append(('delta',max(0,lower-old['total_lo_selected']),(boxes,cache),rem,z))
+         if can_outerrem:
+             # Same eight AD2 kernel calls per newly evaluated subbox as V3.
+@@ -290,10 +294,10 @@
+             rcache=[derivative_row(sub,old['cell']) for sub in lambda_tau_boxes(old['delta_boxes'],n)]
+             rnew=remainder_from_cache(old['cell'],rcache)
+             z=zeroth_from_cache(old['cell'],rcache)
+-            lower,_,_=select_lower(old['main'],rnew,z,old['k_floor_raw'])
++            lower,_,_=select_lower(old['main'],rnew,z,old['k_floor_raw'],old['astra3_floor_raw'])
+             choices.append(('outerrem',max(0,lower-old['total_lo_selected']),(n,rcache),rnew,z))
+         if can_inner:
+-            # Unlike V3's inner heuristic, use ACTUAL three-way selected
++            # Unlike V3's inner heuristic, use ACTUAL four-way selected
+             # lower bounds of both prospective children. These calculations
+             # are trials: cache their leaf structures if inner is chosen.
+             lc,rc=bisect(old['cell'],old['axis'])
+@@ -332,13 +336,13 @@
+           'initial_cells':grid_count() if mode=='full' else 1,
+           'initialization_seconds':state['initialization_seconds'],
+           'remainder_kernel_evaluation_calls':state['kernel_evaluation_calls'],
+-          'priority_rule':'V5.1: three-way selected gain; on gain<=0 use INNER when can_inner; heap scores as V5',
++          'priority_rule':'V5.2: four-way including ASTRA3; V5.1 zero-gain INNER fallback unchanged',
+           'split_counts':dict(zip('yptu',state['counts'])),
+           'main_lower':str(Q(state['main_lo'],S)),
+           'zeroth_lower':str(Q(state['zeroth_lo'],S)),
+           'remainder_lower':{x:str(Q(r,S)) for x,r in zip('yptu',state['rem_lo'])},
+           'total_lower':str(Q(state['total_lo'],S)),
+-          'total_lower_semantics':'sum max(midpoint.lower,K_floor.lower,zeroth.lower) per leaf; main/remainder/zeroth separately diagnostic', 'contact_loss_upper':str(loss),
++          'total_lower_semantics':'sum max(midpoint.lower,K_floor.lower,zeroth.lower,ASTRA3.lower) per leaf; other diagnostics separate', 'contact_loss_upper':str(loss),
+           'final_lower':str(value()),'seconds_this_invocation':time.monotonic()-t0,
+           'diagnostic_only':mode=='representative'}
+     # Keep every final inner leaf for an independent E1/Q-LB/L2 kernel audit.
+@@ -355,9 +359,10 @@
+                              'remainder':{a:interval_record(v) for a,v in zip('yptu',leaf['rem'])},
+                              'total':interval_record(leaf['total']),
+                              'k_floor_raw':str(leaf['k_floor_raw']),
++                             'astra3_floor_raw':str(leaf['astra3_floor_raw']),
+                              'selected_lower_raw':str(leaf['total_lo_selected']),
+                              'bound_source':leaf['bound_source']})
+-    leaf_data={'schema':'V6-B7-LEAVES-v2','scale_denominator':str(S),
++    leaf_data={'schema':'V6-B7-LEAVES-v3','scale_denominator':str(S),
+                'config':cfg,'status':status,'leaves':leaf_records,
+                'aggregate_raw':{'main_lower':str(state['main_lo']),
+                                 'zeroth_lower':str(state['zeroth_lo']),
+@@ -367,7 +372,7 @@
+     atomic(leaf_path,leaf_data,True)
+     data['leaf_file']=leaf_path.name
+     data['leaf_file_sha256']=hashlib.sha256(leaf_path.read_bytes()).hexdigest()
+-    data['leaf_schema']='V6-B7-LEAVES-v2'
++    data['leaf_schema']='V6-B7-LEAVES-v3'
+     atomic(result,data,True);ckpt.unlink(missing_ok=True)
+     return key,status,data['final_lower']
+ def main():

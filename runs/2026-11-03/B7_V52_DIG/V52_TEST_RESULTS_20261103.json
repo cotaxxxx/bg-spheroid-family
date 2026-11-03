@@ -1,0 +1,18 @@
+{
+  "B7_global": "OPEN",
+  "J_gain_exact": "10688000331619772861435045566471503/42535295865117307932921825928971026432",
+  "date": "2026-11-03",
+  "independent_implementation_audit": "PENDING",
+  "negative_loss_reduction_fraction_exact": "7125333554413181907623363710981002/28073202348541466309080567569586937",
+  "new_J_exact": "-62843606382384853204371611575817805/85070591730234615865843651857942052864",
+  "old_J_exact": "-84219607045624398927241702708760811/85070591730234615865843651857942052864",
+  "old_leaf_count": 8,
+  "recertified_checkpoint_matches_direct_v52": true,
+  "schema": "DIG-B7-V52-PRELIMINARY-TESTS-V1",
+  "unchanged_interval_records": true,
+  "v52_fingerprint": "985c3abe248d1f17de15ae6cc11b71987978662a97c8fb31e06da88ad34ae70d",
+  "v52_leaf_count": 8,
+  "v52_source_choice": {
+    "ASTRA3": 8
+  }
+}
