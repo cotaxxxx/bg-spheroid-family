@@ -1,0 +1,71 @@
+{
+  "bundle_target": "Complete bundle with two certificates",
+  "certificates": [
+    {
+      "files": [
+        {
+          "bytes": 2595,
+          "name": "L1_T1_D1_full.json",
+          "role": "result",
+          "sha256": "0a2e8529bc3dcd1abfcfa353a5b53fe9c9059ffe0437650d60d7a45589e4b6c8"
+        },
+        {
+          "bytes": 31484428,
+          "name": "L1_T1_D1_full.leaves.json.zst",
+          "role": "compressed_leaves",
+          "sha256": "8a87c2114a8dbb8bf599b73eee5ea3c437b3392cbb512797b562c82ef7771325"
+        },
+        {
+          "bytes": 2622,
+          "name": "L1_T1_D1_chat_v52_local_audit.txt",
+          "role": "local_pre_audit",
+          "sha256": "f393b6745edc06930f68ad53d44b4567fcca1998cb05bdfd9f04030a59f8cf11"
+        }
+      ],
+      "final_lower_exact": "57791338700666327798234427119899079565583228005087/1197793931562002839873969044007671873979659956026081280",
+      "independent_chat_file_audit": "PENDING",
+      "key": "L1_T1_D1",
+      "leaf_count": 91489,
+      "local_pre_audit": "ALL_CHECKS_PASS",
+      "producer_status": "PASS",
+      "raw_leaf_file_bytes": 178329011,
+      "raw_leaf_file_sha256": "12a448e5e3f23d5b9cb28f63436b03799228bdbd7190e1c101198b34db370751"
+    },
+    {
+      "files": [
+        {
+          "bytes": 2592,
+          "name": "L1_T2_D1_full.json",
+          "role": "result",
+          "sha256": "01fbf2603c5c9d4eda66f5a0da9c73ce39e1a0c9374cbbfdf5efb772c91dd3d1"
+        },
+        {
+          "bytes": 24322719,
+          "name": "L1_T2_D1_full.leaves.json.zst",
+          "role": "compressed_leaves",
+          "sha256": "5597e7148202e828981bb9acf5ebdb4c5257236f18c3a0b84855161a0becfefb"
+        },
+        {
+          "bytes": 2613,
+          "name": "L1_T2_D1_chat_v52_local_audit.txt",
+          "role": "local_pre_audit",
+          "sha256": "316d2e20f11ceba1a7836c3c0ff3a2a90d42c65cb25327dccfcdba3668f3c398"
+        }
+      ],
+      "final_lower_exact": "1544077122269797695469206363206525956061722061229/239558786312400567974793808801534374795931991205216256",
+      "independent_chat_file_audit": "PENDING",
+      "key": "L1_T2_D1",
+      "leaf_count": 71005,
+      "local_pre_audit": "ALL_CHECKS_PASS",
+      "producer_status": "PASS",
+      "raw_leaf_file_bytes": 138010176,
+      "raw_leaf_file_sha256": "711e618d72c31a197a3f600d919cfd9a89f70a310194ca4ad5a3d97eb6883a26"
+    }
+  ],
+  "created_at_jst": "2026-11-04",
+  "schema": "B7-V52-CERT-BATCH-v1",
+  "source": "/home/daybreak/B7_work/b7_v52/full_v52",
+  "state": "READY_FOR_INDEPENDENT_CHAT_AUDIT",
+  "v52_source_fingerprint": "985c3abe248d1f17de15ae6cc11b71987978662a97c8fb31e06da88ad34ae70d",
+  "warning": "New certificates remain provisional until independent chat environment audit."
+}

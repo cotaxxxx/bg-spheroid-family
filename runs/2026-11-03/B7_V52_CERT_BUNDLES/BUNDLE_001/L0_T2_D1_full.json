@@ -1,0 +1,73 @@
+{
+  "config": {
+    "KQ": "275/4",
+    "astra3_policy": "B3_CELL_8_4_2_GEOMETRIC_DELTA_RHO_G2_T2_WITH_NONNEGATIVE_CUTOFF",
+    "bound_policy": "max_midpoint_K_floor_zeroth_ASTRA3_outerrem_v52_rho_G2_T2",
+    "depth": 24,
+    "fingerprint": "985c3abe248d1f17de15ae6cc11b71987978662a97c8fb31e06da88ad34ae70d",
+    "grid_count": 20336,
+    "grid_far": false,
+    "key": "L0_T2_D1",
+    "limit": 150000,
+    "max_delta": 16,
+    "max_parts": [
+      2,
+      2,
+      4
+    ],
+    "max_rem_kernel_boxes": 32,
+    "max_rem_parts": 4,
+    "mode": "full",
+    "outer": [
+      [
+        "2/5",
+        "173/400"
+      ],
+      [
+        "15/16",
+        "31/32"
+      ],
+      [
+        "1/10000",
+        "1/100"
+      ]
+    ],
+    "p_cut": "1/2000000",
+    "sigma_cut": "4000000/4000000000001"
+  },
+  "contact_loss_upper": "237875000/4000000000001",
+  "delta_refinements": 1,
+  "diagnostic_only": false,
+  "evaluations": 169155,
+  "final_lower": "99741645962462067308639313662642296195956044729/2339441272582036796628845789077484128866523351613440",
+  "initial_cells": 20336,
+  "initialization_seconds": 462.19603201397695,
+  "leaf_file": "L0_T2_D1_full.leaves.json",
+  "leaf_file_sha256": "36301177ce92b4ba999c39b6e4b2b7549281b2db41d7ef298e3b0610b6c30a79",
+  "leaf_schema": "V6-B7-LEAVES-v3",
+  "leaves": 82947,
+  "main_evaluations": 265637,
+  "main_lower": "-6078213824231853088299432033782313140433/170141183460469231731687303715884105728",
+  "outer_refinements": 14649,
+  "outerrem_refinements": 8947,
+  "priority_rule": "V5.2: four-way including ASTRA3; V5.1 zero-gain INNER fallback unchanged",
+  "remainder_kernel_evaluation_calls": 20749376,
+  "remainder_lower": {
+    "p": "-15363955943510547805893686981612812503261765601432329/170141183460469231731687303715884105728",
+    "t": "-4695086908238977501289700482776352858861255219/340282366920938463463374607431768211456",
+    "u": "-292530035248001530004956827726759382384093857/340282366920938463463374607431768211456",
+    "y": "-251526276826671706650386974275982783190450021362089/170141183460469231731687303715884105728"
+  },
+  "seconds_this_invocation": 15083.747507869033,
+  "split_counts": {
+    "p": 22111,
+    "t": 17625,
+    "u": 15157,
+    "y": 7718
+  },
+  "splits": 62611,
+  "status": "PASS",
+  "total_lower": "8530903362186806100806463285149247/21267647932558653966460912964485513216",
+  "total_lower_semantics": "sum max(midpoint.lower,K_floor.lower,zeroth.lower,ASTRA3.lower) per leaf; other diagnostics separate",
+  "zeroth_lower": "-11235780160074892779685030824989132206989/85070591730234615865843651857942052864"
+}

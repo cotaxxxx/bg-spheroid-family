@@ -1,6 +1,36 @@
 {
-  "bundle_target": "combine with next PASS box on same branch",
+  "bundle_target": "Complete bundle with two certificates",
   "certificates": [
+    {
+      "files": [
+        {
+          "bytes": 2586,
+          "name": "L0_T2_D1_full.json",
+          "role": "result",
+          "sha256": "85223a753a0c437c34d0035fc94291050b0fd844eb8884e4af4b4ac58bb43297"
+        },
+        {
+          "bytes": 28531581,
+          "name": "L0_T2_D1_full.leaves.json.zst",
+          "role": "compressed_leaves",
+          "sha256": "302cad0c66a2b725acfdb7ce30b2da4c6f2b69b0e8c5b8036f706955b4025159"
+        },
+        {
+          "bytes": 2613,
+          "name": "L0_T2_D1_chat_v52_local_audit.txt",
+          "role": "local_pre_audit",
+          "sha256": "ec4624526a2aaeed232f2e2f9b7d65332a8fbf43c23b6a51391c771aee87e453"
+        }
+      ],
+      "final_lower_exact": "99741645962462067308639313662642296195956044729/2339441272582036796628845789077484128866523351613440",
+      "independent_chat_file_audit": "PENDING",
+      "key": "L0_T2_D1",
+      "leaf_count": 82947,
+      "local_pre_audit": "ALL_CHECKS_PASS",
+      "producer_status": "PASS",
+      "raw_leaf_file_bytes": 161224655,
+      "raw_leaf_file_sha256": "36301177ce92b4ba999c39b6e4b2b7549281b2db41d7ef298e3b0610b6c30a79"
+    },
     {
       "files": [
         {
@@ -23,7 +53,7 @@
         }
       ],
       "final_lower_exact": "14174817760699946970927483181556844143587963099207/37431060361312588746061532625239746061864373625815040",
-      "independent_chat_file_audit": "PENDING",
+      "independent_chat_file_audit": "PASS (Judge-reported 2026-11-03)",
       "key": "L0_T3_D1",
       "leaf_count": 63593,
       "local_pre_audit": "ALL_CHECKS_PASS",
@@ -35,7 +65,7 @@
   "created_at_jst": "2026-11-03",
   "schema": "B7-V52-CERT-BATCH-v1",
   "source": "/home/daybreak/B7_work/b7_v52/full_v52",
-  "state": "PARTIAL_BATCH_001_WAITING_FOR_MORE_PASS",
+  "state": "READY_FOR_INDEPENDENT_CHAT_AUDIT",
   "v52_source_fingerprint": "985c3abe248d1f17de15ae6cc11b71987978662a97c8fb31e06da88ad34ae70d",
   "warning": "No new formal PASS counted from this upload until independent chat file audit."
 }
