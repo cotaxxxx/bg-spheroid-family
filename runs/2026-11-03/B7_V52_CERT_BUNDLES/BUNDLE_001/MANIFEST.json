@@ -1,0 +1,41 @@
+{
+  "bundle_target": "combine with next PASS box on same branch",
+  "certificates": [
+    {
+      "files": [
+        {
+          "bytes": 2590,
+          "name": "L0_T3_D1_full.json",
+          "role": "result",
+          "sha256": "546c28ecf511e6dcf3e086ca80587d05487e33e5220917e2e4f0993e2e5ab4c5"
+        },
+        {
+          "bytes": 20023247,
+          "name": "L0_T3_D1_full.leaves.json.zst",
+          "role": "compressed_leaves",
+          "sha256": "cc2de40c0ab5c634015d0bbf70e4dd13b480c6a6ea91c6836e554e0296273efa"
+        },
+        {
+          "bytes": 2527,
+          "name": "L0_T3_D1_chat_v52_local_audit.txt",
+          "role": "local_pre_audit",
+          "sha256": "f91d89479cd209d24df0a5239899b6fefa3aba5b100d589189ccde6dcb262041"
+        }
+      ],
+      "final_lower_exact": "14174817760699946970927483181556844143587963099207/37431060361312588746061532625239746061864373625815040",
+      "independent_chat_file_audit": "PENDING",
+      "key": "L0_T3_D1",
+      "leaf_count": 63593,
+      "local_pre_audit": "ALL_CHECKS_PASS",
+      "producer_status": "PASS",
+      "raw_leaf_file_bytes": 122917692,
+      "raw_leaf_file_sha256": "3f80a336eded8e020d4a12f81a163e2677b68b3f0a5794fecb27bbacc90e79d6"
+    }
+  ],
+  "created_at_jst": "2026-11-03",
+  "schema": "B7-V52-CERT-BATCH-v1",
+  "source": "/home/daybreak/B7_work/b7_v52/full_v52",
+  "state": "PARTIAL_BATCH_001_WAITING_FOR_MORE_PASS",
+  "v52_source_fingerprint": "985c3abe248d1f17de15ae6cc11b71987978662a97c8fb31e06da88ad34ae70d",
+  "warning": "No new formal PASS counted from this upload until independent chat file audit."
+}
