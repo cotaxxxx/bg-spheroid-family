@@ -37,6 +37,8 @@ ap.add_argument('--auto-verify', action='store_true')
 ap.add_argument('--py', default=sys.executable, help='python used for the verifier (needs numpy)')
 ap.add_argument('--workers', type=int, default=4)
 ap.add_argument('--no-raw', action='store_true', help='table only (skip the raw-data dump)')
+ap.add_argument('--progress-log', default=None, help='old-style monitor.log to show running boxes (off by default; V5.3 progress: use b7_raw.py)')
+ap.add_argument('--min-mem-gib', type=float, default=6.0, help='auto-verify only if MemAvailable is at least this')
 args = ap.parse_args()
 WORK = os.path.abspath(os.path.expanduser(args.work))
 OUT = os.path.abspath(os.path.expanduser(args.dir or os.path.join(WORK, 'b7_v52', 'full_v52')))
@@ -158,7 +160,7 @@ def raw_dump(res):
     print('#' * W); print('RAW DATA')
     print('--- monitor.log (latest block, verbatim) ---')
     try:
-        txt = open(os.path.join(OUT, 'monitor.log'), errors='replace').read()
+        txt = open(args.progress_log or os.path.join(OUT, 'monitor.log'), errors='replace').read()
         i = txt.rfind('\n=====')
         print(txt[i + 1:] if i >= 0 else txt[-6000:])
     except FileNotFoundError:
@@ -181,21 +183,22 @@ def raw_dump(res):
     print('#' * W)
 
 def report():
-    series, last_t = parse_log(os.path.join(OUT, 'monitor.log'))
+    series, last_t = parse_log(args.progress_log) if args.progress_log else ({}, None)
     res = producer_results(); ivs = iv_status(); pr = procs(); tot, avail, swap = mem()
     if not args.no_raw: raw_dump(res)
     now = datetime.now()
     W = 104
-    print('=' * W)
+    print('=' * W, flush=True)
     print(f'B7 watch  {now:%Y-%m-%d %H:%M:%S}   producer {OUT}   verifier {IV}')
     print(f'processes: producer {pr["producer"]} workers {pr["workers"]} monitor {pr["monitor"]} memguard {pr["guard"]} '
           f'verifier {pr["verifier"]} | memory available {avail:.1f}/{tot:.1f} GiB, swap {swap:.2f} GiB'
-          + (f' | monitor.log {last_t:%H:%M} ({int((now - last_t).total_seconds() // 60)} min ago)' if last_t else ' | no monitor.log'))
+          + (f' | progress log {last_t:%H:%M} ({int((now - last_t).total_seconds() // 60)} min ago)' if last_t else ' | running-box progress: use b7_raw.py'))
     for g in glob.glob(os.path.join(WORK, '**', 'memguard*.log'), recursive=True):
         stops = [l for l in open(g, errors='replace').read().splitlines() if 'stop' in l.lower()]
         if stops: print(f'!! MEMGUARD STOP in {g}: {stops[-1]}')
     if last_t and (now - last_t).total_seconds() > 2.5 * 3600: print('!! monitor.log has not been updated for over 2.5 h')
     if pr['producer'] == 0: print('!! no producer process found')
+    if pr['verifier'] > 1: print('!! more than one verifier process is running')
     print('-' * W)
     print(f'{"box":10s} {"state":13s} {"leaves":>15s} {"J lower":>10s} {"final":>10s} {"final/h":>9s} {"ETA>0":>6s} {"ETAcap":>6s}  independent')
     running = []
@@ -229,21 +232,34 @@ def report():
     print('-' * W)
     prodpass = [k for k in ALL if k in res and res[k][0].get('status') == 'PASS']
     verified = [k for k in prodpass if k in ivs and ivs[k]['verdict'] == 'PASS'
-                and (not os.path.exists(res[k][1]) or ivs[k]['sha'] == sha256(res[k][1]))]
+                and os.path.exists(res[k][1]) and ivs[k]['sha'] == sha256(res[k][1])]
     pending = [k for k in prodpass if k not in verified]
     tried = [k for k in pending if k in ivs and os.path.exists(res[k][1]) and ivs[k]['sha'] == sha256(res[k][1])]
     if tried: print('!! verified this exact certificate but NOT PASS (chat to judge, no auto-retry):', ' '.join(tried))
     todo = [k for k in pending if k not in tried]
     bad_iv = [k for k in ivs if ivs[k]['verdict'] != 'PASS']
     notpass = [k for k in RUN_KEYS if k in res and res[k][0].get('status') not in ('PASS',)]
-    waiting = [k for k in RUN_KEYS if k not in res and k not in running]
-    print(f'B7 producer PASS {len(prodpass)}/40 | independently VERIFIED {len(verified)}/40 | running {len(running)} | waiting {len(waiting)}')
+    nofile = [k for k in prodpass if not os.path.exists(res[k][1])]
+    if nofile: print('!! PASS result without its leaf file (not counted):', ' '.join(nofile))
+    waiting = [k for k in RUN_KEYS if k not in res and k not in running] if args.progress_log else []
+    print(f'B7 producer PASS {len(prodpass)}/40 | independently VERIFIED {len(verified)}/40 | OPEN {40 - len(verified)}')
     if pending: print('PASS awaiting independent verification:', ' '.join(pending))
     if bad_iv: print('!! verifier logs not PASS:', ', '.join(f'{k}={ivs[k]["verdict"]}' for k in bad_iv))
     if notpass: print('!! producer NOT PASS (needs decision):', ', '.join(f'{k}={res[k][0].get("status")}' for k in notpass))
     if waiting: print('waiting (not started):', ' '.join(waiting))
     print('note: rates and ETAs are linear extrapolations; final-lower growth usually slows near the end.')
     return todo, res
+
+LOCK = None
+if args.auto_verify:
+    import fcntl
+    os.makedirs(IV, exist_ok=True)
+    LOCK = open(os.path.join(IV, '.b7_watch_autoverify.lock'), 'w')
+    try:
+        fcntl.flock(LOCK, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        sys.exit('another b7_watch --auto-verify is already running (lock held); not starting a second one')
+    LOCK.write(str(os.getpid())); LOCK.flush()
 
 while True:
     try:
@@ -257,6 +273,9 @@ while True:
                 actual = sha256(lp)
                 if declared and declared != actual:
                     print(f'   !! auto-verify {k}: SKIPPED, leaf file SHA {actual[:16]} != producer-declared {declared[:16]}'); continue
+                avail = mem()[1]
+                if avail < args.min_mem_gib:
+                    print(f'   auto-verify {k}: postponed, MemAvailable {avail:.1f} GiB < {args.min_mem_gib} GiB', flush=True); break
                 run_verifier(k, lp)
     except Exception as e:
         print('watch cycle failed:', type(e).__name__, e, flush=True)
