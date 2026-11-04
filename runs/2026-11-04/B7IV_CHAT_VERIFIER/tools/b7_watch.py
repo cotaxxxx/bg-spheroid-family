@@ -77,11 +77,13 @@ def parse_log(path):
             cur[5] = float(m.group(1)); series.setdefault(cur[0], []).append(tuple(cur[1:])); cur = None
     return series, t
 
-def producer_results():
+def producer_results(ivs=None):
     """key -> (result dict, leaves path).
-    A PASS certificate anywhere under WORK wins (latest PASS by mtime); otherwise only a result
-    in the current producer folder OUT is shown (older runs' non-PASS results are ignored)."""
-    passes = {}; current = {}
+    PASS certificates anywhere under WORK are candidates, but only those whose leaf file exists
+    (copies kept elsewhere, e.g. compressed archives in a publish repo, are ignored).  Among them,
+    the one whose leaf SHA equals the independently verified SHA is preferred; otherwise the latest.
+    Non-PASS results are shown only if they are in the current producer folder OUT."""
+    cands = {}; current = {}; nofile = {}
     for p in glob.glob(os.path.join(WORK, '**', '*_full.json'), recursive=True):
         if os.sep + 'b7iv' + os.sep in p: continue
         try: r = json.load(open(p))
@@ -91,11 +93,21 @@ def producer_results():
         lp = os.path.join(os.path.dirname(p), r.get('leaf_file') or os.path.basename(p)[:-5] + '.leaves.json')
         m = os.path.getmtime(p)
         if r.get('status') == 'PASS':
-            if k not in passes or m > passes[k][0]: passes[k] = (m, r, lp)
+            if os.path.exists(lp): cands.setdefault(k, []).append((m, r, lp))
+            else: nofile[k] = lp
         elif os.path.dirname(os.path.abspath(p)) == OUT:
             current[k] = (m, r, lp)
     out = {k: (v[1], v[2]) for k, v in current.items()}
-    out.update({k: (v[1], v[2]) for k, v in passes.items()})
+    for k, lst in cands.items():
+        lst.sort(key=lambda x: -x[0])
+        pick = lst[0]
+        want = (ivs or {}).get(k, {}).get('sha')
+        if want:
+            for c in lst:
+                d = c[1].get('leaf_file_sha256')
+                if (d == want) or (d is None and sha256(c[2]) == want): pick = c; break
+        out[k] = (pick[1], pick[2])
+    producer_results.nofile = {k: v for k, v in nofile.items() if k not in cands}
     return out
 
 def iv_status():
@@ -184,7 +196,7 @@ def raw_dump(res):
 
 def report():
     series, last_t = parse_log(args.progress_log) if args.progress_log else ({}, None)
-    res = producer_results(); ivs = iv_status(); pr = procs(); tot, avail, swap = mem()
+    ivs = iv_status(); res = producer_results(ivs); pr = procs(); tot, avail, swap = mem()
     if not args.no_raw: raw_dump(res)
     now = datetime.now()
     W = 104
@@ -239,8 +251,8 @@ def report():
     todo = [k for k in pending if k not in tried]
     bad_iv = [k for k in ivs if ivs[k]['verdict'] != 'PASS']
     notpass = [k for k in RUN_KEYS if k in res and res[k][0].get('status') not in ('PASS',)]
-    nofile = [k for k in prodpass if not os.path.exists(res[k][1])]
-    if nofile: print('!! PASS result without its leaf file (not counted):', ' '.join(nofile))
+    nf = getattr(producer_results, 'nofile', {})
+    if nf: print('!! PASS result found only as a copy without its leaf file (not counted):', ' '.join(sorted(nf)))
     waiting = [k for k in RUN_KEYS if k not in res and k not in running] if args.progress_log else []
     print(f'B7 producer PASS {len(prodpass)}/40 | independently VERIFIED {len(verified)}/40 | OPEN {40 - len(verified)}')
     if pending: print('PASS awaiting independent verification:', ' '.join(pending))
