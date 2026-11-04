@@ -1,0 +1,6 @@
+file ../ivdata/L0_T3_D1.leaves.json sha256 3f80a336eded8e020d4a12f81a163e2677b68b3f0a5794fecb27bbacc90e79d6 | key L0_T3_D1 | leaves 63593 | producer status PASS
+TILING PASS 127185 11.2s
+leaves evaluated 63593 | sources {'ZEROTH': 12231, 'ASTRA3': 12925, 'MIDPOINT': 38437} | 770s
+total (chat) = 3.770622694033e-02 | producer aggregate total = 1.721343143003e-03
+FINAL LOWER (chat) = 9.542343e-03  -> PASS
+per-leaf output ../ivdata/L0_T3_D1.chat_iv.jsonl

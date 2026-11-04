@@ -1,0 +1,10 @@
+PASS interval primitives enclose exact results (random, 6 ops) | violations=0
+PASS clamp constant CL < 4/25
+PASS 2/pi bracket (Machin, exact rationals) | 0.636619772367581
+PASS kernel point enclosure eps=1 | -1.56284532508005 in [-1.56284532508011, -1.56284532507998]
+PASS kernel point enclosure eps=-1 | -0.904464965943239 in [-0.904464965943282, -0.904464965943195]
+PASS kernel point enclosure eps=1 | 3.22053471766328 in [3.22053471766313, 3.22053471766341]
+PASS kernel point enclosure eps=-1 | 3.26384743985108 in [3.26384743985094, 3.26384743985122]
+PASS representation lam=0.42 tau=0.9 delta=0.2 | P1 1.2200916  B7 1.2200916
+PASS representation lam=0.45 tau=0.95 delta=0.05 | P1 1.1170579  B7 1.1170579
+ALL SELFTESTS PASS
