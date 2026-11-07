@@ -1,6 +1,6 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.35（2026-11-06。変更点：D5高λ帯chat監査原本をbyte-level検証してGitHub登録、D4のB_003とD5中心列の根拠を原本に更新。D4全体・D5一般域のOPENは維持。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
+版：v1.36（2026-11-07。変更点：D5 B′ v2 の外側境界面 r=1 で H≥1/5 を Judge 裁定 CLOSED として明記。カラー・一般域・D5 全体の OPEN、FT_q V4 未照合、B7 V5.3 凍結・V5.4 較正中を維持。経緯は git 履歴）。運用：**書き換え式**（追記しない。古い行は削除し、経緯は git 履歴に任せる）。上限 150 行。
 更新：ChatGPT 起草・push → chat が GitHub で照合。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
@@ -19,6 +19,7 @@
 - 扁平の主定理の窓：λ ∈ [2/5, 33/50]（λ_c^ob と λ_∂^ob の両事件を含む最小窓）。
 - 扁長の主定理の窓：**λ ∈ [2, 5]**（Judge 2026-10-10）。λ_∂^pro ∈ [2.06538, 2.06539]（Item 0 Stage 1）と a_c ∈ (4.72438340452113340672, …673)（局所証明書）を含み、左端は Item 0 の認証範囲（1≤λ≤2.06539）内、右端は a_c から 0.28 離れて非退化。tail λ→1⁺・λ→∞ は扱わない。
 - 予想で代替しない。すべての主張は証明書に基づく（closed world）。
+- B7：V5.3 は凍結（24/40、STOPPED_LOW_MEMORY・workers=0）、V5.4 は数学設計ACCEPT後の producer 較正中（D3 16³段階Aは閾値未達）。D3・D5全体の CLOSED と混同しない。
 - λ 規約：a₁=a₂=λ^(−1/3)、a₃=λ^(2/3)。λ<1 扁平、λ=1 球、λ>1 扁長。回転軸は z。
 - 論文の主役は停留構造。分岐はその λ 変化、認証は方法。
 - D-OB の内部（L1）は Form II（一様下界）を目標とする。ROUTE は δ_L1 確定まで UNDETERMINED。
@@ -36,7 +37,7 @@
 | D2 | 極 corner 内部 L1 | O1 CLOSED（P1 条件付き）。O2：v1・v1.1-r1（O2-A3）FROZEN、P0–P1 ADOPTED。R1＝FAIL-CLOSED（項ごとの絶対値上界が成功条件の約 3×10⁶ 倍）。**R2 枠組み FROZEN**（Judge 2026-10-10、v0＋v0-r1 差分）：M_+ を (λ,τ,r) の閉箱（r=1・τ=1 を含む）ごとに符号付き積分下界・有理包囲・Bernstein で直接認証、全箱共通の h_*>0（P 単位）。補題 R2-L1：D²≥(a−|ξ|)²+(λμ−z)²。t 積分の許容方式 R2-T1（τ≤τ₁、正確な割線）／R2-T2（τ≥τ₁、ξ=0 展開、g⁽⁴⁾ が必要）。L1 は Route K／Route B の二経路比較（10/17 Judge、`bd041c0`）。10/24 期限の比較報告は未提出。10/31 CLOSED は保証なし | pin：basepoint-geometry `chatgpt/d-p2-o1-predeclare-v1-20261009` commit `fbadfc4d`（R2 v0 `764c1860…e8be`、v0-r1 差分 `957b7d00…6aa`、v1.1-r1 `7dcbd6d6…12c5`、P2 v1-r1 `3f0fcdb3…6b5d`、chat が GitHub 上で照合済み） | P2-b（R2 の実行事前宣言：箱・セル数・近似次数・誤差予算・τ₁・g の包み・工数見積り）→ 監査 → FREEZE → 実行 → 独立検証 → O3 → O4–O6 | ChatGPT |
 | D3 | L3–L1 接続 | UNDETERMINED | 仕様 v1 `ecd31446` | D2 に従う | — |
 | D4 | D5 V3委譲の閉箱 B_003＝(0,0,3)、r,τ∈[0,1/8]、λ∈[119/200,33/50]（r=0・端点を含む）。旧3,584 unresolvedは歴史的診断サブセット | **B_003全域の被覆はCLOSED（P1前提つき）**：chat独立監査PASS・Judge条件付きCLOSED（監査原本登録済み）。高λ帯中心列（r≤1/8、τ∈[0,1]、λ∈[119/200,33/50]）はB_003を完全に含み、ρ²+(z/λ)²=r²≤1/64。**D4工程全体の無条件CLOSEDは宣言しない。**監査原本SHA-256 `7eae9f035cac17f806cbdef372f49c68d372918d469d6ec769fa6756459249c4` は実ファイルから一致確認済み | `cotaxxxx/bg-oblate-spheroid` `design/d-ob-p2`：原本 `analysis/D5_CENTER_HILAM_20261106/CHAT_AUDIT_D5_CENTER_HILAM_20261106.md`（commit `24c6c8b5c4b59573fea29033eac6bc237b53ab0d`、blob `d0b3cb6ba322e1aeb70dbfb96565d5bdec9ff5e8`）、同README／D5 SPEC V3 §0。Dig受領記録は歴史資料 | 監査原本のbyte-level登録とchat被覆照合は完了。P1継承・D4工程の統合記録を確認。B_003被覆をD4全体閉鎖と取り違えない | Dig / chat / Judge |
-| D5 | 一般域（区間認証本走） | **中心列 r≤1/8、τ∈[0,1]、λ∈[2/5,33/50]：chat監査PASS・Judge条件付きCLOSED（P1前提、原本登録済み）**。一般域V3はABORTED / NOT_EVIDENCE（10/18）・V4再設計中、254箱の完走ではない。43,654 unresolvedは診断資料 | `cotaxxxx/bg-oblate-spheroid` `design/d-ob-p2`：監査原本 `analysis/D5_CENTER_HILAM_20261106/CHAT_AUDIT_D5_CENTER_HILAM_20261106.md`（commit `24c6c8b5c4b59573fea29033eac6bc237b53ab0d`）・README（Dig受領記録は歴史資料）、旧V3停止記録 `analysis/D5_V3_RUN_ABORT_RECORD_2026-10-18.md`。正規化被覆SHA-256（登録済みchat監査原本の記載）M40′ `8bd4725fe89408f35796607db6d3cb4c1ca384a61e1567327d946e93b780be07`／M22′ `8886d04376b60172df71502ce4c2cbabc7c2cd498f15e1c1b4a4aeda2c55446a`。監査原本SHA-256 `7eae9f035cac17f806cbdef372f49c68d372918d469d6ec769fa6756459249c4`（実ファイル照合済み） | 監査原本・完全SHA登録照合済み。一般域境界A9/B2・V4事前宣言→chat監査→Judge。V3 resumeおよび全域本走は未承認 | Dig / Code / Astra / chat |
+| D5 | 一般域（区間認証本走） | **B′ v2 外側境界面 r=1 は CLOSED（Judge 2026-11-07、面の定理 H≥1/5、m_∂=1/5、τ∈[0,1]、λ∈[2/5,33/50]）。** 832/832 両系統・Muse監査PASS・chat再計算20/20分数一致。最小値は verifier +0.3204609366、producer +0.2642053359。**面内側のカラーと一般域は OPEN、D5全体は OPEN、FT_q V4との照合は OPEN。** **中心列 r≤1/8、τ∈[0,1]、λ∈[2/5,33/50]：chat監査PASS・Judge条件付きCLOSED（P1前提、原本登録済み）**。一般域V3はABORTED / NOT_EVIDENCE（10/18）・V4再設計中、254箱の完走ではない。43,654 unresolvedは診断資料 | **B′ v2採用証拠**：cotaxxxx/bg-oblate-spheroid の design/d-ob-p2、analysis/D5_BPRIME_V2_20261107/（commit 8da3174f847fd4e9fd58ceaf1cd613b66b72fde4。chat検収 SHA-256 f0b11a64925089142a713bba0ab96181415d6a6bfa06b446d2d9d30ac35a480c、Muse原本 SHA-256 7e5997a059abfc92061514c6d4d90bfa3a93365ee5b3e5286c10ad5d85dbb033、証拠ZIP SHA-256 027f42f0140144bfaf90eec958d05b7e5b8ac24f81e995ef316bec2fe8a99b81）。 `cotaxxxx/bg-oblate-spheroid` `design/d-ob-p2`：監査原本 `analysis/D5_CENTER_HILAM_20261106/CHAT_AUDIT_D5_CENTER_HILAM_20261106.md`（commit `24c6c8b5c4b59573fea29033eac6bc237b53ab0d`）・README（Dig受領記録は歴史資料）、旧V3停止記録 `analysis/D5_V3_RUN_ABORT_RECORD_2026-10-18.md`。正規化被覆SHA-256（登録済みchat監査原本の記載）M40′ `8bd4725fe89408f35796607db6d3cb4c1ca384a61e1567327d946e93b780be07`／M22′ `8886d04376b60172df71502ce4c2cbabc7c2cd498f15e1c1b4a4aeda2c55446a`。監査原本SHA-256 `7eae9f035cac17f806cbdef372f49c68d372918d469d6ec769fa6756459249c4`（実ファイル照合済み） | B′面の内側カラー設計は B7 V5.4 の結果確認後（仕様§6）。監査原本・完全SHA登録照合済み。一般域境界A9/B2・V4事前宣言→chat監査→Judge。V3 resumeおよび全域本走は未承認 | Dig / Code / Astra / chat |
 | D6 | 外部監査（P1 Lemma V、C 側 5 件） | 未送付 | — | 監査一式の送付、または付録に全証明 | ユーザー |
 
 ### 扁長（D-PRO）
