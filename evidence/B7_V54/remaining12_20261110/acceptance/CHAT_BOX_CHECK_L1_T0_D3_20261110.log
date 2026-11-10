@@ -1,0 +1,10 @@
+sha256 dc65bda9dc469f970bf96e4d0c5cc18737310dc52e8dea7c1f3213bc3eb7cbad ../L1_T0_D3/stageB_cells.json
+sha256 ce086e56565d9675fa901f43548261c9489c0b34cabc5d6d0c83fca2efed277c ../L1_T0_D3/near_leaves.json
+sha256 4f6f8115191786ed9c04b9141d13437156b55fd5205a6e45297c8807fff1e660 ../L1_T0_D3/L1_T0_D3_midfar.jsonl.gz
+sha256 724d29f114f9261746d8f38157f030438d2e4c5eba51c149e75bee6906137fde ../L1_T0_D3/L1_T0_D3_near_per_r.json
+sha256 24099aaadd69c3d588ef3374caac4fe9854c2b0159ee605f6e7d7c025a6d9c46 ../L1_T0_D3/L1_T0_D3_final.json
+(1) tiling mid+far True 41097 | near True 39999
+(2) recombination: cells in order True | min r 8 | J 1.4488409603 | H 0.3988571093 | equals FINAL True
+(3) sample 20 cells x 16 r: mismatches 0
+(4) near band r=8 recomputed -0.6280322408 | equals NEAR_PER_R True
+BOX CHECK L1_T0_D3 PASS | H lower 0.3988571093
