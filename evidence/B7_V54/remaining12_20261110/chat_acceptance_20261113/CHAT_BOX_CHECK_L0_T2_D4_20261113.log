@@ -1,0 +1,10 @@
+sha256 dc65bda9dc469f970bf96e4d0c5cc18737310dc52e8dea7c1f3213bc3eb7cbad /tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/b7rem/L0_T2_D4/stageB_cells.json
+sha256 2a28351f1b06fcf04bdf6c4901704323083edb346e1dd9c1917a799d23d34ac4 /tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/b7rem/L0_T2_D4/near_leaves.json
+sha256 d2f99ce918d3e1fe2f79ca02db3994d783bdc36c25ca0ae1babdad2d4aeb1eec /tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/b7rem/L0_T2_D4/L0_T2_D4_midfar.jsonl.gz
+sha256 90630aa2e4baf8a5b21327d9e469a64fc0f20df4e9bef45713cf55fd20c6d494 /tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/b7rem/L0_T2_D4/L0_T2_D4_near_per_r.json
+sha256 3cdd2288c5ca4f161ab4fc53c92714ccd7f8c36d78c6b2471fc5a9a61d0a70ad /tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/b7rem/L0_T2_D4/L0_T2_D4_final.json
+(1) tiling mid+far True 41097 | near True 39999
+(2) recombination: cells in order True | min r 8 | J 2.6650801598 | H 0.6785976207 | equals FINAL True
+(3) sample 20 cells x 16 r: mismatches 0
+(4) near band r=8 recomputed -0.0046934068 | equals NEAR_PER_R True
+BOX CHECK L0_T2_D4 PASS | H lower 0.6785976207
