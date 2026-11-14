@@ -1,0 +1,3 @@
+G'=-2R: True
+§3.4 F_vv = -4 h_v R g_v - 2 h R_g g_v^2 - 2 h R g_vv (6 random exact-input points, |diff|<1e-25): True
+§3.4 symbolic: True

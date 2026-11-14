@@ -1,0 +1,30 @@
+PASS S2_h=lam q
+PASS S2_w2
+PASS S2_D2=q d
+PASS S3-4_A,B_closed_forms (21 pts x2, 45 digits)
+PASS S3_(3.2)_and_C
+PASS S5_Pq
+PASS S5_Pq_lower
+PASS S5_1+6y-4y^2>0 on y-range
+PASS S5_P(0)
+PASS S5_P(1/8)
+PASS S5_P(1/4)
+PASS S5_(5.3)
+PASS S6_y^2 coeff <=0 on [0,2]
+PASS S6_Bernstein_table_exact_and_positive
+PASS S7_(7.1)=2053/12000
+PASS S7_sqrt_lower
+PASS S7_2^(5/2)<6
+PASS S7_(7.2)
+PASS S8_d_lower
+PASS S8_(8.2)
+PASS S8_sqrt_rationals
+PASS S8_(8.3)
+PASS S8_(8.4)
+PASS S8_(8.5)
+PASS S8_pi/2<11/7
+PASS S9_(9.1)
+PASS S9_(9.3)_normalization
+PASS S9_endpoint_13/2000
+ALL_PASS True
+DIAGNOSTIC E_rhorho(0,0.4) via NP-T kernel = 1.1475876324149725087  (face chain H_fold at tau=1: 1.147587632)

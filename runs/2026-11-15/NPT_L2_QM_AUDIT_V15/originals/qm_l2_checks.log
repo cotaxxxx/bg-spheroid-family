@@ -1,0 +1,20 @@
+DIAGNOSTIC max |F_uvs| D^2 / C3 over 24 random configs = 0.00055658
+PASS QM1_3.1_ODE
+PASS QM1_3.1_bound
+PASS QM1_3.2_series_coeffs
+PASS QM1_3.2_bounds
+PASS QM1_3.2_chain
+PASS QM1_5_Duv_closed_form (24 pts)
+PASS QM1_5-6_bounds D_uvs<=3/D^2, gamma_u<=2/D, gamma_uv<=5/D^2, gamma_uvs<=24/D^3 (24 pts)
+PASS QM1_7_|F_uvs|D^2<=C3 (24 pts)
+PASS QM1_7_constant
+PASS QM_3.1
+PASS QM_5.2
+PASS QM_6.1_layer
+PASS QM_7.3
+PASS QM_9.1
+PASS QM_9.2_log2>1/2
+PASS QM_10.1
+PASS L2_3.1_h,D invariant under (rho,b)->(-rho,-b)
+PASS L2_3.3_chain
+ALL_PASS True

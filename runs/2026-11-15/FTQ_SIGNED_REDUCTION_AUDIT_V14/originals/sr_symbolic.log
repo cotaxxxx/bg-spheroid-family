@@ -1,0 +1,23 @@
+PASS A_generic_Fyy
+PASS B1_D2=sigma2J
+PASS B2_h=lam*sigma2/2
+PASS B3_unit_sphere_Q
+PASS B4_w2
+PASS B5_xi_y=sigma*nu_y
+PASS B6_e=gT(1-2J)
+PASS B7_boundary_kernel
+PASS C1_R=2int1/A,_R'=-2int c/A^2 (40 digits, 7 gammas)
+PASS C2_dA/dgamma=c
+PASS C3_common_t_integrand
+PASS D1_Bcal=K*F_V3 with n=nu_y^2/J
+PASS D2_(lam/2)WB=gamma F/(K A^2)
+PASS D3_V3_map_consistency
+PASS E1_omega([0,1/2])=1/6
+PASS E2_omega([1/2,1])=1/3
+PASS E3_prefactor=lam/2
+PASS E4_cell_weights_1/192_1/96
+PASS E5_total_mass_2 (P=1)
+PASS E6_continuous_mass_2
+ALL_PASS True
+
+[exited with code 0]

@@ -1,0 +1,12 @@
+§1 nu parallel to grad: True  |nu|=1: True
+§1 |x_mu x x_phi|^2 = w^2: True
+§1 h = lam(1-rho a cos phi) - z mu: True
+§3.2 f(0)= 0  f(pi/2)= 0  f'=sin*(3 sin cos - alpha): True
+§3.2 numeric min of f on (0,pi/2]: 9.618353468608949e-17
+§3.2 Rgamma at alpha->0: -1/3  at pi/2: -1
+§3.3 gamma_v formula: True  gamma_vv formula: True
+§3.4 C2 term sum 4pi+8+5pi = 9pi+8: True
+§3.3 D_vv=(|v|^2-D_v^2)/D: True
+§4.2 4pi s0+M/s0 at s0=sqrt(M/4pi) = 2 sqrt(4piM): True  optimal: [sqrt(M)/(2*sqrt(pi))]
+§4.2 at M=4pi -> 8pi: True
+§1 axis h = lam(1-t mu) at rho=0,z=lam t: True
