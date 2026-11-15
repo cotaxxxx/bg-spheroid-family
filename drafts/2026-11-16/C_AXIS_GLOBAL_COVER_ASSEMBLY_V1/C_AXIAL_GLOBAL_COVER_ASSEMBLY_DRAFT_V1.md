@@ -1,9 +1,9 @@
-# 軸上C系列・大域被覆の組み立て v1
+# 軸上C系列・大域被覆の組み立て v1.1（B1〜B3 文言修正）
 
-**状態：DRAFT / A1 chat監査待ち / GLOBAL C ASSEMBLY NOT JUDGE-CLOSED**
+**状態：C-AXIS-V1 Judge V23 CLOSED／A1移送・組み立てv1 chat監査PASS／v1.1文言差分監査待ち**
 
 2026-11-16 / Dig / v0 `9f897781` の chat V22 `680eda06`（A1〜A5）への対応案。
-本書は **Cの大域根数の定理と根拠の論理鎖を提示する原案**であり、独立監査やJudgeの大域裁定を先取りしない。既存の数値本走を再実行していない。
+本書はC-AXIS-V1（v1 commit `aab1d06`、chat V23監査PASS、Judge CLOSED）の数学的主張を変えず、B1〜B3の文言のみ整備したv1.1である。追加の数値本走はない。
 
 ## 0. 組み立てる主張と記号
 
@@ -26,11 +26,11 @@ N_+(lambda) = #{ t∈(0,1) : g(t,lambda)=0 }.
 ```
 これは正本の中心軸係数Judge receipt、C1a receipt の報告用有理区間、B_ob再認証とband receiptから得るもの。
 `lambda_c`、`lambda_x`、`lambda_partial` は相互に別のパラメータである。
-なお `lambda_x` の端点区間は根数のPASS条件ではなく、実行済みC1aの別途認証された報告用区間である。
+**B1：** C1aの細分二分による区間精密化は報告用だが、端点での符号 `F_x(699/1600)<0` と `F_x(281/640)>0` はJudge裁定E3により空白①のgating inputsへ採用済みであり、§2区分4〜6のX/Rの根数に使う。端点符号まで「根数のPASS条件ではない」とは扱わない。
 
-### 提出する大域結論（条件付き組み立て定理）
+### 採用済み大域結論（C-AXIS-V1）
 
-**定理 C-AXIS-V1（chat監査・A1受理を前提とする案）。**
+**定理 C-AXIS-V1（Judge V23採用／CLOSED）。**
 既存のC0・C1a〜d・境界band・空白①②のJudge/機械受理結果、
 V13/V19/V20の解析補題、および本稿A1移送が正当ならば、
 ```text
@@ -44,9 +44,7 @@ N_+(lambda) =
 `lambda=lambda_x` の唯一の正根はちょうど `t=1/2` で、二重に数えない。
 奇性により負の内部軸根は正の根と対をなす（§5）。
 
-**制限：** 本稿は上記の部品の条件と境界をつないだ論理的な導出案であり、
-球／扁長の主定理や横断D系列の結論を新たに主張しない。
-A1はまだchat監査未通過であり、本稿自身のglobal C判定は **OPEN** とする。
+**制限：** 本稿は採用済みの軸上C系列の結論を記録する。球・扁長・横断D系列との接続、およびD-OB全体の大域CLOSEDは今回の裁定対象外。A1はV23のchat監査でPASSした。
 
 ## 1. 解析的な橋（A1を正本に追加する）
 
@@ -56,7 +54,7 @@ A1はまだchat監査未通過であり、本稿自身のglobal C判定は **OPE
 
 - draft commit `473d7022ba10f91bcd8c731566908c6541a00c12`
 - file blob `b8370d649bac0bbe943186eb003b6b0e837a3dd6`
-- branch `draft/c1a-lower-half-transfer-20261116`、chat監査待ち
+- branch `draft/c1a-lower-half-transfer-20261116`、**chat V23 PASS**
 - source `OBLATE_AXIAL_LOWER_HALF_ANALYTIC_LEMMA.md` blob `6fba6e4f`
 - same method `OBLATE_AXIAL_LOWER_HALF_LEMMA_C0_TRANSFER.md`（commit `963b03be`, blob `0ab17896`）
 
@@ -68,7 +66,7 @@ q >= 6889/160000,  w >= 83/200,
 ```
 これにより原補題の Lemmas 3,4,5,6,8,9,10 が同じ議論で移り、
 Lemmas 1,2,7,11,14–17, Proposition 12, Corollaries 13,18 の
-依存条件が満たされる（数学的検査はchatに依頼中）。
+依存条件が満たされる（chat V23 §1で独立監査PASS）。
 結果として `g=t Phi(t²,lambda)`、`Phi(0,lambda)=H_axis(lambda)` と
 ```text
 partial_tau Phi(tau,lambda)
@@ -77,12 +75,12 @@ partial_tau Phi(tau,lambda)
 が `0<=tau<=1/4` で使える。
 C1a Gate A は `partial_t³g<0` on `[0,1/2]×[83/200,9/20]` なので
 `partial_tau Phi<0`、従って `Phi` は `tau` について狭義減少する。
-この一歩がv0では欠落していた。**既存C1a機械の三階微分符号を新たに計算しない。**
+この一歩がv0では欠落していた。**B3：機械量の同定**はC1契約§3 C1a.1による。C1a門AはC0aの四群核をλ箱だけ変えて用い、原補題§3.6とProposition 12で `partial_t³g` に一致する。端点門L/Rの量はLemma 11による `g(1/2,lambda)` であり、Lemma 14により `F_x=Phi(1/4)=2g(1/2,lambda)`。**C1a機械の符号は新規再計算しない。**
 
 他の範囲は既存のC0移送（`[2/5,83/200]`）、
 C1c補題（`[9/20,5/8]`）、
 C1d補題（`[5/8,33/50]`, `|t|<=31/32`）による。
-V20によるC0/C1c/C1dのchat監査と、A1新規の監査待ちを混同しない。
+C0/C1c/C1dはV20、A1はV23でchat監査PASS（外部人間監査とは別）。
 
 ## 2. λの10区分と根数の論証（A2）
 
@@ -130,7 +128,7 @@ run4 producer/checker `160/160` PASS、Judge CONDITIONAL_CLOSED。
 | **X** | `[83/200,703/1600]`・78 | ROOT_COUNT_BY_C1A_SIGN_NO_T_STAR。C1a門 Dの `F_x` 単調、`F_x(lambda_x)=0` を採用。凍結門の `G_t<0` on `[1/2,5/8]`、`g<0` on `[5/8,31/32]` と端点門を連結し、`g(1/2)` の符号で上側根0または1を決める |
 | **R** | `[703/1600,9/20]`・34 | RESOLVED_WITH_CERTIFIED_T_STAR。`t_-<t_+, g(t_-)>0, ∂_tg<0` in tube、右側負を検証し、`(1/2,1)` の根を一意に特定する |
 
-`lambda=83/200` はv9.1 §1.1でX側owner、L側は一致確認。
+**B2：ownerの二義。** §2の正の根数の区分では `lambda=83/200` は区分3が担当する。一方、空白①のslabの所有者はv9.1 §11.1でXと定められ、L側は一致照合のみである。目的が異なる割当で矛盾しない。どちらも `g(1/2,83/200)<0` で上半分の根は0個とする。
 `lambda=703/1600` は同じ一意根のX/R共有境界。
 `lambda=9/20` はC1b側owner。C1aの符号を空白①のXへ流すのは
 Judge v7規則E3とv9.1 §0–1によるもので、**根数を単なるslab数から推論しない**。
@@ -200,7 +198,7 @@ t境界 `0,1/2,31/32,1` を区切りとして、
 この機械的な有理端点チェックは符号・根数・枝の同一性を検査しない。
 C1b内側の全159区画の閉被覆はV22（両系統）、
 空白②の124親の門とR/R_MONOはV21の独立検収が根拠である。
-§2の論理鎖には**新A1移送のchat監査**を要する。
+§2の論理鎖で使う**A1移送はV23でchat監査PASS**となった。
 
 ## 7. 出典の番号と証拠ピン
 
@@ -213,8 +211,8 @@ C1b内側の全159区画の閉被覆はV22（両系統）、
 |---|---|---|
 | CENTER | `analysis/CENTER_AXIS_COEFFICIENT_JUDGE_RECEIPT.md` §Scoped claim（`∂_λH>0`, `lambda_c`） | Judge PASS within scope |
 | C0 | `analysis/GLOBAL_AXIAL_C0_JUDGE_RECEIPT.md` C0a・C0b、および `analysis/CENTER_PITCHFORK_RELATION_TO_C0.md` | Judge PASS conditional on lower-half lemmas; V20のC0移送chat PASS |
-| C1a | `analysis/GLOBAL_AXIAL_C1A_MACHINE_RECEIPT.md` §Logical C1a gate A,D,L,R、§Reported certified crossing bracket | MACHINE PASS。区分4〜6へのA1移送は未監査 |
-| A1 | **新規** `analysis/OBLATE_AXIAL_LOWER_HALF_LEMMA_C1A_TRANSFER.md` draft commit `473d7022ba10f91bcd8c731566908c6541a00c12` blob `b8370d649bac0bbe943186eb003b6b0e837a3dd6` | **DRAFT / chat監査待ち** |
+| C1a | `analysis/GLOBAL_AXIAL_C1A_MACHINE_RECEIPT.md` §Logical C1a gate A,D,L,R、§Reported certified crossing bracket | MACHINE PASS。区分4〜6のA1移送はV23でchat監査PASS、C1契約§3 C1a.1の機械量同定を確認 |
+| A1 | **新規** `analysis/OBLATE_AXIAL_LOWER_HALF_LEMMA_C1A_TRANSFER.md` draft commit `473d7022ba10f91bcd8c731566908c6541a00c12` blob `b8370d649bac0bbe943186eb003b6b0e837a3dd6` | **V23 chat監査PASS（七つのλ依存補題＋範囲非依存部）** |
 | C1b | `analysis/GLOBAL_AXIAL_C1B_MACHINE_RECEIPT.md` §§5.2,6、sealed159区画 | MACHINE CLOSED、空白②Judge V21が上側を補完 |
 | C1c | `analysis/GLOBAL_AXIAL_C1C_ANALYTIC_ASSEMBLY.md` §§F1–F3,L、§§4–5 | 構成根拠、解析補題V20 chat PASS |
 | C1d | `analysis/GLOBAL_AXIAL_C1D_MACHINE_RECEIPT.md` §1、`analysis/GLOBAL_AXIAL_C1D_ANALYTIC_ASSEMBLY.md` §§F1–F3,L | 組み立て根拠、解析補題V20 chat PASS |
@@ -225,12 +223,6 @@ C1b内側の全159区画の閉被覆はV22（両系統）、
 | D6 | family chat監査 V13、V19、V20（V20 `fc9e48e`）、C1c blob `6fba6e4f`、C0移送 `963b03be`、C1d `35656381` | chat監査PASS、外部人間監査とは区別 |
 | V22 | family `evidence/c-gap2-freeze-20261115` commit `680eda0`、`CHAT_AUDIT_C_AXIAL_ASSEMBLY_V0_20261116.md`、ZIP SHA256 `e96412f6a6e256d343df47bbc953b2915a68ce9c61944f4c8c29f0a859c67e18` | v0監査、A1〜A5を要求、C1b内部被覆独立検算PASS |
 
-## 8. 独立監査・Judgeへの境界
+## 8. V23の監査・Judge CLOSEDとv1.1差分
 
-chatはまずA1の七補題を監査し、続いて本稿§2の各区分の
-下側／上側の符号・閉端点・X/R境界・`lambda=5/8`・奇性の
-論理接続を受領書の番号と突き合わせる。A1や他部品の未充足が
-見つかれば、v1はOPENを維持し、必要な修正を特定する。
-
-**本稿v1の提出はglobal CのJudge CLOSEDを意味しない。**
-chatの独立監査PASS後にのみ、Judgeに大域軸根数の採否を裁定していただく。
+chat V23（family `evidence/c-gap2-freeze-20261115` commit `434c700`）はA1移送と組み立てv1をPASSとした。Judge裁定原本 `JUDGE_RULING_C_AXIAL_GLOBAL_CLOSED_20261116.md` は定理C-AXIS-V1をCLOSEDとする。本書v1.1の変更はB1〜B3の出典・owner・状態表示だけであり、数学の鎖や根数の定理を変更しない。chatは差分のみを検査する。数学の変更がある場合はJudgeへ戻す。**D-OB globalのCLOSEDはこの裁定に含まれず、C/D接続の別文書・chat監査・別Judge裁定を要する。**
