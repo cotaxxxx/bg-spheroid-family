@@ -1,0 +1,6 @@
+TILING_RATIONAL_GRID_PASS
+STATUS: DRAFT, NOT_EVIDENCE, NOT_CLOSED
+Lambda stripes: 4; t stripes: 3; interior cells: 12
+Boundary+interior representative assertions: 54
+Gap1 lambda right endpoint: OPEN; C1b left endpoint: CLOSED
+Mathematical signs, root counts, and gluing: NOT TESTED
