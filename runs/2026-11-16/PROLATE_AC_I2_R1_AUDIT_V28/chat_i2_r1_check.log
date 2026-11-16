@@ -1,0 +1,14 @@
+PASS c0 = 1/(n sqrt S)
+PASS c1 = (gamma/S - beta)/(n sqrt S)
+PASS c2 = (-1/S + 3gamma^2/S^2 - 2 beta gamma/S)/(n sqrt S)
+PASS G2 = A2 c1^2 + A1 c2 - 2 beta A1 c1 (vs direct d2/dt2 of B*acos^2(c)), exact rationals, 60 digits :: 0
+PASS equatorial: B = 1 - beta t and D^2 = S - 2 gamma t + t^2
+PASS axial: B = 1 - beta t and D^2 = S - 2 gamma t + t^2
+PASS n^2 = 1 - w^2 + w^2/lam^2 = |N|^2 on sphere
+PASS arccos c = 2 arcsin sqrt((1-c)/2)
+PASS R1 Q(4.7) == first lineage 0.0023224244930128758(2) :: 0.0023224244930128758
+PASS R1 Q_z(4.7) == chat brute force 0.09532685683 :: 0.0953268568276
+PASS R1 Q_z(4.7) inside first-lineage enclosure on [4.7,4.71] [0.09025,0.09994]
+PASS R1 H4(4.7) inside first-lineage enclosure on [4.7,4.71] [-1.4967,-1.3925] :: -1.44616400242
+PASS R1 Q'(4.7) (= d/dlam of R1 Q) inside first-lineage enclosure [-0.10544,-0.08574] :: -0.09585714596
+SUMMARY 13/13 PASS
