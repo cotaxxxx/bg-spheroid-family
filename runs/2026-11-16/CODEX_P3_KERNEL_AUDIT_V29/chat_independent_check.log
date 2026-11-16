@@ -1,0 +1,10 @@
+lam=3 rho=1/2 z=1/2: Ez_ref=0.1157637251 in [0.078575337,0.15295873] True ; Ezz_ref=0.2241996021 in [-0.074943128,0.52633039] True
+lam=47/10 rho=1/4 z=3/2: Ez_ref=0.1347518615 in [0.052472443,0.21707594] True ; Ezz_ref=0.07997141241 in [-0.41774631,0.57357441] True
+lam=2 rho=3/5 z=1/5: Ez_ref=0.09284223298 in [0.073056036,0.11263166] True ; Ezz_ref=0.4579528418 in [0.29863634,0.61850069] True
+V_box_lower = 0.05686918437
+  point V_ref=0.1627260712 >= lower 0.056869184: True
+  point V_ref=0.1629835595 >= lower 0.056869184: True
+  point V_ref=0.1632741805 >= lower 0.056869184: True
+  point V_ref=0.1629747772 >= lower 0.056869184: True
+SUMMARY ALL_PASS
+rc=0
