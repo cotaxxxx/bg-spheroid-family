@@ -1,6 +1,6 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.62（2026-11-16。**D-OB大域＝Judge V24 CLOSED**：C-AXIS-V1（V23 CLOSED）＋D5（V18 CLOSED）を接続し、内部停留点数1→3→1を採用。体積保存換算も承認。C v1.1とD-OB v0はV24 chat監査PASS、組み立てv0.1はM1・M2引用修正のみ。FT_q V3 DISCHARGED、B7 40/40、L3 V0.2 FREEZE。D5の採用後producer独立比較2件は補強事項。**扁長D-PSは設計着手／数値認証未許可、D-PRO大域と第一論文全体はOPEN**。運用：**書き換え式**（追記しない。経緯はgit履歴）。150行以下。
+版：v1.63（2026-11-16。**D-OB大域 Judge V24 CLOSED**（内部停留点数1→3→1）。**扁長D-PRO証明設計 AstraはJudge V25採用**（λ∈[2,5]、P3 V=E_z/z差商第一候補）。**扁長P1 a_c 第二系統はJudge 2026-11-16 Julia導入承認**、Julia 1.10.13／IntervalArithmetic.jl 1.0.10隔離導入・Manifest固定PASS。事前宣言v3・原始入力pack・検証付き積分契約は**DRAFT、chat監査待ち、FREEZE/認証本走未許可**。FT_q V3 DISCHARGED、B7 40/40、D5採用後独立比較2件は補強事項。D-PRO大域・Paper I全体はOPEN。運用：**書き換え式**（追記しない。経緯はgit履歴）。150行以下。
 更新：ChatGPT 起草・push → chat が GitHub で照合。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
@@ -52,12 +52,12 @@
 ### 扁長（D-PRO）
 | # | 部品 | 状態 | 根拠（1行） | 次の関門 | 担当 |
 |---|---|---|---|---|---|
-| PS | D-PS＝D-OBの扁長版（子午面・軸外停留点） | **設計着手（Judge V24次工程指示）／大域証明OPEN／数値認証未許可**。主張窓はλ∈[2,5]。H>0を扁長全域で仮定せず、停留円の既存pilotと整合させる。2026-10-09旧工程のGO/HOLDと、実行FREEZEは分離する。 | family`draft/d-ps-design-kickoff-20261116` commit`3953c11a19b8d7c992620385368c716e1f0a1be3`。既存入力はbasepoint-geometry`abf704b8`（証拠昇格は未了）、bg-prolate-spheroidの初期資料はNOT_BINDING/DIAGNOSTIC_ONLY。 | まず依存台帳・対象定理・移植可否・診断の事前宣言を監査。数値Certificationは別Judge認証後。 | Dig / chat |
+| PS | D-PS（扁長P3：子午面・軸外停留点） | **Astra D-PRO大域の証明設計はJudge V25採用、数学的証明・本走はOPEN**。P3はV=E_z/zの反射差商、代替は混合勾配成分。診断のV>0 trueはDIAGNOSTIC_ONLYで認証値にしない。Q_z全λ・境界下界m・薄層幅は未認証。 | 採用設計：family`design/d-pro-global-20261116` commit`7756bc51684cbb327835c4820864c3007cc97603`、文書SHA256`5ae69093c02a6c364850e0ac1f086ca5d48f0aa77b9f0daf18bb697152a5ee41`。Judge V25はユーザー提供`CHAT_ORIGINALS_V25_D_PRO_DESIGN_ADOPTED_20261116.zip` SHA256`8046ff2ccb83b60f93a07ca76b4f9160334152faed728fec1f86500ede956df9`に記録。 | 新規解析補題とVの境界面・中心の符号をchat監査。FREEZEと計算許可は別Judge裁定。 | Astra / Dig / chat / Judge |
 | P0 | 扁長側の主張範囲 | **裁定済み**：窓 [2, 5]（2026-10-10） | basepoint-geometry main `abf704b8`：CERTIFICATES/prolate（Item 0、local_bifurcation） | — | — |
-| P1 | a_c の局所分岐 | 認証済み（未昇格）。`68bc9828` は後続 commit に置き換えられ、昇格は FAIL-CLOSED。後継 `abf704b8`（12 objects、manifest 一致、再実行一致） | basepoint-geometry main `abf704b8`（SHA256SUMS `3b6fc57d…c11d`） | 第二系統の事前宣言 v2（DRAFT、枠組み PASS）。段階制（Judge 10/10）：必須＝Q_z≥1/100・5桁括弧・Q′<0・H4<0、追加＝20桁括弧・Q_z≥0.0885587746621582。Julia＋IntervalArithmetic.jl、clean-room（入力は原始定義のみ）。FREEZE 前：入力一式・精度保証付き積分の契約 → 監査 → 実行 → PASS 後に登録。Julia 導入は Judge 承認が必要 | ChatGPT/Code/Astra |
-| P2 | 停留円の接続枝 λ_∂^pro→a_c（item2_circle を含む） | pilot 単一スライスのみ | basepoint-geometry Actions receipt | C1b 契約の移植設計 | Code/ChatGPT |
-| P3 | 有界域の子午面排除 | 未着手 | D-OB の道具を雛形に | 設計 | ChatGPT |
-| P4 | 窓の端での境界処理（窓外へ枝が出ないこと） | 未着手 | — | 設計 | ChatGPT |
+| P1 | 扁長 a_c 局所分岐のJulia第二系統 | 第一系統は`abf704b8`、12オブジェクトSHA一致・従来の昇格はFAIL-CLOSED。**Judge 2026-11-16『承認：Juliaで第二系統』。環境導入PASS**（Julia 1.10.13 LTS、IntervalArithmetic.jl 1.0.10、専用depot／Manifest pinned=true）。**第二系統の導出・数値結果なし、FREEZE未許可、CANDIDATE未発生**。 | 環境・v3事前宣言・原始入力pack・検証付き積分契約：family`draft/prolate-ac-julia-stage-v3-20261116` commit`9b22b107be758252d242225d43e41fe86f1b499b`。Manifest SHA256`f1de48582bdef170b152b5a785490b3f176bc9c70fc0594e6589449c1d4d7350`、pack SHA256`181e0e36b23bc5f37012ef59b2597c998d9f2fd252b4f7d608bd6df29643d63b`。第一系統：basepoint-geometry`abf704b8`、`CERTIFICATES/prolate/local_bifurcation/`。 | **chatがpackと積分契約を監査**→I1独立導出・I2記号照合・I3算術検証→Judgeの別FREEZE・実行許可→第二系統・検収・採否。必須Q_z≥1/100、5桁括弧、Q′<0、H4<0。追加20桁括弧、Q_z≥0.0885587746621582。 | Dig / Astra / chat / Judge |
+| P2 | 扁長の停留円接続枝 λ_∂^pro→a_c | 旧証拠はλ=118/25のpilot単一スライスのみ、全枝の数学的認証OPEN。**Astra設計V25採用**：B-TUBE v2.1の管・壁・両側外部被覆・平均値門、入口の境界帯とa_c中心帯を結合する。 | family`design/d-pro-global-20261116` commit`7756bc5` `4、basepoint-geometry Item2/Item3（pilotを全枝と混同しない）。 | 核のclean-room来歴と追加証明義務を監査し、将来FREEZE。 | Dig / chat |
+| P3 | 扁長有界域の赤道外排除 | **方式採用（Judge V25）／数学的認証OPEN**。V=E_z/z、z=0でE_zz延長、V>0ならz≠0の内点を除く。境界m>0・全λ Q_z・接触部の厳密cutは新規義務。混合成分排除を代替として保持。 | Astra §3、commit `7756bc5`、chat V25設計監査PASS。 | 新解析補題、境界と中心の認証仕様、chat監査、別Judge FREEZE。 | Astra / Dig / chat |
+| P4 | 扁長窓の境界と残りの赤道被覆 | **方式採用（Judge V25）／認証OPEN**。λ=2はItem0の領域に含まれる。λ=a_c〜5ではF<0を中心展開＋一般域＋境界被覆で証明する計画（現時点では未証明）。λ=5は閉端点で受ける。 | Astra §5、commit `7756bc5`、既存Item0と局所a_cは限定的な既存証拠。 | 中心係数・F負値の全域認証と端点の厳密被覆を設計。 | Dig / chat |
 
 ### 原稿
 | 項目 | 状態 | 根拠 |
@@ -78,4 +78,4 @@
 | 1/31 | 投稿 |
 
 ## 6. 判断待ち（Judge）
-現時点で追加のJudge裁定待ちはない。D-OB大域はJudge V24でCLOSED。次はD-PSの設計（開始済み、数値認証未許可）と扁長P1–P4の統合。数値Certificationには対象定理・PREDECLARE・chat監査・Judge FREEZEと明示実行許可を要する。外部人間によるD6解析補題監査は論文段階、D5 producer独立比較は採用後補強として継続。
+Judge 2026-11-16による**Juliaソフト導入承認は実施済み**。ただし扁長P1第二系統は入力packと積分契約のchat監査、I1/I2/I3、Judge別FREEZE・実行許可を待つ。D-PRO設計はV25採用済みだがglobal証明はOPEN。数値較正とP1第二系統の同時重負荷は禁止。D-OB大域はV24 CLOSEDを維持し、D5独立比較2件は補強事項。
