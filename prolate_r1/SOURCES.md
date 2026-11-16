@@ -16,3 +16,16 @@ Repository: `cotaxxxx/bg-spheroid-family`。
 
 vendor の2ファイルは原文と同一です。級数・剰余・求積方法の再利用を明記し、clean-room とは呼びません。
 chat の19/19は R0の式の監査であり、このR1ソースの検査結果ではありません。
+
+
+## R2 の追加入力
+- 修正元R1: commit `4b7f1f73421f2765d347e4d2ffc9ab004393695c`、
+  `prolate_r1/density.py` の axial、
+  `prolate_r1/jets.py` の Jet、
+  `prolate_r1/tests/run_tests.py` の main と固定テスト。
+- Dig RUN1: commit `1917e1ab3c22191852385cf8cd3df5f6d9958fb8`、
+  `runs/2026-11-17/D_PRO_R1_COROTATION_DIG_RUN1/RUN_RECEIPT.md`
+  の Reproduced axis_g error / Full suite timeout。
+  同 `logs/axis_stage_diagnosis.stdout`、`axis_cell_diagnosis.stdout`、
+  `axis_default.stderr`、`full.stdout`、`full.time`。
+R1の動作証拠とR2の未実行状態を区別する。

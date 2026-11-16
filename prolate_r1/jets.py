@@ -61,6 +61,30 @@ class Jet:
         for row in structure(self.orders)[2][1:]:
             out.append(-out[0]*sum((self.c[i]*out[j] for i,j in row if i),arb(0)))
         return Jet(self.orders,out)
+    def reciprocal_positive(self, lower, upper):
+        """Reciprocal using an independently proved positive VALUE range.
+
+        lower/upper bound the true value at every base point, not derivatives.
+        No inverse of a widened product is taken. Coefficients remain D^alpha/alpha!.
+        """
+        if not isinstance(lower,Q) or not isinstance(upper,Q):
+            raise TypeError("positive reciprocal bounds must be fmpq")
+        if not 0 < lower <= upper:
+            raise ArithmeticError("positive reciprocal needs 0 < lower <= upper")
+        if not all(x.is_finite() for x in self.c):
+            raise ArithmeticError("non-finite input to positive reciprocal")
+        lo=max(lower,self.c[0].lower().fmpq())
+        hi=min(upper,self.c[0].upper().fmpq())
+        if lo>hi:
+            raise ArithmeticError("positive reciprocal: empty proven range")
+        # Exact endpoint reciprocals are rounded outward by Arb. Even if the
+        # resulting ball protrudes, it is only MULTIPLIED, never inverted again.
+        out=[hull(1/hi,1/lo)]
+        for row in structure(self.orders)[2][1:]:
+            out.append(-out[0]*sum((self.c[i]*out[j] for i,j in row if i),arb(0)))
+        if not all(x.is_finite() for x in out):
+            raise ArithmeticError("non-finite positive reciprocal coefficients")
+        return Jet(self.orders,out)
     def __truediv__(self,x): return self*self.lift(x).reciprocal()
     def __rtruediv__(self,x): return self.lift(x)*self.reciprocal()
     def __pow__(self,n):

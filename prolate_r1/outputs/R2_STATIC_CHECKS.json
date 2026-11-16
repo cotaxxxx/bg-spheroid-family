@@ -1,0 +1,29 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "revision": "R1_R2_20261117",
+  "execution_engine": "JavaScript",
+  "scope": "Content comparison, exact rational cell calculation, hash known vectors. NOT Python/Arb execution.",
+  "content_checks": {
+    "original_24_source_hashes": true,
+    "fixed_test_functions": true,
+    "fixed_case_enumeration": true,
+    "quick_function_and_entrypoint": true,
+    "api_and_mesh_unchanged": true,
+    "fixed27_unchanged": true,
+    "upstream_vendor_unchanged": true,
+    "old_axis_inverse_of_D_cubed_removed": true
+  },
+  "exact_rational_cell_checks": {
+    "D2_lower": true,
+    "D2_upper": true,
+    "derivative_upper": true
+  },
+  "hash_known_vectors": {
+    "sha256_abc": true,
+    "sha256_empty": true,
+    "sha1_abc": true,
+    "crc32": true,
+    "base64": true
+  },
+  "python_arb_execution": "NOT_RUN"
+}

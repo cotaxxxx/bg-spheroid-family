@@ -1,73 +1,89 @@
-# D-PRO R1 共回転の区間積分核
-**DIAGNOSTIC_ONLY / NOT_EVIDENCE — 実行未検証の実装草稿**
+# D-PRO R1 修正版 R2
+**DIAGNOSTIC_ONLY / NOT_EVIDENCE — 新版のPython/Arb実行は未検証**
 
-登録先：cotaxxxx/bg-spheroid-family の
-`codex/d-pro-r1-corotation-20261117`。
-成果物は `prolate_r1/` のみ。
-この版は Codex 実行環境の障害により、テストと1箱試走を実行できていません。
-VALIDATION.md と outputs の未実行記録を必ず先に読んでください。
-動作確認済み・監査済みの積分核という扱いにはできません。
+R1原本とDigのRUN1証拠を保存したまま、次の2点を修正した版です。
+
+1. axis_g の D^(-3) を、正の下界で包んだ逆数 invD の積として評価する。
+2. 固定full 23ケースの結果を逐次保存し、未完了ケースから再開する。
+
+詳細は REVISION_R2.md、包囲の導出は ANALYSIS.md §12、
+実行状況は VALIDATION.md を参照してください。
+R1のquick 2/2とpilot成功は旧版の結果です。R2の実行結果はまだありません。
+
+## 原本・版
+R1: `4b7f1f73421f2765d347e4d2ffc9ab004393695c`。
+Dig RUN1: `1917e1ab3c22191852385cf8cd3df5f6d9958fb8`。
+新版branch: `codex/d-pro-r1-corotation-r2-20261117`。
+
+新版ZIP: `artifacts/D_PRO_R1_COROTATION_R2_20261117.zip`。
+対応する `.zip.sha256` を展開前に照合し、**新しいフォルダに展開**してください。
+ZIPはソース・文書・未実行記録と SHA256SUMS を含み、
+artifacts/ とZIP自身は含みません。
+リポジトリ内の旧ZIPは不変です。
+
+## Dig用：小さな回帰検査
+展開先またはリポジトリのルートで実行：
+```sh
+python -m pip install -r prolate_r1/requirements.txt && python -m prolate_r1.verify_manifest && python -m unittest prolate_r1.tests.test_revision_r2 -v
+```
+
+11個のR2回帰検査は旧fullとは別です。
+報告されたセル、axis_g(1/2,3)、逆数係数、逐次保存、
+再開・例外・SIGTERM・識別情報違いを検査します。
+SIGTERMの回帰はPOSIXで行い、その他のOSではその1件を明示的にskipします。
+
+## quick と pilot
+```sh
+python -m prolate_r1.tests.run_tests --resume --out prolate_r1/outputs/dig_r2_quick.json && python -m prolate_r1.run_diagnostics --pilot --output-dir prolate_r1/outputs/r2_pilot
+```
+
+quickの2ケースとpilot box13の設定はR1と同じです。
+
+## full：1ケースずつ保存・再開する1行
+```sh
+python -m prolate_r1.tests.run_tests --full --resume --max-cases 1 --out prolate_r1/outputs/dig_r2_full.json
+```
+
+同じ行を繰り返すと、完了済みケースを保存したまま次へ進みます。
+全件が揃うまでは終了コード2、全件完了後は0または1です。
+この行に `&& 次の処理` を付けると、未完了コード2のため次の処理は走りません。
+
+時間制限なしで全件を続ける場合：
+```sh
+python -m prolate_r1.tests.run_tests --full --resume --out prolate_r1/outputs/dig_r2_full.json
+```
+
+ケース一覧と指定（IDは0から22）：
+```sh
+python -m prolate_r1.tests.run_tests --full --list-cases
+python -m prolate_r1.tests.run_tests --full --resume --case 6 --out prolate_r1/outputs/dig_r2_full.json
+```
+
+`dig_r2_full.json` と `dig_r2_full.json.cases/` をまとめて保存してください。
+後者には実行前計画、試行ごとの結果JSON、stdout・stderr、
+失敗・捕捉できた中断のスタックが入ります。
+未完了ケースはケース先頭から再実行します。途中の積分セルからは再開しません。
+ソース・Python/python-flint・精度・記録対象の環境変数が変わると、
+同じ出力へのresumeを拒否します。その場合は新しい --out を指定します。
+元の失敗を再試行する場合は --retry-failed を明示します。
+ケースの標本・判定を変更して時間制限に合わせる処理はありません。
 
 ## API
 ```python
 from flint import fmpq as Q
-from prolate_r1 import angular_raw, angular_quotient, axis_g, equatorial_phi_s
+from prolate_r1 import angular_raw, angular_quotient, axis_g, equatorial_phi_s, Config
+g = axis_g(Q(1,2), Q(3), config=Config())
 raw = angular_raw(Q(1,2), Q(1,2), Q(3), angle_kind="tau")
 w = angular_quotient((Q(15,16), Q(1)), Q(1), Q(3), angle_kind="tau")
-g = axis_g(Q(1,2), Q(3))
 phi = equatorial_phi_s(Q(1,4), Q(3))
-print(raw.balls)        # (E, E_beta, E_beta_beta), derivatives w.r.t. beta
-print(w.enclosure)     # W = lambda^2 V - H
 ```
 
-幾何入力は fmpq の点または fmpq 端点対だけ。
-デフォルト angle_kind="beta" は有理数のラジアンを受け取ります。
-極 beta=pi/2 を正確に指定するときは angle_kind="tau", tau=1 を使います。
-tau 入力でも raw の微分は beta 微分です。
-lambda=1 は球の対照、通常は lambda∈[2,5]。
-R,s∈[0,1]、axis_g は t∈[0,1)。
-物理的な軸座標は z=lambda*t です。
-全幅、端点は浮動小数の表示値ではなく有理数で出力します。
+入力はfmpqの点またはfmpq端点対。lambda=1は球の対照、通常は[2,5]。
+R,s∈[0,1]、axis_gはt∈[0,1)。beta=pi/2はtau=1で指定します。
+rawの微分はtau入力でもbeta微分です。
+Resultの意味と数学的包囲の条件はR1と同じです。
 
-Result は balls、中心点積分 point_balls、外側補正 correction、
-球冠 cap_errors、cells、route を保持します。
-チャートを分割した場合、point_balls は子中心の区間の合併です。
-幅比較の道具は箱の全体の中心を別途評価するので、この合併を点幅と取り違えません。
-
-## Dig の動作検査用1行
-リポジトリのルートで実行してください。出力は新しい dig_* ファイルに書きます。
-```sh
-python -m pip install -r prolate_r1/requirements.txt && python -m prolate_r1.verify_manifest && python -m prolate_r1.tests.run_tests --full && python -m prolate_r1.run_diagnostics --pilot --fixed27
-```
-
-小さな確認だけなら次です。
-```sh
-python -m prolate_r1.tests.run_tests && python -m prolate_r1.run_diagnostics --pilot
-```
-
-full 検査は9内点、9境界箱、3箱×20点等を含むため、小試走とは別です。
-同梱した PLAN_BEFORE_DIG_RUN.md の条件を出力を見る前に確認してください。
-上限到達や例外は停止として出し、成功扱いにはしません。
-この版について所要時間の実測値はありません。
-
-## 構成と範囲
-- api.py：四つのAPI、平均値形式、角度と中心の除算処理。
-- density.py：設計の (3)-(8),(17),(20) の exact 密度。
-- jets.py：Arb の mixed Taylor 係数と符号付き級数剰余。
-- quadrature.py：接触距離で決まるセルと2/4/6次の逐次 Taylor 求積。
-- tests/：自動 PASS/FAIL の診断。有限差分検査は数学的証明ではありません。
-- run_diagnostics.py：1箱と固定27箱の幅・点幅・倍率・時間。符号を判定しません。
-- ANALYSIS.md：包囲の根拠・微分次数・上界・未解決点。
-- SOURCES.md：固定入力と再利用の来歴。
-- SHA256SUMS：ZIP自身を除くソース等のハッシュ。
-- artifacts/D_PRO_R1_COROTATION_20261117.zip：このソース原本。
-- artifacts/D_PRO_R1_COROTATION_20261117.zip.sha256：原本のハッシュ。
-
-ZIPは prolate_r1/ 以下のソース・文書・未実行記録と SHA256SUMS を含みます。
-ZIPとZIP用ハッシュは自己参照を避けるためZIPの中に含みません。
-SHA256SUMS も自分自身と artifacts/ を対象外にします。
-登録後に Dig の出力が加わっても、元のソースの照合はこの台帳で行えます。
-
-平均値補正は一般に箱幅の一次です。「必ず二次に小さくなる」とはしていません。
-中心・端点の包囲幅が十分に狭いかは未測定です。
-本実装が存在することは、条件 A・Z・C の符号を示すものではありません。
+`outputs/CODEX_TEST_STATUS.json`、`CODEX_PILOT_STATUS.json`、
+`JS_SOURCE_CHECKS.json` は旧版に含まれた履歴として保持しています。
+新版の未実行記録は `outputs/R2_VALIDATION_STATUS.json` です。
+このソースの存在や動作成功は、条件 A・Z・C の符号を示しません。

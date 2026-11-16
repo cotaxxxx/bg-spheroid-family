@@ -109,13 +109,9 @@ def small_box_case(center,cfg):
         assert lo<=bounds(p.enclosure)[0],"box lower above point lower"
     return {"points":len(points),"box":box.to_json()}
 
-def main():
-    parser=argparse.ArgumentParser()
-    parser.add_argument("--full",action="store_true")
-    parser.add_argument("--out",default="prolate_r1/outputs/dig_tests.json")
-    args=parser.parse_args()
+def case_list(full):
     tests=[("arithmetic_inputs_and_static_policy",smoke)]
-    if args.full:
+    if full:
         for lam in LAMBDAS:
             for R,T in POINTS:
                 tests.append(("FD_and_identity_"+str((lam,R,T)),
@@ -130,22 +126,11 @@ def main():
     else:
         # Small local smoke; intentionally no full27 or global sign execution.
         tests.append(("one_sphere_axis",lambda: _quick_axis()))
-    output={"status":STATUS,"mode":"full" if args.full else "quick","tests":[]}
-    with ctx.workprec(BASE.precision):
-        for name,fn in tests:
-            try:
-                detail=fn()
-                row={"name":name,"result":"PASS","detail":detail}
-            except Exception:
-                row={"name":name,"result":"FAIL","traceback":traceback.format_exc()}
-            output["tests"].append(row)
-            print(row["result"],name,flush=True)
-            if row["result"]=="FAIL": print(row["traceback"],flush=True)
-    path=Path(args.out); path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n")
-    failures=sum(x["result"]=="FAIL" for x in output["tests"])
-    print(STATUS,"tests:",len(tests),"failures:",failures)
-    raise SystemExit(int(bool(failures)))
+    return tests
+
+def main():
+    from .resumable import cli
+    cli(case_list, BASE.precision, Path(__file__).resolve().parents[1])
 
 def _quick_axis():
     cfg=replace(BASE,order=2,base_u=2,base_v=2,distance_ratio=Q(2))

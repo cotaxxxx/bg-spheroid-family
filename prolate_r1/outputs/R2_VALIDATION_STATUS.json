@@ -1,0 +1,13 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "revision": "R1_R2_20261117",
+  "parent_evidence_commit": "1917e1ab3c22191852385cf8cd3df5f6d9958fb8",
+  "source_origin_commit": "4b7f1f73421f2765d347e4d2ffc9ab004393695c",
+  "python_arb_execution": "NOT_RUN",
+  "regression_tests": "NOT_RUN",
+  "quick": "NOT_RUN",
+  "full": "NOT_RUN",
+  "pilot": "NOT_RUN",
+  "reason": "No usable execution environment is available.",
+  "note": "R1 quick/pilot successes and six visible full PASS lines are prior-version observations, not R2 test outcomes."
+}

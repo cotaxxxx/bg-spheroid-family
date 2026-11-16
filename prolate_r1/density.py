@@ -94,7 +94,17 @@ def axial(u,v,params,domain,active=(),orders=(0,),energy=False):
     rmax=max(abs(domain.R[0]),abs(domain.R[1]))
     D=(st2+lam**2*(mu-t)**2).cap(ds,domain.lam[1]**2*(1+rmax)**2).sqrt()
     w=(lam**2*st2+mu**2).cap(1,domain.lam[1]**2).sqrt()
-    gamma=(lam*A/w/D).cap(0,1)
+    # D^2 >= ds > 0 and D <= lambda_max*(1+|t|_max).
+    # Form the reciprocal FIRST; D**3 may straddle zero as an Arb ball.
+    if ds <= 0:
+        raise ArithmeticError("axis distance has no strictly positive lower bound")
+    d_lower=arb(ds).sqrt().lower().fmpq()
+    invD=D.reciprocal_positive(d_lower,domain.lam[1]*(1+rmax))
+    invw=w.reciprocal_positive(Q(1),domain.lam[1])
+    gamma=(lam*A*invw*invD).cap(0,1)
     G,rr,_=angle(gamma)
     if energy: return (2*y*A*G,)
-    return (2*y*(-mu*G-2*lam*A*rr*st2*((lam**2-1)*mu-lam**2*t)/w/D**3),)
+    term=2*lam*A*rr*st2*((lam**2-1)*mu-lam**2*t)
+    # Only multiplication after the positive reciprocals: no reciprocal of
+    # D^3, w*D^3, or of a product of reciprocal balls.
+    return (2*y*(-mu*G-term*invw*invD*invD*invD),)
