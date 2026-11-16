@@ -1,0 +1,7 @@
+{
+  "classification": "RESEARCH_REPRODUCIBILITY / NOT_CERTIFICATE",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "arithmetic": "float64 diagnostics; exact rational and symbolic algebra checks; no Arb certification"
+}

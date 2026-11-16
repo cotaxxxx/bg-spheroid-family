@@ -1,0 +1,8 @@
+{
+  "classification": "EXACT_ALGEBRA / NOT_CERTIFICATE",
+  "rotation_T_derivative": true,
+  "two_square_identities": true,
+  "negative_density_example": true,
+  "rational_cap_bound": true,
+  "axial_e_identity": true
+}

@@ -1,0 +1,12 @@
+{
+  "classification": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "answers": {
+    "Q1_angular_W_positive": true,
+    "Q2_axis_Ez_positive": true,
+    "Q3_equatorial_quotient_decreasing": true,
+    "Q4_axis_Ezz_positive": false,
+    "Q5_gradient_identity": false,
+    "Q6_energy_finite_difference_identity": true,
+    "Q7_center_angular_coefficient_positive": true
+  }
+}

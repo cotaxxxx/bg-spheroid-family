@@ -1,0 +1,12 @@
+{
+  "classification": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "answers": {
+    "rule_24_192_all_60": true,
+    "rule_24_192_interior_45": true,
+    "rule_48_384_all_60": true,
+    "rule_48_384_interior_45": true,
+    "rule_72_576_all_60": true,
+    "rule_72_576_interior_45": true,
+    "original_Q5_full_sample_rule_72_576": true
+  }
+}
