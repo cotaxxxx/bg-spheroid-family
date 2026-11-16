@@ -1,0 +1,2273 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "results": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 0,
+      "prec_bits": 128,
+      "box": {
+        "id": 0,
+        "anchor": [
+          "1/8",
+          "0",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:20.940980+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "18438533374504286550733463281902761343/42535295865117307932921825928971026432",
+      "upper_dyadic": "26424461987907958138771499490900915583/42535295865117307932921825928971026432",
+      "enclosure_width_dyadic": "50398295/268435456",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1128277362,
+      "wall_seconds": "1.128277362",
+      "max_rss_kib": 34964,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 0,
+      "prec_bits": 192,
+      "box": {
+        "id": 0,
+        "anchor": [
+          "1/8",
+          "0",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:22.105764+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "1360523625383516672173559728478105674565964282411904217895/3138550867693340381917894711603833208051177722232017256448",
+      "upper_dyadic": "1949781149942252716612029695666350321632706666991974953767/3138550867693340381917894711603833208051177722232017256448",
+      "enclosure_width_dyadic": "806372719/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1232855761,
+      "wall_seconds": "1.232855761",
+      "max_rss_kib": 34904,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 1,
+      "prec_bits": 128,
+      "box": {
+        "id": 1,
+        "anchor": [
+          "1/8",
+          "1/2",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:23.375857+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "320927399/2147483648",
+      "upper_dyadic": "2070473549/2147483648",
+      "enclosure_width_dyadic": "874773075/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1097884916,
+      "wall_seconds": "1.097884916",
+      "max_rss_kib": 34856,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 1,
+      "prec_bits": 192,
+      "box": {
+        "id": 1,
+        "anchor": [
+          "1/8",
+          "1/2",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:24.512883+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "320927399/2147483648",
+      "upper_dyadic": "2070473549/2147483648",
+      "enclosure_width_dyadic": "874773075/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1248767524,
+      "wall_seconds": "1.248767524",
+      "max_rss_kib": 34920,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 2,
+      "prec_bits": 128,
+      "box": {
+        "id": 2,
+        "anchor": [
+          "1/8",
+          "1",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:25.798568+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "254539183/1073741824",
+      "upper_dyadic": "918150189/1073741824",
+      "enclosure_width_dyadic": "331805503/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1069164448,
+      "wall_seconds": "1.069164448",
+      "max_rss_kib": 34744,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 2,
+      "prec_bits": 192,
+      "box": {
+        "id": 2,
+        "anchor": [
+          "1/8",
+          "1",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:26.906775+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "254539183/1073741824",
+      "upper_dyadic": "918150189/1073741824",
+      "enclosure_width_dyadic": "331805503/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1223877767,
+      "wall_seconds": "1.223877767",
+      "max_rss_kib": 34396,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 3,
+      "prec_bits": 128,
+      "box": {
+        "id": 3,
+        "anchor": [
+          "1/2",
+          "0",
+          "2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:28.167628+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "172128630621395207947911787254818806177/680564733841876926926749214863536422912",
+      "upper_dyadic": "245422959423983783819004104001984662737/340282366920938463463374607431768211456",
+      "enclosure_width_dyadic": "502847217/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1090234913,
+      "wall_seconds": "1.090234913",
+      "max_rss_kib": 34812,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 3,
+      "prec_bits": 192,
+      "box": {
+        "id": 3,
+        "anchor": [
+          "1/2",
+          "0",
+          "2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:29.295820+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "1587606392595979981439624798537039351350377923032958588609/6277101735386680763835789423207666416102355444464034512896",
+      "upper_dyadic": "4527254528179144442150454373272491881154009987381276923585/6277101735386680763835789423207666416102355444464034512896",
+      "enclosure_width_dyadic": "502847219/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1229494116,
+      "wall_seconds": "1.229494116",
+      "max_rss_kib": 35060,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 4,
+      "prec_bits": 128,
+      "box": {
+        "id": 4,
+        "anchor": [
+          "1/2",
+          "1/2",
+          "2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:30.561595+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "722556479/2147483648",
+      "upper_dyadic": "1302369661/2147483648",
+      "enclosure_width_dyadic": "289906591/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1091275865,
+      "wall_seconds": "1.091275865",
+      "max_rss_kib": 34900,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 4,
+      "prec_bits": 192,
+      "box": {
+        "id": 4,
+        "anchor": [
+          "1/2",
+          "1/2",
+          "2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:31.690311+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "722556479/2147483648",
+      "upper_dyadic": "1302369661/2147483648",
+      "enclosure_width_dyadic": "289906591/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1249931716,
+      "wall_seconds": "1.249931716",
+      "max_rss_kib": 34648,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 5,
+      "prec_bits": 128,
+      "box": {
+        "id": 5,
+        "anchor": [
+          "1/2",
+          "1",
+          "2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:32.974895+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "812465899/2147483648",
+      "upper_dyadic": "1155719973/2147483648",
+      "enclosure_width_dyadic": "171627037/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1123555917,
+      "wall_seconds": "1.123555917",
+      "max_rss_kib": 35028,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 5,
+      "prec_bits": 192,
+      "box": {
+        "id": 5,
+        "anchor": [
+          "1/2",
+          "1",
+          "2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:34.134801+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "406232951/1073741824",
+      "upper_dyadic": "288929993/536870912",
+      "enclosure_width_dyadic": "171627035/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1220805671,
+      "wall_seconds": "1.220805671",
+      "max_rss_kib": 34712,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 6,
+      "prec_bits": 128,
+      "box": {
+        "id": 6,
+        "anchor": [
+          "7/8",
+          "0",
+          "2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:35.392842+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-100657167958304981599970872973665083953/85070591730234615865843651857942052864",
+      "upper_dyadic": "11039537372433722818463225607568811485/5316911983139663491615228241121378304",
+      "enclosure_width_dyadic": "874972223/268435456",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1086493710,
+      "wall_seconds": "1.08649371",
+      "max_rss_kib": 34644,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 6,
+      "prec_bits": 192,
+      "box": {
+        "id": 6,
+        "anchor": [
+          "7/8",
+          "0",
+          "2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:36.516350+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-1856797019340362031925700439561319263466226526053978253499/1569275433846670190958947355801916604025588861116008628224",
+      "upper_dyadic": "1629148166319942084574686186373008597710460760816383470499/784637716923335095479473677900958302012794430558004314112",
+      "enclosure_width_dyadic": "13671441/4194304",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1239508143,
+      "wall_seconds": "1.239508143",
+      "max_rss_kib": 34744,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 7,
+      "prec_bits": 128,
+      "box": {
+        "id": 7,
+        "anchor": [
+          "7/8",
+          "1/2",
+          "2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:37.795875+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "9299265/67108864",
+      "upper_dyadic": "536741381/1073741824",
+      "enclosure_width_dyadic": "387953141/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1117313273,
+      "wall_seconds": "1.117313273",
+      "max_rss_kib": 34764,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 7,
+      "prec_bits": 192,
+      "box": {
+        "id": 7,
+        "anchor": [
+          "7/8",
+          "1/2",
+          "2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:38.950879+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "595152963/4294967296",
+      "upper_dyadic": "2146965521/4294967296",
+      "enclosure_width_dyadic": "775906279/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1224654932,
+      "wall_seconds": "1.224654932",
+      "max_rss_kib": 34860,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 8,
+      "prec_bits": 128,
+      "box": {
+        "id": 8,
+        "anchor": [
+          "7/8",
+          "1",
+          "2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:40.212214+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "210083405/1073741824",
+      "upper_dyadic": "184626163/536870912",
+      "enclosure_width_dyadic": "159168921/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1115471117,
+      "wall_seconds": "1.115471117",
+      "max_rss_kib": 34468,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 8,
+      "prec_bits": 192,
+      "box": {
+        "id": 8,
+        "anchor": [
+          "7/8",
+          "1",
+          "2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:41.365404+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "210083405/1073741824",
+      "upper_dyadic": "184626163/536870912",
+      "enclosure_width_dyadic": "159168921/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1224745331,
+      "wall_seconds": "1.224745331",
+      "max_rss_kib": 34548,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 9,
+      "prec_bits": 128,
+      "box": {
+        "id": 9,
+        "anchor": [
+          "1/8",
+          "0",
+          "7/2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:42.628965+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-11897661870065892207204442676787640827/1361129467683753853853498429727072845824",
+      "upper_dyadic": "252102690445618522954075245997327663875/680564733841876926926749214863536422912",
+      "enclosure_width_dyadic": "814267027/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1109621150,
+      "wall_seconds": "1.10962115",
+      "max_rss_kib": 34108,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 9,
+      "prec_bits": 192,
+      "box": {
+        "id": 9,
+        "anchor": [
+          "1/8",
+          "0",
+          "7/2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:43.775053+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-219473129475678270295823434260168475229512435006997543441/25108406941546723055343157692830665664409421777856138051584",
+      "upper_dyadic": "581309226731054193987631809051021941109206359980837551199/1569275433846670190958947355801916604025588861116008628224",
+      "enclosure_width_dyadic": "203566757/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1245538758,
+      "wall_seconds": "1.245538758",
+      "max_rss_kib": 34552,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 10,
+      "prec_bits": 128,
+      "box": {
+        "id": 10,
+        "anchor": [
+          "1/8",
+          "1/2",
+          "7/2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:45.057890+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-357793341/4294967296",
+      "upper_dyadic": "2021842787/4294967296",
+      "enclosure_width_dyadic": "74363629/134217728",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1093794206,
+      "wall_seconds": "1.093794206",
+      "max_rss_kib": 34448,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 10,
+      "prec_bits": 192,
+      "box": {
+        "id": 10,
+        "anchor": [
+          "1/8",
+          "1/2",
+          "7/2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:46.189221+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-357793339/4294967296",
+      "upper_dyadic": "2021842785/4294967296",
+      "enclosure_width_dyadic": "594909031/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1220047425,
+      "wall_seconds": "1.220047425",
+      "max_rss_kib": 34780,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 11,
+      "prec_bits": 128,
+      "box": {
+        "id": 11,
+        "anchor": [
+          "1/8",
+          "1",
+          "7/2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:47.446841+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-44022025/2147483648",
+      "upper_dyadic": "866163407/2147483648",
+      "enclosure_width_dyadic": "113773179/268435456",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1093942646,
+      "wall_seconds": "1.093942646",
+      "max_rss_kib": 34516,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 11,
+      "prec_bits": 192,
+      "box": {
+        "id": 11,
+        "anchor": [
+          "1/8",
+          "1",
+          "7/2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:48.577229+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-22011011/1073741824",
+      "upper_dyadic": "866163403/2147483648",
+      "enclosure_width_dyadic": "910185425/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1203832975,
+      "wall_seconds": "1.203832975",
+      "max_rss_kib": 34940,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 12,
+      "prec_bits": 128,
+      "box": {
+        "id": 12,
+        "anchor": [
+          "1/2",
+          "0",
+          "7/2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:49.818644+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-310112314334545233614189036894578518281/680564733841876926926749214863536422912",
+      "upper_dyadic": "69619599774495996900518294152531118815/85070591730234615865843651857942052864",
+      "enclosure_width_dyadic": "683996925/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1116414210,
+      "wall_seconds": "1.11641421",
+      "max_rss_kib": 35116,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 12,
+      "prec_bits": 192,
+      "box": {
+        "id": 12,
+        "anchor": [
+          "1/2",
+          "0",
+          "7/2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:50.972962+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-2860281253948993068819056209505127620071507191979125833323/6277101735386680763835789423207666416102355444464034512896",
+      "upper_dyadic": "2568509882138721229013471365050483452326868152246224650443/3138550867693340381917894711603833208051177722232017256448",
+      "enclosure_width_dyadic": "341998463/268435456",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1206800343,
+      "wall_seconds": "1.206800343",
+      "max_rss_kib": 34656,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 13,
+      "prec_bits": 128,
+      "box": {
+        "id": 13,
+        "anchor": [
+          "1/2",
+          "1/2",
+          "7/2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:52.219214+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "262296411/4294967296",
+      "upper_dyadic": "1161826707/4294967296",
+      "enclosure_width_dyadic": "112441287/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1102394783,
+      "wall_seconds": "1.102394783",
+      "max_rss_kib": 34832,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 13,
+      "prec_bits": 192,
+      "box": {
+        "id": 13,
+        "anchor": [
+          "1/2",
+          "1/2",
+          "7/2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:53.361347+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "262296409/4294967296",
+      "upper_dyadic": "1161826711/4294967296",
+      "enclosure_width_dyadic": "449765151/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1232471905,
+      "wall_seconds": "1.232471905",
+      "max_rss_kib": 34452,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 14,
+      "prec_bits": 128,
+      "box": {
+        "id": 14,
+        "anchor": [
+          "1/2",
+          "1",
+          "7/2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:54.630990+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "431347057/4294967296",
+      "upper_dyadic": "928222931/4294967296",
+      "enclosure_width_dyadic": "248437937/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1091828771,
+      "wall_seconds": "1.091828771",
+      "max_rss_kib": 34936,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 14,
+      "prec_bits": 192,
+      "box": {
+        "id": 14,
+        "anchor": [
+          "1/2",
+          "1",
+          "7/2"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:55.761627+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "862694109/8589934592",
+      "upper_dyadic": "1856445865/8589934592",
+      "enclosure_width_dyadic": "248437939/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1222151660,
+      "wall_seconds": "1.22215166",
+      "max_rss_kib": 35080,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 15,
+      "prec_bits": 128,
+      "box": {
+        "id": 15,
+        "anchor": [
+          "7/8",
+          "0",
+          "7/2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:57.019474+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-89526559581194856901989200765256968181/42535295865117307932921825928971026432",
+      "upper_dyadic": "218450686546104569154983423396344803351/85070591730234615865843651857942052864",
+      "enclosure_width_dyadic": "78393803/16777216",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1106349603,
+      "wall_seconds": "1.106349603",
+      "max_rss_kib": 34688,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 15,
+      "prec_bits": 192,
+      "box": {
+        "id": 15,
+        "anchor": [
+          "7/8",
+          "0",
+          "7/2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:58.162482+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-3302947053102840630837197476749668007173326513774330177339/1569275433846670190958947355801916604025588861116008628224",
+      "upper_dyadic": "2014851947871646559751290960797231204607946299636561054819/784637716923335095479473677900958302012794430558004314112",
+      "enclosure_width_dyadic": "313575211/67108864",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1259340726,
+      "wall_seconds": "1.259340726",
+      "max_rss_kib": 34740,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 16,
+      "prec_bits": 128,
+      "box": {
+        "id": 16,
+        "anchor": [
+          "7/8",
+          "1/2",
+          "7/2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:58:59.459292+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "50408651/8589934592",
+      "upper_dyadic": "2065360069/8589934592",
+      "enclosure_width_dyadic": "1007475709/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1117066065,
+      "wall_seconds": "1.117066065",
+      "max_rss_kib": 35020,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 16,
+      "prec_bits": 192,
+      "box": {
+        "id": 16,
+        "anchor": [
+          "7/8",
+          "1/2",
+          "7/2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:00.615060+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "50408651/8589934592",
+      "upper_dyadic": "2065360069/8589934592",
+      "enclosure_width_dyadic": "1007475709/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1227441231,
+      "wall_seconds": "1.227441231",
+      "max_rss_kib": 34760,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 17,
+      "prec_bits": 128,
+      "box": {
+        "id": 17,
+        "anchor": [
+          "7/8",
+          "1",
+          "7/2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:01.881899+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "220048457/4294967296",
+      "upper_dyadic": "600083277/4294967296",
+      "enclosure_width_dyadic": "95008705/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1126098018,
+      "wall_seconds": "1.126098018",
+      "max_rss_kib": 34956,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 17,
+      "prec_bits": 192,
+      "box": {
+        "id": 17,
+        "anchor": [
+          "7/8",
+          "1",
+          "7/2"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1791/512",
+          "1793/512"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:03.044690+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "440096911/8589934592",
+      "upper_dyadic": "1200166557/8589934592",
+      "enclosure_width_dyadic": "380034823/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1230372049,
+      "wall_seconds": "1.230372049",
+      "max_rss_kib": 35188,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 18,
+      "prec_bits": 128,
+      "box": {
+        "id": 18,
+        "anchor": [
+          "1/8",
+          "0",
+          "5"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:04.313109+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-139776744996278957838119010569748843733/340282366920938463463374607431768211456",
+      "upper_dyadic": "49382461987938298388180669592316189899/85070591730234615865843651857942052864",
+      "enclosure_width_dyadic": "1064351937/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1102623751,
+      "wall_seconds": "1.102623751",
+      "max_rss_kib": 34576,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 18,
+      "prec_bits": 192,
+      "box": {
+        "id": 18,
+        "anchor": [
+          "1/8",
+          "0",
+          "5"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:05.455917+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-322303230302094511705794292036708223338324568370533308187/784637716923335095479473677900958302012794430558004314112",
+      "upper_dyadic": "3643782552070516030149823712662721426937406955667098912553/6277101735386680763835789423207666416102355444464034512896",
+      "enclosure_width_dyadic": "1064351937/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1217422755,
+      "wall_seconds": "1.217422755",
+      "max_rss_kib": 34372,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 19,
+      "prec_bits": 128,
+      "box": {
+        "id": 19,
+        "anchor": [
+          "1/8",
+          "1/2",
+          "5"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:06.710104+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-1012230187/4294967296",
+      "upper_dyadic": "1777301101/4294967296",
+      "enclosure_width_dyadic": "348691411/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1099816452,
+      "wall_seconds": "1.099816452",
+      "max_rss_kib": 34772,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 19,
+      "prec_bits": 192,
+      "box": {
+        "id": 19,
+        "anchor": [
+          "1/8",
+          "1/2",
+          "5"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:07.847022+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-1012230185/4294967296",
+      "upper_dyadic": "1777301099/4294967296",
+      "enclosure_width_dyadic": "697382821/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1244632425,
+      "wall_seconds": "1.244632425",
+      "max_rss_kib": 34848,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 20,
+      "prec_bits": 128,
+      "box": {
+        "id": 20,
+        "anchor": [
+          "1/8",
+          "1",
+          "5"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:09.128058+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-11359289/67108864",
+      "upper_dyadic": "185391771/536870912",
+      "enclosure_width_dyadic": "276266083/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1101646018,
+      "wall_seconds": "1.101646018",
+      "max_rss_kib": 34608,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 20,
+      "prec_bits": 192,
+      "box": {
+        "id": 20,
+        "anchor": [
+          "1/8",
+          "1",
+          "5"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:10.267320+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-726994501/4294967296",
+      "upper_dyadic": "1483134175/4294967296",
+      "enclosure_width_dyadic": "552532169/1073741824",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1260355589,
+      "wall_seconds": "1.260355589",
+      "max_rss_kib": 35120,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 21,
+      "prec_bits": 128,
+      "box": {
+        "id": 21,
+        "anchor": [
+          "1/2",
+          "0",
+          "5"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:11.566443+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-302981135006895356796691918277747832739/340282366920938463463374607431768211456",
+      "upper_dyadic": "187904533683610990631211111940882875439/170141183460469231731687303715884105728",
+      "enclosure_width_dyadic": "1070942107/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1111581025,
+      "wall_seconds": "1.111581025",
+      "max_rss_kib": 34932,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 21,
+      "prec_bits": 192,
+      "box": {
+        "id": 21,
+        "anchor": [
+          "1/2",
+          "0",
+          "5"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:12.715541+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-2794507731224261895340195448129159779271108601263181652779/3138550867693340381917894711603833208051177722232017256448",
+      "upper_dyadic": "1733113423045086381858713892169027116354305363929445240427/1569275433846670190958947355801916604025588861116008628224",
+      "enclosure_width_dyadic": "267735527/134217728",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1236146347,
+      "wall_seconds": "1.236146347",
+      "max_rss_kib": 35000,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 22,
+      "prec_bits": 128,
+      "box": {
+        "id": 22,
+        "anchor": [
+          "1/2",
+          "1/2",
+          "5"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:13.989445+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-202642141/4294967296",
+      "upper_dyadic": "879148881/4294967296",
+      "enclosure_width_dyadic": "540895511/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1116490179,
+      "wall_seconds": "1.116490179",
+      "max_rss_kib": 34612,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 22,
+      "prec_bits": 192,
+      "box": {
+        "id": 22,
+        "anchor": [
+          "1/2",
+          "1/2",
+          "5"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:15.143610+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-202642139/4294967296",
+      "upper_dyadic": "879148879/4294967296",
+      "enclosure_width_dyadic": "540895509/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1234711467,
+      "wall_seconds": "1.234711467",
+      "max_rss_kib": 34280,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 23,
+      "prec_bits": 128,
+      "box": {
+        "id": 23,
+        "anchor": [
+          "1/2",
+          "1",
+          "5"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:16.414623+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "22785677/8589934592",
+      "upper_dyadic": "1243535331/8589934592",
+      "enclosure_width_dyadic": "610374827/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1114710342,
+      "wall_seconds": "1.114710342",
+      "max_rss_kib": 34876,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 23,
+      "prec_bits": 192,
+      "box": {
+        "id": 23,
+        "anchor": [
+          "1/2",
+          "1",
+          "5"
+        ],
+        "R": [
+          "63/128",
+          "65/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:17.567186+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "22785683/8589934592",
+      "upper_dyadic": "1243535325/8589934592",
+      "enclosure_width_dyadic": "610374821/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1253581409,
+      "wall_seconds": "1.253581409",
+      "max_rss_kib": 34756,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 24,
+      "prec_bits": 128,
+      "box": {
+        "id": 24,
+        "anchor": [
+          "7/8",
+          "0",
+          "5"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:18.859363+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-120135382861274346385223741492557383871/42535295865117307932921825928971026432",
+      "upper_dyadic": "268520275059921283352090739350480612995/85070591730234615865843651857942052864",
+      "enclosure_width_dyadic": "401365361/67108864",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1135105652,
+      "wall_seconds": "1.135105652",
+      "max_rss_kib": 34808,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 24,
+      "prec_bits": 192,
+      "box": {
+        "id": 24,
+        "anchor": [
+          "7/8",
+          "0",
+          "5"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:20.033331+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "-4432213329398119828354875405154327135077488625496857080223/1569275433846670190958947355801916604025588861116008628224",
+      "upper_dyadic": "2476662399302218044912377445544740121425375453100983666481/784637716923335095479473677900958302012794430558004314112",
+      "enclosure_width_dyadic": "802730723/134217728",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1232379285,
+      "wall_seconds": "1.232379285",
+      "max_rss_kib": 35032,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 25,
+      "prec_bits": 128,
+      "box": {
+        "id": 25,
+        "anchor": [
+          "7/8",
+          "1/2",
+          "5"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:21.305152+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-84268439/2147483648",
+      "upper_dyadic": "682601155/4294967296",
+      "enclosure_width_dyadic": "851138033/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1129313264,
+      "wall_seconds": "1.129313264",
+      "max_rss_kib": 34252,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 25,
+      "prec_bits": 192,
+      "box": {
+        "id": 25,
+        "anchor": [
+          "7/8",
+          "1/2",
+          "5"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/128",
+          "65/128"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:22.472259+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-42134219/1073741824",
+      "upper_dyadic": "341300577/2147483648",
+      "enclosure_width_dyadic": "425569015/2147483648",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1278634414,
+      "wall_seconds": "1.278634414",
+      "max_rss_kib": 34500,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 26,
+      "prec_bits": 128,
+      "box": {
+        "id": 26,
+        "anchor": [
+          "7/8",
+          "1",
+          "5"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:23.789477+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-64744259/8589934592",
+      "upper_dyadic": "425504503/4294967296",
+      "enclosure_width_dyadic": "915753265/8589934592",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1102640641,
+      "wall_seconds": "1.102640641",
+      "max_rss_kib": 34312,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 26,
+      "prec_bits": 192,
+      "box": {
+        "id": 26,
+        "anchor": [
+          "7/8",
+          "1",
+          "5"
+        ],
+        "R": [
+          "111/128",
+          "113/128"
+        ],
+        "tau": [
+          "63/64",
+          "1"
+        ],
+        "lam": [
+          "1279/256",
+          "5"
+        ]
+      },
+      "python": "3.11.16",
+      "python_flint": "0.8.0",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "started_utc": "2026-11-16T10:59:24.931338+00:00",
+      "outcome": "computed",
+      "route": "Ez_over_z",
+      "lower_dyadic": "-64744259/8589934592",
+      "upper_dyadic": "851009005/8589934592",
+      "enclosure_width_dyadic": "57234579/536870912",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "negative",
+      "wall_ns": 1238457500,
+      "wall_seconds": "1.2384575",
+      "max_rss_kib": 34584,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    }
+  ]
+}
