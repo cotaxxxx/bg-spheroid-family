@@ -1,0 +1,28 @@
+PROGRESS 9 /162 last= 1 6 2048 outcome= computed
+PROGRESS 18 /162 last= 3 2 8192 outcome= computed
+PROGRESS 27 /162 last= 4 6 2048 outcome= computed
+PROGRESS 36 /162 last= 6 2 8192 outcome= computed
+PROGRESS 45 /162 last= 5 6 8192 outcome= computed
+PROGRESS 54 /162 last= 8 4 8192 outcome= computed
+PROGRESS 63 /162 last= 10 6 2048 outcome= computed
+PROGRESS 72 /162 last= 12 2 8192 outcome= computed
+PROGRESS 81 /162 last= 11 6 8192 outcome= computed
+PROGRESS 90 /162 last= 15 2 8192 outcome= computed
+PROGRESS 99 /162 last= 14 6 8192 outcome= computed
+PROGRESS 108 /162 last= 18 2 8192 outcome= computed
+PROGRESS 117 /162 last= 19 6 2048 outcome= computed
+PROGRESS 126 /162 last= 21 2 8192 outcome= computed
+PROGRESS 135 /162 last= 22 6 2048 outcome= computed
+PROGRESS 144 /162 last= 23 4 8192 outcome= computed
+PROGRESS 153 /162 last= 25 6 2048 outcome= computed
+PROGRESS 162 /162 last= 26 6 8192 outcome= computed
+TOTAL_WORKER_CASES 162
+ERRORS 0
+TOTAL_WALL_S 342.641264
+SUMMARY 2 2048 27 0.917540095 2.345360
+SUMMARY 2 8192 27 0.353451313 9.386875
+SUMMARY 4 2048 27 0.78492996 4.923653
+SUMMARY 4 8192 27 0.33192037 19.674846
+SUMMARY 6 2048 27 0.751956982 7.224094
+SUMMARY 6 8192 27 0.327185916 28.856806
+DIAGNOSTIC_ONLY / NOT_EVIDENCE

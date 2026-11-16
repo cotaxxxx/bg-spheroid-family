@@ -1,0 +1,69 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "plan_version": "W1_V1_20261116_FIXED_BEFORE_FULL_27_BOX_SWEEP",
+  "source_commit": "556997ac2387933138296939b9c58eda32d7cdec",
+  "original_baseline_commit": "8ff37a6cb84af2d6ee1b726d258edb178e22e045",
+  "precision_bits": 128,
+  "orders": [
+    2,
+    4,
+    6
+  ],
+  "cell_counts": [
+    2048,
+    8192
+  ],
+  "cell_dimensions": {
+    "2048": [
+      32,
+      64
+    ],
+    "8192": [
+      64,
+      128
+    ]
+  },
+  "boxes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "series_N": 96,
+  "runner_processes": 6,
+  "algorithm_selection_criteria": [
+    "interval_enclosure_width",
+    "worker_wall_time",
+    "rss"
+  ],
+  "no_sign_based_selection": true,
+  "source_sha256": {
+    "kernel.py": "06d6d4276a26a96cb053cb066ad21320a41e4b3ce8ea5fb5a84ca1a66492a5a0",
+    "kernel_w1.py": "8867f6ad53b9cf09af224f88384d80e8fbd3d6a040fb5f83bae90fc749b72b8d",
+    "sweep_w1.py": "5b83323eaddbf568277b5a369863e7531d8cea3c5663638dda7419d9d9a0833c",
+    "boxes.json": "b901ae44dda587978a86e556c71bfe00b32f00d6d3ab7750273905eb6259fae1"
+  }
+}
