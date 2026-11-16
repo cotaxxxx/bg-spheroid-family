@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "execution": "NOT_RUN",
+  "box_id": 13,
+  "result": null,
+  "reason": "No usable Codex execution environment. There is no measured width, time, or enclosure to report.",
+  "command": "python -m prolate_r1.run_diagnostics --pilot"
+}

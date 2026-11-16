@@ -1,0 +1,31 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "JavaScript packaging checks only; Python/Arb NOT_RUN",
+  "hash_algorithm_known_vectors": {
+    "sha256abc": true,
+    "sha256empty": true,
+    "sha1abc": true,
+    "crc32": true,
+    "base64": true
+  },
+  "upstream_blob_checks": [
+    {
+      "path": "prolate_r1/vendor/kernel.py",
+      "expected": "d69504ea11cb1d5674845ed01ef3e1c6704cd168",
+      "actual": "d69504ea11cb1d5674845ed01ef3e1c6704cd168",
+      "result": "PASS"
+    },
+    {
+      "path": "prolate_r1/vendor/kernel_w1.py",
+      "expected": "9107f6d778b6a8f7d26b041a91506c8354fa5eff",
+      "actual": "9107f6d778b6a8f7d26b041a91506c8354fa5eff",
+      "result": "PASS"
+    },
+    {
+      "path": "prolate_r1/boxes.json",
+      "expected": "3c75b6b9a84e70ea3652f8fe680417c70115431e",
+      "actual": "3c75b6b9a84e70ea3652f8fe680417c70115431e",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "execution": "NOT_RUN",
+  "result": null,
+  "reason": "Codex execution environment unavailable after the source-work checkpoint. No usable execution environment is available. No Python test result is claimed for this reconstructed package.",
+  "quick_command": "python -m prolate_r1.tests.run_tests",
+  "full_command": "python -m prolate_r1.tests.run_tests --full",
+  "scope": "No research PC execution; no global sign run."
+}
