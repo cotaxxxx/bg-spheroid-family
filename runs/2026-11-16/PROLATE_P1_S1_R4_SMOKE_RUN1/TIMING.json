@@ -1,0 +1,39 @@
+{
+  "status": "SMOKE_FAILED_NO_CERTIFICATION",
+  "source_zip_sha256": "72de77a659db01d48fbcefcbf53c8d7f715a629aade0e21240c52ad3b5091155",
+  "runtime": "Julia 1.10.13",
+  "ia": "IntervalArithmetic.jl 1.0.10",
+  "environment": {
+    "JULIA_DEPOT_PATH": "dedicated_depot",
+    "JULIA_LOAD_PATH": "@:@stdlib",
+    "JULIA_NUM_THREADS": "1",
+    "JULIA_PKG_PRECOMPILE_AUTO": "0"
+  },
+  "producer": {
+    "command": "producer",
+    "exit_code": 2,
+    "start_utc": "2026-11-16T09:54:24Z",
+    "end_utc": "2026-11-16T09:54:26Z",
+    "wall_seconds": "1.80",
+    "user_cpu_seconds": "2.44",
+    "system_cpu_seconds": "0.60",
+    "max_rss_kb": 363632,
+    "stderr_bytes": 104,
+    "stdout_bytes": 0
+  },
+  "checker": {
+    "command": "checker",
+    "exit_code": 2,
+    "start_utc": "2026-11-16T09:54:26Z",
+    "end_utc": "2026-11-16T09:54:27Z",
+    "wall_seconds": "0.70",
+    "user_cpu_seconds": "0.73",
+    "system_cpu_seconds": "0.57",
+    "max_rss_kb": 299248,
+    "stderr_bytes": 110,
+    "stdout_bytes": 0
+  },
+  "ledger_exists": false,
+  "compared_with_first_lineage": false,
+  "certification_run": false
+}

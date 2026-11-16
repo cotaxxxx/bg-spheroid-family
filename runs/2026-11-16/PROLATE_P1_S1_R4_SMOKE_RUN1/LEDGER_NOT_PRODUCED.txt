@@ -1,0 +1,3 @@
+s1_ledger.tsv: NOT_CREATED
+producer exited 2 before ledger output; checker exited 2 because ledger was missing.
+No value or sign certificate was produced.
