@@ -1,0 +1,55 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 20,
+  "name": "box20_(1/8, 1/8, 5/2)",
+  "attempt": 1,
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "started_at": "2026-11-16T23:48:25.925731+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_020.json.cases/020/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_020.json.cases/020/0001.stderr.log",
+  "result": "PASS",
+  "detail": {
+    "points": 20,
+    "box": {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "route": "equator_even_quotient_mean_value",
+      "cells": 128,
+      "balls": [
+        {
+          "lower": "-80401841193960427264063049266478234151/1267650600228229401496703205376",
+          "upper": "321604022861428374643615971357958674277/5070602400912917605986812821504",
+          "width": "643211387637270083699868168423871610881/5070602400912917605986812821504"
+        }
+      ],
+      "center_point": [
+        {
+          "lower": "-67472079359531111751933425420799097383/1267650600228229401496703205376",
+          "upper": "269884975523711112595097475975242127205/5070602400912917605986812821504",
+          "width": "539773292961835559602831177658438516737/5070602400912917605986812821504"
+        }
+      ],
+      "mean_value_correction": [
+        {
+          "lower": "-326393075/32",
+          "upper": "326393075/32",
+          "width": "326393075/16"
+        }
+      ],
+      "cap_errors": [
+        {
+          "lower": "0",
+          "upper": "0",
+          "width": "0"
+        }
+      ],
+      "details": {
+        "kappa": "0",
+        "endpoint_derivative_order": 4,
+        "mixed_derivatives": "x2 R, x2 lambda",
+        "cap_charge_count": 0
+      }
+    }
+  },
+  "elapsed_ns": 65400459105,
+  "finished_at": "2026-11-16T23:49:31.364064+00:00"
+}

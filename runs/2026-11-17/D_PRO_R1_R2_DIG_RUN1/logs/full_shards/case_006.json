@@ -1,0 +1,201 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "schema": "d-pro-r1-r2-cases-v1",
+  "mode": "full",
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "plan_file": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_006.json.cases/plan.json",
+  "updated_at": "2026-11-16T23:48:16.454345+00:00",
+  "complete": false,
+  "execution": "INCOMPLETE",
+  "all_tests_passed": false,
+  "counts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "PENDING": 22,
+    "RUNNING": 0,
+    "INTERRUPTED": 0
+  },
+  "tests": [
+    {
+      "id": 0,
+      "name": "arithmetic_inputs_and_static_policy",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 1,
+      "name": "FD_and_identity_(2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 2,
+      "name": "FD_and_identity_(2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 3,
+      "name": "FD_and_identity_(2, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 4,
+      "name": "FD_and_identity_(7/2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 5,
+      "name": "FD_and_identity_(7/2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 6,
+      "name": "FD_and_identity_(7/2, 1/2, 3/4)",
+      "result": "PASS",
+      "attempts": [
+        {
+          "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+          "case_id": 6,
+          "name": "FD_and_identity_(7/2, 1/2, 3/4)",
+          "attempt": 1,
+          "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+          "started_at": "2026-11-16T23:46:41.683279+00:00",
+          "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_006.json.cases/006/0001.stdout.log",
+          "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_006.json.cases/006/0001.stderr.log",
+          "result": "PASS",
+          "detail": {
+            "Ebeta": {
+              "lower": "-334587284159766274136798798182658330577/5316911983139663491615228241121378304",
+              "upper": "21096572909745524623529912429630767875/332306998946228968225951765070086144",
+              "width": "672132450715694668113277397056750616577/5316911983139663491615228241121378304"
+            },
+            "Ebetabeta": {
+              "lower": "-202946793436571028194295097640783070175/83076749736557242056487941267521536",
+              "upper": "100927912173130421015280433212535660049/41538374868278621028243970633760768",
+              "width": "404802617782831870224855964065854390273/83076749736557242056487941267521536"
+            },
+            "fd_midpoints": [
+              {
+                "lower": "334747515187489392965802406500016817/2658455991569831745807614120560689152",
+                "upper": "334747515187489392965802406500016817/2658455991569831745807614120560689152",
+                "width": "0"
+              },
+              {
+                "lower": "-32583608053700100818017495770143/81129638414606681695789005144064",
+                "upper": "-32583608053700100818017495770143/81129638414606681695789005144064",
+                "width": "0"
+              }
+            ],
+            "original_gradient_rhs": {
+              "lower": "85000969883655417837939818425947376415/680564733841876926926749214863536422912",
+              "upper": "86394648459551799192745953714508516127/680564733841876926926749214863536422912",
+              "width": "281451147/137438953472"
+            }
+          },
+          "elapsed_ns": 94697064519,
+          "finished_at": "2026-11-16T23:48:16.422551+00:00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "FD_and_identity_(5, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 8,
+      "name": "FD_and_identity_(5, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 9,
+      "name": "FD_and_identity_(5, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 10,
+      "name": "sphere_exact_series",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 11,
+      "name": "boundary_(2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 12,
+      "name": "boundary_(2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 13,
+      "name": "boundary_(2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 14,
+      "name": "boundary_(7/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 15,
+      "name": "boundary_(7/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 16,
+      "name": "boundary_(7/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 17,
+      "name": "boundary_(5, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 18,
+      "name": "boundary_(5, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 19,
+      "name": "boundary_(5, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 20,
+      "name": "box20_(1/8, 1/8, 5/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 21,
+      "name": "box20_(1/2, 1/2, 7/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 22,
+      "name": "box20_(7/8, 7/8, 9/2)",
+      "result": "PENDING",
+      "attempts": []
+    }
+  ]
+}

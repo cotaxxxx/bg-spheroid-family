@@ -1,0 +1,222 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "type": "AGGREGATED_PER_CASE_FIXED23_NOT_SINGLE_SUITE_SUCCESS",
+  "source_commit": "bc70e1badbd9a89449cae6707ef37f5e69757a11",
+  "original_r2_zip_sha256": "1f42136c4d26aca41413806cfb04f91b022ab3bd46b747627f3b20e532b75c7d",
+  "identical_plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "records": [
+    {
+      "id": 0,
+      "name": "arithmetic_inputs_and_static_policy",
+      "result": "PASS",
+      "source_record": "logs/dig_r2_full.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 25364336
+    },
+    {
+      "id": 1,
+      "name": "FD_and_identity_(2, 1/8, 1/4)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_001.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94101870449
+    },
+    {
+      "id": 2,
+      "name": "FD_and_identity_(2, 1/4, 1/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_002.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94707921676
+    },
+    {
+      "id": 3,
+      "name": "FD_and_identity_(2, 1/2, 3/4)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_003.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94655710045
+    },
+    {
+      "id": 4,
+      "name": "FD_and_identity_(7/2, 1/8, 1/4)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_004.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94265481278
+    },
+    {
+      "id": 5,
+      "name": "FD_and_identity_(7/2, 1/4, 1/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_005.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94915649108
+    },
+    {
+      "id": 6,
+      "name": "FD_and_identity_(7/2, 1/2, 3/4)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_006.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94697064519
+    },
+    {
+      "id": 7,
+      "name": "FD_and_identity_(5, 1/8, 1/4)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_007.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 93899119675
+    },
+    {
+      "id": 8,
+      "name": "FD_and_identity_(5, 1/4, 1/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_008.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94421561925
+    },
+    {
+      "id": 9,
+      "name": "FD_and_identity_(5, 1/2, 3/4)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_009.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 94573220167
+    },
+    {
+      "id": 10,
+      "name": "sphere_exact_series",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_010.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3335848528
+    },
+    {
+      "id": 11,
+      "name": "boundary_(2, 0)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_011.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3078208618
+    },
+    {
+      "id": 12,
+      "name": "boundary_(2, 1/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_012.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 2526903253
+    },
+    {
+      "id": 13,
+      "name": "boundary_(2, 1)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_013.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3045333040
+    },
+    {
+      "id": 14,
+      "name": "boundary_(7/2, 0)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_014.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3061204948
+    },
+    {
+      "id": 15,
+      "name": "boundary_(7/2, 1/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_015.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 2516440532
+    },
+    {
+      "id": 16,
+      "name": "boundary_(7/2, 1)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_016.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3033701778
+    },
+    {
+      "id": 17,
+      "name": "boundary_(5, 0)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_017.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3094708662
+    },
+    {
+      "id": 18,
+      "name": "boundary_(5, 1/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_018.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 2538350835
+    },
+    {
+      "id": 19,
+      "name": "boundary_(5, 1)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_019.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 3063559450
+    },
+    {
+      "id": 20,
+      "name": "box20_(1/8, 1/8, 5/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_020.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 65400459105
+    },
+    {
+      "id": 21,
+      "name": "box20_(1/2, 1/2, 7/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_021.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 40393902310
+    },
+    {
+      "id": 22,
+      "name": "box20_(7/8, 7/8, 9/2)",
+      "result": "PASS",
+      "source_record": "logs/full_shards/case_022.json",
+      "attempts": 1,
+      "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+      "elapsed_ns": 77719709228
+    }
+  ],
+  "case_count": 23,
+  "PASS": 23,
+  "FAIL": 0,
+  "interrupted": 0,
+  "runner_details": "Case 0 canonical --max-cases=1 output; cases 1..22 individually using --case and 6-worker isolated records; each shard exits 2 because suite not individually complete.",
+  "mathematical_sufficiency": "NOT_EVIDENCE"
+}

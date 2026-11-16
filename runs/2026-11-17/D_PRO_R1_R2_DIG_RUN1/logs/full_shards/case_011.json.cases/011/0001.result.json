@@ -1,0 +1,52 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 11,
+  "name": "boundary_(2, 0)",
+  "attempt": 1,
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "started_at": "2026-11-16T23:48:16.630443+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_011.json.cases/011/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_011.json.cases/011/0001.stderr.log",
+  "result": "PASS",
+  "detail": {
+    "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+    "route": "equator_even_quotient_mean_value",
+    "cells": 288,
+    "balls": [
+      {
+        "lower": "-192816058446180101612746778427746749201/83076749736557242056487941267521536",
+        "upper": "12055146112099570040124506873362689871/5192296858534827628530496329220096",
+        "width": "385698396239773222254738888401549787137/83076749736557242056487941267521536"
+      }
+    ],
+    "center_point": [
+      {
+        "lower": "-16160534085605985412738212724900956945/83076749736557242056487941267521536",
+        "upper": "259629014928304071071736708335315930865/1329227995784915872903807060280344576",
+        "width": "518197560297999837675548111933731241985/1329227995784915872903807060280344576"
+      }
+    ],
+    "mean_value_correction": [
+      {
+        "lower": "-278712737/131072",
+        "upper": "278712737/131072",
+        "width": "278712737/65536"
+      }
+    ],
+    "cap_errors": [
+      {
+        "lower": "-562305173/137438953472",
+        "upper": "562305173/137438953472",
+        "width": "562305173/68719476736"
+      }
+    ],
+    "details": {
+      "kappa": "1/4096",
+      "endpoint_derivative_order": 4,
+      "mixed_derivatives": "x2 R, x2 lambda",
+      "cap_charge_count": 1
+    }
+  },
+  "elapsed_ns": 3078208618,
+  "finished_at": "2026-11-16T23:48:19.747159+00:00"
+}

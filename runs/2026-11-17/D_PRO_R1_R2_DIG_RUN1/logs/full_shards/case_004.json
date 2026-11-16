@@ -1,0 +1,201 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "schema": "d-pro-r1-r2-cases-v1",
+  "mode": "full",
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "plan_file": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_004.json.cases/plan.json",
+  "updated_at": "2026-11-16T23:48:16.028108+00:00",
+  "complete": false,
+  "execution": "INCOMPLETE",
+  "all_tests_passed": false,
+  "counts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "PENDING": 22,
+    "RUNNING": 0,
+    "INTERRUPTED": 0
+  },
+  "tests": [
+    {
+      "id": 0,
+      "name": "arithmetic_inputs_and_static_policy",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 1,
+      "name": "FD_and_identity_(2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 2,
+      "name": "FD_and_identity_(2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 3,
+      "name": "FD_and_identity_(2, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 4,
+      "name": "FD_and_identity_(7/2, 1/8, 1/4)",
+      "result": "PASS",
+      "attempts": [
+        {
+          "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+          "case_id": 4,
+          "name": "FD_and_identity_(7/2, 1/8, 1/4)",
+          "attempt": 1,
+          "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+          "started_at": "2026-11-16T23:46:41.683281+00:00",
+          "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_004.json.cases/004/0001.stdout.log",
+          "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_004.json.cases/004/0001.stderr.log",
+          "result": "PASS",
+          "detail": {
+            "Ebeta": {
+              "lower": "-159820358130619735803055647123058834427/2658455991569831745807614120560689152",
+              "upper": "321956792437964447308746982412706416651/5316911983139663491615228241121378304",
+              "width": "641597508699203918914858276658824085505/5316911983139663491615228241121378304"
+            },
+            "Ebetabeta": {
+              "lower": "-206238796550539714338969681488438818439/83076749736557242056487941267521536",
+              "upper": "102629799302884936014539862143115101373/41538374868278621028243970633760768",
+              "width": "411498395156309586368049405774669021185/83076749736557242056487941267521536"
+            },
+            "fd_midpoints": [
+              {
+                "lower": "70522809053284373043235404570197779/5316911983139663491615228241121378304",
+                "upper": "70522809053284373043235404570197779/5316911983139663491615228241121378304",
+                "width": "0"
+              },
+              {
+                "lower": "368431814731870755610429300229857/20769187434139310514121985316880384",
+                "upper": "368431814731870755610429300229857/20769187434139310514121985316880384",
+                "width": "0"
+              }
+            ],
+            "original_gradient_rhs": {
+              "lower": "140594718573487107687758832438999363117/10889035741470030830827987437816582766592",
+              "upper": "148281421679421414153223130577951370797/10889035741470030830827987437816582766592",
+              "width": "776158665/1099511627776"
+            }
+          },
+          "elapsed_ns": 94265481278,
+          "finished_at": "2026-11-16T23:48:15.990958+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "FD_and_identity_(7/2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 6,
+      "name": "FD_and_identity_(7/2, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 7,
+      "name": "FD_and_identity_(5, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 8,
+      "name": "FD_and_identity_(5, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 9,
+      "name": "FD_and_identity_(5, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 10,
+      "name": "sphere_exact_series",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 11,
+      "name": "boundary_(2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 12,
+      "name": "boundary_(2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 13,
+      "name": "boundary_(2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 14,
+      "name": "boundary_(7/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 15,
+      "name": "boundary_(7/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 16,
+      "name": "boundary_(7/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 17,
+      "name": "boundary_(5, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 18,
+      "name": "boundary_(5, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 19,
+      "name": "boundary_(5, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 20,
+      "name": "box20_(1/8, 1/8, 5/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 21,
+      "name": "box20_(1/2, 1/2, 7/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 22,
+      "name": "box20_(7/8, 7/8, 9/2)",
+      "result": "PENDING",
+      "attempts": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "case_id": 16,
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=8s",
+    "240",
+    "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/venv311/bin/python",
+    "-m",
+    "prolate_r1.tests.run_tests",
+    "--full",
+    "--resume",
+    "--case",
+    "16",
+    "--out",
+    "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_016.json"
+  ],
+  "exit_code": 2,
+  "case_result": "PASS",
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "elapsed_ns": 3204277645,
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_name": "boundary_(7/2, 1)"
+}

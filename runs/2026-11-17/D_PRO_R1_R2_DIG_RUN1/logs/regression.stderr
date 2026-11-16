@@ -1,0 +1,16 @@
+test_existing_output_needs_explicit_resume (prolate_r1.tests.test_revision_r2.DurableRunnerTests.test_existing_output_needs_explicit_resume) ... ok
+test_failure_traceback_is_durable_and_not_silently_retried (prolate_r1.tests.test_revision_r2.DurableRunnerTests.test_failure_traceback_is_durable_and_not_silently_retried) ... ok
+test_recover_missing_result_and_keep_attempt_history (prolate_r1.tests.test_revision_r2.DurableRunnerTests.test_recover_missing_result_and_keep_attempt_history) ... ok
+test_save_each_case_and_resume_without_reexecution (prolate_r1.tests.test_revision_r2.DurableRunnerTests.test_save_each_case_and_resume_without_reexecution) ... ok
+test_sigterm_saves_stack_and_can_resume (prolate_r1.tests.test_revision_r2.DurableRunnerTests.test_sigterm_saves_stack_and_can_resume) ... ok
+test_source_identity_change_rejected (prolate_r1.tests.test_revision_r2.DurableRunnerTests.test_source_identity_change_rejected) ... ok
+test_mixed_jet_inverse_identity (prolate_r1.tests.test_revision_r2.PositiveReciprocalTests.test_mixed_jet_inverse_identity) ... ok
+test_nonpositive_or_inconsistent_proof_rejected (prolate_r1.tests.test_revision_r2.PositiveReciprocalTests.test_nonpositive_or_inconsistent_proof_rejected) ... ok
+test_reported_axis_api_default_config (prolate_r1.tests.test_revision_r2.PositiveReciprocalTests.test_reported_axis_api_default_config) ... ok
+test_reported_axis_cell (prolate_r1.tests.test_revision_r2.PositiveReciprocalTests.test_reported_axis_cell) ... ok
+test_wide_inverse_cube_coefficients (prolate_r1.tests.test_revision_r2.PositiveReciprocalTests.test_wide_inverse_cube_coefficients) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.032s
+
+OK

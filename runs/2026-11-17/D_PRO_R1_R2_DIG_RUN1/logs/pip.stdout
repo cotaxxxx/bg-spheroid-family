@@ -1,0 +1,7 @@
+Collecting python-flint==0.8.0 (from -r /home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/source/prolate_r1/requirements.txt (line 2))
+  Downloading python_flint-0.8.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (49 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.8/49.8 kB 2.1 MB/s eta 0:00:00
+Downloading python_flint-0.8.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 41.5 MB/s eta 0:00:00
+Installing collected packages: python-flint
+Successfully installed python-flint-0.8.0

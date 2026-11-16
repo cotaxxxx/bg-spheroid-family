@@ -1,0 +1,53 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 21,
+  "name": "box20_(1/2, 1/2, 7/2)",
+  "attempt": 1,
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "started_at": "2026-11-16T23:48:26.114825+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_021.json.cases/021/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/full_shards/case_021.json.cases/021/0001.stderr.log",
+  "result": "PASS",
+  "detail": {
+    "points": 20,
+    "box": {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "route": "middle_W_mean_value",
+      "cells": 160,
+      "balls": [
+        {
+          "lower": "-266835231590849160213661518317529913591/83076749736557242056487941267521536",
+          "upper": "133796163408074673322826300279503295365/41538374868278621028243970633760768",
+          "width": "534427558406998506859314118876536504321/83076749736557242056487941267521536"
+        }
+      ],
+      "center_point": [
+        {
+          "lower": "-106304440675427631560748146682962227693/166153499473114484112975882535043072",
+          "upper": "215637262252056008849460622331831163943/332306998946228968225951765070086144",
+          "width": "428246143602911271970956915697755619329/332306998946228968225951765070086144"
+        }
+      ],
+      "mean_value_correction": [
+        {
+          "lower": "-337132347/131072",
+          "upper": "337132347/131072",
+          "width": "337132347/65536"
+        }
+      ],
+      "cap_errors": [
+        {
+          "lower": "0",
+          "upper": "0",
+          "width": "0"
+        }
+      ],
+      "details": {
+        "kappa": "0",
+        "cap_charge_count": 0
+      }
+    }
+  },
+  "elapsed_ns": 40393902310,
+  "finished_at": "2026-11-16T23:49:06.528809+00:00"
+}

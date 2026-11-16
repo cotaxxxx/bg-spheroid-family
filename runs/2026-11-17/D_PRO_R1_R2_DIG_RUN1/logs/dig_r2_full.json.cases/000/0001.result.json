@@ -1,0 +1,14 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 0,
+  "name": "arithmetic_inputs_and_static_policy",
+  "attempt": 1,
+  "plan_sha256": "9f37bee7e2b1f8430679eeea58f8a6f166fffc2a385e1c1b09265dba5b412a3c",
+  "started_at": "2026-11-16T23:45:15.563837+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/dig_r2_full.json.cases/000/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R2_DIG_20261117/logs/dig_r2_full.json.cases/000/0001.stderr.log",
+  "result": "PASS",
+  "detail": null,
+  "elapsed_ns": 25364336,
+  "finished_at": "2026-11-16T23:45:15.620106+00:00"
+}
