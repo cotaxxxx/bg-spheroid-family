@@ -1,0 +1,10 @@
+POINT order=2 cells=(32, 64): Ez=[0.1 +/- 0.0531] Ezz=[+/- 0.537]  4.1s
+POINT order=2 cells=(64, 128): Ez=[0.12 +/- 6.66e-3] Ezz=[0.2 +/- 0.0376]  15.7s
+POINT order=4 cells=(32, 64): Ez=[0.1 +/- 0.0242] Ezz=[+/- 0.367]  8.5s
+POINT order=4 cells=(64, 128): Ez=[0.116 +/- 3.81e-4] Ezz=[0.22 +/- 5.27e-3]  34.3s
+POINT order=6 cells=(32, 64): Ez=[0.12 +/- 7.49e-3] Ezz=[+/- 0.296]  11.6s
+POINT order=6 cells=(64, 128): Ez=[0.116 +/- 3.34e-4] Ezz=[0.224 +/- 7.19e-4]  51.7s
+BOX hw=1/1024 order=4 cells=64x128: Ez=[0.12 +/- 7.18e-3] Ezz=[0.2 +/- 0.0305]
+BOX hw=1/256 order=4 cells=64x128: Ez=[0.1 +/- 0.0272] Ezz=[0.2 +/- 0.0463]
+BOX hw=1/128 order=4 cells=64x128: Ez=[0.1 +/- 0.0388] Ezz=[0.2 +/- 0.0682]
+END

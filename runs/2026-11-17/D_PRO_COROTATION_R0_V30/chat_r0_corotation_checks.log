@@ -1,0 +1,20 @@
+PASS (9) E_beta = R^2 sin cos (lam^2 V - H)
+PASS rotation: m_z' = m_x, m_x' = -m_z
+PASS (5) gamma_beta = -gamma T
+PASS (6) T_beta
+PASS (7) f_beta = 2 k gamma R T
+PASS (8) f_bb = 2k gamma {R T_b - (R + gamma R') T^2}
+PASS square completion: (1+d t^2)^2 - 4 lam^2 t^2 (1-t^2) = (1-(lam^2+1)t^2)^2
+PASS C_lambda(5) = 2d + 2 l^2 = 2352/25
+PASS l = d/lam
+PASS pi^2 C/4 <= 1176/5 at C = 2352/25 (pi^2 < 10)
+PASS (15) bound < 1/240 :: 0.00409131 vs 0.00416667
+PASS min(b, pi/2-b)/(sin b cos b) <= pi/2 (grid)
+PASS (1/4pi) int_cap k = (1/2)((1-R)kappa + R kappa^2/2)
+PASS (7.1) C=73/25, B=13/25, T=-189/949
+PASS (17) Phi_s = (r E_rr - E_r)/(2 r^3)
+PASS (18) Phi(0)=Q, Phi_s(0)=H4/6
+PASS (19) Phi_s(r^2) = 1/4 int (1-t^2) E''''(tr) dt
+PASS (20) axis kernel d/dt[A G(gamma)]
+PASS pull-back (x-p).N = 1 - q.xi on sphere
+SUMMARY 19/19 PASS
