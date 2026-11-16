@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/home/daybreak/D_PRO_R1_COROTATION_DIG_20261117/source/prolate_r1/api.py", line 193, in axis_g
+    pt=integrate(lambda u,v,a,n:fn(u,v,p0,dom,(a,),(n,)),mesh,cfg.order,axis=True)[0]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_DIG_20261117/source/prolate_r1/quadrature.py", line 95, in integrate
+    raise ArithmeticError("non-finite/empty quadrature")
+ArithmeticError: non-finite/empty quadrature

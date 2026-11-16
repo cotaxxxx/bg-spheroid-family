@@ -1,0 +1,5 @@
+Command exited with non-zero status 124
+wall_seconds=480.13
+cpu_user_seconds=480.04
+cpu_system_seconds=0.00
+max_rss_kb=34988

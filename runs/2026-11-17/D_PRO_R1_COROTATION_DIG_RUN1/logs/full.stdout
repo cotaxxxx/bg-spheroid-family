@@ -1,0 +1,6 @@
+PASS arithmetic_inputs_and_static_policy
+PASS FD_and_identity_(2, 1/8, 1/4)
+PASS FD_and_identity_(2, 1/4, 1/2)
+PASS FD_and_identity_(2, 1/2, 3/4)
+PASS FD_and_identity_(7/2, 1/8, 1/4)
+PASS FD_and_identity_(7/2, 1/4, 1/2)

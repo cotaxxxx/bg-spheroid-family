@@ -1,0 +1,13 @@
+{"api": "angular_raw", "status": "DIAGNOSTIC_ONLY", "outcome": "RAN", "cells": 28, "elapsed_ns": 52194316, "widths": ["11610460788883457/1125899906842624", "16244813246496769/70368744177664", "9420224482770945/1099511627776"]}
+{"api": "angular_quotient", "status": "DIAGNOSTIC_ONLY", "outcome": "RAN", "cells": 28, "elapsed_ns": 52100047, "widths": ["16921680546889729/8796093022208"]}
+axis_g FAILED Traceback (most recent call last):
+  File "<stdin>", line 16, in <module>
+  File "<stdin>", line 9, in <lambda>
+  File "/home/daybreak/D_PRO_R1_COROTATION_DIG_20261117/source/prolate_r1/api.py", line 193, in axis_g
+    pt=integrate(lambda u,v,a,n:fn(u,v,p0,dom,(a,),(n,)),mesh,cfg.order,axis=True)[0]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_DIG_20261117/source/prolate_r1/quadrature.py", line 95, in integrate
+    raise ArithmeticError("non-finite/empty quadrature")
+ArithmeticError: non-finite/empty quadrature
+
+{"api": "equatorial_phi_s", "status": "DIAGNOSTIC_ONLY", "outcome": "RAN", "cells": 28, "elapsed_ns": 66888036, "widths": ["14327834000490497/137438953472"]}
