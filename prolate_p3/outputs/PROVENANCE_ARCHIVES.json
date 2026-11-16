@@ -1,0 +1,42 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "archives": [
+    {
+      "candidate": 0,
+      "sha256": "6fcd9d4ead4ee56605ebf93f24ec1c716355be6a7b73ff3139cc0ecc5e530fdb",
+      "members": [
+        "Kakuron_I_1_1_Sphere.pdf",
+        "Kakuron_I_1_1_Sphere.tex"
+      ]
+    },
+    {
+      "candidate": 1,
+      "sha256": "db1c68e4bbf43fcb49bd5f27de5d45a36b44f1f8e77141477832ce16ae68df2a",
+      "members": [
+        "certificate_0d_combined.json",
+        "checkpoint_0d.json",
+        "mixed_queue_0d.json",
+        "riemann_0d.json",
+        "riemann_patch_0d.json",
+        "mixed_runner_0d.py",
+        "rescue_0d.py",
+        "harvest_0d.py"
+      ]
+    },
+    {
+      "candidate": 2,
+      "sha256": "ab7112ae7ae570555d1add5c48adb72100562c71aff6b74c94883f58da0f495b",
+      "members": [
+        "INDEPENDENT_CHECK_NOTE.md",
+        "RUN_LOG.md",
+        "SHA256SUMS.txt",
+        "boundary_entry_independent.py",
+        "bprime_independent.py",
+        "certificate_item2_independent.json",
+        "config.blocal-stage1.json",
+        "run_enclosure.py",
+        "verify_change_of_variables.py"
+      ]
+    }
+  ]
+}

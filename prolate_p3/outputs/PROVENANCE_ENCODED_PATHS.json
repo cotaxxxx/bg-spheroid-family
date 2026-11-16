@@ -1,0 +1,141 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "paths": [
+    {
+      "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+      "size": 315562,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0c_center/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+      "size": 979,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+      "size": 29502,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda",
+      "tip": "eb1006718ea720af90cccacab415cc6f6b9c85c7"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "113ff2de622ea5fc9748238cf568753e5b89c10b",
+      "size": 1740,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/113ff2de622ea5fc9748238cf568753e5b89c10b",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset00000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3f7c968ac3d66447ac244eb359a23681fd5bc24",
+      "size": 8000,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/b3f7c968ac3d66447ac244eb359a23681fd5bc24",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset06000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6069a7660ecef5c19cf55c550f14c4294f617f04",
+      "size": 8000,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/6069a7660ecef5c19cf55c550f14c4294f617f04",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset12000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a8c981601775fd899b04835f0af3a2f71ce2908",
+      "size": 8000,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/6a8c981601775fd899b04835f0af3a2f71ce2908",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset18000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6664f92df4267a91750d194bd4e43eeb4fd1e094",
+      "size": 8000,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/6664f92df4267a91750d194bd4e43eeb4fd1e094",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset24000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2327773df60e62f1101c88473c3456a0d00f987",
+      "size": 1336,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/d2327773df60e62f1101c88473c3456a0d00f987",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset25000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "790df179d628e5703f4211c60d302a7e3cbec213",
+      "size": 1336,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/790df179d628e5703f4211c60d302a7e3cbec213",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset26000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "161865c505fb13729d2052e3d59d273f9b7dd79e",
+      "size": 1336,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/161865c505fb13729d2052e3d59d273f9b7dd79e",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset27000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02ec05216207cfa30dca940c563660473420f929",
+      "size": 1336,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/02ec05216207cfa30dca940c563660473420f929",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset28000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10f427f29a4ef78233f5c5f5bab96bb34fbd9dfb",
+      "size": 1336,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/10f427f29a4ef78233f5c5f5bab96bb34fbd9dfb",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip.parts/offset29000.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31aea67b497fc80eaff6a13d95bc39846d68574d",
+      "size": 672,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/31aea67b497fc80eaff6a13d95bc39846d68574d",
+      "tip": "e11e30948fafdbb899b403c4cb4198c1a2628adc"
+    },
+    {
+      "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+      "size": 14211,
+      "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+      "tip": "f286d42ac9daac19bc26f1f215f0a2438c004e6b"
+    }
+  ],
+  "item0d_parts_readme_blob": "113ff2de622ea5fc9748238cf568753e5b89c10b"
+}

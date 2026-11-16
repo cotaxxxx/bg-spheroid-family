@@ -1,0 +1,14 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "rule": "Fixed before the final single-box trial; no outcome-dependent partition changes.",
+  "files": {
+    "kernel.py": "06d6d4276a26a96cb053cb066ad21320a41e4b3ce8ea5fb5a84ca1a66492a5a0",
+    "calibrate.py": "72895e5e45e58912a4b47cfe3d1f7d1eb06122f86d25d01cf10b7bedeab0af5e",
+    "make_boxes.py": "50b73c91bf253454ef5e05690acde38c8090d44a47a4446ffd0a17b10dfd49eb",
+    "boxes.json": "b901ae44dda587978a86e556c71bfe00b32f00d6d3ab7750273905eb6259fae1",
+    "requirements.txt": "5daf9c6db68174ba6afd8581832629ddb08bf0fa5c6e32eebbd1dd2c74356cfb",
+    "tests/reference.py": "ee6768f421f3d9491f18e42979aca1f018f6872b2aa6ace73146fe0f26f8848e",
+    "tests/run_tests.py": "adbf8631d65107d1054031a4bed6099062f4159fa1f2ce410a40b94306aae86a",
+    "tests/wide_positive_z.py": "a93e5c18d5f5a9d605acccdfd828c77e9679ecaa5e58321da90cc35c63ae6ec6"
+  }
+}

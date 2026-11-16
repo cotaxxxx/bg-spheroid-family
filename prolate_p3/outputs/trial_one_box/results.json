@@ -1,0 +1,89 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "results": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 0,
+      "prec_bits": 128,
+      "box": {
+        "id": 0,
+        "anchor": [
+          "1/8",
+          "0",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.12.14",
+      "python_flint": "0.8.0",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "started_utc": "2026-11-16T10:37:15.498321+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "18438533374504286550733463281902761343/42535295865117307932921825928971026432",
+      "upper_dyadic": "26424461987907958138771499490900915583/42535295865117307932921825928971026432",
+      "enclosure_width_dyadic": "50398295/268435456",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 1655032188,
+      "wall_seconds": "1.655032188",
+      "max_rss_kib": 25940,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "box_id": 0,
+      "prec_bits": 192,
+      "box": {
+        "id": 0,
+        "anchor": [
+          "1/8",
+          "0",
+          "2"
+        ],
+        "R": [
+          "15/128",
+          "17/128"
+        ],
+        "tau": [
+          "0",
+          "1/64"
+        ],
+        "lam": [
+          "2",
+          "513/256"
+        ]
+      },
+      "python": "3.12.14",
+      "python_flint": "0.8.0",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "started_utc": "2026-11-16T10:37:17.238723+00:00",
+      "outcome": "computed",
+      "route": "Ezz_vertical_segment_hull",
+      "lower_dyadic": "1360523625383516672173559728478105674565964282411904217895/3138550867693340381917894711603833208051177722232017256448",
+      "upper_dyadic": "1949781149942252716612029695666350321632706666991974953767/3138550867693340381917894711603833208051177722232017256448",
+      "enclosure_width_dyadic": "806372719/4294967296",
+      "lower_bound_interval_width": "0",
+      "cells": 2048,
+      "density_evaluations": 6144,
+      "lower_sign": "positive",
+      "wall_ns": 2028484623,
+      "wall_seconds": "2.028484623",
+      "max_rss_kib": 25804,
+      "rss_scope": "fresh Python worker process including imports; Linux KiB"
+    }
+  ]
+}

@@ -1,0 +1,3627 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "repository": "cotaxxxx/basepoint-geometry",
+  "branches": 87,
+  "unique_branch_tips": 83,
+  "releases": [],
+  "tags": 17,
+  "refs": [
+    {
+      "ref": "refs/heads/Basepoint-Geometry",
+      "sha": "190d6dad45979a2b52e7e129598918e7d3104b40",
+      "truncated": false,
+      "entry_count": 182,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/add-4-minus-pi-research",
+      "sha": "050666ff18e43dc12b03ca6f986965e35ff0fd67",
+      "truncated": false,
+      "entry_count": 45,
+      "item0c_files": [],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/add-prolate-item0d-certificate",
+      "sha": "7cfb9e9a83b9a41e5ea4070b573c9c986a7215e8",
+      "truncated": false,
+      "entry_count": 68,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/archive-prolate-item0b",
+      "sha": "81756fa62bb0bd8cac17f75b9c96f0b317c99060",
+      "truncated": false,
+      "entry_count": 78,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/b-tube-v2-1-selftest",
+      "sha": "0088fb7fd9020cc437f218695864d3b3c031407e",
+      "truncated": false,
+      "entry_count": 165,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/b-tube-v2-1-selftest-probe",
+      "sha": "67f816f595360e92221e67c2d1d34d45e522a526",
+      "truncated": false,
+      "entry_count": 145,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/basepoint-geometry-terminology-v2",
+      "sha": "09aa60ac940b93093c3309d553e130c29e755d0d",
+      "truncated": false,
+      "entry_count": 186,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/basepoint-geometry-terminology-v3",
+      "sha": "e6f1f68a572e143d1720088175a17ede2780027e",
+      "truncated": false,
+      "entry_count": 187,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/bkernel-internal-nonfinite-diagnostic",
+      "sha": "9f300be11c7d437afe96e3a4bbbc23dce6c7760a",
+      "truncated": false,
+      "entry_count": 182,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/bkernel-nan-frontier-diagnostic",
+      "sha": "e74d90ff02499dc0dd2b146f6b0cf6ae838b30a0",
+      "truncated": false,
+      "entry_count": 195,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/bkernel-nan-frontier-main-diagnostic",
+      "sha": "ce6a5924cfd43bc27a5645dfd4141847f27581d1",
+      "truncated": false,
+      "entry_count": 182,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-bentry-v2-1-design",
+      "sha": "aa7c5d9a44639645900ddc2d1152da574b89ef9b",
+      "truncated": false,
+      "entry_count": 167,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-bentry-v2-1-design-audited",
+      "sha": "7e16c82132ed273ade7b667e3cbb6edbb18d849b",
+      "truncated": false,
+      "entry_count": 166,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-bentry-v2-1-phase3-implementation",
+      "sha": "6d48ffb9a9fefdc34900cb7a5147f929b05fdb5a",
+      "truncated": false,
+      "entry_count": 184,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-bentry-v2-1-selftest",
+      "sha": "b377b42e87b0206a25d33c86d3cf8fed1348cba5",
+      "truncated": false,
+      "entry_count": 167,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-bentry-v2-1-selftest-audited",
+      "sha": "b377b42e87b0206a25d33c86d3cf8fed1348cba5",
+      "truncated": false,
+      "entry_count": 167,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-phase3-ma-fix-build",
+      "sha": "449775bdad41e51ca9b36338df29858a6588b289",
+      "truncated": false,
+      "entry_count": 171,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-phase3-mb-archive-build",
+      "sha": "88bc18f1ddcd37f4d40ea04d004fe81eb1317f83",
+      "truncated": false,
+      "entry_count": 172,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-phase4-clean-rebuild",
+      "sha": "f21704b2cbd2954acb492ec2a58dbb0765773f1f",
+      "truncated": false,
+      "entry_count": 197,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-v22-l3-bprime-design",
+      "sha": "a8997d11850dbd5b63e3064560a1c311e5c9c267",
+      "truncated": false,
+      "entry_count": 233,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-v22-method-selection-taylor2",
+      "sha": "1b6d61eae275590efc5538fadaa94766b583ab74",
+      "truncated": false,
+      "entry_count": 228,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-v22-readiness-design-reset",
+      "sha": "039ce0392c3bcb3499570f6df412583935ea15a4",
+      "truncated": false,
+      "entry_count": 198,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-v22-readiness-draft",
+      "sha": "e388f30ced20704396ca308186303dae6c0f6e97",
+      "truncated": false,
+      "entry_count": 215,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/blocal-v22-timeout-recovery",
+      "sha": "597ac12ca0e0c0becf50fb13ec6f148eeb97f363",
+      "truncated": false,
+      "entry_count": 228,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-adaptive-tube-design",
+      "sha": "e6502072d52f4ea414465d3d96656fbc3609651d",
+      "truncated": false,
+      "entry_count": 194,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-calibration-build",
+      "sha": "238e356d37a9720785c07815275796571b734f90",
+      "truncated": false,
+      "entry_count": 171,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-calibration-design",
+      "sha": "b38afd9a40909d09528a3d83eeb00d62d7405597",
+      "truncated": false,
+      "entry_count": 185,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-calibration-implementation",
+      "sha": "22c7553374bc2f1b989fa8f84c4278bc461eee18",
+      "truncated": false,
+      "entry_count": 171,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-calibration-pinned",
+      "sha": "9fdc08c832dfdaf8aa76fd461f256db2db6c4f6c",
+      "truncated": false,
+      "entry_count": 185,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-routed-evaluator-design",
+      "sha": "cae2bcb08afc49be63002ae26f9b00e14bbcacf2",
+      "truncated": false,
+      "entry_count": 195,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/btube-v2-1-routed-evaluator-implementation",
+      "sha": "c6a45866bf673c01e22c1519e4b87e75bea01c39",
+      "truncated": false,
+      "entry_count": 217,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/document-prolate-item4-gap",
+      "sha": "7134aca0089f01ebc02a9e16794f369274c38f23",
+      "truncated": false,
+      "entry_count": 99,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/fix-btube-selftest-audit",
+      "sha": "dbff78474399c47011906631de9cde75992b6d25",
+      "truncated": false,
+      "entry_count": 165,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-cgtube-r4-precision",
+      "sha": "1e0f671c91798b9c044c04c7a4224a21e1e67830",
+      "truncated": false,
+      "entry_count": 140,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-lambda-sweep-phase2-selftest",
+      "sha": "10c478a2f360bf65a47c77676aa5386ad263fa02",
+      "truncated": false,
+      "entry_count": 182,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-lambda-sweep-phase3-implementation",
+      "sha": "70af0de152fe93256dd243770181addb250ca7c2",
+      "truncated": false,
+      "entry_count": 220,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-lambda-sweep-phase4-workflow",
+      "sha": "21756fbba0aa974df4ebddfd7d40a7816250dcdc",
+      "truncated": false,
+      "entry_count": 230,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-lambda-sweep-production-config-draft",
+      "sha": "6f557931320ed4018cb4dba29ac9b93bdd38c87c",
+      "truncated": false,
+      "entry_count": 241,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-lambda-sweep-production-implementation",
+      "sha": "de11615aa6e7fff088ba2ae606248c218ff47c1d",
+      "truncated": false,
+      "entry_count": 268,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-lambda-sweep-v8-1-design",
+      "sha": "e82324fdcc5db331cc5d3e5a2fd3958773a7fbe1",
+      "truncated": false,
+      "entry_count": 167,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-sweep-f1-f3",
+      "sha": "269b71d5b08eb2c6e4c1a81fb1525581b8427786",
+      "truncated": false,
+      "entry_count": 276,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-sweep-v9-kernel-prototype",
+      "sha": "a515ead02ccd87b6504a7ec718f1ef28d54b7e56",
+      "truncated": false,
+      "entry_count": 294,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-sweep-v9-mean-value",
+      "sha": "b82c00f2f154f131e02e122efdb156592fa98070",
+      "truncated": false,
+      "entry_count": 282,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item3-v9-analytic-proof",
+      "sha": "33245390a70c948e688a5a82bbf394fe196bdb6c",
+      "truncated": false,
+      "entry_count": 889,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/item7-audit-template-v2-correction",
+      "sha": "4ef99567375d530cb61d2efe2c17f8ddc9d96d96",
+      "truncated": false,
+      "entry_count": 169,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/master-item4-gap-note",
+      "sha": "489d0854a374453660c5635a4eafbee014a24cab",
+      "truncated": false,
+      "entry_count": 98,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/organize-solid-papers",
+      "sha": "53e71e79ba2ec821a652eb3f1d7792aab3e8e09c",
+      "truncated": false,
+      "entry_count": 35,
+      "item0c_files": [],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item2-bkernel-recovery",
+      "sha": "59da8c11a7ac70d1129f026c8b552994f54b6873",
+      "truncated": false,
+      "entry_count": 116,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item2-circle",
+      "sha": "92c46e5de1a56d90ccf707154f535bbc2a8db76d",
+      "truncated": false,
+      "entry_count": 108,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item3-centered-calibration",
+      "sha": "a9aae9eb2859f686f13a72e0f9ce93c6ec2e6bf9",
+      "truncated": false,
+      "entry_count": 132,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item3-cgtube-hybrid-audit-r2",
+      "sha": "5b352a7b9152873802d6c3aa7d58018e80674b34",
+      "truncated": false,
+      "entry_count": 140,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item3-cgtube-source-candidate",
+      "sha": "3a025346da89818273dc22616e6c7995478f25bb",
+      "truncated": false,
+      "entry_count": 140,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item3-cgtube-spot18-diagnostic",
+      "sha": "38830178ec457950b8c9f7b13a04d883937e10c9",
+      "truncated": false,
+      "entry_count": 141,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item5-maxwell",
+      "sha": "a9ef2d0fe1d8613fa07da2be3076ff8bc5eb5942",
+      "truncated": false,
+      "entry_count": 98,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/prolate-item6-axis",
+      "sha": "6905a795066f7d475d9caf0013d87b9c97192eb0",
+      "truncated": false,
+      "entry_count": 196,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/agent/register-experimental-mathematics-canonical",
+      "sha": "62cd4d93d651ac51dc4f3e21d48bc5c1b0e689a4",
+      "truncated": false,
+      "entry_count": 188,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/audit/btube-census-pass1-v002",
+      "sha": "e472b2d6fac8b078e9f3f019cf99dcb8cbb6fc16",
+      "truncated": false,
+      "entry_count": 233,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/audit/btube-pre-shard-diagnostics-v001",
+      "sha": "7a7d980a2eadae546f980ed38f46d069ca7eabf6",
+      "truncated": false,
+      "entry_count": 237,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/audit/paper1-definition-canon-20260822",
+      "sha": "3b4035611375385c8f1e3667defca211462e1fea",
+      "truncated": false,
+      "entry_count": 234,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/audit-helper",
+      "sha": "3392ba40b630c89d611b3ddabe1dadebcfbb1d21",
+      "truncated": false,
+      "entry_count": 219,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/btube-route-consistency-depth14",
+      "sha": "891a7ff9a91be7103965a8f8ce6c4463caa15936",
+      "truncated": false,
+      "entry_count": 218,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/btube-v2-1-uniform24-prepartition",
+      "sha": "52b98b6bd93382a47ed4cf5cbc7067edb0cebe45",
+      "truncated": false,
+      "entry_count": 222,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/btube-v2-3-native-flambda",
+      "sha": "98dda39e50a1422db23ac12d868b2d4dfd8ce9f3",
+      "truncated": false,
+      "entry_count": 410,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/candidate/d2-o2-r2-p2b-predeclare-20261014",
+      "sha": "eb337e760a84aecd4b8b3aa485c84525e349b46a",
+      "truncated": false,
+      "entry_count": 329,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/candidate/dob-p2-closure-erratum",
+      "sha": "cecfb2bd9c906f8ad21337c18a70b441e8cd840e",
+      "truncated": false,
+      "entry_count": 408,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "tools/d_ob_p2/loss_decomposition/runs/LD_v1_20261006/B_14_13_0/cells.tsv.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5b982bcfc9e46a26ba51ad718bb7cce294d1794e",
+          "size": 25813626,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/5b982bcfc9e46a26ba51ad718bb7cce294d1794e"
+        },
+        {
+          "path": "tools/d_ob_p2/loss_decomposition/runs/LD_v1_20261006/B_9_14_10/cells.tsv.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "23cfa4ab45ff9f8824f3831b5ae461364481b73a",
+          "size": 25799536,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/23cfa4ab45ff9f8824f3831b5ae461364481b73a"
+        },
+        {
+          "path": "tools/d_ob_p2/loss_decomposition/runs/LD_v1_20261006/N_12_15_0/cells.tsv.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f8bbc781e7c162c866255fdf4c7000dadf759c7c",
+          "size": 42597830,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/f8bbc781e7c162c866255fdf4c7000dadf759c7c"
+        },
+        {
+          "path": "tools/d_ob_p2/loss_decomposition/runs/LD_v1_20261006/P003_r022/cells.tsv.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "411a280c2c4e4b9c263599ac63a0baea6f067c43",
+          "size": 41031382,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/411a280c2c4e4b9c263599ac63a0baea6f067c43"
+        },
+        {
+          "path": "tools/d_ob_p2/loss_decomposition/runs/LD_v1_20261006/P003_r030/cells.tsv.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f21443c77e2b17ed021dd3bd0d7320ae2849c6c2",
+          "size": 41045267,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/f21443c77e2b17ed021dd3bd0d7320ae2849c6c2"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/candidate/dob-p2-comparison-d1-d4",
+      "sha": "ab683fc33543dcb2cd3f5e0a0eeee7ef2c7031e0",
+      "truncated": false,
+      "entry_count": 372,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/candidate/dob-p2-phase0-postaudit-artifacts",
+      "sha": "15fff0199e38a707b5c727117bbccb62ed78586d",
+      "truncated": false,
+      "entry_count": 237,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/canon/basepoint-geometry-2026-08-20",
+      "sha": "b56906add3b9f80c6201e679623802ff0442b9ea",
+      "truncated": false,
+      "entry_count": 182,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/chatgpt/btube-v2-1-local-audit-helper-20260822",
+      "sha": "aad6f2bf8167f3082ab0113e7dd525d8cfdce53a",
+      "truncated": false,
+      "entry_count": 218,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/chatgpt/d-p2-o1-predeclare-v1-20261009",
+      "sha": "fbadfc4d3424b0b4d08ac401bfc9ca6c8015098a",
+      "truncated": false,
+      "entry_count": 328,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/d-ob-p2-resumable-i8dgpn",
+      "sha": "020a4b80a5fe8f65b3b94f3d1b8945f506aeb8a8",
+      "truncated": false,
+      "entry_count": 309,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/github-write-permission-check-q7qgs3",
+      "sha": "6b6fa7c5f7b1d255b389c06e28a0556d2446c947",
+      "truncated": false,
+      "entry_count": 78,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/new-session-3uwmo4",
+      "sha": "664e3e3375af982ecf4296ed403b95a69b15b6a1",
+      "truncated": false,
+      "entry_count": 212,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/new-session-p5haiv",
+      "sha": "dffd874839551a034b767511942eba28a41adf1f",
+      "truncated": false,
+      "entry_count": 212,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/peer-review-evaluation-scores-zfm9t9",
+      "sha": "f50b12a2718802ce771856798fee7232676d734d",
+      "truncated": false,
+      "entry_count": 256,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/prolate-item2-boundary-entry-me1kau",
+      "sha": "b0582728d3f8fd3508ba8574a898017212a28caa",
+      "truncated": false,
+      "entry_count": 122,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/claude/remote-control-7fnz71",
+      "sha": "92c46e5de1a56d90ccf707154f535bbc2a8db76d",
+      "truncated": false,
+      "entry_count": 108,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/codex/l43-independent-audit-20261009",
+      "sha": "fcbfdaa6007706a65a168fc8a8f5012036c148e4",
+      "truncated": false,
+      "entry_count": 285,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/controls/btube-v2-1-verification",
+      "sha": "7a7d980a2eadae546f980ed38f46d069ca7eabf6",
+      "truncated": false,
+      "entry_count": 237,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/design/btube-exact-lambda-addendum-v2",
+      "sha": "9063da8747d29dd172e742943d80af7ec0a9edd6",
+      "truncated": false,
+      "entry_count": 211,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/item3-cgtube-r3-serialization-fix",
+      "sha": "c05affd36a2bbef4d9e6bea2cbe594e493887a76",
+      "truncated": false,
+      "entry_count": 140,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/item3-sweep-receipts",
+      "sha": "21756fbba0aa974df4ebddfd7d40a7816250dcdc",
+      "truncated": false,
+      "entry_count": 230,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/main",
+      "sha": "abf704b8701f3da8eb41d8a99408570a413b2214",
+      "truncated": false,
+      "entry_count": 216,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/paper1-certchain-202609",
+      "sha": "7cc5726d62f063803b6d83cb9ba5fda5fd91f72c",
+      "truncated": false,
+      "entry_count": 223,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/tmp-hu-v12-producer-rerun",
+      "sha": "0e3d8954ccd97adf1522088233e65c9729030b4f",
+      "truncated": false,
+      "entry_count": 256,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/tmp-hu-v12-raw-evidence",
+      "sha": "1a24b0d2a676d5c1ac2192a62c104c912a27b618",
+      "truncated": false,
+      "entry_count": 258,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/heads/tmp-hu-v12-release-checker",
+      "sha": "6d705c6fbf37ae77d35232a40842692a3e92713e",
+      "truncated": false,
+      "entry_count": 258,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.1-run-e86c130d18f69e9d9944a2f35a5af2f37f399881",
+      "sha": "e86c130d18f69e9d9944a2f35a5af2f37f399881",
+      "truncated": false,
+      "entry_count": 184,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.2-run-15dd8f56e95920f958db3ecf9091b30f9c39b97f",
+      "sha": "15dd8f56e95920f958db3ecf9091b30f9c39b97f",
+      "truncated": false,
+      "entry_count": 233,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.2-run-1b6d61eae275590efc5538fadaa94766b583ab74",
+      "sha": "1b6d61eae275590efc5538fadaa94766b583ab74",
+      "truncated": false,
+      "entry_count": 228,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.2-run-597ac12ca0e0c0becf50fb13ec6f148eeb97f363",
+      "sha": "597ac12ca0e0c0becf50fb13ec6f148eeb97f363",
+      "truncated": false,
+      "entry_count": 228,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.2-run-a8997d11850dbd5b63e3064560a1c311e5c9c267",
+      "sha": "a8997d11850dbd5b63e3064560a1c311e5c9c267",
+      "truncated": false,
+      "entry_count": 233,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.2-run-d827a13ed866f2913f34bf763a7a4b77e812af5e",
+      "sha": "d827a13ed866f2913f34bf763a7a4b77e812af5e",
+      "truncated": false,
+      "entry_count": 228,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/blocal-v2.2-run-f286d42ac9daac19bc26f1f215f0a2438c004e6b",
+      "sha": "f286d42ac9daac19bc26f1f215f0a2438c004e6b",
+      "truncated": false,
+      "entry_count": 233,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item2_circle/b_tube_v2_1/dependencies/blocal-stage1-boundary-entry.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4c4619d7aa8be5afe2d3ed9e906083e205f10eed",
+          "size": 14211,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/4c4619d7aa8be5afe2d3ed9e906083e205f10eed"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/btube-v2-1-calibration-approved-021d821daa070f14369fd8a73c52bd33f870caa0",
+      "sha": "021d821daa070f14369fd8a73c52bd33f870caa0",
+      "truncated": false,
+      "entry_count": 185,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/btube-v2-1-calibration-approved-891a7ff9a91be7103965a8f8ce6c4463caa15936",
+      "sha": "891a7ff9a91be7103965a8f8ce6c4463caa15936",
+      "truncated": false,
+      "entry_count": 218,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/btube-v2-1-calibration-approved-9fdc08c832dfdaf8aa76fd461f256db2db6c4f6c",
+      "sha": "9fdc08c832dfdaf8aa76fd461f256db2db6c4f6c",
+      "truncated": false,
+      "entry_count": 185,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/btube-v2-1-calibration-approved-cf49e4199beaa926bbb63a346113cd285ff459bb",
+      "sha": "cf49e4199beaa926bbb63a346113cd285ff459bb",
+      "truncated": false,
+      "entry_count": 218,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/btube-v2-1-calibration-approved-f15c466dab1d530aec209881069f75cc3857c45b",
+      "sha": "f15c466dab1d530aec209881069f75cc3857c45b",
+      "truncated": false,
+      "entry_count": 185,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/hu-domain-v1.2",
+      "sha": "6d705c6fbf37ae77d35232a40842692a3e92713e",
+      "truncated": false,
+      "entry_count": 258,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/item3-sweep-run-269b71d5b08eb2c6e4c1a81fb1525581b8427786",
+      "sha": "269b71d5b08eb2c6e4c1a81fb1525581b8427786",
+      "truncated": false,
+      "entry_count": 276,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/item3-sweep-run-602ab61f4908f5700ed672f6208f616b583731fa",
+      "sha": "602ab61f4908f5700ed672f6208f616b583731fa",
+      "truncated": false,
+      "entry_count": 276,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/item3-sweep-run-de11615aa6e7fff088ba2ae606248c218ff47c1d",
+      "sha": "de11615aa6e7fff088ba2ae606248c218ff47c1d",
+      "truncated": false,
+      "entry_count": 268,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "refs/tags/item3-sweep-run-eb1006718ea720af90cccacab415cc6f6b9c85c7",
+      "sha": "eb1006718ea720af90cccacab415cc6f6b9c85c7",
+      "truncated": false,
+      "entry_count": 266,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        },
+        {
+          "path": "CERTIFICATES/prolate/item0d_interior/item0d_certified.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "edfb13fe6d828fcd350972bf78bec601c46d3cda",
+          "size": 29502,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/edfb13fe6d828fcd350972bf78bec601c46d3cda"
+        }
+      ]
+    },
+    {
+      "ref": "path_history:item0c_center",
+      "sha": "e11e30948fafdbb899b403c4cb4198c1a2628adc",
+      "truncated": false,
+      "entry_count": 68,
+      "item0c_files": [
+        {
+          "path": "CERTIFICATES/prolate/item0c_center/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e1304d7186e295c216c3e5e3a9db80fe663a08a9",
+          "size": 979,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/e1304d7186e295c216c3e5e3a9db80fe663a08a9"
+        }
+      ],
+      "archives": [
+        {
+          "path": "01_KAKURON_I/1_楕円体系列/1-1_球体/Kakuron_I_1_1_Sphere_Source_and_PDF.zip",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2232d95e13eb16b42dc1daaeab32572ffb7f7715",
+          "size": 315562,
+          "url": "https://api.github.com/repos/cotaxxxx/basepoint-geometry/git/blobs/2232d95e13eb16b42dc1daaeab32572ffb7f7715"
+        }
+      ]
+    }
+  ],
+  "scope": "Reachable branch/tag tip trees and default-branch history of item0c_center; not every historical commit, deleted branch, or unreachable object."
+}
