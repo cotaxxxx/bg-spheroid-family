@@ -1,0 +1,10 @@
+{
+  "id": 7,
+  "exit": 124,
+  "status": "INTERRUPTED",
+  "elapsed_ns": 210126293589,
+  "output": "logs/legacy23_shards/case_007.json",
+  "status_tag": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "plan_sha": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+  "case_name": "FD_and_identity_(5, 1/8, 1/4)"
+}

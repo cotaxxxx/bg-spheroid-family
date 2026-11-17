@@ -1,0 +1,25 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 10,
+  "name": "sphere_exact_series",
+  "attempt": 1,
+  "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+  "started_at": "2026-11-17T10:19:05.827817+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_010.json.cases/010/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_010.json.cases/010/0001.stderr.log",
+  "result": "PASS",
+  "detail": {
+    "g": {
+      "lower": "47020219189323029646872486542702916893/85070591730234615865843651857942052864",
+      "upper": "47020224875176643265618178809034814749/85070591730234615865843651857942052864",
+      "width": "37625823/562949953421312"
+    },
+    "phi": {
+      "lower": "-318577712695656651998222115117798574155/340282366920938463463374607431768211456",
+      "upper": "-318572250094841995778290403266033928267/340282366920938463463374607431768211456",
+      "width": "282409843/17592186044416"
+    }
+  },
+  "elapsed_ns": 83053453045,
+  "finished_at": "2026-11-17T10:20:28.901063+00:00"
+}

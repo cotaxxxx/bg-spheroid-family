@@ -1,0 +1,67 @@
+Traceback (most recent call last):
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 221, in run_suite
+    detail=fn()
+           ^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 118, in <lambda>
+    lambda l=lam,r=R,t=T:derivative_case(l,r,t,BASE,(64,128))))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 57, in derivative_case
+    e0,ep,em=energy(beta),energy(beta+h),energy(beta-h)
+                                         ^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 56, in energy
+    return lab_E(arb(R)*b.cos(),arb(lam*R)*b.sin(),arb(lam),R,reference_grid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/reference.py", line 11, in lab_E
+    return old.integrate(rho,z,lam,rmax,order=6,cells=grid).balls[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 232, in integrate
+    v_mid=density(mu,mv,rho,z,lam,rmax,order,'v')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 175, in density
+    dsq=(xx-rho)*(xx-rho)+yy*yy+wz*wz
+                  ~~^~~~
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 60, in __sub__
+    return self + -self._to(x,self.order)
+           ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 52, in __add__
+    return Jet([a+b for a,b in zip(self.c,x.c)])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 29, in __init__
+    coeff = tuple(x if isinstance(x, arb) else arb(x) for x in coeff)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 29, in <genexpr>
+    coeff = tuple(x if isinstance(x, arb) else arb(x) for x in coeff)
+    
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 93, in handler
+    raise CaseInterrupted(signum,"".join(traceback.format_stack(frame)))
+prolate_r1.tests.resumable.CaseInterrupted: interrupted by signal 15
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 142, in <module>
+    main()
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 133, in main
+    cli(case_list, BASE.precision, Path(__file__).resolve().parents[1])
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 275, in cli
+    code=run_suite(tests,mode,out,source_identity(root,precision),
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 221, in run_suite
+    detail=fn()
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 118, in <lambda>
+    lambda l=lam,r=R,t=T:derivative_case(l,r,t,BASE,(64,128))))
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 57, in derivative_case
+    e0,ep,em=energy(beta),energy(beta+h),energy(beta-h)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 56, in energy
+    return lab_E(arb(R)*b.cos(),arb(lam*R)*b.sin(),arb(lam),R,reference_grid)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/reference.py", line 11, in lab_E
+    return old.integrate(rho,z,lam,rmax,order=6,cells=grid).balls[0]
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 232, in integrate
+    v_mid=density(mu,mv,rho,z,lam,rmax,order,'v')
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 175, in density
+    dsq=(xx-rho)*(xx-rho)+yy*yy+wz*wz
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 60, in __sub__
+    return self + -self._to(x,self.order)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 52, in __add__
+    return Jet([a+b for a,b in zip(self.c,x.c)])
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 29, in __init__
+    coeff = tuple(x if isinstance(x, arb) else arb(x) for x in coeff)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py", line 29, in <genexpr>
+    coeff = tuple(x if isinstance(x, arb) else arb(x) for x in coeff)

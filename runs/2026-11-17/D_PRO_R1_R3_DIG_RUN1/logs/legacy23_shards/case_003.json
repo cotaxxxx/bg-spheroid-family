@@ -1,0 +1,201 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "schema": "d-pro-r1-r2-cases-v1",
+  "mode": "full",
+  "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+  "plan_file": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_003.json.cases/plan.json",
+  "updated_at": "2026-11-17T10:18:24.108937+00:00",
+  "complete": false,
+  "execution": "INCOMPLETE",
+  "all_tests_passed": false,
+  "counts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "PENDING": 22,
+    "RUNNING": 0,
+    "INTERRUPTED": 0
+  },
+  "tests": [
+    {
+      "id": 0,
+      "name": "arithmetic_inputs_and_static_policy",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 1,
+      "name": "FD_and_identity_(2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 2,
+      "name": "FD_and_identity_(2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 3,
+      "name": "FD_and_identity_(2, 1/2, 3/4)",
+      "result": "PASS",
+      "attempts": [
+        {
+          "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+          "case_id": 3,
+          "name": "FD_and_identity_(2, 1/2, 3/4)",
+          "attempt": 1,
+          "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+          "started_at": "2026-11-17T10:16:21.894995+00:00",
+          "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_003.json.cases/003/0001.stdout.log",
+          "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_003.json.cases/003/0001.stderr.log",
+          "result": "PASS",
+          "detail": {
+            "Ebeta": {
+              "lower": "250856103845690342587339841247252726339/2722258935367507707706996859454145691648",
+              "upper": "251329283427876099373267974543396454979/2722258935367507707706996859454145691648",
+              "width": "764462845/4398046511104"
+            },
+            "Ebetabeta": {
+              "lower": "-199355124102209562199130713475943820865/680564733841876926926749214863536422912",
+              "upper": "-198769294120560983850465396000699248193/680564733841876926926749214863536422912",
+              "width": "946459381/1099511627776"
+            },
+            "fd_midpoints": [
+              {
+                "lower": "490397414085013710396022202497040625/5316911983139663491615228241121378304",
+                "upper": "490397414085013710396022202497040625/5316911983139663491615228241121378304",
+                "width": "0"
+              },
+              {
+                "lower": "-1518693000733286838587551781830821/5192296858534827628530496329220096",
+                "upper": "-1518693000733286838587551781830821/5192296858534827628530496329220096",
+                "width": "0"
+              }
+            ],
+            "original_gradient_rhs": {
+              "lower": "249899499026261640361499660010889043157/2722258935367507707706996859454145691648",
+              "upper": "252283677379254134567790143339328068821/2722258935367507707706996859454145691648",
+              "width": "60185123/68719476736"
+            }
+          },
+          "elapsed_ns": 122151408139,
+          "finished_at": "2026-11-17T10:18:24.088659+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "FD_and_identity_(7/2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 5,
+      "name": "FD_and_identity_(7/2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 6,
+      "name": "FD_and_identity_(7/2, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 7,
+      "name": "FD_and_identity_(5, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 8,
+      "name": "FD_and_identity_(5, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 9,
+      "name": "FD_and_identity_(5, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 10,
+      "name": "sphere_exact_series",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 11,
+      "name": "boundary_(2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 12,
+      "name": "boundary_(2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 13,
+      "name": "boundary_(2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 14,
+      "name": "boundary_(7/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 15,
+      "name": "boundary_(7/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 16,
+      "name": "boundary_(7/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 17,
+      "name": "boundary_(5, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 18,
+      "name": "boundary_(5, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 19,
+      "name": "boundary_(5, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 20,
+      "name": "box20_(1/8, 1/8, 5/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 21,
+      "name": "box20_(1/2, 1/2, 7/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 22,
+      "name": "box20_(7/8, 7/8, 9/2)",
+      "result": "PENDING",
+      "attempts": []
+    }
+  ]
+}

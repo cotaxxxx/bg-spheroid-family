@@ -1,0 +1,52 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 13,
+  "name": "boundary_(2, 1)",
+  "attempt": 1,
+  "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+  "started_at": "2026-11-17T10:20:29.080853+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_013.json.cases/013/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_013.json.cases/013/0001.stderr.log",
+  "result": "PASS",
+  "detail": {
+    "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+    "route": "pole_even_quotient_mean_value",
+    "cells": 8384,
+    "balls": [
+      {
+        "lower": "-51714679952501660218189957234522764361/21267647932558653966460912964485513216",
+        "upper": "184483772177981320406728027280694744943/42535295865117307932921825928971026432",
+        "width": "287913132082984640843107941749740273665/42535295865117307932921825928971026432"
+      }
+    ],
+    "center_point": [
+      {
+        "lower": "162083718632547435022491713329385070009/170141183460469231731687303715884105728",
+        "upper": "162133930459364564858900737917211794873/170141183460469231731687303715884105728",
+        "width": "648972651/2199023255552"
+      }
+    ],
+    "mean_value_correction": [
+      {
+        "lower": "-56709737/16777216",
+        "upper": "56709737/16777216",
+        "width": "56709737/8388608"
+      }
+    ],
+    "cap_errors": [
+      {
+        "lower": "-562305173/137438953472",
+        "upper": "562305173/137438953472",
+        "width": "562305173/68719476736"
+      }
+    ],
+    "details": {
+      "kappa": "1/4096",
+      "endpoint_derivative_order": 4,
+      "mixed_derivatives": "x2 R, x2 lambda",
+      "cap_charge_count": 1
+    }
+  },
+  "elapsed_ns": 114256141766,
+  "finished_at": "2026-11-17T10:22:23.356817+00:00"
+}

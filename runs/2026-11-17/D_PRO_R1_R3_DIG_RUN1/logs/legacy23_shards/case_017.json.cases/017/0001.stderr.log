@@ -1,0 +1,67 @@
+Traceback (most recent call last):
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 221, in run_suite
+    detail=fn()
+           ^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 123, in <lambda>
+    lambda l=lam,t=tau:boundary_case(l,t,BASE)))
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 89, in boundary_case
+    w=angular_quotient((Q(15,16),Q(1)),tau,lam,angle_kind="tau",config=cfg)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 146, in angular_quotient
+    return _angular_quotient(R,T,L,cfg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 173, in _angular_quotient
+    pieces.append(endpoint_W(R,X,L,cfg,chart))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 110, in endpoint_W
+    bb0=integrate(cb_for((arb(rc),arb(0),arb(lc)),point_dom,"bb"),mesh,cfg.order)[0]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/quadrature.py", line 92, in integrate
+    mid=callback(um,vm,"v",order)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 20, in <lambda>
+    return lambda u,v,a,n:evaluate(u,v,params,dom,(a,),(n,),mode)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/density.py", line 52, in evaluate
+    R,x,lam,a,b,k,sigma,mx,mz,xx,xz,C,B,g,gg,rr,rp,d,e,jac=common(
+                                                           ^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/density.py", line 47, in common
+    gg,rr,rp=angle(gamma)
+             ^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/jets.py", line 152, in angle
+    gp=gp*q+arb(2*c[j]/(j+1))
+            ^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 93, in handler
+    raise CaseInterrupted(signum,"".join(traceback.format_stack(frame)))
+prolate_r1.tests.resumable.CaseInterrupted: interrupted by signal 15
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 142, in <module>
+    main()
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 133, in main
+    cli(case_list, BASE.precision, Path(__file__).resolve().parents[1])
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 275, in cli
+    code=run_suite(tests,mode,out,source_identity(root,precision),
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py", line 221, in run_suite
+    detail=fn()
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 123, in <lambda>
+    lambda l=lam,t=tau:boundary_case(l,t,BASE)))
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py", line 89, in boundary_case
+    w=angular_quotient((Q(15,16),Q(1)),tau,lam,angle_kind="tau",config=cfg)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 146, in angular_quotient
+    return _angular_quotient(R,T,L,cfg)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 173, in _angular_quotient
+    pieces.append(endpoint_W(R,X,L,cfg,chart))
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 110, in endpoint_W
+    bb0=integrate(cb_for((arb(rc),arb(0),arb(lc)),point_dom,"bb"),mesh,cfg.order)[0]
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/quadrature.py", line 92, in integrate
+    mid=callback(um,vm,"v",order)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/api.py", line 20, in <lambda>
+    return lambda u,v,a,n:evaluate(u,v,params,dom,(a,),(n,),mode)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/density.py", line 52, in evaluate
+    R,x,lam,a,b,k,sigma,mx,mz,xx,xz,C,B,g,gg,rr,rp,d,e,jac=common(
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/density.py", line 47, in common
+    gg,rr,rp=angle(gamma)
+  File "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/jets.py", line 152, in angle
+    gp=gp*q+arb(2*c[j]/(j+1))

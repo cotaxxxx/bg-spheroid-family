@@ -1,0 +1,175 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "schema": "d-pro-r1-r2-cases-v1",
+  "mode": "full",
+  "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+  "plan_file": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_008.json.cases/plan.json",
+  "updated_at": "2026-11-17T10:21:47.774827+00:00",
+  "complete": false,
+  "execution": "INCOMPLETE",
+  "all_tests_passed": false,
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "PENDING": 22,
+    "RUNNING": 0,
+    "INTERRUPTED": 1
+  },
+  "tests": [
+    {
+      "id": 0,
+      "name": "arithmetic_inputs_and_static_policy",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 1,
+      "name": "FD_and_identity_(2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 2,
+      "name": "FD_and_identity_(2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 3,
+      "name": "FD_and_identity_(2, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 4,
+      "name": "FD_and_identity_(7/2, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 5,
+      "name": "FD_and_identity_(7/2, 1/4, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 6,
+      "name": "FD_and_identity_(7/2, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 7,
+      "name": "FD_and_identity_(5, 1/8, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 8,
+      "name": "FD_and_identity_(5, 1/4, 1/2)",
+      "result": "INTERRUPTED",
+      "attempts": [
+        {
+          "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+          "case_id": 8,
+          "name": "FD_and_identity_(5, 1/4, 1/2)",
+          "attempt": 1,
+          "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+          "started_at": "2026-11-17T10:18:17.791498+00:00",
+          "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_008.json.cases/008/0001.stdout.log",
+          "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_008.json.cases/008/0001.stderr.log",
+          "result": "INTERRUPTED",
+          "signal": 15,
+          "traceback": "Traceback (most recent call last):\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py\", line 221, in run_suite\n    detail=fn()\n           ^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 118, in <lambda>\n    lambda l=lam,r=R,t=T:derivative_case(l,r,t,BASE,(64,128))))\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 57, in derivative_case\n    e0,ep,em=energy(beta),energy(beta+h),energy(beta-h)\n                                         ^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 56, in energy\n    return lab_E(arb(R)*b.cos(),arb(lam*R)*b.sin(),arb(lam),R,reference_grid)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/reference.py\", line 11, in lab_E\n    return old.integrate(rho,z,lam,rmax,order=6,cells=grid).balls[0]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 236, in integrate\n    u_line=density(mu,iv,rho,z,lam,rmax,order,'u')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 186, in density\n    fzz=2*w/d*(gamma*gamma*rr*(1-t*t)-(2*rr+gamma*rp)*e*e)\n               ~~~~~^~~~~~\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 67, in __mul__\n    return Jet([sum((self.c[i]*x.c[k-i] for i in range(k+1)), arb(0))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 67, in <listcomp>\n    return Jet([sum((self.c[i]*x.c[k-i] for i in range(k+1)), arb(0))\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 67, in <genexpr>\n    return Jet([sum((self.c[i]*x.c[k-i] for i in range(k+1)), arb(0))\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py\", line 93, in handler\n    raise CaseInterrupted(signum,\"\".join(traceback.format_stack(frame)))\nprolate_r1.tests.resumable.CaseInterrupted: interrupted by signal 15\n",
+          "interrupted_stack": "  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 142, in <module>\n    main()\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 133, in main\n    cli(case_list, BASE.precision, Path(__file__).resolve().parents[1])\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py\", line 275, in cli\n    code=run_suite(tests,mode,out,source_identity(root,precision),\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/resumable.py\", line 221, in run_suite\n    detail=fn()\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 118, in <lambda>\n    lambda l=lam,r=R,t=T:derivative_case(l,r,t,BASE,(64,128))))\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 57, in derivative_case\n    e0,ep,em=energy(beta),energy(beta+h),energy(beta-h)\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/run_tests.py\", line 56, in energy\n    return lab_E(arb(R)*b.cos(),arb(lam*R)*b.sin(),arb(lam),R,reference_grid)\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/tests/reference.py\", line 11, in lab_E\n    return old.integrate(rho,z,lam,rmax,order=6,cells=grid).balls[0]\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 236, in integrate\n    u_line=density(mu,iv,rho,z,lam,rmax,order,'u')\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 186, in density\n    fzz=2*w/d*(gamma*gamma*rr*(1-t*t)-(2*rr+gamma*rp)*e*e)\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 67, in __mul__\n    return Jet([sum((self.c[i]*x.c[k-i] for i in range(k+1)), arb(0))\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 67, in <listcomp>\n    return Jet([sum((self.c[i]*x.c[k-i] for i in range(k+1)), arb(0))\n  File \"/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source/prolate_r1/vendor/kernel_w1.py\", line 67, in <genexpr>\n    return Jet([sum((self.c[i]*x.c[k-i] for i in range(k+1)), arb(0))\n",
+          "elapsed_ns": 209950486173,
+          "finished_at": "2026-11-17T10:21:47.764543+00:00"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "FD_and_identity_(5, 1/2, 3/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 10,
+      "name": "sphere_exact_series",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 11,
+      "name": "boundary_(2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 12,
+      "name": "boundary_(2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 13,
+      "name": "boundary_(2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 14,
+      "name": "boundary_(7/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 15,
+      "name": "boundary_(7/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 16,
+      "name": "boundary_(7/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 17,
+      "name": "boundary_(5, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 18,
+      "name": "boundary_(5, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 19,
+      "name": "boundary_(5, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 20,
+      "name": "box20_(1/8, 1/8, 5/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 21,
+      "name": "box20_(1/2, 1/2, 7/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 22,
+      "name": "box20_(7/8, 7/8, 9/2)",
+      "result": "PENDING",
+      "attempts": []
+    }
+  ]
+}

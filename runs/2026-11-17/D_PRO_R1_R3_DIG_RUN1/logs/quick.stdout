@@ -1,0 +1,5 @@
+START 0 arithmetic_inputs_and_static_policy attempt 1
+PASS 0 arithmetic_inputs_and_static_policy
+START 1 one_sphere_axis attempt 1
+PASS 1 one_sphere_axis
+DIAGNOSTIC_ONLY / NOT_EVIDENCE COMPLETE {"FAIL":0,"INTERRUPTED":0,"PASS":2,"PENDING":0,"RUNNING":0}

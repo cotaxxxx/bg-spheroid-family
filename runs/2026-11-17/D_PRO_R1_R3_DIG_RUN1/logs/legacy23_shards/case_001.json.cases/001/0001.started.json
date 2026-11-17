@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 1,
+  "name": "FD_and_identity_(2, 1/8, 1/4)",
+  "attempt": 1,
+  "plan_sha256": "ded7b08f4ba6b7849a2471920238e43769fdf98da751aa0cbd70e5142ab826a8",
+  "started_at": "2026-11-17T10:16:21.894934+00:00",
+  "stdout": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_001.json.cases/001/0001.stdout.log",
+  "stderr": "/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/logs/legacy23_shards/case_001.json.cases/001/0001.stderr.log"
+}
