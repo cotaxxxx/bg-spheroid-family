@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 33,
+  "name": "W_box_2",
+  "attempt": 1,
+  "plan_sha256": "f413e16b885d9955c54308b11e71f044ed40fe02103b65fdd7ed1a238ec0aaa2",
+  "started_at": "2026-11-17T04:05:15.934039+00:00",
+  "stdout": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/033/0001.stdout.log",
+  "stderr": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/033/0001.stderr.log"
+}

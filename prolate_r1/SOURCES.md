@@ -29,3 +29,18 @@ chat の19/19は R0の式の監査であり、このR1ソースの検査結果�
   同 `logs/axis_stage_diagnosis.stdout`、`axis_cell_diagnosis.stdout`、
   `axis_default.stderr`、`full.stdout`、`full.time`。
 R1の動作証拠とR2の未実行状態を区別する。
+
+## R3の追加入力
+- 修正元R2：`bc70e1badbd9a89449cae6707ef37f5e69757a11`、
+  branch `codex/d-pro-r1-corotation-r2-20261117`、`prolate_r1/`。
+  読取時にR2のSHA256SUMS全29項目が一致した。
+- V31：`47a4558a9adecea65ddcab038186cc3130bcb849`、
+  branch `evidence/c-gap2-freeze-20261115`、
+  `runs/2026-11-17/D_PRO_R1_R2_MATH_AUDIT_V31/CHAT_AUDIT_D_PRO_R1_R2_KERNELS_V31.md`。
+  R2の動作検査11/11・23/23はこの監査が参照するDigの記録であり、R3の結果ではない。
+- 依頼にある同ディレクトリの`CODEX_INSTRUCTION_D_PRO_R1_COROTATION_20261117.md`は
+  このcommitでは404で、再帰treeにも存在しなかった。
+  本会話の元R1依頼全文とV31本文を照合し、平均値・距離セル・接触座標・普遍量を維持した。
+- R3仕様・参照値：Judgeの2026-11-17依頼（この会話）。固定化は
+  `PLAN_R3_BEFORE_RUN.md`、`tests/width_r3.py`。
+  参照値はchatの非区間の総当たり診断であり、包囲の証明入力ではない。

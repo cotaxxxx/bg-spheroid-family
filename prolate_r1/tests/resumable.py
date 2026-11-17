@@ -106,7 +106,7 @@ def source_identity(root,precision):
         rel=path.relative_to(root)
         if not path.is_file() or any(x in ("outputs","artifacts","__pycache__") for x in rel.parts):
             continue
-        if path.suffix==".py" or path.name in ("boxes.json","requirements.txt","PLAN_BEFORE_DIG_RUN.md"):
+        if path.suffix==".py" or path.name in ("boxes.json","requirements.txt","PLAN_BEFORE_DIG_RUN.md","PLAN_R3_BEFORE_RUN.md"):
             inventory[rel.as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()
     import flint
     return {"source_sha256":digest(inventory),"source_files":inventory,
@@ -229,8 +229,14 @@ def run_suite(tests,mode,out,identity,*,resume=False,max_cases=None,
                         except KeyboardInterrupt:
                             interrupted=130
                             row=dict(started,result="INTERRUPTED",traceback=traceback.format_exc())
-                        except BaseException:
+                        except BaseException as exc:
                             row=dict(started,result="FAIL",traceback=traceback.format_exc())
+                            # Width failures must retain the observation, not
+                            # just a boolean or an assertion traceback.
+                            detail=getattr(exc,"diagnostic",None)
+                            if detail is not None:
+                                canonical(detail)
+                                row["detail"]=detail
                         if row.get("traceback"):
                             serr.write(row["traceback"])
                             if row.get("interrupted_stack"): serr.write(row["interrupted_stack"])

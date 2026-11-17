@@ -1,0 +1,19 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 1,
+  "name": "R3_regression_6",
+  "attempt": 1,
+  "plan_sha256": "628aae5d1ba1a35886a600b8a72f9751dcc94155e98167e1d0ed140f44c8ce2b",
+  "started_at": "2026-11-17T03:59:10.863335+00:00",
+  "stdout": "prolate_r1/outputs/CODEX_R3_REGRESSIONS.json.cases/001/0001.stdout.log",
+  "stderr": "prolate_r1/outputs/CODEX_R3_REGRESSIONS.json.cases/001/0001.stderr.log",
+  "result": "PASS",
+  "detail": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "elapsed_ns": 59612615,
+  "finished_at": "2026-11-17T03:59:10.926157+00:00"
+}

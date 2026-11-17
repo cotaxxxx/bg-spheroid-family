@@ -6,6 +6,7 @@ from .intervals import (Config,Result,iv,ball,bounds,midpoint,radius,sym,mag,
 from .jets import Jet, structure
 from .density import Domain,evaluate,even_energy,axial
 from .quadrature import make_mesh,integrate,range_integral
+from .center_bounds import center_max_bound
 
 def validate(R,L):
     if not Q(0)<=R[0]<=R[1]<=Q(1): raise ValueError("radius outside [0,1]")
@@ -73,7 +74,7 @@ def angular_raw(R,beta,lam,*,angle_kind="beta",config=None):
     with ctx.workprec(cfg.precision):
         R,L=iv(R),iv(lam); validate(R,L); T=tau_interval(beta,angle_kind)
         dom=domain_for(R,L,cfg)
-        mesh=make_mesh(R,dom.kappa,cfg)
+        mesh=make_mesh(R,dom.kappa,cfg,lam=L)
         pt,corr=mv_integral((R,T,L),dom,mesh,"raw",cfg)
         caps=raw_caps(R,L,dom.kappa)
         return Result(tuple(a+b+c for a,b,c in zip(pt,corr,caps)),pt,corr,caps,
@@ -82,26 +83,27 @@ def angular_raw(R,beta,lam,*,angle_kind="beta",config=None):
 
 def center_W(R,L,cfg):
     dom=Domain((Q(0),Q(0)),L)
-    mesh=make_mesh((-R[1],R[1]),Q(0),cfg)
+    mesh=make_mesh((-R[1],R[1]),Q(0),cfg,lam=L)
     pt=integrate(cb_for((arb(0),arb(0),arb(midpoint(L))),dom,"center_W"),mesh,cfg.order)[0]
     corr=arb(0)
     if radius(L):
         der=deriv_integral((arb(0),arb(0),ball(L)),dom,mesh,"center_W",("lam",),(1,))[0]
         corr=der*sym(radius(L))
     remainder=arb(0)
+    M=Q(0); bound_cells=0; bound_boxes=0
     if R[1]:
-        full=Domain((-R[1],R[1]),L)
-        # M bounds E_{R R R R beta beta}; total differentiation order is six.
-        d4=deriv_integral((hull(-R[1],R[1]),hull(0,1),ball(L)),
-                         full,mesh,"bb",("R",),(4,))[0]
-        remainder=sym(arb.pi()*arb(R[1]**2)*arb(mag(d4))/48)
+        M,bound_cells,bound_boxes=center_max_bound(R[1],L,cfg,"W")
+        remainder=sym(arb.pi()*arb(R[1]**2)*arb(M)/48)
     return Result((pt+corr+remainder,),(pt,),(corr+remainder,),(arb(0),),
-                  len(mesh),"center_W_Taylor_R2",
+                  len(mesh)+bound_cells,"center_W_Taylor_R2",
                   {"remainder":str(mag(remainder)),"derivative_order":"R4 beta2",
-                   "radius_effect":"analytic even Taylor remainder"})
+                   "radius_effect":"analytic even Taylor remainder",
+                   "M_upper":str(M),"bound_boxes":bound_boxes,
+                   "bound_sum_cells":bound_cells,
+                   "bound_quadrature_order":cfg.center_bound_order})
 
 def endpoint_W(R,X,L,cfg,chart):
-    dom=domain_for(R,L,cfg,chart); mesh=make_mesh(R,dom.kappa,cfg)
+    dom=domain_for(R,L,cfg,chart); mesh=make_mesh(R,dom.kappa,cfg,lam=L)
     rc,xc,lc=map(midpoint,(R,X,L))
     point_dom=Domain((rc,rc),(lc,lc),dom.kappa,chart)
     sign=1 if chart=="equator" else -1
@@ -160,7 +162,7 @@ def _angular_quotient(R,T,L,cfg):
         if a>b: continue
         if a==b and T[0]!=T[1]: continue
         if chart=="middle":
-            dom=domain_for(R,L,cfg); mesh=make_mesh(R,dom.kappa,cfg)
+            dom=domain_for(R,L,cfg); mesh=make_mesh(R,dom.kappa,cfg,lam=L)
             pt,corr=mv_integral((R,(a,b),L),dom,mesh,"W",cfg)
             cap=W_cap(R,dom.kappa)
             pieces.append(Result((pt[0]+corr[0]+cap,),pt,corr,(cap,),len(mesh),
@@ -187,7 +189,7 @@ def axis_g(t,lam,*,config=None):
         if T[1]>=1: raise ValueError("axis_g requires t<1")
         if T==(Q(0),Q(0)):
             return Result((arb(0),),(arb(0),),(arb(0),),(arb(0),),0,"axis_reflection_zero")
-        dom=Domain(T,L); mesh=make_mesh(T,Q(0),cfg,axis=True)
+        dom=Domain(T,L); mesh=make_mesh(T,Q(0),cfg,axis=True,lam=L)
         fn=odd_axis if T[1]<=cfg.center_to else axial
         p0=(arb(midpoint(T)),arb(midpoint(L)))
         pt=integrate(lambda u,v,a,n:fn(u,v,p0,dom,(a,),(n,)),mesh,cfg.order,axis=True)[0]
@@ -212,7 +214,7 @@ def coefficient_point(R,L,mesh,cfg,derivative,divisor):
 
 def center_phi(S,L,cfg):
     rhi=arb(S[1]).sqrt().upper().fmpq()
-    mesh=make_mesh((-rhi,rhi),Q(0),cfg)
+    mesh=make_mesh((-rhi,rhi),Q(0),cfg,lam=L)
     pt=coefficient_point((Q(0),Q(0)),L,mesh,cfg,4,6)
     corr=arb(0)
     dom=Domain((Q(0),Q(0)),L)
@@ -221,14 +223,16 @@ def center_phi(S,L,cfg):
                          ("R","lam"),(4,1))[0]/6
         corr+=d*sym(radius(L))
     rem=arb(0)
+    M6=Q(0); bound_cells=0; bound_boxes=0
     if S[1]:
-        full=Domain((-rhi,rhi),L)
-        d6=deriv_integral((hull(-rhi,rhi),arb(0),ball(L)),full,mesh,"energy",
-                          ("R",),(6,))[0]
-        rem=sym(arb(S[1])*arb(mag(d6))/60)
-    return Result((pt+corr+rem,),(pt,),(corr+rem,),(arb(0),),len(mesh),
+        M6,bound_cells,bound_boxes=center_max_bound(rhi,L,cfg,"phi")
+        rem=sym(arb(S[1])*arb(M6)/60)
+    return Result((pt+corr+rem,),(pt,),(corr+rem,),(arb(0),),len(mesh)+bound_cells,
                   "phi_center_H4_over_6",{"derivative_order":6,
-                  "radius_effect":"analytic even Taylor remainder"})
+                  "radius_effect":"analytic even Taylor remainder",
+                  "M6_upper":str(M6),"bound_boxes":bound_boxes,
+                  "bound_sum_cells":bound_cells,
+                  "bound_quadrature_order":cfg.center_bound_order})
 
 def equatorial_phi_s(s,lam,*,config=None):
     cfg=config or Config()
@@ -241,7 +245,7 @@ def equatorial_phi_s(s,lam,*,config=None):
                           equatorial_phi_s((threshold,S[1]),L,config=cfg)],"phi_radial_split")
         R=(max(Q(0),arb(S[0]).sqrt().lower().fmpq()),
            min(Q(1),arb(S[1]).sqrt().upper().fmpq()))
-        dom=domain_for(R,L,cfg); mesh=make_mesh(R,dom.kappa,cfg)
+        dom=domain_for(R,L,cfg); mesh=make_mesh(R,dom.kappa,cfg,lam=L)
         pt,corr=mv_integral((R,(Q(0),Q(0)),L),dom,mesh,"phi",cfg)
         cap=arb(0)
         if dom.kappa:

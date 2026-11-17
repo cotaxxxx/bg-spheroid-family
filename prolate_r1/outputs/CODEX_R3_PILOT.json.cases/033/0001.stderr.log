@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b4926f75dc31/dpro_r3/package/prolate_r1/tests/resumable.py", line 221, in run_suite
+    detail=fn()
+           ^^^^
+  File "/workspace/scratch/b4926f75dc31/dpro_r3/package/prolate_r1/tests/width_r3.py", line 107, in <lambda>
+    return [(c.name,lambda c=c:measure(c)) for c in specifications()]
+                               ^^^^^^^^^^
+  File "/workspace/scratch/b4926f75dc31/dpro_r3/package/prolate_r1/tests/width_r3.py", line 103, in measure
+    raise WidthFailure(detail)
+WidthFailure: R3 diagnostic gate failed: W_box_2; half_width=650714081662070078127437329074552307713/81129638414606681695789005144064; limit=3/10

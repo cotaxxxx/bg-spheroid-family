@@ -1,0 +1,375 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "schema": "d-pro-r1-r2-cases-v1",
+  "mode": "r3_width",
+  "plan_sha256": "f413e16b885d9955c54308b11e71f044ed40fe02103b65fdd7ed1a238ec0aaa2",
+  "plan_file": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/plan.json",
+  "updated_at": "2026-11-17T04:21:39.304370+00:00",
+  "complete": false,
+  "execution": "INCOMPLETE",
+  "all_tests_passed": false,
+  "counts": {
+    "PASS": 1,
+    "FAIL": 1,
+    "PENDING": 34,
+    "RUNNING": 0,
+    "INTERRUPTED": 0
+  },
+  "tests": [
+    {
+      "id": 0,
+      "name": "W_point_(2, 1/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 1,
+      "name": "W_point_(2, 3/4, 1/3)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 2,
+      "name": "W_point_(2, 1/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 3,
+      "name": "W_point_(2, 1/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 4,
+      "name": "W_point_(7/2, 1/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 5,
+      "name": "W_point_(7/2, 3/4, 1/3)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 6,
+      "name": "W_point_(7/2, 1/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 7,
+      "name": "W_point_(7/2, 1/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 8,
+      "name": "W_point_(5, 1/2, 1/2)",
+      "result": "PASS",
+      "attempts": [
+        {
+          "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+          "case_id": 8,
+          "name": "W_point_(5, 1/2, 1/2)",
+          "attempt": 1,
+          "plan_sha256": "f413e16b885d9955c54308b11e71f044ed40fe02103b65fdd7ed1a238ec0aaa2",
+          "started_at": "2026-11-17T03:59:10.432370+00:00",
+          "stdout": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/008/0001.stdout.log",
+          "stderr": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/008/0001.stderr.log",
+          "result": "PASS",
+          "detail": {
+            "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+            "name": "W_point_(5, 1/2, 1/2)",
+            "kind": "W",
+            "inputs": "(1/2, 1/2, 5)",
+            "default_config": "Config(precision=128, order=6, base_u=32, base_v=64, distance_ratio=1/4, kappa=1/4096, cap_from=15/16, center_to=1/16, max_depth=28, max_cells=200000, center_radial_parts=8, center_tau_parts=16, center_bound_order=2)",
+            "half_width": "772202953/1099511627776",
+            "half_width_decimal": "[0.000702314494447 +/- 9.05e-17]",
+            "half_width_limit": "1/20",
+            "width_pass": true,
+            "reference_pass": true,
+            "reference": "98505740033/50000000000",
+            "reference_tolerance": "1/1000000",
+            "reference_status": "NONINTERVAL_DIAGNOSTIC",
+            "evaluation_ns": 365479227552,
+            "seconds": "11421225861/31250000",
+            "result": {
+              "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+              "route": "middle_W_mean_value",
+              "cells": 28096,
+              "balls": [
+                {
+                  "lower": "167539074076279798379701750360362691259/85070591730234615865843651857942052864",
+                  "upper": "167658566695526436711952382298223520443/85070591730234615865843651857942052864",
+                  "width": "772202953/549755813888"
+                }
+              ],
+              "center_point": [
+                {
+                  "lower": "167539074076279798379701750360362691259/85070591730234615865843651857942052864",
+                  "upper": "167658566695526436711952382298223520443/85070591730234615865843651857942052864",
+                  "width": "772202953/549755813888"
+                }
+              ],
+              "mean_value_correction": [
+                {
+                  "lower": "0",
+                  "upper": "0",
+                  "width": "0"
+                }
+              ],
+              "cap_errors": [
+                {
+                  "lower": "0",
+                  "upper": "0",
+                  "width": "0"
+                }
+              ],
+              "details": {
+                "kappa": "0",
+                "cap_charge_count": 0
+              }
+            }
+          },
+          "elapsed_ns": 365485100379,
+          "finished_at": "2026-11-17T04:05:15.922973+00:00"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "W_point_(5, 3/4, 1/3)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 10,
+      "name": "W_point_(5, 1/2, 0)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 11,
+      "name": "W_point_(5, 1/2, 1)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 12,
+      "name": "W_center_2",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 13,
+      "name": "W_center_5",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 14,
+      "name": "g_(2, 1/32)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 15,
+      "name": "g_(2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 16,
+      "name": "g_(2, 7/8)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 17,
+      "name": "g_(7/2, 1/32)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 18,
+      "name": "g_(7/2, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 19,
+      "name": "g_(7/2, 7/8)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 20,
+      "name": "g_(5, 1/32)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 21,
+      "name": "g_(5, 1/2)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 22,
+      "name": "g_(5, 7/8)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 23,
+      "name": "Phi_s_(2, 1/1024)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 24,
+      "name": "Phi_s_(2, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 25,
+      "name": "Phi_s_(2, 9/16)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 26,
+      "name": "Phi_s_(7/2, 1/1024)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 27,
+      "name": "Phi_s_(7/2, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 28,
+      "name": "Phi_s_(7/2, 9/16)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 29,
+      "name": "Phi_s_(5, 1/1024)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 30,
+      "name": "Phi_s_(5, 1/4)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 31,
+      "name": "Phi_s_(5, 9/16)",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 32,
+      "name": "W_box_1",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 33,
+      "name": "W_box_2",
+      "result": "FAIL",
+      "attempts": [
+        {
+          "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+          "case_id": 33,
+          "name": "W_box_2",
+          "attempt": 1,
+          "plan_sha256": "f413e16b885d9955c54308b11e71f044ed40fe02103b65fdd7ed1a238ec0aaa2",
+          "started_at": "2026-11-17T04:05:15.934039+00:00",
+          "stdout": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/033/0001.stdout.log",
+          "stderr": "prolate_r1/outputs/CODEX_R3_PILOT.json.cases/033/0001.stderr.log",
+          "result": "FAIL",
+          "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/b4926f75dc31/dpro_r3/package/prolate_r1/tests/resumable.py\", line 221, in run_suite\n    detail=fn()\n           ^^^^\n  File \"/workspace/scratch/b4926f75dc31/dpro_r3/package/prolate_r1/tests/width_r3.py\", line 107, in <lambda>\n    return [(c.name,lambda c=c:measure(c)) for c in specifications()]\n                               ^^^^^^^^^^\n  File \"/workspace/scratch/b4926f75dc31/dpro_r3/package/prolate_r1/tests/width_r3.py\", line 103, in measure\n    raise WidthFailure(detail)\nWidthFailure: R3 diagnostic gate failed: W_box_2; half_width=650714081662070078127437329074552307713/81129638414606681695789005144064; limit=3/10\n",
+          "detail": {
+            "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+            "name": "W_box_2",
+            "kind": "W",
+            "inputs": "((95/128, 97/128), (15/128, 17/128), (1279/256, 5))",
+            "default_config": "Config(precision=128, order=6, base_u=32, base_v=64, distance_ratio=1/4, kappa=1/4096, cap_from=15/16, center_to=1/16, max_depth=28, max_cells=200000, center_radial_parts=8, center_tau_parts=16, center_bound_order=2)",
+            "half_width": "650714081662070078127437329074552307713/81129638414606681695789005144064",
+            "half_width_decimal": "[8020670.30469 +/- 2.51e-6]",
+            "half_width_limit": "3/10",
+            "width_pass": false,
+            "reference_pass": true,
+            "reference": null,
+            "reference_tolerance": "1/1000000",
+            "reference_status": "NONINTERVAL_DIAGNOSTIC",
+            "evaluation_ns": 983340355177,
+            "seconds": "983340355177/1000000000",
+            "result": {
+              "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+              "route": "equator_even_quotient_mean_value",
+              "cells": 34816,
+              "balls": [
+                {
+                  "lower": "-325422708479638655612345843762455272225/40564819207303340847894502572032",
+                  "upper": "10165355411950981953596608916003032359/1267650600228229401496703205376",
+                  "width": "650714081662070078127437329074552307713/40564819207303340847894502572032"
+                }
+              ],
+              "center_point": [
+                {
+                  "lower": "-248942181493582855760062150991689964321/40564819207303340847894502572032",
+                  "upper": "7775338943636738208212743516916616487/1267650600228229401496703205376",
+                  "width": "497753027689958478422869943533021691905/40564819207303340847894502572032"
+                }
+              ],
+              "mean_value_correction": [
+                {
+                  "lower": "-482659981/256",
+                  "upper": "482659981/256",
+                  "width": "482659981/128"
+                }
+              ],
+              "cap_errors": [
+                {
+                  "lower": "0",
+                  "upper": "0",
+                  "width": "0"
+                }
+              ],
+              "details": {
+                "kappa": "0",
+                "endpoint_derivative_order": 4,
+                "mixed_derivatives": "x2 R, x2 lambda",
+                "cap_charge_count": 0
+              }
+            }
+          },
+          "elapsed_ns": 983355694388,
+          "finished_at": "2026-11-17T04:21:39.294797+00:00"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "W_box_3",
+      "result": "PENDING",
+      "attempts": []
+    },
+    {
+      "id": 35,
+      "name": "Ebeta_reference_lambda5",
+      "result": "PENDING",
+      "attempts": []
+    }
+  ]
+}

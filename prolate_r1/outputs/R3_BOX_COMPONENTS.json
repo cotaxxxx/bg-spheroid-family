@@ -1,0 +1,19 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "source": "CODEX_R3_PILOT.json.cases/033/0001.result.json",
+  "components": {
+    "center_point": {
+      "half_width": "497753027689958478422869943533021691905/81129638414606681695789005144064",
+      "half_width_decimal": "[6135279.75000 +/- 1.0e-9]"
+    },
+    "mean_value_correction": {
+      "half_width": "482659981/256",
+      "half_width_decimal": "[1885390.55078 +/- 1.25e-6]"
+    },
+    "cap_errors": {
+      "half_width": "0",
+      "half_width_decimal": "0"
+    }
+  },
+  "note": "center_point includes the existing endpoint Taylor quotient remainder; this is not a separate E_betabeta measurement."
+}

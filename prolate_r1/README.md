@@ -1,89 +1,97 @@
-# D-PRO R1 修正版 R2
-**DIAGNOSTIC_ONLY / NOT_EVIDENCE — 新版のPython/Arb実行は未検証**
+# D-PRO R1 修正版 R3
+**DIAGNOSTIC_ONLY / NOT_EVIDENCE**
 
-R1原本とDigのRUN1証拠を保存したまま、次の2点を修正した版です。
+2026-11-17。R2の包囲方式を保ち、lambdaに応じたセル分割、中心剰余の
+小箱ごとの平均値評価、半幅上限テスト、軸の弧長によるセル条件を追加した版です。
+実行済みの範囲・幅・時間・未実行項目は **[VALIDATION.md](VALIDATION.md)** に記録します。
+独立した数学監査と研究用PCでのfull実行はDig/chatの工程です。
 
-1. axis_g の D^(-3) を、正の下界で包んだ逆数 invD の積として評価する。
-2. 固定full 23ケースの結果を逐次保存し、未完了ケースから再開する。
+**試走結果：点Wの半幅は約0.0007023で上限0.05以内ですが、指定箱2は約802万で
+上限0.3に未達です。箱の幅の問題が解消した版とは扱いません。**
+点・箱各1件の結果であり、未実行の中心経路や他の箱へ一般化しません。
 
-詳細は REVISION_R2.md、包囲の導出は ANALYSIS.md §12、
-実行状況は VALIDATION.md を参照してください。
-R1のquick 2/2とpilot成功は旧版の結果です。R2の実行結果はまだありません。
+## 版と固定設定
 
-## 原本・版
-R1: `4b7f1f73421f2765d347e4d2ffc9ab004393695c`。
-Dig RUN1: `1917e1ab3c22191852385cf8cd3df5f6d9958fb8`。
-新版branch: `codex/d-pro-r1-corotation-r2-20261117`。
+- 修正元R2：`bc70e1badbd9a89449cae6707ef37f5e69757a11`。
+- V31監査：`47a4558a9adecea65ddcab038186cc3130bcb849`。
+- 新版branch：`codex/d-pro-r1-corotation-r3-20261117`。
+- 新版ZIP：`artifacts/D_PRO_R1_COROTATION_R3_20261117.zip`。
+- 既定Config：python-flint **0.8.0**、128 bits、6次、初期32×64、径の比1/4。
+- 中心剰余：WはR8×tau16、Phi_sはR8。各小箱の中心の求積は2次。
 
-新版ZIP: `artifacts/D_PRO_R1_COROTATION_R2_20261117.zip`。
-対応する `.zip.sha256` を展開前に照合し、**新しいフォルダに展開**してください。
-ZIPはソース・文書・未実行記録と SHA256SUMS を含み、
-artifacts/ とZIP自身は含みません。
-リポジトリ内の旧ZIPは不変です。
+設定は [PLAN_R3_BEFORE_RUN.md](PLAN_R3_BEFORE_RUN.md) で試走前に固定しました。
+上限を満たさない測定はFAILとして残し、設定や判定値を緩めません。
+軸のy座標、級数・符号付き剰余、球冠上界、端点・中心の差商定数はR2と同じです。
+解析上の根拠、複素距離の主張への留保、OPEN項目は [ANALYSIS.md](ANALYSIS.md) §13。
 
-## Dig用：小さな回帰検査
-展開先またはリポジトリのルートで実行：
+## Dig用の1行
+
+ZIPの対応する`.zip.sha256`を照合し、**新しいフォルダ**へ展開したルートで実行：
+
 ```sh
-python -m pip install -r prolate_r1/requirements.txt && python -m prolate_r1.verify_manifest && python -m unittest prolate_r1.tests.test_revision_r2 -v
+python -m pip install -r prolate_r1/requirements.txt && python -m prolate_r1.verify_manifest && python -m prolate_r1.run_r3_validation --full --resume --out prolate_r1/outputs/dig_r3_full.json
 ```
 
-11個のR2回帰検査は旧fullとは別です。
-報告されたセル、axis_g(1/2,3)、逆数係数、逐次保存、
-再開・例外・SIGTERM・識別情報違いを検査します。
-SIGTERMの回帰はPOSIXで行い、その他のOSではその1件を明示的にskipします。
+R2回帰11件、R3軽量回帰6件、変更していない旧full23ケース、新しい幅36ケースを実行します。
+先頭の回帰群は各1ケースとしてrunnerに格納されるため、runner上の計数は61です。
+回帰の各テスト名・結果はstdoutログに残ります。quickは旧来の2件のまま別途実行できます。
+幅36件には、半幅上限を持つ35件とE_betaの参照照合1件が含まれます。
 
-## quick と pilot
+各ケースの開始・終了・幅・時間・例外スタックを原子的に保存します。
+失敗しても後続ケースに進みます。同じ行で再開でき、完了済みケースを再実行しません。
+強制終了されたケースは先頭からやり直し、途中の積分セルからの再開ではありません。
+ソース・実行環境が変わった場合は別の`--out`が必要です。
+runner自身には480秒の打切りを設けていません。外部実行器に時間制限がある場合は、
+Dig側で終了まで存続するプロセスとして起動し、保存されたJSONとログを監視してください。
+全件が終わるまで終了コード2、完了時は全件成功なら0、失敗があれば1です。
+これは動作・幅診断の判定であり、正値認証ではありません。
+
+1ケースずつ進める場合は同じコマンドの末尾に`--max-cases 1`を加えます。
+ケース一覧は`python -m prolate_r1.run_r3_validation --full --list-cases`。
+`--case N`で実行対象を指定できます。既存のFAILを再試行する場合だけ`--retry-failed`を付けます。
+`dig_r3_full.json`と`dig_r3_full.json.cases/`の両方を保存してください。
+Codexの出力ファイルをDigの再開先に使わないでください（環境識別が異なります）。
+
+12コアPCでも、この1行のrunner自体は逐次です。複数プロセスで実行する場合は、
+異なる`--out`と互いに重ならない`--case`集合を使います。
+同じ出力への同時実行はOSロックで拒否します。
+
+## 個別実行
+
 ```sh
-python -m prolate_r1.tests.run_tests --resume --out prolate_r1/outputs/dig_r2_quick.json && python -m prolate_r1.run_diagnostics --pilot --output-dir prolate_r1/outputs/r2_pilot
+python -m prolate_r1.tests.run_tests --resume --out prolate_r1/outputs/dig_r3_quick.json
+python -m prolate_r1.tests.width_r3 --resume --out prolate_r1/outputs/dig_r3_width.json
+python -m prolate_r1.run_diagnostics --fixed27 --output-dir prolate_r1/outputs/dig_r3_fixed27
 ```
 
-quickの2ケースとpilot box13の設定はR1と同じです。
+最後の行は全27箱と各中心点の時間・幅を記録する研究用PC向けの別測定です。
+旧`run_diagnostics --pilot`はR1/R2の小規模設定を保持しているため、
+R3の既定Configでの幅検査とは扱いません。
 
-## full：1ケースずつ保存・再開する1行
-```sh
-python -m prolate_r1.tests.run_tests --full --resume --max-cases 1 --out prolate_r1/outputs/dig_r2_full.json
-```
+CodexのR3試走は`tests.width_r3`のID8（lambda=5の点W）とID33（指定箱2）だけです。
+他の新しい幅ケースは実行したことにしません。時間外挿は`r3_time_report.py`で
+幾何セル数から計算し、[VALIDATION.md](VALIDATION.md)に限界とともに載せます。
 
-同じ行を繰り返すと、完了済みケースを保存したまま次へ進みます。
-全件が揃うまでは終了コード2、全件完了後は0または1です。
-この行に `&& 次の処理` を付けると、未完了コード2のため次の処理は走りません。
+## API（名前・引数を維持）
 
-時間制限なしで全件を続ける場合：
-```sh
-python -m prolate_r1.tests.run_tests --full --resume --out prolate_r1/outputs/dig_r2_full.json
-```
-
-ケース一覧と指定（IDは0から22）：
-```sh
-python -m prolate_r1.tests.run_tests --full --list-cases
-python -m prolate_r1.tests.run_tests --full --resume --case 6 --out prolate_r1/outputs/dig_r2_full.json
-```
-
-`dig_r2_full.json` と `dig_r2_full.json.cases/` をまとめて保存してください。
-後者には実行前計画、試行ごとの結果JSON、stdout・stderr、
-失敗・捕捉できた中断のスタックが入ります。
-未完了ケースはケース先頭から再実行します。途中の積分セルからは再開しません。
-ソース・Python/python-flint・精度・記録対象の環境変数が変わると、
-同じ出力へのresumeを拒否します。その場合は新しい --out を指定します。
-元の失敗を再試行する場合は --retry-failed を明示します。
-ケースの標本・判定を変更して時間制限に合わせる処理はありません。
-
-## API
 ```python
 from flint import fmpq as Q
 from prolate_r1 import angular_raw, angular_quotient, axis_g, equatorial_phi_s, Config
+w = angular_quotient(Q(1,2), Q(1,2), Q(5), angle_kind="tau", config=Config())
+raw = angular_raw(Q(1,2), Q(1,2), Q(5), angle_kind="tau")
 g = axis_g(Q(1,2), Q(3), config=Config())
-raw = angular_raw(Q(1,2), Q(1,2), Q(3), angle_kind="tau")
-w = angular_quotient((Q(15,16), Q(1)), Q(1), Q(3), angle_kind="tau")
-phi = equatorial_phi_s(Q(1,4), Q(3))
+phi = equatorial_phi_s(Q(1,4), Q(5), config=Config())
 ```
 
-入力はfmpqの点またはfmpq端点対。lambda=1は球の対照、通常は[2,5]。
-R,s∈[0,1]、axis_gはt∈[0,1)。beta=pi/2はtau=1で指定します。
-rawの微分はtau入力でもbeta微分です。
-Resultの意味と数学的包囲の条件はR1と同じです。
+幾何入力はfmpqまたはfmpq端点対。beta=pi/2はtau=1で指定します。
+rawの微分はtau入力でもbeta微分です。Arbによる包囲を返します。
+入力lambdaは球の対照1または[2,5]、R/sは[0,1]、axis_gのtは[0,1)です。
+Result.detailsに中心剰余の上界と小箱数を追加しています。
 
-`outputs/CODEX_TEST_STATUS.json`、`CODEX_PILOT_STATUS.json`、
-`JS_SOURCE_CHECKS.json` は旧版に含まれた履歴として保持しています。
-新版の未実行記録は `outputs/R2_VALIDATION_STATUS.json` です。
-このソースの存在や動作成功は、条件 A・Z・C の符号を示しません。
+## 原本と封印
+
+R1/R2原本ZIP・既存branchは保持します。新版ZIPはprolate_r1のソース、文書、
+実行記録、SHA256SUMSを含み、artifacts、bytecode、実行時lockは含みません。
+SHA256SUMSは自分自身とZIPを除く内容を封印し、ZIPは外側の`.zip.sha256`で封印します。
+旧outputsとREVISION_R2.mdは履歴であり、R3の最新結果はVALIDATION.mdを参照してください。
+この実装は既存コードの再利用であり、clean-roomや独立checkerとは呼びません。

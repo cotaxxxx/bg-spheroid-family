@@ -1,0 +1,50 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "version": "R3",
+  "base_commit": "bc70e1badbd9a89449cae6707ef37f5e69757a11",
+  "audit_commit": "47a4558a9adecea65ddcab038186cc3130bcb849",
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.8.0",
+    "architecture": "x86_64",
+    "cpu": "Intel Xeon Platinum 8573C"
+  },
+  "local_regression_R2": {
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "local_regression_R3": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "quick_counts": {
+    "PASS": 2,
+    "FAIL": 0,
+    "PENDING": 0,
+    "RUNNING": 0,
+    "INTERRUPTED": 0
+  },
+  "pilot_counts": {
+    "PASS": 1,
+    "FAIL": 1,
+    "PENDING": 34,
+    "RUNNING": 0,
+    "INTERRUPTED": 0
+  },
+  "source_preservation": {
+    "passed": 49,
+    "total": 49
+  },
+  "runtime_source_identities_match_final_package": true,
+  "full_23": "NOT_RUN_HERE",
+  "remaining_width_cases": 34,
+  "center_remainder_actual_integrals": "NOT_RUN_HERE",
+  "fixed27_integrals": "NOT_RUN_HERE",
+  "independent_R3_math_audit": "OPEN",
+  "prior_R2_Dig_full": "23/23 at 5ab1a01351661ddb7cc8e32bf77ea05cc9d63161, as reported by V31; not an R3 result",
+  "source_identity_note": "Runtime source fingerprints are in each .cases/plan.json; later edits are documentation/output only."
+}

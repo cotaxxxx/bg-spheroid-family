@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "case_id": 0,
+  "name": "R2_regression_11",
+  "attempt": 1,
+  "plan_sha256": "628aae5d1ba1a35886a600b8a72f9751dcc94155e98167e1d0ed140f44c8ce2b",
+  "started_at": "2026-11-17T03:59:10.541301+00:00",
+  "stdout": "prolate_r1/outputs/CODEX_R3_REGRESSIONS.json.cases/000/0001.stdout.log",
+  "stderr": "prolate_r1/outputs/CODEX_R3_REGRESSIONS.json.cases/000/0001.stderr.log"
+}

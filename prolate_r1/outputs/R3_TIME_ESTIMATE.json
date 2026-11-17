@@ -1,0 +1,320 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "method": "cell-count extrapolation; not a timing bound",
+  "config": "Config(precision=128, order=6, base_u=32, base_v=64, distance_ratio=1/4, kappa=1/4096, cap_from=15/16, center_to=1/16, max_depth=28, max_cells=200000, center_radial_parts=8, center_tau_parts=16, center_bound_order=2)",
+  "samples": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "name": "W_point_(5, 1/2, 1/2)",
+      "kind": "W",
+      "inputs": "(1/2, 1/2, 5)",
+      "default_config": "Config(precision=128, order=6, base_u=32, base_v=64, distance_ratio=1/4, kappa=1/4096, cap_from=15/16, center_to=1/16, max_depth=28, max_cells=200000, center_radial_parts=8, center_tau_parts=16, center_bound_order=2)",
+      "half_width": "772202953/1099511627776",
+      "half_width_decimal": "[0.000702314494447 +/- 9.05e-17]",
+      "half_width_limit": "1/20",
+      "width_pass": true,
+      "reference_pass": true,
+      "reference": "98505740033/50000000000",
+      "reference_tolerance": "1/1000000",
+      "reference_status": "NONINTERVAL_DIAGNOSTIC",
+      "evaluation_ns": 365479227552,
+      "seconds": "11421225861/31250000",
+      "result": {
+        "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+        "route": "middle_W_mean_value",
+        "cells": 28096,
+        "balls": [
+          {
+            "lower": "167539074076279798379701750360362691259/85070591730234615865843651857942052864",
+            "upper": "167658566695526436711952382298223520443/85070591730234615865843651857942052864",
+            "width": "772202953/549755813888"
+          }
+        ],
+        "center_point": [
+          {
+            "lower": "167539074076279798379701750360362691259/85070591730234615865843651857942052864",
+            "upper": "167658566695526436711952382298223520443/85070591730234615865843651857942052864",
+            "width": "772202953/549755813888"
+          }
+        ],
+        "mean_value_correction": [
+          {
+            "lower": "0",
+            "upper": "0",
+            "width": "0"
+          }
+        ],
+        "cap_errors": [
+          {
+            "lower": "0",
+            "upper": "0",
+            "width": "0"
+          }
+        ],
+        "details": {
+          "kappa": "0",
+          "cap_charge_count": 0
+        }
+      }
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "name": "W_box_2",
+      "kind": "W",
+      "inputs": "((95/128, 97/128), (15/128, 17/128), (1279/256, 5))",
+      "default_config": "Config(precision=128, order=6, base_u=32, base_v=64, distance_ratio=1/4, kappa=1/4096, cap_from=15/16, center_to=1/16, max_depth=28, max_cells=200000, center_radial_parts=8, center_tau_parts=16, center_bound_order=2)",
+      "half_width": "650714081662070078127437329074552307713/81129638414606681695789005144064",
+      "half_width_decimal": "[8020670.30469 +/- 2.51e-6]",
+      "half_width_limit": "3/10",
+      "width_pass": false,
+      "reference_pass": true,
+      "reference": null,
+      "reference_tolerance": "1/1000000",
+      "reference_status": "NONINTERVAL_DIAGNOSTIC",
+      "evaluation_ns": 983340355177,
+      "seconds": "983340355177/1000000000",
+      "result": {
+        "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+        "route": "equator_even_quotient_mean_value",
+        "cells": 34816,
+        "balls": [
+          {
+            "lower": "-325422708479638655612345843762455272225/40564819207303340847894502572032",
+            "upper": "10165355411950981953596608916003032359/1267650600228229401496703205376",
+            "width": "650714081662070078127437329074552307713/40564819207303340847894502572032"
+          }
+        ],
+        "center_point": [
+          {
+            "lower": "-248942181493582855760062150991689964321/40564819207303340847894502572032",
+            "upper": "7775338943636738208212743516916616487/1267650600228229401496703205376",
+            "width": "497753027689958478422869943533021691905/40564819207303340847894502572032"
+          }
+        ],
+        "mean_value_correction": [
+          {
+            "lower": "-482659981/256",
+            "upper": "482659981/256",
+            "width": "482659981/128"
+          }
+        ],
+        "cap_errors": [
+          {
+            "lower": "0",
+            "upper": "0",
+            "width": "0"
+          }
+        ],
+        "details": {
+          "kappa": "0",
+          "endpoint_derivative_order": 4,
+          "mixed_derivatives": "x2 R, x2 lambda",
+          "cap_charge_count": 0
+        }
+      }
+    }
+  ],
+  "geometry": [
+    {
+      "id": 0,
+      "box_cells": 4096,
+      "point_cells": 4096,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 1,
+      "box_cells": 4096,
+      "point_cells": 4096,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 2,
+      "box_cells": 4096,
+      "point_cells": 4096,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 3,
+      "box_cells": 5312,
+      "point_cells": 5312,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 4,
+      "box_cells": 5312,
+      "point_cells": 5312,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 5,
+      "box_cells": 5312,
+      "point_cells": 5312,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 6,
+      "box_cells": 6848,
+      "point_cells": 6848,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 7,
+      "box_cells": 6848,
+      "point_cells": 6848,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 8,
+      "box_cells": 6848,
+      "point_cells": 6848,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 9,
+      "box_cells": 13248,
+      "point_cells": 13248,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 10,
+      "box_cells": 13248,
+      "point_cells": 13248,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 11,
+      "box_cells": 13248,
+      "point_cells": 13248,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 12,
+      "box_cells": 14848,
+      "point_cells": 14592,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 13,
+      "box_cells": 14848,
+      "point_cells": 14592,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 14,
+      "box_cells": 14848,
+      "point_cells": 14592,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 15,
+      "box_cells": 20800,
+      "point_cells": 20544,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 16,
+      "box_cells": 20800,
+      "point_cells": 20544,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 17,
+      "box_cells": 20800,
+      "point_cells": 20544,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 18,
+      "box_cells": 26048,
+      "point_cells": 25984,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 19,
+      "box_cells": 26048,
+      "point_cells": 25984,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 20,
+      "box_cells": 26048,
+      "point_cells": 25984,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 21,
+      "box_cells": 28160,
+      "point_cells": 28096,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 22,
+      "box_cells": 28160,
+      "point_cells": 28096,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 23,
+      "box_cells": 28160,
+      "point_cells": 28096,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 24,
+      "box_cells": 39616,
+      "point_cells": 39168,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 25,
+      "box_cells": 39616,
+      "point_cells": 39168,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    },
+    {
+      "id": 26,
+      "box_cells": 39616,
+      "point_cells": 39168,
+      "point_integral_executed": false,
+      "box_integral_executed": false
+    }
+  ],
+  "box_only_seconds": "1831963081694751/136000000000",
+  "point_only_seconds": "84528492597261/13718750000",
+  "fixed27_box_plus_point_seconds": "1172099792647275561/59704000000000",
+  "fixed27_serial_hours_decimal": "[5.4532908 +/- 3.04e-8]",
+  "ideal_12_workers_hours_decimal": "[0.45444090 +/- 2.53e-9]",
+  "limitations": [
+    "Point sample is middle chart; endpoint point costs differ.",
+    "Box sample is equator chart; other charts and lambda vary.",
+    "Codex host is not the Ryzen 9 9900X; host speed is not calibrated.",
+    "Twelve-worker division is ideal arithmetic, not measured speedup.",
+    "No full27 or center remainder integral was executed here."
+  ]
+}

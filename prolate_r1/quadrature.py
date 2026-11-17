@@ -22,7 +22,18 @@ class Cell:
     v: tuple
     depth: int=0
 
-def make_mesh(R,kappa,cfg,axis=False):
+def axis_arc_upper(y0,y1):
+    """Exact arc span with an outward Arb endpoint; finite also at y1=1."""
+    return (2*(arb(y1).asin()-arb(y0).asin())).upper().fmpq()
+
+def make_mesh(R,kappa,cfg,axis=False,lam=None):
+    # The fallback covers the entire supported lambda domain. Every public API
+    # supplies its actual lambda box. The global B bound holds for EVERY beta.
+    L=lam if lam is not None else (Q(1),Q(5))
+    if not 1<=L[0]<=L[1]<=5:
+        raise ValueError("invalid mesh lambda range")
+    lambda_max=L[1]
+    B_lower=1/lambda_max**2
     cut=cut_location(kappa)
     cv=1 if axis else cfg.base_v
     pending=[Cell((Q(i,cfg.base_u),Q(i+1,cfg.base_u)),
@@ -34,7 +45,7 @@ def make_mesh(R,kappa,cfg,axis=False):
         du=c.u[1]-c.u[0]; dv=c.v[1]-c.v[0]
         if axis:
             qlo=2*c.u[0]**2
-            a,b=4*du,Q(0)
+            a,b=axis_arc_upper(*c.u),Q(0)
         else:
             lo=max(Q(0),(cut+(1-cut)*arb(c.u[0])).lower().fmpq())
             hi=min(Q(1),(cut+(1-cut)*arb(c.u[1])).upper().fmpq())
@@ -43,7 +54,8 @@ def make_mesh(R,kappa,cfg,axis=False):
             spmax=min(Q(1),4*hi,4*(1-lo))
             b=Q(22,7)*spmax*dv
         ds=distance_lower_squared(R,qlo)
-        if ds>0 and (a+b)**2 <= cfg.distance_ratio**2*ds:
+        scale_squared=min(ds/lambda_max**2,B_lower)
+        if ds>0 and (a+b)**2 <= cfg.distance_ratio**2*scale_squared:
             out.append(c)
             continue
         if c.depth>=cfg.max_depth or len(out)+len(pending)+2>cfg.max_cells:

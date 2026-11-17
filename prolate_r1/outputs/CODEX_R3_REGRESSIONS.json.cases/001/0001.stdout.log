@@ -1,0 +1,12 @@
+test_axis_arc_at_opposite_pole (prolate_r1.tests.test_revision_r3.R3Tests.test_axis_arc_at_opposite_pole) ... ok
+test_center_integral_mean_value_on_known_polynomial (prolate_r1.tests.test_revision_r3.R3Tests.test_center_integral_mean_value_on_known_polynomial) ... ok
+test_fixed_partition_no_gap_or_overlap (prolate_r1.tests.test_revision_r3.R3Tests.test_fixed_partition_no_gap_or_overlap) ... ok
+test_lambda_scaled_mesh_covers_and_meets_rule (prolate_r1.tests.test_revision_r3.R3Tests.test_lambda_scaled_mesh_covers_and_meets_rule) ... ok
+test_width_failure_keeps_observation_and_traceback (prolate_r1.tests.test_revision_r3.R3Tests.test_width_failure_keeps_observation_and_traceback) ... ok
+test_width_plan_not_empty_and_exact_thresholds (prolate_r1.tests.test_revision_r3.R3Tests.test_width_plan_not_empty_and_exact_thresholds) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.058s
+
+OK
+
