@@ -1,0 +1,153 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "box2-only-v3-H",
+  "method": "signed 4th/6th-order R3 spatial Taylor + first-order outer mean-value",
+  "precision_bits": 128,
+  "python_flint": "0.8.0",
+  "R": [
+    "95/128",
+    "97/128"
+  ],
+  "tau": [
+    "15/128",
+    "17/128"
+  ],
+  "lambda": [
+    "1279/256",
+    "5"
+  ],
+  "center": [
+    "3/4",
+    "1/8",
+    "2559/512"
+  ],
+  "cells": 8832,
+  "mesh_policy": {
+    "base_u": 16,
+    "base_v": 32,
+    "ratio": "1/2",
+    "order": 4,
+    "kappa": "0"
+  },
+  "H_box_enclosure": {
+    "lower": "-16934356005428542774011682187189136521/85070591730234615865843651857942052864",
+    "upper": "-10228711665530023607327804705922591881/85070591730234615865843651857942052864",
+    "lower_approx": -0.19906239819194732,
+    "upper_approx": -0.12023792779020574,
+    "mid_approx": -0.15965016299107654,
+    "halfwidth_approx": 0.03941223520087078
+  },
+  "point_H": {
+    "lower": "-13593545573870169431903991023396957321/85070591730234615865843651857942052864",
+    "upper": "-13569522097088396949435495869714771081/85070591730234615865843651857942052864",
+    "lower_approx": -0.15979136029729696,
+    "upper_approx": -0.15950896568485612,
+    "mid_approx": -0.15965016299107654,
+    "halfwidth_approx": 0.0001411973062204197
+  },
+  "correction": {
+    "lower": "-674671293/17179869184",
+    "upper": "674671293/17179869184",
+    "lower_approx": -0.03927103785099462,
+    "upper_approx": 0.03927103785099462,
+    "mid_approx": 0.0,
+    "halfwidth_approx": 0.03927103785099462
+  },
+  "derivatives": {
+    "R": {
+      "derivative_integral": {
+        "lower": "-249984501873283339250514272196947045061/170141183460469231731687303715884105728",
+        "upper": "117185183660633650725928240802132432187/170141183460469231731687303715884105728",
+        "lower_approx": -1.4692768487258405,
+        "upper_approx": 0.6887526069657355,
+        "mid_approx": -0.3902621208800526,
+        "halfwidth_approx": 1.079014727845788
+      },
+      "correction": {
+        "lower": "-394406003/34359738368",
+        "upper": "394406003/34359738368",
+        "lower_approx": -0.011478725442430004,
+        "upper_approx": 0.011478725442430004,
+        "mid_approx": 0.0,
+        "halfwidth_approx": 0.011478725442430004
+      },
+      "wall_s": 48.20118935033679
+    },
+    "x": {
+      "derivative_integral": {
+        "lower": "-74820446125961495120809684580276079949/21267647932558653966460912964485513216",
+        "upper": "296294581228678934221336105344500353741/85070591730234615865843651857942052864",
+        "lower_approx": -3.5180404698828416,
+        "upper_approx": 3.482926064135675,
+        "mid_approx": -0.01755720287358349,
+        "halfwidth_approx": 3.5004832670092583
+      },
+      "correction": {
+        "lower": "-59022925/2147483648",
+        "upper": "59022925/2147483648",
+        "lower_approx": -0.027484691236168146,
+        "upper_approx": 0.027484691236168146,
+        "mid_approx": 0.0,
+        "halfwidth_approx": 0.027484691236168146
+      },
+      "wall_s": 48.168739643879235
+    },
+    "lam": {
+      "derivative_integral": {
+        "lower": "-26797580110650090811260376486164877793/170141183460469231731687303715884105728",
+        "upper": "136089077844214513105907911891816210929/2722258935367507707706996859454145691648",
+        "lower_approx": -0.15750202017888437,
+        "upper_approx": 0.04999123194202772,
+        "mid_approx": -0.05375539411842832,
+        "halfwidth_approx": 0.10374662606045604
+      },
+      "correction": {
+        "lower": "-169116507/549755813888",
+        "upper": "169116507/549755813888",
+        "lower_approx": -0.00030762113419768866,
+        "upper_approx": 0.00030762113419768866,
+        "mid_approx": 0.0,
+        "halfwidth_approx": 0.00030762113419768866
+      },
+      "wall_s": 48.27106551127508
+    }
+  },
+  "normalized_halfwidth_vs_abs_H_center": 0.24686601418204498,
+  "reference_checks": {
+    "3/4/1/8/2559/512": {
+      "source_value": "-0.159650308008",
+      "included_with_1e-7_margin": true
+    },
+    "381/512/31/256/5": {
+      "source_value": "-0.157416037171",
+      "included_with_1e-7_margin": true
+    },
+    "387/512/33/256/5119/1024": {
+      "source_value": "-0.162073833546",
+      "included_with_1e-7_margin": true
+    },
+    "191/256/67/512/2559/512": {
+      "source_value": "-0.158241706568",
+      "included_with_1e-7_margin": true
+    },
+    "193/256/61/512/5117/1024": {
+      "source_value": "-0.161016388647",
+      "included_with_1e-7_margin": true
+    }
+  },
+  "h_budget_halfwidth": "1/10",
+  "h_budget_result": "PASS",
+  "wall_s": 172.89816685020924,
+  "point_integral_wall_s": 28.136802014894783,
+  "peak_RSS_KiB": 36288,
+  "W_comparison": {
+    "prior_stage1_executed": false,
+    "W_full_box_halfwidth": null,
+    "W_reference_center": 2.0659,
+    "V32_second_order_halfwidth": 0.836835755,
+    "V32_second_order_wall_s_other_computer": 2728.914
+  },
+  "full_domain_proof": "OPEN",
+  "geometry_lineage": "R3 frozen physical rho-derivative; no z-derivative and no finite difference",
+  "spatial_gradients": "Signed high-order Taylor for all three external derivatives; no zeroth-order coefficient integration"
+}

@@ -1,0 +1,152 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "four-child point samples only",
+  "v35_correct_commit": "e5f1b2450c31481f1e32bf58ad96245e92df9d4f",
+  "fixed_stage1_option": "a",
+  "fixed_A_threshold": "1/4",
+  "fixed_tail_integral_budget_per_child": "3/100",
+  "spatial_coverage_checked": false,
+  "rigorous_tail_integral_calculated": false,
+  "stage1_W_executed": false,
+  "child_results": [
+    {
+      "child": [
+        0,
+        0
+      ],
+      "outer_R": [
+        "95/128",
+        "3/4"
+      ],
+      "outer_tau": [
+        "15/128",
+        "1/8"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "191/256",
+        "251920384/4421851009",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "67630235904/18682320513025",
+        "335347712/10712273707521"
+      ],
+      "samples": 125,
+      "max_A_point_sample": "103268869156076244835220977562448781563/680564733841876926926749214863536422912",
+      "violating_1_4_point_samples": 0,
+      "nonconvergent_point_samples": 0,
+      "max_pointwise_tail_density": "165363295584242733089783854301020735185/5444517870735015415413993718908291383296",
+      "violations": []
+    },
+    {
+      "child": [
+        0,
+        1
+      ],
+      "outer_R": [
+        "95/128",
+        "3/4"
+      ],
+      "outer_tau": [
+        "1/8",
+        "17/128"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "191/256",
+        "285474816/4438890625",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "4713323947687936/1233962450791890625",
+        "335347712/10712273707521"
+      ],
+      "samples": 125,
+      "max_A_point_sample": "102604973349559949185427227444139308409/680564733841876926926749214863536422912",
+      "violating_1_4_point_samples": 0,
+      "nonconvergent_point_samples": 0,
+      "max_pointwise_tail_density": "35148431391044249228525397762495572917/1361129467683753853853498429727072845824",
+      "violations": []
+    },
+    {
+      "child": [
+        1,
+        0
+      ],
+      "outer_R": [
+        "3/4",
+        "97/128"
+      ],
+      "outer_tau": [
+        "15/128",
+        "1/8"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "193/256",
+        "251920384/4421851009",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "67630235904/18682320513025",
+        "335347712/10712273707521"
+      ],
+      "samples": 125,
+      "max_A_point_sample": "209556109577186731407806039995612343491/1361129467683753853853498429727072845824",
+      "violating_1_4_point_samples": 0,
+      "nonconvergent_point_samples": 0,
+      "max_pointwise_tail_density": "169874519994601379811829288215369557245/5444517870735015415413993718908291383296",
+      "violations": []
+    },
+    {
+      "child": [
+        1,
+        1
+      ],
+      "outer_R": [
+        "3/4",
+        "97/128"
+      ],
+      "outer_tau": [
+        "1/8",
+        "17/128"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "193/256",
+        "285474816/4438890625",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "4713323947687936/1233962450791890625",
+        "335347712/10712273707521"
+      ],
+      "samples": 125,
+      "max_A_point_sample": "104112880682787263559919364739538350643/680564733841876926926749214863536422912",
+      "violating_1_4_point_samples": 0,
+      "nonconvergent_point_samples": 0,
+      "max_pointwise_tail_density": "288947603176704722790292364456087459069/10889035741470030830827987437816582766592",
+      "violations": []
+    }
+  ],
+  "wall_seconds": 0.07450814312323928,
+  "peak_RSS_KiB": 32856,
+  "warning": "Point samples alone cannot justify admission of any spatial patch."
+}

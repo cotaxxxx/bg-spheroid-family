@@ -1,0 +1,14 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "file_contract": "PASS",
+  "all_reference_checks": 5,
+  "H_interval_approx": [
+    -0.19906239819194732,
+    -0.12023792779020574
+  ],
+  "H_halfwidth_approx": 0.03941223520087078,
+  "normalized_halfwidth_approx": 0.24686601418204498,
+  "wall_seconds": 172.89816685020924,
+  "cells": 8832,
+  "warning": "No independent mathematical proof of producer interval quadrature"
+}

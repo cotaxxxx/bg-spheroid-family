@@ -1,0 +1,20 @@
+MESH 8832
+POINT {'lower': '-13593545573870169431903991023396957321/85070591730234615865843651857942052864', 'upper': '-13569522097088396949435495869714771081/85070591730234615865843651857942052864', 'lower_approx': -0.15979136029729696, 'upper_approx': -0.15950896568485612, 'mid_approx': -0.15965016299107654, 'halfwidth_approx': 0.0001411973062204197} seconds 28.551
+DERIV R {'derivative_integral': {'lower': '-249984501873283339250514272196947045061/170141183460469231731687303715884105728', 'upper': '117185183660633650725928240802132432187/170141183460469231731687303715884105728', 'lower_approx': -1.4692768487258405, 'upper_approx': 0.6887526069657355, 'mid_approx': -0.3902621208800526, 'halfwidth_approx': 1.079014727845788}, 'correction': {'lower': '-394406003/34359738368', 'upper': '394406003/34359738368', 'lower_approx': -0.011478725442430004, 'upper_approx': 0.011478725442430004, 'mid_approx': 0.0, 'halfwidth_approx': 0.011478725442430004}, 'wall_s': 48.78967987978831}
+DERIV x {'derivative_integral': {'lower': '-74820446125961495120809684580276079949/21267647932558653966460912964485513216', 'upper': '296294581228678934221336105344500353741/85070591730234615865843651857942052864', 'lower_approx': -3.5180404698828416, 'upper_approx': 3.482926064135675, 'mid_approx': -0.01755720287358349, 'halfwidth_approx': 3.5004832670092583}, 'correction': {'lower': '-59022925/2147483648', 'upper': '59022925/2147483648', 'lower_approx': -0.027484691236168146, 'upper_approx': 0.027484691236168146, 'mid_approx': 0.0, 'halfwidth_approx': 0.027484691236168146}, 'wall_s': 48.54469354311004}
+DERIV lam {'derivative_integral': {'lower': '-26797580110650090811260376486164877793/170141183460469231731687303715884105728', 'upper': '136089077844214513105907911891816210929/2722258935367507707706996859454145691648', 'lower_approx': -0.15750202017888437, 'upper_approx': 0.04999123194202772, 'mid_approx': -0.05375539411842832, 'halfwidth_approx': 0.10374662606045604}, 'correction': {'lower': '-169116507/549755813888', 'upper': '169116507/549755813888', 'lower_approx': -0.00030762113419768866, 'upper_approx': 0.00030762113419768866, 'mid_approx': 0.0, 'halfwidth_approx': 0.00030762113419768866}, 'wall_s': 47.970835687592626}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daybreak/D_PRO_R4_RATMODEL_V3_H_20261118/worktree/prolate_r4/h_box2.py", line 147, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/daybreak/D_PRO_R4_RATMODEL_V3_H_20261118/worktree/prolate_r4/h_box2.py", line 143, in main
+    obj=run(args.preflight,ratio,args.order,args.base_u,args.base_v)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_R4_RATMODEL_V3_H_20261118/worktree/prolate_r4/h_box2.py", line 111, in run
+    x=Q(s)
+      ^^^^
+  File "flint/types/fmpq.pyx", line 84, in flint.types.fmpq.fmpq.__init__
+  File "flint/types/fmpz.pyx", line 85, in flint.types.fmpz.fmpz.__init__
+ValueError: invalid string for fmpz

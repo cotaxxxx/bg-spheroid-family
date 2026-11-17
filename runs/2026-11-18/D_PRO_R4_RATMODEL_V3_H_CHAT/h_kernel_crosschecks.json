@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "cross_checks": 15,
+  "all_intervals_overlap": true,
+  "max_absolute_midpoint_difference_display": 0.0,
+  "limit": "shares frozen R3 geometry; no independent cubature audit",
+  "peak_RSS_KiB": 33164
+}

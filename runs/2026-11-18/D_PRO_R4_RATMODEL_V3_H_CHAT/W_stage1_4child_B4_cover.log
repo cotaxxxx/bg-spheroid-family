@@ -1,0 +1,9 @@
+START 0 0
+FINISH 0 0 {'rigorous_complete_B4_cover': False, 'rigorous_B4_upper': None, 'accepted_patches': 11004, 'stop_reason': 'DEPTH_LIMIT_A', 'wall_s': 2.731018043588847}
+START 0 1
+FINISH 0 1 {'rigorous_complete_B4_cover': False, 'rigorous_B4_upper': None, 'accepted_patches': 10655, 'stop_reason': 'DEPTH_LIMIT_A', 'wall_s': 2.6411996949464083}
+START 1 0
+FINISH 1 0 {'rigorous_complete_B4_cover': False, 'rigorous_B4_upper': None, 'accepted_patches': 12438, 'stop_reason': 'DEPTH_LIMIT_A', 'wall_s': 3.090871558059007}
+START 1 1
+FINISH 1 1 {'rigorous_complete_B4_cover': False, 'rigorous_B4_upper': None, 'accepted_patches': 11965, 'stop_reason': 'DEPTH_LIMIT_A', 'wall_s': 2.9776035877875984}
+FINAL all_four False elapsed 11.44600046100095

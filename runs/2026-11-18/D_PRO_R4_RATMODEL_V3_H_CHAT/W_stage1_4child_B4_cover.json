@@ -1,0 +1,191 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "four child rigorous nonnegative B4 preflight; NO W coefficient integral",
+  "fixed_option": "a",
+  "V35_source": "e5f1b2450c31481f1e32bf58ad96245e92df9d4f",
+  "initial_spatial_patches": 180,
+  "max_depth": 16,
+  "max_leaves": 32768,
+  "wall_cap_per_child_seconds": 60.0,
+  "A_accept_limit": "1/4",
+  "B4_integral_budget_per_child": "3/100",
+  "children": [
+    {
+      "outer_child": [
+        0,
+        0
+      ],
+      "outer_R": [
+        "95/128",
+        "3/4"
+      ],
+      "outer_tau": [
+        "15/128",
+        "1/8"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "191/256",
+        "251920384/4421851009",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "67630235904/18682320513025",
+        "335347712/10712273707521"
+      ],
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "scope": "B4-tail-cover-preflight-only",
+      "rigorous_complete_B4_cover": false,
+      "rigorous_B4_upper": null,
+      "A_max_accepted": null,
+      "integrated_tail_of_current_accepted_patches_NOT_COMPLETE": "74410448837703192053449211846770376773409609/365375409332725729550921208179070754913983135744",
+      "accepted_patches": 11004,
+      "unprocessed_pending": 186,
+      "evaluations": 22016,
+      "A_triggered_splits": 11011,
+      "tail_budget_triggered_splits": 0,
+      "stop_reason": "DEPTH_LIMIT_A",
+      "wall_s": 2.731018043588847,
+      "all_35_signed_coefficients_integrated": false,
+      "W_child_enclosure": null
+    },
+    {
+      "outer_child": [
+        0,
+        1
+      ],
+      "outer_R": [
+        "95/128",
+        "3/4"
+      ],
+      "outer_tau": [
+        "1/8",
+        "17/128"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "191/256",
+        "285474816/4438890625",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "4713323947687936/1233962450791890625",
+        "335347712/10712273707521"
+      ],
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "scope": "B4-tail-cover-preflight-only",
+      "rigorous_complete_B4_cover": false,
+      "rigorous_B4_upper": null,
+      "A_max_accepted": null,
+      "integrated_tail_of_current_accepted_patches_NOT_COMPLETE": "4964943137114880740036337325168389579424183/22835963083295358096932575511191922182123945984",
+      "accepted_patches": 10655,
+      "unprocessed_pending": 189,
+      "evaluations": 21321,
+      "A_triggered_splits": 10665,
+      "tail_budget_triggered_splits": 0,
+      "stop_reason": "DEPTH_LIMIT_A",
+      "wall_s": 2.6411996949464083,
+      "all_35_signed_coefficients_integrated": false,
+      "W_child_enclosure": null
+    },
+    {
+      "outer_child": [
+        1,
+        0
+      ],
+      "outer_R": [
+        "3/4",
+        "97/128"
+      ],
+      "outer_tau": [
+        "15/128",
+        "1/8"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "193/256",
+        "251920384/4421851009",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "67630235904/18682320513025",
+        "335347712/10712273707521"
+      ],
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "scope": "B4-tail-cover-preflight-only",
+      "rigorous_complete_B4_cover": false,
+      "rigorous_B4_upper": null,
+      "A_max_accepted": null,
+      "integrated_tail_of_current_accepted_patches_NOT_COMPLETE": "71318371909938144905084839049888980284127335/365375409332725729550921208179070754913983135744",
+      "accepted_patches": 12438,
+      "unprocessed_pending": 188,
+      "evaluations": 24886,
+      "A_triggered_splits": 12447,
+      "tail_budget_triggered_splits": 0,
+      "stop_reason": "DEPTH_LIMIT_A",
+      "wall_s": 3.090871558059007,
+      "all_35_signed_coefficients_integrated": false,
+      "W_child_enclosure": null
+    },
+    {
+      "outer_child": [
+        1,
+        1
+      ],
+      "outer_R": [
+        "3/4",
+        "97/128"
+      ],
+      "outer_tau": [
+        "1/8",
+        "17/128"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "193/256",
+        "285474816/4438890625",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "4713323947687936/1233962450791890625",
+        "335347712/10712273707521"
+      ],
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "scope": "B4-tail-cover-preflight-only",
+      "rigorous_complete_B4_cover": false,
+      "rigorous_B4_upper": null,
+      "A_max_accepted": null,
+      "integrated_tail_of_current_accepted_patches_NOT_COMPLETE": "32275975095830532818593777514312763561965653/182687704666362864775460604089535377456991567872",
+      "accepted_patches": 11965,
+      "unprocessed_pending": 187,
+      "evaluations": 23939,
+      "A_triggered_splits": 11973,
+      "tail_budget_triggered_splits": 0,
+      "stop_reason": "DEPTH_LIMIT_A",
+      "wall_s": 2.9776035877875984,
+      "all_35_signed_coefficients_integrated": false,
+      "W_child_enclosure": null
+    }
+  ],
+  "all_four_B4_complete": false,
+  "W_box2_complete": false,
+  "total_elapsed_s": 11.44600046100095,
+  "peak_RSS_KiB": 44136,
+  "note": "No numeric result is a full-box W enclosure. If incomplete, even the tail upper is not for the whole spatial domain."
+}
