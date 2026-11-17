@@ -1,0 +1,69 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "route": "R3_existing_middle_direct_W_no_endpoint_Taylor",
+  "base_commit": "fdfb498f2117cc0c5d72e88cc3be05eac9727bd8",
+  "case": "point",
+  "input_boxes": "((3/4, 3/4), (1/8, 1/8), (2559/512, 2559/512))",
+  "physical_midpoint": "(3/4, 1/8, 2559/512)",
+  "denominator_lower": "567/4225",
+  "config": "Config(precision=128, order=6, base_u=32, base_v=64, distance_ratio=1/4, kappa=1/4096, cap_from=15/16, center_to=1/16, max_depth=28, max_cells=200000, center_radial_parts=8, center_tau_parts=16, center_bound_order=2)",
+  "python": "3.11.16 (main, Aug 22 2026, 04:35:05) [GCC 15.2.0]",
+  "flint_version": "0.8.0",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "environment": {
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "mesh_ns": 391471184,
+  "mesh_cells": 34688,
+  "point_evaluation_ns": 184672769254,
+  "point_interval": {
+    "lower": "87858901592423873882680004343816895345/42535295865117307932921825928971026432",
+    "upper": "87888959586229194234620922997593455473/42535295865117307932921825928971026432",
+    "width": "776980929/1099511627776"
+  },
+  "result": {
+    "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+    "route": "method_B_directW_same_R3_kernel",
+    "cells": 34688,
+    "balls": [
+      {
+        "lower": "87858901592423873882680004343816895345/42535295865117307932921825928971026432",
+        "upper": "87888959586229194234620922997593455473/42535295865117307932921825928971026432",
+        "width": "776980929/1099511627776"
+      }
+    ],
+    "center_point": [
+      {
+        "lower": "87858901592423873882680004343816895345/42535295865117307932921825928971026432",
+        "upper": "87888959586229194234620922997593455473/42535295865117307932921825928971026432",
+        "width": "776980929/1099511627776"
+      }
+    ],
+    "mean_value_correction": [
+      {
+        "lower": "0",
+        "upper": "0",
+        "width": "0"
+      }
+    ],
+    "cap_errors": [
+      {
+        "lower": "0",
+        "upper": "0",
+        "width": "0"
+      }
+    ],
+    "details": {
+      "source": "R3"
+    }
+  },
+  "derivative_components": {},
+  "total_ns": 185067633714,
+  "half_width": "776980929/2199023255552",
+  "half_width_decimal": "0.00035333001915205386467278003692626953125",
+  "threshold": "1/20",
+  "width_result": "PASS",
+  "mathematical_certification": false
+}
