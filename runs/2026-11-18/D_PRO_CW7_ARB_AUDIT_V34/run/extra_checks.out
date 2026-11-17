@@ -1,0 +1,5 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "wide_inverse_finite": true,
+  "wide_inverse_contains_reciprocal_endpoints": true
+}

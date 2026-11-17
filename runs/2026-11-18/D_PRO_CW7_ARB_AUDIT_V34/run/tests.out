@@ -1,0 +1,36 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "results": [
+    {
+      "name": "constant_kernel_normalization",
+      "result": "PASS",
+      "seconds": 0.08334582199999829
+    },
+    {
+      "name": "35_exact_reciprocal_coefficients",
+      "result": "PASS",
+      "seconds": 0.04632725799999804
+    },
+    {
+      "name": "rational_kernel_reconstruction",
+      "result": "PASS",
+      "seconds": 0.04370671399999537
+    },
+    {
+      "name": "sphere_numerator_zero",
+      "result": "PASS",
+      "seconds": 7.146800000157327e-05
+    },
+    {
+      "name": "fixed_corner_Taylor_regression",
+      "result": "PASS",
+      "seconds": 0.006468461000004311
+    },
+    {
+      "name": "no_float_literals_in_validator",
+      "result": "PASS",
+      "seconds": 0.011299230000005878
+    }
+  ],
+  "all_pass": true
+}
