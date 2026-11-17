@@ -1,0 +1,4 @@
+point (h,v,w)= ('1', '0', '1') all: A=0.3250 tail=1.32e+00 | R: A=0.1310 tail=2.06e-02 | t: A=0.1706 tail=2.69e-02 | q: A=0.0008 tail=1.04e-13 | all/2: A=0.1531 tail=2.90e-02 | all/3: A=0.1001 tail=3.47e-03
+point (h,v,w)= ('1', '1/2', '1/2') all: A=0.3250 tail=7.92e-01 | R: A=0.1310 tail=2.49e-02 | t: A=0.1706 tail=1.03e-02 | q: A=0.0012 tail=3.39e-13 | all/2: A=0.1531 tail=1.84e-02 | all/3: A=0.1001 tail=2.23e-03
+point (h,v,w)= ('-1', '0', '0') all: A=0.1949 tail=9.32e-02 | R: A=0.0209 tail=2.37e-05 | t: A=0.1706 tail=3.19e-02 | q: A=0.0016 tail=5.72e-12 | all/2: A=0.0946 tail=2.52e-03 | all/3: A=0.0624 tail=3.18e-04
+point (h,v,w)= ('0', '1/2', '1/2') all: A=0.0521 tail=7.20e-05 | R: A=0.0209 tail=1.59e-07 | t: A=0.0448 tail=1.49e-05 | q: A=0.0008 tail=1.84e-14 | all/2: A=0.0257 tail=2.16e-06 | all/3: A=0.0171 tail=2.80e-07

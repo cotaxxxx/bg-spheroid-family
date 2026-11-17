@@ -1,0 +1,2 @@
+grid 5^3: A>1/8 at 61, max A 0.3250, max pointwise tail 1.31745 at ('1', '0', '1', 0.32498926031659753), trapezoid-integrated tail 0.13846
+grid 9^3: A>1/8 at 236, max A 0.3250, max pointwise tail 1.31745 at ('1', '0', '1', 0.32498926031659753), trapezoid-integrated tail 0.07442

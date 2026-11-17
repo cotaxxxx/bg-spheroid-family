@@ -1,0 +1,18 @@
+DEG = 4
+ALPHAS = sorted((a for a in itertools.product(range(5), repeat=3)
+                 if sum(a) <= 4), key=lambda a: (sum(a), a))
+ZERO = (0,0,0)
+RC, TC, QC = Q(3,4), Q(256,4225), Q(512,2559)**2
+TF = lambda x: 4*x*x/(1+x*x)**2
+RAD = (Q(1,128), max(TC-TF(Q(15,128)), TF(Q(17,128))-TC),
+       max(QC-Q(1,25), Q(256,1279)**2-QC))
+CENTRE = (RC, TC, QC)
+# Stage 0 cell, matching Codex R4 v2: theta=pi*v/2, v=[1/4,3/8].
+CELL = ((Q(0),Q(1,8)), (Q(1,4),Q(3,8)), (Q(1,4),Q(3,8)))
+alpha=(0,0,0): chat 0.000635403005199036  Dig [0.000629242032224111, 0.000641568359162817]  IN
+alpha=(1, 0, 0): chat -6.51746592259e-5  Dig [-6.53947952304e-5, -6.4954629876e-5]  IN
+alpha=(0, 1, 0): chat -0.000139188373458  Dig [-0.000141050588209, -0.000137327864696]  IN
+alpha=(0, 0, 1): chat 7.10886979109e-7  Dig [6.79143510002e-7, 7.42621639755e-7]  IN
+SUMMARY PASS
+
+[exited with code 0]
