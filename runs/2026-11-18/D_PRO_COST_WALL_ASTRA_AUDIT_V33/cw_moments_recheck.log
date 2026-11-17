@@ -1,0 +1,5 @@
+(C2) zeta=2.0: err 1.15e-41
+(C2) zeta=-1.0: err 1.15e-41
+(C2) zeta=(0.5 + 0.3j): err 2.3e-41
+(C2) zeta=(-3.0 + 2.0j): err 2.87e-42
+(C1)(C2) recheck: PASS

@@ -1,0 +1,16 @@
+PASS (C4)(C5) p = q Sigma P, delta = q^2 Sigma^2 Delta vs geometry (60 pts) :: 1.38e-40
+PASS (C7) (R^2/2) int K dw = dF/dt (12 random points, primitive geometry) :: 2.35e-41
+PASS (C14) k^2 - (1-R^2) Sigma = R^2 (h-R)^2
+PASS (C15)(C16) w-transform: int K dw unchanged (8 pts) :: 1.45e-40
+PASS (C17) min_v (1-v)^2 + c v^2 = c/(1+c), c = lam^-4 -> 1/(lam^4+1) :: calculus: v* = 1/(1+c)
+FAIL (C2) A[(zeta-z)^-1] = [zeta(zeta-1)]^-1/2 at zeta=2.0 :: -4.74e-23
+FAIL (C2) A[(zeta-z)^-1] = [zeta(zeta-1)]^-1/2 at zeta=-1.0 :: 4.74e-23
+FAIL (C2) A[(zeta-z)^-1] = [zeta(zeta-1)]^-1/2 at zeta=(0.5 + 0.3j) :: (1.1e-26 + 5.57e-23j)
+FAIL (C1) moments A[z^j] = binom(2j,j)/4^j (j=0..5)
+PASS (C19) A(R) vs brute-force dW/dlog lam at lam=1, R=0.5, tau=0.5 :: A=2.269694 bf=2.2696163
+PASS (C19) A(R) vs brute-force dW/dlog lam at lam=1, R=0.75, tau=0.125 :: A=2.0861004 bf=2.0860313
+PASS (C19) A(R) -> 12/5 as R -> 0 :: 2.3999995
+PASS (C20) A(R) -> 9 pi^2/32 - 1 as R -> 1 :: 1.7758279 vs 1.7758262
+SUMMARY 9/13 PASS
+
+[exited with code 0]

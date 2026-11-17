@@ -1,0 +1,42 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "checks": [
+    {
+      "name": "Sigma_cleared_kernel",
+      "zero_residual": true
+    },
+    {
+      "name": "w_transform_with_Jacobian",
+      "zero_residual": true
+    },
+    {
+      "name": "a0_interior_lower_bound",
+      "zero_residual": true
+    },
+    {
+      "name": "quadratic_minimum",
+      "zero_residual": true
+    },
+    {
+      "name": "finite_resolvent_m2",
+      "zero_residual": true
+    },
+    {
+      "name": "finite_resolvent_m4",
+      "zero_residual": true
+    },
+    {
+      "name": "finite_resolvent_m6",
+      "zero_residual": true
+    },
+    {
+      "name": "sphere_centre_12_over_5",
+      "zero_residual": true
+    },
+    {
+      "name": "sphere_boundary_value",
+      "zero_residual": true
+    }
+  ],
+  "all_zero": true
+}
