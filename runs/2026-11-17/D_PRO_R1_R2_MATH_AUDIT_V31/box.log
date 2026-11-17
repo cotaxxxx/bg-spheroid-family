@@ -1,0 +1,31 @@
+PASS W box ((63/128, 65/128), (63/128, 65/128), (1791/512, 1793/512)) [middle_W_mean_value] [-29.641434, 33.532518] ['1.930082', '1.9245563', '1.9255529', '1.9218432']
+PASS Ebeta box ((63/128, 65/128), (63/128, 65/128), (1791/512, 1793/512)) [-2.9796923, 3.4466223] ['0.22583376', '0.23480363', '0.22633845', '0.23354223']
+PASS W box ((95/128, 97/128), (15/128, 17/128), (1279/256, 5)) [equator_even_quotient_mean_value] [-1.4382981e+8, 1.4381901e+8] ['2.0661778', '2.0675755', '2.0656921', '2.0670781']
+PASS Ebeta box ((95/128, 97/128), (15/128, 17/128), (1279/256, 5)) [-9.4259349, 9.9886183] ['0.2760496', '0.27007951', '0.27921049', '0.27121801']
+PASS W box ((79/128, 81/128), (95/128, 97/128), (2, 513/256)) [pole_even_quotient_mean_value] [-3810.0379, 3815.421] ['1.3101802', '1.3065127', '1.3094808', '1.3033663']
+PASS Ebeta box ((79/128, 81/128), (95/128, 97/128), (2, 513/256)) [-0.14871345, 0.42313163] ['0.13798791', '0.13358558', '0.13903602', '0.14434063']
+PASS g box (15/32, 17/32) (895/256, 897/256) [0.063457956, 1.8598301] ['0.9924952', '0.93945894', '0.98184947', '0.97478868']
+PASS g box (1/64, 3/64) (2, 513/256) [-0.06180531, 0.19470871] ['0.035987858', '0.055449146', '0.076205626', '0.097074992']
+PASS Phi_s box (15/64, 17/64) (1279/256, 5) [phi_common_density_mean_value] [-4.4858367, 3.9931194] ['-0.23721001', '-0.23631976', '-0.23671179', '-0.236872']
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/r1audit/chat_r1_box_check.py", line 44, in <module>
+    chk(f"Phi_s box {S} {L} [{pb.route}]", pb.enclosure, refs)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/r1audit/chat_r1_box_check.py", line 14, in chk
+    lo, hi = lohi(ball); ok = all(lo-mp.mpf('1e-7') <= r <= hi+mp.mpf('1e-7') for r in refs)
+                              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/r1audit/chat_r1_box_check.py", line 14, in <genexpr>
+    lo, hi = lohi(ball); ok = all(lo-mp.mpf('1e-7') <= r <= hi+mp.mpf('1e-7') for r in refs)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/ctx_mp_python.py", line 181, in __le__
+    def __le__(s, t): return s._cmp(t, mpf_le)
+                             ~~~~~~^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/ctx_mp_python.py", line 176, in _cmp
+    return func(s._mpf_, t)
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/libmp/libmpf.py", line 634, in mpf_le
+    return mpf_cmp(s, t) <= 0
+           ~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/libmp/libmpf.py", line 582, in mpf_cmp
+    tsign, tman, texp, tbc = t
+    ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable mpc object

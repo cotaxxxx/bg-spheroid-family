@@ -1,0 +1,27 @@
+PASS Rcal series at q=0.1 :: 0.0
+PASS G=acos^2 series at q=0.1
+PASS Rcal series at q=0.7 :: 2.3e-41
+PASS G=acos^2 series at q=0.7
+PASS Rcal series at q=1.0 :: 0.0
+PASS G=acos^2 series at q=1.0
+PASS tail geometric ratio bound 49/(98-k), j in [97,2e4), k<=13 :: []
+PASS tail ratio polynomial :: j**2*k - 96*j*k + 49*j - 146*k + 49
+PASS G tail ratio <= 1/2
+PASS even moments
+PASS q_c = 8u^2/(1+u^2)^2
+PASS sin psi = 4u(1-u^2)/(1+u^2)^2
+PASS dpsi/du = 4/(1+u^2) <= 4
+PASS J = 2 sin psi psi'/(4pi)*pi integrates to 1
+PASS int_0^1 J = 1
+PASS q_c(cut) = kappa
+PASS sin psi <= min(1,4u,4(1-u))
+PASS axis density 2y
+PASS endpoint quotient prefactor
+PASS P_x/P = 6x/(1+x^2)+2x/(1-x^2)
+PASS E_c''(0) = 4 Ecal''(0)
+PASS Phi_s remainder 1/60
+PASS Phi_s centre 1/6
+PASS W centre remainder pi/48
+PASS cap int 1/sqrt(2Rq) = sqrt(kappa/(2R))
+PASS gamma Rcal(gamma) <= 1
+SUMMARY 26/26 PASS

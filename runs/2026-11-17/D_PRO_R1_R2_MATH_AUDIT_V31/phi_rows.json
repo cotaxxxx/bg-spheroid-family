@@ -1,0 +1,65 @@
+[
+ {
+  "case": "Phi_s lam=2 s=1/1024 [phi_center_H4_over_6]",
+  "ref": "-0.561501334243",
+  "lo": "-2.519597745",
+  "hi": "1.396752709",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=2 s=1/4 [phi_common_density_mean_value]",
+  "ref": "-0.584478394343",
+  "lo": "-0.5982508795",
+  "hi": "-0.5707053988",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=2 s=9/16 [phi_common_density_mean_value]",
+  "ref": "-0.625571313737",
+  "lo": "-1.020420298",
+  "hi": "-0.2354323381",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=7/2 s=1/1024 [phi_center_H4_over_6]",
+  "ref": "-0.326096102943",
+  "lo": "-8.493098727",
+  "hi": "7.84102098",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=7/2 s=1/4 [phi_common_density_mean_value]",
+  "ref": "-0.34032575156",
+  "lo": "-0.6976929704",
+  "hi": "0.02625027243",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=7/2 s=9/16 [phi_common_density_mean_value]",
+  "ref": "-0.365278595121",
+  "lo": "-1.160281973",
+  "hi": "0.3691612315",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=5 s=1/1024 [phi_center_H4_over_6]",
+  "ref": "-0.226193187473",
+  "lo": "-22.63451582",
+  "hi": "22.18155438",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=5 s=1/4 [phi_common_density_mean_value]",
+  "ref": "-0.236444996026",
+  "lo": "-1.390089314",
+  "hi": "0.8975502669",
+  "ok": true
+ },
+ {
+  "case": "Phi_s lam=5 s=9/16 [phi_common_density_mean_value]",
+  "ref": "-0.254299858271",
+  "lo": "-1.441692011",
+  "hi": "0.8213717182",
+  "ok": true
+ }
+]

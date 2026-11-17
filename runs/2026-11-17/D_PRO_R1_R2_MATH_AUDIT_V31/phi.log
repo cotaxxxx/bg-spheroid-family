@@ -1,0 +1,10 @@
+PASS Phi_s lam=2 s=1/1024 [phi_center_H4_over_6] -0.561501334243 [-2.519597745, 1.396752709] hw 1.96
+PASS Phi_s lam=2 s=1/4 [phi_common_density_mean_value] -0.584478394343 [-0.5982508795, -0.5707053988] hw 0.0138
+PASS Phi_s lam=2 s=9/16 [phi_common_density_mean_value] -0.625571313737 [-1.020420298, -0.2354323381] hw 0.392
+PASS Phi_s lam=7/2 s=1/1024 [phi_center_H4_over_6] -0.326096102943 [-8.493098727, 7.84102098] hw 8.17
+PASS Phi_s lam=7/2 s=1/4 [phi_common_density_mean_value] -0.34032575156 [-0.6976929704, 0.02625027243] hw 0.362
+PASS Phi_s lam=7/2 s=9/16 [phi_common_density_mean_value] -0.365278595121 [-1.160281973, 0.3691612315] hw 0.765
+PASS Phi_s lam=5 s=1/1024 [phi_center_H4_over_6] -0.226193187473 [-22.63451582, 22.18155438] hw 22.4
+PASS Phi_s lam=5 s=1/4 [phi_common_density_mean_value] -0.236444996026 [-1.390089314, 0.8975502669] hw 1.14
+PASS Phi_s lam=5 s=9/16 [phi_common_density_mean_value] -0.254299858271 [-1.441692011, 0.8213717182] hw 1.13
+SUMMARY ALL_PASS 9
