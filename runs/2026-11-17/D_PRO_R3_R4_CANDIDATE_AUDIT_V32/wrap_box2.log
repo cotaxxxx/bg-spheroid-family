@@ -1,0 +1,2 @@
+x {"signed_midpoint_sum": "[-0.417162 +/- 3.48e-7]", "L1_pointwise": "[134.382 +/- 2.48e-4]", "max_pointwise": "[1168.59 +/- 2.30e-3]", "width_from_parameter_balls": "[194.945 +/- 1.68e-5]", "width_from_cell_balls": "[120.172 +/- 2.00e-4]", "width_both": "[415.051 +/- 4.43e-4]"}
+R {"signed_midpoint_sum": "[-0.124391 +/- 2.33e-8]", "L1_pointwise": "[26.3687 +/- 4.97e-5]", "max_pointwise": "[144.520 +/- 1.87e-4]", "width_from_parameter_balls": "[45.5180 +/- 3.86e-5]", "width_from_cell_balls": "[22.5132 +/- 2.31e-5]", "width_both": "[86.9452 +/- 4.09e-5]"}

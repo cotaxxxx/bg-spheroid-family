@@ -1,0 +1,13 @@
+PASS R4-1/R4-10/R4-11 pointwise: dF/dt = k a0 int N/(Delta S) dw (24 random points) :: 3.84e-41
+PASS kernel near t=1.0e-6 matches dF/dt :: -1.84e-40
+PASS kernel near t=1.0 matches dF/dt :: -1.38e-40
+PASS R4-12 P positive sum and R4-13 Delta = D_C D_B match geometry (200 pts) :: 2.04e-40
+PASS R4-21 P >= lam^-2, Delta >= lam^-4 (sampled) :: min lam^2 P=3.8477 min lam^4 Delta=14.352
+PASS R4-22 q_c/2 <= a0 <= 1 (sampled)
+PASS R4-22 factorisation k^2 - qS/2 = (1-R)[(1-R)(1-q/2)+Rq(2-q)] (spot)
+PASS R4-9 phi' w-integral a0=0.01 X=0.5 :: 0.0
+PASS R4-9 phi' w-integral a0=0.3 X=0.3 :: 0.0
+PASS R4-9 phi' w-integral a0=0.9 X=7.0 :: 0.0
+PASS §3.3 pointwise kernel negative at eta=e_x, t=3/4 (claimed) :: -0.565521
+PASS w-singularity: sqrt(a0/(P-a0)) >= sqrt(a0)/lam since P_+- <= lam^2 :: with kappa=1/4096 and lam=5: sqrt(kappa/2)/5 = 0.00221 vs fixed w cell 1/64 = 0.0156
+SUMMARY 12/12 PASS

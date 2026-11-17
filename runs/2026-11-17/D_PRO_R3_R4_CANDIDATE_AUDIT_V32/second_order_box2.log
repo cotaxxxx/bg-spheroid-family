@@ -1,0 +1,49 @@
+point [2.066 +/- 4.46e-4]
+first-order R {'dI_over_box': '[+/- 87.3]', 'correction_half_width': 0.6819115057587624}
+first-order x {'dI_over_box': '[+/- 4.22e+2]', 'correction_half_width': 3.2919227331876755}
+first-order lam {'dI_over_box': '[+/- 10.6]', 'correction_half_width': 0.020625334640499204}
+grad at p0 R [-0.12 +/- 6.57e-3]
+grad at p0 x [-0.4 +/- 0.0278]
+grad at p0 lam [-0.009 +/- 4.95e-4]
+Hessian R R [+/- 8.97e+2]
+Hessian R x [+/- 3.33e+3]
+Hessian R lam [+/- 85.6]
+Hessian x x [+/- 1.95e+4]
+Hessian x lam [+/- 4.63e+2]
+Hessian lam lam [+/- 13.8]
+{
+ "point": "[2.066 +/- 4.46e-4]",
+ "first_order": {
+  "R": {
+   "dI_over_box": "[+/- 87.3]",
+   "correction_half_width": 0.6819115057587624
+  },
+  "x": {
+   "dI_over_box": "[+/- 4.22e+2]",
+   "correction_half_width": 3.2919227331876755
+  },
+  "lam": {
+   "dI_over_box": "[+/- 10.6]",
+   "correction_half_width": 0.020625334640499204
+  }
+ },
+ "grad_at_p0": {
+  "R": "[-0.12 +/- 6.57e-3]",
+  "x": "[-0.4 +/- 0.0278]",
+  "lam": "[-0.009 +/- 4.95e-4]"
+ },
+ "hessian_over_box": {
+  "R,R": "[+/- 8.97e+2]",
+  "R,x": "[+/- 3.33e+3]",
+  "R,lam": "[+/- 85.6]",
+  "x,x": "[+/- 1.95e+4]",
+  "x,lam": "[+/- 4.63e+2]",
+  "lam,lam": "[+/- 13.8]"
+ },
+ "linear_term": "[+/- 4.35e-3]",
+ "quadratic_term": "[+/- 0.834]",
+ "box_W_second_order": "[2e+0 +/- 0.904]",
+ "box_half_width_second_order": 0.8368357550352812,
+ "cells": 34816,
+ "seconds": 2728.914044774
+}

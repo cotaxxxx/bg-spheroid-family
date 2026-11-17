@@ -1,0 +1,27 @@
+x^1 {'reflected_enclosure': '[+/- 4.22e+2]', 'seconds': 60.9}
+R^1 {'reflected_enclosure': '[+/- 87.3]', 'seconds': 57.5}
+x^2 {'reflected_enclosure': '[+/- 1.95e+4]', 'seconds': 75.5}
+R^1,x^1 {'reflected_enclosure': '[+/- 3.33e+3]', 'seconds': 87.5}
+R^2 {'reflected_enclosure': '[+/- 8.97e+2]', 'seconds': 78.0}
+{
+ "x^1": {
+  "reflected_enclosure": "[+/- 4.22e+2]",
+  "seconds": 60.9
+ },
+ "R^1": {
+  "reflected_enclosure": "[+/- 87.3]",
+  "seconds": 57.5
+ },
+ "x^2": {
+  "reflected_enclosure": "[+/- 1.95e+4]",
+  "seconds": 75.5
+ },
+ "R^1,x^1": {
+  "reflected_enclosure": "[+/- 3.33e+3]",
+  "seconds": 87.5
+ },
+ "R^2": {
+  "reflected_enclosure": "[+/- 8.97e+2]",
+  "seconds": 78.0
+ }
+}

@@ -1,0 +1,13 @@
+co-rotating: int f_b = +0.27725  L1(f_b) = 1.4941  | int f_bb = +0.99303  L1(f_bb) = 6.9129
+lab frame:   int f_b = +0.27725  L1(f_b) = 1.3217  | int f_bb = +0.99303  L1(f_bb) = 2.4969
+W-mode d/dtau: int = -0.41411  L1 = 134.381  (Codex box-2 cells: signed -0.417, L1 134)
+method C:    W = int kernel = +2.06591  L1(kernel) = 8.722 | d/dtau: int = -0.41411  L1 = 80.771
+lab lam^2V-H: W = +2.06591  L1(kernel) = 9.848 | d/dtau: int = -0.41407  L1 = 92.983
+  psi in [0,0.25): L1 share  0.4%, area share  1.5%, signed +0.009
+  psi in [0.25,0.5): L1 share  0.2%, area share  4.6%, signed -0.049
+  psi in [0.5,1): L1 share  0.4%, area share 16.9%, signed -0.343
+  psi in [1,2): L1 share 23.8%, area share 47.8%, signed +0.496
+  psi in [2,4.141592653589793): L1 share 75.2%, area share 29.2%, signed -0.527
+  |xi_z| in [0,0.9): L1 share 91.2%, area share 90.0%, signed +2.031
+  |xi_z| in [0.9,0.98): L1 share  5.8%, area share  8.0%, signed -3.508
+  |xi_z| in [0.98,1.01): L1 share  3.1%, area share  2.0%, signed +1.064
