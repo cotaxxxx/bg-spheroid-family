@@ -120,7 +120,7 @@ R ＝ 15/16（球冠の経路、λ ＝ 7/2）も、W ＝ 1.544 が [0.019, 3.068
 | ファイル | 内容 |
 |---|---|
 | `chat_r1_series_checks.py` / `series.log` | 静的監査（26/26） |
-| `chat_r1_reference_check.py` / `ref.log` / `ref_rows.json` | 点の照合 43 件。Φ_s の部分で、参照値の複素数の丸め（mpc）により停止した |
+| `chat_r1_reference_check.py` / `ref.log` | 点の照合 43 件。Φ_s の部分で、参照値の複素数の丸め（mpc）により停止した（停止したため `ref_rows.json` は書かれていない。結果は `ref.log` にある） |
 | `chat_r1_phi_check.py` / `phi.log` / `phi_rows.json` | Φ_s の点 9 件（修正後に再実行） |
 | `chat_r1_box_check.py` / `box.log` | 箱 8 件の PASS ののち、同じ理由で停止した |
 | `chat_r1_phibox_check.py` / `phibox.log` / `phibox_rows.json` | Φ_s の箱 2 件 |
