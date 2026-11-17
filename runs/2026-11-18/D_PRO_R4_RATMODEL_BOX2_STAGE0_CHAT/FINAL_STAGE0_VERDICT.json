@@ -1,0 +1,22 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "single spatial cell only",
+  "stage0_verdict": "PASS",
+  "all_35_references_contained": true,
+  "reference_count": 35,
+  "coefficient_halfwidth_sum": "6730931503277762268315098685055922670825782862353/766247770432944429179173513575154591809369561091801088",
+  "tail_upper": "63045899236739531873027643247114602919185/22835963083295358096932575511191922182123945984",
+  "sum_of_coefficient_halfwidths_plus_tail": "8846400842095790792260437374511488810684577440273/766247770432944429179173513575154591809369561091801088",
+  "max_A": "335199537281469166236751253881908040281/2722258935367507707706996859454145691648",
+  "prespecified_budgets": {
+    "coefficient": "1/100000",
+    "tail": "3/102400",
+    "max_A": "1/8"
+  },
+  "stage0_measure": "1/1024",
+  "stage1_preflight_samples": 125,
+  "stage1_preflight_violations": 61,
+  "stage1_status": "NO_GO_FIXED_THRESHOLD",
+  "box2_W_enclosure": null,
+  "stage1_executed": false
+}

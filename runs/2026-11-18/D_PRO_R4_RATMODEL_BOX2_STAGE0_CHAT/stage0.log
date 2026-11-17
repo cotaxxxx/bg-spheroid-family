@@ -1,0 +1,59 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "stage0-single-cell-only",
+  "method": "tensor Simpson with interval fourth derivative",
+  "precision_bits": 128,
+  "flint": "0.8.0",
+  "outer_center": [
+    "3/4",
+    "256/4225",
+    "262144/6548481"
+  ],
+  "outer_radii": [
+    "1/128",
+    "8855928576/1174503225025",
+    "335347712/10712273707521"
+  ],
+  "cell": [
+    [
+      "0",
+      "1/8"
+    ],
+    [
+      "1/4",
+      "3/8"
+    ],
+    [
+      "1/4",
+      "3/8"
+    ]
+  ],
+  "total_halfwidth_sum": "499847505235664722080906383879190096006948031761/5575186299632655785383929568162090376495104",
+  "stage0_budget": "1/100000",
+  "stage0_width_result": "FAIL",
+  "timing": {
+    "nodes_seconds": 0.36206301487982273,
+    "derivatives": {
+      "h": {
+        "elapsed_seconds": 0.022271208930760622,
+        "normalized_error_upper_sum": "11191104201665123731577173962908745004377595661/16333553612205046246241981156724874149888",
+        "max_derivative_jet4": "148874414960868276542992268337660352271/1237940039285380274899124224"
+      },
+      "v": {
+        "elapsed_seconds": 0.022216989193111658,
+        "normalized_error_upper_sum": "46488840329320379313976563865043141864676911201/510423550381407695195061911147652317184",
+        "max_derivative_jet4": "318941789861927585117935291991083377115/19342813113834066795298816"
+      },
+      "w": {
+        "elapsed_seconds": 0.02151729492470622,
+        "normalized_error_upper_sum": "7085108178221398017391847792642948964958577783/163335536122050462462419811567248741498880",
+        "max_derivative_jet4": "183168391878720074019375619285789778575/39614081257132168796771975168"
+      }
+    },
+    "wall_seconds": 0.4284546850249171
+  },
+  "peak_RSS_KiB": 32948,
+  "stage1_executed": false,
+  "box2_W_enclosure": null,
+  "note": "Independent 50-digit mpmath reference comparison is a separate diagnostic."
+}

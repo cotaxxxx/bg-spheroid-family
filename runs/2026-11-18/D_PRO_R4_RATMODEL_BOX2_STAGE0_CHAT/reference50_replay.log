@@ -1,0 +1,11 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "method": "mpmath 60-dps Gauss-Legendre tensor reference; no error guarantee",
+  "n": 8,
+  "n_compare": 12,
+  "elapsed_seconds": [
+    4.839120291173458,
+    16.267760229762644
+  ],
+  "max_difference_between_grids": "4.504578239907913819418e-20"
+}

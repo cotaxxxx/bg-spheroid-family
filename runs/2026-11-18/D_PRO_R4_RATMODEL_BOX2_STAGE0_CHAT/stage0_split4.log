@@ -1,0 +1,49 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "stage0-single-cell-only",
+  "method": "tensor Simpson with interval fourth derivative",
+  "precision_bits": 128,
+  "flint": "0.8.0",
+  "outer_center": [
+    "3/4",
+    "256/4225",
+    "262144/6548481"
+  ],
+  "outer_radii": [
+    "1/128",
+    "8855928576/1174503225025",
+    "335347712/10712273707521"
+  ],
+  "cell": [
+    [
+      "0",
+      "1/8"
+    ],
+    [
+      "1/4",
+      "3/8"
+    ],
+    [
+      "1/4",
+      "3/8"
+    ]
+  ],
+  "spatial_subdivisions_per_axis": 4,
+  "spatial_cells": 64,
+  "total_halfwidth_sum": "6730931503277762268315098685055922670825782862353/766247770432944429179173513575154591809369561091801088",
+  "stage0_budget": "1/100000",
+  "stage0_width_result": "PASS",
+  "timing": {
+    "nodes_seconds": 21.94090047851205,
+    "derivatives": {
+      "h": 1.4557033726014197,
+      "v": 1.4450556449592113,
+      "w": 1.3947956818155944
+    },
+    "wall_seconds": 26.250740916933864
+  },
+  "peak_RSS_KiB": 33112,
+  "stage1_executed": false,
+  "box2_W_enclosure": null,
+  "note": "Independent 50-digit mpmath reference comparison is a separate diagnostic."
+}
