@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_SLAB_PART/D_PRO_C21_H_SLAB_PART_DIAGNOSTIC_CHECKPOINT_20261118.zip",
+  "zip_sha256": "7f3f3277926849990919113f71350e818e3babbe636a0ad24b668b1b00da0f02",
+  "zip_members": 149,
+  "SHA256SUMS_entries": 148,
+  "frozen_R3_pins_verified": 7,
+  "zip_content_bytewise_check": true,
+  "record_type": "PARTIAL_OR_FULL_CHECKPOINT_AS_LEDGER_SAYS"
+}

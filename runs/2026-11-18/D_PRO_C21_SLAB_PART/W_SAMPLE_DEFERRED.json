@@ -1,0 +1,11 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "W_status": "OPEN_NOT_MEASURED_AT_PARTIAL_CHECKPOINT",
+  "selected_W_boxes": [],
+  "R3_quadratic_mode": "implemented in prolate_r4/c21_slabpart_w.py",
+  "frozen_sample_rule": "sort immutable IDs of terminal evaluated tube candidates, select first, midpoint, last",
+  "selection_condition": "requested subregion complete OR actual 24h wall cap",
+  "why_not_measured": "interactive finite-batch session ends before complete requested subregion and before 24h wall cap; sorted final tube set is not yet available",
+  "does_not_claim_tube_w_coverage": true,
+  "global_proof_status": "OPEN"
+}
