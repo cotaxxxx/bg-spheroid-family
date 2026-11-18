@@ -1,0 +1,19 @@
+PASS N9 J(l=0.3, d=0.7) :: num 0.81138445555 closed 0.81138445465
+PASS N9 J(l=0.6, d=0.6) :: num 1.5412875577 closed 1.5412875541
+PASS N9 J(l=1.0, d=1.0) :: num 0.964006573286 closed 0.964006563286
+PASS N11 at z=0.3 :: 8.58e-30, -3.94e-31
+PASS N11 at z=0.8 :: -1.03e-29, 0.0
+PASS N13 b(0,0) = pi
+PASS N14 axis formula equals N13 at z=0.5
+PASS N14 axis formula equals N13 at z=0.8
+PASS N13 b at q=(0.5,0) vs brute force :: b=2.433821502  measured 1e+03:2.4248776, 1e+04:2.4327001
+PASS N13 b at q=(0.8,0) vs brute force :: b=1.402235104  measured 1e+03:1.3938837, 1e+04:1.4011683
+PASS N13 b at q=(0,0.5) vs brute force :: b=3.866505227  measured 1e+03:3.8567176, 1e+04:3.8652968
+PASS N13 b at q=(0.5,0.5) vs brute force :: b=3.312571548  measured 1e+03:3.3030572, 1e+04:3.3113863, 1e+05:3.3124253
+PASS N13 b at q=(0.3,0.7) vs brute force :: b=4.292609721  measured 1e+03:4.2825243, 1e+04:4.2913691, 1e+05:4.2924639
+PASS N13 b at q=(0,0.8) vs brute force :: b=4.707861513  measured 1e+03:4.6975637, 1e+04:4.7066003, 1e+05:4.7077128
+PASS centre E_rhorho(0) at lambda=5 :: chat FD -0.02430312357  Astra -0.0243031238
+PASS centre E_rhorho(0) at lambda=10 :: chat FD -0.1829940378  Astra -0.1829940379
+SUMMARY 16/16 PASS
+
+[exited with code 0]
