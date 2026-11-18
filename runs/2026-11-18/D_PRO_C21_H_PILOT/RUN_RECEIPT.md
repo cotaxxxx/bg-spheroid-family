@@ -88,22 +88,27 @@ The original four-case refinement is documented in
 
 The 25-digit mpmath primitive E 5-point rho derivative was
 integrated by 96×96 and 160×160 Gauss-Legendre rules, with
-h=0.004, holding z fixed. These do **not** have rigorous
+h=0.004, holding normalized z fixed. **Crucial coordinate rule:**
+primitive E uses original `p_z=lambda*z` for `z=R sin(beta)`.
+Earlier files `primitive_E_references.json` and `primitive_E_hires.json`
+used the WRONG `p_z=z` and are **INVALID_COORDINATE_MAPPING**.
+They remain only as forensic failed calculations; ignore their values.
+See `REFERENCE_COORDINATE_ERRATUM.md` for the derivation and record. These do **not** have rigorous
 truncation or quadrature error enclosures. Their 2-grid
 disagreement measures only an observed numerical change.
 
 | Box | 160×160 H numerical value | 96/160 difference | In coarse producer interval | In fine producer interval |
 |---|---:|---:|---|---|
-| G2 | 0.5639325459077927642075065 | 1.033310143792120829132138e-20 | True | True |
-| G35 | 0.1309029244860698215418875 | 3.754690759122298102679331e-12 | True | True |
-| EQ | -0.08192497439761630943530821 | 0.0000006903463127672758635500261 | True | True |
-| CE | -0.02414805166929792689786304 | 4.964902488449526296482384e-10 | True | None |
-| BD | -0.1134787485561777357515025 | 0.000002378886011662740672300047 | True | None |
-| AX | -0.02629883743599832532311567 | 4.725956352952835801147439e-10 | None | None |
-| LW | 0.5111072314623152664608892 | 3.485149993605956012510919e-19 | True | None |
-| STRIP_00 | 0.1650972455129270387191951 | 2.212029528480200005129118e-14 | True | None |
-| STRIP_08 | 0.07121324499570156739208659 | 9.968677716840299329543974e-9 | True | True |
-| STRIP_15 | -0.1745157629190713394271423 | 0.0001409470980733115271507011 | True | None |
+| G2 | 0.4765459921809282597806453 | 2.297410140835071950082109e-20 | True | True |
+| G35 | 0.07225484480145018712805877 | 7.398801035890949259823977e-12 | True | True |
+| EQ | -0.08193929798704407164118118 | 0.0000003977427620813513662708885 | True | True |
+| CE | -0.02415609314159875717922889 | 3.586773554348795597893277e-10 | True | None |
+| BD | -0.3441302076499718916821277 | 0.00004262684116634226395729651 | True | None |
+| AX | -0.08253436627548163773452783 | 9.406704729062443078897191e-11 | None | None |
+| LW | 0.4249561281919586539243537 | 3.22138697630465743352996e-19 | True | True |
+| STRIP_00 | 0.165097165808398167686039 | 2.208202292880053314621819e-14 | True | None |
+| STRIP_08 | 0.07118725480888852549574661 | 5.248503847138926501184426e-9 | True | True |
+| STRIP_15 | -0.1746477626950677319135946 | 0.00006977035329103756639889946 | True | None |
 
 The AX coarse producer interval is OPEN, so its pointwise
 containment is reported as null, not FAIL.

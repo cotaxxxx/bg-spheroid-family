@@ -7,6 +7,13 @@ R3 `fdfb498f2117cc0c5d72e88cc3be05eac9727bd8`.
 
 ## Geometry
 
+**Normalization:** In the original primitive E integral the physical
+vertical coordinate is `p_z=lambda*z` while the co-rotated normalized
+coordinate in R3 is `z=R sin(beta)`. Thus the primitive-E distance term
+`(lambda*xi_z-p_z)^2` is `lambda^2*(xi_z-z)^2`, matching the R3
+rational D² below. Earlier numerical references made with `p_z=z`
+are invalid and preserved only in the separate ERRATUM record.
+
 The laboratory coordinates are (p=(\rho,0,z)), (ξ=(ξ_x,ξ_y,ξ_z)in S^2),
 (λge2). Define
 

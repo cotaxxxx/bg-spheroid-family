@@ -47,13 +47,13 @@ def build():
     k=c.get("child",[j//2,j%2])
     wrows.append(f"| {title} | {k} | {str(c.get('rigorous_full_B4_cover'))} | "
       f"{c.get('stop_reason')} | {c.get('partial_accepted_patches')} | {n(c.get('wall_s'))} |")
- refs=read("primitive_E_hires.json")
+ refs=read("primitive_E_hires_CORRECTED.json")
  rrows=[]
  if refs and refs.get("complete"):
-  for a in refs["all"]:
+  for a in refs["results"]:
    h=a["n160"]["H_center_num"]
-   rrows.append(f"| {a['name']} | {h} | {a['quadrature_absolute_difference']} | "
-      f"{a['coarse_interval_contains_both']} | {a['fine_interval_contains_both']} |")
+   rrows.append(f"| {a['box']} | {h} | {a['difference_96_160']} | "
+      f"{a['full_coarse_interval_contains_both']} | {a['fine_interval_contains_both']} |")
  summary=read("summary.json") or {}
  fit=summary.get("time_model",{})
  durations=[float(x) for x in fine_times]
@@ -127,7 +127,12 @@ The original four-case refinement is documented in
 
 The 25-digit mpmath primitive E 5-point rho derivative was
 integrated by 96×96 and 160×160 Gauss-Legendre rules, with
-h=0.004, holding z fixed. These do **not** have rigorous
+h=0.004, holding normalized z fixed. **Crucial coordinate rule:**
+primitive E uses original `p_z=lambda*z` for `z=R sin(beta)`.
+Earlier files `primitive_E_references.json` and `primitive_E_hires.json`
+used the WRONG `p_z=z` and are **INVALID_COORDINATE_MAPPING**.
+They remain only as forensic failed calculations; ignore their values.
+See `REFERENCE_COORDINATE_ERRATUM.md` for the derivation and record. These do **not** have rigorous
 truncation or quadrature error enclosures. Their 2-grid
 disagreement measures only an observed numerical change.
 
