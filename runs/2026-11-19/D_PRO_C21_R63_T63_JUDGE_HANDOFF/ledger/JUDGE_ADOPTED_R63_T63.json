@@ -1,0 +1,39 @@
+{
+  "status": "JUDGE_ADOPTED_STATIONARY_EXCLUSION",
+  "date": "2026-11-19",
+  "classification": "INTERNAL_STATIONARY_EXCLUSION_BY_E_z_POSITIVE",
+  "node_id": "R63_T63",
+  "R": [
+    "63/64",
+    "1"
+  ],
+  "tau": [
+    "63/64",
+    "1"
+  ],
+  "lambda": [
+    "79/16",
+    "5"
+  ],
+  "judge_ruling_commit": "546986fa7192e6e91b50cb36dfaef2bb75dd2c2e",
+  "math_G9_audit_commit": "cf541c0",
+  "cap_128_box_commit": "fe83a02f96523a4fe6604bc948b77edda917d3f6",
+  "independent_audit_commit": "de7569d6126e9ad962892f2eac4a3c580b4956f3",
+  "min_lambda_times_Ez_lower": "15736239388659800772034169738066884825/42535295865117307932921825928971026432",
+  "intervals_checked": 128,
+  "E_z_sign": "POSITIVE_ON_INTERIOR",
+  "H_sign": "UNDETERMINED",
+  "H_interval": null,
+  "H_sign_decided_count_increment": 0,
+  "stationary_excluded_root_count_increment": 1,
+  "area_exact": "1/4096",
+  "heavy_H_original_node_kind": "TUBE_OPEN_ERROR",
+  "area_partition_adjustment": "Move 1/4096 FROM H-unresolved OPEN corner TO separately counted Judge-adopted E_z stationary exclusion. H-certified/decided area must remain unchanged. Count no area twice.",
+  "boundary": "R=1 is an interior derivative trace; boundary condition B remains open/separate",
+  "judge_adoption": true,
+  "source_notes": [
+    "G9 audit and interval evidence accepted by Judge; not H certification",
+    "Original frozen H producer and current STATE.json must remain unchanged until independent run finishes"
+  ],
+  "heavy_run_pid_do_not_stop": 1581407
+}
