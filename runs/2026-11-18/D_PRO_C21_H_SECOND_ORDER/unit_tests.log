@@ -1,0 +1,3 @@
+DIAGNOSTIC_ONLY / NOT_EVIDENCE
+PASS: 1024 exact nodes, 1/4 area, strict tie-R splits
+PASS: mixed jets, diagonal 2! and cross 1!, outward Taylor corners
