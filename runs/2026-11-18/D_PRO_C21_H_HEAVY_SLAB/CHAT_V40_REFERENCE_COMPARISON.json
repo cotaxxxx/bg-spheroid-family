@@ -1,0 +1,47 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "point_count": 3,
+  "chat_benchmark_source": "Judge supplied V40 25-digit two-dimensional primitive E quadrature; independent reference, no rigorous error interval supplied",
+  "physical_coordinate": "p_z=lambda*z",
+  "Dig_quadrature": "24x24 and 40x40 Gauss-Legendre with finite-difference derivative; convergence inadequate",
+  "rows": [
+    {
+      "sample": "mid",
+      "R": "0.2578125",
+      "tau": "0.0078125",
+      "lambda": "4.96875",
+      "benchmark_H_chat_V40": "-0.03692977447",
+      "Dig_n24": "-0.0320846680395286851650252804042",
+      "Dig_n40": "-0.036575191291936690491351396943",
+      "signed_delta_n24": "24225532152356574174873597979/5000000000000000000000000000000",
+      "signed_delta_n40": "354583178063309508648603057/1000000000000000000000000000000",
+      "n24_n40_absolute_difference": "11226308131020013315815291347/2500000000000000000000000000000"
+    },
+    {
+      "sample": "lower_corner",
+      "R": "0.25",
+      "tau": "0",
+      "lambda": "5",
+      "benchmark_H_chat_V40": "-0.03851056864",
+      "Dig_n24": "-0.0311278916658213098990709085864",
+      "Dig_n40": "-0.0356633805535112075346109864688",
+      "signed_delta_n24": "9228346217723362626161364267/1250000000000000000000000000000",
+      "signed_delta_n40": "1779492554055495290868133457/625000000000000000000000000000",
+      "n24_n40_absolute_difference": "5669361109612372044425097353/1250000000000000000000000000000"
+    },
+    {
+      "sample": "upper_corner",
+      "R": "0.265625",
+      "tau": "0.015625",
+      "lambda": "4.9375",
+      "benchmark_H_chat_V40": "-0.03534917096",
+      "Dig_n24": "-0.0331537578155620676692777137209",
+      "Dig_n40": "-0.0375334701813270570246979728532",
+      "signed_delta_n24": "21954131444379323307222862791/10000000000000000000000000000000",
+      "signed_delta_n40": "-5460748053317642561744932133/2500000000000000000000000000000",
+      "n24_n40_absolute_difference": "43797123657649893554202591323/10000000000000000000000000000000"
+    }
+  ],
+  "benchmark_not_promoted_to_certified": true,
+  "frozen_H_interval_producer_unmodified": true
+}

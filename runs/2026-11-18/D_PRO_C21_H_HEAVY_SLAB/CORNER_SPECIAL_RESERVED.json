@@ -1,0 +1,28 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "node_id": "R63_T63",
+  "route": "AXIS_MVT",
+  "region": {
+    "R": [
+      "63/64",
+      "1"
+    ],
+    "tau": [
+      "63/64",
+      "1"
+    ],
+    "lambda": [
+      "79/16",
+      "5"
+    ]
+  },
+  "physical_area_exact": "1/4096",
+  "terminal_in_frozen_state": "TUBE_OPEN_ERROR",
+  "analysis_category": "SPECIAL_RESERVED_AXIS_BOUNDARY_CORNER",
+  "H_interval": null,
+  "reason": "Independent MVT extension contains (rho_hi, z_hi=1), outside unit ball; cannot fix by improving a distance lower bound. Requires joint axis-boundary collar method.",
+  "exclude_from_observed_H_zero_tube": true,
+  "analysis_area_identity": "DECIDED + H_ZERO_TUBE + SPECIAL_RESERVED + OTHER_OPEN + PENDING = 1; original state already accounts for reserved area, do not double count",
+  "dedicated_method": "DEFER_UNTIL_SLAB_MEASUREMENT",
+  "frozen_producer_unchanged": true
+}
