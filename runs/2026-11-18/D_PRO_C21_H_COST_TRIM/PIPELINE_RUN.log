@@ -1,0 +1,57 @@
+GROUP_DONE A_LAMBDA_WIDTH completed 12 OPEN 0 wall_s 684.054 total_elapsed 684.054
+GROUP_DONE B_HESSIAN_COARSE completed 8 OPEN 0 wall_s 273.627 total_elapsed 957.681
+GROUP_DONE C_SPATIAL_BOX completed 2 OPEN 0 wall_s 580.48 total_elapsed 1538.161
+GROUP_DONE D_LOW_LAMBDA completed 2 OPEN 0 wall_s 106.551 total_elapsed 1644.711
+PILOT_SUMMARY {"measured_jobs": 24, "completed_jobs": 24, "open_jobs": 0, "invalid_geometry": 2, "unrun_valid": 0, "pilot_wall_s": 1644.7112228730693}
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "PASS",
+  "verified_completed": 24,
+  "verified_open": 0,
+  "invalid_geometry_confirmed": 2,
+  "source_identifiers_disjoint": true,
+  "signed_interval_sum_contains_all_components": true,
+  "coarse_Hessian_point_grad_equal_historical_baseline": true,
+  "independent_mathematical_jets_audit": false,
+  "no_coverage": true
+}
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "completed": 24,
+  "general_model": [
+    0.0005974218602204928,
+    0.13298395404126495,
+    0.02071484029875137,
+    0.08032630028901622,
+    22.599286943674088,
+    83.81420814990997,
+    159.50169801712036,
+    3.5732684284448624,
+    13.755804806947708,
+    0.4871392189525068
+  ],
+  "axis_model": [
+    0.0002980585381919809,
+    0.0023471356980735436,
+    0.17533052852377295,
+    0.07509076903807,
+    0.355034600244835,
+    5.168185766786337,
+    26.918440014123917,
+    0.16024816839490086,
+    2.237691756337881,
+    0.059893030615057796
+  ],
+  "scenario_count": 21,
+  "mathematical_certification": false
+}
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "receipt_lines": 141, "measured": 24}
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_H_COST_TRIM/D_PRO_C21_H_COST_TRIM_DIAGNOSTIC_20261118.zip",
+  "sha256": "eca28d20877ff9eb3bef56b3dcbb121ddfc550f9b57120bd2bda51a08b4c47d0",
+  "SHA256SUMS_entries": 70,
+  "zip_files": 71,
+  "source_R3_verified": 7,
+  "zip_member_bytes_checked": true
+}

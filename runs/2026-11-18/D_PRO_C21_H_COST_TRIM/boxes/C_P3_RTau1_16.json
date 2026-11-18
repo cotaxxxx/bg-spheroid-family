@@ -1,0 +1,21 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "id": "C_P3_RTau1_16",
+  "group": "C_SPATIAL_BOX",
+  "probe": "P3",
+  "R": [
+    "1/4",
+    "5/16"
+  ],
+  "tau": [
+    "63/64",
+    "67/64"
+  ],
+  "lambda": [
+    "39/8",
+    "5"
+  ],
+  "run_status": "NOT_RUN_OUT_OF_DOMAIN",
+  "H_interval": null,
+  "reason": "frozen lower-left tau=63/64 plus requested width exceeds 1; no silent box move"
+}

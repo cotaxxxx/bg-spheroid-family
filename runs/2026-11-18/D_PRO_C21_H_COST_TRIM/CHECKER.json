@@ -1,0 +1,12 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "PASS",
+  "verified_completed": 24,
+  "verified_open": 0,
+  "invalid_geometry_confirmed": 2,
+  "source_identifiers_disjoint": true,
+  "signed_interval_sum_contains_all_components": true,
+  "coarse_Hessian_point_grad_equal_historical_baseline": true,
+  "independent_mathematical_jets_audit": false,
+  "no_coverage": true
+}

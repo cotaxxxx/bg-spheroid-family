@@ -1,0 +1,9 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_H_COST_TRIM/D_PRO_C21_H_COST_TRIM_DIAGNOSTIC_20261118.zip",
+  "sha256": "7bf316f5cf9b2e985b62c3eeb7d51e59d05a9fc2a3b0db0472c23b05262616cd",
+  "SHA256SUMS_entries": 77,
+  "zip_files": 78,
+  "source_R3_verified": 7,
+  "zip_member_bytes_checked": true
+}

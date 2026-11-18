@@ -1,0 +1,354 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "schema": "cost_trim_v1",
+  "frozen_input": "EXPERIMENTS.json",
+  "wall_cap_s": 7200,
+  "elapsed_wall_s": 1644.7112228730693,
+  "finished": [
+    {
+      "id": "A_P1_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 635.7571217981167,
+      "route": "GENERAL",
+      "source_json": "boxes/A_P1_L1_16.json",
+      "source_log": "logs/A_P1_L1_16.log",
+      "peak_RSS_KiB": 32544,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P2_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 684.0454672989435,
+      "route": "GENERAL",
+      "source_json": "boxes/A_P2_L1_16.json",
+      "source_log": "logs/A_P2_L1_16.log",
+      "peak_RSS_KiB": 32060,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P3_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 571.9783775531687,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/A_P3_L1_16.json",
+      "source_log": "logs/A_P3_L1_16.log",
+      "peak_RSS_KiB": 32956,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P4_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 576.2295210002922,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/A_P4_L1_16.json",
+      "source_log": "logs/A_P4_L1_16.log",
+      "peak_RSS_KiB": 32308,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P1_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 657.2638169550337,
+      "route": "GENERAL",
+      "source_json": "boxes/A_P1_L1_8.json",
+      "source_log": "logs/A_P1_L1_8.log",
+      "peak_RSS_KiB": 32060,
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "id": "A_P2_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 664.2637346577831,
+      "route": "GENERAL",
+      "source_json": "boxes/A_P2_L1_8.json",
+      "source_log": "logs/A_P2_L1_8.log",
+      "peak_RSS_KiB": 32040,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P3_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 569.9753858037293,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/A_P3_L1_8.json",
+      "source_log": "logs/A_P3_L1_8.log",
+      "peak_RSS_KiB": 32328,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P4_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 560.4710914646275,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/A_P4_L1_8.json",
+      "source_log": "logs/A_P4_L1_8.log",
+      "peak_RSS_KiB": 32272,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P1_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 646.0078860181384,
+      "route": "GENERAL",
+      "source_json": "boxes/A_P1_L1_4.json",
+      "source_log": "logs/A_P1_L1_4.log",
+      "peak_RSS_KiB": 32372,
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "id": "A_P2_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 684.0244388347492,
+      "route": "GENERAL",
+      "source_json": "boxes/A_P2_L1_4.json",
+      "source_log": "logs/A_P2_L1_4.log",
+      "peak_RSS_KiB": 32548,
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "id": "A_P3_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 571.225315424148,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/A_P3_L1_4.json",
+      "source_log": "logs/A_P3_L1_4.log",
+      "peak_RSS_KiB": 32732,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "A_P4_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 562.9711502110586,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/A_P4_L1_4.json",
+      "source_log": "logs/A_P4_L1_4.log",
+      "peak_RSS_KiB": 32300,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P1_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 265.0997012942098,
+      "route": "GENERAL",
+      "source_json": "boxes/B_P1_H8x16_O4.json",
+      "source_log": "logs/B_P1_H8x16_O4.log",
+      "peak_RSS_KiB": 32332,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P2_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 273.62039960036054,
+      "route": "GENERAL",
+      "source_json": "boxes/B_P2_H8x16_O4.json",
+      "source_log": "logs/B_P2_H8x16_O4.log",
+      "peak_RSS_KiB": 32492,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P3_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 219.84901649691164,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/B_P3_H8x16_O4.json",
+      "source_log": "logs/B_P3_H8x16_O4.log",
+      "peak_RSS_KiB": 33012,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P4_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 229.58888460090384,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/B_P4_H8x16_O4.json",
+      "source_log": "logs/B_P4_H8x16_O4.log",
+      "peak_RSS_KiB": 32628,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P1_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 198.57313913991675,
+      "route": "GENERAL",
+      "source_json": "boxes/B_P1_H8x16_O2.json",
+      "source_log": "logs/B_P1_H8x16_O2.log",
+      "peak_RSS_KiB": 32852,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P2_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 204.07558149658144,
+      "route": "GENERAL",
+      "source_json": "boxes/B_P2_H8x16_O2.json",
+      "source_log": "logs/B_P2_H8x16_O2.log",
+      "peak_RSS_KiB": 32860,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P3_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 163.31125020375475,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/B_P3_H8x16_O2.json",
+      "source_log": "logs/B_P3_H8x16_O2.log",
+      "peak_RSS_KiB": 32760,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "B_P4_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 170.81308657070622,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/B_P4_H8x16_O2.json",
+      "source_log": "logs/B_P4_H8x16_O2.log",
+      "peak_RSS_KiB": 32860,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "C_P1_RTau1_32",
+      "group": "C_SPATIAL_BOX",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 571.4775458108634,
+      "route": "GENERAL",
+      "source_json": "boxes/C_P1_RTau1_32.json",
+      "source_log": "logs/C_P1_RTau1_32.log",
+      "peak_RSS_KiB": 32588,
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "id": "C_P1_RTau1_16",
+      "group": "C_SPATIAL_BOX",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 580.4734553862363,
+      "route": "GENERAL",
+      "source_json": "boxes/C_P1_RTau1_16.json",
+      "source_log": "logs/C_P1_RTau1_16.log",
+      "peak_RSS_KiB": 32272,
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "id": "D_P1_LOW2_L1_8",
+      "group": "D_LOW_LAMBDA",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 106.54499211534858,
+      "route": "GENERAL",
+      "source_json": "boxes/D_P1_LOW2_L1_8.json",
+      "source_log": "logs/D_P1_LOW2_L1_8.log",
+      "peak_RSS_KiB": 32028,
+      "zero_included_RECORD_ONLY": false
+    },
+    {
+      "id": "D_P3_LOW2_L1_8",
+      "group": "D_LOW_LAMBDA",
+      "result": "COMPLETED",
+      "worker_supervisor_s": 88.53611330036074,
+      "route": "AXIS_MVT",
+      "source_json": "boxes/D_P3_LOW2_L1_8.json",
+      "source_log": "logs/D_P3_LOW2_L1_8.log",
+      "peak_RSS_KiB": 32028,
+      "zero_included_RECORD_ONLY": false
+    }
+  ],
+  "group_receipts": [
+    {
+      "group": "A_LAMBDA_WIDTH",
+      "cases": 12,
+      "completed": 12,
+      "open": 0,
+      "wall_s": 684.0543982400559,
+      "worker_seconds_sum": 7384.213307019789
+    },
+    {
+      "group": "B_HESSIAN_COARSE",
+      "cases": 8,
+      "completed": 8,
+      "open": 0,
+      "wall_s": 273.6265377351083,
+      "worker_seconds_sum": 1724.931059403345
+    },
+    {
+      "group": "C_SPATIAL_BOX",
+      "cases": 2,
+      "completed": 2,
+      "open": 0,
+      "wall_s": 580.4796648598276,
+      "worker_seconds_sum": 1151.9510011970997
+    },
+    {
+      "group": "D_LOW_LAMBDA",
+      "cases": 2,
+      "completed": 2,
+      "open": 0,
+      "wall_s": 106.55062203807756,
+      "worker_seconds_sum": 195.08110541570932
+    }
+  ],
+  "invalid_geometry": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "C_P3_RTau1_32",
+      "group": "C_SPATIAL_BOX",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "9/32"
+      ],
+      "tau": [
+        "63/64",
+        "65/64"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "run_status": "NOT_RUN_OUT_OF_DOMAIN",
+      "H_interval": null,
+      "reason": "frozen lower-left tau=63/64 plus requested width exceeds 1; no silent box move"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "C_P3_RTau1_16",
+      "group": "C_SPATIAL_BOX",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "5/16"
+      ],
+      "tau": [
+        "63/64",
+        "67/64"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "run_status": "NOT_RUN_OUT_OF_DOMAIN",
+      "H_interval": null,
+      "reason": "frozen lower-left tau=63/64 plus requested width exceeds 1; no silent box move"
+    }
+  ],
+  "not_run": [],
+  "inflight": [],
+  "is_cover": false
+}
