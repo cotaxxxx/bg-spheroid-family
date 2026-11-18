@@ -1,0 +1,13 @@
+G2        chat H=  0.476545992181  Dig=  0.476545992181  |diff|= 4.7e-23  contained={'coarse': True, 'fine': True}
+G35       chat H= 0.0722548448015  Dig= 0.0722548448015  |diff|= 5.9e-19  contained={'coarse': True, 'fine': True}
+EQ        chat H=-0.0819392979792  Dig= -0.081939297987  |diff|= 7.9e-12  contained={'coarse': True, 'fine': True}
+CE        chat H=-0.0241560931416  Dig=-0.0241560931416  |diff|= 1.9e-17  contained={'coarse': True}
+BD        chat H=  -0.34409636859  Dig=  -0.34413020765  |diff|=  3.4e-5  contained={'coarse': True}
+AX        chat H=-0.0825343662755  Dig=-0.0825343662755  |diff|= 4.4e-18  contained={}
+LW        chat H=  0.424956128192  Dig=  0.424956128192  |diff|= 2.0e-22  contained={'coarse': True, 'fine': True}
+STRIP_00  chat H=  0.165097165808  Dig=  0.165097165808  |diff|= 5.2e-22  contained={'coarse': True}
+STRIP_08  chat H= 0.0711872548089  Dig= 0.0711872548089  |diff|= 2.4e-14  contained={'coarse': True, 'fine': True}
+STRIP_15  chat H= -0.174638835081  Dig= -0.174647762695  |diff|=  8.9e-6  contained={'coarse': True}
+SUMMARY CHECK
+
+[exited with code 0]
