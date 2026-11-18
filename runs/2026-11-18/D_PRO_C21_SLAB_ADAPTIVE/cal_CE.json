@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "name": "CE",
+  "calibration_status": "OPEN",
+  "H_interval": null,
+  "reason": "TimeoutExpired:Command '['/home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python', '-u', '-m', 'prolate_r4.slab_calibrate', '--one', 'CE', '--output', 'runs/2026-11-18/D_PRO_C21_SLA",
+  "wall_s": 600.0016843141057
+}

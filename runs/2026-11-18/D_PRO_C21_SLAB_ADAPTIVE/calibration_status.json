@@ -1,0 +1,37 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "fixed preregistered AX CE BD before slab",
+  "rule": "CALIBRATION_RULE_FREEZE.md",
+  "results": [
+    {
+      "name": "AX",
+      "status": "OPEN",
+      "stop_reason": "TimeoutExpired:Command '['/home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python', '-u', '-m', 'prolate_r4.slab_calibrate', '--one', 'AX', '--output', 'runs/2026-11-18/D_PRO_C21_SLA",
+      "parent_wall_s": 600.0020219506696
+    },
+    {
+      "name": "CE",
+      "status": "OPEN",
+      "stop_reason": "TimeoutExpired:Command '['/home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python', '-u', '-m', 'prolate_r4.slab_calibrate', '--one', 'CE', '--output', 'runs/2026-11-18/D_PRO_C21_SLA",
+      "parent_wall_s": 600.0016843141057
+    },
+    {
+      "name": "BD",
+      "status": "COMPLETED",
+      "wall_s": 272.2872815118171,
+      "parent_wall_s": 272.3638865640387,
+      "H_interval": {
+        "lower": "-146351002153335902768078341986781683063/340282366920938463463374607431768211456",
+        "upper": "-87775880963809839597674369342788001143/340282366920938463463374607431768211456",
+        "lo": -0.43008694067106695,
+        "hi": -0.25795013052852006,
+        "mid": -0.3440185355997935,
+        "halfwidth": 0.08606840507127345
+      },
+      "peak_RSS_KiB": 34016,
+      "mesh_cells": 12672
+    }
+  ],
+  "total_parent_wall_s": 600.0031693829224,
+  "no_slab_boxes_processed": true
+}
