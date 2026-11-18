@@ -1,0 +1,5 @@
+{"completed": 32, "failed": 0}
+{"completed": 64, "failed": 0}
+{"completed": 96, "failed": 0}
+{"completed": 128, "failed": 0}
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "scope": "q=0,lambda in [5,64],not a global sign proof", "precision_bits": 128, "theta_cells": 2048, "epsilon_boxes": 128, "all_negative": true, "max_upper_exact": "-108395941468018599509262994582356197631/5444517870735015415413993718908291383296", "seconds": 2.2757980250000003}
