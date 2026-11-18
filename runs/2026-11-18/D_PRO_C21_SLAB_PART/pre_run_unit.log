@@ -1,0 +1,3 @@
+DIAGNOSTIC_ONLY / NOT_EVIDENCE
+PASS: exactly 1024 boxes, target area 1/4, route timing and min-edge
+PASS: 3 pointwise overlaps against immutable R3 physical fxx

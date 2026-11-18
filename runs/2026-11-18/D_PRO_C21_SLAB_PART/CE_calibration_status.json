@@ -1,0 +1,20 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "calibration": "CE_mean_value_1_box",
+  "time_limit_seconds": 600,
+  "branch": "research/d-pro-c21-h-slab-part-20261118",
+  "pre_run_freeze_commit": "d71522c19b9998d6640adf9d8542227690fe560b",
+  "result": "COMPLETED",
+  "returncode": 0,
+  "wall_s": 109.18979961704463,
+  "H_interval": {
+    "lower": "-192217485523408962060759644508675527973/5444517870735015415413993718908291383296",
+    "upper": "-70926846081474218447885346140134987045/5444517870735015415413993718908291383296",
+    "lo": -0.03530477630656751,
+    "hi": -0.01302720420162732,
+    "mid": -0.024165990254097415,
+    "halfwidth": 0.011138786052470095
+  },
+  "mesh_cells": 6368,
+  "peak_RSS_KiB": 30468
+}
