@@ -1,0 +1,884 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "baseline_commit": "0427b19d84e5105aa1a03ff69c9842065d491f3c",
+  "V39_commit": "544ebfd138c02d2fc68806184a1d0ce2e744fa2c",
+  "pinned_R3_commit": "fdfb498f2117cc0c5d72e88cc3be05eac9727bd8",
+  "base_mesh": {
+    "base_u": 16,
+    "base_v": 32,
+    "ratio": "1/2",
+    "order": 4
+  },
+  "probes": {
+    "P1": {
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "route": "GENERAL",
+      "baseline": "R16_T00"
+    },
+    "P2": {
+      "R": [
+        "13/32",
+        "27/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "route": "GENERAL",
+      "baseline": "R26_T00"
+    },
+    "P3": {
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "route": "AXIS_MVT",
+      "baseline": "R16_T63"
+    },
+    "P4": {
+      "R": [
+        "7/16",
+        "29/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "route": "AXIS_MVT",
+      "baseline": "R28_T63"
+    }
+  },
+  "time_caps": {
+    "GENERAL": 1800,
+    "AXIS_MVT": 2400
+  },
+  "total_wall_cap_s": 7200,
+  "max_parallel": 12,
+  "jobs": [
+    {
+      "id": "A_P1_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "79/16",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P2_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P2",
+      "R": [
+        "13/32",
+        "27/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "79/16",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P3_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "79/16",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P4_L1_16",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P4",
+      "R": [
+        "7/16",
+        "29/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "79/16",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P1_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P2_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P2",
+      "R": [
+        "13/32",
+        "27/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P3_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P4_L1_8",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P4",
+      "R": [
+        "7/16",
+        "29/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P1_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "19/4",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P2_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P2",
+      "R": [
+        "13/32",
+        "27/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "19/4",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P3_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "19/4",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "A_P4_L1_4",
+      "group": "A_LAMBDA_WIDTH",
+      "probe": "P4",
+      "R": [
+        "7/16",
+        "29/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "19/4",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P1_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P2_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P2",
+      "R": [
+        "13/32",
+        "27/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P3_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P4_H8x16_O4",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P4",
+      "R": [
+        "7/16",
+        "29/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P1_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 2
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P2_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P2",
+      "R": [
+        "13/32",
+        "27/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 2
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P3_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 2
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "B_P4_H8x16_O2",
+      "group": "B_HESSIAN_COARSE",
+      "probe": "P4",
+      "R": [
+        "7/16",
+        "29/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "1279/256",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 8,
+        "base_v": 16,
+        "ratio": "1",
+        "order": 2
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "C_P1_RTau1_32",
+      "group": "C_SPATIAL_BOX",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "9/32"
+      ],
+      "tau": [
+        "0",
+        "1/32"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "C_P1_RTau1_16",
+      "group": "C_SPATIAL_BOX",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "5/16"
+      ],
+      "tau": [
+        "0",
+        "1/16"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "D_P1_LOW2_L1_8",
+      "group": "D_LOW_LAMBDA",
+      "probe": "P1",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "0",
+        "1/64"
+      ],
+      "lambda": [
+        "2",
+        "17/8"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "GENERAL",
+      "per_box_limit_s": 1800,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    },
+    {
+      "id": "D_P3_LOW2_L1_8",
+      "group": "D_LOW_LAMBDA",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "17/64"
+      ],
+      "tau": [
+        "63/64",
+        "1"
+      ],
+      "lambda": [
+        "2",
+        "17/8"
+      ],
+      "hessian_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "point_grad_mesh": {
+        "base_u": 16,
+        "base_v": 32,
+        "ratio": "1/2",
+        "order": 4
+      },
+      "route_expected": "AXIS_MVT",
+      "per_box_limit_s": 2400,
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE"
+    }
+  ],
+  "invalid_geometry": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "C_P3_RTau1_32",
+      "group": "C_SPATIAL_BOX",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "9/32"
+      ],
+      "tau": [
+        "63/64",
+        "65/64"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "run_status": "NOT_RUN_OUT_OF_DOMAIN",
+      "H_interval": null,
+      "reason": "frozen lower-left tau=63/64 plus requested width exceeds 1; no silent box move"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "C_P3_RTau1_16",
+      "group": "C_SPATIAL_BOX",
+      "probe": "P3",
+      "R": [
+        "1/4",
+        "5/16"
+      ],
+      "tau": [
+        "63/64",
+        "67/64"
+      ],
+      "lambda": [
+        "39/8",
+        "5"
+      ],
+      "run_status": "NOT_RUN_OUT_OF_DOMAIN",
+      "H_interval": null,
+      "reason": "frozen lower-left tau=63/64 plus requested width exceeds 1; no silent box move"
+    }
+  ],
+  "sign_only_recorded": true,
+  "is_cover": false
+}
