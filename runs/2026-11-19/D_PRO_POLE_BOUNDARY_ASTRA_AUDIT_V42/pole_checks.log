@@ -1,0 +1,9 @@
+PASS P8 axis lambda=256, 1-z^2=1.0/lambda^2: lambda*E_z >= 1/4 :: lambda*E_z = 4.868688945
+PASS P8 axis lambda=256, 1-z^2=0.25/lambda^2: lambda*E_z >= 1/4 :: lambda*E_z = 4.854177971
+PASS P8 axis lambda=256, 1-z^2=0.01/lambda^2: lambda*E_z >= 1/4 :: lambda*E_z = 4.848969942
+PASS P8 off-axis lambda=256, chi=lambda^-2, rho=sqrt(chi)/2: lambda*E_z >= 1/4 :: lambda*E_z = 4.8678585
+PASS P19 transport identity on the axis (lambda=5, z=0.9) vs FD of primitive E :: P19 0.91370063827962  FD 0.91370063827962
+PASS P13 |G''(u)| < 11 on sampled u in [0, 0.999] :: max sampled |G''| = 3.23287
+PASS P18 cap integral at R=0.6 :: 0.0036604345 <= 12 sqrt(kappa) = 0.1875
+PASS P18 cap integral at R=0.999 :: 0.12677876 <= 12 sqrt(kappa) = 0.1875
+SUMMARY 8/8 PASS
