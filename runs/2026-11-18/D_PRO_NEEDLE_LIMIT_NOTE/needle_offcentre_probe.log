@@ -1,0 +1,6 @@
+q=(0,0): lambda*Delta at 1e2,1e3,1e4 = ['17.53977', '24.83362', '32.07557']  slope per ln(lambda) (1e3->1e4) = 3.14514  (centre pi = 3.14159)
+q=(0.5,0): lambda*Delta at 1e2,1e3,1e4 = ['18.64447', '26.8389', '34.98473']  slope per ln(lambda) (1e3->1e4) = 3.53769  (centre pi = 3.14159)
+q=(0.8,0): lambda*Delta at 1e2,1e3,1e4 = ['20.44037', '30.03967', '39.59555']  slope per ln(lambda) (1e3->1e4) = 4.15007  (centre pi = 3.14159)
+q=(0,0.5): lambda*Delta at 1e2,1e3,1e4 = ['13.18888', '17.95216', '22.65922']  slope per ln(lambda) (1e3->1e4) = 2.04425  (centre pi = 3.14159)
+
+[exited with code 0]

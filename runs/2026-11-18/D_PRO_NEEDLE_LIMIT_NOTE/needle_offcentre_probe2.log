@@ -1,0 +1,12 @@
+q=(0.5,0.5): lambda*Delta at 1e2,1e3,1e4 = ['19.74774', '25.23763', '30.72023']  slope per ln(lambda) (1e3->1e4) = 2.38106  (centre pi = 3.14159)
+q=(0.3,0.7): lambda*Delta at 1e2,1e3,1e4 = ['12.88384', '15.75979', '18.62799']  slope per ln(lambda) (1e3->1e4) = 1.24564  (centre pi = 3.14159)
+q=(0,0.8): lambda*Delta at 1e2,1e3,1e4 = ['9.385056', '10.95659', '12.5202']  slope per ln(lambda) (1e3->1e4) = 0.679066  (centre pi = 3.14159)
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0,0) = 3.14159
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0.5,0) = 3.53429
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0.8,0) = 4.1469
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0,0.5) = 2.04052
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0.5,0.5) = 2.38061
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0.3,0.7) = 1.24517
+candidate a(q) = pi sqrt(1-z^2)(1 - z^2 + rho^2/2) at (0,0.8) = 0.678584
+
+[exited with code 0]
