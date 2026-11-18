@@ -1,0 +1,17 @@
+PASS NP11/NP12: F' = 2 sum a_n h^n, Q = 2F'+gF'' = sum q_n h^n (4 gammas) :: max diff 9.18e-41
+PASS NP8: 4 a sin a - 2 cos a increasing from -2 to 2pi; identity (1-g^2)F''=gF'-2
+PASS NP4/NP8: eigenvalues of (D/sqrtB) Hess_p(kF) in [-2, 2pi] (40 random xi,p) :: observed range [-1.9479, 5.6579]
+PASS NP7 vs E_rho/rho (chat E_ref, central FD h=0.002) lam=5 rho=0.3 z=0.4 :: NP7 -0.08283274943  FD -0.08283376585
+PASS NP7 vs E_rho/rho (chat E_ref, central FD h=0.002) lam=5 rho=0.5 z=0.0 :: NP7 -0.08207599603  FD -0.08207697289
+PASS NP7 vs E_rho/rho (chat E_ref, central FD h=0.002) lam=10 rho=0.2 z=0.6 :: NP7 -0.207568431  FD -0.207568998
+PASS centre H(0;5) = -0.0243031 (V41), H(0;10) = -0.1829940 (V41) :: -0.0243031238, -0.182994038
+PASS centre: lambda H(0) < -1/2 at lambda = 64, 256, 4096 (numeric) :: -7.3159, -11.6316, -20.3306
+PASS zeta_20 = 5242880/578627215023 :: 5242880/578627215023
+PASS 5 zeta_20 < 1/20000 and 5 eta_20 < 1/40000 :: 4.530e-05, 2.356e-05
+PASS T_lambda < 25 on [5,10]: log 11 + 29 log 2 :: 22.4992
+PASS q_n <= a_M (n+4): (n+4)(2n+3) >= 2n^2+10n+10
+PASS bracket <= 4M+16: max over h in [0,1/2] of 2g^2/(1-h)+16h+4g(M+h/(1-h)) (M=21)
+PASS NP20: 40/27 (5*2/3 - 3/4) = 310/81; (22/7)(1+(22/7)/128) = 5049/1568; diff = 77111/127008 > 1/2
+PASS NP19: (1+a) int D^-3 = int D (boundary terms vanish) :: 7.20354474764 vs 7.20354474764
+PASS NP20 integral closed form (lambda=64)
+SUMMARY 16/16 PASS
