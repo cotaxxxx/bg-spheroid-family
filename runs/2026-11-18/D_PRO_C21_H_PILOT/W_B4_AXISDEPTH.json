@@ -1,0 +1,185 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "route": "C21 auxiliary W four-child B4-only gate",
+  "V36_input": "16d8c01b86327b8387f731bf09d1740c6ee31273",
+  "fixed_A": "1/4",
+  "fixed_B4_budget_per_child": "3/100",
+  "per_axis_split_depth": [
+    16,
+    16,
+    16
+  ],
+  "max_leaves": 32768,
+  "per_child_timeout_s": 60.0,
+  "all_four_full_B4_cover": false,
+  "children": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "child": [
+        0,
+        0
+      ],
+      "outer_R": [
+        "95/128",
+        "3/4"
+      ],
+      "outer_tau": [
+        "15/128",
+        "1/8"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "191/256",
+        "251920384/4421851009",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "67630235904/18682320513025",
+        "335347712/10712273707521"
+      ],
+      "rigorous_full_B4_cover": false,
+      "B4_upper_if_complete": null,
+      "max_A_accepted_if_complete": null,
+      "partial_B4_currently_accepted_NOT_GLOBAL": "335003599809600300689066345087712993788515277/1461501637330902918203684832716283019655932542976",
+      "partial_accepted_patches": 32583,
+      "pending": 186,
+      "evaluations": 65172,
+      "A_splits": 32589,
+      "tail_splits": 0,
+      "stop_reason": "LEAF_LIMIT",
+      "wall_s": 7.956724722869694,
+      "no_signed_W_coefficients": true
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "child": [
+        0,
+        1
+      ],
+      "outer_R": [
+        "95/128",
+        "3/4"
+      ],
+      "outer_tau": [
+        "1/8",
+        "17/128"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "191/256",
+        "285474816/4438890625",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "4713323947687936/1233962450791890625",
+        "335347712/10712273707521"
+      ],
+      "rigorous_full_B4_cover": false,
+      "B4_upper_if_complete": null,
+      "max_A_accepted_if_complete": null,
+      "partial_B4_currently_accepted_NOT_GLOBAL": "173820536392107158561125543675976763854366075/730750818665451459101842416358141509827966271488",
+      "partial_accepted_patches": 32584,
+      "pending": 185,
+      "evaluations": 65173,
+      "A_splits": 32589,
+      "tail_splits": 0,
+      "stop_reason": "LEAF_LIMIT",
+      "wall_s": 7.954376052133739,
+      "no_signed_W_coefficients": true
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "child": [
+        1,
+        0
+      ],
+      "outer_R": [
+        "3/4",
+        "97/128"
+      ],
+      "outer_tau": [
+        "15/128",
+        "1/8"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "193/256",
+        "251920384/4421851009",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "67630235904/18682320513025",
+        "335347712/10712273707521"
+      ],
+      "rigorous_full_B4_cover": false,
+      "B4_upper_if_complete": null,
+      "max_A_accepted_if_complete": null,
+      "partial_B4_currently_accepted_NOT_GLOBAL": "629089389683669636495912292264145284923563859/2923003274661805836407369665432566039311865085952",
+      "partial_accepted_patches": 32581,
+      "pending": 188,
+      "evaluations": 65170,
+      "A_splits": 32589,
+      "tail_splits": 0,
+      "stop_reason": "LEAF_LIMIT",
+      "wall_s": 7.945267525035888,
+      "no_signed_W_coefficients": true
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "child": [
+        1,
+        1
+      ],
+      "outer_R": [
+        "3/4",
+        "97/128"
+      ],
+      "outer_tau": [
+        "1/8",
+        "17/128"
+      ],
+      "outer_lambda": [
+        "1279/256",
+        "5"
+      ],
+      "center": [
+        "193/256",
+        "285474816/4438890625",
+        "262144/6548481"
+      ],
+      "radii": [
+        "1/256",
+        "4713323947687936/1233962450791890625",
+        "335347712/10712273707521"
+      ],
+      "rigorous_full_B4_cover": false,
+      "B4_upper_if_complete": null,
+      "max_A_accepted_if_complete": null,
+      "partial_B4_currently_accepted_NOT_GLOBAL": "576318019690519647661803204536367933863603429/2923003274661805836407369665432566039311865085952",
+      "partial_accepted_patches": 32585,
+      "pending": 184,
+      "evaluations": 65174,
+      "A_splits": 32589,
+      "tail_splits": 0,
+      "stop_reason": "LEAF_LIMIT",
+      "wall_s": 8.005071653053164,
+      "no_signed_W_coefficients": true
+    }
+  ],
+  "W_35_coefficients_computed": false,
+  "W_box_enclosure": null,
+  "wall_s": 31.891588921193033,
+  "peak_RSS_KiB": 65536
+}

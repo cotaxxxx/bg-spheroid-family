@@ -1,0 +1,8 @@
+START G2
+END G2 {"name": "G2", "state": "COMPLETED", "halfwidth": 0.09322000108659267, "wall_s": 28.181075755041093, "mesh_cells": 1344, "max_RSS": 30048}
+START G35
+END G35 {"name": "G35", "state": "COMPLETED", "halfwidth": 0.11609208316076547, "wall_s": 80.55493874102831, "mesh_cells": 3840, "max_RSS": 30288}
+START EQ
+END EQ {"name": "EQ", "state": "COMPLETED", "halfwidth": 0.046220960502978414, "wall_s": 146.79810091108084, "mesh_cells": 7040, "max_RSS": 31656}
+START STRIP_08
+END STRIP_08 {"name": "STRIP_08", "state": "COMPLETED", "halfwidth": 0.18977517099119723, "wall_s": 86.11143806576729, "mesh_cells": 4064, "max_RSS": 30180}

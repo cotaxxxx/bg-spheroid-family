@@ -1,0 +1,1 @@
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "name": "AX", "state": "OPEN", "error": "TimeoutExpired: Command '['/home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python', '-u', '-m', 'prolate_r4.c21_special', '--name', 'AX', '--output', 'runs/2026-11-18/D_PRO_C21_H_PILOT/AX.json']' timed out after 119.99998959992081 seconds", "uncomputed_H_interval": null}

@@ -1,0 +1,13 @@
+{
+  "complete": 22,
+  "regular_fit": {
+    "T_seconds_approx": "0.0526 + (0.0208) * mesh_cells",
+    "intercept_s": 0.052610441459818524,
+    "seconds_per_cell": 0.02081273454802916,
+    "R2_within_measured_boxes": 0.9995794324153089,
+    "sample_count": 20,
+    "warning": "Only measured mesh policy; not transferable to new box geometry."
+  },
+  "median": 6.7736030630767345,
+  "strips": 16
+}

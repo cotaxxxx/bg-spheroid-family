@@ -1,0 +1,1 @@
+cd /home/daybreak/D_PRO_C21_H_PILOT_20261118/worktree && PYTHONPATH=/home/daybreak/D_PRO_R1_COROTATION_R3_DIG_20261117/source /home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python -m prolate_r4.c21_batch

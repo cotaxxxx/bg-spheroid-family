@@ -1,0 +1,42 @@
+START G35
+END G35 {"name": "G35", "state": "COMPLETED", "halfwidth": 31.23138877749443, "wall_s": 6.63155177468434, "peak_RSS_KiB": 29448, "contains_zero_RECORD_ONLY": true}
+START EQ
+END EQ {"name": "EQ", "state": "COMPLETED", "halfwidth": 1.3175795543938875, "wall_s": 11.117831415031105, "peak_RSS_KiB": 29184, "contains_zero_RECORD_ONLY": true}
+START BD
+END BD {"name": "BD", "state": "COMPLETED", "halfwidth": 3.4465721286833286, "wall_s": 19.29650860792026, "peak_RSS_KiB": 29724, "contains_zero_RECORD_ONLY": true}
+START LW
+END LW {"name": "LW", "state": "COMPLETED", "halfwidth": 186.5319356918335, "wall_s": 3.3745488808490336, "peak_RSS_KiB": 29388, "contains_zero_RECORD_ONLY": true}
+START STRIP_01
+END STRIP_01 {"name": "STRIP_01", "state": "COMPLETED", "halfwidth": 85.65509593486786, "wall_s": 5.386983212083578, "peak_RSS_KiB": 29368, "contains_zero_RECORD_ONLY": true}
+START STRIP_02
+END STRIP_02 {"name": "STRIP_02", "state": "COMPLETED", "halfwidth": 45.192964136600494, "wall_s": 5.37361733103171, "peak_RSS_KiB": 29836, "contains_zero_RECORD_ONLY": true}
+START STRIP_03
+END STRIP_03 {"name": "STRIP_03", "state": "COMPLETED", "halfwidth": 35.03854751586914, "wall_s": 5.344487257301807, "peak_RSS_KiB": 29640, "contains_zero_RECORD_ONLY": true}
+START STRIP_04
+END STRIP_04 {"name": "STRIP_04", "state": "COMPLETED", "halfwidth": 30.77967980504036, "wall_s": 5.342178096994758, "peak_RSS_KiB": 29300, "contains_zero_RECORD_ONLY": true}
+START STRIP_05
+END STRIP_05 {"name": "STRIP_05", "state": "COMPLETED", "halfwidth": 22.704086154699326, "wall_s": 6.07371020084247, "peak_RSS_KiB": 29208, "contains_zero_RECORD_ONLY": true}
+START STRIP_06
+END STRIP_06 {"name": "STRIP_06", "state": "COMPLETED", "halfwidth": 19.430544137954712, "wall_s": 6.296032177750021, "peak_RSS_KiB": 29212, "contains_zero_RECORD_ONLY": true}
+START STRIP_07
+END STRIP_07 {"name": "STRIP_07", "state": "COMPLETED", "halfwidth": 17.87774369120598, "wall_s": 6.660779427736998, "peak_RSS_KiB": 29652, "contains_zero_RECORD_ONLY": true}
+START STRIP_08
+END STRIP_08 {"name": "STRIP_08", "state": "COMPLETED", "halfwidth": 16.93356665968895, "wall_s": 6.7975586778484285, "peak_RSS_KiB": 29600, "contains_zero_RECORD_ONLY": true}
+START STRIP_09
+END STRIP_09 {"name": "STRIP_09", "state": "COMPLETED", "halfwidth": 16.217460840940475, "wall_s": 6.776105543132871, "peak_RSS_KiB": 29168, "contains_zero_RECORD_ONLY": true}
+START STRIP_10
+END STRIP_10 {"name": "STRIP_10", "state": "COMPLETED", "halfwidth": 15.606408163905144, "wall_s": 6.771100583020598, "peak_RSS_KiB": 29216, "contains_zero_RECORD_ONLY": true}
+START STRIP_11
+END STRIP_11 {"name": "STRIP_11", "state": "COMPLETED", "halfwidth": 13.838098585605621, "wall_s": 7.746600926853716, "peak_RSS_KiB": 29416, "contains_zero_RECORD_ONLY": true}
+START STRIP_12
+END STRIP_12 {"name": "STRIP_12", "state": "COMPLETED", "halfwidth": 12.913747251033783, "wall_s": 8.021923064254224, "peak_RSS_KiB": 29672, "contains_zero_RECORD_ONLY": true}
+START STRIP_13
+END STRIP_13 {"name": "STRIP_13", "state": "COMPLETED", "halfwidth": 11.965836063027382, "wall_s": 8.949318509083241, "peak_RSS_KiB": 29492, "contains_zero_RECORD_ONLY": true}
+START STRIP_14
+END STRIP_14 {"name": "STRIP_14", "state": "COMPLETED", "halfwidth": 11.486298531293869, "wall_s": 9.983753596898168, "peak_RSS_KiB": 29396, "contains_zero_RECORD_ONLY": true}
+START STRIP_15
+END STRIP_15 {"name": "STRIP_15", "state": "COMPLETED", "halfwidth": 10.68801760673523, "wall_s": 11.238547545857728, "peak_RSS_KiB": 29416, "contains_zero_RECORD_ONLY": true}
+START AX
+END AX {"name": "AX", "state": "OPEN", "error": "TimeoutExpired: Command '['/home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python', '-u', '-m', 'prolate_r4.c21_special', '--name', 'AX', '--output', 'runs/2026-11-18/D_PRO_C21_H_PILOT/AX.json']' timed out after 119.99998959992081 seconds", "elapsed_outer_s": 120.00147846899927}
+START STRIP_00
+END STRIP_00 {"name": "STRIP_00", "state": "COMPLETED", "halfwidth": 8.085034623742104, "wall_s": 61.17935732100159, "peak_RSS_KiB": 29552, "contains_zero_RECORD_ONLY": true}

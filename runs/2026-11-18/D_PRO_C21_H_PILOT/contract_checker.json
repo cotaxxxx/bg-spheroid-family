@@ -1,0 +1,146 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "exact JSON endpoint/metadata contract, NOT mathematical source verification",
+  "evaluated": 22,
+  "open": 1,
+  "no_synthetic_enclosures_for_open": true,
+  "rows": [
+    {
+      "name": "G2",
+      "state": "CHECKED",
+      "halfwidth": 69.72880959510803,
+      "zero_included": true
+    },
+    {
+      "name": "G35",
+      "state": "CHECKED",
+      "halfwidth": 31.23138877749443,
+      "zero_included": true
+    },
+    {
+      "name": "AX",
+      "state": "OPEN",
+      "contract": "uncomputed"
+    },
+    {
+      "name": "EQ",
+      "state": "CHECKED",
+      "halfwidth": 1.3175795543938875,
+      "zero_included": true
+    },
+    {
+      "name": "CE",
+      "state": "CHECKED",
+      "halfwidth": 22.133937567472458,
+      "zero_included": true
+    },
+    {
+      "name": "BD",
+      "state": "CHECKED",
+      "halfwidth": 3.4465721286833286,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_00",
+      "state": "CHECKED",
+      "halfwidth": 8.085034623742104,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_01",
+      "state": "CHECKED",
+      "halfwidth": 85.65509593486786,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_02",
+      "state": "CHECKED",
+      "halfwidth": 45.192964136600494,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_03",
+      "state": "CHECKED",
+      "halfwidth": 35.03854751586914,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_04",
+      "state": "CHECKED",
+      "halfwidth": 30.77967980504036,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_05",
+      "state": "CHECKED",
+      "halfwidth": 22.704086154699326,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_06",
+      "state": "CHECKED",
+      "halfwidth": 19.430544137954712,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_07",
+      "state": "CHECKED",
+      "halfwidth": 17.87774369120598,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_08",
+      "state": "CHECKED",
+      "halfwidth": 16.93356665968895,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_09",
+      "state": "CHECKED",
+      "halfwidth": 16.217460840940475,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_10",
+      "state": "CHECKED",
+      "halfwidth": 15.606408163905144,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_11",
+      "state": "CHECKED",
+      "halfwidth": 13.838098585605621,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_12",
+      "state": "CHECKED",
+      "halfwidth": 12.913747251033783,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_13",
+      "state": "CHECKED",
+      "halfwidth": 11.965836063027382,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_14",
+      "state": "CHECKED",
+      "halfwidth": 11.486298531293869,
+      "zero_included": true
+    },
+    {
+      "name": "STRIP_15",
+      "state": "CHECKED",
+      "halfwidth": 10.68801760673523,
+      "zero_included": true
+    },
+    {
+      "name": "LW",
+      "state": "CHECKED",
+      "halfwidth": 186.5319356918335,
+      "zero_included": true
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "fixed representative pilot only",
+  "box_count_planned": 23,
+  "completed": 22,
+  "uncomputed": 1,
+  "zero_included_strip_boxes_RECORD_ONLY": [
+    "STRIP_00",
+    "STRIP_01",
+    "STRIP_02",
+    "STRIP_03",
+    "STRIP_04",
+    "STRIP_05",
+    "STRIP_06",
+    "STRIP_07",
+    "STRIP_08",
+    "STRIP_09",
+    "STRIP_10",
+    "STRIP_11",
+    "STRIP_12",
+    "STRIP_13",
+    "STRIP_14",
+    "STRIP_15"
+  ],
+  "zero_not_included_strip_boxes_RECORD_ONLY": [],
+  "completed_strips": 16,
+  "time_model": {
+    "T_seconds_approx": "0.0526 + (0.0208) * mesh_cells",
+    "intercept_s": 0.052610441459818524,
+    "seconds_per_cell": 0.02081273454802916,
+    "R2_within_measured_boxes": 0.9995794324153089,
+    "sample_count": 20,
+    "warning": "Only measured mesh policy; not transferable to new box geometry."
+  },
+  "representative_median_seconds": 6.7736030630767345,
+  "time_scenario_only": {
+    "hypothetical_H_boxes": [
+      49152,
+      98304,
+      196608
+    ],
+    "formula": "T_ideal_seconds=N_H*(a+b*cell_count)/workers, plus N_tube*t_W/workers",
+    "W_tube_box_count": "unknown; must be counted separately",
+    "workers_for_scenarios": 12,
+    "fixed_box_count_claim": null
+  },
+  "rows": [
+    {
+      "name": "G2",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.5,
+      "input_width": {
+        "R": 0.015625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-23098313198395863351366132977124802365/332306998946228968225951765070086144",
+        "upper": "185955437719126936928257480517027104281/2658455991569831745807614120560689152",
+        "lo": -69.50895789628984,
+        "hi": 69.94866129392622,
+        "mid": 0.2198516988181869,
+        "halfwidth": 69.72880959510803
+      },
+      "halfwidth": 69.72880959510803,
+      "relative_halfwidth": 317.16293287673165,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 3.387756993062794,
+      "mesh_cells": 160,
+      "peak_RSS_KiB": 29292,
+      "directional_halfwidths": {
+        "R": 11.48117858171463,
+        "x": 15.221048504114151,
+        "lam": 0.8375753629952669
+      },
+      "spatial_point_halfwidth": 42.1890070438385,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "G35",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.5,
+      "input_width": {
+        "R": 0.015625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-331386502649404109149521594207908945107/10633823966279326983230456482242756608",
+        "upper": "166415839157605431963513149294126158231/5316911983139663491615228241121378304",
+        "lo": -31.163436944250364,
+        "hi": 31.299340610738497,
+        "mid": 0.06795183324406713,
+        "halfwidth": 31.23138877749443
+      },
+      "halfwidth": 31.23138877749443,
+      "relative_halfwidth": 459.6106872542874,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.63155177468434,
+      "mesh_cells": 320,
+      "peak_RSS_KiB": 29448,
+      "directional_halfwidths": {
+        "R": 4.976888820528984,
+        "x": 9.463275253772736,
+        "lam": 0.27712260093539953
+      },
+      "spatial_point_halfwidth": 16.514102071523666,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "AX",
+      "status": "OPEN",
+      "reason": "TimeoutExpired: Command '['/home/daybreak/D_PRO_R4_RATMODEL_BOX2_CHAT_20261118/.venv/bin/python', '-u', '-m', 'prolate_r4.c21_special', '--name', 'AX', '--output', 'runs/2026-11-18/D_PRO_C21_H_PILOT/AX.json']' timed out after 119.99998959992081 seconds"
+    },
+    {
+      "name": "EQ",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.5,
+      "input_width": {
+        "R": 0.015625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-235486936092813801045253665805576730865/170141183460469231731687303715884105728",
+        "upper": "13303884580185851903551363119500212337/10633823966279326983230456482242756608",
+        "lo": -1.3840678153477584,
+        "hi": 1.2510912934400167,
+        "mid": -0.06648826095387081,
+        "halfwidth": 1.3175795543938875
+      },
+      "halfwidth": 1.3175795543938875,
+      "relative_halfwidth": 19.816724568988455,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 11.117831415031105,
+      "mesh_cells": 528,
+      "peak_RSS_KiB": 29184,
+      "directional_halfwidths": {
+        "R": 0.1685608779080212,
+        "x": 0.5837573129683733,
+        "lam": 0.006523672069306485
+      },
+      "spatial_point_halfwidth": 0.5587376905605197,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "CE",
+      "status": "COMPLETED",
+      "route": "rho2_integral_at_fixed_z",
+      "R_mid": 0.0078125,
+      "input_width": {
+        "R": 0.015625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-58583414284424391534765278082037984679/2658455991569831745807614120560689152",
+        "upper": "236403134408540375297067513914978158949/10633823966279326983230456482242756608",
+        "lo": -22.036631213831225,
+        "hi": 22.23124392111369,
+        "mid": 0.09730635364123388,
+        "halfwidth": 22.133937567472458
+      },
+      "halfwidth": 22.133937567472458,
+      "relative_halfwidth": 227.46651928896378,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 102.46436113584787,
+      "mesh_cells": 432,
+      "peak_RSS_KiB": 29232,
+      "directional_halfwidths": {
+        "R": 4.93017403781414,
+        "x": 11.498178631067276,
+        "lam": 0.2364817075431347
+      },
+      "spatial_point_halfwidth": 5.469103135168552,
+      "cap_halfwidth": 0
+    },
+    {
+      "name": "BD",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.9921875,
+      "input_width": {
+        "R": 0.015625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-40505692062710342729161410747151046785/10633823966279326983230456482242756608",
+        "upper": "262358324354367443606936966985488874489/85070591730234615865843651857942052864",
+        "lo": -3.809136975669054,
+        "hi": 3.084007281697603,
+        "mid": -0.3625648469857256,
+        "halfwidth": 3.4465721286833286
+      },
+      "halfwidth": 3.4465721286833286,
+      "relative_halfwidth": 9.506084655854742,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 19.29650860792026,
+      "mesh_cells": 928,
+      "peak_RSS_KiB": 29724,
+      "directional_halfwidths": {
+        "R": 0.6503778751939535,
+        "x": 1.4647839814424515,
+        "lam": 0.014096935163252056
+      },
+      "spatial_point_halfwidth": 1.3128327522426844,
+      "cap_halfwidth": 0.004480575007619336
+    },
+    {
+      "name": "STRIP_00",
+      "status": "COMPLETED",
+      "route": "rho2_integral_at_fixed_z",
+      "R_mid": 0.03125,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-335653213720745716405554338663254337849/42535295865117307932921825928971026432",
+        "upper": "44018183235053727396812466035988380377/5316911983139663491615228241121378304",
+        "lo": -7.89116913128165,
+        "hi": 8.278900116202557,
+        "mid": 0.19386549246045334,
+        "halfwidth": 8.085034623742104
+      },
+      "halfwidth": 8.085034623742104,
+      "relative_halfwidth": 41.704351409477226,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 61.17935732100159,
+      "mesh_cells": 256,
+      "peak_RSS_KiB": 29552,
+      "directional_halfwidths": {
+        "R": 0.9792242702096701,
+        "x": 3.543162301182747,
+        "lam": 0.06875969050452113
+      },
+      "spatial_point_halfwidth": 3.4938883520662785,
+      "cap_halfwidth": 0
+    },
+    {
+      "name": "STRIP_01",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.09375,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-28401526318905528542867548650873578365/332306998946228968225951765070086144",
+        "upper": "228208395441832167866308560029698810905/2658455991569831745807614120560689152",
+        "lo": -85.46773438106615,
+        "hi": 85.84245748866957,
+        "mid": 0.18736155380170263,
+        "halfwidth": 85.65509593486786
+      },
+      "halfwidth": 85.65509593486786,
+      "relative_halfwidth": 457.16473949358056,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 5.386983212083578,
+      "mesh_cells": 256,
+      "peak_RSS_KiB": 29368,
+      "directional_halfwidths": {
+        "R": 53.265658140182495,
+        "x": 19.929238855838776,
+        "lam": 0.49206099845469
+      },
+      "spatial_point_halfwidth": 11.968137755990028,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_02",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.15625,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-239169291419730597696925831301942639639/5316911983139663491615228241121378304",
+        "upper": "120702366861626925797381062312937570805/2658455991569831745807614120560689152",
+        "lo": -44.982744152650035,
+        "hi": 45.403184120550954,
+        "mid": 0.2102199839504597,
+        "halfwidth": 45.192964136600494
+      },
+      "halfwidth": 45.192964136600494,
+      "relative_halfwidth": 214.9793910518547,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 5.37361733103171,
+      "mesh_cells": 256,
+      "peak_RSS_KiB": 29836,
+      "directional_halfwidths": {
+        "R": 23.466356217861176,
+        "x": 12.009657621383667,
+        "lam": 0.3091059597209096
+      },
+      "spatial_point_halfwidth": 9.407844185829163,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_03",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.21875,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-185040858261359453215292287354871806585/5316911983139663491615228241121378304",
+        "upper": "23444111007063348932130207934014382257/664613997892457936451903530140172288",
+        "lo": -34.8023173692057,
+        "hi": 35.27477766253258,
+        "mid": 0.23623014666343714,
+        "halfwidth": 35.03854751586914
+      },
+      "halfwidth": 35.03854751586914,
+      "relative_halfwidth": 148.32377666763003,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 5.344487257301807,
+      "mesh_cells": 256,
+      "peak_RSS_KiB": 29640,
+      "directional_halfwidths": {
+        "R": 16.41675627231598,
+        "x": 9.424939304590225,
+        "lam": 0.24884325452148914
+      },
+      "spatial_point_halfwidth": 8.948008567094803,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_04",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.28125,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-324772261175027080313709231314505000927/10633823966279326983230456482242756608",
+        "upper": "164919566197728437365088708736336940049/5316911983139663491615228241121378304",
+        "lo": -30.54143666520199,
+        "hi": 31.01792294487873,
+        "mid": 0.23824313983837012,
+        "halfwidth": 30.77967980504036
+      },
+      "halfwidth": 30.77967980504036,
+      "relative_halfwidth": 129.19440125714442,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 5.342178096994758,
+      "mesh_cells": 256,
+      "peak_RSS_KiB": 29300,
+      "directional_halfwidths": {
+        "R": 13.545643836259842,
+        "x": 8.102517902851105,
+        "lam": 0.21854279888793826
+      },
+      "spatial_point_halfwidth": 8.912975236773491,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_05",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.34375,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-239713510913163816652108192105449606033/10633823966279326983230456482242756608",
+        "upper": "15196812503466303405838347351807740743/664613997892457936451903530140172288",
+        "lo": -22.542550231536065,
+        "hi": 22.865622077862586,
+        "mid": 0.16153592316325896,
+        "halfwidth": 22.704086154699326
+      },
+      "halfwidth": 22.704086154699326,
+      "relative_halfwidth": 140.5513133555628,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.07371020084247,
+      "mesh_cells": 288,
+      "peak_RSS_KiB": 29208,
+      "directional_halfwidths": {
+        "R": 9.116728365421295,
+        "x": 6.265035644173622,
+        "lam": 0.15806723339483142
+      },
+      "spatial_point_halfwidth": 7.164254873991013,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_06",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.40625,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-205000267444596898571052442521740522501/10633823966279326983230456482242756608",
+        "upper": "52060426104866325882719221990344815359/2658455991569831745807614120560689152",
+        "lo": -19.27813250385454,
+        "hi": 19.582955772054884,
+        "mid": 0.1524116341001718,
+        "halfwidth": 19.430544137954712
+      },
+      "halfwidth": 19.430544137954712,
+      "relative_halfwidth": 127.48727649743641,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.296032177750021,
+      "mesh_cells": 304,
+      "peak_RSS_KiB": 29212,
+      "directional_halfwidths": {
+        "R": 7.506480723619461,
+        "x": 5.547010153532028,
+        "lam": 0.139687217772007
+      },
+      "spatial_point_halfwidth": 6.2373660281300545,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_07",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.46875,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-94332173048044765247768704473782178123/5316911983139663491615228241121378304",
+        "upper": "191553212557000814896646405786212457835/10633823966279326983230456482242756608",
+        "lo": -17.74190984300273,
+        "hi": 18.013577539409226,
+        "mid": 0.1358338482032476,
+        "halfwidth": 17.87774369120598
+      },
+      "halfwidth": 17.87774369120598,
+      "relative_halfwidth": 131.61479209847303,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.660779427736998,
+      "mesh_cells": 320,
+      "peak_RSS_KiB": 29652,
+      "directional_halfwidths": {
+        "R": 6.87208665907383,
+        "x": 5.189234346151352,
+        "lam": 0.13074294896796346
+      },
+      "spatial_point_halfwidth": 5.685679726302624,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_08",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.53125,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-178760987148544615899775303929414741567/10633823966279326983230456482242756608",
+        "upper": "90688073406116612342418470606842136801/5316911983139663491615228241121378304",
+        "lo": -16.810602443242377,
+        "hi": 17.056530876135522,
+        "mid": 0.12296421644657092,
+        "halfwidth": 16.93356665968895
+      },
+      "halfwidth": 16.93356665968895,
+      "relative_halfwidth": 137.71133707867557,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.7975586778484285,
+      "mesh_cells": 320,
+      "peak_RSS_KiB": 29600,
+      "directional_halfwidths": {
+        "R": 6.529281035065651,
+        "x": 4.938716530799866,
+        "lam": 0.12365674925968051
+      },
+      "spatial_point_halfwidth": 5.3419123366475105,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_09",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.59375,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-171282931056416001191349060329087137727/10633823966279326983230456482242756608",
+        "upper": "86812158234381315783789300184192402465/5316911983139663491615228241121378304",
+        "lo": -16.107369427928028,
+        "hi": 16.327552253952923,
+        "mid": 0.11009141301244704,
+        "halfwidth": 16.217460840940475
+      },
+      "halfwidth": 16.217460840940475,
+      "relative_halfwidth": 147.309044340333,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.776105543132871,
+      "mesh_cells": 320,
+      "peak_RSS_KiB": 29168,
+      "directional_halfwidths": {
+        "R": 6.322406366467476,
+        "x": 4.709993004798889,
+        "lam": 0.11723021091893315
+      },
+      "spatial_point_halfwidth": 5.0678312331438065,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_10",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.65625,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-164953510566742670747928522262917399727/10633823966279326983230456482242756608",
+        "upper": "333916167510002116668560884531750532771/21267647932558653966460912964485513216",
+        "lo": -15.512153585560842,
+        "hi": 15.700662742249445,
+        "mid": 0.09425457834430226,
+        "halfwidth": 15.606408163905144
+      },
+      "halfwidth": 15.606408163905144,
+      "relative_halfwidth": 165.57718933181732,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 6.771100583020598,
+      "mesh_cells": 320,
+      "peak_RSS_KiB": 29216,
+      "directional_halfwidths": {
+        "R": 6.223415240645409,
+        "x": 4.497785076498985,
+        "lam": 0.11118194833397865
+      },
+      "spatial_point_halfwidth": 4.774025872349739,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_11",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.71875,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-293054211131691355252250586773860143623/21267647932558653966460912964485513216",
+        "upper": "147776703208852548651365060550748526333/10633823966279326983230456482242756608",
+        "lo": -13.779342786799404,
+        "hi": 13.896854384411839,
+        "mid": 0.0587557988062169,
+        "halfwidth": 13.838098585605621
+      },
+      "halfwidth": 13.838098585605621,
+      "relative_halfwidth": 235.5188571471081,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 7.746600926853716,
+      "mesh_cells": 368,
+      "peak_RSS_KiB": 29416,
+      "directional_halfwidths": {
+        "R": 5.27321594953537,
+        "x": 4.145707949995995,
+        "lam": 0.09994801040738821
+      },
+      "spatial_point_halfwidth": 4.319226652383804,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_12",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.78125,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-137130989217823000676783386296416945527/10633823966279326983230456482242756608",
+        "upper": "275028081614421268913322462941512037651/21267647932558653966460912964485513216",
+        "lo": -12.895736251857837,
+        "hi": 12.931758250209729,
+        "mid": 0.01801099917594648,
+        "halfwidth": 12.913747251033783
+      },
+      "halfwidth": 12.913747251033783,
+      "relative_halfwidth": 716.9922737146072,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 8.021923064254224,
+      "mesh_cells": 384,
+      "peak_RSS_KiB": 29672,
+      "directional_halfwidths": {
+        "R": 4.953735217452049,
+        "x": 3.9026670902967453,
+        "lam": 0.09156924718990922
+      },
+      "spatial_point_halfwidth": 3.965775664895773,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_13",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.84375,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-254861882486993785530393206068542466375/21267647932558653966460912964485513216",
+        "upper": "127054247363683189273959428557286132573/10633823966279326983230456482242756608",
+        "lo": -11.983548124135796,
+        "hi": 11.948124001918968,
+        "mid": -0.017712061108413526,
+        "halfwidth": 11.965836063027382
+      },
+      "halfwidth": 11.965836063027382,
+      "relative_halfwidth": 675.5755860250171,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 8.949318509083241,
+      "mesh_cells": 432,
+      "peak_RSS_KiB": 29492,
+      "directional_halfwidths": {
+        "R": 4.54399286210537,
+        "x": 3.6561901196837425,
+        "lam": 0.08375781401991844
+      },
+      "spatial_point_halfwidth": 3.6818952485919,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_14",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.90625,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-245549104241630236310236242132763677767/21267647932558653966460912964485513216",
+        "upper": "121512001091008438796086827117623768541/10633823966279326983230456482242756608",
+        "lo": -11.545663395420373,
+        "hi": 11.426933667167365,
+        "mid": -0.059364864126504525,
+        "halfwidth": 11.486298531293869
+      },
+      "halfwidth": 11.486298531293869,
+      "relative_halfwidth": 193.48647891818558,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 9.983753596898168,
+      "mesh_cells": 480,
+      "peak_RSS_KiB": 29396,
+      "directional_halfwidths": {
+        "R": 4.551836088299751,
+        "x": 3.441464588046074,
+        "lam": 0.07680566795170307
+      },
+      "spatial_point_halfwidth": 3.4161921702325344,
+      "cap_halfwidth": 0.0
+    },
+    {
+      "name": "STRIP_15",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.96875,
+      "input_width": {
+        "R": 0.0625,
+        "tau": 0.015625,
+        "lambda": 0.00390625
+      },
+      "H": {
+        "lower": "-229749712971528334938599060896000167181/21267647932558653966460912964485513216",
+        "upper": "56217069535634414370687037115287162045/5316911983139663491615228241121378304",
+        "lo": -10.802779588042943,
+        "hi": 10.573255625427516,
+        "mid": -0.114761981307714,
+        "halfwidth": 10.68801760673523
+      },
+      "halfwidth": 10.68801760673523,
+      "relative_halfwidth": 93.13204150839114,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 11.238547545857728,
+      "mesh_cells": 528,
+      "peak_RSS_KiB": 29416,
+      "directional_halfwidths": {
+        "R": 4.448950439691544,
+        "x": 3.1167319640517235,
+        "lam": 0.06765315914526582
+      },
+      "spatial_point_halfwidth": 3.052518103271723,
+      "cap_halfwidth": 0.0021639084225171246
+    },
+    {
+      "name": "LW",
+      "status": "COMPLETED",
+      "route": "regular direct f_rho/rho",
+      "R_mid": 0.5,
+      "input_width": {
+        "R": 0.015625,
+        "tau": 0.015625,
+        "lambda": 0.25
+      },
+      "H": {
+        "lower": "-247702520394704364627206965325168778583/1329227995784915872903807060280344576",
+        "upper": "124092210832184470700924454179938300245/664613997892457936451903530140172288",
+        "lo": -186.35066458138715,
+        "hi": 186.71320680227984,
+        "mid": 0.1812711104463353,
+        "halfwidth": 186.5319356918335
+      },
+      "halfwidth": 186.5319356918335,
+      "relative_halfwidth": 1029.0218625160112,
+      "zero_included_RECORD_ONLY": true,
+      "time_seconds": 3.3745488808490336,
+      "mesh_cells": 160,
+      "peak_RSS_KiB": 29388,
+      "directional_halfwidths": {
+        "R": 16.89976990222931,
+        "x": 26.486666321754456,
+        "lam": 99.48958802223206
+      },
+      "spatial_point_halfwidth": 43.65591114759445,
+      "cap_halfwidth": 0.0
+    }
+  ],
+  "condition_C21": "OPEN",
+  "note": "Sign only recorded, not used to select computation. No full cover."
+}

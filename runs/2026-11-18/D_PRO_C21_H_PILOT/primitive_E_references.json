@@ -1,0 +1,322 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "independent_numerical_reference": true,
+  "source": "primitive E in request \u00a74, no z derivative",
+  "results": [
+    {
+      "name": "G2",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.3056692165802096307347395",
+        "H_center_num": "0.5639462208771112605250131",
+        "rho": "0.3",
+        "z": "0.4",
+        "lambda": "2.001953125"
+      },
+      "n40": {
+        "E0": "0.3056689034735506657182274",
+        "H_center_num": "0.5639325484588771589442497",
+        "rho": "0.3",
+        "z": "0.4",
+        "lambda": "2.001953125"
+      },
+      "grid_difference_abs": "0.00001367241823410158076339616",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-23098313198395863351366132977124802365/332306998946228968225951765070086144",
+        "upper": "185955437719126936928257480517027104281/2658455991569831745807614120560689152",
+        "lo": -69.50895789628984,
+        "hi": 69.94866129392622,
+        "mid": 0.2198516988181869,
+        "halfwidth": 69.72880959510803
+      },
+      "seconds": 0.45216051070019603,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "G35",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.6792903817560967386014285",
+        "H_center_num": "0.1296232736866770660456426",
+        "rho": "0.3",
+        "z": "0.4",
+        "lambda": "3.5"
+      },
+      "n40": {
+        "E0": "0.6793737997858765561624459",
+        "H_center_num": "0.1309283179890311107479543",
+        "rho": "0.3",
+        "z": "0.4",
+        "lambda": "3.5"
+      },
+      "grid_difference_abs": "0.001305044302354044702311701",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-331386502649404109149521594207908945107/10633823966279326983230456482242756608",
+        "upper": "166415839157605431963513149294126158231/5316911983139663491615228241121378304",
+        "lo": -31.163436944250364,
+        "hi": 31.299340610738497,
+        "mid": 0.06795183324406713,
+        "halfwidth": 31.23138877749443
+      },
+      "seconds": 0.34243161929771304,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "EQ",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.9487289950172254026645193",
+        "H_center_num": "-0.07831480950928215491132456",
+        "rho": "0.4999389685688129386634117",
+        "z": "0.007812023191943851083307904",
+        "lambda": "4.998046875"
+      },
+      "n40": {
+        "E0": "0.9476391834971089219540592",
+        "H_center_num": "-0.0810822150306495704249718",
+        "rho": "0.4999389685688129386634117",
+        "z": "0.007812023191943851083307904",
+        "lambda": "4.998046875"
+      },
+      "grid_difference_abs": "0.002767405521367415513647241",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-235486936092813801045253665805576730865/170141183460469231731687303715884105728",
+        "upper": "13303884580185851903551363119500212337/10633823966279326983230456482242756608",
+        "lo": -1.3840678153477584,
+        "hi": 1.2510912934400167,
+        "mid": -0.06648826095387081,
+        "halfwidth": 1.3175795543938875
+      },
+      "seconds": 0.3566407151520252,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "CE",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.9547571818134900814623878",
+        "H_center_num": "-0.01917581872295880646657576",
+        "rho": "0.0046875",
+        "z": "0.00625",
+        "lambda": "4.998046875"
+      },
+      "n40": {
+        "E0": "0.9541733608892556642735574",
+        "H_center_num": "-0.02390928837291013875805949",
+        "rho": "0.0046875",
+        "z": "0.00625",
+        "lambda": "4.998046875"
+      },
+      "grid_difference_abs": "0.00473346964995133229148373",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-58583414284424391534765278082037984679/2658455991569831745807614120560689152",
+        "upper": "236403134408540375297067513914978158949/10633823966279326983230456482242756608",
+        "lo": -22.036631213831225,
+        "hi": 22.23124392111369,
+        "mid": 0.09730635364123388,
+        "halfwidth": 22.133937567472458
+      },
+      "seconds": 0.34186726389452815,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "BD",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.967961707216337614969806",
+        "H_center_num": "-0.1125185468766932266124207",
+        "rho": "0.5953125",
+        "z": "0.79375",
+        "lambda": "4.998046875"
+      },
+      "n40": {
+        "E0": "0.9675233247935383633194929",
+        "H_center_num": "-0.1139075973920435185298996",
+        "rho": "0.5953125",
+        "z": "0.79375",
+        "lambda": "4.998046875"
+      },
+      "grid_difference_abs": "0.001389050515350291917478899",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-40505692062710342729161410747151046785/10633823966279326983230456482242756608",
+        "upper": "262358324354367443606936966985488874489/85070591730234615865843651857942052864",
+        "lo": -3.809136975669054,
+        "hi": 3.084007281697603,
+        "mid": -0.3625648469857256,
+        "halfwidth": 3.4465721286833286
+      },
+      "seconds": 0.34409946482628584,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "AX",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.9639452249069906236518769",
+        "H_center_num": "-0.03128539362114527187742802",
+        "rho": "0.003921508319749023467536063",
+        "z": "0.4999846215360009842216959",
+        "lambda": "4.998046875"
+      },
+      "n40": {
+        "E0": "0.9645227658758813186424779",
+        "H_center_num": "-0.02618645427629812241192169",
+        "rho": "0.003921508319749023467536063",
+        "z": "0.4999846215360009842216959",
+        "lambda": "4.998046875"
+      },
+      "grid_difference_abs": "0.00509893934484714946550633",
+      "both_references_inside_Arb_interval": false,
+      "producer_H_interval": null,
+      "seconds": 0.3533920617774129,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "LW",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.3378116088196667978150262",
+        "H_center_num": "0.5111382579702811828992174",
+        "rho": "0.3",
+        "z": "0.4",
+        "lambda": "2.125"
+      },
+      "n40": {
+        "E0": "0.3378108272945247314735318",
+        "H_center_num": "0.5111072202845084639343068",
+        "rho": "0.3",
+        "z": "0.4",
+        "lambda": "2.125"
+      },
+      "grid_difference_abs": "0.00003103768577271896491060083",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-247702520394704364627206965325168778583/1329227995784915872903807060280344576",
+        "upper": "124092210832184470700924454179938300245/664613997892457936451903530140172288",
+        "lo": -186.35066458138715,
+        "hi": 186.71320680227984,
+        "mid": 0.1812711104463353,
+        "halfwidth": 186.5319356918335
+      },
+      "seconds": 0.3456963333301246,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "STRIP_00",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.6585279866849390448737399",
+        "H_center_num": "0.166108606048878226677886",
+        "rho": "0.03124618553555080866646323",
+        "z": "0.000488251449496490692706744",
+        "lambda": "3.5"
+      },
+      "n40": {
+        "E0": "0.6584872327663947152210272",
+        "H_center_num": "0.165103632401731237084903",
+        "rho": "0.03124618553555080866646323",
+        "z": "0.000488251449496490692706744",
+        "lambda": "3.5"
+      },
+      "grid_difference_abs": "0.001004973647146989592983",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-335653213720745716405554338663254337849/42535295865117307932921825928971026432",
+        "upper": "44018183235053727396812466035988380377/5316911983139663491615228241121378304",
+        "lo": -7.89116913128165,
+        "hi": 8.278900116202557,
+        "mid": 0.19386549246045334,
+        "halfwidth": 8.085034623742104
+      },
+      "seconds": 0.34556786296889186,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "STRIP_08",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.6754386863010516147581433",
+        "H_center_num": "0.07347727092279561383682549",
+        "rho": "0.5311851541043637473298749",
+        "z": "0.008300274641440341776014648",
+        "lambda": "3.5"
+      },
+      "n40": {
+        "E0": "0.6751673465463472375302154",
+        "H_center_num": "0.07138658382215589490183017",
+        "rho": "0.5311851541043637473298749",
+        "z": "0.008300274641440341776014648",
+        "lambda": "3.5"
+      },
+      "grid_difference_abs": "0.002090687100639718934995319",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-178760987148544615899775303929414741567/10633823966279326983230456482242756608",
+        "upper": "90688073406116612342418470606842136801/5316911983139663491615228241121378304",
+        "lo": -16.810602443242377,
+        "hi": 17.056530876135522,
+        "mid": 0.12296421644657092,
+        "halfwidth": 16.93356665968895
+      },
+      "seconds": 0.34566828329116106,
+      "warning": "No certified error for finite difference or Gauss integral"
+    },
+    {
+      "name": "STRIP_15",
+      "method": "primitive E + 5point rho stencil; Gauss-Legendre 24\u00b2 &40\u00b2",
+      "precision_decimal_digits": 25,
+      "h": "0.004",
+      "n24": {
+        "E0": "0.6597316235067762796397062",
+        "H_center_num": "-0.1779824180026194801192199",
+        "rho": "0.9686317516020750686603601",
+        "z": "0.01513579493439121147390906",
+        "lambda": "3.5"
+      },
+      "n40": {
+        "E0": "0.6596652678469907795341322",
+        "H_center_num": "-0.1758732684552775136883191",
+        "rho": "0.9686317516020750686603601",
+        "z": "0.01513579493439121147390906",
+        "lambda": "3.5"
+      },
+      "grid_difference_abs": "0.002109149547341966430900799",
+      "both_references_inside_Arb_interval": true,
+      "producer_H_interval": {
+        "lower": "-229749712971528334938599060896000167181/21267647932558653966460912964485513216",
+        "upper": "56217069535634414370687037115287162045/5316911983139663491615228241121378304",
+        "lo": -10.802779588042943,
+        "hi": 10.573255625427516,
+        "mid": -0.114761981307714,
+        "halfwidth": 10.68801760673523
+      },
+      "seconds": 0.344032805878669,
+      "warning": "No certified error for finite difference or Gauss integral"
+    }
+  ],
+  "elapsed_seconds": 3.573175258934498,
+  "claims": "POINT_REFERENCES_ONLY / NOT_EVIDENCE"
+}
