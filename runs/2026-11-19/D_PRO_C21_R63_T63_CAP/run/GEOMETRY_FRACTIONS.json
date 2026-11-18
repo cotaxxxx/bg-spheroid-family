@@ -1,0 +1,29 @@
+{
+  "R": [
+    "63/64",
+    "1"
+  ],
+  "all_geometry_checks": true,
+  "boundary_trace": "At |q|=1, E_z refers to inner trace; boundary condition B remains separate",
+  "chi_le_lambda_inverse_squared": true,
+  "chi_upper_exact": "2032381/65044225",
+  "lambda": [
+    "79/16",
+    "5"
+  ],
+  "max_lambda_squared_chi_exact": "2032381/2601769",
+  "physical_z": "lambda*z",
+  "rho2_plus_z2_identity": "R**2 <= 1",
+  "rho_equator_chart": "R*(1-tau*tau)/(1+tau*tau)",
+  "rho_upper_exact": "127/8065",
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "tau": [
+    "63/64",
+    "1"
+  ],
+  "u_le_one": "rho**2 <= chi = rho**2 + 1 - R**2",
+  "w_le_one": "w**2=lambda**2*chi<=max_lambda**2*chi_max<1",
+  "z_equator_chart": "R*2*tau/(1+tau*tau)",
+  "z_lower_exact": "7938/8065",
+  "z_positive": true
+}

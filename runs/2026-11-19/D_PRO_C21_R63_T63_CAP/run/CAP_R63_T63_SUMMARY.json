@@ -1,0 +1,37 @@
+{
+  "all_lower_gt_one_quarter": true,
+  "all_lower_gt_zero": true,
+  "count": 128,
+  "epsilon": [
+    "1/5",
+    "16/79"
+  ],
+  "frozen_cap_interval_source_unchanged": true,
+  "geometry_cells": [
+    96,
+    48
+  ],
+  "heavy_slab_state_untouched": true,
+  "lambda_plate": [
+    "79/16",
+    "5"
+  ],
+  "minimum_index": [
+    1,
+    7,
+    7
+  ],
+  "minimum_lower_exact": "15736239388659800772034169738066884825/42535295865117307932921825928971026432",
+  "minimum_lower_float": 0.36995721009113525,
+  "outer_grid": [
+    2,
+    8,
+    8
+  ],
+  "planned_count": 128,
+  "precision_bits": 128,
+  "purpose": "R63_T63 polar E_z stationarity exclusion candidate",
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "wall_seconds": 7.720131508074701,
+  "workers": 2
+}
