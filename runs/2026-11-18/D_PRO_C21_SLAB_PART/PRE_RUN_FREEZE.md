@@ -1,0 +1,24 @@
+# D-PRO (C21) partial thin λ slab — pre-run freeze (2026-11-18)
+**DIAGNOSTIC_ONLY / NOT_EVIDENCE**. Freeze BEFORE CE calibration or adaptive jobs.
+Pins: prior C21 `5004ebdc6e038bcdb3122f563ffb15d38070d8b6`; former adaptive pilot `a6b229e7120207b96ea3c8636ee658372574e145`; original Judge instructions `884a735d419715628a01789fd7a896bcf7a4f8e2`; V37 `949e9dff7b48cf993cdb9fae95ec698f482cd591`; frozen R3 `fdfb498f2117cc0c5d72e88cc3be05eac9727bd8`.
+Target ONLY λ=[1279/256,5], R=[1/4,1/2], τ=[0,1], exact (R,τ) area=1/4.
+
+## New MVT route, not previous Simpson
+H(ρ,z)=∫₀¹ E_ρρ(sρ,z)ds, since E_ρ(0,z)=0. MVT for continuous integrand implies H is enclosed by E_ρρ over independent extended ρ′∈[0,ρ_hi], z∈[z_lo,z_hi], λ∈[1279/256,5]. Here ρ_hi=R_hi (1−τ_lo²)/(1+τ_lo²), z_lo=R_lo 2τ_lo/(1+τ_lo²), z_hi=R_hi 2τ_hi/(1+τ_hi²) exactly. The original full-sphere C21 f_ρρ integrand is integrated by signed order-4 angular Taylor with R3 mesh, centered at midpoint of independent ρ′,z,λ box plus first-order signed derivative integrals × each halfwidth. NO s integration, no 4-panel Simpson, no 4th-s remainder, and no zeroth-order unsigned proxy for signed coefficients or parameter derivatives.
+Choose FIXED rational angular chart τ_chart=(τ_lo+τ_hi)/2, independent of ρ′, z and λ. Rotation of the full angular integration variable leaves the original E_ρρ invariant. The correct chart is not required to track extension point. Use conservative r_geom=ρ_hi+z_hi<1: k∈[1−r_geom,1+r_geom], D²≥(1−r_geom)²>0, B≥1/λ_max². If positive bound or angular mesh fails, return OPEN. No physical z derivative of E used; E_ρρ derivatives w.r.t z may occur ONLY to bound variation of E_ρρ across the extended parameter box.
+Machine: Python3.11.16, python-flint==0.8.0, Arb 128-bit; base_u=16/base_v=32, distance ratio1/2, spatial Taylor order4, R3 mesh max_cells40000/max_depth28.
+
+Route precedence, based ONLY on geometry: τ_hi=1 → AXIS_MVT, requiring ρ_hi≤1/16; else R_lo=0 → CENTER_MVT; else ρ_hi≤1/16 → SMALL_RHO_MVT; otherwise GENERAL original direct f_ρ/ρ. This fixes SMALL_RHO threshold **ρ_hi≤1/16** before measurements. No R=0 or R=1 occurs in main target.
+Separate CE calibration box ONLY, R=[0,1/64], τ=[63/128,65/128], λ=[1279/256,5], one process 600s. Run it before any adaptive box; AXIS_MVT calibration is from τ_hi=1 main-run boxes.
+
+## Adaptive geometry and deterministic execution
+Exactly 1024 initial boxes R_i=[(16+i)/64,(17+i)/64] i=0..15, τ_j=[j/64,(j+1)/64] j=0..63. Immutable IDs R{16+i:02d}_T{j:02d}. Initial order: τ order starts 63,0 followed by 6-bit reversed rank of remaining j; R order is 4-bit reversed rank. root_order=32*floor(tau_rank/2)+2*R_rank+(tau_rank mod2). This samples axis and equator in the first batch; all ordering is precommitted before any result.
+Child IDs append .R0/.R1/.tau0/.tau1; queue sort (depth,root_order,full ID). At most12 parallel subprocesses per batch, deterministic settlement order. If H excludes zero ⇒ DECIDED_NONZERO; if zero included ⇒ bisect longest normalized R/τ side, ties R first. When both edges ≤1/256 and still zero included ⇒ TUBE_AT_MINIMUM. Resource error or per-box timeout ⇒ TUBE_OPEN, H=null, reason. Sign only recorded, not used for path/splitting.
+Fixed per-box caps GENERAL180s / AXIS_MVT600s / CENTER_MVT600s / SMALL_RHO_MVT600s. Supervisor samples Linux VmHWM RSS including timed-out processes, labelled sampled lower bound. Save per-box exact inputs, H enclosure/halfwidth (or null), time, mesh cells when available, RSS, parent, depth, route.
+Checkpoint BEFORE/AFTER ordered batch; crash recovery requeues uncommitted inflight work. Global wall cap86400s including CE and W; partial interactive sessions may end earlier but MUST be labelled PARTIAL; unfinished pending cannot be called tube.
+Exact rational area ledger: DECIDED+EVALUATED_TUBE+UNPROCESSED_PENDING=1/4; normalized by 1/4 equals 1. Report depths, route totals, tube distribution, wall time.
+
+W sample only after complete partial slab or genuine 24h cap: sorted terminal evaluated tube IDs first/middle/last exactly 3, pinned R3 quadratic angular_quotient, measured halfwidth/time, NO full tube W. If an early partial checkpoint, W is deferred, no substitute IDs.
+Cost extrapolation: ONLY if requested subregion completely evaluated, extrapolate to full Rτ area with factor 4 under EXPLICIT UNVERIFIED equal per-area cost, and λ slab uniform width1/256 across [2,5] gives768 slabs (not justified near λ≈2); alternative width1/1024 on [2,3] (1024) and1/256 on [3,5] (512) totals1536 slabs. No global box count estimates until subregion finished, and W charged separately.
+
+Write ONLY to NEW branch `research/d-pro-c21-h-slab-part-20261118`, not main/STATE.md/previous branches/tags/Julia/R3. Register producer/checker sources, per-box JSON, frozen policy commit pre-run, exact ledger, single-line command, SHA256SUMS, ZIP and its SHA256. Everything: **DIAGNOSTIC_ONLY / NOT_EVIDENCE**; global theorem OPEN.
