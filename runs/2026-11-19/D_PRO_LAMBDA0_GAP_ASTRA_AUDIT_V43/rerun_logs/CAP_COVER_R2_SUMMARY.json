@@ -1,0 +1,17 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "precision_bits": 128,
+  "spatial_grid": [
+    96,
+    48
+  ],
+  "parameter_grid": [
+    16,
+    8,
+    8
+  ],
+  "planned_boxes": 1024,
+  "completed": 1024,
+  "all_lower_gt_one_quarter": true,
+  "seconds": 85.45777575700001
+}

@@ -1,0 +1,19 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "scope": "Checks cover and scalar results, not an independent reintegration or analytic proof audit.",
+  "checks": {
+    "count": true,
+    "unique_indices": true,
+    "full_index_set": true,
+    "correct_endpoints": true,
+    "strict_rational_lower": true
+  },
+  "all_checks": true,
+  "minimum_lower_exact": "47473218194072764542240096942353646083/170141183460469231731687303715884105728",
+  "minimum_lower_display": 0.27902249901243187,
+  "index_of_minimum": [
+    15,
+    7,
+    7
+  ]
+}

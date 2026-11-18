@@ -1,0 +1,9 @@
+PASS G1 lambda=5 w=1 u=0: lambda*E_z >= 1/4 :: lambda*E_z = 3.2604973
+PASS G1 lambda=5 w=1 u=0.999: lambda*E_z >= 1/4 :: lambda*E_z = 3.0293298
+PASS G1 lambda=5 w=0.5 u=0.5: lambda*E_z >= 1/4 :: lambda*E_z = 2.8098752
+PASS G1 lambda=20 w=1 u=0: lambda*E_z >= 1/4 :: lambda*E_z = 4.3536377
+PASS G1 lambda=20 w=1 u=0.999: lambda*E_z >= 1/4 :: lambda*E_z = 4.3019865
+PASS G1 lambda=20 w=0.5 u=0.5: lambda*E_z >= 1/4 :: lambda*E_z = 4.1868412
+PASS G12-G15: -T f >= 0 in the band (300 random points, lambda = 2^15) :: min(-Tf) = 0.206901
+PASS G8: lower envelope <= I s/eps (200 random points in the kept region) :: violations 0
+SUMMARY 8/8 PASS

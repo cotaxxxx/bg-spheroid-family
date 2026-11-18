@@ -1,0 +1,25 @@
+{"eps_slab": 0, "eps": ["1/5", "17/80"], "all_positive": true, "all_gt_quarter": false}
+{"eps_slab": 1, "eps": ["17/80", "9/40"], "all_positive": true, "all_gt_quarter": false}
+{"eps_slab": 2, "eps": ["9/40", "19/80"], "all_positive": true, "all_gt_quarter": false}
+{"eps_slab": 3, "eps": ["19/80", "1/4"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 4, "eps": ["1/4", "21/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 5, "eps": ["21/80", "11/40"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 6, "eps": ["11/40", "23/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 7, "eps": ["23/80", "3/10"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 8, "eps": ["3/10", "5/16"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 9, "eps": ["5/16", "13/40"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 10, "eps": ["13/40", "27/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 11, "eps": ["27/80", "7/20"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 12, "eps": ["7/20", "29/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 13, "eps": ["29/80", "3/8"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 14, "eps": ["3/8", "31/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 15, "eps": ["31/80", "2/5"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 16, "eps": ["2/5", "33/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 17, "eps": ["33/80", "17/40"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 18, "eps": ["17/40", "7/16"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 19, "eps": ["7/16", "9/20"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 20, "eps": ["9/20", "37/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 21, "eps": ["37/80", "19/40"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 22, "eps": ["19/40", "39/80"], "all_positive": false, "all_gt_quarter": false}
+{"eps_slab": 23, "eps": ["39/80", "1/2"], "all_positive": false, "all_gt_quarter": false}
+{"boxes": 1536, "all_positive": false, "all_gt_quarter": false, "min_lower": -1.5525011854689381, "min_lower_exact": "-264144389019466586467808596287004459205/170141183460469231731687303715884105728", "min_index": [23, 7, 7], "seconds": 69.4}

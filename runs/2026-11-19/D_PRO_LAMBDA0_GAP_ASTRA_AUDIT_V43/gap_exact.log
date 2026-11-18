@@ -1,0 +1,14 @@
+PASS G14 9/800
+PASS G15 12/25
+PASS G16 k<=5/2 S^2 at mu=z-h: 5/4+sqrt(3/2)<5/2 :: 2.4747
+PASS G18 K,L>=99/100, G<=1/1000 :: K=0.996093 L=0.996093 G=1.76e-04
+PASS z>=z0 for S<=S0
+PASS int_0^c mu/s = 1-sqrt(1-c^2) >= 13/20, arcsin c >= 6/5 :: 0.65201, 1.21538
+PASS G19 value :: 0.662704
+PASS G20 K,L>=93/100,G<=3/250 :: K=0.984360 G=7.05e-04
+PASS G20 N/eps<1/100
+PASS G20 value :: 0.344956
+PASS G21 split: lambda<=4096 => S<=2^-12<=1/lambda
+PASS G23 2a0/b0<=1
+PASS G30 3*pi*S0*13000*log2 >= 78000/4096 :: 20.734
+SUMMARY 13/13 PASS

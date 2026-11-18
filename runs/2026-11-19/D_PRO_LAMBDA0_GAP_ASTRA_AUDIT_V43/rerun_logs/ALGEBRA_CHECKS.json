@@ -1,0 +1,17 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "checks": {
+    "k_decomposition": true,
+    "A_nonnegative_decomposition": true,
+    "minus_Tk": true,
+    "A_mu": true,
+    "B_mu": true,
+    "T_d_squared": true,
+    "gamma_z_log": true,
+    "gamma_transport_log": true,
+    "C_after_B_bound": true,
+    "ell_term_split": true,
+    "axis_b_derivative": true
+  },
+  "all_checks": true
+}

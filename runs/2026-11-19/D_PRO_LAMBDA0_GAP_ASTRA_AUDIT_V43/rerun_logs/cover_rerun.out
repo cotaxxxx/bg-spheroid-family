@@ -1,0 +1,17 @@
+{"completed": 64, "failures": 0, "seconds": 3.4185936729999895}
+{"completed": 128, "failures": 0, "seconds": 6.427649767999995}
+{"completed": 192, "failures": 0, "seconds": 9.56230434199999}
+{"completed": 256, "failures": 0, "seconds": 12.682356946999988}
+{"completed": 320, "failures": 0, "seconds": 16.340507396999996}
+{"completed": 384, "failures": 0, "seconds": 22.898340156999993}
+{"completed": 448, "failures": 0, "seconds": 28.53036014099999}
+{"completed": 512, "failures": 0, "seconds": 34.91439350799999}
+{"completed": 576, "failures": 0, "seconds": 40.99027498599999}
+{"completed": 640, "failures": 0, "seconds": 47.16235453099999}
+{"completed": 704, "failures": 0, "seconds": 53.535182991}
+{"completed": 768, "failures": 0, "seconds": 59.85432376999998}
+{"completed": 832, "failures": 0, "seconds": 66.49833745499998}
+{"completed": 896, "failures": 0, "seconds": 72.694515594}
+{"completed": 960, "failures": 0, "seconds": 79.118647046}
+{"completed": 1024, "failures": 0, "seconds": 85.45394594999999}
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "precision_bits": 128, "spatial_grid": [96, 48], "parameter_grid": [16, 8, 8], "planned_boxes": 1024, "completed": 1024, "all_lower_gt_one_quarter": true, "seconds": 85.45777575700001}
