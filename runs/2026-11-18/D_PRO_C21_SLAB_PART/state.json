@@ -12,366 +12,6 @@
   "min_edge": "1/256",
   "pending": [
     {
-      "id": "R23_T32",
-      "root": "R23_T32",
-      "root_order": 60,
-      "depth": 0,
-      "R": [
-        "23/64",
-        "3/8"
-      ],
-      "tau": [
-        "1/2",
-        "33/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R23_T16",
-      "root": "R23_T16",
-      "root_order": 61,
-      "depth": 0,
-      "R": [
-        "23/64",
-        "3/8"
-      ],
-      "tau": [
-        "1/4",
-        "17/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R31_T32",
-      "root": "R31_T32",
-      "root_order": 62,
-      "depth": 0,
-      "R": [
-        "31/64",
-        "1/2"
-      ],
-      "tau": [
-        "1/2",
-        "33/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R31_T16",
-      "root": "R31_T16",
-      "root_order": 63,
-      "depth": 0,
-      "R": [
-        "31/64",
-        "1/2"
-      ],
-      "tau": [
-        "1/4",
-        "17/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R16_T48",
-      "root": "R16_T48",
-      "root_order": 64,
-      "depth": 0,
-      "R": [
-        "1/4",
-        "17/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R16_T08",
-      "root": "R16_T08",
-      "root_order": 65,
-      "depth": 0,
-      "R": [
-        "1/4",
-        "17/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R24_T48",
-      "root": "R24_T48",
-      "root_order": 66,
-      "depth": 0,
-      "R": [
-        "3/8",
-        "25/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R24_T08",
-      "root": "R24_T08",
-      "root_order": 67,
-      "depth": 0,
-      "R": [
-        "3/8",
-        "25/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R20_T48",
-      "root": "R20_T48",
-      "root_order": 68,
-      "depth": 0,
-      "R": [
-        "5/16",
-        "21/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R20_T08",
-      "root": "R20_T08",
-      "root_order": 69,
-      "depth": 0,
-      "R": [
-        "5/16",
-        "21/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R28_T48",
-      "root": "R28_T48",
-      "root_order": 70,
-      "depth": 0,
-      "R": [
-        "7/16",
-        "29/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R28_T08",
-      "root": "R28_T08",
-      "root_order": 71,
-      "depth": 0,
-      "R": [
-        "7/16",
-        "29/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R18_T48",
-      "root": "R18_T48",
-      "root_order": 72,
-      "depth": 0,
-      "R": [
-        "9/32",
-        "19/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R18_T08",
-      "root": "R18_T08",
-      "root_order": 73,
-      "depth": 0,
-      "R": [
-        "9/32",
-        "19/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R26_T48",
-      "root": "R26_T48",
-      "root_order": 74,
-      "depth": 0,
-      "R": [
-        "13/32",
-        "27/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R26_T08",
-      "root": "R26_T08",
-      "root_order": 75,
-      "depth": 0,
-      "R": [
-        "13/32",
-        "27/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R22_T48",
-      "root": "R22_T48",
-      "root_order": 76,
-      "depth": 0,
-      "R": [
-        "11/32",
-        "23/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R22_T08",
-      "root": "R22_T08",
-      "root_order": 77,
-      "depth": 0,
-      "R": [
-        "11/32",
-        "23/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R30_T48",
-      "root": "R30_T48",
-      "root_order": 78,
-      "depth": 0,
-      "R": [
-        "15/32",
-        "31/64"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R30_T08",
-      "root": "R30_T08",
-      "root_order": 79,
-      "depth": 0,
-      "R": [
-        "15/32",
-        "31/64"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R17_T48",
-      "root": "R17_T48",
-      "root_order": 80,
-      "depth": 0,
-      "R": [
-        "17/64",
-        "9/32"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R17_T08",
-      "root": "R17_T08",
-      "root_order": 81,
-      "depth": 0,
-      "R": [
-        "17/64",
-        "9/32"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R25_T48",
-      "root": "R25_T48",
-      "root_order": 82,
-      "depth": 0,
-      "R": [
-        "25/64",
-        "13/32"
-      ],
-      "tau": [
-        "3/4",
-        "49/64"
-      ],
-      "parent": null
-    },
-    {
-      "id": "R25_T08",
-      "root": "R25_T08",
-      "root_order": 83,
-      "depth": 0,
-      "R": [
-        "25/64",
-        "13/32"
-      ],
-      "tau": [
-        "1/8",
-        "9/64"
-      ],
-      "parent": null
-    },
-    {
       "id": "R21_T48",
       "root": "R21_T48",
       "root_order": 84,
@@ -15580,6 +15220,666 @@
         "17/64"
       ],
       "parent": "R27_T16"
+    },
+    {
+      "id": "R23_T32.R0",
+      "root": "R23_T32",
+      "root_order": 60,
+      "depth": 1,
+      "R": [
+        "23/64",
+        "47/128"
+      ],
+      "tau": [
+        "1/2",
+        "33/64"
+      ],
+      "parent": "R23_T32"
+    },
+    {
+      "id": "R23_T32.R1",
+      "root": "R23_T32",
+      "root_order": 60,
+      "depth": 1,
+      "R": [
+        "47/128",
+        "3/8"
+      ],
+      "tau": [
+        "1/2",
+        "33/64"
+      ],
+      "parent": "R23_T32"
+    },
+    {
+      "id": "R23_T16.R0",
+      "root": "R23_T16",
+      "root_order": 61,
+      "depth": 1,
+      "R": [
+        "23/64",
+        "47/128"
+      ],
+      "tau": [
+        "1/4",
+        "17/64"
+      ],
+      "parent": "R23_T16"
+    },
+    {
+      "id": "R23_T16.R1",
+      "root": "R23_T16",
+      "root_order": 61,
+      "depth": 1,
+      "R": [
+        "47/128",
+        "3/8"
+      ],
+      "tau": [
+        "1/4",
+        "17/64"
+      ],
+      "parent": "R23_T16"
+    },
+    {
+      "id": "R31_T32.R0",
+      "root": "R31_T32",
+      "root_order": 62,
+      "depth": 1,
+      "R": [
+        "31/64",
+        "63/128"
+      ],
+      "tau": [
+        "1/2",
+        "33/64"
+      ],
+      "parent": "R31_T32"
+    },
+    {
+      "id": "R31_T32.R1",
+      "root": "R31_T32",
+      "root_order": 62,
+      "depth": 1,
+      "R": [
+        "63/128",
+        "1/2"
+      ],
+      "tau": [
+        "1/2",
+        "33/64"
+      ],
+      "parent": "R31_T32"
+    },
+    {
+      "id": "R31_T16.R0",
+      "root": "R31_T16",
+      "root_order": 63,
+      "depth": 1,
+      "R": [
+        "31/64",
+        "63/128"
+      ],
+      "tau": [
+        "1/4",
+        "17/64"
+      ],
+      "parent": "R31_T16"
+    },
+    {
+      "id": "R31_T16.R1",
+      "root": "R31_T16",
+      "root_order": 63,
+      "depth": 1,
+      "R": [
+        "63/128",
+        "1/2"
+      ],
+      "tau": [
+        "1/4",
+        "17/64"
+      ],
+      "parent": "R31_T16"
+    },
+    {
+      "id": "R16_T48.R0",
+      "root": "R16_T48",
+      "root_order": 64,
+      "depth": 1,
+      "R": [
+        "1/4",
+        "33/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R16_T48"
+    },
+    {
+      "id": "R16_T48.R1",
+      "root": "R16_T48",
+      "root_order": 64,
+      "depth": 1,
+      "R": [
+        "33/128",
+        "17/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R16_T48"
+    },
+    {
+      "id": "R16_T08.R0",
+      "root": "R16_T08",
+      "root_order": 65,
+      "depth": 1,
+      "R": [
+        "1/4",
+        "33/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R16_T08"
+    },
+    {
+      "id": "R16_T08.R1",
+      "root": "R16_T08",
+      "root_order": 65,
+      "depth": 1,
+      "R": [
+        "33/128",
+        "17/64"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R16_T08"
+    },
+    {
+      "id": "R24_T48.R0",
+      "root": "R24_T48",
+      "root_order": 66,
+      "depth": 1,
+      "R": [
+        "3/8",
+        "49/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R24_T48"
+    },
+    {
+      "id": "R24_T48.R1",
+      "root": "R24_T48",
+      "root_order": 66,
+      "depth": 1,
+      "R": [
+        "49/128",
+        "25/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R24_T48"
+    },
+    {
+      "id": "R24_T08.R0",
+      "root": "R24_T08",
+      "root_order": 67,
+      "depth": 1,
+      "R": [
+        "3/8",
+        "49/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R24_T08"
+    },
+    {
+      "id": "R24_T08.R1",
+      "root": "R24_T08",
+      "root_order": 67,
+      "depth": 1,
+      "R": [
+        "49/128",
+        "25/64"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R24_T08"
+    },
+    {
+      "id": "R20_T48.R0",
+      "root": "R20_T48",
+      "root_order": 68,
+      "depth": 1,
+      "R": [
+        "5/16",
+        "41/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R20_T48"
+    },
+    {
+      "id": "R20_T48.R1",
+      "root": "R20_T48",
+      "root_order": 68,
+      "depth": 1,
+      "R": [
+        "41/128",
+        "21/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R20_T48"
+    },
+    {
+      "id": "R20_T08.R0",
+      "root": "R20_T08",
+      "root_order": 69,
+      "depth": 1,
+      "R": [
+        "5/16",
+        "41/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R20_T08"
+    },
+    {
+      "id": "R20_T08.R1",
+      "root": "R20_T08",
+      "root_order": 69,
+      "depth": 1,
+      "R": [
+        "41/128",
+        "21/64"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R20_T08"
+    },
+    {
+      "id": "R28_T48.R0",
+      "root": "R28_T48",
+      "root_order": 70,
+      "depth": 1,
+      "R": [
+        "7/16",
+        "57/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R28_T48"
+    },
+    {
+      "id": "R28_T48.R1",
+      "root": "R28_T48",
+      "root_order": 70,
+      "depth": 1,
+      "R": [
+        "57/128",
+        "29/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R28_T48"
+    },
+    {
+      "id": "R18_T48.R0",
+      "root": "R18_T48",
+      "root_order": 72,
+      "depth": 1,
+      "R": [
+        "9/32",
+        "37/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R18_T48"
+    },
+    {
+      "id": "R18_T48.R1",
+      "root": "R18_T48",
+      "root_order": 72,
+      "depth": 1,
+      "R": [
+        "37/128",
+        "19/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R18_T48"
+    },
+    {
+      "id": "R18_T08.R0",
+      "root": "R18_T08",
+      "root_order": 73,
+      "depth": 1,
+      "R": [
+        "9/32",
+        "37/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R18_T08"
+    },
+    {
+      "id": "R18_T08.R1",
+      "root": "R18_T08",
+      "root_order": 73,
+      "depth": 1,
+      "R": [
+        "37/128",
+        "19/64"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R18_T08"
+    },
+    {
+      "id": "R26_T48.R0",
+      "root": "R26_T48",
+      "root_order": 74,
+      "depth": 1,
+      "R": [
+        "13/32",
+        "53/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R26_T48"
+    },
+    {
+      "id": "R26_T48.R1",
+      "root": "R26_T48",
+      "root_order": 74,
+      "depth": 1,
+      "R": [
+        "53/128",
+        "27/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R26_T48"
+    },
+    {
+      "id": "R26_T08.R0",
+      "root": "R26_T08",
+      "root_order": 75,
+      "depth": 1,
+      "R": [
+        "13/32",
+        "53/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R26_T08"
+    },
+    {
+      "id": "R26_T08.R1",
+      "root": "R26_T08",
+      "root_order": 75,
+      "depth": 1,
+      "R": [
+        "53/128",
+        "27/64"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R26_T08"
+    },
+    {
+      "id": "R22_T48.R0",
+      "root": "R22_T48",
+      "root_order": 76,
+      "depth": 1,
+      "R": [
+        "11/32",
+        "45/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R22_T48"
+    },
+    {
+      "id": "R22_T48.R1",
+      "root": "R22_T48",
+      "root_order": 76,
+      "depth": 1,
+      "R": [
+        "45/128",
+        "23/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R22_T48"
+    },
+    {
+      "id": "R22_T08.R0",
+      "root": "R22_T08",
+      "root_order": 77,
+      "depth": 1,
+      "R": [
+        "11/32",
+        "45/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R22_T08"
+    },
+    {
+      "id": "R22_T08.R1",
+      "root": "R22_T08",
+      "root_order": 77,
+      "depth": 1,
+      "R": [
+        "45/128",
+        "23/64"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R22_T08"
+    },
+    {
+      "id": "R30_T48.R0",
+      "root": "R30_T48",
+      "root_order": 78,
+      "depth": 1,
+      "R": [
+        "15/32",
+        "61/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R30_T48"
+    },
+    {
+      "id": "R30_T48.R1",
+      "root": "R30_T48",
+      "root_order": 78,
+      "depth": 1,
+      "R": [
+        "61/128",
+        "31/64"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R30_T48"
+    },
+    {
+      "id": "R17_T48.R0",
+      "root": "R17_T48",
+      "root_order": 80,
+      "depth": 1,
+      "R": [
+        "17/64",
+        "35/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R17_T48"
+    },
+    {
+      "id": "R17_T48.R1",
+      "root": "R17_T48",
+      "root_order": 80,
+      "depth": 1,
+      "R": [
+        "35/128",
+        "9/32"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R17_T48"
+    },
+    {
+      "id": "R17_T08.R0",
+      "root": "R17_T08",
+      "root_order": 81,
+      "depth": 1,
+      "R": [
+        "17/64",
+        "35/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R17_T08"
+    },
+    {
+      "id": "R17_T08.R1",
+      "root": "R17_T08",
+      "root_order": 81,
+      "depth": 1,
+      "R": [
+        "35/128",
+        "9/32"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R17_T08"
+    },
+    {
+      "id": "R25_T48.R0",
+      "root": "R25_T48",
+      "root_order": 82,
+      "depth": 1,
+      "R": [
+        "25/64",
+        "51/128"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R25_T48"
+    },
+    {
+      "id": "R25_T48.R1",
+      "root": "R25_T48",
+      "root_order": 82,
+      "depth": 1,
+      "R": [
+        "51/128",
+        "13/32"
+      ],
+      "tau": [
+        "3/4",
+        "49/64"
+      ],
+      "parent": "R25_T48"
+    },
+    {
+      "id": "R25_T08.R0",
+      "root": "R25_T08",
+      "root_order": 83,
+      "depth": 1,
+      "R": [
+        "25/64",
+        "51/128"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R25_T08"
+    },
+    {
+      "id": "R25_T08.R1",
+      "root": "R25_T08",
+      "root_order": 83,
+      "depth": 1,
+      "R": [
+        "51/128",
+        "13/32"
+      ],
+      "tau": [
+        "1/8",
+        "9/64"
+      ],
+      "parent": "R25_T08"
     }
   ],
   "inflight": [],
@@ -16365,6 +16665,74 @@
       "zero_included_RECORD_ONLY": false,
       "source_json": "boxes/R31_T00.json",
       "source_log": "logs/R31_T00.log"
+    },
+    {
+      "node": {
+        "id": "R28_T08",
+        "root": "R28_T08",
+        "root_order": 71,
+        "depth": 0,
+        "R": [
+          "7/16",
+          "29/64"
+        ],
+        "tau": [
+          "1/8",
+          "9/64"
+        ],
+        "parent": null
+      },
+      "kind": "DECIDED_NONZERO",
+      "route": "GENERAL",
+      "elapsed_s": 165.3179579838179,
+      "H_interval": {
+        "lower": "-188148470638114441664377355289884757827/1361129467683753853853498429727072845824",
+        "upper": "-3831927412117015808601552956694994565/2722258935367507707706996859454145691648",
+        "lo": -0.13822966521934785,
+        "hi": -0.0014076278205326937,
+        "mid": -0.06981864651994027,
+        "halfwidth": 0.06841101869940758
+      },
+      "cell_count": 6976,
+      "peak_RSS_KiB": 31264,
+      "peak_RSS_type": "child_resource_getrusage_maxrss",
+      "zero_included_RECORD_ONLY": false,
+      "source_json": "boxes/R28_T08.json",
+      "source_log": "logs/R28_T08.log"
+    },
+    {
+      "node": {
+        "id": "R30_T08",
+        "root": "R30_T08",
+        "root_order": 79,
+        "depth": 0,
+        "R": [
+          "15/32",
+          "31/64"
+        ],
+        "tau": [
+          "1/8",
+          "9/64"
+        ],
+        "parent": null
+      },
+      "kind": "DECIDED_NONZERO",
+      "route": "GENERAL",
+      "elapsed_s": 165.57028876105323,
+      "H_interval": {
+        "lower": "-95368897085807670416796411128341293663/680564733841876926926749214863536422912",
+        "upper": "-8929917255902213243906591241786321503/680564733841876926926749214863536422912",
+        "lo": -0.1401319997106488,
+        "hi": -0.013121334109529394,
+        "mid": -0.0766266669100891,
+        "halfwidth": 0.0635053328005597
+      },
+      "cell_count": 7008,
+      "peak_RSS_KiB": 31604,
+      "peak_RSS_type": "child_resource_getrusage_maxrss",
+      "zero_included_RECORD_ONLY": false,
+      "source_json": "boxes/R30_T08.json",
+      "source_log": "logs/R30_T08.log"
     }
   ],
   "split_events": [
@@ -16772,6 +17140,248 @@
       "children": [
         "R27_T16.R0",
         "R27_T16.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R23_T32",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R23_T32.R0",
+        "R23_T32.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R23_T16",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R23_T16.R0",
+        "R23_T16.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R31_T32",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R31_T32.R0",
+        "R31_T32.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R31_T16",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R31_T16.R0",
+        "R31_T16.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R16_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R16_T48.R0",
+        "R16_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R16_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R16_T08.R0",
+        "R16_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R24_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R24_T48.R0",
+        "R24_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R24_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R24_T08.R0",
+        "R24_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R20_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R20_T48.R0",
+        "R20_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R20_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R20_T08.R0",
+        "R20_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R28_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R28_T48.R0",
+        "R28_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R18_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R18_T48.R0",
+        "R18_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R18_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R18_T08.R0",
+        "R18_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R26_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R26_T48.R0",
+        "R26_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R26_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R26_T08.R0",
+        "R26_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R22_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R22_T48.R0",
+        "R22_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R22_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R22_T08.R0",
+        "R22_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R30_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R30_T48.R0",
+        "R30_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R17_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R17_T48.R0",
+        "R17_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R17_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R17_T08.R0",
+        "R17_T08.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R25_T48",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R25_T48.R0",
+        "R25_T48.R1"
+      ],
+      "zero_included_RECORD_ONLY": true
+    },
+    {
+      "parent": "R25_T08",
+      "axis": "R",
+      "depth": 0,
+      "parent_area": "1/4096",
+      "children": [
+        "R25_T08.R0",
+        "R25_T08.R1"
       ],
       "zero_included_RECORD_ONLY": true
     }
@@ -17256,12 +17866,204 @@
       "status": "EVALUATED",
       "depth": 0,
       "area": "1/4096"
+    },
+    {
+      "id": "R23_T32",
+      "route": "GENERAL",
+      "wall_s": 163.81530092470348,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R23_T16",
+      "route": "GENERAL",
+      "wall_s": 170.066886162851,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R31_T32",
+      "route": "GENERAL",
+      "wall_s": 166.81634219596162,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R31_T16",
+      "route": "GENERAL",
+      "wall_s": 173.06950822286308,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R16_T48",
+      "route": "GENERAL",
+      "wall_s": 169.31701155286282,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R16_T08",
+      "route": "GENERAL",
+      "wall_s": 160.06283313501626,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R24_T48",
+      "route": "GENERAL",
+      "wall_s": 163.8182794433087,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R24_T08",
+      "route": "GENERAL",
+      "wall_s": 172.31635370571166,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R20_T48",
+      "route": "GENERAL",
+      "wall_s": 170.5706064919941,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R20_T08",
+      "route": "GENERAL",
+      "wall_s": 170.32219181768596,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R28_T48",
+      "route": "GENERAL",
+      "wall_s": 164.31932010082528,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R28_T08",
+      "route": "GENERAL",
+      "wall_s": 165.3179579838179,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R18_T48",
+      "route": "GENERAL",
+      "wall_s": 160.06550115486607,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R18_T08",
+      "route": "GENERAL",
+      "wall_s": 168.82394915493205,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R26_T48",
+      "route": "GENERAL",
+      "wall_s": 164.82204702822492,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R26_T08",
+      "route": "GENERAL",
+      "wall_s": 172.82394453696907,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R22_T48",
+      "route": "GENERAL",
+      "wall_s": 162.31642796704546,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R22_T08",
+      "route": "GENERAL",
+      "wall_s": 169.82179526332766,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R30_T48",
+      "route": "GENERAL",
+      "wall_s": 174.3242139518261,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R30_T08",
+      "route": "GENERAL",
+      "wall_s": 165.57028876105323,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R17_T48",
+      "route": "GENERAL",
+      "wall_s": 168.82133622514084,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R17_T08",
+      "route": "GENERAL",
+      "wall_s": 167.0709148356691,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R25_T48",
+      "route": "GENERAL",
+      "wall_s": 163.0683119930327,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
+    },
+    {
+      "id": "R25_T08",
+      "route": "GENERAL",
+      "wall_s": 162.81965688988566,
+      "status": "EVALUATED",
+      "depth": 0,
+      "area": "1/4096"
     }
   ],
-  "completed_batches": 5,
-  "wall_elapsed_cumulative_s": 969.5725264702924,
+  "completed_batches": 7,
+  "wall_elapsed_cumulative_s": 1317.0821657860652,
   "calibration_wall_s": 109.18979961704463,
-  "H_adaptive_wall_s": 860.3827268532477,
+  "H_adaptive_wall_s": 1207.8923661690205,
   "W_sample_wall_s": 0.0,
   "session_receipts": [
     {
@@ -17279,6 +18081,14 @@
       "stop_reason": "SESSION_BUDGET_OR_BATCH_LIMIT",
       "remaining_jobs": 1038,
       "max_batches_requested": 4
+    },
+    {
+      "elapsed_s": 347.5096393157728,
+      "batches": 2,
+      "workers": 12,
+      "stop_reason": "SESSION_BUDGET_OR_BATCH_LIMIT",
+      "remaining_jobs": 1058,
+      "max_batches_requested": 2
     }
   ]
 }

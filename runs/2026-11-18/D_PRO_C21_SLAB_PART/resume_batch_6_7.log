@@ -1,0 +1,13 @@
+BATCH 6 workers 12 jobs 72 terminal 24 pending 1048 dec_area 3/512 tube_area 0 elapsed_session 173.09
+BATCH 7 workers 12 jobs 84 terminal 25 pending 1058 dec_area 25/4096 tube_area 0 elapsed_session 347.47
+SESSION_RESULT {
+  "measured_jobs": 84,
+  "decided_count": 25,
+  "tube_candidate_EVALUATED_count": 0,
+  "pending_UNEVALUATED_count": 1058,
+  "area_decided_exact": "25/4096",
+  "area_tube_evaluated_exact": "0",
+  "area_pending_exact": "999/4096",
+  "full_subregion_processed": false,
+  "total_wall_elapsed_sessions_s": 1317.0821657860652
+}

@@ -26,29 +26,29 @@ the adaptive algorithm.
 
 ## 2. Measured main partial-slab H work
 - Initial 1/64×1/64 boxes: **1024 (16×64)**.
-- Actual measured H jobs: **60**, unique:
-  **60**.
-- Decided nonzero boxes: **23**.
+- Actual measured H jobs: **84**, unique:
+  **84**.
+- Decided nonzero boxes: **25**.
 - EVALUATED terminal tube candidates (including per-box OPEN):
   **0**.
-- PENDING / not yet evaluated: **1038**.
-- Split parents: **37**.
-- Main adaptive wall time **860.383s**.
-- Total wall incl CE **969.573s**.
+- PENDING / not yet evaluated: **1058**.
+- Split parents: **59**.
+- Main adaptive wall time **1207.892s**.
+- Total wall incl CE **1317.082s**.
 - W sample wall **0.000s**.
 - Sum of all worker CPU wall times by route is below (not
   the same as whole elapsed wall).
 
 ### Exact unnormalized area in (R,τ)
-- Decided **23/4096**.
+- Decided **25/4096**.
 - Evaluated tube candidates **0**.
-- Pending not evaluated **1001/4096**.
+- Pending not evaluated **999/4096**.
 - Exact sum **1/4** (=1/4).
 
 ### Relative to requested region of measure 1/4
-- Decided **23/1024**.
+- Decided **25/1024**.
 - Evaluated tube **0**.
-- Unmeasured pending **1001/1024**.
+- Unmeasured pending **999/1024**.
 - Sum 1 exactly. Do not call uncomputed pending a measured tube.
 
 ### Special MVT routes: measured H halfwidth and cost (first25 of 16)
@@ -76,13 +76,13 @@ the adaptive algorithm.
 |---|---:|---:|
 | AXIS_MVT | 16 | 2231.691 |
 | SMALL_RHO_MVT | 0 | 0.000 |
-| GENERAL | 44 | 7298.100 |
+| GENERAL | 68 | 11308.261 |
 | CENTER_MVT | 0 | 0.000 |
 
 ### Depth counts
 | Depth | Measured jobs | Terminal |
 |---|---:|---:|
-| 0 | 60 | 23 |
+| 0 | 84 | 25 |
 
 ### Observed tube candidate distribution (first40)
 | Immutable ID | R interval | τ interval | Area | Reason |
@@ -104,8 +104,8 @@ and sampled VmHWM KiB lower bounds, clearly labelled.
   sample. Full-tube W is NEVER calculated.
 
 ## 4. Cost outside the requested region
-The current subregion has 1038
-  pending boxes with exact measure 1001/4096.
+The current subregion has 1058
+  pending boxes with exact measure 999/4096.
   Therefore its *total* required H box count/time and its final
   unresolved tube area are NOT MEASURED.
   No full-Rτ-board or full-λ-range box count or time forecast is made.
