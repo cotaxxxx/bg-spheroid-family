@@ -24,7 +24,7 @@ def run():
  names=[]
  for p in ROOT.glob("prolate_r4/slab_*.py"):names.append(p)
  for p in OUT.rglob("*"):
-  if not p.is_file() or p.name in ("SHA256SUMS","ZIP_SHA256.txt",ZIP_NAME):continue
+  if not p.is_file() or p.name in ("SHA256SUMS","ZIP_SHA256.txt","pack_result.log",ZIP_NAME):continue
   if p.name.endswith(".tmp") or p.name.endswith(".pyc"):continue
   names.append(p)
  names.sort(key=lambda p:p.relative_to(ROOT).as_posix())

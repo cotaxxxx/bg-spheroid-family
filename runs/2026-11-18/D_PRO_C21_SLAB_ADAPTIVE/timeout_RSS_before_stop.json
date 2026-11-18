@@ -1,0 +1,31 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "type": "live VmHWM snapshot lower bound, not postmortem exact max",
+  "recorded_at_utc": "2026-11-18T03:16:00.147095+00:00",
+  "records": [
+    {
+      "id": "R00_T00",
+      "pid": 1495121,
+      "VmHWM": "31108 kB",
+      "VmRSS": "31108 kB"
+    },
+    {
+      "id": "R00_T08",
+      "pid": 1495124,
+      "VmHWM": "31044 kB",
+      "VmRSS": "31044 kB"
+    },
+    {
+      "id": "R00_T04",
+      "pid": 1495129,
+      "VmHWM": "31028 kB",
+      "VmRSS": "31028 kB"
+    },
+    {
+      "id": "R00_T12",
+      "pid": 1495132,
+      "VmHWM": "31100 kB",
+      "VmRSS": "31100 kB"
+    }
+  ]
+}

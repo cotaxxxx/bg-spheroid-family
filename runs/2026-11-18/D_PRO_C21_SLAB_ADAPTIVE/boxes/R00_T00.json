@@ -1,0 +1,20 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "id": "R00_T00",
+  "route": "CENTER",
+  "R": [
+    "0",
+    "1/16"
+  ],
+  "tau": [
+    "0",
+    "1/16"
+  ],
+  "lambda": [
+    "1279/256",
+    "5"
+  ],
+  "H_interval": null,
+  "reason": "PER_BOX_TIME_LIMIT",
+  "measurement_wall_s": 600.0016479762271
+}

@@ -52,16 +52,38 @@ def verify():
   assert j["status"]==STATUS and j["H_interval"]==t["H_interval"]
   assert j["route_from_position"]==t["route"]
   seen+=1
+ # Include producer JSON for successful SPLIT PARENTS, not just terminals.
+ # Otherwise a run with no DECIDED leaf would check zero numeric sources.
+ split_ids={e["parent"] for e in st["split_events"]}
+ success_ids=set()
+ for job in st["processed_jobs"]:
+  name=job["id"];src=OUT/"boxes"/(name+".json")
+  assert src.exists(),("missing source JSON",name)
+  obj=json.loads(src.read_text())
+  assert obj["status"]==STATUS,(name,"wrong status")
+  if job["status"]=="EVALUATED":
+   assert name not in success_ids
+   assert "H_interval" in obj and isinstance(obj["H_interval"],dict)
+   lo=q(obj["H_interval"]["lower"]);hi=q(obj["H_interval"]["upper"])
+   assert lo<=hi
+   success_ids.add(name)
+   if name in split_ids:
+    assert lo<=0<=hi,(name,"parent split without 0 in interval")
+  elif job["status"]=="OPEN":
+   assert obj["H_interval"] is None
+  else:
+   raise AssertionError("unexpected job state: "+job["status"])
  for evt in st["split_events"]:
   assert len(evt["children"])==2
   assert evt["axis"] in ("R","tau")
   assert evt["zero_included_RECORD_ONLY"] is True
+  assert evt["parent"] in success_ids
  assert report["full_slab_processed"]==(len(pending+inflight)==0)
  obj={"status":STATUS,"checker":"exact state, disjoint ID, area and source-log contract",
    "verdict":"PASS","area_total_exact":"1",
    "area_decided":str(nde),"area_tube_evaluated":str(ntu),
    "area_pending":str(npend),"terminal_boxes":len(terminal),
-   "pending_boxes":len(pending+inflight),"checked_box_sources":seen,
+   "pending_boxes":len(pending+inflight),"checked_box_sources":len(success_ids),
    "split_parent_records":len(st["split_events"]),
    "not_independent_Arb_numerical_proof":True}
  (OUT/"checker.json").write_text(json.dumps(obj,indent=2)+"\n")

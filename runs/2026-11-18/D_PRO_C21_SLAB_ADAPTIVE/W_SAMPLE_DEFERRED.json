@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "H_slab_state": "PARTIAL_CHECKPOINT",
+  "W_sample_status": "OPEN_NOT_LAUNCHED",
+  "W_sample_count": 0,
+  "reason": "The fixed W sample selection only occurs at a completed λ slab or the genuine 24-hour experiment limit. The short first-batch checkpoint has 252 uncomputed boxes; selecting first/middle/last from an unfinished candidate set would not be the pre-registered final sample.",
+  "next_eligible_transition": "fully evaluated slab or cumulative 24-hour experiment hard cap",
+  "W_full_tube_cover": false,
+  "not_evidence": true
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "id": "R08_T08",
+  "route": "REGULAR",
+  "R": [
+    "1/2",
+    "9/16"
+  ],
+  "tau": [
+    "1/2",
+    "9/16"
+  ],
+  "lambda": [
+    "1279/256",
+    "5"
+  ],
+  "H_interval": null,
+  "reason": "PER_BOX_TIME_LIMIT",
+  "measurement_wall_s": 180.00195399671793
+}

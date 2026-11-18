@@ -1,0 +1,14 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "checker": "exact state, disjoint ID, area and source-log contract",
+  "verdict": "PASS",
+  "area_total_exact": "1",
+  "area_decided": "0",
+  "area_tube_evaluated": "1/32",
+  "area_pending": "31/32",
+  "terminal_boxes": 8,
+  "pending_boxes": 252,
+  "checked_box_sources": 4,
+  "split_parent_records": 4,
+  "not_independent_Arb_numerical_proof": true
+}
