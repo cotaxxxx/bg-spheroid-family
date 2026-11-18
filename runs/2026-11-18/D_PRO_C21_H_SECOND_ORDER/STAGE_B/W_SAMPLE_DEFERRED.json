@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "stage_B_status": "PARTIAL_UNFINISHED",
+  "W_sampling_status": "OPEN_DEFERRED_NOT_MEASURED",
+  "selected_boxes": [],
+  "reason": "Stage B evaluated 12 of its initial 1024 boxes; no terminal tube candidates. The pre-frozen selection requires the requested R-tau subregion to finish or the genuine 24-hour cap. Neither condition holds.",
+  "W_full_tube_cover_computed": false,
+  "next_stage_B_action": "Resume frozen checkpoint only; do not retrofit W-selection rule or substitute arbitrary box IDs.",
+  "not_evidence": true
+}

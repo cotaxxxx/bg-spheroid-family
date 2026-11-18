@@ -1,0 +1,100 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "PASS",
+  "scope": "Stage A eight box interval-record, exact fraction width and Taylor sum arithmetic",
+  "checked_original_pairs": 8,
+  "gate": "STAGE_B_ALLOWED",
+  "selection_ids": [
+    "R16_T00",
+    "R18_T08",
+    "R20_T48",
+    "R23_T32",
+    "R26_T00",
+    "R28_T32",
+    "R16_T63",
+    "R31_T63"
+  ],
+  "rows": [
+    {
+      "id": "R16_T00",
+      "route": "GENERAL",
+      "old_halfwidth_exact": "535263567005770722894339486408614346753/5444517870735015415413993718908291383296",
+      "new_halfwidth_exact": "517038873/34359738368",
+      "improvement_ratio_exact": "178421189001923574298113162136204782251/27309359904157386355638330771795607552",
+      "new_worker_wall_s": 601.6631699483842,
+      "peak_RSS_KiB": 31684,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R18_T08",
+      "route": "GENERAL",
+      "old_halfwidth_exact": "612736544301910854743259305976560353281/5444517870735015415413993718908291383296",
+      "new_halfwidth_exact": "310566339/17179869184",
+      "improvement_ratio_exact": "68081838255767872749251033997395594809/10935822390112049157638673196199706624",
+      "new_worker_wall_s": 611.3637371449731,
+      "peak_RSS_KiB": 31992,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R20_T48",
+      "route": "GENERAL",
+      "old_halfwidth_exact": "364160117580571843593352444269748551681/680564733841876926926749214863536422912",
+      "new_halfwidth_exact": "479824207911473551258358553736783069185/5444517870735015415413993718908291383296",
+      "improvement_ratio_exact": "138727663840217845178419978769428019688/22848771805308264345636121606513479485",
+      "new_worker_wall_s": 626.3372855554335,
+      "peak_RSS_KiB": 31668,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R23_T32",
+      "route": "GENERAL",
+      "old_halfwidth_exact": "283580705444295425325741886145384415233/1361129467683753853853498429727072845824",
+      "new_halfwidth_exact": "625043909/17179869184",
+      "improvement_ratio_exact": "283580705444295425325741886145384415233/49521080400803049828764363881315303424",
+      "new_worker_wall_s": 613.588163533248,
+      "peak_RSS_KiB": 31736,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R26_T00",
+      "route": "GENERAL",
+      "old_halfwidth_exact": "486117749/8589934592",
+      "new_halfwidth_exact": "641453795/68719476736",
+      "improvement_ratio_exact": "3888941992/641453795",
+      "new_worker_wall_s": 628.3040873128921,
+      "peak_RSS_KiB": 31528,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R28_T32",
+      "route": "GENERAL",
+      "old_halfwidth_exact": "44694707/268435456",
+      "new_halfwidth_exact": "1023044961/34359738368",
+      "improvement_ratio_exact": "5720922496/1023044961",
+      "new_worker_wall_s": 622.9108603252098,
+      "peak_RSS_KiB": 31264,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R16_T63",
+      "route": "AXIS_MVT",
+      "old_halfwidth_exact": "1010577087/68719476736",
+      "new_halfwidth_exact": "729351797/274877906944",
+      "improvement_ratio_exact": "4042308348/729351797",
+      "new_worker_wall_s": 509.11653641890734,
+      "peak_RSS_KiB": 31428,
+      "signed_component_arithmetic_contains_sum": true
+    },
+    {
+      "id": "R31_T63",
+      "route": "AXIS_MVT",
+      "old_halfwidth_exact": "95665421/4294967296",
+      "new_halfwidth_exact": "20462989/4294967296",
+      "improvement_ratio_exact": "95665421/20462989",
+      "new_worker_wall_s": 533.1930297021754,
+      "peak_RSS_KiB": 31864,
+      "signed_component_arithmetic_contains_sum": true
+    }
+  ],
+  "not_independent_math_of_C21_Arb_or_jets": true
+}

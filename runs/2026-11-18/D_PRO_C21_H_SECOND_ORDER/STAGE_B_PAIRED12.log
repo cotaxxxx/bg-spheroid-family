@@ -1,0 +1,12 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "paired_measured_boxes": 12,
+  "old_decided_count": 8,
+  "new_decided_count": 12,
+  "newly_decided": 4,
+  "regressions": 0,
+  "width_ratio_median": 5.7311221765744,
+  "old_worker_wall_sum_s": 1815.805013333913,
+  "new_worker_wall_sum_s": 7394.311768087093,
+  "not_mathematical_certification": true
+}

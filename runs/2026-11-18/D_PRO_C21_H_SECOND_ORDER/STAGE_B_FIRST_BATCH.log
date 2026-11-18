@@ -1,0 +1,38 @@
+DIAGNOSTIC_ONLY / NOT_EVIDENCE
+BATCH 1 workers 12 jobs 12 terminal 12 pending 1012 dec_area 3/1024 tube_area 0 elapsed_session 690.52
+SESSION_RESULT {
+  "measured_jobs": 12,
+  "decided_count": 12,
+  "tube_candidate_EVALUATED_count": 0,
+  "pending_UNEVALUATED_count": 1012,
+  "area_decided_exact": "3/1024",
+  "area_tube_evaluated_exact": "0",
+  "area_pending_exact": "253/1024",
+  "full_subregion_processed": false,
+  "total_wall_elapsed_sessions_s": 1319.096144808922
+}
+STAGE_B_PARTIAL_OR_COMPLETE False measured 12
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "checker": "exact state, disjoint ID, area and source-log contract",
+  "verdict": "PASS",
+  "area_total_exact": "1/4",
+  "area_decided": "3/1024",
+  "area_tube_evaluated": "0",
+  "area_pending": "253/1024",
+  "terminal_boxes": 12,
+  "pending_boxes": 1012,
+  "checked_box_sources": 12,
+  "split_parent_records": 0,
+  "not_independent_Arb_numerical_proof": true
+}
+{"stage_A": "STAGE_B_ALLOWED", "stage_B": false, "lines": 71}
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_H_SECOND_ORDER/D_PRO_C21_H_SECOND_ORDER_DIAGNOSTIC_20261118.zip",
+  "zip_sha256": "978bc06372b52b269576e04bc96896362b3c928bd6aedd8349fde6284aeb60c1",
+  "zip_members": 70,
+  "SHA256SUMS_entries": 69,
+  "R3_original_files_bytewise_verified": 7,
+  "CRC_and_zip_member_bytes_match": true
+}

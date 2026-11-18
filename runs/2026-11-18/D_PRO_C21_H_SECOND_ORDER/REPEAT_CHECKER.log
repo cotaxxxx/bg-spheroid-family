@@ -1,0 +1,32 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "PASS",
+  "replayed_count": 3,
+  "records": [
+    {
+      "id": "R16_T00",
+      "same_H_endpoints": true,
+      "same_all_gradient_and_Hessian_intervals": true,
+      "mesh_cells": 6752,
+      "stage_A_wall_s": 601.6631699483842,
+      "stage_B_wall_s": 682.8410906419158
+    },
+    {
+      "id": "R16_T63",
+      "same_H_endpoints": true,
+      "same_all_gradient_and_Hessian_intervals": true,
+      "mesh_cells": 6752,
+      "stage_A_wall_s": 509.11653641890734,
+      "stage_B_wall_s": 567.2123224190436
+    },
+    {
+      "id": "R26_T00",
+      "same_H_endpoints": true,
+      "same_all_gradient_and_Hessian_intervals": true,
+      "mesh_cells": 6944,
+      "stage_A_wall_s": 628.3040873128921,
+      "stage_B_wall_s": 689.0993870529346
+    }
+  ],
+  "not_an_independent_mathematical_validation": true
+}

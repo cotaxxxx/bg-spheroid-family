@@ -54,8 +54,21 @@ def build():
  else:lines+=["Stage B not started. Do not estimate a full subregion cost.",""]
  w=load("STAGE_B/W_SAMPLE_RESULTS.json")
  lines+=["","## W three-box-only measurement","",
-         "Measured: "+("YES" if w else "NO, deferred"),"",
-         "## Cost extrapolation",""]
+         "Measured: "+("YES" if w else "NO, deferred")]
+ paired=load("STAGE_B_PAIRED12.json")
+ repeat=load("REPEAT_CHECKER.json")
+ acheck=load("STAGE_A_CHECKER.json")
+ lines+=["","## Independent exact-fraction output audits",""]
+ if acheck:lines.append(f"Stage-A 8-box exact-width and Taylor decomposition: {acheck['verdict']}; not a mathematical kernel proof.")
+ if repeat:lines.append(f"Duplicated Stage A versus B interval bytewise equality: {repeat['replayed_count']} boxes, {repeat['verdict']}.")
+ if paired:
+  lines.extend([f"Paired 12 original first-order vs new second-order boxes:",
+    f"old decided {paired['old_decided_count']}/12, new decided {paired['new_decided_count']}/12;",
+    f"newly decided {paired['newly_decided']}, regressions {paired['regressions']}.",
+    f"Median old/new halfwidth ratio {paired['width_ratio_median']:.6f}.",
+    f"Historical worker-seconds sum {paired['old_worker_wall_sum_s']:.3f};",
+    f"new worker-seconds sum {paired['new_worker_wall_sum_s']:.3f}."])
+ lines+=["","## Cost extrapolation",""]
  if sm and sm["full_subregion_processed"]:
   n=sm["measured_jobs"];s=sm["H_adaptive_wall_s"]
   lines +=[f"Full requested 1/4 area measured: {n} H jobs and {s:.3f} H wall seconds.",

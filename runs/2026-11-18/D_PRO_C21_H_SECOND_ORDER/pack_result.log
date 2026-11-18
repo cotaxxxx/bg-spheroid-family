@@ -1,0 +1,9 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_H_SECOND_ORDER/D_PRO_C21_H_SECOND_ORDER_DIAGNOSTIC_20261118.zip",
+  "zip_sha256": "9eaa2ffe9f41de6e12ea42968c70a7ad49fadbc8277428ec6216f19f2f2c346c",
+  "zip_members": 76,
+  "SHA256SUMS_entries": 75,
+  "R3_original_files_bytewise_verified": 7,
+  "CRC_and_zip_member_bytes_match": true
+}

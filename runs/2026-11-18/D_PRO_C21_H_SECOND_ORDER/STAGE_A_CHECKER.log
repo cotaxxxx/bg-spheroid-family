@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "PASS",
+  "checked_pairs": 8,
+  "stage_B_gate": "STAGE_B_ALLOWED",
+  "all_exact_interval_sums_contained": true,
+  "not_mathematical_certification": true
+}
