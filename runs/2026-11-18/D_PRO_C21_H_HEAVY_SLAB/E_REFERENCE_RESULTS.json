@@ -1,0 +1,122 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "sample_rule": "sorted IDs median decided and median available tube, 3 points each",
+  "quadrature": "primitive E Gauss-Legendre n=24,40, 5-point physical rho stencil h=0.004",
+  "physical_position": "original p_z=lambda*z",
+  "results": [
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "R16_T00",
+      "category": "DECIDED",
+      "sample": "mid",
+      "R": "0.2578125",
+      "tau": "0.0078125",
+      "lambda": "4.96875",
+      "box_H_interval": {
+        "lower": "-48869855826622299357792805999300836957/680564733841876926926749214863536422912",
+        "upper": "-11037550581667388963582427766758306535/5444517870735015415413993718908291383296",
+        "lo": -0.07180779931211771,
+        "hi": -0.0020272778680726984,
+        "mid": -0.0369175385900952,
+        "halfwidth": 0.034890260722022504
+      },
+      "not_a_certified_E_reference": true,
+      "result": "NUMERICAL_COMPARE",
+      "H_primitive_E_n24": "-0.0320846680395286851650252804042",
+      "H_primitive_E_n40": "-0.036575191291936690491351396943",
+      "inside_Arb_both": true,
+      "difference": "0.0044905232524080053263261165388"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "R16_T00",
+      "category": "DECIDED",
+      "sample": "lower_corner",
+      "R": "0.25",
+      "tau": "0.0",
+      "lambda": "4.96875",
+      "box_H_interval": {
+        "lower": "-48869855826622299357792805999300836957/680564733841876926926749214863536422912",
+        "upper": "-11037550581667388963582427766758306535/5444517870735015415413993718908291383296",
+        "lo": -0.07180779931211771,
+        "hi": -0.0020272778680726984,
+        "mid": -0.0369175385900952,
+        "halfwidth": 0.034890260722022504
+      },
+      "not_a_certified_E_reference": true,
+      "result": "NUMERICAL_COMPARE",
+      "H_primitive_E_n24": "-0.0311278916658213098990709085864",
+      "H_primitive_E_n40": "-0.0356633805535112075346109864688",
+      "inside_Arb_both": true,
+      "difference": "0.0045354888876898976355400778824"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "R16_T00",
+      "category": "DECIDED",
+      "sample": "upper_corner",
+      "R": "0.265625",
+      "tau": "0.015625",
+      "lambda": "4.96875",
+      "box_H_interval": {
+        "lower": "-48869855826622299357792805999300836957/680564733841876926926749214863536422912",
+        "upper": "-11037550581667388963582427766758306535/5444517870735015415413993718908291383296",
+        "lo": -0.07180779931211771,
+        "hi": -0.0020272778680726984,
+        "mid": -0.0369175385900952,
+        "halfwidth": 0.034890260722022504
+      },
+      "not_a_certified_E_reference": true,
+      "result": "NUMERICAL_COMPARE",
+      "H_primitive_E_n24": "-0.0331537578155620676692777137209",
+      "H_primitive_E_n40": "-0.0375334701813270570246979728532",
+      "inside_Arb_both": true,
+      "difference": "0.0043797123657649893554202591323"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "R63_T63",
+      "category": "OPEN_TUBE_NO_H_INTERVAL",
+      "sample": "mid",
+      "R": "0.9921875",
+      "tau": "0.9921875",
+      "lambda": "4.96875",
+      "box_H_interval": null,
+      "not_a_certified_E_reference": true,
+      "result": "SKIPPED_RHO_NEAR_ZERO"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "R63_T63",
+      "category": "OPEN_TUBE_NO_H_INTERVAL",
+      "sample": "lower_corner",
+      "R": "0.984375",
+      "tau": "0.984375",
+      "lambda": "4.96875",
+      "box_H_interval": null,
+      "not_a_certified_E_reference": true,
+      "result": "NUMERICAL_REFERENCE_NO_H_INTERVAL",
+      "H_primitive_E_n24": "-0.407179338409134045078922357212",
+      "H_primitive_E_n40": "-0.407174109287461534743584186484",
+      "inside_Arb_both": null,
+      "difference": "0.00000522912167251033533817072800141"
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+      "id": "R63_T63",
+      "category": "OPEN_TUBE_NO_H_INTERVAL",
+      "sample": "upper_corner",
+      "R": "1.0",
+      "tau": "1.0",
+      "lambda": "4.96875",
+      "box_H_interval": null,
+      "not_a_certified_E_reference": true,
+      "result": "SKIPPED_RHO_NEAR_ZERO"
+    }
+  ],
+  "complete": true,
+  "n_points": 6,
+  "interval_comparison_only": "NOT mathematically validated",
+  "max_time_budget_s": 220.0,
+  "elapsed_s": 1.1557462699711323
+}

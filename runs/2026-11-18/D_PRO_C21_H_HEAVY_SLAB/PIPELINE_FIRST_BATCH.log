@@ -1,0 +1,37 @@
+BATCH 1 processed 12 decided 7 tube 1 pending 4092 wall_s 545.47
+SESSION_SUMMARY {
+  "attempted_terminal_or_split_nodes": 12,
+  "decided_count": 7,
+  "tube_evaluated_count": 1,
+  "pending_unprocessed_count": 4092,
+  "decided_area_exact": "7/4096",
+  "tube_area_exact": "1/4096",
+  "pending_area_exact": "511/512",
+  "area_total_exact": "1",
+  "full_plate_done": false,
+  "elapsed_wall_cumulative_s": 545.4663487360813
+}
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "ACCOUNTING_PASS_NOT_CERTIFICATION",
+  "checked_completed_H_boxes": 11,
+  "checked_OPEN_boxes": 1,
+  "checked_splits": 4,
+  "initial_roots": 4096,
+  "area_exact": "1",
+  "R3_bytewise_pins": 7,
+  "independent_math_certification": false,
+  "no_global_H_cover_claim": true
+}
+DIAGNOSTIC_ONLY / NOT_EVIDENCE SVG rectangles 8
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "receipt_lines": 80, "sampled": 12, "pending": 4092}
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_H_HEAVY_SLAB/D_PRO_C21_H_HEAVY_SLAB_DIAGNOSTIC_20261118.zip",
+  "SHA256SUMS_entries": 47,
+  "ZIP_files": 48,
+  "ZIP_SHA256": "4a500d4c4d1ea94ee13cd65f7fe3239dead3fd80dd8e48af1c8b2e24f776fa32",
+  "R3_pinned_files": 7,
+  "member_bytes_verified": true
+}
+PIPELINE_DONE DIAGNOSTIC_ONLY / NOT_EVIDENCE

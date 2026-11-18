@@ -1,0 +1,9 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "zip": "runs/2026-11-18/D_PRO_C21_H_HEAVY_SLAB/D_PRO_C21_H_HEAVY_SLAB_DIAGNOSTIC_20261118.zip",
+  "SHA256SUMS_entries": 50,
+  "ZIP_files": 51,
+  "ZIP_SHA256": "e7003c824aeda08c912f2fa929a0dc603851478dc75fd797f2b5f792c06805af",
+  "R3_pinned_files": 7,
+  "member_bytes_verified": true
+}

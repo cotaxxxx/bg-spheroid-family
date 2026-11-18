@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1070" viewBox="0 0 1120 1070">
+<rect x="0" y="0" width="1120" height="1070" fill="#ffffff"/>
+<text x="90" y="42" font-family="sans-serif" font-weight="bold" font-size="22">D-PRO C21 heavy slab: evaluated terminal tubes</text>
+<text x="90" y="68" font-family="sans-serif" font-size="14">DIAGNOSTIC_ONLY / NOT_EVIDENCE; unsampled gray = PENDING_UNEVALUATED</text>
+<rect x="90" y="90" width="880" height="880" fill="#e5e7eb" stroke="#374151" stroke-width="2"/>
+<rect x="90.000000000" y="956.250000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R00_T00: DECIDED_NONZERO</title></rect>
+<rect x="90.000000000" y="90.000000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R00_T63: DECIDED_NONZERO</title></rect>
+<rect x="956.250000000" y="956.250000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R63_T00: DECIDED_NONZERO</title></rect>
+<rect x="956.250000000" y="90.000000000" width="13.750000000" height="13.750000000" fill="#be123c" stroke="#ffffff" stroke-width=".3"><title>R63_T63: TUBE_OPEN_ERROR</title></rect>
+<rect x="310.000000000" y="956.250000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R16_T00: DECIDED_NONZERO</title></rect>
+<rect x="310.000000000" y="90.000000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R16_T63: DECIDED_NONZERO</title></rect>
+<rect x="530.000000000" y="90.000000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R32_T63: DECIDED_NONZERO</title></rect>
+<rect x="90.000000000" y="516.250000000" width="13.750000000" height="13.750000000" fill="#2563eb" stroke="#ffffff" stroke-width=".3"><title>R00_T32: DECIDED_NONZERO</title></rect>
+<line x1="90.0" x2="90.0" y1="90" y2="970" stroke="#cbd5e1" stroke-width=".4"/>
+<line x1="90" x2="970" y1="970.0" y2="970.0" stroke="#cbd5e1" stroke-width=".4"/>
+<text x="87.0" y="990" font-size="13" font-family="sans-serif">0.00</text>
+<text x="55" y="974.0" font-size="13" font-family="sans-serif">0.00</text>
+<line x1="310.0" x2="310.0" y1="90" y2="970" stroke="#cbd5e1" stroke-width=".4"/>
+<line x1="90" x2="970" y1="750.0" y2="750.0" stroke="#cbd5e1" stroke-width=".4"/>
+<text x="307.0" y="990" font-size="13" font-family="sans-serif">0.25</text>
+<text x="55" y="754.0" font-size="13" font-family="sans-serif">0.25</text>
+<line x1="530.0" x2="530.0" y1="90" y2="970" stroke="#cbd5e1" stroke-width=".4"/>
+<line x1="90" x2="970" y1="530.0" y2="530.0" stroke="#cbd5e1" stroke-width=".4"/>
+<text x="527.0" y="990" font-size="13" font-family="sans-serif">0.50</text>
+<text x="55" y="534.0" font-size="13" font-family="sans-serif">0.50</text>
+<line x1="750.0" x2="750.0" y1="90" y2="970" stroke="#cbd5e1" stroke-width=".4"/>
+<line x1="90" x2="970" y1="310.0" y2="310.0" stroke="#cbd5e1" stroke-width=".4"/>
+<text x="747.0" y="990" font-size="13" font-family="sans-serif">0.75</text>
+<text x="55" y="314.0" font-size="13" font-family="sans-serif">0.75</text>
+<line x1="970.0" x2="970.0" y1="90" y2="970" stroke="#cbd5e1" stroke-width=".4"/>
+<line x1="90" x2="970" y1="90.0" y2="90.0" stroke="#cbd5e1" stroke-width=".4"/>
+<text x="967.0" y="990" font-size="13" font-family="sans-serif">1.00</text>
+<text x="55" y="94.0" font-size="13" font-family="sans-serif">1.00</text>
+<text x="510" y="1020" font-size="17" font-family="sans-serif">R →</text>
+<text transform="translate(27,600) rotate(-90)" font-size="17" font-family="sans-serif">τ →</text>
+<text x="90" y="1050" font-size="13" font-family="sans-serif">Measured tubes 1; decided 7; pending 4092. Not a complete map.</text>
+</svg>

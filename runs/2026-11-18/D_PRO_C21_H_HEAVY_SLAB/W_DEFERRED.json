@@ -1,0 +1,7 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "W_interval": null,
+  "W_selection": "DEFERRED",
+  "reason": "PENDING_UNEVALUATED, or fewer than three evaluated tubes",
+  "full_tube_W": false
+}

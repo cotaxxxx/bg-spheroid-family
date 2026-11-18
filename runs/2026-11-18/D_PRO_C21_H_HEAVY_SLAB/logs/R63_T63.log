@@ -1,0 +1,20 @@
+DIAGNOSTIC_ONLY / NOT_EVIDENCE
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_heavy_box.py", line 148, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_heavy_box.py", line 144, in main
+    d=compute(a.id,R,T)
+      ^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_heavy_box.py", line 67, in compute
+    rt,outer,axes,geo,cap,kernel,caperror,info=configure(R,T)
+                                               ^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_heavy_box.py", line 35, in configure
+    outer=mvt.extended(R,T,L)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_slabpart_mvt.py", line 27, in extended
+    assert rh+zhi<1,("OPEN: extended point box needs a stronger radial bound",rh+zhi)
+           ^^^^^^^^
+AssertionError: ('OPEN: extended point box needs a stronger radial bound', 8192/8065)

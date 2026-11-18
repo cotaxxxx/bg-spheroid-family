@@ -1,0 +1,12 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "verdict": "ACCOUNTING_PASS_NOT_CERTIFICATION",
+  "checked_completed_H_boxes": 11,
+  "checked_OPEN_boxes": 1,
+  "checked_splits": 4,
+  "initial_roots": 4096,
+  "area_exact": "1",
+  "R3_bytewise_pins": 7,
+  "independent_math_certification": false,
+  "no_global_H_cover_claim": true
+}

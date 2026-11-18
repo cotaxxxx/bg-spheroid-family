@@ -1,0 +1,10 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "numerical_E_reference_performed": true,
+  "compared_points": 3,
+  "both_references_inside": 3,
+  "reference_sampled_box": "R16_T00",
+  "tube_OPEN_R63_T63": "no H interval, so no containment test",
+  "sampling_policy": "midpoint+two corners, n24+n40 independent primitive E finite difference",
+  "numerical_only_not_certified": true
+}

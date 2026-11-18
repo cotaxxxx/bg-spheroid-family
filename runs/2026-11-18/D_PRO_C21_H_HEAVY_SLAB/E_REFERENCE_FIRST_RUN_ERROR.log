@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_heavy_refs.py", line 106, in <module>
+    check(a.parse_args().max_seconds)
+  File "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_heavy_refs.py", line 101, in check
+    "inside":sum(x.get("inside_Arb_both",False) for x in rows),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'

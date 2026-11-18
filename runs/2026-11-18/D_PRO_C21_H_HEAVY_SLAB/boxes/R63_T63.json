@@ -1,0 +1,25 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "id": "R63_T63",
+  "route": "AXIS_MVT",
+  "input_box": {
+    "R": [
+      "63/64",
+      "1"
+    ],
+    "tau": [
+      "63/64",
+      "1"
+    ],
+    "lambda": [
+      "79/16",
+      "5"
+    ]
+  },
+  "H_interval": null,
+  "reason": "PROCESS_EXIT_1; last_lines=['          ^^^^^^^^^^^^^^^^^^^', '  File \"/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree/prolate_r4/c21_slabpart_mvt.py\", line 27, in extended', '    assert rh+zhi<1,(\"OPEN: extended point box needs a stronger radial bound\",rh+zhi)', '           ^^^^^^^^', \"AssertionError: ('OPEN: extended point box needs a stronger radial bound', 8192/8065)\"]",
+  "mesh_cells_observed": null,
+  "peak_RSS_KiB_sampled_lower": 7208,
+  "worker_seconds": 0.25148213980719447,
+  "is_cover": false
+}
