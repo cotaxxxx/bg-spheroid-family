@@ -1,0 +1,10 @@
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "numpy": "2.3.5"}
+{"lam": 5, "rho": 0, "z": 0, "H_energy": -0.02430312366535266, "H_chord": -0.024303123813384536, "difference": 1.4803187495249226e-10, "matched": true}
+{"lam": 5, "rho": 0.25, "z": 0.25, "H_energy": -0.052640036369363465, "H_chord": -0.05264003637110107, "difference": 1.7376031169469286e-12, "matched": true}
+{"lam": 5, "rho": 0.96875, "z": 0, "H_energy": -0.26090931954483193, "H_chord": -0.2609093198280339, "difference": 2.8320196188147406e-10, "matched": true}
+{"lam": 5, "rho": 0, "z": 0.9375, "H_energy": -0.32771090418100357, "H_chord": -0.32771090472908887, "difference": 5.480852993677843e-10, "matched": true}
+{"lam": 6, "rho": 0.5625, "z": 0.375, "H_energy": -0.17812287186582884, "H_chord": -0.17812287196753981, "difference": 1.0171097297728693e-10, "matched": true}
+{"lam": 8, "rho": 0.25, "z": 0.5, "H_energy": -0.18868192409475645, "H_chord": -0.18868192456096802, "difference": 4.662115693498947e-10, "matched": true}
+{"lam": 10, "rho": 0.25, "z": 0.75, "H_energy": -0.2281839990367492, "H_chord": -0.22818399859580032, "difference": 4.4094888851375913e-10, "matched": true}
+{"lam": 32, "rho": 0.5, "z": 0.25, "H_energy": -0.16930214564005533, "H_chord": -0.1693021459970326, "difference": 3.569772810685379e-10, "matched": true}
+{"matched": 8, "count": 8, "wall_seconds": 0.458}

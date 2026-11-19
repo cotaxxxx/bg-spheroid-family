@@ -1,0 +1,30 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "repository": "cotaxxxx/bg-spheroid-family",
+  "files": [
+    {
+      "commit": "8fd265f1cd58f0f1ccec0f0ab9894b23e18f097f",
+      "path": "runs/2026-11-19/D_PRO_L1_L2_CODEX_TAIL/CODEX_D_PRO_L1_L2_MATH_20261119.md",
+      "git_blob_sha": "bd176a0e5daf2fac895b9bafdd269f11f80e38e9",
+      "sha256": "f91d0df95b195238aa85039c8fa34edd851327c75a682a12a61e03cf426202e0"
+    },
+    {
+      "commit": "173492b6d85d01e5abb6fb5b1d34b308c988cc04",
+      "path": "runs/2026-11-19/D_PRO_L1_L2_CODEX_AUDIT_V48/CHAT_AUDIT_D_PRO_L1_L2_CODEX_V48.md",
+      "git_blob_sha": "592039420d95ed86a506d720b5d60758258f21b5",
+      "sha256": "28292cfd6c717656d5de6961a49ceef77a872e054b8f7412357216ac071b1e9d"
+    },
+    {
+      "commit": "fbe6e36c7c2ee77f3350639c3710453d35d741e0",
+      "path": "runs/2026-11-19/D_PRO_NONPOLAR_ASTRA_AUDIT_V45/CHAT_AUDIT_D_PRO_NONPOLAR_ASTRA_V45.md",
+      "git_blob_sha": "32350123ecb222891dfbe166efc204357713339f",
+      "sha256": "202a2ceb03a72296893669ebebc903832303dd98800f5d3217be00e30020d17e"
+    },
+    {
+      "commit": "afe9ed28e37609c8764d81985663bc5992e9e25e",
+      "path": "runs/2026-11-19/D_PRO_NONPOLAR_ASTRA_20261119/ASTRA_D_PRO_NONPOLAR_REPORT_20261119.md",
+      "git_blob_sha": "02c9cebd1fa077790e5529415838ac9d4b3229e5",
+      "sha256": "d7d67553263a06e292eca9f28cfdf45e9389e2272f4a55942babe96584e243af"
+    }
+  ]
+}
