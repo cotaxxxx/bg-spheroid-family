@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/GER2/plans/V52B_other_phases.py", line 58, in <module>
+    for r in pool.imap(A.cover, jobs):
+             ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 540, in _handle_tasks
+    put(task)
+    ~~~^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/connection.py", line 211, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.13/multiprocessing/reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle <function cover at 0x7f0a1fd0d800>: import of module 'A' failed

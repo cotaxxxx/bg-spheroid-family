@@ -1,0 +1,7 @@
+lambda = 21/50, t = 1/16 (point box), E_z bounds by ez_axis_bound:
+N 65536 refine 64 band 1/64 : [0.0016425, 0.0019965]  10 s
+N 65536 refine 256 band 1/64: [0.0016425, 0.0019965]  26 s
+N 65536 refine 64 band 1/4  : [0.0016528, 0.0019862]  91 s
+N 262144 refine 16 band 1/64: [0.0017752, 0.0018638]  26 s
+reference (mpmath 1-D) 0.001819
+B3 first pieces with lambda over [21/50, 337/800]: worst -0.0041, -0.0032 (V52B3_run_STOPPED.log)

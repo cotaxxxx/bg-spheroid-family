@@ -1,0 +1,2 @@
+{"leaf": "L21_50:b0_B3", "kind": "ez(mean-value)", "box": ["21/50", "337/800", "1/16", "3/32"], "sign": 1, "confirmed": false, "evals": 40, "extreme": -0.004062284777471923, "seconds": 228.5}
+{"leaf": "L21_50:b1_B3", "kind": "ez(mean-value)", "box": ["21/50", "337/800", "3/32", "1/8"], "sign": 1, "confirmed": false, "evals": 40, "extreme": -0.0032345986805439493, "seconds": 225.1}
