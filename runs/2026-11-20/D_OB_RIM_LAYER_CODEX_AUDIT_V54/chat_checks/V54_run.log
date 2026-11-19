@@ -1,0 +1,6 @@
+{"leaf": "H_rho_1/2", "comp": "y", "rho": "1/2", "z": "0", "sign": 1, "confirmed": true, "grid": "graded", "bound": 0.11987104667572467, "seconds": 37.3}
+{"leaf": "H_rho_15/16", "comp": "y", "rho": "15/16", "z": "0", "sign": 1, "confirmed": true, "grid": "graded", "bound": 0.03032548294418778, "seconds": 38.0}
+{"leaf": "H_rho_63/64", "comp": "y", "rho": "63/64", "z": "0", "sign": 1, "confirmed": true, "grid": "graded", "bound": 0.013852535820273742, "seconds": 38.3}
+{"leaf": "Ezz_1/2_1/4", "comp": "z", "rho": "1/2", "z": "1/4", "sign": -1, "confirmed": true, "grid": "graded", "bound": -0.1485796275254465, "seconds": 38.0}
+{"leaf": "Ezz_7/8_1/4", "comp": "z", "rho": "7/8", "z": "1/4", "sign": -1, "confirmed": true, "grid": "graded", "bound": -0.12609333998235045, "seconds": 40.0}
+{"leaf": "Ezz_31/32_1/16", "comp": "z", "rho": "31/32", "z": "1/16", "sign": -1, "confirmed": true, "grid": "graded", "bound": -0.11578781036795537, "seconds": 39.9}
