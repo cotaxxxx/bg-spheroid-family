@@ -1,0 +1,16 @@
+{
+  "armed": false,
+  "continuation_started": false,
+  "deployed_to_research_pc": false,
+  "local_preparation_tests": {
+    "budget_fixtures": 3,
+    "guard_fixtures": 23,
+    "lock_mechanism_fixtures": 4
+  },
+  "prepared_script_sha256": "5b08585003e23b34e0da019738daebc871f38a2fa3e9537727666c7ed55223f6",
+  "reason": "Judge DIG_INSTRUCTION_STOP_HEAVY_SLAB_20261119.md supersedes the continuation ruling 1d4271a.",
+  "scheduled_C21_automation_created": false,
+  "status": "CANCELLED_BEFORE_DEPLOYMENT",
+  "time_utc": "2026-11-19T10:30:29.173324+00:00",
+  "watch_process_started": false
+}

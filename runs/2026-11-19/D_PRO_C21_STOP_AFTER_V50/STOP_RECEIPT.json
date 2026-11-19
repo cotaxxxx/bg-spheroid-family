@@ -1,0 +1,77 @@
+{
+  "attempts": [],
+  "automatic_continuation": "NOT_INSTALLED; CANCELLED_BY_JUDGE_STOP_INSTRUCTION",
+  "boot_id": "7b90384a-824d-4eda-84ef-0f05b824984a",
+  "checkpoint_counts": {
+    "area_total_exact": "1",
+    "attempted_terminal_or_split_nodes": 2940,
+    "decided_area_exact": "559/2048",
+    "decided_count": 1118,
+    "pending_area_exact": "2977/4096",
+    "pending_unprocessed_count": 4798,
+    "tube_area_exact": "1/4096",
+    "tube_evaluated_count": 1
+  },
+  "checkpoint_cumulative_seconds_from_log": 85832.39634873607,
+  "checkpoint_hashes": {
+    "STATE.json": "7f6afdd86bbee2611b3a28c3b975fb69325987c50e1f1fcd3ad04ca2398146f9",
+    "SUMMARY.json": "3994a53d02de88c55171be180430613ec1ed299ebc7b6c217f6b371e220d53f1"
+  },
+  "checkpoint_session_elapsed_seconds_from_log": 85286.93,
+  "completed_batches": 245,
+  "inflight": 0,
+  "last_batch_log": "BATCH 245 processed 2940 decided 1118 tube 1 pending 4798 wall_s 85286.93",
+  "lock": {
+    "device": 47,
+    "inode": 25498,
+    "proc_locks_record": "39: FLOCK  ADVISORY  WRITE 1581407 00:2f:25498 0 EOF"
+  },
+  "method": "SIGSTOP suspension only; no termination signals",
+  "normal_session_finalization": false,
+  "original_exit_code": null,
+  "original_processes": {
+    "1581407": {
+      "pid": 1581407,
+      "start_ticks": 250927160,
+      "state": "S",
+      "system_ticks": 0,
+      "user_ticks": 0
+    },
+    "1581409": {
+      "pid": 1581409,
+      "start_ticks": 250927161,
+      "state": "S",
+      "system_ticks": 7979,
+      "user_ticks": 25282
+    }
+  },
+  "original_sessions_count": 1,
+  "original_state_modified_by_this_script": false,
+  "processes": {
+    "1581407": {
+      "pid": 1581407,
+      "start_ticks": 250927160,
+      "state": "T",
+      "system_ticks": 0,
+      "user_ticks": 0
+    },
+    "1581409": {
+      "pid": 1581409,
+      "start_ticks": 250927161,
+      "state": "T",
+      "system_ticks": 8014,
+      "user_ticks": 25398
+    }
+  },
+  "ram_program_counter_not_claimed": "Disk checkpoint committed; RAM may be before next dispatch.",
+  "script_sha256": "f62e2985cf16306df55da1a352550c934cc9eb1b99ebf1b9874ece9e71e9e22a",
+  "source_sha256": "bf111ee4672927d858afe3572e4d61c1c728818e3673b4ee89e441d9f211819e",
+  "state_cumulative_before_live_session_seconds": 545.4663487360813,
+  "status": "SUSPENDED_WITH_COMMITTED_CHECKPOINT",
+  "target_batch_at_least": 245,
+  "time": {
+    "jst": "2026-11-19T19:27:42.607207+09:00",
+    "utc": "2026-11-19T10:27:42.607207+00:00"
+  },
+  "worker_children": []
+}

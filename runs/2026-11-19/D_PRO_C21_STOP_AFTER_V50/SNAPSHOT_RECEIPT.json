@@ -1,0 +1,30 @@
+{
+  "H_positive_count": 0,
+  "archive_contains_uncommitted_tmp": false,
+  "archive_sha256": "580762e1658c33d1359936a52a3262cd5bad394857368afd779bc4e012964a00",
+  "branch": "research/d-pro-c21-stopped-v50-20261119",
+  "branch_base": "c86c10d4db81614256909ef0cdf1c98fa7240686",
+  "canonical_STATE_modified_by_this_work": false,
+  "checkpoint_batch": 245,
+  "created_utc": "2026-11-19T10:30:29.173379+00:00",
+  "main_modified_by_this_work": false,
+  "original_files_rewritten_by_archive_script": false,
+  "original_head": "6c206a22aefd07340d4e2df0974b6487bdc836a3",
+  "original_processes": [
+    {
+      "pid": 1581407,
+      "start_ticks": 250927160,
+      "state": "T"
+    },
+    {
+      "pid": 1581409,
+      "start_ticks": 250927161,
+      "state": "T"
+    }
+  ],
+  "original_worktree": "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/worktree",
+  "snapshot_directory": "/home/daybreak/D_PRO_C21_H_HEAVY_SLAB_20261118/stop_archive_worktree/runs/2026-11-19/D_PRO_C21_STOP_AFTER_V50",
+  "snapshot_files": 5906,
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "stop_instruction_sha256": "70891402e542d7c6844cf88e29b1d3a99154726520cc7f1c5dde880462a1daff"
+}
