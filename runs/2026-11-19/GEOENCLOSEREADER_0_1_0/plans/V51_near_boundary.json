@@ -1,0 +1,14 @@
+{
+  "plan": "V51 near-sphere/boundary re-check with GeoEncloseReader 0.1.0 (fixed before run)",
+  "target": "Codex D_PRO_NEAR_BOUNDARY a2d394b, final/*.tsv.gz",
+  "select": {
+    "E:H_positive": "all",
+    "E:radial_curvature_negative": "all",
+    "B:H_positive": "all",
+    "V:positive": {"weakest": 3, "random": 5},
+    "Z:positive": {"weakest": 3, "random": 2}
+  },
+  "seed": 51,
+  "ladder": {"ez": ["v51b", "fine"], "chord": ["v50", "fine"], "hb": ["v50", "fine"]},
+  "depth": 8
+}

@@ -1,0 +1,16 @@
+{"file": "B00.tsv.gz", "ok": true, "nodes": 1, "terminals": 1, "relative_volume": "1", "errors": []}
+{"file": "B01.tsv.gz", "ok": true, "nodes": 1, "terminals": 1, "relative_volume": "1", "errors": []}
+{"file": "B02.tsv.gz", "ok": true, "nodes": 1, "terminals": 1, "relative_volume": "1", "errors": []}
+{"file": "B03.tsv.gz", "ok": true, "nodes": 11, "terminals": 6, "relative_volume": "1", "errors": []}
+{"file": "E00.tsv.gz", "ok": true, "nodes": 5, "terminals": 3, "relative_volume": "1", "errors": []}
+{"file": "E01.tsv.gz", "ok": true, "nodes": 7, "terminals": 4, "relative_volume": "1", "errors": []}
+{"file": "E02.tsv.gz", "ok": true, "nodes": 7, "terminals": 4, "relative_volume": "1", "errors": []}
+{"file": "E03.tsv.gz", "ok": true, "nodes": 7, "terminals": 4, "relative_volume": "1", "errors": []}
+{"file": "V00.tsv.gz", "ok": true, "nodes": 44483, "terminals": 22242, "relative_volume": "1", "errors": []}
+{"file": "V01.tsv.gz", "ok": true, "nodes": 7327, "terminals": 3664, "relative_volume": "1", "errors": []}
+{"file": "V02.tsv.gz", "ok": true, "nodes": 3431, "terminals": 1716, "relative_volume": "1", "errors": []}
+{"file": "V03.tsv.gz", "ok": true, "nodes": 2319, "terminals": 1160, "relative_volume": "1", "errors": []}
+{"file": "Z00.tsv.gz", "ok": true, "nodes": 95, "terminals": 48, "relative_volume": "1", "errors": []}
+{"file": "Z01.tsv.gz", "ok": true, "nodes": 29, "terminals": 15, "relative_volume": "1", "errors": []}
+{"file": "Z02.tsv.gz", "ok": true, "nodes": 21, "terminals": 11, "relative_volume": "1", "errors": []}
+{"file": "Z03.tsv.gz", "ok": true, "nodes": 29, "terminals": 15, "relative_volume": "1", "errors": []}
