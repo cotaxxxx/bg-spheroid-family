@@ -1,0 +1,2 @@
+{"leaf": "leaves/28H.tsv:x1101", "grid": "v50", "depth": 12, "confirmed": true, "evals": 31, "extreme": 0.0007705909168085005, "seconds": 177.2}
+{"leaf": "mixed/09H.tsv:x10101000110101", "grid": "graded", "depth": 7, "confirmed": true, "evals": 255, "extreme": 0.0004970071156429693, "seconds": 5672.4}

@@ -1,0 +1,193 @@
+mixed identical
+recovered identical
+salvage identical
+rim.tsv identical
+pole.tsv identical
+bracket.log identical
+{"file": "leaves/04H.tsv", "roots": [131072, 163840, 0, 1048576, 0, 1048576], "counts": {"open": 856, "empty": 18}, "sign_margin_units": null}
+{"file": "leaves/04V.tsv", "roots": [131072, 163840, 0, 0, 131072, 1048576], "counts": {"sign": 19}, "sign_margin_units": 3222139}
+{"file": "leaves/04Z.tsv", "roots": [131072, 163840, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 12713403880}
+{"file": "leaves/05H.tsv", "roots": [163840, 196608, 0, 1048576, 0, 1048576], "counts": {"open": 856, "empty": 18}, "sign_margin_units": null}
+{"file": "leaves/05V.tsv", "roots": [163840, 196608, 0, 0, 131072, 1048576], "counts": {"sign": 22}, "sign_margin_units": 144976749}
+{"file": "leaves/05Z.tsv", "roots": [163840, 196608, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 12782364998}
+{"file": "leaves/06H.tsv", "roots": [196608, 229376, 0, 1048576, 0, 1048576], "counts": {"sign": 199, "open": 617, "empty": 18}, "sign_margin_units": 54274322}
+{"file": "leaves/06V.tsv", "roots": [196608, 229376, 0, 0, 131072, 1048576], "counts": {"sign": 27}, "sign_margin_units": 66815555}
+{"file": "leaves/06Z.tsv", "roots": [196608, 229376, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 11676002536}
+{"file": "leaves/07H.tsv", "roots": [229376, 262144, 0, 1048576, 0, 1048576], "counts": {"sign": 252, "open": 310, "empty": 14}, "sign_margin_units": 17269688}
+{"file": "leaves/07V.tsv", "roots": [229376, 262144, 0, 0, 131072, 1048576], "counts": {"sign": 35}, "sign_margin_units": 32553662}
+{"file": "leaves/07Z.tsv", "roots": [229376, 262144, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 9642788018}
+{"file": "leaves/08H.tsv", "roots": [262144, 294912, 0, 1048576, 0, 1048576], "counts": {"sign": 236, "open": 180, "empty": 11}, "sign_margin_units": 147402604}
+{"file": "leaves/08V.tsv", "roots": [262144, 294912, 0, 0, 131072, 1048576], "counts": {"sign": 53}, "sign_margin_units": 43003334}
+{"file": "leaves/08Z.tsv", "roots": [262144, 294912, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 6852481292}
+{"file": "leaves/09H.tsv", "roots": [294912, 327680, 0, 1048576, 0, 1048576], "counts": {"sign": 204, "open": 110, "empty": 9}, "sign_margin_units": 23970162}
+{"file": "leaves/09V.tsv", "roots": [294912, 327680, 0, 0, 131072, 1048576], "counts": {"sign": 95}, "sign_margin_units": 31040954}
+{"file": "leaves/09Z.tsv", "roots": [294912, 327680, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 3435377854}
+{"file": "leaves/10H.tsv", "roots": [327680, 360448, 0, 1048576, 0, 1048576], "counts": {"sign": 153, "open": 68, "empty": 5}, "sign_margin_units": 10390084}
+{"file": "leaves/10V.tsv", "roots": [327680, 360448, 0, 0, 131072, 1048576], "counts": {"sign": 182}, "sign_margin_units": 14449854}
+{"file": "leaves/10Z.tsv", "roots": [327680, 360448, 0, 0, 0, 131072], "counts": {"sign": 2}, "sign_margin_units": 731067187}
+{"file": "leaves/11H.tsv", "roots": [360448, 393216, 0, 1048576, 0, 1048576], "counts": {"sign": 118, "open": 41, "empty": 5}, "sign_margin_units": 32699974}
+{"file": "leaves/11V.tsv", "roots": [360448, 393216, 0, 0, 131072, 1048576], "counts": {"sign": 475}, "sign_margin_units": 2537080}
+{"file": "leaves/11Z.tsv", "roots": [360448, 393216, 0, 0, 0, 131072], "counts": {"sign": 7}, "sign_margin_units": 4631214}
+{"file": "leaves/12H.tsv", "roots": [393216, 425984, 0, 1048576, 0, 1048576], "counts": {"sign": 94, "open": 25, "empty": 5}, "sign_margin_units": 51341794}
+{"file": "leaves/12V.tsv", "roots": [393216, 425984, 0, 0, 131072, 1048576], "counts": {"sign": 975, "open": 774}, "sign_margin_units": 350022}
+{"file": "leaves/12Z.tsv", "roots": [393216, 425984, 0, 0, 0, 131072], "counts": {"sign": 166}, "sign_margin_units": 7823094}
+{"file": "leaves/13H.tsv", "roots": [425984, 458752, 0, 1048576, 0, 1048576], "counts": {"sign": 73, "open": 12, "empty": 4}, "sign_margin_units": 143262224}
+{"file": "leaves/14H.tsv", "roots": [458752, 491520, 0, 1048576, 0, 1048576], "counts": {"sign": 61, "open": 9, "empty": 3}, "sign_margin_units": 48243750}
+{"file": "leaves/15H.tsv", "roots": [491520, 524288, 0, 1048576, 0, 1048576], "counts": {"sign": 56, "open": 1, "empty": 2}, "sign_margin_units": 369049357}
+{"file": "leaves/16H.tsv", "roots": [524288, 557056, 0, 1048576, 0, 1048576], "counts": {"sign": 45, "empty": 2}, "sign_margin_units": 484305377}
+{"file": "leaves/17H.tsv", "roots": [557056, 589824, 0, 1048576, 0, 1048576], "counts": {"sign": 42, "empty": 2}, "sign_margin_units": 1229433291}
+{"file": "leaves/18H.tsv", "roots": [589824, 622592, 0, 1048576, 0, 1048576], "counts": {"sign": 34, "empty": 2}, "sign_margin_units": 45968061}
+{"file": "leaves/19H.tsv", "roots": [622592, 655360, 0, 1048576, 0, 1048576], "counts": {"sign": 30, "empty": 2}, "sign_margin_units": 83167035}
+{"file": "leaves/20H.tsv", "roots": [655360, 688128, 0, 1048576, 0, 1048576], "counts": {"sign": 29, "empty": 2}, "sign_margin_units": 284978440}
+{"file": "leaves/20V.tsv", "roots": [655360, 688128, 0, 0, 131072, 1048576], "counts": {"sign": 148, "open": 101}, "sign_margin_units": 359587}
+{"file": "leaves/20Z.tsv", "roots": [655360, 688128, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 28558559201}
+{"file": "leaves/21H.tsv", "roots": [688128, 720896, 0, 1048576, 0, 1048576], "counts": {"sign": 30, "empty": 2}, "sign_margin_units": 1845969997}
+{"file": "leaves/21V.tsv", "roots": [688128, 720896, 0, 0, 131072, 1048576], "counts": {"sign": 75}, "sign_margin_units": 28921220}
+{"file": "leaves/21Z.tsv", "roots": [688128, 720896, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 34030169745}
+{"file": "leaves/22H.tsv", "roots": [720896, 753664, 0, 1048576, 0, 1048576], "counts": {"sign": 28, "empty": 2}, "sign_margin_units": 244800623}
+{"file": "leaves/22V.tsv", "roots": [720896, 753664, 0, 0, 131072, 1048576], "counts": {"sign": 39}, "sign_margin_units": 45143182}
+{"file": "leaves/22Z.tsv", "roots": [720896, 753664, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 39418196911}
+{"file": "leaves/23H.tsv", "roots": [753664, 786432, 0, 1048576, 0, 1048576], "counts": {"sign": 28, "empty": 2}, "sign_margin_units": 639236494}
+{"file": "leaves/23V.tsv", "roots": [753664, 786432, 0, 0, 131072, 1048576], "counts": {"sign": 29}, "sign_margin_units": 73632999}
+{"file": "leaves/23Z.tsv", "roots": [753664, 786432, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 44700397403}
+{"file": "leaves/24H.tsv", "roots": [786432, 819200, 0, 1048576, 0, 1048576], "counts": {"sign": 27, "empty": 2}, "sign_margin_units": 123562735}
+{"file": "leaves/24V.tsv", "roots": [786432, 819200, 0, 0, 131072, 1048576], "counts": {"sign": 25}, "sign_margin_units": 357113219}
+{"file": "leaves/24Z.tsv", "roots": [786432, 819200, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 49859893521}
+{"file": "leaves/25H.tsv", "roots": [819200, 851968, 0, 1048576, 0, 1048576], "counts": {"sign": 25, "empty": 2}, "sign_margin_units": 16249769}
+{"file": "leaves/25V.tsv", "roots": [819200, 851968, 0, 0, 131072, 1048576], "counts": {"sign": 23}, "sign_margin_units": 129539510}
+{"file": "leaves/25Z.tsv", "roots": [819200, 851968, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 54882985820}
+{"file": "leaves/26H.tsv", "roots": [851968, 884736, 0, 1048576, 0, 1048576], "counts": {"sign": 23, "empty": 2}, "sign_margin_units": 183849925}
+{"file": "leaves/26V.tsv", "roots": [851968, 884736, 0, 0, 131072, 1048576], "counts": {"sign": 20}, "sign_margin_units": 79151092}
+{"file": "leaves/26Z.tsv", "roots": [851968, 884736, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 59758174545}
+{"file": "leaves/27H.tsv", "roots": [884736, 917504, 0, 1048576, 0, 1048576], "counts": {"sign": 22, "empty": 2}, "sign_margin_units": 25413582}
+{"file": "leaves/27V.tsv", "roots": [884736, 917504, 0, 0, 131072, 1048576], "counts": {"sign": 15}, "sign_margin_units": 308904662}
+{"file": "leaves/27Z.tsv", "roots": [884736, 917504, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 64468079930}
+{"file": "leaves/28H.tsv", "roots": [917504, 950272, 0, 1048576, 0, 1048576], "counts": {"sign": 21, "empty": 2}, "sign_margin_units": 68412131}
+{"file": "leaves/28V.tsv", "roots": [917504, 950272, 0, 0, 131072, 1048576], "counts": {"sign": 14}, "sign_margin_units": 93444224}
+{"file": "leaves/28Z.tsv", "roots": [917504, 950272, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 68992893900}
+{"file": "leaves/29H.tsv", "roots": [950272, 983040, 0, 1048576, 0, 1048576], "counts": {"sign": 22, "empty": 2}, "sign_margin_units": 218559872}
+{"file": "leaves/29V.tsv", "roots": [950272, 983040, 0, 0, 131072, 1048576], "counts": {"sign": 13}, "sign_margin_units": 326644226}
+{"file": "leaves/29Z.tsv", "roots": [950272, 983040, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 73307265240}
+{"file": "leaves/30H.tsv", "roots": [983040, 1015808, 0, 1048576, 0, 1048576], "counts": {"sign": 25, "empty": 2}, "sign_margin_units": 113769731}
+{"file": "leaves/30V.tsv", "roots": [983040, 1015808, 0, 0, 131072, 1048576], "counts": {"sign": 12}, "sign_margin_units": 731803828}
+{"file": "leaves/30Z.tsv", "roots": [983040, 1015808, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 77350202806}
+{"file": "leaves/31H.tsv", "roots": [1015808, 1048576, 0, 1048576, 0, 1048576], "counts": {"sign": 30, "empty": 3}, "sign_margin_units": 11239578}
+{"file": "leaves/31V.tsv", "roots": [1015808, 1048576, 0, 0, 131072, 1048576], "counts": {"sign": 12}, "sign_margin_units": 1054136802}
+{"file": "leaves/31Z.tsv", "roots": [1015808, 1048576, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 81070809715}
+{"file": "finer/32H.tsv", "roots": [262144, 270336, 0, 1048576, 0, 1048576], "counts": {"sign": 556, "empty": 18}, "sign_margin_units": 30565517}
+{"file": "finer/32V.tsv", "roots": [262144, 270336, 0, 0, 131072, 1048576], "counts": {"sign": 13}, "sign_margin_units": 58477816}
+{"file": "finer/32Z.tsv", "roots": [262144, 270336, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 11411160128}
+{"file": "finer/33H.tsv", "roots": [270336, 278528, 0, 1048576, 0, 1048576], "counts": {"sign": 486, "empty": 16}, "sign_margin_units": 43989385}
+{"file": "finer/33V.tsv", "roots": [270336, 278528, 0, 0, 131072, 1048576], "counts": {"sign": 15}, "sign_margin_units": 106460273}
+{"file": "finer/33Z.tsv", "roots": [270336, 278528, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 10661226108}
+{"file": "finer/34H.tsv", "roots": [278528, 286720, 0, 1048576, 0, 1048576], "counts": {"sign": 418, "empty": 15}, "sign_margin_units": 59567651}
+{"file": "finer/34V.tsv", "roots": [278528, 286720, 0, 0, 131072, 1048576], "counts": {"sign": 17}, "sign_margin_units": 231544314}
+{"file": "finer/34Z.tsv", "roots": [278528, 286720, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 9872950047}
+{"file": "finer/35H.tsv", "roots": [286720, 294912, 0, 1048576, 0, 1048576], "counts": {"sign": 364, "empty": 13}, "sign_margin_units": 134663854}
+{"file": "finer/35V.tsv", "roots": [286720, 294912, 0, 0, 131072, 1048576], "counts": {"sign": 18}, "sign_margin_units": 87989154}
+{"file": "finer/35Z.tsv", "roots": [286720, 294912, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 9048198463}
+{"file": "finer/36H.tsv", "roots": [294912, 303104, 0, 1048576, 0, 1048576], "counts": {"sign": 315, "empty": 10}, "sign_margin_units": 1546408}
+{"file": "finer/36V.tsv", "roots": [294912, 303104, 0, 0, 131072, 1048576], "counts": {"sign": 22}, "sign_margin_units": 31899969}
+{"file": "finer/36Z.tsv", "roots": [294912, 303104, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 8188615045}
+{"file": "finer/37H.tsv", "roots": [303104, 311296, 0, 1048576, 0, 1048576], "counts": {"sign": 270, "empty": 7}, "sign_margin_units": 11918287}
+{"file": "finer/37V.tsv", "roots": [303104, 311296, 0, 0, 131072, 1048576], "counts": {"sign": 25}, "sign_margin_units": 118009661}
+{"file": "finer/37Z.tsv", "roots": [303104, 311296, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 7295623765}
+{"file": "finer/38H.tsv", "roots": [311296, 319488, 0, 1048576, 0, 1048576], "counts": {"sign": 231, "empty": 7}, "sign_margin_units": 173945}
+{"file": "finer/38V.tsv", "roots": [311296, 319488, 0, 0, 131072, 1048576], "counts": {"sign": 28}, "sign_margin_units": 31040954}
+{"file": "finer/38Z.tsv", "roots": [311296, 319488, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 6371043308}
+{"file": "finer/39H.tsv", "roots": [319488, 327680, 0, 1048576, 0, 1048576], "counts": {"sign": 205, "empty": 5}, "sign_margin_units": 81084639}
+{"file": "finer/39V.tsv", "roots": [319488, 327680, 0, 0, 131072, 1048576], "counts": {"sign": 31}, "sign_margin_units": 30165035}
+{"file": "finer/39Z.tsv", "roots": [319488, 327680, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 5416201813}
+{"file": "finer/40H.tsv", "roots": [327680, 335872, 0, 1048576, 0, 1048576], "counts": {"sign": 176, "empty": 5}, "sign_margin_units": 59607807}
+{"file": "finer/40V.tsv", "roots": [327680, 335872, 0, 0, 131072, 1048576], "counts": {"sign": 41}, "sign_margin_units": 58044729}
+{"file": "finer/40Z.tsv", "roots": [327680, 335872, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 4432504939}
+{"file": "finer/41H.tsv", "roots": [335872, 344064, 0, 1048576, 0, 1048576], "counts": {"sign": 152, "empty": 5}, "sign_margin_units": 24801518}
+{"file": "finer/41V.tsv", "roots": [335872, 344064, 0, 0, 131072, 1048576], "counts": {"sign": 49}, "sign_margin_units": 10809358}
+{"file": "finer/41Z.tsv", "roots": [335872, 344064, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 3421207397}
+{"file": "finer/42H.tsv", "roots": [344064, 352256, 0, 1048576, 0, 1048576], "counts": {"sign": 136, "empty": 5}, "sign_margin_units": 76108086}
+{"file": "finer/42V.tsv", "roots": [344064, 352256, 0, 0, 131072, 1048576], "counts": {"sign": 61}, "sign_margin_units": 2489895}
+{"file": "finer/42Z.tsv", "roots": [344064, 352256, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 2383500185}
+{"file": "finer/43H.tsv", "roots": [352256, 360448, 0, 1048576, 0, 1048576], "counts": {"sign": 121, "empty": 5}, "sign_margin_units": 55893726}
+{"file": "finer/43V.tsv", "roots": [352256, 360448, 0, 0, 131072, 1048576], "counts": {"sign": 82}, "sign_margin_units": 2256945}
+{"file": "finer/43Z.tsv", "roots": [352256, 360448, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 1320464256}
+{"file": "finer/44H.tsv", "roots": [360448, 368640, 0, 1048576, 0, 1048576], "counts": {"sign": 107, "empty": 5}, "sign_margin_units": 65465720}
+{"file": "finer/44V.tsv", "roots": [360448, 368640, 0, 0, 131072, 1048576], "counts": {"sign": 107}, "sign_margin_units": 2305786}
+{"file": "finer/44Z.tsv", "roots": [360448, 368640, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 233208822}
+{"file": "finer/45H.tsv", "roots": [368640, 376832, 0, 1048576, 0, 1048576], "counts": {"sign": 93, "empty": 4}, "sign_margin_units": 60485322}
+{"file": "finer/45V.tsv", "roots": [368640, 376832, 0, 0, 131072, 1048576], "counts": {"sign": 137}, "sign_margin_units": 3429911}
+{"file": "finer/45Z.tsv", "roots": [368640, 376832, 0, 0, 0, 131072], "counts": {"sign": 2}, "sign_margin_units": 2245669480}
+{"file": "finer/46H.tsv", "roots": [376832, 385024, 0, 1048576, 0, 1048576], "counts": {"sign": 87, "empty": 4}, "sign_margin_units": 1068196}
+{"file": "finer/46V.tsv", "roots": [376832, 385024, 0, 0, 131072, 1048576], "counts": {"sign": 172}, "sign_margin_units": 2537080}
+{"file": "finer/46Z.tsv", "roots": [376832, 385024, 0, 0, 0, 131072], "counts": {"sign": 2}, "sign_margin_units": 1084756516}
+{"file": "finer/47H.tsv", "roots": [385024, 393216, 0, 1048576, 0, 1048576], "counts": {"sign": 81, "empty": 3}, "sign_margin_units": 225155450}
+{"file": "finer/47V.tsv", "roots": [385024, 393216, 0, 0, 131072, 1048576], "counts": {"sign": 237}, "sign_margin_units": 7350489}
+{"file": "finer/47Z.tsv", "roots": [385024, 393216, 0, 0, 0, 131072], "counts": {"sign": 3}, "sign_margin_units": 4631214}
+{"file": "finer/48H.tsv", "roots": [393216, 399769, 0, 1048576, 0, 1048576], "counts": {"sign": 70, "empty": 3}, "sign_margin_units": 167953540}
+{"file": "finer/48V.tsv", "roots": [393216, 399769, 0, 0, 131072, 1048576], "counts": {"sign": 275}, "sign_margin_units": 1754185}
+{"file": "finer/48Z.tsv", "roots": [393216, 399769, 0, 0, 0, 131072], "counts": {"sign": 4}, "sign_margin_units": 703949011}
+{"file": "finer/49H.tsv", "roots": [399769, 406323, 0, 1048576, 0, 1048576], "counts": {"sign": 67, "empty": 3}, "sign_margin_units": 216796869}
+{"file": "finer/49V.tsv", "roots": [399769, 406323, 0, 0, 131072, 1048576], "counts": {"sign": 415}, "sign_margin_units": 24422}
+{"file": "finer/49Z.tsv", "roots": [399769, 406323, 0, 0, 0, 131072], "counts": {"sign": 7}, "sign_margin_units": 67940719}
+{"file": "finer/50H.tsv", "roots": [406323, 412877, 0, 1048576, 0, 1048576], "counts": {"sign": 62, "empty": 3}, "sign_margin_units": 205808298}
+{"file": "finer/50V.tsv", "roots": [406323, 412877, 0, 0, 131072, 1048576], "counts": {"sign": 789}, "sign_margin_units": 329170}
+{"file": "finer/50Z.tsv", "roots": [406323, 412877, 0, 0, 0, 131072], "counts": {"sign": 15}, "sign_margin_units": 95483366}
+{"file": "finer/51H.tsv", "roots": [412877, 419431, 0, 1048576, 0, 1048576], "counts": {"sign": 61, "empty": 3}, "sign_margin_units": 159070120}
+{"file": "finer/51V.tsv", "roots": [412877, 419431, 0, 0, 131072, 1048576], "counts": {"sign": 3147}, "sign_margin_units": 16924}
+{"file": "finer/51Z.tsv", "roots": [412877, 419431, 0, 0, 0, 131072], "counts": {"sign": 20}, "sign_margin_units": 75406039}
+{"file": "low/04V.tsv", "roots": [32768, 40960, 0, 0, 131072, 1048576], "counts": {"sign": 21}, "sign_margin_units": 251765}
+{"file": "low/04Z.tsv", "roots": [32768, 40960, 0, 0, 0, 131072], "counts": {"sign": 8}, "sign_margin_units": 406689807}
+{"file": "low/05V.tsv", "roots": [40960, 49152, 0, 0, 131072, 1048576], "counts": {"sign": 13}, "sign_margin_units": 15293868}
+{"file": "low/05Z.tsv", "roots": [40960, 49152, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 2346653407}
+{"file": "low/06V.tsv", "roots": [49152, 57344, 0, 0, 131072, 1048576], "counts": {"sign": 10}, "sign_margin_units": 12448277}
+{"file": "low/06Z.tsv", "roots": [49152, 57344, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 6000269388}
+{"file": "low/07V.tsv", "roots": [57344, 65536, 0, 0, 131072, 1048576], "counts": {"sign": 9}, "sign_margin_units": 264902808}
+{"file": "low/07Z.tsv", "roots": [57344, 65536, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 8422621927}
+{"file": "low/08V.tsv", "roots": [65536, 73728, 0, 0, 131072, 1048576], "counts": {"sign": 8}, "sign_margin_units": 84511687}
+{"file": "low/08Z.tsv", "roots": [65536, 73728, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 10207544482}
+{"file": "low/09V.tsv", "roots": [73728, 81920, 0, 0, 131072, 1048576], "counts": {"sign": 7}, "sign_margin_units": 110049165}
+{"file": "low/09Z.tsv", "roots": [73728, 81920, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 11606583071}
+{"file": "low/10V.tsv", "roots": [81920, 90112, 0, 0, 131072, 1048576], "counts": {"sign": 7}, "sign_margin_units": 344217529}
+{"file": "low/10Z.tsv", "roots": [81920, 90112, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 12741225271}
+{"file": "low/11V.tsv", "roots": [90112, 98304, 0, 0, 131072, 1048576], "counts": {"sign": 6}, "sign_margin_units": 2280223}
+{"file": "low/11Z.tsv", "roots": [90112, 98304, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 13673889529}
+{"file": "low/12V.tsv", "roots": [98304, 106496, 0, 0, 131072, 1048576], "counts": {"sign": 6}, "sign_margin_units": 106216563}
+{"file": "low/12Z.tsv", "roots": [98304, 106496, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 14442618480}
+{"file": "low/13V.tsv", "roots": [106496, 114688, 0, 0, 131072, 1048576], "counts": {"sign": 6}, "sign_margin_units": 191346406}
+{"file": "low/13Z.tsv", "roots": [106496, 114688, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 15074873892}
+{"file": "low/14V.tsv", "roots": [114688, 122880, 0, 0, 131072, 1048576], "counts": {"sign": 5}, "sign_margin_units": 10547718}
+{"file": "low/14Z.tsv", "roots": [114688, 122880, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 15587025184}
+{"file": "low/15V.tsv", "roots": [122880, 131072, 0, 0, 131072, 1048576], "counts": {"sign": 5}, "sign_margin_units": 27110441}
+{"file": "low/15Z.tsv", "roots": [122880, 131072, 0, 0, 0, 131072], "counts": {"sign": 1}, "sign_margin_units": 15990475612}
+{"file": "low/16H.tsv", "roots": [131072, 139264, 0, 1048576, 0, 1048576], "counts": {"sign": 3571, "empty": 49}, "sign_margin_units": 468984}
+{"file": "low/17H.tsv", "roots": [139264, 147456, 0, 1048576, 0, 1048576], "counts": {"sign": 2814, "empty": 35}, "sign_margin_units": 1326582}
+{"file": "low/18H.tsv", "roots": [147456, 155648, 0, 1048576, 0, 1048576], "counts": {"sign": 2233, "empty": 34}, "sign_margin_units": 926931}
+{"file": "low/19H.tsv", "roots": [155648, 163840, 0, 1048576, 0, 1048576], "counts": {"sign": 1766, "empty": 30}, "sign_margin_units": 939729}
+{"file": "low/20H.tsv", "roots": [163840, 172032, 0, 1048576, 0, 1048576], "counts": {"sign": 1443, "empty": 27}, "sign_margin_units": 5107505}
+{"file": "low/21H.tsv", "roots": [172032, 180224, 0, 1048576, 0, 1048576], "counts": {"sign": 1198, "empty": 23}, "sign_margin_units": 10660108}
+{"file": "low/22H.tsv", "roots": [180224, 188416, 0, 1048576, 0, 1048576], "counts": {"sign": 994, "empty": 20}, "sign_margin_units": 5588828}
+{"file": "low/23H.tsv", "roots": [188416, 196608, 0, 1048576, 0, 1048576], "counts": {"sign": 815, "empty": 20}, "sign_margin_units": 3726090}
+{"file": "low/24H.tsv", "roots": [196608, 204800, 0, 1048576, 0, 1048576], "counts": {"sign": 676, "empty": 19}, "sign_margin_units": 742852}
+{"file": "low/25H.tsv", "roots": [204800, 212992, 0, 1048576, 0, 1048576], "counts": {"sign": 576, "empty": 15}, "sign_margin_units": 24261789}
+{"file": "low/26H.tsv", "roots": [212992, 221184, 0, 1048576, 0, 1048576], "counts": {"sign": 502, "empty": 15}, "sign_margin_units": 5146082}
+{"file": "low/27H.tsv", "roots": [221184, 229376, 0, 1048576, 0, 1048576], "counts": {"sign": 438, "empty": 12}, "sign_margin_units": 561948}
+{"file": "low/28H.tsv", "roots": [229376, 237568, 0, 1048576, 0, 1048576], "counts": {"sign": 392, "empty": 11}, "sign_margin_units": 1450826}
+{"file": "low/29H.tsv", "roots": [237568, 245760, 0, 1048576, 0, 1048576], "counts": {"sign": 350, "empty": 8}, "sign_margin_units": 76607901}
+{"file": "low/30H.tsv", "roots": [245760, 253952, 0, 1048576, 0, 1048576], "counts": {"sign": 314, "empty": 7}, "sign_margin_units": 84231258}
+{"file": "low/31H.tsv", "roots": [253952, 262144, 0, 1048576, 0, 1048576], "counts": {"sign": 283, "empty": 6}, "sign_margin_units": 91135754}
+{"file": "window/48H.tsv", "roots": [393216, 401408, 0, 1048576, 0, 1048576], "counts": {"sign": 57, "empty": 3}, "sign_margin_units": 84721653}
+{"file": "window/49H.tsv", "roots": [401408, 409600, 0, 1048576, 0, 1048576], "counts": {"sign": 53, "empty": 3}, "sign_margin_units": 148288649}
+{"file": "window/50H.tsv", "roots": [409600, 417792, 0, 1048576, 0, 1048576], "counts": {"sign": 50, "empty": 3}, "sign_margin_units": 45302790}
+{"file": "window/51H.tsv", "roots": [417792, 425984, 0, 1048576, 0, 1048576], "counts": {"sign": 49, "empty": 3}, "sign_margin_units": 658723661}
+{"file": "window/52H.tsv", "roots": [425984, 434176, 0, 1048576, 0, 1048576], "counts": {"sign": 45, "empty": 2}, "sign_margin_units": 26826990}
+{"file": "window/53H.tsv", "roots": [434176, 442368, 0, 1048576, 0, 1048576], "counts": {"sign": 44, "empty": 2}, "sign_margin_units": 291052468}
+{"file": "window/54H.tsv", "roots": [442368, 450560, 0, 1048576, 0, 1048576], "counts": {"sign": 42, "empty": 2}, "sign_margin_units": 57896306}
+{"file": "window/55H.tsv", "roots": [450560, 458752, 0, 1048576, 0, 1048576], "counts": {"sign": 42, "empty": 2}, "sign_margin_units": 1239134987}
+{"file": "window/56H.tsv", "roots": [458752, 466944, 0, 1048576, 0, 1048576], "counts": {"sign": 39, "empty": 2}, "sign_margin_units": 242552442}
+{"file": "window/57H.tsv", "roots": [466944, 475136, 0, 1048576, 0, 1048576], "counts": {"sign": 38, "empty": 2}, "sign_margin_units": 558559191}
+{"file": "window/58H.tsv", "roots": [475136, 483328, 0, 1048576, 0, 1048576], "counts": {"sign": 37, "empty": 2}, "sign_margin_units": 469301948}
+{"file": "window/59H.tsv", "roots": [483328, 491520, 0, 1048576, 0, 1048576], "counts": {"sign": 34, "empty": 2}, "sign_margin_units": 152616510}
+{"file": "window/60H.tsv", "roots": [491520, 499712, 0, 1048576, 0, 1048576], "counts": {"sign": 32, "empty": 2}, "sign_margin_units": 191406906}
+{"file": "window/61H.tsv", "roots": [499712, 507904, 0, 1048576, 0, 1048576], "counts": {"sign": 31, "empty": 2}, "sign_margin_units": 508624631}
+{"file": "window/62H.tsv", "roots": [507904, 516096, 0, 1048576, 0, 1048576], "counts": {"sign": 31, "empty": 2}, "sign_margin_units": 1143327270}
+{"file": "window/63H.tsv", "roots": [516096, 524288, 0, 1048576, 0, 1048576], "counts": {"sign": 31, "empty": 2}, "sign_margin_units": 1582482159}
+checker OK
