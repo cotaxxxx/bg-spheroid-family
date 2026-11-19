@@ -1,0 +1,108 @@
+{
+  "classification": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "plan_sha256": "0fb1fbf4e1cfbd77bfb860cb5825217fcc1b7b0975011e978908e1f628cbea86",
+  "math_pre_run_sha256": "9373ac07c721c99b1ffa2b683d9f560e4fb1cea0dad124054b8eb14ef8cfa7f8",
+  "status": "RECORD_FORMAT_CHECKS_ONLY",
+  "scope": "epsilon_zero_inner_kernel_at_rho=1/2,z=0",
+  "all_four_records_internally_consistent": true,
+  "axis_rational_symmetry_checks": [
+    {
+      "mu": "1/4",
+      "z": "1/2",
+      "eps": "1/5",
+      "checks": {
+        "k": true,
+        "d2": true,
+        "B": true
+      }
+    },
+    {
+      "mu": "3/4",
+      "z": "1/2",
+      "eps": "1/5",
+      "checks": {
+        "k": true,
+        "d2": true,
+        "B": true
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "t": 8,
+      "Kbar": [
+        -0.33761246201057027,
+        -0.3262997003900683
+      ],
+      "rbar": [
+        0.05652664137612226,
+        0.058780724848630034
+      ],
+      "t_squared_rbar": [
+        3.6177050480718247,
+        3.761966390312322
+      ],
+      "rbar_contains_zero": false,
+      "abs_residual_below_abs_raw": true,
+      "residual_over_raw_worst_case": 0.18014336138942766,
+      "wall_s": 0.008711708709597588
+    },
+    {
+      "t": 16,
+      "Kbar": [
+        -0.18566533494718984,
+        -0.17973195450154977
+      ],
+      "rbar": [
+        0.012973391148560266,
+        0.01350647296433476
+      ],
+      "t_squared_rbar": [
+        3.321188134031428,
+        3.4576570788696985
+      ],
+      "rbar_contains_zero": false,
+      "abs_residual_below_abs_raw": true,
+      "residual_over_raw_worst_case": 0.07514786673183536,
+      "wall_s": 0.008552529849112034
+    },
+    {
+      "t": 32,
+      "Kbar": [
+        -0.09649948410269833,
+        -0.09346623293577257
+      ],
+      "rbar": [
+        0.003065393454029493,
+        0.0031939961653859998
+      ],
+      "t_squared_rbar": [
+        3.1389628969262007,
+        3.2706520733552638
+      ],
+      "rbar_contains_zero": false,
+      "abs_residual_below_abs_raw": true,
+      "residual_over_raw_worst_case": 0.03417272810792349,
+      "wall_s": 0.008622420020401478
+    },
+    {
+      "t": 64,
+      "Kbar": [
+        -0.049082615065132985,
+        -0.04754990743255547
+      ],
+      "rbar": [
+        0.0007422089209824902,
+        0.0007737364571624552
+      ],
+      "t_squared_rbar": [
+        3.04008774034428,
+        3.1692245285374163
+      ],
+      "rbar_contains_zero": false,
+      "abs_residual_below_abs_raw": true,
+      "residual_over_raw_worst_case": 0.016272091765055875,
+      "wall_s": 0.008638049941509962
+    }
+  ]
+}
