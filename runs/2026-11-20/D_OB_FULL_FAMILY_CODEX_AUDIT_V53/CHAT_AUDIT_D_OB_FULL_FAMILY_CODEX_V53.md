@@ -46,7 +46,7 @@
 
 - **一致したもの：** mixed、recovered、salvage の木、rim.tsv、pole.tsv、bracket.log（極の根の囲い）。どれも原本と完全に一致した。
 - **checker.py：** 186 本の木（leaves、finer、low、window）すべてで通った。
-- **optional_check.py と validate_extra.py：** 第 2 回は 2 時間の上限でこの段の途中で止まった。そのため単独で走らせ直している（）。結果は §1.2 に追記する。
+- **optional_check.py と validate_extra.py：** 第 2 回は 2 時間の上限でこの段の途中で止まった。そのため単独で走らせ直している（`obf_reproduce_tail.log`）。結果は §1.2 に追記する。
 
 ## 2. GeoEncloseReader による独立な抜き取り（V53、V53-A、V53-B）
 
