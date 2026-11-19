@@ -1,0 +1,39 @@
+{"root": "Z02", "counts": {"splitr": 7, "positive": 11, "splitz": 3}, "nodes": 21, "wall_s": 0.07456}
+{"root": "Z03", "counts": {"splitr": 9, "splitz": 5, "positive": 15}, "nodes": 29, "wall_s": 0.07611}
+{"root": "Z01", "counts": {"splitr": 8, "positive": 15, "splitz": 5, "splitl": 1}, "nodes": 29, "wall_s": 0.09715}
+{"root": "Z00", "counts": {"splitr": 19, "positive": 48, "splitz": 14, "splitl": 14}, "nodes": 95, "wall_s": 0.27223}
+{"root": "V03", "counts": {"splitz": 435, "splitr": 285, "splitl": 439, "positive": 1141, "empty": 19}, "nodes": 2319, "wall_s": 4.90509}
+{"root": "V02", "counts": {"splitz": 629, "splitr": 461, "splitl": 625, "positive": 1691, "empty": 25}, "nodes": 3431, "wall_s": 7.02003}
+{"root": "V01", "counts": {"splitz": 1262, "splitr": 819, "splitl": 1582, "positive": 3599, "empty": 65}, "nodes": 7327, "wall_s": 13.29611}
+{"root": "V00", "counts": {"splitz": 6748, "splitr": 4492, "splitl": 11001, "positive": 21927, "empty": 315}, "nodes": 44483, "wall_s": 86.84288}
+{"total_elapsed_s": 86.891191988}
+{"root": "E01", "counts": {"splitr": 3, "H_positive": 3, "radial_curvature_negative": 1}, "nodes": 7, "wall_s": 0.02365}
+{"root": "E00", "counts": {"splitr": 2, "H_positive": 3}, "nodes": 5, "wall_s": 0.04722}
+{"root": "E02", "counts": {"splitr": 3, "H_positive": 3, "radial_curvature_negative": 1}, "nodes": 7, "wall_s": 0.05367}
+{"root": "E03", "counts": {"splitr": 3, "H_positive": 2, "radial_curvature_negative": 2}, "nodes": 7, "wall_s": 0.05218}
+{"root": "B02", "counts": {"H_positive": 1}, "nodes": 1, "wall_s": 0.05708}
+{"root": "B00", "counts": {"H_positive": 1}, "nodes": 1, "wall_s": 0.06984}
+{"root": "B01", "counts": {"H_positive": 1}, "nodes": 1, "wall_s": 0.06793}
+{"root": "B03", "counts": {"splitl": 5, "H_positive": 6}, "nodes": 11, "wall_s": 0.79513}
+{"total_elapsed_s": 0.8462313460000246}
+{"root": "B00", "nodes": 1, "terminal_replayed": 1, "relative_volume": "1", "seconds": 0.45452}
+{"root": "B01", "nodes": 1, "terminal_replayed": 1, "relative_volume": "1", "seconds": 0.44178}
+{"root": "B02", "nodes": 1, "terminal_replayed": 1, "relative_volume": "1", "seconds": 0.45384}
+{"root": "B03", "nodes": 11, "terminal_replayed": 6, "relative_volume": "1", "seconds": 3.18864}
+{"root": "E00", "nodes": 5, "terminal_replayed": 3, "relative_volume": "1", "seconds": 0.37346}
+{"root": "E01", "nodes": 7, "terminal_replayed": 4, "relative_volume": "1", "seconds": 0.38585}
+{"root": "E02", "nodes": 7, "terminal_replayed": 4, "relative_volume": "1", "seconds": 0.38397}
+{"root": "E03", "nodes": 7, "terminal_replayed": 4, "relative_volume": "1", "seconds": 0.38615}
+{"root": "V00", "nodes": 44483, "terminal_replayed": 22242, "relative_volume": "1", "seconds": 141.04041}
+{"root": "V01", "nodes": 7327, "terminal_replayed": 3664, "relative_volume": "1", "seconds": 28.81472}
+{"root": "V02", "nodes": 3431, "terminal_replayed": 1716, "relative_volume": "1", "seconds": 17.2492}
+{"root": "V03", "nodes": 2319, "terminal_replayed": 1160, "relative_volume": "1", "seconds": 12.65455}
+{"root": "Z00", "nodes": 95, "terminal_replayed": 48, "relative_volume": "1", "seconds": 1.12063}
+{"root": "Z01", "nodes": 29, "terminal_replayed": 15, "relative_volume": "1", "seconds": 0.45225}
+{"root": "Z02", "nodes": 21, "terminal_replayed": 11, "relative_volume": "1", "seconds": 0.41805}
+{"root": "Z03", "nodes": 29, "terminal_replayed": 15, "relative_volume": "1", "seconds": 0.39545}
+{"wall_s": 141.47056353799996}
+
+real	3m54.958s
+user	4m32.036s
+sys	0m2.289s

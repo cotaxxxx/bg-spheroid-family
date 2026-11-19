@@ -1,0 +1,4 @@
+{"name": "weak_V00.tsv.gz:x0101010100001011001001", "confirmed": true, "evals": 1, "leaves": 1, "min": 0.04107214144666264, "seconds": 15.6}
+{"name": "weak_V00.tsv.gz:x0101010110101100000111", "confirmed": true, "evals": 1, "leaves": 1, "min": 0.039164596888776125, "seconds": 16.3}
+{"name": "weak_V00.tsv.gz:x01010101000010001001000011", "confirmed": true, "evals": 1, "leaves": 1, "min": 0.0448373142072532, "seconds": 15.6}
+{"name": "rand_V00.tsv.gz:x010101001100000100111", "confirmed": true, "evals": 1, "leaves": 1, "min": 0.053199041157188875, "seconds": 15.6}

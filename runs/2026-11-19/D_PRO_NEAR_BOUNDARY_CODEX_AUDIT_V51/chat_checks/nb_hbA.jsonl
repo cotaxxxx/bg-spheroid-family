@@ -1,0 +1,6 @@
+{"name": "B03.tsv.gz:x0", "confirmed": true, "children": 1, "min": 0.017690487460365834, "seconds": 27.9}
+{"name": "B03.tsv.gz:x100", "confirmed": true, "children": 1, "min": 0.022165365961168165, "seconds": 27.3}
+{"name": "B03.tsv.gz:x101", "confirmed": true, "children": 1, "min": 0.014568882531952446, "seconds": 28.5}
+{"name": "B03.tsv.gz:x110", "confirmed": true, "children": 1, "min": 0.00711675603739852, "seconds": 28.1}
+{"name": "B03.tsv.gz:x1110", "confirmed": true, "children": 1, "min": 0.00521430458014595, "seconds": 28.0}
+{"name": "B03.tsv.gz:x1111", "confirmed": true, "children": 1, "min": 0.001565678097513977, "seconds": 33.1}

@@ -1,0 +1,8 @@
+{"name": "weak_V00.tsv.gz:x0101010100001011001001", "kind": "V", "confirmed": false, "children": 1, "min": -0.015344884826914474, "seconds": 19.3}
+{"name": "weak_V00.tsv.gz:x0101010110101100000111", "kind": "V", "confirmed": false, "children": 1, "min": -0.014288052554507654, "seconds": 19.4}
+{"name": "weak_V00.tsv.gz:x01010101000010001001000011", "kind": "V", "confirmed": false, "children": 1, "min": -0.026077480344798582, "seconds": 18.8}
+{"name": "rand_V00.tsv.gz:x010101001100000100111", "kind": "V", "confirmed": false, "children": 1, "min": -0.0015418238909773434, "seconds": 17.9}
+{"name": "rand_V00.tsv.gz:x010101101100110000011", "kind": "V", "confirmed": true, "children": 35, "min": 0.00016970623749891698, "seconds": 147.1}
+{"name": "rand_V00.tsv.gz:x010100011110100010", "kind": "V", "confirmed": true, "children": 16, "min": 0.00011382935685260371, "seconds": 65.9}
+{"name": "E00.tsv.gz:x11", "kind": "H", "confirmed": true, "children": 19, "min": 0.03975594894286958, "seconds": 638.1}
+{"name": "weak_Z00.tsv.gz:x1111111101", "kind": "Z", "confirmed": true, "children": 2, "min": 0.015402129741905028, "seconds": 66.6}
