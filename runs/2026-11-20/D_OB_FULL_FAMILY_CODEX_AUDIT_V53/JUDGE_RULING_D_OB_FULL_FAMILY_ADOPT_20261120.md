@@ -40,4 +40,4 @@
   - 扁長：V49〜V51
 - **記録：**
   - 証拠の等級の判定ではない。main と STATE は変更しない。
-  - optional_check と validate_extra の再実行は、裁定の時点で継続中である。結果は V53 §1.2 に追記する。
+  - optional_check と validate_extra の再実行は、裁定の直後に完了した。どちらも OK で、unresolved の 2 ファイルも原本と一致した（V53 §1.2）。

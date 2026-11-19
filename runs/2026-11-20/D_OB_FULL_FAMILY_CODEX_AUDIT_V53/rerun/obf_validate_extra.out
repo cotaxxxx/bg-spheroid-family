@@ -1,0 +1,24 @@
+rim 08H {'sign': 7234}
+rim 09H {'sign': 3802}
+rim 10H {'sign': 1764}
+rim 11H {'sign': 532}
+rim 12H {'sign': 11}
+rim 13H {}
+rim 14H {}
+rim 15H {}
+recovered 08H {'sign': 6811, 'open': 8}
+recovered 09H {'sign': 6380}
+recovered 10H {'sign': 4968}
+recovered 11H {'sign': 964}
+recovered 12H {}
+recovered 13H {}
+recovered 14H {}
+recovered 15H {}
+salvage 08H {'sign': 8}
+salvage 09H {}
+salvage 10H {}
+salvage 11H {}
+salvage 12H {}
+salvage 13H {}
+salvage 14H {}
+salvage 15H {}

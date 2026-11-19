@@ -48,6 +48,14 @@
 - **checker.py：** 186 本の木（leaves、finer、low、window）すべてで通った。
 - **optional_check.py と validate_extra.py：** 第 2 回は 2 時間の上限でこの段の途中で止まった。そのため単独で走らせ直している（`obf_reproduce_tail.log`）。結果は §1.2 に追記する。
 
+### 1.2 残りの検査器（単独での再実行、4783 秒）
+
+- `optional_check.py ./rim thin mixed`：OK
+- `validate_extra.py ./rim rim recovered salvage`：OK
+- `rim.unresolved`、`salvage.unresolved`：原本と一致
+
+**これで `reproduce.sh` の全段（生成、比較、検査器）を、三回に分けて実行し終えた。** どの段でも、原本との食い違いはない。
+
 ## 2. GeoEncloseReader による独立な抜き取り（V53、V53-A、V53-B）
 
 - **計画：** 実行前に固定した。ハッシュは `V53_plan_code_inputs.sha256` にある。
