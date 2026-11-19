@@ -1,0 +1,10 @@
+PASS L2 (13): axis E(0,z) = (1/2) int k a^2 equals chat E_ref (lambda=5, z=0.3)
+PASS L2 (16): paired angle formula vs independent G4-kernel E_z/z (lambda=5; z=0.5, 0.9, focus sqrt24/5) :: z=0.5: 1.81050354983 vs 1.81050354983; z=0.9: 1.01522293142 vs 1.01522293142; z=0.9798: 0.665546226271 vs 0.665546226271
+PASS L2 (16) vs chat E_ref central difference (z=0.5, h=5e-4; FD truncation ~h^2) :: 1.810503241 vs 1.81050355
+PASS L2 (17): sin Sigma identity (300 random eps<1/2, z, mu) :: max diff 5.17e-41
+PASS L2 (18)/G1: E_z/z >= 3 eps^2/10 at 15 axis points (lambda=5,10,50; incl. focus and S<eps) :: min ratio to bound 47.36
+PASS L2 window remark: (18) denominator bound (mu+uz)^2+eps^2 s^2 <= 9/4+1/4 = 5/2 also for eps <= 1/2 (lambda >= 2)
+PASS L1 (9): phi-averaged residual kernel <= RHS(9) at random T >= 3S, h <= 1/8, lambda = 4096 :: 32 points, violations 0, min slack 0.0009107
+PASS L1 sample lambda=4096, S=3/4, rho/S=1/2: R_H^(2)/S (Codex 2.16229532) and <= 29/2 :: 2.16234079
+PASS L1 sample lambda=4096, S=1/32 (h=1/128), rho/S=0.999 (near contact): R_H^(2)/S <= 29/2 :: -147.919043
+SUMMARY 9/9 PASS
