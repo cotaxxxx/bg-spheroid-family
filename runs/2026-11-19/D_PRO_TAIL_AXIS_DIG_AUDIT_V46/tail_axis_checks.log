@@ -1,0 +1,7 @@
+PASS inner kernel 2-term expansion q=(0.5,0.0): t^3*err bounded (t=16,64,256) :: 7.804, 8.294, 8.406
+PASS inner kernel 2-term expansion q=(0.3,0.6): t^3*err bounded (t=16,64,256) :: 3.955, 4.135, 4.177
+PASS exact log-subtraction identity at lambda=5, q=(0.3,0.4) vs E_rho/rho from chat E_ref :: identity -0.08283274943 FD -0.08283376585; R_H = 6.0104096, main = -6.4245733
+PASS centre lambda=5: main term -pi asinh 5 = -7.2647393
+PASS axis: (1/2)int I = -z pi^2/4 - (1/2)int Tf = (1/2)int_0^1 [I(mu,z)-I(mu,-z)] = FD of E_ref :: 0.9052517749, 0.9052517487, 0.9052517749, FD 0.9052493053
+PASS axis endpoint values: gamma(+-1)=1, f(+-1,z) = (1 -+ z) pi^2/4
+SUMMARY 6/6 PASS
