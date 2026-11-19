@@ -1,0 +1,11 @@
+PASS M2-4: closed form of d_z I vs central FD (200 random points) :: max rel diff 1.19e-25
+PASS M2-3: odd-quotient double integral = E_z/z (lambda=5, z=1/2); V46 value E_z = 0.90525177 :: 1.81050355 vs 1.81050355
+PASS M2-6: D0 B0 = eps^2 + a^2 mu^2(1-mu^2), D0 + B0 = 1 + eps^2 (100 random)
+PASS M2-6: gamma0 minimum at mu = 1/sqrt2 equals 2eps/(1+eps^2)
+  lambda=10 S=0.0002441: exact (pi/2)A = 5.79546  vs  log-bound (pi/2)(2log lam + log 4S^2) = -16.7197
+  lambda=10 S=0.5: exact (pi/2)A = 7.41842  vs  log-bound (pi/2)(2log lam + log 4S^2) = 7.23378
+  lambda=100 S=0.0002441: exact (pi/2)A = 9.41138  vs  log-bound (pi/2)(2log lam + log 4S^2) = -9.48588
+PASS M2-2: asinh(x) >= log(2x) holds but is far from tight at x = lambda(1-z) ~ lambda S^2/2 (S = 2^-12) :: slack 14.333
+PASS M2-2: conditional threshold with C=0 is e^(3/2)/(2 S0) ~ 9180 (an artifact of the log bound near S0)
+PASS M2-1: horizontal core reference for all |z| <= sqrt(1-S0^2) iff m <= 1-sqrt(1-S0^2) = S0^2/(1+sqrt(1-S0^2)) ~ 2^-25
+SUMMARY 7/7 PASS
