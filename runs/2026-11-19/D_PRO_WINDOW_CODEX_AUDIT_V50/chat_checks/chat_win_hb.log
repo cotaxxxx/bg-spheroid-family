@@ -1,0 +1,7 @@
+H_b formula (9) at 2.0654: -3.876838499e-6
+chord H at rho=1-1e-2: 0.01487058186
+chord H at rho=1-1e-3: 0.001512585612
+chord H at rho=1-1e-4: 0.0001478312636
+lambda_b by (9): left 6.4290562e-8 right -5.6133501e-8 sign change: True
+
+[exited with code 0]

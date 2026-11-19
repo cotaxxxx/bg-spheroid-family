@@ -1,0 +1,9 @@
+{"part": 0, "anchors": 457, "queries": 1397, "negative": 456, "empty": 1, "seconds": 2.86202873900001}
+{"part": 1, "anchors": 457, "queries": 1441, "negative": 457, "empty": 0, "seconds": 3.127050656999998}
+{"part": 2, "anchors": 457, "queries": 1433, "negative": 457, "empty": 0, "seconds": 3.1169010689999936}
+{"part": 3, "anchors": 457, "queries": 1432, "negative": 457, "empty": 0, "seconds": 3.0652843420000124}
+{"part": 4, "anchors": 457, "queries": 1417, "negative": 457, "empty": 0, "seconds": 2.9625372539999972}
+{"part": 5, "anchors": 457, "queries": 1390, "negative": 457, "empty": 0, "seconds": 2.8323379460000098}
+{"part": 6, "anchors": 457, "queries": 1384, "negative": 456, "empty": 1, "seconds": 2.8108079550000014}
+{"part": 7, "anchors": 457, "queries": 1380, "negative": 456, "empty": 1, "seconds": 2.7868463890000044}
+{"wall_s": 3.1593562080000055}

@@ -1,0 +1,8 @@
+{"lam": 2.125, "rho_lo_num20": 1039328, "rho_hi_num20": 1039337, "seed": 0.9911843367444817, "both_signs_separated": true, "seconds": 0.24871694699999125}
+{"lam": 2.5, "rho_lo_num20": 972720, "rho_hi_num20": 972729, "seed": 0.9276625589991454, "both_signs_separated": true, "seconds": 0.2963557530000003}
+{"lam": 3, "rho_lo_num20": 863957, "rho_hi_num20": 863966, "seed": 0.823938265471952, "both_signs_separated": true, "seconds": 0.596604169999992}
+{"lam": 3.5, "rho_lo_num20": 730755, "rho_hi_num20": 730764, "seed": 0.696906848665094, "both_signs_separated": true, "seconds": 0.5637451260000006}
+{"lam": 4, "rho_lo_num20": 562371, "rho_hi_num20": 562380, "seed": 0.5363231387163978, "both_signs_separated": true, "seconds": 0.646284633999997}
+{"lam": 4.5, "rho_lo_num20": 312465, "rho_hi_num20": 312474, "seed": 0.2979940424847882, "both_signs_separated": true, "seconds": 0.8934857240000014}
+{"lam": 4.6875, "rho_lo_num20": 126548, "rho_hi_num20": 126557, "seed": 0.12069000807241537, "both_signs_separated": true, "seconds": 0.8213212819999995}
+{"wall_s": 1.587515302}

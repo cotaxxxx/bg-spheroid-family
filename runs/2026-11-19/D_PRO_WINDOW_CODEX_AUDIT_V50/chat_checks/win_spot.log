@@ -1,0 +1,53 @@
+lambda_c: H(0,0) at 4.72438311 / 4.72438366: left 2.7872952e-8  right -2.4178059e-8  sign change: True
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/win_audit/chat_win_spot.py", line 30, in <module>
+    show("circle lambda=3: H(rho,0) at rho 0.823933 / 0.823943", H_chord(mp.mpf(3), mp.mpf('0.823933'), 0), H_chord(mp.mpf(3), mp.mpf('0.823943'), 0))
+                                                                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/win_audit/chat_win_spot.py", line 26, in H_chord
+    return mp.quad(f, [0, mp.mpf(1)/lam, mp.mpf(4)/lam, 1], [0, mp.pi/2, mp.pi])/mp.pi
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 748, in quad
+    v, err = rule.summation(lambda x: \
+             ~~~~~~~~~~~~~~^^^^^^^^^^^^
+            rule.summation(lambda y: f(x,y), \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            points[1], prec, epsilon, m)[0],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        points[0], prec, epsilon, m, verbose)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 233, in summation
+    result = self.sum_next(f, nodes, degree, prec, results, verbose)
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 308, in sum_next
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+         ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/ctx_mp_python.py", line 938, in fdot
+    for a, b in A:
+                ^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 308, in <genexpr>
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+                          ~^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 749, in <lambda>
+    rule.summation(lambda y: f(x,y), \
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+    points[1], prec, epsilon, m)[0],
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 233, in summation
+    result = self.sum_next(f, nodes, degree, prec, results, verbose)
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 308, in sum_next
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+         ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/ctx_mp_python.py", line 938, in fdot
+    for a, b in A:
+                ^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 308, in <genexpr>
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+                          ~^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/calculus/quadrature.py", line 749, in <lambda>
+    rule.summation(lambda y: f(x,y), \
+                             ~^^^^^
+  File "/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/win_audit/chat_win_spot.py", line 17, in f
+    v = r*ex + z*m; d = mp.sqrt(max(mp.mpf(0), dl + v*v)); C = 1 + (lam**2-1)*m*m; U = 1 - 1/C
+                                ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/mpmath/ctx_mp_python.py", line 458, in _compare
+    raise TypeError("no ordering relation is defined for complex numbers")
+TypeError: no ordering relation is defined for complex numbers

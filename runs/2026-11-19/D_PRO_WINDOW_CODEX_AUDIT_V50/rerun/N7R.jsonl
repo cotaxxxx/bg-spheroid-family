@@ -1,0 +1,9 @@
+{"part": 0, "terminal": 457, "all_queries_replayed": 1397, "largest_upper": "-1001099/68719476736", "seconds": 4.504228599999976}
+{"part": 1, "terminal": 457, "all_queries_replayed": 1441, "largest_upper": "-1054963/68719476736", "seconds": 4.947999726999996}
+{"part": 2, "terminal": 457, "all_queries_replayed": 1433, "largest_upper": "-425575/4294967296", "seconds": 4.996569142000027}
+{"part": 3, "terminal": 457, "all_queries_replayed": 1432, "largest_upper": "-3624023/68719476736", "seconds": 4.918166934000027}
+{"part": 4, "terminal": 457, "all_queries_replayed": 1417, "largest_upper": "-486517/17179869184", "seconds": 4.76064185499996}
+{"part": 5, "terminal": 457, "all_queries_replayed": 1390, "largest_upper": "-12223761/68719476736", "seconds": 4.391557251000023}
+{"part": 6, "terminal": 457, "all_queries_replayed": 1384, "largest_upper": "-598371/68719476736", "seconds": 4.541560284000013}
+{"part": 7, "terminal": 457, "all_queries_replayed": 1380, "largest_upper": "-571317/34359738368", "seconds": 4.274119564999978}
+{"wall_s": 5.035327174999992}

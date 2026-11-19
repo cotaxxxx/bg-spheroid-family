@@ -1,0 +1,4 @@
+{"name": "weak_V07.tsv.gz:x011001010", "mode": "V", "box": [3932160, 4194304, 720896, 786432, 458752, 483328], "confirmed": false, "children": 16, "min_lower": NaN, "seconds": 68.6}
+{"name": "weak_V06.tsv.gz:x00111001", "mode": "V", "box": [3670016, 3932160, 327680, 393216, 557056, 606208], "confirmed": false, "children": 16, "min_lower": NaN, "seconds": 70.0}
+{"name": "weak_V11.tsv.gz:x000100000101", "mode": "V", "box": [5111808, 5242880, 294912, 327680, 262144, 274432], "confirmed": false, "children": 16, "min_lower": NaN, "seconds": 51.1}
+{"name": "rand_V09.tsv.gz:x000001011100", "mode": "V", "box": [4456448, 4587520, 229376, 262144, 286720, 299008], "confirmed": false, "children": 16, "min_lower": NaN, "seconds": 50.4}

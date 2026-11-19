@@ -1,0 +1,26 @@
+{"root": "D00", "counts": {"splitr": 6, "H_positive": 3, "lambda_decreasing": 4}, "nodes": 13, "wall_s": 0.22995198399999994}
+{"root": "D01", "counts": {"splitr": 7, "H_positive": 3, "lambda_decreasing": 5}, "nodes": 15, "wall_s": 0.2557152939999998}
+{"root": "D02", "counts": {"splitr": 8, "H_positive": 2, "lambda_decreasing": 7}, "nodes": 17, "wall_s": 0.3030961269999999}
+{"root": "D03", "counts": {"splitr": 10, "H_positive": 2, "lambda_decreasing": 10, "splitl": 1}, "nodes": 23, "wall_s": 0.438025197}
+{"root": "D04", "counts": {"splitr": 12, "lambda_decreasing": 12, "H_positive": 1, "splitl": 1, "H_negative": 1}, "nodes": 27, "wall_s": 0.5656148189999999}
+{"root": "D05", "counts": {"splitr": 15, "lambda_decreasing": 13, "H_positive": 1, "splitl": 2, "H_negative": 4}, "nodes": 35, "wall_s": 0.7497667330000004}
+{"root": "D06", "counts": {"splitr": 16, "H_positive": 1, "lambda_decreasing": 15, "splitl": 2, "H_negative": 3}, "nodes": 37, "wall_s": 0.8410337100000005}
+{"root": "D08", "counts": {"splitr": 17, "lambda_decreasing": 15, "splitl": 3, "H_negative": 6}, "nodes": 41, "wall_s": 0.9051217600000006}
+{"root": "D07", "counts": {"splitr": 17, "lambda_decreasing": 16, "splitl": 3, "H_negative": 5}, "nodes": 41, "wall_s": 0.9550926810000004}
+{"root": "D09", "counts": {"splitr": 17, "lambda_decreasing": 15, "splitl": 3, "H_negative": 6}, "nodes": 41, "wall_s": 0.9023322700000005}
+{"root": "D10", "counts": {"splitr": 19, "lambda_decreasing": 15, "splitl": 4, "H_negative": 9}, "nodes": 47, "wall_s": 1.139833335}
+{"root": "D11", "counts": {"splitr": 19, "lambda_decreasing": 17, "splitl": 5, "H_negative": 8}, "nodes": 49, "wall_s": 1.1448376019999995}
+{"root": "H00", "counts": {"splitr": 529, "splitz": 959, "H_positive": 363, "splitl": 276, "H_undetermined": 1229, "H_negative": 115, "empty": 58}, "nodes": 3529, "wall_s": 25.029264534}
+{"root": "H01", "counts": {"splitr": 606, "splitz": 1090, "H_positive": 380, "splitl": 307, "H_undetermined": 1423, "H_negative": 156, "empty": 45}, "nodes": 4007, "wall_s": 28.352753633000003}
+{"root": "H02", "counts": {"splitr": 674, "splitz": 1228, "H_positive": 404, "splitl": 346, "H_undetermined": 1602, "H_negative": 204, "empty": 39}, "nodes": 4497, "wall_s": 32.392470181}
+{"root": "H03", "counts": {"splitr": 736, "splitz": 1369, "H_positive": 403, "splitl": 377, "H_undetermined": 1773, "H_negative": 276, "empty": 31}, "nodes": 4965, "wall_s": 36.046409794}
+{"root": "H04", "counts": {"splitr": 792, "splitz": 1498, "splitl": 403, "H_positive": 405, "H_undetermined": 1932, "H_negative": 337, "empty": 20}, "nodes": 5387, "wall_s": 39.967966258}
+{"root": "H05", "counts": {"splitr": 854, "splitz": 1596, "splitl": 429, "H_positive": 381, "H_undetermined": 2075, "H_negative": 407, "empty": 17}, "nodes": 5759, "wall_s": 42.183884046}
+{"root": "H06", "counts": {"splitr": 896, "splitz": 1683, "splitl": 447, "H_positive": 331, "H_undetermined": 2166, "H_negative": 520, "empty": 10}, "nodes": 6053, "wall_s": 44.79355982}
+{"root": "H07", "counts": {"splitr": 897, "splitz": 1721, "splitl": 447, "H_positive": 184, "H_undetermined": 2199, "H_negative": 673, "empty": 10}, "nodes": 6131, "wall_s": 38.385315993000006}
+{"root": "H08", "counts": {"splitr": 886, "splitz": 1665, "splitl": 437, "H_positive": 21, "H_undetermined": 2118, "H_negative": 842, "empty": 8}, "nodes": 5977, "wall_s": 36.313129962999994}
+{"root": "H09", "counts": {"splitr": 873, "splitz": 1583, "splitl": 431, "H_undetermined": 1880, "H_negative": 1002, "empty": 6}, "nodes": 5775, "wall_s": 33.097499296}
+{"root": "H10", "counts": {"splitr": 840, "splitz": 1476, "splitl": 419, "H_undetermined": 1587, "H_negative": 1144, "empty": 5}, "nodes": 5471, "wall_s": 29.631971843000002}
+{"root": "H11", "counts": {"splitr": 812, "splitz": 1340, "splitl": 406, "H_undetermined": 1270, "H_negative": 1285, "empty": 4}, "nodes": 5117, "wall_s": 26.212480528}
+{"root": "X00", "counts": {"splitr": 1223, "splitz": 1950, "splitl": 482, "H_negative": 3653, "empty": 3}, "nodes": 7311, "wall_s": 118.18900823899999}
+{"wall_s": 118.231760185}

@@ -1,0 +1,9 @@
+circle lambda=3: H(rho,0) at rho 0.823933 / 0.823943: left 4.6997276e-6  right -2.567173e-6  sign change: True
+circle lambda=4: H(rho,0) at rho 0.536318 / 0.536328: left 1.6499089e-6  right -1.5608323e-6  sign change: True
+lambda_b: H(rho=1-1e-7, 0) at 2.06538200 / 2.06538255: left -1.969907e-7  right -3.1767438e-7  sign change: False
+off-plane E_z/z at lambda=3 q=(0.8,0.3): 1.78784  positive: True
+off-plane E_z/z at lambda=3 q=(0.5,0.85): 1.01513  positive: True
+off-plane E_z/z at lambda=2 q=(0.95,0.2): 1.35019  positive: True
+off-plane E_z/z at lambda=4.5 q=(0.2,0.1): 2.10576  positive: True
+off-plane E_z/z at lambda=4.9 q=(0.6,0.7): 1.38371  positive: True
+circle lambda=3 rho*~0.823938: E_zz 1.88683 (>0: True), E_rhorho -0.598744 (<0: True)

@@ -1,0 +1,73 @@
+{"root": "V04", "counts": {"splitz": 352, "splitr": 210, "splitl": 296, "positive": 853, "empty": 6}, "nodes": 1717, "wall_s": 6.94613}
+{"root": "V05", "counts": {"splitz": 354, "splitr": 218, "splitl": 296, "positive": 863, "empty": 6}, "nodes": 1737, "wall_s": 6.95763}
+{"root": "V07", "counts": {"splitz": 382, "splitr": 227, "splitl": 309, "positive": 913, "empty": 6}, "nodes": 1837, "wall_s": 6.96651}
+{"root": "V03", "counts": {"splitz": 349, "splitr": 209, "splitl": 300, "positive": 853, "empty": 6}, "nodes": 1717, "wall_s": 7.00141}
+{"root": "V06", "counts": {"splitz": 360, "splitr": 226, "splitl": 296, "positive": 877, "empty": 6}, "nodes": 1765, "wall_s": 7.02219}
+{"root": "Z00", "counts": {"splitr": 13, "splitz": 7, "positive": 21}, "nodes": 41, "wall_s": 0.0952}
+{"root": "Z01", "counts": {"splitr": 16, "splitz": 11, "positive": 28}, "nodes": 55, "wall_s": 0.12559}
+{"root": "V02", "counts": {"splitz": 350, "splitr": 214, "splitl": 319, "positive": 873, "empty": 11}, "nodes": 1767, "wall_s": 7.26778}
+{"root": "V01", "counts": {"splitz": 359, "splitr": 221, "splitl": 334, "positive": 902, "empty": 13}, "nodes": 1829, "wall_s": 7.41966}
+{"root": "Z02", "counts": {"splitr": 23, "splitz": 20, "positive": 44}, "nodes": 87, "wall_s": 0.19718}
+{"root": "Z03", "counts": {"splitr": 38, "splitz": 32, "positive": 71}, "nodes": 141, "wall_s": 0.30571}
+{"root": "V00", "counts": {"splitz": 386, "splitr": 239, "splitl": 372, "positive": 981, "empty": 17}, "nodes": 1995, "wall_s": 7.80257}
+{"root": "Z04", "counts": {"splitr": 72, "splitz": 64, "positive": 141, "splitl": 4}, "nodes": 281, "wall_s": 0.67935}
+{"root": "Z05", "counts": {"splitr": 144, "splitz": 83, "positive": 313, "splitl": 85}, "nodes": 625, "wall_s": 2.45919}
+{"root": "Z06", "counts": {"splitr": 171, "splitz": 84, "positive": 503, "splitl": 247}, "nodes": 1005, "wall_s": 5.31098}
+{"root": "Z07", "counts": {"splitr": 171, "splitz": 84, "splitl": 256, "positive": 512}, "nodes": 1023, "wall_s": 5.44747}
+{"root": "Z08", "counts": {"splitr": 171, "splitz": 84, "splitl": 256, "positive": 512}, "nodes": 1023, "wall_s": 5.31591}
+{"root": "E00", "counts": {"splitr": 5, "H_positive": 4, "radial_curvature_negative": 2}, "nodes": 11, "wall_s": 0.06386}
+{"root": "E01", "counts": {"splitr": 6, "H_positive": 5, "radial_curvature_negative": 2}, "nodes": 13, "wall_s": 0.07487}
+{"root": "E02", "counts": {"splitr": 8, "H_positive": 6, "radial_curvature_negative": 3}, "nodes": 17, "wall_s": 0.09484}
+{"root": "E03", "counts": {"splitr": 11, "H_positive": 7, "radial_decreasing": 1, "radial_curvature_negative": 4}, "nodes": 23, "wall_s": 0.19095}
+{"root": "E04", "counts": {"splitr": 17, "radial_decreasing": 6, "H_positive": 9, "splitl": 3, "radial_curvature_negative": 6}, "nodes": 41, "wall_s": 0.37002}
+{"root": "V08", "counts": {"splitz": 395, "splitr": 238, "splitl": 318, "positive": 944, "empty": 8}, "nodes": 1903, "wall_s": 7.34888}
+{"root": "V09", "counts": {"splitz": 415, "splitr": 246, "splitl": 330, "positive": 984, "empty": 8}, "nodes": 1983, "wall_s": 7.60882}
+{"root": "E06", "counts": {"splitr": 20, "radial_decreasing": 14, "splitl": 3, "H_positive": 2, "radial_curvature_negative": 8}, "nodes": 47, "wall_s": 0.63883}
+{"root": "E05", "counts": {"splitr": 23, "radial_decreasing": 14, "splitl": 6, "H_positive": 6, "radial_curvature_negative": 10}, "nodes": 59, "wall_s": 0.78634}
+{"root": "E07", "counts": {"splitr": 17, "radial_decreasing": 12, "splitl": 1, "radial_curvature_negative": 7}, "nodes": 37, "wall_s": 0.45585}
+{"root": "V10", "counts": {"splitz": 434, "splitr": 257, "splitl": 344, "positive": 1023, "empty": 13}, "nodes": 2071, "wall_s": 8.06021}
+{"root": "Z09", "counts": {"splitr": 171, "splitz": 84, "splitl": 256, "positive": 512}, "nodes": 1023, "wall_s": 5.34012}
+{"root": "E08", "counts": {"splitr": 14, "radial_decreasing": 10, "radial_curvature_negative": 5}, "nodes": 29, "wall_s": 0.32035}
+{"root": "C00", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.05039}
+{"root": "C01", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.036}
+{"root": "E11", "counts": {"splitr": 13, "radial_decreasing": 9, "radial_curvature_negative": 5}, "nodes": 27, "wall_s": 0.27468}
+{"root": "C03", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.03318}
+{"root": "V11", "counts": {"splitz": 447, "splitr": 267, "splitl": 361, "positive": 1063, "empty": 13}, "nodes": 2151, "wall_s": 8.33482}
+{"root": "E10", "counts": {"splitr": 13, "radial_decreasing": 9, "radial_curvature_negative": 5}, "nodes": 27, "wall_s": 0.31823}
+{"root": "C04", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.03358}
+{"root": "C02", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.05584}
+{"root": "E09", "counts": {"splitr": 14, "radial_decreasing": 10, "radial_curvature_negative": 5}, "nodes": 29, "wall_s": 0.3563}
+{"root": "C05", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.03889}
+{"root": "C08", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.03389}
+{"root": "C06", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.04966}
+{"root": "C07", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.05387}
+{"root": "C10", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.0462}
+{"root": "C09", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.04764}
+{"root": "C11", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.03338}
+{"root": "T00", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.04397}
+{"root": "T01", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.04522}
+{"root": "T02", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.03892}
+{"root": "T04", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.03911}
+{"root": "T05", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.04247}
+{"root": "T03", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.05372}
+{"root": "T08", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.03957}
+{"root": "T06", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.05236}
+{"root": "T09", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.03973}
+{"root": "T07", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.04941}
+{"root": "T10", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.04713}
+{"root": "T11", "counts": {"radial_decreasing": 1}, "nodes": 1, "wall_s": 0.04194}
+{"root": "B02", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.09009}
+{"root": "B00", "counts": {"lambda_decreasing": 1}, "nodes": 1, "wall_s": 0.09387}
+{"root": "B03", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.09659}
+{"root": "B05", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.08827}
+{"root": "B04", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.08926}
+{"root": "B07", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.08667}
+{"root": "B06", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.08752}
+{"root": "B08", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.09075}
+{"root": "B09", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.08761}
+{"root": "B10", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.08751}
+{"root": "B11", "counts": {"negative": 1}, "nodes": 1, "wall_s": 0.03023}
+{"root": "B01", "counts": {"splitl": 2, "negative": 3}, "nodes": 5, "wall_s": 0.23909}
+{"root": "Z10", "counts": {"splitr": 171, "splitz": 84, "splitl": 256, "positive": 512}, "nodes": 1023, "wall_s": 3.43539}
+{"root": "Z11", "counts": {"splitr": 171, "splitz": 84, "splitl": 256, "positive": 512}, "nodes": 1023, "wall_s": 3.16913}
+{"total_elapsed_s": 16.455190683999945}
