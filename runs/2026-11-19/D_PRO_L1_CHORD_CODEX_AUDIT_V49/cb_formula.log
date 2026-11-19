@@ -1,0 +1,5 @@
+lambda=5 q=(0,0): chord -0.0243031238134  ref -0.0243031238
+lambda=5 q=(0.3,0.4): chord -0.0828327494307  ref -0.08283274943
+lambda=5 q=(0.5,0): chord -0.0820759960287  ref -0.0820759960
+lambda=10 q=(0.2,0.6): chord -0.207568431012  ref -0.207568431
+PASS chord formula (3) reproduces NP7 / E_ref values at 4 points

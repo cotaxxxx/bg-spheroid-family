@@ -1,0 +1,8 @@
+{"name": "worst_c5:r0001001100000", "box": [20480, 21504, 256, 320, 1280, 1408], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 28.2}
+{"name": "worst_c6:r10010011", "box": [24576, 28672, 2304, 2560, 1280, 1536], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 28.0}
+{"name": "worst_c7:r0110011", "box": [28672, 32768, 1280, 1536, 2560, 3072], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 27.7}
+{"name": "rand_c5:r000000110010101", "box": [20992, 21504, 320, 384, 384, 448], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 27.9}
+{"name": "rand_c5:r00010100100", "box": [22528, 24576, 0, 128, 1536, 1664], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 27.7}
+{"name": "rand_c5:r000111110111", "box": [21504, 22528, 896, 1024, 1920, 2048], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 28.5}
+{"name": "rand_c5:r000001010100000", "box": [20480, 20992, 128, 192, 768, 832], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 27.7}
+{"name": "rand_c5:r00010010000011", "box": [20480, 21504, 320, 384, 1088, 1152], "confirmed": false, "children": 16, "max_upper": NaN, "seconds": 28.7}
