@@ -1,0 +1,114 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "repository": "cotaxxxx/bg-spheroid-family",
+  "files": [
+    {
+      "commit": "b5f4353717a62bbd0dfcbf792f7b9f25238dbf9f",
+      "path": "runs/2026-11-19/D_PRO_TAIL_AXIS_DIG_M1/MATH_DERIVATION_BEFORE_PROBE.md",
+      "git_blob_sha": "6b8561eb8a8f4f78455f1a5b9b62a976fd001be8",
+      "sha256": "9373ac07c721c99b1ffa2b683d9f560e4fb1cea0dad124054b8eb14ef8cfa7f8"
+    },
+    {
+      "commit": "b5f4353717a62bbd0dfcbf792f7b9f25238dbf9f",
+      "path": "runs/2026-11-19/D_PRO_TAIL_AXIS_DIG_M1/MATH_ADDENDUM_POST_PROBE.md",
+      "git_blob_sha": "3ce3cf890a85670905953a9be5b363a82cb6c941",
+      "sha256": "f05f5de29ede18eb7d22788bc9ae68d5f40c64cb5a938bb8b8537b0580bee840"
+    },
+    {
+      "commit": "91d486bb9e18b13c691782f7f4096f7fd7ad1d38",
+      "path": "research/M2_AXIS_CENTER_PRODUCT_20261119.md",
+      "git_blob_sha": "70e7bbb1d5598f371d22afc9aafdab973b21fe9f",
+      "sha256": "cb1834240d260aa74ea0bb3ce195def6d327eabce2b82502e2d9f30a915a0c66"
+    },
+    {
+      "commit": "91d486bb9e18b13c691782f7f4096f7fd7ad1d38",
+      "path": "research/M2_AXIS_DIFFERENCE_20261119.md",
+      "git_blob_sha": "f0de0f5640f45342b4e57246f5d26bd284b2d9b9",
+      "sha256": "d2cc427225c06b4860d8e914b04c48b1fd66db13892fa4f16a26d9ea3a2b3d28"
+    },
+    {
+      "commit": "91d486bb9e18b13c691782f7f4096f7fd7ad1d38",
+      "path": "research/M2_AXIS_KERNEL_DERIVATIVE_20261119.md",
+      "git_blob_sha": "30d11a5999903d03c93598956c24c5101622b062",
+      "sha256": "996b0541248a02304d9dce0e5563b8cc13d3b6afdf7d4e73fb4941d8ce6ba4fd"
+    },
+    {
+      "commit": "91d486bb9e18b13c691782f7f4096f7fd7ad1d38",
+      "path": "research/M2_AXIS_TWO_SCALES_20261119.md",
+      "git_blob_sha": "b196b5e8d37f0d63b150c4c1fecbb12cb8901455",
+      "sha256": "e1074acca1842f61b1313fc3b4f75cdf5fdccee632860782defb545aeeede186"
+    },
+    {
+      "commit": "91d486bb9e18b13c691782f7f4096f7fd7ad1d38",
+      "path": "research/M2_TAIL_LOG_BOUND_20261119.md",
+      "git_blob_sha": "90acc04d0668a5ed8bf6afefe09af80c3c10fe2e",
+      "sha256": "a0ab20102e423ff8cc562a870bea06ed77989db3b5ae0a9ba87587322a0f370e"
+    },
+    {
+      "commit": "91d486bb9e18b13c691782f7f4096f7fd7ad1d38",
+      "path": "research/M2_TAIL_PRELIMINARY_20261119.md",
+      "git_blob_sha": "123cc15c8aea1873140a0b526117c5ba87df141e",
+      "sha256": "fcab2193e514ae765c78e96b211595b026df7b8808c9249e72cfc835282d312b"
+    },
+    {
+      "commit": "dde63e5aa5d1750073ff975c002d21a0015bdd2f",
+      "path": "research/M3_AUDIT_CORRECTION_EXACT_MARGIN_20261119.md",
+      "git_blob_sha": "62ec02b250a21cfc338fb644e0ae1c757ec3fb97",
+      "sha256": "0bbf695a2605652b9722288fb3effaf2a6a6daf4217df4279b4a959352970103"
+    },
+    {
+      "commit": "dde63e5aa5d1750073ff975c002d21a0015bdd2f",
+      "path": "research/M3_V47_EXACT_BUDGET_20261119.md",
+      "git_blob_sha": "d7226fd614306ae9d67c23d09b2f01ed7cbb0800",
+      "sha256": "f3051d8ba397e66d3a1ea701b6058cd73ef17426b606e5d1e0a40ceba1ddf946"
+    },
+    {
+      "commit": "fbe6e36c7c2ee77f3350639c3710453d35d741e0",
+      "path": "runs/2026-11-19/D_PRO_NONPOLAR_ASTRA_AUDIT_V45/CHAT_AUDIT_D_PRO_NONPOLAR_ASTRA_V45.md",
+      "git_blob_sha": "32350123ecb222891dfbe166efc204357713339f",
+      "sha256": "202a2ceb03a72296893669ebebc903832303dd98800f5d3217be00e30020d17e"
+    },
+    {
+      "commit": "fbe6e36c7c2ee77f3350639c3710453d35d741e0",
+      "path": "runs/2026-11-19/D_PRO_NONPOLAR_ASTRA_AUDIT_V45/ADDENDUM_V45_ZIP_RERUN.md",
+      "git_blob_sha": "d81ec09d27c07c90ed36eb9119da60acdd8253c2",
+      "sha256": "c51b0b8993a9249bcbe2951767520c24421f6a0529326caf7d2ec06cafe8572b"
+    },
+    {
+      "commit": "25f46a8cd209b44e2651cc35d9c6d014a4068904",
+      "path": "runs/2026-11-19/D_PRO_TAIL_AXIS_DIG_AUDIT_V46/CHAT_AUDIT_D_PRO_TAIL_AXIS_DIG_V46.md",
+      "git_blob_sha": "3beb8d7944b2bb3708e49216d619042c90c1f218",
+      "sha256": "e846ac09a2e1212004fec4b105db5589716450f6d0815eae7906aedbb58289c6"
+    },
+    {
+      "commit": "25f46a8cd209b44e2651cc35d9c6d014a4068904",
+      "path": "runs/2026-11-19/D_PRO_TAIL_AXIS_DIG_AUDIT_V46/chat_tail_axis_checks.py",
+      "git_blob_sha": "cb794fb39fb2ecee9f2890121ace474bb3c4113c",
+      "sha256": "0d0fe596028e143117df7c402a22bad67c983b98be7663a001ac4ec4a9f8b215"
+    },
+    {
+      "commit": "25f46a8cd209b44e2651cc35d9c6d014a4068904",
+      "path": "runs/2026-11-19/D_PRO_TAIL_AXIS_DIG_AUDIT_V46/chat_r1_reference_check_lib.py",
+      "git_blob_sha": "9ded8111218e8f2b4fbc1ab4a6bb42b7c9904ad2",
+      "sha256": "3182cfe6e6ff02202a1bf1f3c2d758958096ee825139532b6583cd7505cad482"
+    },
+    {
+      "commit": "ed0d258d33992b5880b5ce4996248f42fce2e579",
+      "path": "runs/2026-11-19/D_PRO_M2_DIG_AUDIT_V47/CHAT_AUDIT_D_PRO_M2_DIG_V47.md",
+      "git_blob_sha": "96e35237c56f5501fcf69473c707be41d4f13369",
+      "sha256": "992e90334591f18d75bfdd8375ac0bc250399ebd265794c5cdc40a91ace5631f"
+    },
+    {
+      "commit": "cf541c0e429cce27670654832bbc7fbd532fb547",
+      "path": "runs/2026-11-19/D_PRO_LAMBDA0_GAP_ASTRA_AUDIT_V43/ASTRA_D_PRO_LAMBDA0_GAP_REPORT_20261119.md",
+      "git_blob_sha": "6d725ffe658b7a563cb00767c06fea6a15b282bb",
+      "sha256": "38592455c788c1d8a29c6dfa58aed3f0f59bf4e7beaac551a4c2a00d7529bd09"
+    },
+    {
+      "commit": "cf541c0e429cce27670654832bbc7fbd532fb547",
+      "path": "runs/2026-11-19/D_PRO_LAMBDA0_GAP_ASTRA_AUDIT_V43/CHAT_AUDIT_D_PRO_LAMBDA0_GAP_ASTRA_V43.md",
+      "git_blob_sha": "793bdfa0718c086d7cac7a81a7cb3465de430fc3",
+      "sha256": "eba47617652b06442f33f58eadc0d44a0e259b3e7e283ab8983f132c15ef0760"
+    }
+  ]
+}

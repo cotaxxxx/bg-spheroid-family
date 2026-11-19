@@ -1,0 +1,30 @@
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "python": "3.12.14", "mpmath": "1.3.0", "decimal_digits": 55}
+{"check": "near small S", "matched": true, "lhs": "2083/280", "relation": "<", "rhs": "15/2"}
+{"check": "near large S", "matched": true, "lhs": "779/80", "relation": "<", "rhs": "10"}
+{"check": "far rational envelope h=1/8", "matched": true, "lhs": "15167/2240", "relation": "<", "rhs": "7"}
+{"check": "far rational envelope h=1/256", "matched": true, "lhs": "2816641/655360", "relation": "<", "rhs": "9/2"}
+{"check": "small S positive mass", "matched": true, "lhs": "681407/4587520", "relation": "<", "rhs": "3/20"}
+{"check": "restored negative mass", "matched": true, "exact": "75/256"}
+{"check": "small S residual negative", "matched": true, "lhs": "-472/35", "relation": "<", "rhs": "0"}
+{"check": "asinh lower 7680", "matched": true, "lhs": "61159090448414546291/274877906944", "relation": "<", "rhs": "235929600"}
+{"check": "asinh lower 4096", "matched": true, "lhs": "505447028499293771/17179869184", "relation": "<", "rhs": "67108864"}
+{"check": "asinh lower 128", "matched": true, "lhs": "161051/1024", "relation": "<", "rhs": "256"}
+{"check": "asinh lower 8", "matched": true, "lhs": "121/16", "relation": "<", "rhs": "16"}
+{"check": "asinh upper 32768", "matched": true, "lhs": "65537", "relation": "<", "rhs": "68719476736/531441"}
+{"check": "sinh lower at 5/2", "matched": true, "lhs": "6", "relation": "<", "rhs": "779185/129024"}
+{"check": "sinh lower at 2", "matched": true, "lhs": "16/5", "relation": "<", "rhs": "1142/315"}
+{"check": "sinh lower at 5/4", "matched": true, "lhs": "3/2", "relation": "<", "rhs": "26455465/16515072"}
+{"check": "exact budget multiplier 149/32", "matched": true, "lhs": "29/2", "relation": "<", "rhs": "3725/256"}
+{"check": "exact budget multiplier 39/8", "matched": true, "lhs": "29/2", "relation": "<", "rhs": "975/64"}
+{"check": "exact budget multiplier 21/4", "matched": true, "lhs": "29/2", "relation": "<", "rhs": "525/32"}
+{"check": "audited G10 margin for extension", "matched": true, "lhs": "17/64", "relation": "<", "rhs": "47473218194072764542240096942353646083/170141183460469231731687303715884105728"}
+{"check": "full G9 Lipschitz cost", "matched": true, "lhs": "7147", "relation": "<", "rhs": "8192"}
+{"check": "G9 allowed loss", "matched": true}
+{"check": "axial coefficient", "matched": true}
+{"check": "original E and signed-axis pair", "matched": true, "lam": 5, "z": "0.0", "reference": "2.07421157242568718", "pair": "2.07421157242568718", "absolute_error": "2.95384726617160212e-29", "sine_max_error": "5.09789411562384729e-56"}
+{"check": "original E and signed-axis pair", "matched": true, "lam": 5, "z": "0.5", "reference": "1.81050354983145598", "pair": "1.81050354983145598", "absolute_error": "2.1880650327810704e-28", "sine_max_error": "5.70326904185417915e-56"}
+{"check": "original E and signed-axis pair", "matched": true, "lam": 5, "z": "0.979795897113271239", "reference": "0.665546226271047875", "pair": "0.665546226271047875", "absolute_error": "5.12136770640812957e-25", "sine_max_error": "1.80341522374483212e-55"}
+{"check": "original E and signed-axis pair", "matched": true, "lam": 8, "z": "0.99609375", "reference": "0.443096278819318823", "pair": "0.443096278819318823", "absolute_error": "3.71336620824040891e-23", "sine_max_error": "5.19985199793632423e-55"}
+{"check": "direct two-tail integration", "matched": true, "lam": 4096, "S": "0.75", "rho_over_S": "0.5", "lambda_H": "-16.2819217557226661", "R2_over_S": "2.16229532068524477", "exact_budget": "23.8715243283154663", "identity_error": "5.59422643263218829e-37"}
+{"check": "direct two-tail integration", "matched": true, "lam": 4096, "S": "0.0009765625", "rho_over_S": "0.96875", "lambda_H": "-4.92599529061262907", "R2_over_S": "-5028.97531101689361", "exact_budget": "15.2438665704385572", "identity_error": "2.12968648865369509e-28"}
+{"status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE", "checks": 28, "matched": 28, "wall_seconds": 3.499}
