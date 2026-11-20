@@ -1,0 +1,10 @@
+disk tau2: 555 boxes, inside True, area==target True, holes 0, overlaps 0, all positive True, min lower 0.00122409 >= floor True
+disk tau: 897 boxes, inside True, area==target True, holes 0, overlaps 0, all positive True, min lower 0.00018255 >= floor True
+census b1(s in [1,1+1/5242880], t=17/8): [-0.0161187, -0.0094311] N=128 CONFIRMED 4s
+census b2(s in [1,1+1/5242880], t=17/8): [-0.0161186, -0.0094311] N=128 CONFIRMED 1s
+census h1(s in [1,1+1/5242880], t=9/2): [0.0206598, 0.0244301] N=128 CONFIRMED 2s
+census h2(s in [1,1+1/5242880], t=9/2): [0.0206599, 0.0244301] N=128 CONFIRMED 1s
+census b1(s in [1,1+1/5242880], t=2): [0.0113152, 0.0179855] N=128 CONFIRMED 1s
+census b2(s in [1,1+1/5242880], t=2): [0.0113153, 0.0179855] N=128 CONFIRMED 1s
+census h1(s in [1,1+1/5242880], t=5): [-0.0263367, -0.0222709] N=128 CONFIRMED 1s
+census h2(s in [1,1+1/5242880], t=5): [-0.0263366, -0.0222709] N=128 CONFIRMED 1s

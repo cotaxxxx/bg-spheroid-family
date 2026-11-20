@@ -1,0 +1,8 @@
+provenance: 12 bundled V50 ledgers byte-identical to chat-held V50 zip: True 12
+transfer rows 194 problems 0
+min remaining by mode: {'kappa_positive': 0.0016112649318529293, 'Hii_negative': 0.0008867471187841147, 'outer_slope': 0.0005324469657724115, 'centre_slope': 0.18174633178083846}
+modes Counter({'outer_slope': 85, 'Hii_negative': 62, 'kappa_positive': 39, 'centre_slope': 8})
+distinct boxes 194, area/target = 1, holes 0, overlapping cells 0
+centre_slope boxes: [('3145728', '3407872', '0', '32768'), ('3407872', '3670016', '0', '32768'), ('3670016', '3932160', '0', '32768'), ('3932160', '4194304', '0', '32768'), ('4194304', '4456448', '0', '32768'), ('4456448', '4718592', '0', '32768'), ('4718592', '4980736', '0', '32768'), ('4980736', '5242880', '0', '32768')]
+Krawczyk row 1: row-sum 0.469441 (<1: True), image [1.566478358, 1.567459057] inside (1.565969, 1.567969): True
+Krawczyk row 2: row-sum 0.582274 (<1: True), image [2.295984854, 2.297187142] inside (2.295586, 2.297586): True
