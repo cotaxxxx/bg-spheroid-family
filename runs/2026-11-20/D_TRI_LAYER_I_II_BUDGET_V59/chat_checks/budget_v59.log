@@ -1,0 +1,8 @@
+layer stratum   n  covered  budget/unres  mean_sec_lowerbound  cells  x32 tiles -> CPU-years (lower bound)
+I     axis-face   16      11            5              149.0    1448         0.22
+I     equator     16       1           15              193.4     770         0.15
+I     interior    16       9            7              169.9   13736         2.37
+I     rim         16       4           12              226.6    2341         0.54
+II    interior    16       8            8              190.1     709         0.14
+II    rim         16      12            4              115.1      61         0.01
+{'I': 3.27, 'II': 0.14} CPU-years (python/numpy, lower bounds; equatorial rim 63 cells and layer II axis strips excluded)
