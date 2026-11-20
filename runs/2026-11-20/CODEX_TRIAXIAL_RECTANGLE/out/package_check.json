@@ -1,0 +1,54 @@
+{
+  "designation": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "status": "all_declared_commands_completed",
+  "checked_at_utc": "2026-11-20T05:53:47.065933+00:00",
+  "mode": "record_checks_and_short_cross_checks",
+  "delivery_file_count_at_check": 96,
+  "original_atlas_file_count": 54,
+  "commands": [
+    {
+      "command": [
+        "code/center_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.0551336030002858
+    },
+    {
+      "command": [
+        "code/axis_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.045757083000353305
+    },
+    {
+      "command": [
+        "code/axis_wide_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04175948400006746
+    },
+    {
+      "command": [
+        "code/axis_validate.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.4751359500005492
+    },
+    {
+      "command": [
+        "code/calibration_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.530319221001264
+    },
+    {
+      "command": [
+        "code/calibration_reference.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.2907825270012836
+    }
+  ],
+  "scope": "Delivered byte hashes, ledger structures/signs, short same-code replay, and noninterval cross-checks. No full numerical rerun or proof of the unprocessed domain.",
+  "report_sha256": "04f542ec93cd6fc1baf25fb528eda4dcbb7a33f088bf963ea0c65995938eb115"
+}

@@ -1,0 +1,400 @@
+{
+  "designation": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "checker_scope": "Hashes, endpoint signs, declared integer boxes, complete panel coverage and strict Hessian/Ux signs; no independent re-evaluation of interval kernels.",
+  "plan_sha256": "cfa70836e2409497545b071ced6392155ff09478c59e567b21ee3f5f84325618",
+  "kernel_sha256": "09a1747b77163068910e293dec3bee1b2cb6f5b72460bce6dd131db90c68004e",
+  "status": "verified_inclusions",
+  "cases": {
+    "A1": {
+      "status": "verified_inclusions",
+      "source": "axis_A1.csv",
+      "sha256": "7750e2d2626a7754651b75b6848e0986b023234c6fd44f63210f506c0462cdf8",
+      "shape": "A",
+      "axis": 1,
+      "s_integer_endpoints": [
+        81919,
+        81921
+      ],
+      "t_integer_endpoints": [
+        196607,
+        196609
+      ],
+      "shape_denominator": 65536,
+      "rational_bracket": [
+        "3/8",
+        "1/2"
+      ],
+      "endpoint_signs": {
+        "left": {
+          "nmu": 4096,
+          "g": [
+            0.0029043163697828668,
+            0.010298854162094527
+          ],
+          "seconds": 5.0928448350023245
+        },
+        "right": {
+          "nmu": 4096,
+          "g": [
+            -0.010774919370406656,
+            -0.0031423742176579146
+          ],
+          "seconds": 6.198433047000435
+        }
+      },
+      "complete_cover_panels": 8,
+      "selected_panel_grids": [
+        2048,
+        2048,
+        2048,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "selected_radius_integer_endpoints": [
+        [
+          24576,
+          25600
+        ],
+        [
+          25600,
+          26624
+        ],
+        [
+          26624,
+          27648
+        ],
+        [
+          27648,
+          28672
+        ],
+        [
+          28672,
+          29696
+        ],
+        [
+          29696,
+          30720
+        ],
+        [
+          30720,
+          31744
+        ],
+        [
+          31744,
+          32768
+        ]
+      ],
+      "radius_denominator": 65536,
+      "whole_bracket_envelopes": {
+        "H11": [
+          -0.19640338031671262,
+          -0.04252629989563602
+        ],
+        "H22": [
+          0.20497094106357203,
+          0.3158926586034168
+        ],
+        "H33": [
+          1.6601863833591277,
+          2.598453986944524
+        ],
+        "Ux": [
+          -0.61557496221954,
+          -0.0032666131346907466
+        ]
+      },
+      "Hessian_signs": [
+        -1,
+        1,
+        1
+      ],
+      "Morse_index": 1,
+      "stage_count": 45,
+      "unresolved_stage_count": 35,
+      "all_stage_seconds": 35.89396495099572,
+      "selected_stage_seconds": 26.441330583009403,
+      "angular_cell_evaluations": 34209792
+    },
+    "A2": {
+      "status": "verified_inclusions",
+      "source": "axis_A2.csv",
+      "sha256": "2d7d91edde39ba70faff303af3f5a89a3d50b15b47f20f0d23a7c1386c482841",
+      "shape": "A",
+      "axis": 2,
+      "s_integer_endpoints": [
+        81919,
+        81921
+      ],
+      "t_integer_endpoints": [
+        196607,
+        196609
+      ],
+      "shape_denominator": 65536,
+      "rational_bracket": [
+        "27/32",
+        "29/32"
+      ],
+      "endpoint_signs": {
+        "left": {
+          "nmu": 1024,
+          "g": [
+            0.003754725115153622,
+            0.037944852816991094
+          ],
+          "seconds": 0.3546639509986562
+        },
+        "right": {
+          "nmu": 1024,
+          "g": [
+            -0.04306295699793981,
+            -0.005912934759585373
+          ],
+          "seconds": 0.392735408997396
+        }
+      },
+      "complete_cover_panels": 8,
+      "selected_panel_grids": [
+        512,
+        512,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "selected_radius_integer_endpoints": [
+        [
+          55296,
+          55808
+        ],
+        [
+          55808,
+          56320
+        ],
+        [
+          56320,
+          56832
+        ],
+        [
+          56832,
+          57344
+        ],
+        [
+          57344,
+          57856
+        ],
+        [
+          57856,
+          58368
+        ],
+        [
+          58368,
+          58880
+        ],
+        [
+          58880,
+          59392
+        ]
+      ],
+      "radius_denominator": 65536,
+      "whole_bracket_envelopes": {
+        "H11": [
+          -0.2691333308389444,
+          -0.08710409272511456
+        ],
+        "H22": [
+          -1.332931522290309,
+          -0.4324336115452651
+        ],
+        "H33": [
+          0.038607813531272385,
+          2.707374705780438
+        ],
+        "Ux": [
+          -0.9246386748130604,
+          -0.2706550248567369
+        ]
+      },
+      "Hessian_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "Morse_index": 2,
+      "stage_count": 36,
+      "unresolved_stage_count": 26,
+      "all_stage_seconds": 9.716482746996917,
+      "selected_stage_seconds": 6.760478093994607,
+      "angular_cell_evaluations": 5898240
+    },
+    "B2": {
+      "status": "verified_inclusions",
+      "source": "axis_B2.csv",
+      "sha256": "2a97f260dd8b557c138fbbb5673e587e1fdf20242fe6b3882d8899e26ae98734",
+      "shape": "B",
+      "axis": 2,
+      "s_integer_endpoints": [
+        134348,
+        134350
+      ],
+      "t_integer_endpoints": [
+        196607,
+        196609
+      ],
+      "shape_denominator": 65536,
+      "rational_bracket": [
+        "7/8",
+        "15/16"
+      ],
+      "endpoint_signs": {
+        "left": {
+          "nmu": 1024,
+          "g": [
+            0.014551651573673186,
+            0.05078073136069333
+          ],
+          "seconds": 0.3185606250008277
+        },
+        "right": {
+          "nmu": 2048,
+          "g": [
+            -0.03115315713195231,
+            -0.011611523189737927
+          ],
+          "seconds": 1.3275789870021981
+        }
+      },
+      "complete_cover_panels": 8,
+      "selected_panel_grids": [
+        1024,
+        1024,
+        1024,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ],
+      "selected_radius_integer_endpoints": [
+        [
+          57344,
+          57856
+        ],
+        [
+          57856,
+          58368
+        ],
+        [
+          58368,
+          58880
+        ],
+        [
+          58880,
+          59392
+        ],
+        [
+          59392,
+          59904
+        ],
+        [
+          59904,
+          60416
+        ],
+        [
+          60416,
+          60928
+        ],
+        [
+          60928,
+          61440
+        ]
+      ],
+      "radius_denominator": 65536,
+      "whole_bracket_envelopes": {
+        "H11": [
+          -0.45207879217116886,
+          -0.3812015066046273
+        ],
+        "H22": [
+          -1.4228827510594653,
+          -0.5892511552417028
+        ],
+        "H33": [
+          0.12681596761113692,
+          2.2920502191266134
+        ],
+        "Ux": [
+          -0.8313959520255291,
+          -0.372131572875872
+        ]
+      },
+      "Hessian_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "Morse_index": 2,
+      "stage_count": 44,
+      "unresolved_stage_count": 34,
+      "all_stage_seconds": 29.074950238013116,
+      "selected_stage_seconds": 21.365744316004566,
+      "angular_cell_evaluations": 19529728
+    }
+  },
+  "center_results": {
+    "status": "verified_inclusions",
+    "source": "axis_centers.csv",
+    "sha256": "a11358c9626ca6f100d344ac72e983036c207aa4efd169da36ffe0edabe025f5",
+    "centers": {
+      "A": {
+        "nmu": 512,
+        "Hessian": {
+          "H11": [
+            0.01994470337263872,
+            0.09419665412854077
+          ],
+          "H22": [
+            0.2928981327447493,
+            0.36700747784635007
+          ],
+          "H33": [
+            1.8267825600898382,
+            2.561401357100534
+          ]
+        },
+        "Morse_index": 0
+      },
+      "B": {
+        "nmu": 256,
+        "Hessian": {
+          "H11": [
+            -0.35705718871224235,
+            -0.17339157739461694
+          ],
+          "H22": [
+            0.2413486843498045,
+            0.5122094098861255
+          ],
+          "H33": [
+            0.37269965830288343,
+            3.335681896163
+          ]
+        },
+        "Morse_index": 1
+      }
+    },
+    "all_stage_seconds": 0.9288493139974889,
+    "angular_cell_evaluations": 212992
+  },
+  "total_evaluation_seconds": 75.61424725000325,
+  "limitations": [
+    "No exclusion of axial roots outside the stated brackets.",
+    "No off-axis exclusion.",
+    "No center or boundary collar estimate.",
+    "No global root count or global main-rectangle estimate."
+  ]
+}

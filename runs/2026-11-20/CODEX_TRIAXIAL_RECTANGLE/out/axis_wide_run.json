@@ -1,0 +1,42 @@
+{
+  "designation": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "status": "finished_declared_attempts",
+  "cases": {
+    "WA1": {
+      "status": "endpoint_unresolved",
+      "endpoints": {
+        "left": "unresolved",
+        "right": "unresolved"
+      }
+    },
+    "WA2": {
+      "status": "complete_bracket_inclusions",
+      "endpoints": {
+        "left": "sign_obtained",
+        "right": "sign_obtained"
+      },
+      "last_panel_count": 8
+    },
+    "WB2": {
+      "status": "complete_bracket_inclusions",
+      "endpoints": {
+        "left": "sign_obtained",
+        "right": "sign_obtained"
+      },
+      "last_panel_count": 8
+    }
+  },
+  "centers": {
+    "WA": "signs_obtained",
+    "WB": "signs_obtained"
+  },
+  "plan_sha256": "3b028842f50ffd316cdf0527f0a2d66ac42ca56482d2e0e2a46692b9f03dc56c",
+  "wrapper_sha256": "172c1c208bdb46e8ef5695127782141e5be0ea62008bdfeba3cf5e6380c0ddda",
+  "kernel_sha256": "09a1747b77163068910e293dec3bee1b2cb6f5b72460bce6dd131db90c68004e",
+  "cpu_soft_limit": 300,
+  "cpu_hard_limit": 305,
+  "start_new_stage_before_cpu_seconds": 285,
+  "cpu_seconds": 97.809544,
+  "wall_seconds": 96.92169382599968,
+  "ledger_sha256": "a37f391df7df139d770da1f7437ac19582a8c0b4e07966f53a0d48edd021c51c"
+}

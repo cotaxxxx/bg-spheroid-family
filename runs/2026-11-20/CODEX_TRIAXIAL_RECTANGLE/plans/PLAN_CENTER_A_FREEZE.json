@@ -1,0 +1,9 @@
+{
+  "status": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "frozen_at_utc": "2026-11-20T05:36:35.926974+00:00",
+  "files": [
+    "plans/PLAN_CENTER_A.md",
+    "code/center_interval.py",
+    "code/center_calibrate.py"
+  ]
+}

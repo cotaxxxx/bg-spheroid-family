@@ -1,0 +1,6 @@
+{
+  "stage": "C1 pilot before first enclosure",
+  "exception": "TypeError: unsupported operand type(s) for /: int and Box",
+  "location": "weight=4/pi_box()/den",
+  "numerical_rows_written": 0
+}

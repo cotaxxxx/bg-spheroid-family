@@ -1,0 +1,8 @@
+{
+  "frozen_at_utc": "2026-11-20T05:40:06.784172+00:00",
+  "files": [
+    "plans/PLAN_CENTER_B.md",
+    "code/center_interval.py",
+    "code/center_pilot_b.py"
+  ]
+}

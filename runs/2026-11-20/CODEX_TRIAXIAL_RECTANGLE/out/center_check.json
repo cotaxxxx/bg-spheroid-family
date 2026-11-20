@@ -1,0 +1,249 @@
+{
+  "designation": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "status": "recorded_geometry_hashes_and_signs_consistent",
+  "scope": "No global numerical cover is claimed. The whole-R h3 bound is analytical; see proofs/center_audit.md.",
+  "original_A_error": "Integer divided by interval was unsupported before any numerical result. The original code and empty ledger remain archived.",
+  "frozen_files": {
+    "A": [
+      {
+        "recorded_path": "plans/PLAN_CENTER_A.md",
+        "stored_path": "plans/PLAN_CENTER_A.md",
+        "sha256": "56d66ac0ef50c81b060f0325b552f78624c80d840bfffc8abb9a64835cd10f4b"
+      },
+      {
+        "recorded_path": "code/center_interval.py",
+        "stored_path": "code/center_interval_A_original.py",
+        "sha256": "a4cdddf58bd21f076d8e0a388e27e78076ae3b79106fe6377c6e0cbad7f6eafe"
+      },
+      {
+        "recorded_path": "code/center_calibrate.py",
+        "stored_path": "code/center_calibrate.py",
+        "sha256": "27a5a62f98786676be55b8e1cf78e72262c7d57f7a4e55a171954926b71b1c20"
+      }
+    ],
+    "A1": [
+      {
+        "recorded_path": "plans/PLAN_CENTER_A1.md",
+        "stored_path": "plans/PLAN_CENTER_A1.md",
+        "sha256": "e64007df1560bf0b654c6dfb18b7248ea7104515b2ed41a9d97f88dc62bef91e"
+      },
+      {
+        "recorded_path": "code/center_interval.py",
+        "stored_path": "code/center_interval.py",
+        "sha256": "ce1f1411fb43ec89e804e9dbde6d70b4a4394cdd6f7190a030d610baf9a29690"
+      },
+      {
+        "recorded_path": "code/center_calibrate.py",
+        "stored_path": "code/center_calibrate.py",
+        "sha256": "27a5a62f98786676be55b8e1cf78e72262c7d57f7a4e55a171954926b71b1c20"
+      }
+    ],
+    "B": [
+      {
+        "recorded_path": "plans/PLAN_CENTER_B.md",
+        "stored_path": "plans/PLAN_CENTER_B.md",
+        "sha256": "625d829472074db6af61ee1e0b9c0f4bba0a4563d30e8a62f932c9bd70243065"
+      },
+      {
+        "recorded_path": "code/center_interval.py",
+        "stored_path": "code/center_interval.py",
+        "sha256": "ce1f1411fb43ec89e804e9dbde6d70b4a4394cdd6f7190a030d610baf9a29690"
+      },
+      {
+        "recorded_path": "code/center_pilot_b.py",
+        "stored_path": "code/center_pilot_b.py",
+        "sha256": "2aa7cabcae12b72a188cb71398fd7753ee93bf4b1307e912be24e5a7026bfe91"
+      }
+    ],
+    "C": [
+      {
+        "recorded_path": "plans/PLAN_CENTER_C.md",
+        "stored_path": "plans/PLAN_CENTER_C.md",
+        "sha256": "9c9c4649273f1b581ead5894d24f1541b3605e40bc9024c92729c02de6ccda8e"
+      },
+      {
+        "recorded_path": "code/center_mapped.py",
+        "stored_path": "code/center_mapped.py",
+        "sha256": "f1fa2b2b6987a11b4b481745b9ff1721216a317d05ed6f0d0a0fcf13444a47e3"
+      },
+      {
+        "recorded_path": "code/center_pilot_c.py",
+        "stored_path": "code/center_pilot_c.py",
+        "sha256": "1cfb75c56230a55b14d6e17676e5f59a8ae85730c9cd399e77addb83c6780c49"
+      }
+    ]
+  },
+  "ledgers": [
+    {
+      "file": "center_calibration.csv",
+      "rows": 192,
+      "groups": [
+        {
+          "mode": "full_shape_box",
+          "mapping": "1",
+          "nmu": 128,
+          "rows": 32,
+          "positive": 0,
+          "min_lower": -77.8144021259893,
+          "elapsed_seconds": 0.25169002899201587
+        },
+        {
+          "mode": "full_shape_box",
+          "mapping": "1",
+          "nmu": 256,
+          "rows": 32,
+          "positive": 0,
+          "min_lower": -70.18219211125998,
+          "elapsed_seconds": 0.8527008749915694
+        },
+        {
+          "mode": "full_shape_box",
+          "mapping": "1",
+          "nmu": 64,
+          "rows": 32,
+          "positive": 0,
+          "min_lower": -94.80641539690477,
+          "elapsed_seconds": 0.5630241539984127
+        },
+        {
+          "mode": "shape_midpoint",
+          "mapping": "1",
+          "nmu": 128,
+          "rows": 32,
+          "positive": 21,
+          "min_lower": -2.4540999112329684,
+          "elapsed_seconds": 0.26433094400999835
+        },
+        {
+          "mode": "shape_midpoint",
+          "mapping": "1",
+          "nmu": 256,
+          "rows": 32,
+          "positive": 29,
+          "min_lower": -0.5139474659313218,
+          "elapsed_seconds": 0.8810494650060718
+        },
+        {
+          "mode": "shape_midpoint",
+          "mapping": "1",
+          "nmu": 64,
+          "rows": 32,
+          "positive": 13,
+          "min_lower": -6.741005903092068,
+          "elapsed_seconds": 0.09934430498833535
+        }
+      ]
+    },
+    {
+      "file": "center_pilot_b.csv",
+      "rows": 60,
+      "groups": [
+        {
+          "mode": "finite_shape_box",
+          "mapping": "1",
+          "nmu": 1024,
+          "rows": 30,
+          "positive": 24,
+          "min_lower": -1.2963244179586049,
+          "elapsed_seconds": 9.727042689006339
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "1",
+          "nmu": 512,
+          "rows": 30,
+          "positive": 20,
+          "min_lower": -1.8578510358573332,
+          "elapsed_seconds": 2.978143311003805
+        }
+      ]
+    },
+    {
+      "file": "center_pilot_c.csv",
+      "rows": 108,
+      "groups": [
+        {
+          "mode": "finite_shape_box",
+          "mapping": "2",
+          "nmu": 128,
+          "rows": 12,
+          "positive": 5,
+          "min_lower": -3.3904242582368296,
+          "elapsed_seconds": 0.46620864999931655
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "2",
+          "nmu": 256,
+          "rows": 12,
+          "positive": 6,
+          "min_lower": -1.5355650034522268,
+          "elapsed_seconds": 0.3117751429963391
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "2",
+          "nmu": 512,
+          "rows": 12,
+          "positive": 8,
+          "min_lower": -0.6255849306421893,
+          "elapsed_seconds": 0.9705682620078733
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "4",
+          "nmu": 128,
+          "rows": 12,
+          "positive": 5,
+          "min_lower": -3.1106096045668705,
+          "elapsed_seconds": 0.0850285249944136
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "4",
+          "nmu": 256,
+          "rows": 12,
+          "positive": 6,
+          "min_lower": -1.3959792656207322,
+          "elapsed_seconds": 0.28322862700224505
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "4",
+          "nmu": 512,
+          "rows": 12,
+          "positive": 8,
+          "min_lower": -0.5556663184010481,
+          "elapsed_seconds": 0.991210088988737
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "8",
+          "nmu": 128,
+          "rows": 12,
+          "positive": 4,
+          "min_lower": -3.2508247745471803,
+          "elapsed_seconds": 0.08594764100052998
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "8",
+          "nmu": 256,
+          "rows": 12,
+          "positive": 6,
+          "min_lower": -1.4366111056813826,
+          "elapsed_seconds": 0.2818296200057375
+        },
+        {
+          "mode": "finite_shape_box",
+          "mapping": "8",
+          "nmu": 512,
+          "rows": 12,
+          "positive": 8,
+          "min_lower": -0.569022392779852,
+          "elapsed_seconds": 0.9662666309959604
+        }
+      ]
+    }
+  ]
+}

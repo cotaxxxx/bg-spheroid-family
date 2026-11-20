@@ -1,0 +1,21 @@
+{
+  "designation": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu_logical_count": 9,
+  "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+  "workers_max_per_concurrent_plan": 2,
+  "research_pc_used": false,
+  "repository_base_commit": "5fbd120e992321ccdbbe26120cea0eab36b88c75",
+  "planned_new_branch": "codex/triaxial-rectangle-20261120",
+  "source_hashes": {
+    "CHAT_AUDIT_D_TRI_ATLAS_CODEX_V55.md": "305fc99b99a51acc72c2ffc0607ce7b675bbf001a5908c272290670528fb5b2a",
+    "CODEX_INSTRUCTION_D_TRI_RECTANGLE_20261120.md": "6cf923423e4c8e03bc042be4409096f040c4a290d553e44e5b1b1de01844d274",
+    "TRIAXIAL_FIRST_ATLAS.md": "7ba516b708e033ffc51c3bb5232130986306b1a1cabd5fe22e52c3d71060f534",
+    "TRIAXIAL_FIRST_ATLAS_20261120.sha256": "4c279e33c5b1b2486f7a0f1fe767415cb3312e214180563b8203d588f8909ea5",
+    "TRIAXIAL_FIRST_ATLAS_20261120.zip": "259f721216b2c0b4348f1ccd3351f06b4500ff98903767875798ff778d85b89f"
+  }
+}

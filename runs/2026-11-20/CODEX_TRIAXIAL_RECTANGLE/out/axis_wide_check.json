@@ -1,0 +1,246 @@
+{
+  "designation": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "checker_scope": "Frozen hashes, declared integer boxes/grids, complete panel covers and strict signs. No independent integral re-evaluation.",
+  "status": "checked_with_unresolved_results",
+  "successful_branch_count": 2,
+  "cases": {
+    "WA1": {
+      "status": "unresolved",
+      "s_integer_endpoints": [
+        81664,
+        82176
+      ],
+      "t_integer_endpoints": [
+        196352,
+        196864
+      ],
+      "shape_denominator": 65536,
+      "axis": 1,
+      "rational_bracket": [
+        "3/8",
+        "1/2"
+      ],
+      "last_endpoint_results": {
+        "left": {
+          "nmu": 8192,
+          "g": [
+            -0.008824403255295826,
+            0.022100689013658314
+          ],
+          "status": "unresolved"
+        },
+        "right": {
+          "nmu": 8192,
+          "g": [
+            -0.022176906654409082,
+            0.008336561484349114
+          ],
+          "status": "unresolved"
+        }
+      },
+      "stage_count": 12,
+      "all_stage_seconds": 51.86873666899919
+    },
+    "WA2": {
+      "status": "verified_inclusions",
+      "s_integer_endpoints": [
+        81664,
+        82176
+      ],
+      "t_integer_endpoints": [
+        196352,
+        196864
+      ],
+      "shape_denominator": 65536,
+      "axis": 2,
+      "rational_bracket": [
+        "27/32",
+        "29/32"
+      ],
+      "last_endpoint_results": {
+        "left": {
+          "nmu": 4096,
+          "g": [
+            0.0013487513025859231,
+            0.038733447522487065
+          ],
+          "status": "sign_obtained"
+        },
+        "right": {
+          "nmu": 2048,
+          "g": [
+            -0.048930864699299484,
+            -0.0038917092499448623
+          ],
+          "status": "sign_obtained"
+        }
+      },
+      "complete_cover_panels": 8,
+      "selected_panel_grids": [
+        512,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "whole_bracket_envelopes": {
+        "H11": [
+          -0.2780639510496001,
+          -0.08081914528902692
+        ],
+        "H22": [
+          -1.4073506464666163,
+          -0.3869400458191695
+        ],
+        "H33": [
+          0.07995429070214773,
+          2.823319860109348
+        ],
+        "Ux": [
+          -0.9237828676615848,
+          -0.23501198958904865
+        ]
+      },
+      "Hessian_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "Morse_index": 2,
+      "stage_count": 40,
+      "all_stage_seconds": 15.616675438013772
+    },
+    "WB2": {
+      "status": "verified_inclusions",
+      "s_integer_endpoints": [
+        134144,
+        134656
+      ],
+      "t_integer_endpoints": [
+        196352,
+        196864
+      ],
+      "shape_denominator": 65536,
+      "axis": 2,
+      "rational_bracket": [
+        "7/8",
+        "15/16"
+      ],
+      "last_endpoint_results": {
+        "left": {
+          "nmu": 1024,
+          "g": [
+            0.0056685850607225115,
+            0.060065046724431206
+          ],
+          "status": "sign_obtained"
+        },
+        "right": {
+          "nmu": 2048,
+          "g": [
+            -0.039403297494372456,
+            -0.0031105846723188378
+          ],
+          "status": "sign_obtained"
+        }
+      },
+      "complete_cover_panels": 8,
+      "selected_panel_grids": [
+        1024,
+        1024,
+        1024,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ],
+      "whole_bracket_envelopes": {
+        "H11": [
+          -0.4555978254610486,
+          -0.37722238840339184
+        ],
+        "H22": [
+          -1.4833009815827538,
+          -0.5509614041319512
+        ],
+        "H33": [
+          0.012126318513675622,
+          2.3952174523948933
+        ],
+        "Ux": [
+          -0.8720213721038214,
+          -0.34177202950534946
+        ]
+      },
+      "Hessian_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "Morse_index": 2,
+      "stage_count": 44,
+      "all_stage_seconds": 27.74075229301161
+    }
+  },
+  "centers": {
+    "WA": {
+      "status": "verified_inclusions",
+      "nmu": 1024,
+      "Hessian": {
+        "H11": [
+          0.015855341316775753,
+          0.09811766414737821
+        ],
+        "H22": [
+          0.2910706064835929,
+          0.3682047847904911
+        ],
+        "H33": [
+          1.7825292600071236,
+          2.605676355489363
+        ]
+      },
+      "Morse_index": 0
+    },
+    "WB": {
+      "status": "verified_inclusions",
+      "nmu": 256,
+      "Hessian": {
+        "H11": [
+          -0.37426005425682285,
+          -0.16028674201179238
+        ],
+        "H22": [
+          0.22686863354585446,
+          0.529301172865536
+        ],
+        "H33": [
+          0.1587151870312623,
+          3.5228245605777917
+        ]
+      },
+      "Morse_index": 1
+    }
+  },
+  "stage_count": 102,
+  "unresolved_stage_count": 80,
+  "total_evaluation_seconds": 96.88865226901908,
+  "angular_cell_evaluations": 128729088,
+  "run_status": "finished_declared_attempts",
+  "cpu_seconds": 97.809544,
+  "ledger_sha256": "a37f391df7df139d770da1f7437ac19582a8c0b4e07966f53a0d48edd021c51c",
+  "frozen_hashes": {
+    "plans/PLAN_AXIS_WIDE.md": "3b028842f50ffd316cdf0527f0a2d66ac42ca56482d2e0e2a46692b9f03dc56c",
+    "code/axis_wide.py": "172c1c208bdb46e8ef5695127782141e5be0ea62008bdfeba3cf5e6380c0ddda",
+    "code/axis_interval.py": "09a1747b77163068910e293dec3bee1b2cb6f5b72460bce6dd131db90c68004e"
+  },
+  "limitations": [
+    "No axial root exclusion outside the three brackets.",
+    "No off-axis or boundary exclusion.",
+    "No total root count."
+  ]
+}

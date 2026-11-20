@@ -1,0 +1,9 @@
+{
+  "label": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "wall_seconds": 35.81565377699735,
+  "limit_seconds": 600,
+  "timed_out": false,
+  "planned_cases": 12,
+  "completed_cases": 12,
+  "unprocessed": []
+}

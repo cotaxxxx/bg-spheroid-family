@@ -1,0 +1,755 @@
+{
+  "label": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+  "integrity_status": "consistent",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "plans": {
+    "C1A": {
+      "cases": 128,
+      "stages": 195,
+      "final_results": {
+        "positive": 128
+      },
+      "final_nmu": {
+        "64": 74,
+        "128": 43,
+        "256": 9,
+        "512": 2
+      },
+      "sum_evaluation_wall_seconds": 8.467820532005135,
+      "minimum_final_lower": 0.006046097463622179,
+      "maximum_final_width": 3.4279645121857563
+    },
+    "C2": {
+      "cases": 64,
+      "stages": 88,
+      "final_results": {
+        "positive": 64
+      },
+      "final_nmu": {
+        "128": 46,
+        "256": 14,
+        "1024": 2,
+        "512": 2
+      },
+      "sum_evaluation_wall_seconds": 9.896766250018118,
+      "minimum_final_lower": 0.002186518369949939,
+      "maximum_final_width": 2.733737987204916
+    },
+    "C3": {
+      "cases": 64,
+      "stages": 214,
+      "final_results": {
+        "positive": 19,
+        "unresolved": 45
+      },
+      "final_nmu": {
+        "256": 11,
+        "128": 6,
+        "512": 2,
+        "1024": 45
+      },
+      "sum_evaluation_wall_seconds": 85.83980744299697,
+      "minimum_final_lower": -243.84236253070185,
+      "maximum_final_width": 491.10202930054123,
+      "run": {
+        "label": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+        "wall_seconds": 43.68205081300039,
+        "limit_seconds": 1200,
+        "timed_out": false,
+        "planned_cases": 64,
+        "completed_cases": 64,
+        "unprocessed": []
+      }
+    },
+    "C4": {
+      "cases": 12,
+      "stages": 36,
+      "final_results": {
+        "positive": 6,
+        "unresolved": 6
+      },
+      "final_nmu": {
+        "128": 6,
+        "2048": 6
+      },
+      "sum_evaluation_wall_seconds": 68.19527882001421,
+      "minimum_final_lower": -4.749068260223246,
+      "maximum_final_width": 10.513169477907061,
+      "run": {
+        "label": "DIAGNOSTIC_ONLY / NOT_EVIDENCE",
+        "wall_seconds": 35.81565377699735,
+        "limit_seconds": 600,
+        "timed_out": false,
+        "planned_cases": 12,
+        "completed_cases": 12,
+        "unprocessed": []
+      }
+    }
+  },
+  "frozen_hashes": [
+    {
+      "plan": "PLAN_CALIBRATION",
+      "recorded_path": "plans/PLAN_CALIBRATION.md",
+      "historical_actual_path": "plans/PLAN_CALIBRATION.md",
+      "sha256": "7ee5f8eb3762c9289ce5c2d2d03503d270fb7b890de4e7f13088e0ff7893ec49",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION",
+      "recorded_path": "code/calibration.py",
+      "historical_actual_path": "code/calibration_c1_initial.py",
+      "sha256": "e15f5ecdfc7c76245484ab599d6ecbd7d1bc8c1e1ae122e34be0bbde3160cf22",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION",
+      "recorded_path": "proofs/calibration_notes.md",
+      "historical_actual_path": "proofs/calibration_notes.md",
+      "sha256": "2445373d0fe90dce1ccb8ebc7686857562567e25e815e78835da7853f40a41c7",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C1A",
+      "recorded_path": "plans/PLAN_CALIBRATION_C1A.md",
+      "historical_actual_path": "plans/PLAN_CALIBRATION_C1A.md",
+      "sha256": "8cb40d329f91f1a0bb42a52c1ef65c33feaaff78d18b9d7b6222a467aa151dbd",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C1A",
+      "recorded_path": "code/calibration.py",
+      "historical_actual_path": "code/calibration.py",
+      "sha256": "69f083ce34a466d0522054f4110ee7a9518f3d6898735e88489678635f813a25",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C2",
+      "recorded_path": "plans/PLAN_CALIBRATION_C2.md",
+      "historical_actual_path": "plans/PLAN_CALIBRATION_C2.md",
+      "sha256": "9d4429df2fd668e49aa9107078ca513825f3fba495207ed4b9ecfa1d50e2b856",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C2",
+      "recorded_path": "code/calibration_extended.py",
+      "historical_actual_path": "code/calibration_extended.py",
+      "sha256": "a3384d39987c14de5a39fe9df49ce5133a167fab379ea6f4f895b30963b146cb",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C2",
+      "recorded_path": "code/calibration.py",
+      "historical_actual_path": "code/calibration.py",
+      "sha256": "69f083ce34a466d0522054f4110ee7a9518f3d6898735e88489678635f813a25",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C3",
+      "recorded_path": "plans/PLAN_CALIBRATION_C3.md",
+      "historical_actual_path": "plans/PLAN_CALIBRATION_C3.md",
+      "sha256": "5ecf88250df1f37bf685441b1b6bf58166ec850ad0e63f094ad684a60c1fc86a",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C3",
+      "recorded_path": "code/calibration_position.py",
+      "historical_actual_path": "code/calibration_position.py",
+      "sha256": "78923000a27fa5c80a445437ccdf9b9b9550ba6222b4197470ec54fcf378e51e",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C3",
+      "recorded_path": "code/calibration_extended.py",
+      "historical_actual_path": "code/calibration_extended.py",
+      "sha256": "a3384d39987c14de5a39fe9df49ce5133a167fab379ea6f4f895b30963b146cb",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C3",
+      "recorded_path": "code/calibration.py",
+      "historical_actual_path": "code/calibration.py",
+      "sha256": "69f083ce34a466d0522054f4110ee7a9518f3d6898735e88489678635f813a25",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C4",
+      "recorded_path": "plans/PLAN_CALIBRATION_C4.md",
+      "historical_actual_path": "plans/PLAN_CALIBRATION_C4.md",
+      "sha256": "6cdc3f7d6df64f5ce7336590bf0f2806c5843bbd234aa900f4db50243d7cc1a3",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C4",
+      "recorded_path": "code/calibration_normalized.py",
+      "historical_actual_path": "code/calibration_normalized.py",
+      "sha256": "f9523c6df14655d55099ec5264d92b1c99e42d69c883216b38d8555760154ba6",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C4",
+      "recorded_path": "code/calibration.py",
+      "historical_actual_path": "code/calibration.py",
+      "sha256": "69f083ce34a466d0522054f4110ee7a9518f3d6898735e88489678635f813a25",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C5",
+      "recorded_path": "plans/PLAN_CALIBRATION_C5.md",
+      "historical_actual_path": "plans/PLAN_CALIBRATION_C5.md",
+      "sha256": "9e97ce47310072ac6b792e865c7411d297900fc4485b26ed9511d0f2c9db92b3",
+      "consistent": true
+    },
+    {
+      "plan": "PLAN_CALIBRATION_C5",
+      "recorded_path": "code/calibration_check.py",
+      "historical_actual_path": "code/calibration_check.py",
+      "sha256": "a0352296b36174424a9f118378b4e28ab52b9ef394765fc8fc99ba494fff160d",
+      "consistent": true
+    }
+  ],
+  "angle_kernel_checks": {
+    "pi_contained": true,
+    "mpmath_dps": 90,
+    "angle_checks": [
+      {
+        "gamma_numerator": 0,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 2048,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 16384,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 32768,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 49152,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 63488,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 65535,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      },
+      {
+        "gamma_numerator": 65536,
+        "gamma_denominator": 65536,
+        "all_six_kernels_contained": true
+      }
+    ],
+    "role": "implementation diagnostic, not a proof of all table entries"
+  },
+  "point_checks": {
+    "role": "non-interval diagnostics; never used as evidence or to change a ledger result",
+    "records": [
+      {
+        "plan": "C1A",
+        "shape": 0,
+        "mode": "G3_123",
+        "point": [
+          0.25,
+          0.375,
+          0.5
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.941943739112388,
+          0.9419437391123842
+        ],
+        "order_difference": 3.885780586188048e-15,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 0,
+        "mode": "G3_13",
+        "point": [
+          0.375,
+          0.0,
+          0.5
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.004351264189657,
+          1.004351264189638
+        ],
+        "order_difference": 1.9095836023552692e-14,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 0,
+        "mode": "G3_23",
+        "point": [
+          0.0,
+          0.375,
+          0.5
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.003036151227076,
+          1.0030361512270758
+        ],
+        "order_difference": 2.220446049250313e-16,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 0,
+        "mode": "D12",
+        "point": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.042651470870701,
+          1.042651470870902
+        ],
+        "order_difference": 2.0095036745715333e-13,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 31,
+        "mode": "G3_123",
+        "point": [
+          0.25,
+          0.375,
+          0.5
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.097538899216627,
+          1.0983562160847409
+        ],
+        "order_difference": 0.0008173168681138154,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 31,
+        "mode": "G3_13",
+        "point": [
+          0.375,
+          0.0,
+          0.5
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.1259859119405242,
+          1.1270013701352575
+        ],
+        "order_difference": 0.0010154581947332542,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 31,
+        "mode": "G3_23",
+        "point": [
+          0.0,
+          0.375,
+          0.5
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.0944851090457808,
+          1.0947544014324238
+        ],
+        "order_difference": 0.00026929238664297195,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C1A",
+        "shape": 31,
+        "mode": "D12",
+        "point": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.028123228630327003,
+          0.02812840227159898
+        ],
+        "order_difference": 5.17364127197717e-06,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 0,
+        "mode": "G3_123",
+        "point": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.3360567336957144,
+          0.33605671210791577
+        ],
+        "order_difference": 2.1587798659794544e-08,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 0,
+        "mode": "G3_13",
+        "point": [
+          0.6,
+          0.0,
+          0.8
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.3324665332998717,
+          0.33246628022474234
+        ],
+        "order_difference": 2.5307512935279775e-07,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 0,
+        "mode": "G3_23",
+        "point": [
+          0.0,
+          0.6,
+          0.8
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.32779901387765303,
+          0.3277987610646527
+        ],
+        "order_difference": 2.528130003121021e-07,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 0,
+        "mode": "D12",
+        "point": [
+          0.6,
+          0.8,
+          0.0
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.870473296732866,
+          0.8704729339546329
+        ],
+        "order_difference": 3.6277823312058644e-07,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 31,
+        "mode": "G3_123",
+        "point": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.9743141670863982,
+          0.9743054734068017
+        ],
+        "order_difference": 8.693679596438741e-06,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 31,
+        "mode": "G3_13",
+        "point": [
+          0.6,
+          0.0,
+          0.8
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.8260214421612558,
+          0.8260208982441637
+        ],
+        "order_difference": 5.43917092143964e-07,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 31,
+        "mode": "G3_23",
+        "point": [
+          0.0,
+          0.6,
+          0.8
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.6755674981611598,
+          0.6751433068091786
+        ],
+        "order_difference": 0.00042419135198124014,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C2",
+        "shape": 31,
+        "mode": "D12",
+        "point": [
+          0.6,
+          0.8,
+          0.0
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          0.021468221362398537,
+          0.021466062834406132
+        ],
+        "order_difference": 2.1585279924053735e-06,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C4",
+        "shape": 0,
+        "mode": "G3_123",
+        "point": [
+          0.25,
+          0.375,
+          0.005859375
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.1849443228761996,
+          1.184944322876203
+        ],
+        "order_difference": 3.552713678800501e-15,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C4",
+        "shape": 7,
+        "mode": "G3_123",
+        "point": [
+          0.25,
+          0.375,
+          0.005859375
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.9308349287226692,
+          1.930867666610542
+        ],
+        "order_difference": 3.2737887872835714e-05,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C4",
+        "shape": 24,
+        "mode": "G3_123",
+        "point": [
+          0.25,
+          0.375,
+          0.005859375
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.333090296391542,
+          1.3330902963919369
+        ],
+        "order_difference": 3.9479530755670567e-13,
+        "inside_recorded_enclosure": true
+      },
+      {
+        "plan": "C4",
+        "shape": 31,
+        "mode": "G3_123",
+        "point": [
+          0.25,
+          0.375,
+          0.005859375
+        ],
+        "orders": [
+          80,
+          160
+        ],
+        "noninterval_values": [
+          1.1390835164800488,
+          1.2641136000475655
+        ],
+        "order_difference": 0.12503008356751666,
+        "inside_recorded_enclosure": true
+      }
+    ]
+  },
+  "replay": {
+    "role": "same-code numerical reproduction, not independent validation",
+    "records": [
+      {
+        "plan": "C1A",
+        "shape": 31,
+        "mode": "D12",
+        "nmu": 512,
+        "lower_hex": "0x1.34a2723a10088p-7",
+        "upper_hex": "0x1.7fd8cbac41b63p-5",
+        "bitwise_same": true
+      },
+      {
+        "plan": "C2",
+        "shape": 31,
+        "mode": "D12",
+        "nmu": 256,
+        "lower_hex": "0x1.1e9761c836294p-9",
+        "upper_hex": "0x1.4f8855e9eaffap-5",
+        "bitwise_same": true
+      },
+      {
+        "plan": "C4",
+        "shape": 0,
+        "mode": "G3_123",
+        "nmu": 128,
+        "lower_hex": "0x1.ad10fe34eaec4p-1",
+        "upper_hex": "0x1.86c1640a61244p+0",
+        "bitwise_same": true
+      }
+    ]
+  },
+  "budget": {
+    "warning": "Hypothetical fixed grids only. The 1/8 shape width was clipped at four corners; it was not tested on every shape cell. Position cases include unresolved results. These are budget arithmetic, not completion-time estimates. All sphere-outside cube cells may be culled, but axis and boundary collars require extra work.",
+    "records": [
+      {
+        "nominal_shape_full_width": "1/8",
+        "shape_grid_cells": 720,
+        "position_full_width": "1/128",
+        "positive_calibration_cases": 14,
+        "total_calibration_cases": 16,
+        "median_case_seconds_all_stages": 0.1383107804977044,
+        "maximum_case_seconds_all_stages": 2.0216900770028587,
+        "cube_plus_three_faces_cells_per_shape": 2146304,
+        "total_hypothetical_cells": 1545338880,
+        "serial_equivalent_days_at_observed_median": 2473.808178544541,
+        "ideal_two_worker_days": 1236.9040892722705,
+        "whole_proof_cost_bound": false
+      },
+      {
+        "nominal_shape_full_width": "1/8",
+        "shape_grid_cells": 720,
+        "position_full_width": "1/32",
+        "positive_calibration_cases": 5,
+        "total_calibration_cases": 16,
+        "median_case_seconds_all_stages": 1.7037021630021627,
+        "maximum_case_seconds_all_stages": 2.208688964998146,
+        "cube_plus_three_faces_cells_per_shape": 35840,
+        "total_hypothetical_cells": 25804800,
+        "serial_equivalent_days_at_observed_median": 508.8390460166459,
+        "ideal_two_worker_days": 254.41952300832295,
+        "whole_proof_cost_bound": false
+      },
+      {
+        "nominal_shape_full_width": "1/8",
+        "shape_grid_cells": 720,
+        "position_full_width": "1/8",
+        "positive_calibration_cases": 0,
+        "total_calibration_cases": 16,
+        "median_case_seconds_all_stages": 1.8403618575030123,
+        "maximum_case_seconds_all_stages": 1.9450224629981676,
+        "cube_plus_three_faces_cells_per_shape": 704,
+        "total_hypothetical_cells": 506880,
+        "serial_equivalent_days_at_observed_median": 10.796789564017672,
+        "ideal_two_worker_days": 5.398394782008836,
+        "whole_proof_cost_bound": false
+      }
+    ],
+    "adaptive_cost": "Not estimated: success widths and stopping depth outside the finite calibration patches are unknown."
+  },
+  "unprocessed_domain": {
+    "shape": "R minus the union of recorded positive shape-position boxes; a positive projected shape box does not cover every position.",
+    "G3": "For each m in {123,13,23}, (R x D_m) minus the union of positive C1A,C2,C3 boxes and positive C4 collars (q3>0).",
+    "D12": "(R x D_12) minus the union of positive C1A,C2,C3 D12 boxes. The tested direct q1 collar remains unresolved.",
+    "q3_zero": "The H33 continuation at q3=0 is a value of extended G3, not a nonzero E3 on that plane.",
+    "s_one": "Some C2 positive finite shape boxes include s=1 by the factored D12 extension. The rest of the symmetric edge and its neighborhood remain unprocessed.",
+    "boundary": "Sixteen finite boundary patches were positive, but the remainder of the sphere boundary was not covered.",
+    "axes": "q1*q2=0, center, coordinate axes and untested collars remain assigned to analytical or separate interval work."
+  }
+}

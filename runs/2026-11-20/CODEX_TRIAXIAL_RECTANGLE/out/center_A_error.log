@@ -1,0 +1,5 @@
+DIAGNOSTIC_ONLY / NOT_EVIDENCE
+Stopped before first numerical box result.
+TypeError: unsupported operand type(s) for /: int and I
+Location: center_interval.py, wt=4/pi_interval()/den
+Fix: wrap exact integer 4 as I(4). No numerical conditions changed.
