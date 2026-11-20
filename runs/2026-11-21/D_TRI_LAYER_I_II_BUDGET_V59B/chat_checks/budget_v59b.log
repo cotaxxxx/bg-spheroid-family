@@ -1,0 +1,9 @@
+rows 96  from V59-B 51  missing 0
+layer stratum     n cov  bud unres  mean_sec_lb  cells  CPU-years(lb)
+I     axis-face   16  15    1     0        245.5   1448       0.36
+I     equator     16   2    9     5        670.4    770       0.52
+I     interior    16  12    4     0        402.2  13736       5.60
+I     rim         16   4   12     0        742.2   2341       1.76
+II    interior    16   9    6     1        498.2    709       0.36
+II    rim         16  15    1     0        198.5     61       0.01
+{'I': 8.25, 'II': 0.37} total 8.62
