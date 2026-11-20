@@ -1,0 +1,2 @@
+{"check": "g1 sign", "r": "13/16", "sign": 1, "grid": [4096, 512], "bound": -0.0005851757294106817, "confirmed": false, "seconds": 79.5}
+{"check": "g1 sign", "r": "27/32", "sign": -1, "grid": [4096, 512], "bound": -0.005086466431169528, "confirmed": true, "seconds": 79.1}

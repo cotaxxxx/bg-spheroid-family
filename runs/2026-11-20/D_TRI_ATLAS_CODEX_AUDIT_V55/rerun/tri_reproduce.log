@@ -1,0 +1,13 @@
+Replay directory: /tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/triaxial-replay.WSC9Fy
+map 5 seconds
+mixed 13 seconds
+refine 6 seconds
+checks 3 seconds
+torque 2 seconds
+reversal 1 seconds
+ring_interval 6 seconds
+moving_boundary 9 seconds
+normal 1 seconds
+figure 2 seconds
+/tmp/claude-0/-home-claude/c84560e9-80f0-5030-8308-5fed2f20ba54/scratchpad/tri_run/TRIAXIAL_FIRST_ATLAS_20261120/out/mixed.csv out/mixed.csv differ: char 515, line 6
+exit 1 seconds 50

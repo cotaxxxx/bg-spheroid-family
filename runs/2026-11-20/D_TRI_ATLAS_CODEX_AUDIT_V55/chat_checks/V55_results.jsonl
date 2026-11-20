@@ -1,0 +1,10 @@
+{"check": "H sign (g1 = rH)", "r": "13/16", "sign": 1, "grid": "fine", "bound": -0.02728950559118042, "confirmed": false, "seconds": 22.6}
+{"check": "H sign (g1 = rH)", "r": "27/32", "sign": -1, "grid": "fine", "bound": 0.022131988847581493, "confirmed": false, "seconds": 23.1}
+{"check": "c(r,3)<0", "r": ["13/16", "209/256"], "grid": [256, 64], "upper": -0.1453792906435858, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["209/256", "105/128"], "grid": [256, 64], "upper": -0.14686272759393668, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["105/128", "211/256"], "grid": [256, 64], "upper": -0.14834545025302706, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["211/256", "53/64"], "grid": [256, 64], "upper": -0.14982738773613238, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["53/64", "213/256"], "grid": [256, 64], "upper": -0.1513084350426462, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["213/256", "107/128"], "grid": [256, 64], "upper": -0.15278848941840814, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["107/128", "215/256"], "grid": [256, 64], "upper": -0.154267458606954, "confirmed": true, "seconds": 0.5}
+{"check": "c(r,3)<0", "r": ["215/256", "27/32"], "grid": [256, 64], "upper": -0.15574521466290972, "confirmed": true, "seconds": 0.5}
