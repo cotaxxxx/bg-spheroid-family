@@ -2,7 +2,7 @@
 
 2026-11-20 ／ 裁定：Judge（ユーザー、ボタンで回答）／ 記録：chat ／ 扱い：DIAGNOSTIC_ONLY / NOT_EVIDENCE
 
-## 研究成果として採用するもの（V56 `0962d35`）
+## 研究成果として採用するもの（Claude Code の報告、basepoint-geometry `43b71569`、chat 監査 V56 `0962d35`）
 
 - **せん断の恒等式（命題 3）：** q_iE_j − q_jE_i ＝ (ℓ_j/ℓ_i − ℓ_i/ℓ_j)T_ij。Codex の (4) と同一である。
 - **主関数と鏡映（命題 2）**

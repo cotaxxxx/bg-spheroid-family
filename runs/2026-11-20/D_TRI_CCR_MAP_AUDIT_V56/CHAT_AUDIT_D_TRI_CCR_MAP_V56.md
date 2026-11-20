@@ -7,7 +7,10 @@
 | repo / branch / commit | `cotaxxxx/basepoint-geometry` / `ccr-1e5ce365-5ksfyr` / `43b71569` |
 | 報告書 | `diagnostics/triaxial_map_20261120/REPORT.md`（sha256 `da2a9139…4d4e`） |
 | ZIP | `triaxial_map_20261120.zip`（sha256 `5f823480…9c4e`） |
+| 作成者 | **Claude Code**（chat とは別の session。Judge の連絡、2026-11-20 14:49） |
 | 発注 | 最初の三軸の指示書（`1dd629f`）への、Codex とは別の単発の作業 |
+
+**独立性について：** Claude Code は、chat と同じ系統のモデルである。そのため、chat によるこの監査は、Codex（別の系統）を監査するときより独立性が低い。地図の一致そのものの価値は、Codex との照合（§2）が担っている。命題 4 の証明は短く、chat が一行ずつ手で追った。
 
 **前提の branch について（報告書の J7）：** この作業は basepoint-geometry の環境で行われた。そのため、`evidence/c-gap2-freeze-20261115`（bg-spheroid-family にある）を読めていない。式は論文 I の定義から独立に導かれている。結果として、**Codex（V55）と完全に独立な二つ目の地図**になった。
 
