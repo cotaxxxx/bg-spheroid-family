@@ -1,0 +1,26 @@
+OK  jet value 
+OK  jet grad 0 
+OK  jet grad 1 
+OK  jet grad 2 
+OK  jet hess 00 
+OK  jet hess 01 
+OK  jet hess 02 
+OK  jet hess 11 
+OK  jet hess 12 
+OK  jet hess 22 
+OK  point E3 s=1.2 t=1.5 q=(0.25, 0.25, 0.5) [0.7398259, 0.82640472] ref 0.78304216
+OK  point T12 s=1.2 t=1.5 q=(0.25, 0.25, 0.5) [0.042597695, 0.068082076] ref 0.055338847
+OK  point H33 s=1.2 t=1.5 q=(0.25, 0.25, 0.5) [0.78696301, 1.0969694] ref 0.94191401
+OK  point E3 s=2.5 t=4 q=(0.25, 0.0, 0.5) [0.51447162, 0.94870777] ref 0.73173671
+OK  point H33 s=2.5 t=4 q=(0.25, 0.0, 0.5) [-4.3715844, 6.3893096] ref 1.0079612
+OK  point T12 s=1.5 t=2 q=(0.5, 0.5, 0.0) [0.15074583, 0.18238487] ref 0.16655615
+OK  point H33 s=1.5 t=2 q=(0.5, 0.5, 0.0) [1.2394119, 2.4281295] ref 1.8336165
+OK  box interior E3 N=64 [0.696233, 0.869321] refs [0.775149, 0.788619] order 2 used 2 contact 0 p0 ['1/4', '1/4', '1/2'] 3.3s
+OK  box interior T12 N=64 [0.0333759, 0.077298] refs [0.0547115, 0.056994] order 2 used 2 contact 0 p0 ['1/4', '1/4', '1/2'] 2.9s
+OK  box interior H33 N=64 [0.494813, 1.38661] refs [0.917893, 0.968785] order 2 used 2 contact 0 p0 ['1/4', '1/4', '1/2'] 3.0s
+OK  box elongated E3 N=128 [0.6798, 0.778533] refs [0.725971, 0.732257] order 2 used 2 contact 0 p0 ['1/4', '1/8', '1/2'] 10.8s
+OK  box elongated H33 N=128 [0.230686, 1.79903] refs [0.989087, 0.996475] order 2 used 2 contact 0 p0 ['1/4', '1/8', '1/2'] 6.4s
+OK  box D1/8-like equator H33 N=256 [1.0514, 1.50895] refs [1.27183, 1.27245] order 2 used 2 contact 0 p0 ['1/64', '47/64', '1/64'] 35.6s
+OK  box layer II T12 N=64 [0.137988, 0.195276] refs [0.16419, 0.168143] order 2 used 2 contact 0 p0 ['1/2', '1/2', '1/64'] 3.0s
+OK  box rim, centre outside ball E3 N=64 [-0.0458352, 0.966091] refs [0.502486, 0.520758] order 1 used 1 contact 18 p0 ['75/128', '75/128', '71/128'] 2.2s
+FAILURES 0

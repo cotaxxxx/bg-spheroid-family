@@ -1,0 +1,8 @@
+95a36bd98c8e95991f2b2a67d7dbd033fbe9c832085cd3589f80e53b4431ed09  ./GeoEncloseReader_0.5.0.zip
+860a8892a1388e17da95d5fe7a02f3fe419c8a3ebc880fc2b33af16b3e1c9f4f  ./PLAN_V60.md
+75c023743e6bcbfb561c4b88b31560da81036261d4d729969128fd6f0a2693af  ./V60_PC_BUNDLE.tar.gz
+4fdcc05241599232d68f6d99b8acf56ae112b2fed641879d7d94aaa412c75ec0  ./V60_PC_BUNDLE.tar.gz.sha256
+b6f56628fde1adfbbc2939d87f2b1e723120872ce04fa37b2824e8a95adfedd6  ./chat_checks/bench_here.jsonl
+a6ea2f4a5af622a73abcaf6ac7ebe1e98e0755e1340866322ca3000b073c260e  ./chat_checks/budget_v60.py
+5bc0048f5a8d83faeb770b08758ef51f104f5d0b804dc3a28dd55d4159bd2859  ./chat_checks/selftest_tri4.log
+b9ed55e44e5c9bb17d2bf59a8a5efadea4ae0b9f045d99c8025aa205b86a3054  ./chat_checks/verify_v60.py
