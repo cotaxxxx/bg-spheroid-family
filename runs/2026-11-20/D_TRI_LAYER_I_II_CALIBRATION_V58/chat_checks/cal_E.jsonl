@@ -1,0 +1,16 @@
+{"stage": "E", "tile": [0, 0], "patch": "face13", "kind": "W3", "status": "COVERED", "leaves": 67, "evals": 89, "maxdepth": 4, "maxN": 64, "remaining": 0, "sec": 48.4}
+{"stage": "E", "tile": [0, 0], "patch": "oct", "kind": "W3", "status": "COVERED", "leaves": 97, "evals": 129, "maxdepth": 4, "maxN": 64, "remaining": 0, "sec": 74.1}
+{"stage": "E", "tile": [0, 0], "patch": "rim13", "kind": "W3", "status": "COVERED", "leaves": 82, "evals": 109, "maxdepth": 4, "maxN": 64, "remaining": 0, "sec": 58.6}
+{"stage": "E", "tile": [0, 0], "patch": "disk2", "kind": "C12", "status": "COVERED", "leaves": 109, "evals": 145, "maxdepth": 4, "maxN": 64, "remaining": 0, "sec": 86.3}
+{"stage": "E", "tile": [1, 3], "patch": "face13", "kind": "W3", "status": "COVERED", "leaves": 64, "evals": 123, "maxdepth": 3, "maxN": 128, "remaining": 0, "sec": 137.5}
+{"stage": "E", "tile": [1, 3], "patch": "rim13", "kind": "W3", "status": "COVERED", "leaves": 64, "evals": 85, "maxdepth": 3, "maxN": 64, "remaining": 0, "sec": 45.9}
+{"stage": "E", "tile": [2, 5], "patch": "face13", "kind": "W3", "status": "UNRESOLVED", "leaves": 0, "evals": 6, "maxdepth": 0, "maxN": 0, "remaining": 9, "sec": 38.7}
+{"stage": "E", "tile": [2, 5], "patch": "rim13", "kind": "W3", "status": "UNRESOLVED", "leaves": 0, "evals": 5, "maxdepth": 0, "maxN": 0, "remaining": 6, "sec": 21.6}
+{"stage": "E", "tile": [1, 3], "patch": "oct", "kind": "W3", "status": "COVERED", "leaves": 64, "evals": 149, "maxdepth": 3, "maxN": 128, "remaining": 0, "sec": 205.2}
+{"stage": "E", "tile": [3, 7], "patch": "face13", "kind": "W3", "status": "UNRESOLVED", "leaves": 0, "evals": 5, "maxdepth": 0, "maxN": 0, "remaining": 6, "sec": 20.2}
+{"stage": "E", "tile": [3, 7], "patch": "rim13", "kind": "W3", "status": "UNRESOLVED", "leaves": 0, "evals": 5, "maxdepth": 0, "maxN": 0, "remaining": 6, "sec": 19.2}
+{"stage": "E", "tile": [1, 3], "patch": "disk2", "kind": "C12", "status": "COVERED", "leaves": 64, "evals": 149, "maxdepth": 3, "maxN": 128, "remaining": 0, "sec": 187.5}
+{"stage": "E", "tile": [2, 5], "patch": "oct", "kind": "W3", "status": "UNRESOLVED", "leaves": 0, "evals": 6, "maxdepth": 0, "maxN": 0, "remaining": 9, "sec": 45.4}
+{"stage": "E", "tile": [2, 5], "patch": "disk2", "kind": "C12", "status": "BUDGET", "leaves": 25, "evals": 85, "maxdepth": 3, "maxN": 256, "remaining": 6, "sec": 303.1}
+{"stage": "E", "tile": [3, 7], "patch": "oct", "kind": "W3", "status": "UNRESOLVED", "leaves": 0, "evals": 5, "maxdepth": 0, "maxN": 0, "remaining": 6, "sec": 20.1}
+{"stage": "E", "tile": [3, 7], "patch": "disk2", "kind": "C12", "status": "UNRESOLVED", "leaves": 0, "evals": 6, "maxdepth": 0, "maxN": 0, "remaining": 9, "sec": 22.7}
