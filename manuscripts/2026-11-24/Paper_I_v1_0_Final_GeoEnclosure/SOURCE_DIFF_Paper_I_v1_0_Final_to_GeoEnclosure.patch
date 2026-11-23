@@ -1,0 +1,16 @@
+--- a/main.tex
++++ b/main.tex
+@@ -78,6 +78,13 @@
+ minimizer. The full-family claims are conditional on C1--C6;
+ constrained minimizers on the boundary have not been classified here.
+ 
++
++The global part of this classification required a dedicated method.
++A first box search left 21,254 of 31,340 boxes undecided; the
++assertions C1--C6 became checkable only after a reduction to
++one-dimensional problems. The method, GeoEnclosure, is published
++separately (doi:10.5281/zenodo.24421364).
++
+ \noindent\textbf{Conditional classification.}
+ Assuming computational Assertions C1--C6, the only interior stationary
+ components over the entire $\lambda>0$ family are the centre, an axial pair
