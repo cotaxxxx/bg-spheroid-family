@@ -1,0 +1,965 @@
+\section{扁長側の裾：明示的な有限包囲への帰着}
+\label{sec:prolate-tail}
+
+本節では、計算主張~\ref{comp:c5}および~\ref{comp:c6}の
+有理数による包囲の言明を条件として、すべての有限な$\lambda\geq 5$に対する
+分類を証明する。
+軸上の議論に必要な極での評価を含む解析的な帰着は、
+以下で与える。これらの計算主張は、指定されたコンパクトな箱の上の
+指定された積分に関するものであり、
+停留集合そのものについての言明ではない。
+
+\subsection{正規化と角度係数}
+\label{subsec:pt-normalization}
+
+固定した$\lambda\geq 5$に対し、次のようにおく。
+\[
+ L=\operatorname{diag}(1,1,\lambda),\qquad
+ q=(\rho,0,z),\qquad \rho\geq 0,\quad \rho^2+z^2<1,
+ \qquad \langle a\rangle_\xi=\frac{1}{4\pi}\int_{S^2}a(\xi)\,d\Omega_\xi .
+\]
+$LB$から体積保存楕円体への正の相似変換は、
+角度エネルギーを変えない。本節では
+$E(q)$は参照座標での関数
+$\widehat E_\lambda(q)$の略記である。特に、以下の微分はすべて
+$q$に関してとる。
+$\xi\in S^2$に対し、次のようにおく。
+\begin{equation}
+\begin{aligned}
+ B&=|L^{-T}\xi|^2,&
+ D&=|L(\xi-q)|,&
+ k&=1-q\cdot\xi,\\
+ n&=\frac{L^{-T}\xi}{\sqrt B},&
+ \widehat v&=\frac{L(\xi-q)}{D},&
+ \gamma&=n\cdot\widehat v=\frac{k}{D\sqrt B}.
+\end{aligned}
+\label{eq:pt-basic-variables}
+\end{equation}
+したがって内部では$0<\gamma\leq 1$であり、次が成り立つ。
+\[
+ E(q)=\langle k\,\arccos^2\gamma\rangle_\xi.
+\]
+次のように定める。
+\begin{equation}
+ F(g)=\frac{\pi^2}{4}-\arccos^2g,\qquad
+ P(g)=F'(g),\qquad Q(g)=2P(g)+gP'(g).
+\label{eq:pt-coefficients}
+\end{equation}
+$g=1$での値は連続拡張によるものとする。
+
+\begin{lemma}[角度に関する評価]
+\label{lem:pt-angular-bounds}
+$0\leq g\leq 1$に対し、$A=1+t^2$、$b=1-t^2$として、次が成り立つ。
+\begin{align}
+ P(g)&=4\int_0^1\frac{dt}{A+bg},&
+ Q(g)&=4\int_0^1\frac{2A+bg}{(A+bg)^2}\,dt.
+ \label{eq:pt-angular-integrals}
+\end{align}
+$P$と$Q$はともに正であり、$Q$は非増加で、
+$gQ(g)$は非減少である。さらに、次が成り立つ。
+\begin{equation}
+ gP(g)\leq 2,\qquad
+ \pi g-g^2\leq F(g)\leq\pi g,\qquad
+ \pi-2g\leq P(g)\leq\pi.
+\label{eq:pt-elementary-angular-bounds}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+表示
+$P(g)=2\int_0^\infty(\cosh t+g)^{-1}\,dt$は、
+$P(g)=2\arccos(g)/\sqrt{1-g^2}$から従う。
+置換$r=\tanh(t/2)$により
+式~\eqref{eq:pt-angular-integrals}の第一の積分が得られ、これを微分すると第二の積分が得られる。
+被積分関数は$0\leq g\leq1$で一様に正則である。
+直接微分すると次を得る。
+\[
+ Q'(g)=-4\int_0^1\frac{b(3A+bg)}{(A+bg)^3}\,dt\leq0,
+ \qquad
+ \frac{d}{dg}\{gQ(g)\}
+ =8\int_0^1\frac{A^2}{(A+bg)^3}\,dt>0 .
+\]
+$g=\cos\alpha$と書くと
+$gP(g)=2\alpha\cot\alpha\leq2$を得る。
+また$P(0)=\pi$であり、次が成り立つ。
+\[
+ -2\leq P'(g)
+ =-2\int_0^\infty\frac{dt}{(\cosh t+g)^2}\leq0.
+\]
+したがって$\pi-2g\leq P(g)\leq\pi$である。
+$F(0)=0$を用いて$0$から積分すると、$F$に対する主張の評価が
+得られる。
+\end{proof}
+
+これらの係数は、$g=1$の近くで$\arccos$を評価することなく
+包囲することもできる。
+$h=(1-g)/2\in[0,1/2]$に対し、次のようにおく。
+\begin{equation}
+ a_0=1,\qquad
+ a_{n+1}=a_n\frac{2n+2}{2n+3},\qquad
+ q_n=(4+2n)a_n-(n+1)a_{n+1}>0 .
+\label{eq:pt-positive-series-coefficients}
+\end{equation}
+式~\eqref{eq:pt-angular-integrals}の第一の積分を
+一様収束する等比級数に展開すると、次がわかる。
+\begin{equation}
+ P(g)=2\sum_{n\geq0}a_nh^n,\qquad
+ Q(g)=\sum_{n\geq0}q_nh^n .
+\label{eq:pt-positive-series}
+\end{equation}
+実際$a_n=\int_0^1(1-t^2)^n\,dt$であり、これから漸化式が得られ、
+また
+$q_n=2a_n(n^2+5n+5)/(2n+3)>0$である。
+特に、$Q$の級数の打ち切りは下界である。
+$a_n\leq1$であるから、次が成り立つ。
+\begin{equation}
+ 2\sum_{n=0}^N a_nh^n
+ \leq P(g)
+ \leq 2\sum_{n=0}^N a_nh^n+4h^{N+1}.
+\label{eq:pt-series-enclosures}
+\end{equation}
+これらの不等式は、計算主張~\ref{comp:c5}の係数表で用いる
+解析的な剰余の上界を定める。
+
+\subsection{横断方向のHessianと弦の恒等式}
+\label{subsec:pt-chord}
+
+$\rho>0$に対して$H=E_\rho/\rho$とおき、$\rho=0$へは
+$H=E_{yy}$によって拡張する。代表点$(\rho,0,z)$では、
+回転対称性により$E_{yy}=E_\rho/\rho$となる。
+ここで$y=q_2$は、$L_{22}=1$であるから、
+$L$に対する物理的な横断方向の座標でもある。
+
+\begin{lemma}[有界な弦表示]
+\label{lem:pt-chord-representation}
+内部の$q$に対し、$e\in S^2$をとり、次のように定める。
+\begin{equation}
+\begin{gathered}
+ m=e_z,\quad j=e_y^2,\quad v=q\cdot e,\quad
+ \delta=1-|q|^2,\quad d=\sqrt{\delta+v^2},\\
+ C=|Le|^2=1+(\lambda^2-1)m^2,\quad
+ U=1-C^{-1},\quad \ell_\sigma=d-\sigma v,\\
+ \xi_\sigma=q+\sigma\ell_\sigma e,\qquad
+ B_\sigma=|L^{-T}\xi_\sigma|^2,\\
+ w_\sigma=\frac{1-\sigma v/d}{2},\qquad
+ \gamma_\sigma=\frac{d}{\sqrt{CB_\sigma}},
+ \qquad \sigma\in\{-1,1\}.
+\end{gathered}
+\label{eq:pt-chord-variables}
+\end{equation}
+このとき$w_\sigma\geq0$、$w_++w_-=1$であり、次が成り立つ。
+\begin{equation}
+ H=\left\langle
+ \sum_{\sigma=\pm1}w_\sigma
+ \left[
+ \frac{d^2(1-j/C)}{C^{3/2}}\,
+ \frac{P(\gamma_\sigma)}{\sqrt{B_\sigma}}
+ -
+ \frac{j(dU-\sigma v)^2}{\sqrt C}\,
+ \frac{Q(\gamma_\sigma)}{\sqrt{B_\sigma}}
+ \right]\right\rangle_e .
+\label{eq:pt-chord-hessian}
+\end{equation}
+重み付きの負の因子は、次の厳密な恒等式を満たす。
+\begin{equation}
+ \sum_{\sigma=\pm1}w_\sigma(dU-\sigma v)^2
+ =\delta U^2+(1+U)^2v^2.
+\label{eq:pt-paired-negative-identity}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+$q$に依存する変数変換を行う前に、
+まず元の球面上で微分する。
+$b_y=n_y-\gamma\widehat v_y$とおく。
+$\xi$を固定すると、次が成り立つ。
+\[
+ D_y=-\widehat v_y,\qquad
+ \gamma_y=-b_y/D,\qquad
+ (\widehat v_y)_y=-(1-\widehat v_y^2)/D,\qquad
+ (b_y)_y=\{b_y\widehat v_y+
+ \gamma(1-\widehat v_y^2)\}/D.
+\]
+また$k=D\sqrt B\,\gamma$および$k_y=-\sqrt B\,n_y$である。
+したがって$k\arccos^2\gamma$を二回微分すると次を得る。
+\begin{equation}
+ H=\left\langle\frac{\sqrt B}{D}
+ \left[
+ P(\gamma)\gamma^2(1-\widehat v_y^2)
+ -Q(\gamma)(n_y-\gamma\widehat v_y)^2
+ \right]\right\rangle_\xi .
+\label{eq:pt-original-transverse-hessian}
+\end{equation}
+これらの微分は、開球の各コンパクト部分集合上で正当であり、
+そこでは$D$は正の下界をもつ。
+
+直線$q+\mathbb R e$と球面との交点は、
+ちょうど式~\eqref{eq:pt-chord-variables}の$\xi_\sigma$である。
+$\xi_\sigma\cdot(\sigma e)=d$であるから、
+$q$からの動径射影により次を得る。
+\[
+ d\Omega_\xi=\frac{\ell_\sigma^2}{d}\,d\Omega_e .
+\]
+両方の符号と方向の全球面を用いると、各曲面上の点が
+二回覆われる。したがって変換後の積分には因子
+$1/2$が付く。
+二つの端点では、次が成り立つ。
+\[
+ k_\sigma=\ell_\sigma d,\quad
+ D_\sigma=\ell_\sigma\sqrt C,\quad
+ \widehat v_{y,\sigma}=\frac{\sigma e_y}{\sqrt C},\quad
+ n_{y,\sigma}-\gamma_\sigma\widehat v_{y,\sigma}
+ =\frac{\sigma e_y}{\sqrt{B_\sigma}}\,(dU-\sigma v).
+\]
+式~\eqref{eq:pt-original-transverse-hessian}に代入すると、
+$w_\sigma=\ell_\sigma/(2d)$として式~\eqref{eq:pt-chord-hessian}が
+得られる。
+最後に$\sum_\sigma\sigma w_\sigma=-v/d$および
+$d^2=\delta+v^2$であるから、
+式~\eqref{eq:pt-paired-negative-identity}の左辺は
+$d^2U^2+2Uv^2+v^2$である。
+\end{proof}
+
+固定した有限の$\lambda$に対し、この公式は$q$が
+閉球に近づくとき有界である。実際、
+$B_\sigma\geq\lambda^{-2}$、$|v|\leq d$であり、
+式~\eqref{eq:pt-chord-hessian}の角括弧の中の式は
+$d=0$で$O_\lambda(d^2)$である。そこでの値は零とおくことができる。
+したがって、つぶれる弦の端点での特異な距離は、
+射影のJacobianによってすでに相殺されている。この
+相殺は、動くJacobianの微分を
+伴わない。
+
+\subsection{三つの一次元係数}
+\label{subsec:pt-three-coefficients}
+
+$l=\sqrt{\lambda^2-1}$とする。$x\in[0,l]$に対し、次のようにおく。
+\[
+\begin{aligned}
+ m&=x/l,& C&=1+x^2,& U&=1-C^{-1},\\
+ Y&=\frac{1-m^2}{2},& J_2&=\frac{(1-m^2)^2}{8},&
+ Q_C&=Q(C^{-1/2}).
+\end{aligned}
+\]
+ここでの記号$J_2$は方位角モーメントを表し、
+一階微分の核$gP(g)-\arccos^2g$ではない。
+$P_i(l)$と$N_i(l)$を、次の密度を
+$0\leq x\leq l$上で積分することによって定める。
+\begin{equation}
+\begin{array}{c|c|c}
+ i & \text{density of }P_i & \text{density of }N_i\\ \hline
+ c & 2(1-Y/C)/C
+   & Q_C U^2Y/\sqrt C\\[2pt]
+ e & \{1+Y-(Y+J_2)/C\}/C
+   & Q_C(1+U)^2J_2/\sqrt C\\[2pt]
+ p & (1+m^2)(1-Y/C)/C
+   & Q_C(1+U)^2m^2Y/\sqrt C .
+\end{array}
+\label{eq:pt-three-coefficient-densities}
+\end{equation}
+
+\begin{lemma}[凸結合による評価]
+\label{lem:pt-convex-bound}
+内部のすべての$q=(\rho,0,z)$に対し、次が成り立つ。
+\begin{equation}
+ lH(q;\lambda)\leq
+ \delta\{P_c(l)-N_c(l)\}
+ +\rho^2\{P_e(l)-N_e(l)\}
+ +z^2\{P_p(l)-N_p(l)\},
+ \qquad \delta+\rho^2+z^2=1.
+\label{eq:pt-convex-bound}
+\end{equation}
+さらに、
+\begin{equation}
+ P_c(l)\leq\frac{3\pi}{4},\qquad
+ P_e(l)\leq\frac{3\pi}{4},\qquad
+ P_p(l)\leq\frac{\pi}{2},
+\label{eq:pt-positive-coefficient-bounds}
+\end{equation}
+が成り立ち、各$N_i(l)$は$l>0$で非減少である。
+\end{lemma}
+
+\begin{proof}
+$y=d/\sqrt C$、$a=\sqrt{B_\sigma}\leq1$とおく。
+このとき$\gamma_\sigma=y/a\geq y$である。
+$gQ(g)$の単調性と$Q$の減少性により次を得る。
+\[
+ \frac{Q(\gamma_\sigma)}{\sqrt{B_\sigma}}
+ \geq Q(d/\sqrt C)\geq Q(C^{-1/2})=Q_C.
+\]
+$d=0$の場合は、いま述べた有界な拡張から従う。
+式~\eqref{eq:pt-chord-hessian}の正の部分については、
+$gP(g)\leq2$と$2d\leq1+d^2$により次を得る。
+\[
+ \sum_\sigma w_\sigma
+ \frac{d^2(1-j/C)}{C^{3/2}}
+ \frac{P(\gamma_\sigma)}{\sqrt{B_\sigma}}
+ \leq \frac{(1+\delta+v^2)(1-j/C)}{C}.
+\]
+負の部分については、評価する前に、
+対の恒等式~\eqref{eq:pt-paired-negative-identity}を用いる。
+
+$m=e_z$を固定すると、方位角平均は次を満たす。
+\[
+ \overline j=Y,\qquad
+ \overline{v^2}=\rho^2Y+z^2m^2,\qquad
+ \overline{jv^2}=\rho^2J_2+z^2m^2Y.
+\]
+この平均の後、被積分関数は$m$について偶であるから、正規化した
+球面平均は$m\in[0,1]$上の積分になる。
+$1=\delta+\rho^2+z^2$を用いて、正の部分を
+式~\eqref{eq:pt-three-coefficient-densities}の三つの係数にまとめる。
+すると置換$x=lm$により式~\eqref{eq:pt-convex-bound}が示される。
+
+直接積分すると次を得る。
+\[
+ P_c(l)=\left(\frac32+\frac{1}{2l^2}\right)\arctan l
+ -\frac{1}{2l}\leq\frac32\arctan l\leq\frac{3\pi}{4}.
+\]
+$P_e$の密度の非負の項を落とすと
+$P_e\leq(3/2)\arctan l$を得る。
+同様に次が成り立つ。
+\[
+ P_p(l)\leq\arctan l+\frac{l-\arctan l}{l^2}
+ \leq\arctan l+\arctan(1/l)=\frac{\pi}{2}.
+\]
+ここで
+$(l-\arctan l)/l^2\leq l/(1+l^2)\leq\arctan(1/l)$であり、
+これは$\arctan r\geq r/(1+r^2)$から従う。
+
+$N_c$と$N_e$については、$x$を固定する。$l$が増加すると、
+$Y$と$J_2$はともに既存の定義域上で増加し、
+定義域$[0,l]$は広がる。残りの因子はすべて非負で、
+$l$に依存しない。
+$N_p$については、代わりに$m\in[0,1]$に戻る。
+\[
+ N_p(l)=\int_0^1
+ \frac{l}{\sqrt C}\,Q(C^{-1/2})(1+U)^2m^2Y\,dm .
+\]
+$m$を固定すると、因子$l/\sqrt C$、
+$Q(C^{-1/2})$、$(1+U)^2$はすべて$l$について非減少である。
+これで主張した単調性が示された。
+\end{proof}
+
+次のようにおく。
+\[
+ \overline P_c=\overline P_e=3\pi/4,\qquad
+ \overline P_p=\pi/2.
+\]
+計算主張~\ref{comp:c5}の一次元の部分は、
+次の包囲不等式の有限個の一覧である。
+\begin{equation}
+\begin{array}{c|ccc}
+ \lambda_0,\ l_0=\sqrt{\lambda_0^2-1}
+ &\overline P_c-N_c(l_0)
+ &\overline P_e-N_e(l_0)
+ &\overline P_p-N_p(l_0)\\ \hline
+ 8 &<-1/20&<-2/5&<-3/5\\
+ 5 &<1&<1&<-3/16 .
+\end{array}
+\label{eq:pt-anchor-assertions}
+\end{equation}
+これらは式~\eqref{eq:pt-three-coefficient-densities}の
+積分の包囲であり、いくつかの空間点での
+$H$の評価ではない。
+そのために用いる有限和は明示的に指定できる。
+$N=2048$、$m_j=j/N$、$C_j=1+l^2m_j^2$、
+$U_j=1-C_j^{-1}$、$T_j=1-m_{j+1}^2$とし、次のようにおく。
+\[
+ Q_{12}(g)=\sum_{n=0}^{12}q_n\{(1-g)/2\}^n,\qquad
+ \omega_j=\frac{l}{N}\,
+             \frac{Q_{12}(C_j^{-1/2})}{\sqrt{C_{j+1}}}.
+\]
+$[m_j,m_{j+1}]$上での非負の因子の単調性により、
+次の下方和を得る。
+\begin{equation}
+\begin{split}
+ N_c(l)&\geq\sum_{j=0}^{N-1}
+                \omega_j U_j^2T_j/2,\\
+ N_e(l)&\geq\sum_{j=0}^{N-1}
+                \omega_j(1+U_j)^2T_j^2/8,\\
+ N_p(l)&\geq\sum_{j=0}^{N-1}
+                \omega_j(1+U_j)^2m_j^2T_j/2 .
+\end{split}
+\label{eq:pt-explicit-anchor-darboux}
+\end{equation}
+たとえば、$Q(C^{-1/2})$と$U$は$m$とともに増加し、
+一方$1/\sqrt C$と$1-m^2$は減少する。
+$Q$の級数の正の尾は捨ててよい。
+記録された生成プログラムは、これらの和を$l=\sqrt{24}$と
+$l=\sqrt{63}$において、$96$ビットの外向き丸めのArb演算で包囲する。
+この有限の演算と、その出力である厳密な有理数の界は、
+計算主張~\ref{comp:c5}の一部である。
+
+\begin{lemma}[非有界領域と極領域]
+\label{lem:pt-unbounded-and-polar}
+アンカー不等式~\eqref{eq:pt-anchor-assertions}を仮定すると、次が成り立つ。
+\begin{align}
+ lH&<-1/20
+ &&(\lambda\geq8,\ |q|<1),\label{eq:pt-unbounded-bound}\\
+ lH&<-7/50
+ &&(\lambda\geq5,\ |q|<1,\ 1-z^2\leq\lambda^{-2}).
+ \label{eq:pt-polar-horizontal-bound}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+$N_i$の単調性と式~\eqref{eq:pt-positive-coefficient-bounds}により、
+式~\eqref{eq:pt-anchor-assertions}の各行は、より大きなすべての
+$\lambda$に伝わる。第一行と
+式~\eqref{eq:pt-convex-bound}の非負の重みから式~\eqref{eq:pt-unbounded-bound}が得られる。
+第二行については、$S=\sqrt{1-z^2}$とおく。
+$\delta+\rho^2=S^2$であるから、これにより次を得る。
+\[
+ lH<S^2-\frac{3}{16}z^2
+ =\frac{19}{16}S^2-\frac{3}{16}.
+\]
+$S\leq1/\lambda$かつ$\lambda\geq5$ならば、これは高々
+$19/400-75/400=-7/50$である。
+\end{proof}
+
+\subsection{5と8の間の有限の橋}
+\label{subsec:pt-finite-bridge}
+
+残るのは、次のコンパクト領域上で$H$を評価することである。
+\begin{equation}
+ \mathcal D_{\rm br}=
+ \left\{(\lambda,\rho,z):
+ 5\leq\lambda\leq8,\quad \rho,z\geq0,\quad
+ \rho^2+z^2\leq1,\quad 1-z^2\geq\lambda^{-2}\right\}.
+\label{eq:pt-bridge-domain}
+\end{equation}
+下半分は$z$に関する鏡映から得られる。
+計算主張~\ref{comp:c5}の有限の部分は、この領域の分割に関するものであり、
+特異な二階微分の被積分関数ではなく
+弦の公式を用いる。
+包囲の規則を明示的に与える。
+
+$a=\sqrt B>0$および$y=d/\sqrt C$に対し、係数の因子は次のとおりである。
+\begin{align}
+ \frac{P(y/a)}a
+ &=4\int_0^1\frac{dt}{Aa+by},&
+ \frac{Q(y/a)}a
+ &=4\int_0^1\frac{2Aa+by}{(Aa+by)^2}\,dt.
+ \label{eq:pt-scaled-coefficient-integrals}
+\end{align}
+両方の式は、$a$と$y$のそれぞれについて非増加である。
+第二の式については、これは
+$(2x+s)/(x+s)^2$を$x>0$と$s\geq0$に関して微分することで従う。
+橋の上では$B\geq1/64$かつ$1\leq C\leq64$であるから、これらの
+係数の包囲は正の分母をもつ。
+幾何学的に実現可能な対$0\leq y\leq a$のみが現れる。
+包囲する長方形
+$a\in[a_-,a_+]$、$y\in[y_-,y_+]$に対し、有効な選び方には次が含まれる。
+\begin{equation}
+ \frac{P(y/a)}a
+ \leq\frac{P(\min\{1,y_-/a_-\})}{a_-},\qquad
+ \frac{Q(y/a)}a
+ \geq\frac{Q(\min\{1,y_+/a_+\})}{a_+}.
+\label{eq:pt-geometric-coefficient-clipping}
+\end{equation}
+いずれかの比が高々1であるとき、対応する不等式は
+それぞれについての単調性から従う。
+$y_->a_-$ならば、$P(y/a)/a\leq2/y_-\leq2/a_-$を用いる。
+$y_+>a_+$ならば、$Q(y/a)/a\geq Q(1)/a_+$を用いる。
+したがって、係数の引数を1に切り詰めることは、
+幾何とこれらの不等式によって正当化される。正係数の
+級数は$0\leq g\leq1$に対してのみ用いる。
+
+角度セルと外側のパラメータ箱の上で、次のようにおく。
+\[
+ p_\sigma\geq
+ \frac{P(\gamma_\sigma)}{\sqrt{B_\sigma}},
+ \qquad
+ n_\sigma\leq
+ \frac{Q(\gamma_\sigma)}{\sqrt{B_\sigma}},
+ \qquad n_\sigma\geq0.
+\]
+これらは、式~\eqref{eq:pt-scaled-coefficient-integrals}と
+式~\eqref{eq:pt-series-enclosures}における端点での単調性から
+得られる。
+$p_i\geq p_{-i}$かつ
+$n_k\geq n_{-k}$となるように$i$と$k$を選び、$A_\sigma=dU-\sigma v$とおく。
+このとき、次のセルごとの不等式で十分である。
+\begin{align}
+ \sum_\sigma w_\sigma
+ \frac{P(\gamma_\sigma)}{\sqrt{B_\sigma}}
+ &\leq p_{-i}+\sup(w_i)(p_i-p_{-i}),
+ \label{eq:pt-positive-cell-bound}\\
+ \sum_\sigma w_\sigma A_\sigma^2
+ \frac{Q(\gamma_\sigma)}{\sqrt{B_\sigma}}
+ &\geq n_{-k}\{\delta U^2+(1+U)^2v^2\}
+ \nonumber\\
+ &\quad +(n_k-n_{-k})\inf(w_k)\inf(A_k^2).
+ \label{eq:pt-negative-cell-bound}
+\end{align}
+第一の不等式は$\sum w_\sigma=1$を用いる。
+第二の不等式は、厳密な
+対の恒等式~\eqref{eq:pt-paired-negative-identity}を用いる。その
+追加項の因子はすべて非負である。したがって、大きな負の
+寄与は、区間による評価を適用する前に保たれる。
+
+これらの評価に必要な方位角積分は初等的である。
+$m\geq0$に対し、
+$v=v_0+v_1\cos\phi$と書く。ここで
+$v_0=zm$、$v_1=\rho\sqrt{1-m^2}$であり、また
+$j=(1-m^2)\sin^2\phi$である。
+幅$\Delta$のセル$I=[\alpha,\beta]$に対し、
+$\overline f_I=\Delta^{-1}\int_I f(\phi)\,d\phi$とおく。
+必要なモーメントは次のとおりである。
+\begin{align}
+ \overline{\cos\phi}_I
+ &=\frac{\sin\beta-\sin\alpha}{\Delta},&
+ \overline{\cos^2\phi}_I
+ &=\frac12+\frac{\sin2\beta-\sin2\alpha}{4\Delta},
+ \label{eq:pt-azimuth-moments-one}\\
+ \overline{\sin^2\phi\cos\phi}_I
+ &=\frac{\sin^3\beta-\sin^3\alpha}{3\Delta},&
+ \overline{\sin^2\phi\cos^2\phi}_I
+ &=\frac18-\frac{\sin4\beta-\sin4\alpha}{32\Delta}.
+ \label{eq:pt-azimuth-moments-two}
+\end{align}
+特に、次が成り立つ。
+\begin{align}
+ \overline{v^2}_I
+ &=(v_0+v_1\overline{\cos\phi}_I)^2
+ +v_1^2\{\overline{\cos^2\phi}_I-
+             \overline{\cos\phi}_I^{\,2}\},\nonumber\\
+ \overline{jv^2}_I
+ &=(1-m^2)\left[
+ v_0^2\overline{\sin^2\phi}_I
+ +2v_0v_1\overline{\sin^2\phi\cos\phi}_I
+ +v_1^2\overline{\sin^2\phi\cos^2\phi}_I\right],\nonumber\\
+ \overline{d^2(1-j/C)}_I
+ &=\delta+\overline{v^2}_I
+ -\frac{\delta\overline j_I+\overline{jv^2}_I}{C}.
+ \label{eq:pt-azimuth-moment-combinations}
+\end{align}
+負の項に対する
+$\delta U^2\overline j_I+(1+U)^2\overline{jv^2}_I$と
+合わせて、これらの公式は、
+式~\eqref{eq:pt-chord-hessian}への各角度セルの寄与の明示的な上側の包囲を
+与える。
+すべてのモーメントは、その端点で外向きに包囲される。
+残る$m$についての積分は、正の正規化された重みをもつ
+セル上の値域によって包囲される。符号の主張を行う前に、幾何は
+$\mathcal D_{\rm br}$と交わらせる。
+
+計算主張~\ref{comp:c5}に記録された有限の包囲の言明は、
+次のとおりである。
+\begin{equation}
+\begin{array}{c|r|r|c}
+ \lambda\text{-slab}&
+ \text{nonempty negative leaves}&
+ \text{empty leaves}&
+ \text{uniform upper bound for }H\\ \hline
+ {[5,6]}&1539&3&-68778309/68719476736\\
+ {[6,7]}&266&2&-9210649/8589934592\\
+ {[7,8]}&119&0&-1095717/1073741824 .
+\end{array}
+\label{eq:pt-bridge-enclosure-table}
+\end{equation}
+細分では、上端点が$-1/1000$を超えていた元の親が、それぞれ72個、5個、2個置き換えられる。元の核は二進分割による両方の子の上で評価する。形状の区間とそれらが共有する端点は変わらない。各行は、
+式~\eqref{eq:pt-bridge-domain}との指定された共通部分の完全な被覆と、
+すべての空でない葉に対する表示された包囲の両方を主張する。したがってこれは有限で
+検証可能な全称命題であり、葉の厳密な端点、
+親子関係および有理数の界は
+計算付録で与えられる。負の上界は、
+葉の体積の和だけから導かれるものではない。
+
+\begin{proposition}[一様な横断方向の負値性]
+\label{prop:pt-horizontal-negative}
+計算主張~\ref{comp:c5}のもとで、次が成り立つ。
+\begin{equation}
+ \sqrt{\lambda^2-1}\,H(q;\lambda)<-1/250
+ \qquad(\lambda\geq5,\ |q|<1).
+\label{eq:pt-global-horizontal}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+補題~\ref{lem:pt-unbounded-and-polar}の領域と
+式~\eqref{eq:pt-bridge-domain}の領域が、すべての場合を覆う。
+式~\eqref{eq:pt-bridge-enclosure-table}の上界はすべて
+$-1/1000$より小さい。
+橋の上では$\sqrt{\lambda^2-1}\geq\sqrt{24}>4$であるから、
+これによりそこでは式~\eqref{eq:pt-global-horizontal}が得られる。
+他の二つの界$-1/20$と$-7/50$は、
+$-1/250$より小さい。
+\end{proof}
+
+\subsection{軸に対する明示的な極冠の入力}
+\label{subsec:pt-polar-cap}
+
+命題~\ref{prop:pt-horizontal-negative}は、極の近くの点も含め、
+$\rho>0$であるすべての点をすでに扱っている。
+残る軸上での証明には、薄い冠における軸方向の評価が
+追加で必要である。その積分の入力をここで導く。
+次のようにおく。
+\[
+ \epsilon=\lambda^{-1},\quad
+ \mu=\xi_z,\quad s=\sqrt{1-\mu^2},\quad
+ S=\sqrt{1-z^2},\quad
+ \xi=(s\cos\phi,s\sin\phi,\mu),
+\]
+そして次のように定める。
+\begin{equation}
+\begin{aligned}
+ A_0&=s^2+\rho^2-2\rho s\cos\phi,&
+ d_0^2&=(\mu-z)^2+\epsilon^2A_0,\\
+ B&=s^2+\epsilon^2\mu^2,&
+ k&=1-z\mu-\rho s\cos\phi,&
+ \gamma&=\frac{\epsilon k}{d_0\sqrt B}.
+\end{aligned}
+\label{eq:pt-cap-variables}
+\end{equation}
+ここでの記号$d_0,A_0$は冠の座標に関するものであり、
+弦の変数$d,A_\sigma$とは別のものである。
+
+$\langle k\rangle_\xi=1$であるから、
+$E=\pi^2/4-\langle kF(\gamma)\rangle_\xi$を微分すると次を得る。
+\begin{equation}
+ E_z=\frac{1}{4\pi}\int_0^{2\pi}\int_{-1}^1 I\,d\mu\,d\phi,
+ \quad
+ I=\mu(F+\gamma P)
+       -\frac{k\gamma P(\mu-z)}{d_0^2}.
+\label{eq:pt-cap-first-derivative}
+\end{equation}
+たとえば、
+$\gamma_z/\gamma=-\mu/k+(\mu-z)/d_0^2$によってこの公式を
+直接確かめられる。
+
+北側の冠全体を次のようにパラメータ表示する。
+\begin{equation}
+ 0<\epsilon\leq\frac15,\quad 0\leq w,u\leq1,\qquad
+ z=\sqrt{1-\epsilon^2w^2},\qquad
+ \rho=\epsilon wu.
+\label{eq:pt-cap-parameterization}
+\end{equation}
+このとき$S=\epsilon w$、$\rho\leq S$および
+$z\geq\sqrt{24/25}>3/4$である。
+$c=3/4$、$\eta=1/64$とおく。
+式~\eqref{eq:pt-cap-first-derivative}のうち
+$c\leq\mu\leq z$の部分は非負である。
+残る北側の帯$\mu>z$については、第一項は
+非負であり、一方で次が成り立つ。
+\[
+ \frac{k\gamma P(\mu-z)}{d_0^2}
+ =\frac{\sqrt B}{\epsilon}\,
+   \gamma^2P\,\frac{\mu-z}{d_0}
+ \leq \frac{2\sqrt B}{\epsilon}
+ \leq2\sqrt{1+w^2}.
+\]
+したがって、その$E_z$への正規化された寄与は少なくとも
+$-\epsilon^2w^2\sqrt{1+w^2}/(1+z)$である。
+
+南側の帯$\theta=\arccos\mu\in[\pi-\eta,\pi]$については、
+式~\eqref{eq:pt-cap-first-derivative}の第二項は
+非負であり、落としてよい。
+式~\eqref{eq:pt-elementary-angular-bounds}により、
+$F+\gamma P\leq2\pi\gamma$である。
+$d_0\geq z-\mu$、$\sqrt B\geq s$を用い、最後の評価を行う前に
+$\phi$について平均する。
+$k$の平均は$1-z\mu$であり、
+$\mu<0$に対して$(1-z\mu)/(z-\mu)\leq1/z$である。
+したがって、南側の帯の$E_z$への寄与は少なくとも
+$-\pi\epsilon\eta/z$である。
+
+保持した長方形
+\[
+ \theta\in[\arccos(3/4),\,\pi-1/64],\qquad
+ \phi\in[0,\pi],
+\]
+の上で、次のようにおく。
+\[
+ T_0=\frac{s}{\sqrt B},\qquad
+ f_1=\mu k,\qquad
+ f_2=\mu k+\frac{k^2(z-\mu)}{d_0^2}.
+\]
+このとき次が成り立つ。
+\[
+ \frac{Is}{\epsilon}
+ =\frac{T_0}{d_0}
+       \left[f_1\frac{F(\gamma)}{\gamma}+f_2P(\gamma)\right].
+\]
+$\gamma=0$では、商$F(\gamma)/\gamma$を
+$\pi$と定める。各係数の符号を保ったまま
+両側からの角度評価を適用すると、次を得る。
+\begin{equation}
+ \mathcal L(\theta,\phi;\epsilon,w,u)=
+ \frac{T_0}{d_0}
+ \left\{\pi(f_1+f_2)
+        -\gamma\bigl[(f_1)_++2(f_2)_+\bigr]\right\}
+ \leq\frac{Is}{\epsilon},
+ \quad x_+=\max(x,0).
+\label{eq:pt-cap-lower-envelope}
+\end{equation}
+したがって、$\phi$に関する鏡映を用いると、次が成り立つ。
+\begin{equation}
+\begin{split}
+ \lambda E_z\geq \mathcal B(\epsilon,w,u)
+ :={}&\frac{1}{2\pi}
+ \int_0^\pi
+ \int_{\arccos(3/4)}^{\pi-1/64}
+       \mathcal L(\theta,\phi;\epsilon,w,u)\,d\theta\,d\phi\\
+ &-\frac{\pi}{64z}
+ -\frac{\epsilon w^2\sqrt{1+w^2}}{1+z}.
+\end{split}
+\label{eq:pt-cap-computational-integral}
+\end{equation}
+この保持した長方形の上には小さな分母は現れない。すなわち、
+$d_0\geq z-\mu\geq\sqrt{24/25}-3/4>0$および
+$s\geq\sin(1/64)>0$である。
+したがって右辺は$\epsilon=0$でも連続である。
+この端点は下界の積分のコンパクト化にすぎず、
+$\lambda=\infty$でのエネルギーを定義しているわけではない。
+
+計算主張~\ref{comp:c6}の正確な言明は次のとおりである。
+\begin{equation}
+\begin{gathered}
+ \mathcal B(\epsilon,w,u)\geq
+ r_{\rm cap}:=
+ \frac{47473218194072764542240096942353646083}{2^{127}}
+ >\frac14,\\
+ \left(0\leq\epsilon\leq\frac15,\ 0\leq w,u\leq1\right).
+\end{gathered}
+\label{eq:pt-cap-computational-assertion}
+\end{equation}
+明確にするために述べると、その記録された有限分割は
+$16\times8\times8=1,024$個の外側の箱である。
+\[
+ \epsilon\in[i/80,(i+1)/80],\qquad
+ w\in[j/8,(j+1)/8],\qquad
+ u\in[k/8,(k+1)/8].
+\]
+保持した$\theta$の区間は$96$個の等しい
+セルに分割し、$[0,\pi]$は$48$個の等しい$\phi$のセルに分割する。
+各セル上で式~\eqref{eq:pt-cap-lower-envelope}の値域を
+$128$ビットの外向き丸めのArb演算で包囲し、
+正のセル面積を掛ける。
+式~\eqref{eq:pt-cap-computational-integral}で
+引かれる二つの項は、
+必要な上向きの方向に評価する。
+これは各外側の箱の全体にわたる下方Darboux包囲であり、
+経験的な誤差評価を伴う求積値ではない。
+
+第二の実装は、元の各外側の箱の上で、144ビットで$120\times64$個の角度セルを用いる。その最小の下端点は、$2^{-48}$の倍数に切り下げると、$107156256170842/2^{48}>r_{\rm cap}$である。どちらの計算も同じ解析的な下側包絡を積分する。
+
+\begin{lemma}[北側の冠での評価]
+\label{lem:pt-north-cap}
+計算主張~\ref{comp:c6}のもとで、
+$\lambda\geq5$、$z>0$、$1-z^2\leq\lambda^{-2}$を満たすすべての内部の点に対し、次が成り立つ。
+\begin{equation}
+ E_z(\rho,z;\lambda)\geq\frac{1}{4\lambda}.
+\label{eq:pt-north-cap}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+そのような点はすべて式~\eqref{eq:pt-cap-parameterization}の形をしている。
+式~\eqref{eq:pt-cap-computational-integral}と
+式~\eqref{eq:pt-cap-computational-assertion}を組み合わせればよい。
+\end{proof}
+
+\subsection{軸上での符号付き角による証明}
+\label{subsec:pt-axis}
+
+\begin{lemma}[軸上での一様な正値性]
+\label{lem:pt-axis-positive}
+計算主張~\ref{comp:c6}のもとで、次が成り立つ。
+\begin{equation}
+ \frac{E_z(0,z;\lambda)}{z}
+ \geq\frac{3}{10\lambda^2}>0
+ \qquad(\lambda\geq5,\ 0<|z|<1).
+\label{eq:pt-axis-positive}
+\end{equation}
+この商は$z=0$で連続な値$E_{zz}(0,0;\lambda)$をもち、
+そこでも同じ下界が成り立つ。
+\end{lemma}
+
+\begin{proof}
+$\epsilon=1/\lambda$、$s=\sqrt{1-\mu^2}$、
+$B=s^2+\epsilon^2\mu^2$および
+$D_2=(\mu-z)^2+\epsilon^2s^2$とおく。
+$-1<\mu<1$に対し、子午面内の二つの
+ベクトルの間の符号付き角は次のとおりである。
+\begin{equation}
+ a(\mu,z)=
+ \arctan\frac{\mu-z}{\epsilon s}
+ -\arctan\frac{\epsilon\mu}{s}.
+\label{eq:pt-signed-meridional-angle}
+\end{equation}
+どちらのベクトルも水平成分が正である。
+内部の基点に対してはそれらの内積は正であるから、
+$|a|<\pi/2$かつ$a^2=\arccos^2\gamma$である。
+したがって次が成り立つ。
+\begin{equation}
+ E(0,z)=\frac12\int_{-1}^1(1-z\mu)a(\mu,z)^2\,d\mu.
+\label{eq:pt-axis-energy}
+\end{equation}
+
+$k=1-z\mu$として、直接微分すると次を得る。
+\begin{equation}
+ a_z=-\frac{\epsilon s}{D_2},\qquad
+ a_\mu=\frac{\epsilon k}{sD_2}-\frac{\epsilon}{sB},
+ \qquad
+ ka_z+s^2a_\mu=-\frac{\epsilon s}{B}.
+\label{eq:pt-axis-transport-identity}
+\end{equation}
+この最後の恒等式を
+式~\eqref{eq:pt-axis-energy}の微分に用い、
+$-s^2\partial_\mu(a^2)$を部分積分すると、次を得る。
+\begin{equation}
+ E_z=\frac12\int_{-1}^1
+       \left[-3\mu a^2-\frac{2\epsilon s}{B}a\right]\,d\mu .
+\label{eq:pt-axis-integrated-derivative}
+\end{equation}
+固定した$\epsilon>0$と$|z|<1$に対し、$D_2$と$B$は
+$[-1,1]$上で正の下界をもつ。
+現れうる因子$1/s$は可積分であり、
+$s^2a^2$は両端点で零に収束する。
+したがって、微分と部分積分は、
+まず端点を切り落とし、その後に極限をとることで正当化される。
+
+鏡映により$z>0$としてよい。
+$0<\mu<1$に対し、次のように定める。
+\[
+ b=\arctan\frac{\epsilon\mu}{s},\qquad
+ \theta_\pm=\arctan\frac{\mu\pm z}{\epsilon s},\qquad
+ D_a=\theta_+-\theta_-,\qquad
+ \Sigma=\theta_++\theta_--2b .
+\]
+$a(\mu,z)=\theta_--b$および
+$a(-\mu,z)=-(\theta_+-b)$であるから、
+式~\eqref{eq:pt-axis-integrated-derivative}で$\mu$と$-\mu$を対にすると、次の因数分解を得る。
+\begin{equation}
+\begin{aligned}
+ \frac{E_z}{z}
+ &=\frac12\int_0^1\frac{D_a}{z}
+          \left(3\mu\Sigma+\frac{2\epsilon s}{B}\right)\,d\mu,\\
+ \frac{D_a}{z}
+ &=\int_{-1}^1
+   \frac{\epsilon s\,dt}{(\mu+tz)^2+\epsilon^2s^2}.
+\end{aligned}
+\label{eq:pt-axis-reflected-factorization}
+\end{equation}
+
+$L_\pm=(\mu\pm z)^2+\epsilon^2s^2$および
+$S=\sqrt{1-z^2}$とおく。
+正弦と余弦の加法公式により次を得る。
+\begin{equation}
+ \sin\Sigma=
+ \frac{2\epsilon\mu s(S^2-\epsilon^2)}
+      {B\sqrt{L_+L_-}}.
+\label{eq:pt-axis-angle-sum-sign}
+\end{equation}
+完全を期して記すと、
+\[
+\begin{aligned}
+ \sin(\theta_++\theta_-)
+ &=\frac{2\epsilon s\mu}{\sqrt{L_+L_-}},\\
+ \cos(\theta_++\theta_-)
+ &=\frac{\epsilon^2s^2-\mu^2+z^2}{\sqrt{L_+L_-}}.
+\end{aligned}
+\]
+であり、また
+$\sin(2b)=2\epsilon\mu s/B$、
+$\cos(2b)=(s^2-\epsilon^2\mu^2)/B$である。
+これらを代入すると、分子は$S^2-\epsilon^2$に帰着する。
+また$\theta_++\theta_-\in[0,\pi)$かつ$2b\in[0,\pi)$であるから、
+$\Sigma\in(-\pi,\pi)$である。
+したがって$S\geq\epsilon$ならば$\Sigma\geq0$である。
+
+その場合、式~\eqref{eq:pt-axis-reflected-factorization}で
+$\mu\in[0,1/2]$のみを残す。
+ここでは$s^2\geq3/4$、$B\leq1$であり、次が成り立つ。
+\[
+ (\mu+tz)^2+\epsilon^2s^2
+ \leq\frac94+\frac1{25}<\frac52,
+ \qquad -1\leq t\leq1.
+\]
+ゆえに$D_a/z\geq(4/5)\epsilon s$であり、次を得る。
+\[
+ \frac{E_z}{z}
+ \geq\frac12\cdot\frac12\cdot
+       \frac45\cdot2\cdot\frac34\,\epsilon^2
+ =\frac3{10}\epsilon^2.
+\]
+$S<\epsilon$のとき、項$\Sigma$は非負とは限らない。
+その代わりに補題~\ref{lem:pt-north-cap}により
+$E_z/z\geq\epsilon/(4z)\geq\epsilon/4
+\geq3\epsilon^2/10$が得られる。
+これが、軸上の証明における冠の入力の正確な使い方である。
+
+$z=0$では、
+式~\eqref{eq:pt-axis-reflected-factorization}の右側の商は連続な
+値$2\epsilon s/(\mu^2+\epsilon^2s^2)$をもつ。
+同値なこととして、内部での滑らかさと鏡映から
+$E_z(0,z)/z\to E_{zz}(0,0)$が従う。
+この極限に移っても正の下界は保たれる。
+\end{proof}
+
+\subsection{停留点と境界トレース}
+\label{subsec:pt-classification}
+
+\begin{theorem}[C5とC6による扁長側の裾の分類]
+\label{thm:pt-classification}
+計算主張~\ref{comp:c5}および~\ref{comp:c6}を仮定する。
+すべての有限な$\lambda\geq5$に対し、内部の停留点は
+中心のみである。これは非退化な鞍点であり、横断方向のHessianの
+負の固有値を二つ、軸方向の正の固有値を
+一つもつ。全勾配は参照球面上に連続な内側トレースをもち、
+このトレースはどこでも零にならない。
+\end{theorem}
+
+\begin{proof}
+$\rho>0$ならば、命題~\ref{prop:pt-horizontal-negative}により
+$E_\rho=\rho H<0$である。
+$\rho=0$かつ$z\ne0$ならば、
+補題~\ref{lem:pt-axis-positive}により$E_z\ne0$である。
+鏡映により中心は停留点となり、回転対称性と
+鏡映対称性によりそのHessianは対角になる。
+\[
+ \operatorname{Hess}E(0)
+ =\operatorname{diag}\bigl(H(0),H(0),E_{zz}(0)\bigr).
+\]
+最初の二つの成分は
+式~\eqref{eq:pt-global-horizontal}により負であり、第三の成分は
+式~\eqref{eq:pt-axis-positive}とその連続拡張により正である。
+
+残るのは、一階微分のみを用いて境界についての言明を
+正当化することである。
+$J(g)=gP(g)-\arccos^2g$および$K(g)=g^2P(g)$とおく。
+元の球面上で微分すると次を得る。
+\begin{equation}
+ E_{q_i}=
+ \left\langle
+ \xi_iJ(\gamma)-L_{ii}\sqrt B\,\widehat v_iK(\gamma)
+ \right\rangle_\xi .
+\label{eq:pt-gradient-trace}
+\end{equation}
+固定した有限の$\lambda$に対し、この被積分関数は、
+$q$が開球全体を動くとき一様に有界である。すなわち、$J,K$は
+$[0,1]$上で連続であり、$|\widehat v_i|\leq1$であり、$B$は上に有界で
+零から離れている。
+$q\to q_0\in S^2$ならば、これはすべての$\xi\ne q_0$で収束する。
+例外点の曲面測度は零である。
+したがって優収束定理により、連続で
+近づき方によらない全勾配の内側トレースが得られる。
+
+$\rho>0$である境界点では、
+定量的な評価式~\eqref{eq:pt-global-horizontal}により、動径方向の
+勾配トレースは高々
+$-\rho/(250\sqrt{\lambda^2-1})<0$である。
+北極と南極では、
+軸上の評価式~\eqref{eq:pt-axis-positive}の極限から、零でない軸方向成分が得られる。
+これにより全勾配のトレースの零点はすべて排除される。
+境界への二階微分の拡張は必要ない。
+\end{proof}
+
+境界についての言明は、全勾配の内側トレースの
+零点に関するものである。これは境界への制限の接方向の
+臨界点の分類ではない。
+最後の証明における極限はすべて、固定した有限の
+$\lambda$でとる。特異な形状$\lambda=\infty$は
+定義域に加えない。

@@ -1,0 +1,6 @@
+core.tex: display 49, inline 325, labels 48, refs 33, cites 3 -> OK
+prolate_tail.tex: display 69, inline 287, labels 59, refs 59, cites 0 -> OK
+computational_evidence.tex: display 24, inline 205, labels 9, refs 13, cites 8 -> OK
+numerical_discussion.tex: display 4, inline 75, labels 5, refs 6, cites 2 -> OK
+related_work.tex: display 3, inline 25, labels 1, refs 2, cites 16 -> OK
+radial_experiment.tex: display 2, inline 41, labels 2, refs 2, cites 0 -> OK

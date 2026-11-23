@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+% Japanese reference translation: compile with LuaLaTeX (luatexja).
+\usepackage{luatexja}
+\usepackage[haranoaji]{luatexja-preset}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{graphicx,xcolor,xurl}
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{
+ pdftitle={回転楕円体上の錐体積重み付き角度エネルギーの停留点と鞍点円の数え上げ（日本語参考訳）},
+ pdfauthor={Katsushi Furuta},
+ pdfsubject={統合研究稿 v0.5.6 の日本語参考訳：体積保存回転楕円体上の停留集合の条件付き分類},
+ pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
+}
+\usepackage{enumitem}
+\setlist{itemsep=3pt,topsep=5pt}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{1.3em}
+\numberwithin{equation}{section}
+\newtheoremstyle{jplain}{\topsep}{\topsep}{\normalfont}{}{\bfseries}{}{1em}{}
+\theoremstyle{jplain}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{proposition}[theorem]{命題}
+\newtheorem{lemma}[theorem]{補題}
+\newtheorem{corollary}[theorem]{系}
+\newtheorem{claim}[theorem]{主張}
+\newtheorem{computationalassertion}{計算主張}
+\renewcommand{\thecomputationalassertion}{C\arabic{computationalassertion}}
+\theoremstyle{jplain}
+\newtheorem{definition}[theorem]{定義}
+\newtheorem{conjecture}[theorem]{予想}
+\theoremstyle{jplain}
+\newtheorem{remark}[theorem]{注意}
+\newcommand{\av}[1]{\left\langle #1\right\rangle}
+\newcommand{\E}{\widehat E}
+\newcommand{\cO}{c_{\mathrm o}}
+\newcommand{\bO}{b_{\mathrm o}}
+\newcommand{\cP}{c_{\mathrm p}}
+\newcommand{\bP}{b_{\mathrm p}}
+\newcommand{\vol}{\operatorname{Vol}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\B}{B^3}
+\newcommand{\Sph}{S^2}
+\newcommand{\dd}{\,d}
+\newcommand{\one}{\mathbf 1}
+\renewcommand{\proofname}{証明}
+\renewcommand{\contentsname}{目次}
+\renewcommand{\refname}{参考文献}
+\renewcommand{\tablename}{表}
+\renewcommand{\figurename}{図}
+\renewcommand{\abstractname}{要旨}
+\title{回転楕円体上の錐体積重み付き角度エネルギーの\\停留点と鞍点円の数え上げ}
+\author{古田 勝士（Katsushi Furuta）\\DAYBREAK（独立研究）\\\small ORCID: 0009-0005-3129-8043}
+\date{統合研究稿 v0.5.6（2026年11月23日）の日本語参考訳}
+\begin{document}
+\maketitle
+\begin{center}\small
+\fbox{\parbox{.92\linewidth}{本稿は、英語版 \emph{Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids}（統合研究稿 v0.5.6、PDF の SHA-256 は \texttt{136d61aa\ldots3fb35}）の日本語参考訳である。正本は英語版であり、食い違いがあれば英語版に従う。数式、番号、文献、リンクは英語版のままである。翻訳は Claude Code（Anthropic）による（2026年11月23日）。著者による校閲は済んでいない。}}
+\end{center}
+\begin{abstract}
+数値探索によって、扁長回転楕円体の中に赤道上の鞍点円が見つかる。第二の円や、赤道から外れた臨界点を、どうすれば排除できるか。錐体積に関して平均した動径–法線角の二乗について、停留集合の図式の全体を、六つの明示的な計算主張に帰着する。とくに、回転によって臨界軌道の全体が一つのスカラーの根になり、接方向の四階微分がその動径方向の交差を決める。探索的な横断符号の被覆では、31,340 枚の葉のうち 21,254 枚が未決のまま残った。接方向の四階微分の二つの表示から、軸比 2 から 5 までの赤道上の 731 個の箱すべてで、負の上界が得られる。第二の実装は、同じ箱を 1,043 個の終端片で包囲する。すると、動径方向の狭義単調性によって、鞍点円の存在は二つの端点の符号に帰着する。解析的には、球では内部の停留点はただ一つで、それは最小点である。また $0<\lambda\le 1/32$ では、内部の停留点は中心にある指数 1 の鞍点だけであり、全勾配の境界トレースは零点を持たない。体積保存族の全体にわたって、解析的な端点の評価と六つの名指しした入力から、中心、軸上の鞍点の対、赤道の鞍点円、および境界の勾配トレースに関わる四つの遷移が得られる。
+\end{abstract}
+\noindent\textbf{キーワード：} 回転楕円体；停留集合；錐体積測度；動径 Gauss 写像；Morse--Bott 臨界多様体；精度保証付き数値計算。
+
+\section*{主結果と現状}
+\noindent\textbf{条件付き分類。}
+計算主張 C1--C6 を仮定すると、$\lambda>0$ の族全体にわたって、内部の停留成分は、
+中心、$\cO<\lambda<\bO$ における指数 1 の鞍点の軸上の対、
+および $\bP<\lambda<\cP$ における赤道の Morse--Bott 鞍点円だけである。
+中心は $\cO$ と $\cP$ で型を変える。
+全勾配の境界トレースが消えるのは、$\lambda=\bO$ のときの両極と、
+$\lambda=\bP$ のときの赤道円の上だけである。
+正確な閾値、指数、排除は、
+定理~\ref{thm:classification} と表~\ref{tab:classification} にある。
+閾値の近似値は $\cO\approx0.408$、$\bO\approx0.644$、
+$\bP\approx2.065$、$\cP\approx4.724$ である（表~\ref{tab:critical}）。
+
+\noindent\textbf{検証の現状。}
+解析的な議論は書き下してあり、計算主張 C1--C6 は、
+出典の記録、実装、点検の及ぶ範囲を特定したうえで、明示的に述べてある。
+本稿そのものは、これらの計算上の入力の認証を完了させるものでも、
+その位置づけを改めるものでもない。族全体の分類は、
+C1--C6 を条件としたままである。本稿は証明の整備段階の原稿であり、
+投稿できる段階の認証の主張ではない。著者の検証記録
+（記録 V24、2026年11月16日；
+\href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{固定された検証記録}；
+第~\ref{sec:availability}節を見よ）では、扁平の窓
+$\lambda\in[2/5,33/50]$ の検証が完了している。これとは別に行った AI 支援の
+プロジェクト監査が、組み立てと、計算の出典の参照を点検した。
+裏づけとなる区間計算は、選んだ箱の独立な再計算と、
+整数による厳密な被覆の検査によって点検しており、
+個々の範囲は \path{CURRENT_REPRODUCTION_v0_5_4.md} に述べてある。
+これらの点検は、C1--C6 の完全な再実行ではない。
+命題~\ref{prop:sphere} は、球の場合 $\lambda=1$ を、
+計算上の入力なしに証明する。今回の編集上の
+改訂は、数学的な主張も、計算上の入力の位置づけも変えない。
+\clearpage
+\tableofcontents
+\clearpage
+\input{sections/core}
+\input{sections/prolate_tail}
+\input{sections/computational_evidence}
+\input{sections/numerical_discussion}
+\begingroup
+\interlinepenalty=10000
+\bibliographystyle{plainnat}
+\bibliography{references,references_additions,references_computation}
+\endgroup
+\end{document}
