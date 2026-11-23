@@ -1,0 +1,7 @@
+# Exactly registered binary artifacts; ZIP is the original artifact supplied with Paper I v0.5.
+# The PDF below is extracted byte-for-byte from that ZIP.
+ed0c20f1cb8830e7d72a94e9d3d9f7aca5a1be1b56afbb85cc44f21d1a8ab814  Paper_I_v0_5_Manuscript_and_Verification.zip
+91c5f11cd02922080ce9c2aaad9ee233d393f44e32d6977a63ffce630c6da300  Paper_I_v0_5_Integrated_EN.pdf
+
+# Separate standalone ChatGPT PDF has different bytes and is not committed here:
+# c611ecc046c11eb6b5c833254dc46f969470cdc6e583b262c7edfd67d0b5a973  (standalone PDF, pending)
