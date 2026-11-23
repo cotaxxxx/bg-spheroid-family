@@ -1,0 +1,286 @@
+--- a/main.tex
++++ b/main.tex
+@@ -11,7 +11,7 @@
+ \hypersetup{
+  pdftitle={Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids},
+  pdfauthor={Katsushi Furuta},
+- pdfsubject={Integrated research draft v0.5.4: reviewed conditional stationary-set classification on volume-preserving spheroids},
++ pdfsubject={Integrated research draft v0.5.6: reviewed conditional stationary-set classification on volume-preserving spheroids},
+  pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
+ }
+ \usepackage{enumitem}
+@@ -47,8 +47,8 @@
+ \newcommand{\dd}{\,d}
+ \newcommand{\one}{\mathbf 1}
+ \title{Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids}
+-\author{Katsushi Furuta\\Independent researcher\\\small ORCID: 0009-0005-3129-8043}
+-\date{Integrated research draft v0.5.4 --- 23 November 2026}
++\author{Katsushi Furuta\\DAYBREAK (independent research)\\\small ORCID: 0009-0005-3129-8043}
++\date{Integrated research draft v0.5.6 --- 23 November 2026}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+@@ -80,9 +80,12 @@
+ verification records (record V24, 16 November 2026;
+ \href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed verification record}; see
+ Section~\ref{sec:availability}), verification for the oblate window
+-$\lambda\in[2/5,33/50]$ was completed, with a separate
+-AI-assisted project audit of the mathematical assembly and its
+-computational source references, not a fresh numerical replay.
++$\lambda\in[2/5,33/50]$ was completed. A separate AI-assisted
++project audit checked the assembly and computational source references.
++Supporting interval computations were checked through independent
++recomputation of selected boxes and exact integer coverage checks,
++with individual scopes stated in \path{CURRENT_REPRODUCTION_v0_5_4.md}.
++These checks were not a complete replay of C1--C6.
+ Proposition~\ref{prop:sphere} proves the
+ spherical case $\lambda=1$ without computational input. This editorial
+ revision changes neither the mathematical claims nor the status of the
+--- a/sections/core.tex
++++ b/sections/core.tex
+@@ -8,7 +8,7 @@
+ 
+ \input{sections/related_work}
+ 
+-The proof has three levels. First, analytic formulas identify the scalar derivatives whose signs exclude off-axis or off-equatorial stationary points. Second, one-variable arguments determine the number and type of the remaining zeros. Third, finite interval covers and explicit estimates at the two degenerating ends provide the signs used in these arguments. The label \emph{basepoint geometry} refers here to the first formulation, and \emph{GeoEnclosure} to this application of established enclosure methods to the resulting expressions. Neither label is a claim that interval arithmetic, cone volume measures, or critical manifolds originate in this work.
++The proof has three levels. First, analytic formulas identify the scalar derivatives whose signs exclude off-axis or off-equatorial stationary points. Second, one-variable arguments determine the number and type of the remaining zeros. Third, finite interval covers and explicit estimates at the two degenerating ends provide the signs used in these arguments. The label \emph{basepoint geometry} refers here to the first formulation, and \emph{GeoEnclosure} to this application of established enclosure methods to the resulting expressions \citep{furutaGeoEnclosure2026}. Neither label is a claim that interval arithmetic, cone volume measures, or critical manifolds originate in this work.
+ 
+ \section{Energy, coordinates and boundary convention}\label{sec:definition}
+ 
+@@ -153,9 +153,12 @@
+ The author's 16 November 2026 record
+ (\href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed record}; see Section~\ref{sec:availability})
+ covers only $\lambda\in[2/5,33/50]$.
+-A separate project AI audit checked the assembly and source citations,
+-not the computations anew. Neither record establishes C1--C6 or
+-covers all oblate shapes.
++A separate project AI audit checked the assembly and source citations.
++Selected supporting interval boxes were independently recomputed,
++and exact integer coverage checks were performed within the scopes
++recorded in \path{CURRENT_REPRODUCTION_v0_5_4.md}. This was not a
++complete replay of C1--C6. Neither record establishes all C1--C6
++or covers all oblate shapes.
+ 
+ \section{Two sign principles and the sphere}\label{sec:principles}
+ 
+--- a/sections/related_work.tex
++++ b/sections/related_work.tex
+@@ -17,20 +17,36 @@
+    =\int_{\Omega}|x-p|^{\beta-n}\,dx,\qquad \beta>0.
+ \]
+ The relevant extremum depends on the order, with a logarithmic replacement at
+-$\beta=n$ and regularization for nonpositive orders.  These constructions
++$\beta=n$ and regularization for nonpositive orders. For a smooth convex
++body $K\subset\mathbb R^3$ and $0<\beta<3$, the divergence-theorem form
++of this Riesz potential is
++\[
++ V_{K}^{(\beta)}(p)
++  =\frac{1}{\beta}\int_{\partial K}|x-p|^{\beta-3}
++       (x-p)\cdot n(x)\,dA(x).
++\]
++The geometric factor $(x-p)\cdot n(x)\,dA(x)$ is precisely the
++basepoint-dependent cone-volume weight used below. O'Hara's potential
++multiplies it by a power of the distance and selects an extremizing
++centre; the present energy instead multiplies it by the squared angle
++between radial direction and outer normal and studies all its stationary
++components as the spheroid aspect ratio varies. These constructions
+ provide a natural precedent for treating the basepoint itself as a variable
+ of a geometric functional.
+ 
+ Uniqueness in this literature depends on both the functional and the geometry
+-of the body.  O'Hara proves uniqueness for sufficiently small asphericity at
+-each prescribed potential order \citep{ohara2022nearly}.  Sakata studies
++of the body.  O'Hara proves uniqueness of the extremizing Riesz-potential centre
++for sufficiently small asphericity at each prescribed potential order \citep{ohara2022nearly}.  Sakata studies
+ maximizers of potentials with strictly decreasing radial kernels, proves
+ additional sufficient conditions for uniqueness, and investigates examples
+-with more than one maximizer \citep{sakata2016uniqueness}.  In particular, that
+-paper illustrates two maximizers for a union of discs and a circular set of
+-maximizers for an annulus; these are nonconvex examples investigated through
+-graphs of the potentials.  They motivate careful attention to the structure
+-of an extremal set, but do not classify the stationary sets of the angular
++with more than one maximizer \citep{sakata2016uniqueness}.  In particular, for the planar annulus
++$A=\{y\in\mathbb R^2:1\leq|y|\leq2\}$, the set of its
++$r^{-1/2}$-potential centres is a circle, and a union of discs can
++have two such centres. These examples are nonconvex planar domains;
++the circle in this paper occurs instead as a Morse--Bott \emph{saddle}
++set of the angular energy inside a convex three-dimensional prolate
++spheroid. They motivate careful attention to the structure of an
++extremal set, but do not classify the stationary sets of the angular
+ functional considered here.  Nor does uniqueness of a selected global
+ extremizer, by itself, describe every critical point of a different
+ functional.
+@@ -53,6 +69,19 @@
+ critical circles fit into one stationary-set diagram, including their
+ degeneracies and their approach to the boundary.
+ 
++The radial Gauss map associates a radial direction with an outer
++normal on the boundary of a convex body. Its role in the Gauss image
++problem is studied by B\"or\"oczky, Lutwak, Yang, Zhang and Zhao
++\citep{boroczky2020gaussimage}. Our functional features this same
++radial--normal correspondence, but the basepoint $p$ varies inside the
++body. For comparison, Bertrand's optimal-transport formulation of
++Gauss-curvature prescription uses (in his Eq.~(6)) the angular cost
++$c(n,u)=-\log\cos d_{\mathbb S^2}(n,u)$ between an outward normal
++$n$ and a radial direction $u$ \citep{bertrand2016gauss}. Here the
++cost is instead the squared angle $d_{\mathbb S^2}(n,u)^2$, averaged
++against cone-volume probability; we do not invoke the Gauss image
++or curvature-prescription theorems to classify its stationary points.
++
+ Heat-flow centers furnish a related but distinct comparison.
+ Magnanini and Sakaguchi study a bounded conductor with temperature satisfying
+ $u_t=\Delta u$, initial temperature $1$, and boundary temperature $0$
+@@ -72,7 +101,9 @@
+ numerics and in G\'omez-Serrano's survey
+ \citep{tucker2002rigorous,tucker2011validated,gomezSerrano2019survey}.
+ Johansson's Arb provides a standard implementation of arbitrary-precision
+-midpoint-radius arithmetic \citep{johansson2017arb}.  Arithmetic enclosures
++midpoint-radius arithmetic \citep{johansson2017arb}, while his later
++work describes rigorous numerical integration in ball arithmetic
++\citep{johansson2018integration}.  Arithmetic enclosures
+ alone do not establish the correctness of a particular integral kernel or
+ the completeness of a domain cover.  The proof must also specify which
+ inequalities imply exclusion, existence, uniqueness, and type, and how the
+@@ -84,6 +115,10 @@
+ Interval Newton and Krawczyk tests can isolate a regular root inside a box \citep{intervalNewton}. Branch-and-prune solvers combine local tests with a global search for isolated roots \citep{branchPrune}. Radii-polynomial methods can prove local uniqueness by finding a ball on which a Newton-like map is a contraction \citep{radiiContinuation}. At a stationary circle the full gradient has a singular Jacobian everywhere along the orbit, and no point of the orbit is isolated. Rotation removes the orbit coordinate and makes scalar isolation meaningful. The problem-specific contribution here is to recover the radial crossing from a Cartesian tangential fourth derivative, and to switch to a chord-Hessian difference where direct differentiation encounters contact. The covering and isolation principles themselves are standard.
+ 
+ \paragraph{Earlier work on this energy.}
+-Furuta's local prolate bifurcation calculation isolates the zero of the central equatorial quadratic coefficient in
++The author's earlier spherical manuscript gives the same spherical
++stationary-minimum result \citep{furutaSphere}; the proof of
++Proposition~\ref{prop:sphere} in this paper is self-contained and
++does not rely on that manuscript. Furuta's earlier local prolate
++bifurcation calculation \citep{furutaProlate} isolates the zero of the central equatorial quadratic coefficient in
+ $[4.72438340452113340672,4.72438340452113340673]$
+-by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. The contribution here is the stationary census for the rotational family across both shape tails, including boundary exits and exclusion of further components, subject to the finite inputs specified below \citep{furutaProlate,furutaTriax}.
++by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. Under the explicitly stated finite inputs C1--C6, the contribution here is to extend those local bifurcations to an aspect-ratio-wide stationary-set classification: the ranges of the axial saddle pair and equatorial Morse--Bott saddle circle, their boundary-arrival ratios, and the exclusion of further stationary components \citep{furutaProlate,furutaTriax}.
+--- a/sections/numerical_discussion.tex
++++ b/sections/numerical_discussion.tex
+@@ -191,7 +191,10 @@
+ (Japanese working record). An exact copy of this primary record is
+ included in the accompanying source bundle under \path{provenance/V24/}.
+ The accompanying project-level AI audit checked the assembly argument
+-and source references; it did not independently rerun the computations.
++and source references. Selected interval-box computations were
++independently recomputed, and exact integer coverage checks were
++performed at the scopes recorded in \path{CURRENT_REPRODUCTION_v0_5_4.md};
++neither this audit nor those checks amount to a complete C1--C6 replay.
+ 
+ For a claim-by-claim reproduction map, see
+ \path{CURRENT_REPRODUCTION_v0_5_4.md} in the source bundle. It lists
+@@ -226,11 +229,16 @@
+ \paragraph{Use of AI tools.}
+ ChatGPT (OpenAI) assisted with exploratory derivations, numerical
+ code and verification scripts, English-language wording proposals,
+-revision and typesetting. Claude (Anthropic) assisted with separate
++revision and typesetting. Codex (OpenAI) assisted with coding and
++manuscript review; GPT-6.2 Astra (OpenAI) with research design and
++specialized computational work. Claude (Anthropic) performed separate
+ project-level AI audits of argument assembly, source references and
+-manuscript differences. These AI audits are not an independently
+-implemented replay of all computational inputs or external human peer
+-review. The provenance of first-draft English paragraphs as opposed
++manuscript differences; Claude Code (Anthropic) provided special code
++audits and independent checks in the recorded scopes. Muse (Meta)
++performed additional external AI audits of selected computational
++materials, including parts of the oblate D5 work. These records are
++not a complete independently implemented replay of C1--C6 or external
++human peer review. The provenance of first-draft English paragraphs as opposed
+ to subsequent translation or copyediting has not yet been fully
+ reconstructed; an account restricted to ``copyediting'' is therefore
+ not asserted. The source bundle includes an AI-provenance review log.
+--- a/references_additions.bib
++++ b/references_additions.bib
+@@ -124,3 +124,56 @@
+ @incollection{intervalNewton,author={Moore, Ramon E. and Kearfott, R. Baker and Cloud, Michael J.},title={Interval Newton Methods},booktitle={Introduction to Interval Analysis},publisher={SIAM},year={2009},pages={105--128},doi={10.1137/1.9780898717716.ch8},url={https://doi.org/10.1137/1.9780898717716.ch8}}
+ @article{branchPrune,author={Van Hentenryck, Pascal and McAllester, David and Kapur, Deepak},title={Solving polynomial systems using a branch and prune approach},journal={SIAM Journal on Numerical Analysis},volume={34},year={1997},doi={10.1137/S0036142995281504},url={https://doi.org/10.1137/S0036142995281504}}
+ @article{radiiContinuation,author={Day, Sarah and Lessard, Jean-Philippe and Mischaikow, Konstantin},title={Validated continuation for equilibria of {PDEs}},journal={SIAM Journal on Numerical Analysis},volume={45},year={2007},doi={10.1137/050645968},url={https://doi.org/10.1137/050645968}}
++
++
++@article{boroczky2020gaussimage,
++  author = {B{\"o}r{\"o}czky, K{\'a}roly J. and Lutwak, Erwin and Yang, Deane and Zhang, Gaoyong and Zhao, Yiming},
++  title = {The Gauss Image Problem},
++  journal = {Communications on Pure and Applied Mathematics},
++  volume = {73},
++  number = {7},
++  pages = {1406--1452},
++  year = {2020},
++  doi = {10.1002/cpa.21898}
++}
++
++@article{bertrand2016gauss,
++  author = {Bertrand, J{\'e}r{\^o}me},
++  title = {Prescription of Gauss Curvature Using Optimal Mass Transport},
++  journal = {Geometriae Dedicata},
++  volume = {183},
++  pages = {81--99},
++  year = {2016},
++  doi = {10.1007/s10711-016-0147-3}
++}
++
++@inproceedings{johansson2018integration,
++  author = {Johansson, Fredrik},
++  title = {Numerical Integration in Arbitrary-Precision Ball Arithmetic},
++  booktitle = {Mathematical Software -- ICMS 2018},
++  series = {Lecture Notes in Computer Science},
++  volume = {10931},
++  pages = {255--263},
++  year = {2018},
++  publisher = {Springer},
++  doi = {10.1007/978-3-319-96418-8_30}
++}
++
++@misc{furutaGeoEnclosure2026,
++  author = {Furuta, Katsushi},
++  title = {{GeoEnclosure} research materials (research note and Standard v1.1)},
++  year = {2026},
++  publisher = {Zenodo},
++  doi = {10.5281/zenodo.24421364},
++  howpublished = {Zenodo research materials},
++  note = {GeoEnclosure research note and Standard v1.1; see DOI record}
++}
++
++@misc{furutaSphere,
++  author = {Furuta, Katsushi},
++  title = {Geometric Dual Topology of the Sphere: A Complete Analytic Classification for a Cone-Volume-Weighted Radial-Normal Angle Functional},
++  year = {2026},
++  month = jul,
++  note = {Earlier unpublished spherical manuscript, fixed project snapshot abf704b (July 2026); part of the same functional's research record},
++  howpublished = {\url{https://github.com/cotaxxxx/basepoint-geometry/tree/abf704b8701f3da8eb41d8a99408570a413b2214/01_KAKURON_I}}
++}
+--- a/LICENSE
++++ b/LICENSE
+@@ -0,0 +1,33 @@
++Paper I v0.5.6 -- license and scope
++
++Research manuscript, scholarly prose, author-created figures, numerical tables and documentation:
++Creative Commons Attribution 4.0 International (CC BY 4.0).
++The license legal code is available at https://creativecommons.org/licenses/by/4.0/legalcode.
++Copyright (c) 2026 Katsushi Furuta.
++
++Author-created program source code and scripts (including .py, .sh, .cpp and .hpp files,
++wherever located in this bundle): MIT License. The MIT terms follow below.
++Any third-party packages and tools remain subject to their own separate licenses;
++this file does not relicense third-party software.
++
++MIT License
++
++Copyright (c) 2026 Katsushi Furuta
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
