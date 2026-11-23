@@ -1,0 +1,239 @@
+\section{Numerical illustrations and further questions}
+\label{sec:numerical}
+
+The illustrations in this section were recomputed directly from the
+reference-sphere formula \eqref{eq:reference_energy}, using ordinary
+floating-point arithmetic.  They make the geometry of the proposed
+classification visible; they are not inputs to Assertions C1--C6.
+The accompanying source bundle contains the plotting code, sampled
+values, quadrature orders, and the rational slice records used in
+Figure~\ref{fig:branches}.
+
+\subsection{Branches and meridian sections}
+
+On the axis, rotational symmetry removes the azimuth integration
+exactly.  We located the positive root at 69 parameters using a
+768-node Gauss--Legendre rule, and compared it with a 384-node rule.
+The largest change in the computed root was $9.87\times10^{-7}$.
+The prolate branch was computed at 65 parameters with a
+$192\times384$ polar--azimuth rule.  All roots were obtained by
+bracketing and a scalar root solver, away from the transition
+parameters.  The discrepancy between two quadrature resolutions
+is a diagnostic, not a rigorous error estimate.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\linewidth]{figures/branches.pdf}
+\caption{Numerically computed noncentral branches in reference
+coordinates.  Left: the two axial saddles on the oblate side.
+Right: the radius of the single prolate stationary circle.
+The seven marked vertical intervals on the right are the exact
+rational slice enclosures recorded in the window package; their
+widths are mostly below the plotting resolution.  They retain the
+evidence status of that package.  Open endpoint markers and dotted
+connections indicate the classified limits, rather than additional
+numerical root evaluations.  The centre persists throughout.}
+\label{fig:branches}
+\end{figure}
+
+The energy sections in Figure~\ref{fig:energy} use a
+$128\times256$ sphere rule and a $99\times99$ meridian grid,
+retaining the 7,525 points with $q_1^2+q_3^2\leq0.98^2$.
+The small omitted outer rim prevents a finite-resolution image from
+suggesting that the boundary trace has been established by sampling.
+Each panel has its own energy scale.  In the prolate circle regime,
+two crosses in a meridian plane are intersections of one connected
+stationary circle, not two isolated stationary points.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=.96\linewidth]{figures/energy_sections.pdf}
+\caption{Reference meridian sections of $\widehat E_\lambda$ for
+$\lambda=0.3,0.52,3,6$.  A white disc marks the centre; white crosses
+mark the noncentral stationary intersections.  The four panels
+show, respectively, a central saddle, a central minimum with an
+axial saddle pair, a central minimum with a saddle circle, and a
+central saddle of index two.  The circle drawn around each panel
+is the reference boundary; the energy is sampled only up to
+radius $0.98$.  These are non-interval numerical illustrations.}
+\label{fig:energy}
+\end{figure}
+
+\subsection{The size of the recorded sign margins}
+
+The constants $16189/2^{36}$ and $3341881/2^{36}$ are small
+positive residual margins from interval enclosures over entire
+parameter and spatial boxes.  They are not estimates of the
+actual global minimum of $V$, and the reporting unit $2^{-36}$
+does not measure the full enclosure error.  Dependence between
+repeated variables, angular range overestimation, and outer-box
+width can all consume a large part of a sign margin
+\citep{Rump2010}.  For the two vertical windows of C4, the reported whole-box margins for $E_{zz}$ and $E_z$ are about $1.75\times10^{-4}$ and $4.86\times10^{-5}$. A separate numerical review reported sampled minima near $1.07$ and $0.32$ in the respective windows. The several-order gap illustrates enclosure loss; the sampled minima supply no lower bound on the continuum. A useful scale comparison is provided by direct
+point values at $\rho=z=0.2$:
+\begin{center}
+\begin{tabular}{rrr}
+\toprule
+$\lambda$&$V(0.2,0.2;\lambda)$&$H(0.2,0.2;\lambda)$\\
+\midrule
+1&1.261673&1.261673\\
+1.5&1.810885&0.883353\\
+2&2.053848&0.593574\\
+3&2.169992&0.242475\\
+5&2.025279&$-0.042247$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Doubling the rule from $128\times256$ to $256\times512$
+changes these point values by at most $1.65\times10^{-14}$.
+This agreement does not certify the digits and does not supply
+a continuum lower bound.  It only illustrates why a very small
+recorded lower endpoint need not indicate a nearly vanishing
+derivative at a typical interior point.
+
+\subsection{A possible extension of axial concavity}
+
+The analytic concavity lemma proves a uniform estimate for
+$0<\lambda\leq1/32$.  The following stronger sign statement
+would simplify much of the remaining oblate analysis.
+
+\begin{conjecture}\label{conj:concavity}
+For every $0<\lambda<\cO$ and $|q|<1$,
+\[
+ \partial_{zz}\widehat E_\lambda(q)<0.
+\]
+\end{conjecture}
+
+A numerical check with a $96\times192$ sphere rule sampled
+473 points in the nonnegative meridian quarter-disc of radius
+$0.96$ for each of
+$\lambda=1/16,1/8,1/4,0.35,0.4,0.4079$.
+All sampled values were negative.  The maxima in these finite
+samples were approximately
+$-0.223524,-0.367927,-0.328099,-0.138342,-0.019734$,
+and $-0.000147$, respectively.
+A further chord-Hessian quadrature at 17 evenly spaced meridian angles on each of eight near-boundary arcs gave strictly negative sample values throughout. For $\lambda=1/128,1/64,1/32$ we used radius $0.9999$. For $\lambda=0.25,0.35,0.4,0.4079,0.42$ we used $0.9995$. The least negative sampled values on the two sets were about $-0.031$ and $-0.487$. These are point diagnostics. In particular, $0.42>\cO$ lies outside the conjecture and the centre there already has positive axial curvature.
+
+The assertion that the maximum always occurs at the centre would
+be stronger and is not suggested by all the samples: at
+$\lambda=1/8$ the value at $(\rho,z)=(0.88,0)$ is about
+$-0.367927$, larger than the central value $-0.383316$.
+For the four sampled parameters from $1/4$ through $0.4079$,
+the largest sampled value does occur at the centre.
+Conjecture~\ref{conj:concavity} does not include a claim about
+the location of the maximum, and no computation in this section
+is used to eliminate an existing proof obligation.
+
+\subsection{A concrete triaxial question}
+
+Fix $\lambda$ strictly inside $(\bP,\cP)$ and break rotational
+symmetry by replacing $M_\lambda$ with
+\[
+ M_{\lambda,\epsilon}
+ =\diag(e^\epsilon,e^{-\epsilon},1)M_\lambda.
+\]
+Its determinant remains one.  Conditional on the stationary-circle
+classification, the normal Hessian along the unperturbed circle
+is invertible.  The implicit function theorem therefore solves
+the two normal critical equations near that circle and reduces
+the remaining equation to a periodic angular energy
+$\Psi_\epsilon(\phi)$.
+The first variation is linear in
+$T=\diag(1,-1,0)$.  Rotation of this tensor through $\phi$
+produces its cosine and sine components of angular weight two;
+reflection across $q_2=0$ removes the sine component at
+$(\rho_*,0,0)$.  The first-order contribution of the normal
+correction vanishes because the unperturbed gradient is zero.
+Consequently, with
+$A(\lambda)=\left.\partial_\epsilon
+\widehat E_{\lambda,\epsilon}(\rho_*,0,0)\right|_{\epsilon=0}$,
+the reduced expansion is
+\[
+ \Psi_\epsilon(\phi)
+ =\Psi_0+\epsilon A(\lambda)\cos(2\phi)
+   +O_{C^2(S^1)}(\epsilon^2),
+\]
+provided $A(\lambda)\ne0$.
+For sufficiently small nonzero $\epsilon$, the four simple
+zeros of the leading angular derivative persist and exhaust
+the nearby critical points.  Coordinate reflections, inherited
+by the unique normal solution, place them exactly at
+$\phi=k\pi/2$, in two opposite principal-axis pairs.
+Their angular curvatures alternate in sign.  A Schur complement
+of the normal Hessian gives a congruent block decomposition
+with the reduced angular curvature.  Since the two normal
+curvatures keep opposite signs, two of the points have Morse
+index one and two have index two.
+
+There is also an exact angular equation. Write the energy as $F(C,q)$ for the positive definite matrix $C=L^TL$, and define the symmetric matrix $G$ by $D_CF[U]=\operatorname{tr}(GU)$. Put $T_{ij}=2\ell_i\ell_jG_{ij}$ in a principal-axis frame with semiaxes $\ell_i$. For every rotation $R$, $F(RCR^T,Rq)=F(C,q)$ by change of the reference integration variable. Differentiating a rotation in the $(1,2)$ plane yields
+\[
+ q_1E_2-q_2E_1=(\ell_2/\ell_1-\ell_1/\ell_2)T_{12}.
+\]
+The differential of the displayed diagonal deformation similarly gives $A=T_{11}-T_{22}$ at the unperturbed circle point on the first axis. The exact identity also applies at nonzero deformation.
+
+For fixed shape near $\cP$, the shape derivative on the first axis is smooth and even in $\rho$. Its constant term vanishes by interchange of the two equatorial axes. Hence $A=O(\rho_*^2)$ as the circle shrinks. The natural quantity to estimate uniformly is $A/\rho_*^2$. Ordinary quadrature gives $0.6744,0.5744,0.4879,0.4399$ at $\lambda=2.1,3,4,4.7$ respectively. A positive uniform lower bound on the full branch remains an open estimate here. The local triaxial study cited in the introduction concerns the neighbourhood of the prolate centre transition. Neither these four samples nor the exact angular equation by itself excludes other critical points over the full triaxial family.
+
+\section{Availability, reproducibility, and status of the draft}
+\label{sec:availability}
+
+The computational references identify fixed commits and paths in
+the public repositories \texttt{cotaxxxx/bg-spheroid-family} and
+\texttt{cotaxxxx/bg-oblate-spheroid}.
+The earlier background material is in the public repository
+\texttt{cotaxxxx/basepoint-geometry}.  The analytic flat-end
+argument and the axial part of the prolate-tail argument are
+expanded here from their fixed research records
+\citep{data-oblate-analytic,data-prolate-axis}.
+The sphere proof is given in Section~\ref{sec:sphere} and does
+not require an unpublished spherical manuscript.
+Record V24 (16 November 2026): \texttt{cotaxxxx/bg-spheroid-family},
+commit \texttt{127be52046e9498d1306fe3d35c3e02e91c636de},
+file \href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{\path{JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}}
+(Japanese working record). An exact copy of this primary record is
+included in the accompanying source bundle under \path{provenance/V24/}.
+The accompanying project-level AI audit checked the assembly argument
+and source references; it did not independently rerun the computations.
+
+For a claim-by-claim reproduction map, see
+\path{CURRENT_REPRODUCTION_v0_5_4.md} in the source bundle. It lists
+C1--C6 with pinned input packages, producer and checking commands,
+ledger paths, and the extent of independent reevaluation, separately
+from the retained historical \path{REPRODUCTION.md}. The new map does
+not claim that every listed original producer has been rerun or that
+its original analytic kernel has been independently rederived.
+
+The accompanying revision bundle contains the manuscript sources,
+bibliography, vector figures, figure data and reproduction scripts,
+and a map of the fixed computational sources.  It is not the
+complete certified archive of every upstream computation.  No
+archival DOI for such a consolidated proof package is claimed
+in this revision.  A fixed release should include the exact
+input boxes, all selected final leaves, coefficient tables,
+producer and checker sources, build environment, execution
+commands, and file hashes, with a direct map from C1--C6 to
+the corresponding accepted records.
+
+There are three distinct obligations: correctness of the analytic
+kernel, correct outward arithmetic and error bounds in its
+implementation, and completeness of the domain cover used by
+the classification.  A file hash establishes identity, not any
+of these mathematical properties.  Reproduction with the original
+kernel and reevaluation with a separately derived kernel address
+different failure modes.  Full independent numerical replay is
+not asserted here; its current scope is stated in
+Section~\ref{subsec:computational-workload}.
+The supplement gives the replay commands, fixed locations and selection rules. The source bundle contains the independent interval calculations and their integer coverage checks.
+
+\paragraph{Use of AI tools.}
+ChatGPT (OpenAI) assisted with exploratory derivations, numerical
+code and verification scripts, English-language wording proposals,
+revision and typesetting. Claude (Anthropic) assisted with separate
+project-level AI audits of argument assembly, source references and
+manuscript differences. These AI audits are not an independently
+implemented replay of all computational inputs or external human peer
+review. The provenance of first-draft English paragraphs as opposed
+to subsequent translation or copyediting has not yet been fully
+reconstructed; an account restricted to ``copyediting'' is therefore
+not asserted. The source bundle includes an AI-provenance review log.
+No compliance with the first-draft restriction of a prospective
+journal is claimed. Author verification of every suggested claim,
+reference, code contribution and the final disclosure is pending.

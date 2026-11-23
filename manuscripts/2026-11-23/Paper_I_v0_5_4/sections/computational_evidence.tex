@@ -1,0 +1,438 @@
+\section{Computational assertions and their audit scope}
+\label{sec:computational}
+
+The classification in this working draft is a logical consequence of the
+analytic arguments and the six assertions below.  We state the assertions
+as mathematical claims, separately from the evidence currently available
+for them.  Their names do not upgrade the status of an archived calculation.
+Several source packages retain the designation
+\texttt{DIAGNOSTIC\_ONLY / NOT\_EVIDENCE}; a project decision to use a result
+does not itself constitute an independent numerical proof.  The repositories
+are public, and the fixed source identifiers are provided in the references.
+An independently implemented replay of every required enclosure is not
+claimed in this revision.
+
+Throughout this section, $E$ abbreviates the reference-coordinate energy
+$\widehat E_\lambda$ and every spatial derivative is taken in reference
+coordinates.  Put
+\[
+ \mathcal D=\{(\rho,z):\rho,z\geq0,\ \rho^2+z^2\leq1\},\qquad
+ H=\frac{E_\rho}{\rho},\qquad V=\frac{E_z}{z}.
+\]
+At interior points with $\rho=0$ or $z=0$, the respective quotients
+are extended by the corresponding second derivative.  Every inequality
+for a second or higher spatial derivative is an assertion on the
+intersection of the stated box with the open ball, even when that box
+meets the boundary.  At the boundary, first derivatives mean the
+continuous inner trace of the full gradient; $H$ is then used only
+where $\rho>0$, as that radial trace divided by $\rho$, and $V$ only
+where $z>0$.  No boundary Hessian extension is assumed in this section.
+The full-gradient trace condition is distinct from a constrained
+critical-point condition on the boundary.
+
+\subsection{The finite statements}
+
+\begin{computationalassertion}[Finite oblate transverse and axial signs]
+\label{comp:c1}
+For $1/32\leq\lambda\leq1$ and interior $(\rho,z)\in\mathcal D$,
+\[
+ H(\rho,z;\lambda)>0.
+\]
+The same strict sign holds for the radial trace quotient at boundary
+points with $\rho>0$.
+For $0<z\leq1$, the axial first derivative satisfies
+\[
+ \begin{array}{ll}
+ E_z(0,z;\lambda)<0,&1/32\leq\lambda\leq2/5,\\
+ E_z(0,z;\lambda)>0,&33/50\leq\lambda\leq1.
+ \end{array}
+\]
+On the axis segment $0\leq z\leq1/8$, one has, more specifically,
+\[
+ \begin{array}{ll}
+ E_{zz}(0,z;\lambda)<0,&1/32\leq\lambda\leq2/5,\\
+ E_{zz}(0,z;\lambda)>0,&33/50\leq\lambda\leq1.
+ \end{array}
+\]
+The corresponding first-derivative signs follow by integrating
+from $z=0$; on $1/8\leq z\leq1$, $E_z$ is enclosed directly.
+\end{computationalassertion}
+
+The archived finite cover uses either $H$ itself or $X=E_\rho$.
+An $X$ leaf is accepted only when its entire box has $\rho>0$ and
+its lower endpoint for $X$ is positive.  Thus its implication for $H$
+has a stated denominator condition.  A box is discarded as empty only
+after its intersection with $\mathcal D$ has been shown to be empty.
+The overlap of the parameter slabs is intentional: $2/5$ is covered
+through an upward dyadic endpoint, and the upper family begins at
+$21/32<33/50$.
+On $[21/32,1]$, recorded lower endpoints for $H$, axial $E_z$
+on $z\geq1/8$, and axial $E_{zz}$ on $z\leq1/8$ are respectively
+\[
+ \frac{11239578}{2^{36}},\qquad
+ \frac{28921220}{2^{36}},\qquad
+ \frac{34030169745}{2^{36}}.
+\]
+Assertion~\ref{comp:c1} excludes every off-axis critical point in this
+finite oblate band; the axis census in the remaining window is the
+separate scalar statement below.  It makes no assertion about a uniform
+transverse sign for $0<\lambda<1/32$.
+The latter range is handled by the analytic thin-oblate argument \citep{data-oblate-full}.
+
+\begin{computationalassertion}[Oblate scalar axis census]
+\label{comp:c2}
+Let
+\[
+ g(t,\lambda)=E_z(0,t;\lambda),\quad
+ h_o(\lambda)=g_t(0,\lambda),\quad
+ c_3(\lambda)=\frac16 g_{ttt}(0,\lambda),\quad
+ b(\lambda)=g(1,\lambda).
+\]
+The following statements hold.
+\begin{enumerate}
+ \item On $[1/4,1]$, $h_o'(\lambda)>0$, and
+ $h_o(2/5)<0<h_o(83/200)$.  Its unique zero $c_o$ therefore satisfies
+ \[
+  \frac25<c_o<\frac{83}{200}.
+ \]
+ Moreover, $c_3(\lambda)<0$ throughout $[2/5,83/200]$.
+ \item The polar trace has a unique zero $b_o$ in $[2/5,33/50]$,
+ is negative before that zero and positive after it, and
+ \[
+  \frac{674802}{2^{20}}<b_o<\frac{674811}{2^{20}}.
+ \]
+ The recorded endpoint inequalities are
+ \[
+  b(674802/2^{20})\leq-\frac{175746}{2^{36}},\qquad
+  b(674811/2^{20})\geq\frac{153930}{2^{36}}.
+ \]
+ \item On $[2/5,33/50]$, the positive interior zeros of $g$ obey
+ \[
+  \#\{t\in(0,1):g(t,\lambda)=0\}
+  =\begin{cases}
+    1,&c_o<\lambda<b_o,\\
+    0,&2/5\leq\lambda\leq c_o\ \text{or}\ b_o\leq\lambda\leq33/50.
+   \end{cases}
+ \]
+ At every such nonzero interior root, $g_t<0$.
+ At $\lambda=b_o$, the endpoint $t=1$ is the only positive zero
+ in $(0,1]$; it is not counted as an interior zero.
+\end{enumerate}
+\end{computationalassertion}
+
+The scalar root count is assembled from specified sign gates, not from
+samples of a plotted branch.  In the lower half, write
+$g(t,\lambda)=t\Phi(t^2,\lambda)$.
+On $[2/5,9/20]\times[0,1/2]$, the archived fourth-energy-derivative
+gate $g_{ttt}<0$, together with the analytic transfer identity,
+gives $\partial_\tau\Phi<0$.  Signed values at $t=1/2$ and the center
+then determine the lower-half roots.  The upper-half cover on
+$[2/5,9/20]$ has 160 parameter slabs, split into 48 root-free slabs,
+78 slabs with endpoint signs and a negative $g_t$ strip, and
+34 slabs with an isolated root tube.  On $[9/20,5/8]$, 159 accepted
+parameter intervals have positive left-side values, $g_t<0$ in the
+root tube, and negative right-side values or a negative polar trace.
+There are 124 tubes ending before the pole and 35 ending at the pole.
+The residual outer region for the former 124 is separately covered.
+On $[5/8,33/50]\times[31/32,1]$, the gates are $g_t<0$,
+$g(31/32,\lambda)>0$, and the signed polar trace.  This description
+specifies which inequalities provide existence, uniqueness, and exclusion;
+the complete closed-interval assembly and its source receipts are archived
+in the axis reference \citep{data-oblate-axis}.
+
+To make the logical use of C2(3) explicit, let $\lambda_x$ be the
+unique zero of $g(1/2,\lambda)$ in
+$(699/1600,281/640)$ (the C1a gate).  The following is the
+\emph{gate-to-root-count assembly} from the fixed axial record
+\citep{data-oblate-axis}.  Here $\Phi(t^2,\lambda)=g(t,\lambda)/t$
+for $t>0$, $B_o(\lambda)=g(1,\lambda)$, ``tube'' denotes an interval
+with opposite endpoint signs and $g_t<0$, and $N_+$ counts zeros in
+$(0,1)$ only.  The entries are conditional on the specified sign gates;
+they do not independently validate their interval implementations.
+
+\begin{center}
+\begingroup\footnotesize
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\linewidth}{@{}p{29mm}p{43mm}Xr@{}}
+\toprule
+$\lambda$ & Lower axis $0<t\le1/2$ & Upper axis $1/2<t<1$ and outer exclusion & $N_+$\\
+\midrule
+$[2/5,\cO)$ & $\Phi(0)<0$, $\Phi_\tau<0$: no root & Gap-1 L: $g<0$ & $0$\\
+$\{\cO\}$ & $\Phi(0)=0$, $\Phi_\tau<0$: no positive root & Gap-1 L: $g<0$ & $0$\\
+$(\cO,83/200]$ & $\Phi(0)>0>\Phi(1/4)$, strictly decreasing: one root & Gap-1 L: $g<0$ & $1$\\
+$(83/200,\lambda_x)$ & C1a/A1, $\Phi(0)>0>\Phi(1/4)$: one root & Gap-1 X: upper interval excluded & $1$\\
+$\{\lambda_x\}$ & $\Phi(1/4)=0$: only $t=1/2$ & X: all $t>1/2$ excluded & $1$\\
+$(\lambda_x,9/20)$ & $\Phi(1/4)>0$: no lower root & X/R: one monotone upper root, negative outer region & $1$\\
+$[9/20,5/8]$ & C1c: $g>0$ & C1b: 159 accepted tubes; 124 outer regions and Gap-2 excluded & $1$\\
+$(5/8,\bO)$ & C1d: $g>0$ through $31/32$ & Band: $g_t<0$, $g(31/32)>0>B_o$ & $1$\\
+$\{\bO\}$ & C1d: $g>0$ through $31/32$ & Band: $g_t<0$; only $t=1$ is a zero & $0$\\
+$(\bO,33/50]$ & C1d: $g>0$ through $31/32$ & Band: $g_t<0$, $B_o>0$: no upper root & $0$\\
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{center}
+The endpoint $83/200$ is assigned to the third row; Gap-1's slab
+ownership of that value is X rather than L and supplies a compatible
+sign check. The X/R junction at $703/1600$ is a shared certified
+root, not two roots. The value $9/20$ belongs to C1b, and $5/8$ to
+the C1b row; the C1d/band check at $5/8$ counts that same root
+once. The cut $t=31/32$ is bookkeeping, while $t=1$ is a boundary
+zero and is never included in $N_+$. The fixed source also records
+the 48 L, 78 X and 34 R parameter slabs and the 124 unclamped and
+35 clamped C1b tubes. The present ZIP includes a separately readable
+C2 evidence map; full C2 source-code replay remains a separate task.
+
+The prior centre computation used 160-bit Arb followed by a 192-bit replay of the transcribed kernel \citep{data-center-axis}. For a separate endpoint test write $s=\sin t$, $m=\cos t$, $D_0=s^2+\lambda^2 m^2$ and $\theta=\arctan((\lambda-1/\lambda)ms)$. On the axis the signed angle is $\arctan(\lambda(m-z)/s)-\arctan(m/(\lambda s))$. Differentiate its square with weight $1-zm$ twice at $z=0$ and use reflection to obtain
+\[
+ h_o(\lambda)=\int_0^{\pi/2}
+ \frac{s\,[2\lambda^2s^2+4\lambda(1-\lambda^2)m s^3\theta]}{D_0^2}\,dt .
+\]
+At the endpoints of the finer interval in Table~\ref{tab:critical}, complex ball integration gives an upper bound $-186781876279625303/2^{96}$ on the left and a lower bound $10585972787056429/2^{96}$ on the right. Combined with the monotonicity in C2 this isolates the same zero. The wider interval in C2 also supports its cubic-coefficient test.
+
+\begin{computationalassertion}[The near-spherical band]
+\label{comp:c3}
+For $1\leq\lambda\leq2$ and $(\rho,z)\in\mathcal D$,
+\begin{align*}
+ E_z(\rho,z;\lambda)&\geq\frac{16189}{2^{36}}
+       &&(1/4\leq z\leq1),\\
+ E_{zz}(\rho,z;\lambda)&\geq\frac{66330426}{2^{36}}
+       &&(0\leq z\leq1/4).
+\end{align*}
+On $z=0$ one has $E_{yyyy}<0$ throughout $0\leq\rho<1$. On the boundary equator,
+\[
+ H_b(\lambda):=E_\rho(1,0;\lambda)
+ \geq\frac{32725738}{2^{36}}>0.
+\]
+\end{computationalassertion}
+
+Reflection gives $E_z(\rho,0)=0$, so the first two inequalities imply
+$V\geq16189/2^{36}$ whenever $z\ne0$.
+The whole-equator sign and positive boundary value exclude all noncentral equatorial points. The earlier 15-leaf equatorial test instead enclosed either $H\geq1383839082/2^{36}$ or $E_{\rho\rho}\leq-4138135153/2^{36}$ at positive radius. It gives a separate one-way-crossing argument.
+The source's correction E2 withdraws the earlier claim that the first
+two terms $4/3-8r^2/9$ of the spherical expansion are an exact formula.
+None of the inequalities in Assertion~\ref{comp:c3} uses that truncation \citep{data-near-sphere}.
+
+\begin{computationalassertion}[The finite prolate window]
+\label{comp:c4}
+For $2\leq\lambda\leq5$ and $(\rho,z)\in\mathcal D$,
+\begin{align*}
+ E_{zz}&\geq\frac{1503705}{2^{33}}
+          &&(0\leq z\leq1/4),\\
+ E_z&\geq\frac{3341881}{2^{36}}
+          &&(1/4\leq z\leq1).
+\end{align*}
+For $0\leq\rho<1$ on the equator, $E_{yyyy}\leq-109964349/2^{36}$. At each positive-radius interior zero of $H$, the separate shape-derivative input gives $H_\lambda<0$.
+For $0\leq\rho\leq1/8$ on the equator,
+$E_{yyyy}\leq-5355762265/2^{35}$, where $y=q_2$.
+The center coefficient $H_c(\lambda)=H(0,0;\lambda)$ satisfies
+\[
+ H_c'(\lambda)\leq-\frac{1090349669}{2^{34}}
+ \qquad(2\leq\lambda\leq5).
+\]
+The boundary coefficient satisfies
+\[
+ \begin{array}{ll}
+ H_b'(\lambda)\leq-6439538363/2^{36},&2\leq\lambda\leq9/4,\\
+ H_b(\lambda)\leq-11303125/2^{36},&9/4\leq\lambda\leq5.
+ \end{array}
+\]
+The unique boundary and center zeros, respectively $b_p$ and $c_p$,
+are enclosed by
+\[
+ b_p\in\left(\frac{34651360}{2^{24}},\frac{34651369}{2^{24}}\right),
+ \qquad
+ c_p\in\left(\frac{79261996}{2^{24}},\frac{79262005}{2^{24}}\right).
+\]
+At the displayed left and right endpoints the bounds are, respectively,
+\[
+ \begin{array}{c|cc}
+ &\text{left endpoint, lower bound}&\text{right endpoint, upper bound}\\ \hline
+ H_b&6485992/2^{47}&-5189437/2^{47}\\
+ H_c&3088214/2^{47}&-2555623/2^{47}.
+ \end{array}
+\]
+On $[2,9/4]\times[7/8,1)\times\{z=0\}$,
+$E_{\rho\rho}\leq-28849345377/2^{36}$ uniformly up to the
+boundary equator.  Only the first-derivative trace is used at
+$\rho=1$.
+\end{computationalassertion}
+
+The first two inequalities give $V\geq3341881/2^{36}$ off the
+equator.  The fourth-derivative bound gives $H_\rho<0$ for every $0<\rho<1$ by \eqref{eq:fourth_derivative}.
+A separate parameter-direction cover has alternatives $H>0$,
+$H<0$, and $H_\lambda<0$.
+Thus every root satisfies both strict derivative inequalities,
+and implicit differentiation gives
+$\rho_*'(\lambda)=-H_\lambda/H_\rho<0$.
+The quartic gate controls the degenerate center, while the endpoint
+signs locate the two transitions \citep{data-window}.
+
+\begin{computationalassertion}[The finite part of the prolate tail]
+\label{comp:c5}
+Let $l=\sqrt{\lambda^2-1}$ and use the one-dimensional integrals
+$N_c,N_e,N_p$ of~\eqref{eq:pt-three-coefficient-densities}.
+Set
+\[
+ A_c(l)=3\pi/4-N_c(l),\quad
+ A_e(l)=3\pi/4-N_e(l),\quad
+ A_p(l)=\pi/2-N_p(l).
+\]
+The anchor inequalities are
+\[
+ \begin{array}{c|ccc}
+ \lambda&A_c&A_e&A_p\\ \hline
+ 5&<1&<1&<-3/16\\
+ 8&<-1/20&<-2/5&<-3/5.
+ \end{array}
+\]
+In addition, on the closed domain
+\[
+ 5\leq\lambda\leq8,\qquad(\rho,z)\in\mathcal D,\qquad
+ \sqrt{1-z^2}\geq1/\lambda,
+\]
+the transverse coefficient has the following upper bounds:
+\[
+ \begin{array}{c|c}
+ \lambda\text{ interval}&H\text{ upper bound}\\ \hline
+ {[5,6]}&-68778309/2^{36}\\
+ {[6,7]}&-9210649/2^{33}\\
+ {[7,8]}&-1095717/2^{30}.
+ \end{array}
+\]
+\end{computationalassertion}
+
+These statements concern finite integrals and finite covers only.
+The extension to all $\lambda\geq5$, including the complementary
+polar region, follows from the analytic comparison of the coefficients
+in Section~\ref{sec:prolate-tail}.  In particular, a numerical check
+at $\lambda=8$ is not being extrapolated without that argument.
+The complete exact anchor endpoints are retained in the accompanying
+source notes \citep{data-chord}.
+
+\begin{computationalassertion}[The polar lower-envelope integral]
+\label{comp:c6}
+For the explicitly defined lower-bound integral
+$\mathcal B$ in~\eqref{eq:pt-cap-computational-integral},
+\[
+ \mathcal B(\epsilon,w,u)\geq
+ \frac{47473218194072764542240096942353646083}{2^{127}}
+ >\frac14
+ \quad\text{on}\quad
+ [0,1/5]\times[0,1]\times[0,1].
+\]
+\end{computationalassertion}
+
+Here $z=\sqrt{1-\epsilon^2w^2}$ and $\rho=\epsilon wu$.
+For $\epsilon>0$, the analytic derivation identifies
+$\lambda=1/\epsilon$ and proves $\lambda E_z\geq\mathcal B$.
+The endpoint $\epsilon=0$ is a continuous extension of this
+lower-bound integral, not a definition of the energy at an infinite
+parameter.  The analytic subtraction terms in $\mathcal B$ account
+for the omitted angular regions.  Assertion~\ref{comp:c6} does not
+assume a global asymptotic remainder estimate \citep{data-cap}.
+
+\subsection{Arithmetic, integration, and singularity handling}
+\label{subsec:computational-methods}
+
+\paragraph{Directed binary64 enclosures.}
+The finite oblate, near-sphere, and prolate-window kernels use a
+custom interval type with IEEE binary64 endpoints.  The program sets
+\texttt{FE\_UPWARD}; lower endpoints of arithmetic operations are
+obtained by the appropriate sign reversal, and upper endpoints by
+upward rounding.  A positive square root has an upward endpoint
+and a lower endpoint obtained by stepping that result down one
+representable value; zero is handled exactly.  The recorded build flags
+include \texttt{-frounding-math}, \texttt{-fno-fast-math}, and
+\texttt{-ffp-contract=off}.  Their correctness depends on the stated
+floating-point environment and compiler behavior, not merely on
+printing many digits.  A startup directed-rounding check is present.
+
+The usual coefficient tables have 8,192 cells and degree-60 positive
+series with an outward tail allowance $2^{-38}$ for the coefficient
+quantities and derivatives used by those kernels.
+Dyadic angular grids are constructed through square-root half-angle
+identities.  Outer-box coordinates are exact integers in units of
+$2^{-20}$; the ordinary reported integral endpoints use units of
+$2^{-36}$.  For the oblate polar refinement, the identities
+$J'=Q$ and $K'=gQ$ give mean-value enclosures from a fixed table node.
+
+The principal integral enclosure on a spatial cell is the range of
+the complete kernel on that cell, multiplied by its positive measure.
+Summing these products is a Darboux enclosure; it does not omit an
+unestimated quadrature remainder.  The graded oblate chart
+$m=1-(1-t)^2$ uses exact cell differences in $m$ as weights.
+Its expression $C=(1-m^2)+\lambda^2m^2$ preserves positivity near
+the thin poles.  Known geometric ratio bounds are used on contact
+cells instead of dividing an interval that contains zero.
+
+\paragraph{Fourth-order remainder for the critical-value refinement.}
+The prolate-window location calculations use a separate tensor
+Simpson enclosure.  Their coefficient tables have 4,096 cells,
+degree 96, and normalized derivative tails through order six bounded
+by $2^{-52}$.  On a panel of width $\Delta$, the Hermite remainder
+has the sign-controlled average enclosure
+\[
+ \operatorname{mean}(f)-\operatorname{Simpson}(f)
+ \in -\frac{\Delta^4}{120}\,[f^{(4)}/4!].
+\]
+Indeed, the normalized nodal polynomial is
+$t(t-1)(t-1/2)^2\leq0$ on $[0,1]$ and its integral is $-1/120$.
+The code encloses the fourth Taylor coefficient on each whole panel.
+In two variables, the two integration errors are decomposed in
+sequence with positive outer weights.  The critical endpoint
+enclosures are then reported outward in units of $2^{-47}$.
+This error control is separate from an ordinary point quadrature
+or a comparison between two numerical resolutions.
+
+\paragraph{Arb coefficients and an integer finite-tail kernel.}
+The six one-dimensional anchors needed in Assertion~\ref{comp:c5}
+are enclosed with 96-bit Arb, 2,048 uniform $m$ cells, and the
+degree-12 lower polynomial for $Q$ in
+\eqref{eq:pt-positive-series}.  Its omitted coefficients are
+nonnegative, so discarding them gives the required lower bound.
+The independent audit uses 4,096 cells and degree 14.
+The finite $[5,8]$ bridge uses fixed-point interval endpoints at
+scale $2^{-24}$ with signed 128-bit integer intermediates.
+Square roots are corrected until the defining integer-square
+inequalities hold; a floating-point initial guess is not accepted
+without that correction.  Its 2,048-cell coefficient table is
+generated by 144-bit Arb, with degree 16 and the explicit positive
+tail bound for $P$ in~\eqref{eq:pt-series-enclosures}; $Q$ is bounded
+below by its positive truncation.  Exact trigonometric moments are
+enclosed in the table.  Keeping the two negative chord contributions
+paired preserves the identity
+\eqref{eq:pt-paired-negative-identity}.
+
+\paragraph{The fixed polar cover.}
+Assertion~\ref{comp:c6} uses 128-bit Arb and
+$16\times8\times8=1,024$ exact outer boxes.  The retained
+$\theta$ interval is divided into 96 equal cells, and the
+$\phi$ interval into 48.  Every entire-cell range is multiplied
+by its area.  On this retained angular rectangle, the positive
+lower bounds for the denominators are proved before the computation;
+the two omitted regions are bounded analytically.
+
+\paragraph{Boundary contact.}
+The direct gradient kernel is bounded at all noncontact surface points
+and admits a dominated inner limit.  A contact point has area zero.
+For the Hessian enclosures, the chord change of variables cancels
+the vanishing endpoint distance before evaluation.  In particular,
+the bounded chord expression is extended at a collapsing chord;
+the general singular expression is not numerically evaluated there.
+The boundary-equator derivative also has a dedicated kernel.
+Higher spatial derivatives used for the degenerate center are evaluated
+away from the physical boundary.
+
+\subsection{Which finite computations have been checked?}
+\label{subsec:computational-workload}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{lXX}\toprule
+Input & Computation supporting the classification & Scope of the additional checks\\\midrule
+C1 & Oblate exclusion and axial signs & 123 earlier selected items. New Arb check of the weakest positive axial-gradient leaf among 277 in the upper oblate band.\\
+C2 & Central and polar zeros, and axial root count & New endpoint computations for $c_o$ at separation $10^{-12}$. The prior root-count and monotonicity records supply uniqueness.\\
+C3 & Vertical exclusion and positive boundary trace & 35 earlier selected leaves. New Arb check of the weakest among 28,358 positive vertical-gradient leaves. A second implementation re-encloses all 176 additional equatorial boxes.\\
+C4 & Vertical exclusion, radial monotonicity and motion of the circle & All 731 radial boxes checked with a second implementation. Earlier separate checks include 22 vertical leaves and a selected shape-derivative leaf.\\
+C5 & Finite bridge and six tail anchors & All six anchors recomputed in Arb. Refinement of 79 bridge parents uses the existing chord kernel.\\
+C6 & Polar integral & All 1,024 outer boxes recomputed with a different integration implementation and angular partition.\\\bottomrule
+\end{tabularx}\end{center}
+The supplement identifies the source populations and the distinction between a replay, a second implementation of an integral, and a separately derived formula. The full vertical and shape-direction populations have different audit coverage from the radial population.
