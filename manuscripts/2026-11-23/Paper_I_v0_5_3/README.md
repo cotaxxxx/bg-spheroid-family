@@ -10,7 +10,7 @@
 - `SOURCE_DIFF_v0_5_2_to_v0_5_3.patch` contains the limited editorial follow-up.
 - `Paper_I_v0_5_3_Revision_Notes_JA.md` preserves the Japanese revision report.
 - `Paper_I_v0_5_3_ARTIFACT_SHA256SUMS.txt` records the hashes of the originally created PDF, ZIP, and patches.
-- `main.tex` and `sections/core.tex` are exact source files reconstructed from the fixed v0.4 source and the v0.5.3 patch, with independently verified original ZIP SHA-256 values (recorded below), once present.
+- `main.tex`, `sections/core.tex`, and `sections/numerical_discussion.tex` are now registered: reconstructed from the fixed v0.4 source and the v0.5.3 patch, then SHA-256 matched against the original v0.5.3 ZIP bytes.
 
 ## Artifact identity and limitation
 
@@ -24,6 +24,7 @@ The original ZIP's internal 153 SHA-256 entries and ZIP CRC passed in the ChatGP
 Source identity from original ZIP:
 - `main.tex`: `7ce92fbaeb1f93a216a67eabd2f07b3765400b14dd12c8c4bf8479ed5c80099b`.
 - `sections/core.tex`: `84532ef7cfb41b2abcb29ea94e5fc5d091a4ab6460ce2ad16989f6037ce220e0`.
+- `sections/numerical_discussion.tex`: `e18dd7366f8efac12220e4bafb89840b6aa3ded6022e38ba54087ebd7b6ff8ec`.
 
 ## Evidence and certification scope
 
