@@ -1,0 +1,130 @@
+--- a/sections/related_work.tex
++++ b/sections/related_work.tex
+@@ -50,6 +50,54 @@
+ functional considered here.  Nor does uniqueness of a selected global
+ extremizer, by itself, describe every critical point of a different
+ functional.
++
++Two further uniqueness results illustrate how much the assumptions on the
++functional matter.  In the preprint \emph{Uniqueness of radial centers of
++parallel bodies}, O'Hara proves that, for a compact convex set
++$\widetilde\Omega\subset\mathbb R^m$ with piecewise $C^1$ boundary,
++the parallel body $\widetilde\Omega+\delta B^m$ has a unique radial
++centre of every order when
++$\delta\geq\varphi(m)\operatorname{diam}(\widetilde\Omega)$,
++for a positive constant $\varphi(m)$ depending only on the dimension
++\citep{ohara2011parallel}. The author notes that some content of this
++preprint was later incorporated into his study of nearly spherical bodies
++\citep{ohara2022nearly}.
++In a different setting, Cabr\'e and Chanillo prove that a positive,
++semistable classical solution of $-\Delta u=f(u)$ with $u=0$ on the
++boundary has exactly one interior critical point, a nondegenerate maximum,
++when the planar domain is smooth, bounded, and has strictly positive
++boundary curvature and $f$ is smooth and nonnegative. They also obtain
++an analogue for smooth, bounded, strictly convex domains of revolution in
++higher dimensions under corresponding solution assumptions
++\citep{cabreChanillo1998stable}. Their result concerns the critical points
++of a specific elliptic boundary-value problem, not arbitrary functions on
++convex domains, and does not imply uniqueness for the present angular energy.
++
++The \emph{local pattern} by which noncentral stationary sets are born has
++its own prior theory. Golubitsky and Schaeffer develop the classification of
++bifurcations with reflection ($\mathbb Z_2$) symmetry, including the
++pitchfork pattern \citep{golubitskySchaeffer1985}. Golubitsky, Stewart,
++and Schaeffer develop steady-state bifurcation in the presence of continuous
++and discrete symmetries \citep{golubitskyStewartSchaeffer1988}.
++On a reflection-symmetric axis, the appearance of a pair of solutions
++related by $z\mapsto-z$ is the familiar pitchfork-type pattern. In an
++$O(2)$-invariant transverse plane, any one nonzero off-centre critical
++point generates a whole circular group orbit of critical points under
++rotation. Such local configurations are therefore natural from the
++viewpoint of equivariant bifurcation theory; neither the existence of
++the corresponding branch for this particular functional nor the precise
++parameter window or exclusion of other branches is established merely by
++citing that general theory.
++
++The distinction between interior critical points and boundary events also
++has a broader topological setting. Borodzik, N\'emethi and Ranicki develop
++Morse theory on manifolds with boundary and, under additional topological
++hypotheses, move an interior critical point to the boundary where it splits
++into boundary critical points \citep{borodzikNemethiRanicki2016}.
++Their notion of a boundary critical point is not the present paper's
++condition $g_\partial=0$ for the \emph{entire} interior gradient trace.
++In particular, that theory alone does not determine either the pole-arrival
++ratio $\bO$ or the equatorial boundary-entry ratio $\bP$ here.
+ 
+ Our question concerns the squared angle between the direction from $p$ to a
+ boundary point $x$ and the outward normal at $x$, averaged with the
+@@ -121,4 +169,4 @@
+ does not rely on that manuscript. Furuta's earlier local prolate
+ bifurcation calculation \citep{furutaProlate} isolates the zero of the central equatorial quadratic coefficient in
+ $[4.72438340452113340672,4.72438340452113340673]$
+-by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. Under the explicitly stated finite inputs C1--C6, the contribution here is to extend those local bifurcations to an aspect-ratio-wide stationary-set classification: the ranges of the axial saddle pair and equatorial Morse--Bott saddle circle, their boundary-arrival ratios, and the exclusion of further stationary components \citep{furutaProlate,furutaTriax}.
++by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. The symmetry-governed modes of local birth are standard; the novelty claimed here is not a new general pitchfork mechanism. Under the explicitly stated finite inputs C1--C6, the contribution is a classification for this particular angle energy across the entire aspect-ratio range: determining exactly where the axial saddle pair and equatorial Morse--Bott saddle circle occur, where they meet the boundary, and why no further stationary components occur \citep{furutaProlate,furutaTriax}. In particular, the boundary entry and exit thresholds and the global exclusion statements do not follow from local equivariant bifurcation theory.
+--- a/references_additions.bib
++++ b/references_additions.bib
+@@ -177,3 +177,64 @@
+   note = {Earlier unpublished spherical manuscript, fixed project snapshot abf704b (July 2026); part of the same functional's research record},
+   howpublished = {\url{https://github.com/cotaxxxx/basepoint-geometry/tree/abf704b8701f3da8eb41d8a99408570a413b2214/01_KAKURON_I}}
+ }
++
++
++% Symmetry and critical-point genesis: checked against publisher records and original theorem statements, 23 Nov 2026.
++@book{golubitskySchaeffer1985,
++  author = {Golubitsky, Martin and Schaeffer, David G.},
++  title = {Singularities and Groups in Bifurcation Theory: Volume I},
++  series = {Applied Mathematical Sciences},
++  volume = {51},
++  publisher = {Springer},
++  address = {New York},
++  year = {1985},
++  doi = {10.1007/978-1-4612-5034-0},
++  note = {See the chapter on bifurcation with $\mathbb{Z}_2$ symmetry}
++}
++
++@book{golubitskyStewartSchaeffer1988,
++  author = {Golubitsky, Martin and Stewart, Ian and Schaeffer, David G.},
++  title = {Singularities and Groups in Bifurcation Theory: Volume II},
++  series = {Applied Mathematical Sciences},
++  volume = {69},
++  publisher = {Springer},
++  address = {New York},
++  year = {1988},
++  doi = {10.1007/978-1-4612-4574-2},
++  note = {Symmetry breaking in steady-state bifurcation; equivariant normal forms}
++}
++
++@article{cabreChanillo1998stable,
++  author = {Cabr{\'e}, Xavier and Chanillo, Sagun},
++  title = {Stable Solutions of Semilinear Elliptic Problems in Convex Domains},
++  journal = {Selecta Mathematica (New Series)},
++  volume = {4},
++  number = {1},
++  pages = {1--10},
++  year = {1998},
++  doi = {10.1007/s000290050022},
++  url = {https://sites.math.rutgers.edu/~chanillo/cabre.pdf}
++}
++
++@misc{ohara2011parallel,
++  author = {O'Hara, Jun},
++  title = {Uniqueness of Radial Centers of Parallel Bodies},
++  year = {2011},
++  eprint = {1109.5069},
++  archivePrefix = {arXiv},
++  primaryClass = {math.DG},
++  url = {https://arxiv.org/abs/1109.5069},
++  note = {Preprint. The author's publication list notes that some of its content was carried forward into the 2022 Mathematika article}
++}
++
++@article{borodzikNemethiRanicki2016,
++  author = {Borodzik, Maciej and N{\'e}methi, Andr{\'a}s and Ranicki, Andrew},
++  title = {Morse Theory for Manifolds with Boundary},
++  journal = {Algebraic \& Geometric Topology},
++  volume = {16},
++  number = {2},
++  pages = {971--1023},
++  year = {2016},
++  doi = {10.2140/agt.2016.16.971},
++  url = {https://doi.org/10.2140/agt.2016.16.971}
++}

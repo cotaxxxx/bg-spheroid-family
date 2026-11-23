@@ -1,0 +1,240 @@
+--- a/main.tex
++++ b/main.tex
+@@ -69,6 +69,7 @@
+ Theorem~\ref{thm:classification} and Table~\ref{tab:classification}.
+ The approximate thresholds are $\cO\approx0.408$, $\bO\approx0.644$,
+ $\bP\approx2.065$ and $\cP\approx4.724$ (Table~\ref{tab:critical}).
++Each window is bounded by a change in a central curvature sign and a change in a boundary trace sign (Section~\ref{subsec:why_windows}).
+ 
+ \noindent\textbf{Verification status.}
+ The analytic arguments are written out, and computational Assertions C1--C6
+--- a/sections/core.tex
++++ b/sections/core.tex
+@@ -145,6 +145,70 @@
+ \end{tabularx}
+ \end{table}
+ 
++\subsection{Why these windows: centre signs versus boundary signs}\label{subsec:why_windows}
++
++The windows in Table~\ref{tab:classification} can be understood by
++comparing a derivative near the centre with its trace at the boundary.
++On the oblate axis, let
++$g(z,\lambda)=\partial_z\mathcal E_\lambda(0,z)$,
++$a_c(\lambda)=g_z(0,\lambda)$, and
++$B_o(\lambda)=g(1^-,\lambda)$.
++Because $g(0,\lambda)=0$, the sign of $g$ for sufficiently small
++$z>0$ is the sign of $a_c$ whenever this curvature is nonzero.
++The signs supplied by the analytic end estimates and C1--C2 are
++\[
++\begin{array}{c|cc}
++\text{oblate range} & a_c(\lambda) & B_o(\lambda)\\ \hline
++0<\lambda<\cO & - & - \\
++\cO<\lambda<\bO & + & - \\
++\bO<\lambda<1 & + & +
++\end{array}
++\]
++Only the middle range has opposite signs. There $g$ is positive
++near the centre and negative at the north pole, so continuity forces
++at least one zero in $0<z<1$; reflection gives a pair on the axis.
++At the roots, C1 supplies positive transverse curvature and C2
++supplies $g_z<0$, making each an index-one saddle.
++
++For the prolate equator, write
++$H(\rho,0;\lambda)=\partial_\rho\mathcal E_\lambda(\rho,0)/\rho$,
++$h_c(\lambda)=H(0,0;\lambda)$, and
++$h_b(\lambda)=H(1^-,0;\lambda)$.
++The corresponding signs (from C3--C4 in the finite prolate range) are
++\[
++\begin{array}{c|cc}
++\text{prolate range} & h_c(\lambda) & h_b(\lambda)\\ \hline
++1<\lambda<\bP & + & + \\
++\bP<\lambda<\cP & + & - \\
++\cP<\lambda\le5 & - & -
++\end{array}
++\]
++In the middle range, $H$ is positive near the centre and negative at
++the equatorial boundary. Continuity gives an interior radial zero,
++and rotation turns that zero into a stationary circle. C3--C4
++supply the vertical exclusion, strict radial monotonicity and normal
++Hessian signs needed for the unique Morse--Bott saddle circle.
++The tail $\lambda\ge5$ is classified separately by C5--C6.
++
++The four window endpoints represent two different events.
++At $\cO$ and $\cP$, a \emph{central curvature} vanishes: the axial
++pair emerges from the centre as $\lambda$ increases past $\cO$,
++and the equatorial circle contracts into the centre as $\lambda$
++increases to $\cP$. In particular, Section~\ref{sec:finite_assembly}
++shows $z_*(\cO+)=0$.
++At $\bO$ and $\bP$, a \emph{boundary trace} vanishes:
++the axial pair reaches the poles at $\bO$ and the equatorial circle
++enters from the boundary at $\bP$. The same axial argument yields
++$z_*(\bO-)=1$.
++
++Opposite endpoint signs establish \emph{existence}, not uniqueness.
++They do not exclude further roots on the same line, nor stationary
++points away from the axis and equator. Those conclusions use the
++transverse sign arguments of Section~\ref{sec:principles}, the
++monotonicity and root counts of Section~\ref{sec:finite_assembly},
++and the specified inputs C1--C6. No extra computational claim is
++introduced here.
++
+ The interval $(\bO,\bP)$ contains the sphere. A circle is one connected critical manifold, not a finite collection of isolated roots. Its boundary arrival at $\bP$, and the axial pair's arrival at $\bO$, are excluded from the interior count. This classification does not select all constrained global minimizers on the closed body: a constrained boundary minimum can have nonzero normal derivative.
+ 
+ The theorem is stated with a named, finite list of inputs so that its current proof status can be assessed. In a certified submission version, C1--C6 must be supplied as established computational propositions with an accessible, fixed reproduction package. Removing the assumption from the wording without establishing those propositions would not strengthen the result.
+--- a/sections/related_work.tex
++++ b/sections/related_work.tex
+@@ -50,6 +50,54 @@
+ functional considered here.  Nor does uniqueness of a selected global
+ extremizer, by itself, describe every critical point of a different
+ functional.
++
++Two further uniqueness results illustrate how much the assumptions on the
++functional matter.  In the preprint \emph{Uniqueness of radial centers of
++parallel bodies}, O'Hara proves that, for a compact convex set
++$\widetilde\Omega\subset\mathbb R^m$ with piecewise $C^1$ boundary,
++the parallel body $\widetilde\Omega+\delta B^m$ has a unique radial
++centre of every order when
++$\delta\geq\varphi(m)\operatorname{diam}(\widetilde\Omega)$,
++for a positive constant $\varphi(m)$ depending only on the dimension
++\citep{ohara2011parallel}. The author notes that some content of this
++preprint was later incorporated into his study of nearly spherical bodies
++\citep{ohara2022nearly}.
++In a different setting, Cabr\'e and Chanillo prove that a positive,
++semistable classical solution of $-\Delta u=f(u)$ with $u=0$ on the
++boundary has exactly one interior critical point, a nondegenerate maximum,
++when the planar domain is smooth, bounded, and has strictly positive
++boundary curvature and $f$ is smooth and nonnegative. They also obtain
++an analogue for smooth, bounded, strictly convex domains of revolution in
++higher dimensions under corresponding solution assumptions
++\citep{cabreChanillo1998stable}. Their result concerns the critical points
++of a specific elliptic boundary-value problem, not arbitrary functions on
++convex domains, and does not imply uniqueness for the present angular energy.
++
++The \emph{local pattern} by which noncentral stationary sets are born has
++its own prior theory. Golubitsky and Schaeffer develop the classification of
++bifurcations with reflection ($\mathbb Z_2$) symmetry, including the
++pitchfork pattern \citep{golubitskySchaeffer1985}. Golubitsky, Stewart,
++and Schaeffer develop steady-state bifurcation in the presence of continuous
++and discrete symmetries \citep{golubitskyStewartSchaeffer1988}.
++On a reflection-symmetric axis, the appearance of a pair of solutions
++related by $z\mapsto-z$ is the familiar pitchfork-type pattern. In an
++$O(2)$-invariant transverse plane, any one nonzero off-centre critical
++point generates a whole circular group orbit of critical points under
++rotation. Such local configurations are therefore natural from the
++viewpoint of equivariant bifurcation theory; neither the existence of
++the corresponding branch for this particular functional nor the precise
++parameter window or exclusion of other branches is established merely by
++citing that general theory.
++
++The distinction between interior critical points and boundary events also
++has a broader topological setting. Borodzik, N\'emethi and Ranicki develop
++Morse theory on manifolds with boundary and, under additional topological
++hypotheses, move an interior critical point to the boundary where it splits
++into boundary critical points \citep{borodzikNemethiRanicki2016}.
++Their notion of a boundary critical point is not the present paper's
++condition $g_\partial=0$ for the \emph{entire} interior gradient trace.
++In particular, that theory alone does not determine either the pole-arrival
++ratio $\bO$ or the equatorial boundary-entry ratio $\bP$ here.
+ 
+ Our question concerns the squared angle between the direction from $p$ to a
+ boundary point $x$ and the outward normal at $x$, averaged with the
+@@ -121,4 +169,4 @@
+ does not rely on that manuscript. Furuta's earlier local prolate
+ bifurcation calculation \citep{furutaProlate} isolates the zero of the central equatorial quadratic coefficient in
+ $[4.72438340452113340672,4.72438340452113340673]$
+-by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. Under the explicitly stated finite inputs C1--C6, the contribution here is to extend those local bifurcations to an aspect-ratio-wide stationary-set classification: the ranges of the axial saddle pair and equatorial Morse--Bott saddle circle, their boundary-arrival ratios, and the exclusion of further stationary components \citep{furutaProlate,furutaTriax}.
++by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. The symmetry-governed modes of local birth are standard; the novelty claimed here is not a new general pitchfork mechanism. Under the explicitly stated finite inputs C1--C6, the contribution is a classification for this particular angle energy across the entire aspect-ratio range: determining exactly where the axial saddle pair and equatorial Morse--Bott saddle circle occur, where they meet the boundary, and why no further stationary components occur \citep{furutaProlate,furutaTriax}. In particular, the boundary entry and exit thresholds and the global exclusion statements do not follow from local equivariant bifurcation theory.
+--- a/references_additions.bib
++++ b/references_additions.bib
+@@ -128,7 +128,7 @@
+ 
+ @article{boroczky2020gaussimage,
+   author = {B{\"o}r{\"o}czky, K{\'a}roly J. and Lutwak, Erwin and Yang, Deane and Zhang, Gaoyong and Zhao, Yiming},
+-  title = {The Gauss Image Problem},
++  title = {The {G}auss Image Problem},
+   journal = {Communications on Pure and Applied Mathematics},
+   volume = {73},
+   number = {7},
+@@ -139,7 +139,7 @@
+ 
+ @article{bertrand2016gauss,
+   author = {Bertrand, J{\'e}r{\^o}me},
+-  title = {Prescription of Gauss Curvature Using Optimal Mass Transport},
++  title = {Prescription of {G}auss Curvature Using Optimal Mass Transport},
+   journal = {Geometriae Dedicata},
+   volume = {183},
+   pages = {81--99},
+@@ -161,7 +161,7 @@
+ 
+ @misc{furutaGeoEnclosure2026,
+   author = {Furuta, Katsushi},
+-  title = {{GeoEnclosure} research materials (research note and Standard v1.1)},
++  title = {{GeoEnclosure} research materials (research note and {S}tandard v1.1)},
+   year = {2026},
+   publisher = {Zenodo},
+   doi = {10.5281/zenodo.24421364},
+@@ -177,3 +177,64 @@
+   note = {Earlier unpublished spherical manuscript, fixed project snapshot abf704b (July 2026); part of the same functional's research record},
+   howpublished = {\url{https://github.com/cotaxxxx/basepoint-geometry/tree/abf704b8701f3da8eb41d8a99408570a413b2214/01_KAKURON_I}}
+ }
++
++
++% Symmetry and critical-point genesis: checked against publisher records and original theorem statements, 23 Nov 2026.
++@book{golubitskySchaeffer1985,
++  author = {Golubitsky, Martin and Schaeffer, David G.},
++  title = {Singularities and Groups in Bifurcation Theory: Volume I},
++  series = {Applied Mathematical Sciences},
++  volume = {51},
++  publisher = {Springer},
++  address = {New York},
++  year = {1985},
++  doi = {10.1007/978-1-4612-5034-0},
++  note = {See the chapter on bifurcation with $\mathbb{Z}_2$ symmetry}
++}
++
++@book{golubitskyStewartSchaeffer1988,
++  author = {Golubitsky, Martin and Stewart, Ian and Schaeffer, David G.},
++  title = {Singularities and Groups in Bifurcation Theory: Volume II},
++  series = {Applied Mathematical Sciences},
++  volume = {69},
++  publisher = {Springer},
++  address = {New York},
++  year = {1988},
++  doi = {10.1007/978-1-4612-4574-2},
++  note = {Symmetry breaking in steady-state bifurcation; equivariant normal forms}
++}
++
++@article{cabreChanillo1998stable,
++  author = {Cabr{\'e}, Xavier and Chanillo, Sagun},
++  title = {Stable Solutions of Semilinear Elliptic Problems in Convex Domains},
++  journal = {Selecta Mathematica (New Series)},
++  volume = {4},
++  number = {1},
++  pages = {1--10},
++  year = {1998},
++  doi = {10.1007/s000290050022},
++  url = {https://sites.math.rutgers.edu/~chanillo/cabre.pdf}
++}
++
++@misc{ohara2011parallel,
++  author = {O'Hara, Jun},
++  title = {Uniqueness of Radial Centers of Parallel Bodies},
++  year = {2011},
++  eprint = {1109.5069},
++  archivePrefix = {arXiv},
++  primaryClass = {math.DG},
++  url = {https://arxiv.org/abs/1109.5069},
++  note = {Preprint. The author's publication list notes that some of its content was carried forward into the 2022 Mathematika article}
++}
++
++@article{borodzikNemethiRanicki2016,
++  author = {Borodzik, Maciej and N{\'e}methi, Andr{\'a}s and Ranicki, Andrew},
++  title = {Morse Theory for Manifolds with Boundary},
++  journal = {Algebraic \& Geometric Topology},
++  volume = {16},
++  number = {2},
++  pages = {971--1023},
++  year = {2016},
++  doi = {10.2140/agt.2016.16.971},
++  url = {https://doi.org/10.2140/agt.2016.16.971}
++}

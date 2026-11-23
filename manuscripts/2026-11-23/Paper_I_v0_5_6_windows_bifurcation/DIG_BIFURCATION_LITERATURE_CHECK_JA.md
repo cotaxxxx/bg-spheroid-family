@@ -1,0 +1,9 @@
+# Dig literature check | 2026-11-23
+
+- Dig (ChatGPT) draft only; the independent Claude audit is not yet performed.
+- Golubitsky and Schaeffer, Singularities and Groups in Bifurcation Theory I (1985), DOI 10.1007/978-1-4612-5034-0: publisher table of contents, Z2-symmetry chapter. Broad thematic reference; no specific theorem asserted as applying to this angular energy.
+- Golubitsky, Stewart, Schaeffer, vol. II (1988), DOI 10.1007/978-1-4612-4574-2: publisher overview, steady-state symmetry-breaking and O(2)-related chapter coverage. Full chapters not independently proof-checked.
+- Cabre and Chanillo (1998), Selecta Math. 4:1-10, DOI 10.1007/s000290050022: original Theorems 1 and 2 consulted. Assumes positive semistable classical solution of -Delta u=f(u), zero Dirichlet boundary, smooth nonnegative f, and appropriate smooth bounded strictly convex domains (positive curvature in 2D, revolution in N>=3). A unique nondegenerate critical maximum; not arbitrary energies on convex domains.
+- O'Hara (2011), arXiv:1109.5069, Theorem 3.1: compact convex original body with piecewise C1 boundary, delta at least a dimension-dependent constant times its diameter, unique radial centre of every order in the parallel body. Preprint partly incorporated into 2022 Mathematika paper according to the author's website.
+- Borodzik, Nemethi and Ranicki (2016), Algebraic & Geometric Topology 16:971-1023, DOI 10.2140/agt.2016.16.971: interior-to-boundary motion and split under additional topology assumptions. Boundary Morse critical points are not automatically zero of the full interior gradient trace.
+- Standard local symmetry patterns are separated from the conditional global claims under C1-C6, boundary entry/exit thresholds, and exclusion of other stationary components. This is not an exhaustive literature search.
