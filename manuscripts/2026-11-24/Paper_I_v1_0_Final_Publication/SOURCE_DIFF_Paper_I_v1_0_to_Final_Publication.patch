@@ -1,0 +1,33 @@
+--- a/main.tex
++++ b/main.tex
+@@ -14,7 +14,7 @@
+ \hypersetup{
+  pdftitle={Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes},
+  pdfauthor={Katsushi Furuta},
+- pdfsubject={Paper I v1.0: conditional stationary-set classification; scoped author approval; independent audit pending},
++ pdfsubject={Paper I v1.0: conditional stationary-set classification; scoped author approval},
+  pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
+ }
+ \usepackage{enumitem}
+--- a/sections/computational_evidence.tex
++++ b/sections/computational_evidence.tex
+@@ -1,7 +1,7 @@
+ \section{Computational assertions and their audit scope}
+ \label{sec:computational}
+ 
+-The classification in this working draft is a logical consequence of the
++The classification in this paper is a logical consequence of the
+ analytic arguments and the six assertions below.  We state the assertions
+ as mathematical claims, separately from the evidence currently available
+ for them.  Their names do not upgrade the status of an archived calculation.
+--- a/sections/numerical_discussion.tex
++++ b/sections/numerical_discussion.tex
+@@ -172,7 +172,7 @@
+ 
+ For fixed shape near $\cP$, the shape derivative on the first axis is smooth and even in $\rho$. Its constant term vanishes by interchange of the two equatorial axes. Hence $A=O(\rho_*^2)$ as the circle shrinks. The natural quantity to estimate uniformly is $A/\rho_*^2$. Ordinary quadrature gives $0.6744,0.5744,0.4879,0.4399$ at $\lambda=2.1,3,4,4.7$ respectively. A positive uniform lower bound on the full branch remains an open estimate here. The local triaxial study cited in the introduction concerns the neighbourhood of the prolate centre transition. Neither these four samples nor the exact angular equation by itself excludes other critical points over the full triaxial family.
+ 
+-\section{Availability, reproducibility, and status of the draft}
++\section{Availability, reproducibility, and status}
+ 
+ \paragraph{Scope of the first-page verification statement.}
+ The analytic arguments are written out, and computational Assertions
