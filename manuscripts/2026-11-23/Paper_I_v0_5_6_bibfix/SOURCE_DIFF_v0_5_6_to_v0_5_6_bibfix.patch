@@ -1,0 +1,29 @@
+--- a/references_additions.bib
++++ b/references_additions.bib
+@@ -128,7 +128,7 @@
+ 
+ @article{boroczky2020gaussimage,
+   author = {B{\"o}r{\"o}czky, K{\'a}roly J. and Lutwak, Erwin and Yang, Deane and Zhang, Gaoyong and Zhao, Yiming},
+-  title = {The Gauss Image Problem},
++  title = {The {G}auss Image Problem},
+   journal = {Communications on Pure and Applied Mathematics},
+   volume = {73},
+   number = {7},
+@@ -139,7 +139,7 @@
+ 
+ @article{bertrand2016gauss,
+   author = {Bertrand, J{\'e}r{\^o}me},
+-  title = {Prescription of Gauss Curvature Using Optimal Mass Transport},
++  title = {Prescription of {G}auss Curvature Using Optimal Mass Transport},
+   journal = {Geometriae Dedicata},
+   volume = {183},
+   pages = {81--99},
+@@ -161,7 +161,7 @@
+ 
+ @misc{furutaGeoEnclosure2026,
+   author = {Furuta, Katsushi},
+-  title = {{GeoEnclosure} research materials (research note and Standard v1.1)},
++  title = {{GeoEnclosure} research materials (research note and {S}tandard v1.1)},
+   year = {2026},
+   publisher = {Zenodo},
+   doi = {10.5281/zenodo.24421364},
