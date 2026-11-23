@@ -1,0 +1,10 @@
+# SHA-256 of locally created v0.5 deliverables (2026-11-23)
+# The PDF and ZIP bytes listed below are not GitHub blobs in this partial registration.
+c611ecc046c11eb6b5c833254dc46f969470cdc6e583b262c7edfd67d0b5a973  Paper_I_v0_5_Integrated_EN.pdf
+ed0c20f1cb8830e7d72a94e9d3d9f7aca5a1be1b56afbb85cc44f21d1a8ab814  Paper_I_v0_5_Manuscript_and_Verification.zip
+1425d76b85d2b4db296f622557be3c548103e13fb544377dcdd6a8e028324fa7  Paper_I_v0_5_Revision_Notes_JA.md
+
+# Embedded PDF in the ZIP differs in bytes from the separate PDF.
+# Embedded 36-page PDF SHA-256:
+# 91c5f11cd02922080ce9c2aaad9ee233d393f44e32d6977a63ffce630c6da300  ZIP:Paper_I_v0_5_Integrated_EN.pdf
+# Their extracted 36-page texts match; page 1 raster at 95 dpi matches. Byte identity is NOT claimed.
