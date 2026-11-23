@@ -12,6 +12,15 @@
 
 **Important limitation:** The finished v0.5 **PDF and verification ZIP are not present in this GitHub tree**. This directory preserves their hashes and the exact editorial source patch, not their binary payloads. Do not label it a complete archived PDF release. To finish the original-byte registration, the matching PDFs and ZIP must be transferred into the GitHub-capable filesystem and their SHA-256 values checked before commit. Do not silently replace them with a fresh LaTeX build.
 
+## Exact edited TeX source files
+
+The new `main.tex` and `sections/core.tex` in this directory are reconstructed from the pinned v0.4 source ZIP and the exact registered patch, then checked against the original v0.5 artifact:
+
+- `main.tex`: SHA-256 `c12aa0df521848f7e149b05e1c7b11c86a9565f13126e259508eaa17f4c6c68c`.
+- `sections/core.tex`: SHA-256 `25541c80dcf365a00a6146c2874c8b5cbedda291f9708eb7aa97935f7f028d22`.
+
+Other source files and computational evidence are inherited from the unchanged v0.4 archive. This is NOT a full original-byte v0.5 PDF/ZIP upload.
+
 ## Reconstruction
 
 Use v0.4's `Paper_I_v0_4_Manuscript_and_Verification.zip` (SHA-256 `57ee540bb8f3679e1b5abfaf043d6c961d934a981bddfb9d0dba0bd32a4c4d91`). Extract and apply the registered unified diff from the extracted root with `patch -p1 < SOURCE_DIFF_v0_4_to_v0_5.patch`. This restores the textual v0.5 manuscript changes; it does not guarantee byte-identical PDF typesetting or ZIP compression.

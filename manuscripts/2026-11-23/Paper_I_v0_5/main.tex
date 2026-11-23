@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{graphicx,xcolor,xurl}
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{enumitem}
+\setlist{itemsep=3pt,topsep=5pt}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{1.3em}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{computationalassertion}{Computational assertion}
+\renewcommand{\thecomputationalassertion}{C\arabic{computationalassertion}}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\av}[1]{\left\langle #1\right\rangle}
+\newcommand{\E}{\widehat E}
+\newcommand{\cO}{c_{\mathrm o}}
+\newcommand{\bO}{b_{\mathrm o}}
+\newcommand{\cP}{c_{\mathrm p}}
+\newcommand{\bP}{b_{\mathrm p}}
+\newcommand{\vol}{\operatorname{Vol}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\B}{B^3}
+\newcommand{\Sph}{S^2}
+\newcommand{\dd}{\,d}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\statusnote}[1]{\par\smallskip\noindent\fbox{\parbox{.95\linewidth}{\small #1}}\par\medskip}
+\title{Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids}
+\author{Katsushi Furuta\\Independent researcher\\\small ORCID: 0009-0005-3129-8043}
+\date{Integrated research draft v0.5 --- 23 November 2026}
+\begin{document}
+\maketitle
+\statusnote{Status of this revision. The analytic arguments are written out and the computational inputs are stated explicitly as Assertions C1--C6. Their source records, implementations and checking coverage are identified. This revision does not itself complete or reclassify the certification of those computational inputs. The classification theorem below therefore states its dependence on C1--C6 explicitly. It is a proof-development manuscript, not a submission-ready certification claim.}
+\begin{abstract}
+A numerical search finds an equatorial saddle circle in a prolate spheroid. How can one exclude a second circle, or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces.
+\end{abstract}
+\noindent\textbf{Keywords:} spheroid; stationary set; cone volume measure; radial Gauss map; Morse--Bott critical manifold; validated numerics.
+
+\section*{Main conclusion and certification scope}
+\noindent\textbf{Conditional classification.}
+Assuming computational Assertions C1--C6, the only interior stationary
+components over the entire $\lambda>0$ family are the centre, an axial pair
+of index-one saddles for $\cO<\lambda<\bO$, and an equatorial
+Morse--Bott saddle circle for $\bP<\lambda<\cP$.
+The centre changes type at $\cO$ and $\cP$.
+The full-gradient boundary trace vanishes only at the poles when
+$\lambda=\bO$ and on the equatorial circle when $\lambda=\bP$.
+The exact thresholds, indices and exclusions appear in
+Theorem~\ref{thm:classification} and Table~\ref{tab:classification}.
+
+\noindent\textbf{Certification scope.}
+The Judge's V24 ruling records \emph{CLOSED} only for the oblate interval
+$\lambda\in[2/5,33/50]$; Proposition~\ref{prop:sphere} independently
+proves the spherical case $\lambda=1$.
+The \emph{full-family} classification remains conditional on C1--C6.
+This v0.5 revision changes no mathematical claim or evidence grade.
+\clearpage
+\tableofcontents
+\clearpage
+\input{sections/core}
+\input{sections/prolate_tail}
+\input{sections/computational_evidence}
+\input{sections/numerical_discussion}
+\begingroup
+\interlinepenalty=10000
+\bibliographystyle{plainnat}
+\bibliography{references,references_additions,references_computation}
+\endgroup
+\end{document}
