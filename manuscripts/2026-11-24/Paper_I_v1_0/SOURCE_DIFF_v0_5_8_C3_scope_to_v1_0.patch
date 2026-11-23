@@ -1,0 +1,131 @@
+--- a/main.tex
++++ b/main.tex
+@@ -14,7 +14,7 @@
+ \hypersetup{
+  pdftitle={Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes},
+  pdfauthor={Katsushi Furuta},
+- pdfsubject={Integrated research draft v0.5.7: conditional stationary-set classification; delta audit pending},
++ pdfsubject={Paper I v1.0: conditional stationary-set classification; scoped author approval; independent audit pending},
+  pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
+ }
+ \usepackage{enumitem}
+@@ -51,7 +51,7 @@
+ \newcommand{\one}{\mathbf 1}
+ \title{\Large\bfseries Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes}
+ \author{Katsushi Furuta\\DAYBREAK (independent research)\\\small ORCID: 0009-0005-3129-8043}
+-\date{Integrated research draft v0.5.7 --- 23 November 2026}
++\date{Paper I v1.0 --- 24 November 2026}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+--- a/sections/numerical_discussion.tex
++++ b/sections/numerical_discussion.tex
+@@ -265,5 +265,11 @@
+ reconstructed; an account restricted to ``copyediting'' is therefore
+ not asserted. The source bundle includes an AI-provenance review log.
+ No compliance with the first-draft restriction of a prospective
+-journal is claimed. Author verification of every suggested claim,
+-reference, code contribution and the final disclosure is pending.
++journal is claimed.
++
++\paragraph{Author review and verification scope.}
++The author has read the entire manuscript using the Japanese reading
++translation and approves this manuscript and this disclosure.
++The author has not personally verified the code, computational records,
++or supplementary materials; for those materials, the author relies
++on the recorded audits.
+--- a/zenodo_preparation/PAPER_I_V0_5_7_ZENODO_METADATA_DRAFT.json
++++ /dev/null
+@@ -1,44 +0,0 @@
+-{
+-  "status": "DRAFT_NOT_SUBMITTED",
+-  "planned_publication_target": "Zenodo",
+-  "source_document": "PAPER_I_V0_5_7_INSTRUCTIONS_20261123.md at 50d1224",
+-  "source_base_commit": "c5501c8214312b00ba971cede00190307c86a8d4",
+-  "metadata": {
+-    "title": "Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes",
+-    "upload_type": "publication",
+-    "publication_type": "preprint",
+-    "creators": [
+-      {
+-        "name": "Furuta, Katsushi",
+-        "affiliation": "DAYBREAK (independent research)",
+-        "orcid": "0009-0005-3129-8043"
+-      }
+-    ],
+-    "version": "v0.5.7",
+-    "language": "eng",
+-    "license": "cc-by-4.0",
+-    "keywords": [
+-      "spheroid",
+-      "stationary points",
+-      "cone-volume measure",
+-      "equivariant bifurcation",
+-      "validated numerics",
+-      "GeoEnclosure"
+-    ],
+-    "description": "Assuming six explicit finite computational assertions C1-C6, the paper conditionally classifies the stationary sets and full-gradient boundary zeros of a cone-volume-weighted angle energy across the entire volume-preserving spheroid family. It locates an axial saddle pair, an equatorial Morse-Bott saddle circle, the central and boundary transitions, and excludes further stationary components under those assumptions. The oblate interval lambda in [2/5,33/50] has a separate adopted verification record, and the sphere is proved analytically without computational inputs. This is a draft for independent difference audit; author verification remains pending, and constrained boundary minima are not classified. Code in the source bundle is licensed MIT; the paper and prose materials are CC BY 4.0. The geometry-guided enclosure methodology used in the recorded verification work is published separately as GeoEnclosure (DOI: 10.5281/zenodo.24421364).",
+-    "related_identifiers": [
+-      {
+-        "identifier": "10.5281/zenodo.24421364",
+-        "relation": "references",
+-        "scheme": "doi"
+-      }
+-    ]
+-  },
+-  "release_conditions": [
+-    "Judge read-through and explicit approval",
+-    "Claude delta audit of v0.5.7",
+-    "Final PDF/ZIP/hash consistency",
+-    "Zenodo metadata review before publication",
+-    "Replace the description phrase \"author verification remains pending\" only after the Judge completes the read-through and approves the precise replacement wording"
+-  ]
+-}
+--- /dev/null
++++ b/zenodo_preparation/PAPER_I_V1_0_ZENODO_METADATA_DRAFT.json
+@@ -0,0 +1,45 @@
++{
++  "status": "DRAFT_NOT_SUBMITTED",
++  "planned_publication_target": "Zenodo",
++  "source_document": "PAPER_I_V0_5_7_INSTRUCTIONS_20261123.md at 50d1224",
++  "source_base_commit": "c5501c8214312b00ba971cede00190307c86a8d4",
++  "metadata": {
++    "title": "Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes",
++    "upload_type": "publication",
++    "publication_type": "preprint",
++    "creators": [
++      {
++        "name": "Furuta, Katsushi",
++        "affiliation": "DAYBREAK (independent research)",
++        "orcid": "0009-0005-3129-8043"
++      }
++    ],
++    "version": "v1.0",
++    "language": "eng",
++    "license": "cc-by-4.0",
++    "keywords": [
++      "spheroid",
++      "stationary points",
++      "cone-volume measure",
++      "equivariant bifurcation",
++      "validated numerics",
++      "GeoEnclosure"
++    ],
++    "description": "Assuming six explicit finite computational assertions C1-C6, the paper conditionally classifies the stationary sets and full-gradient boundary zeros of a cone-volume-weighted angle energy across the entire volume-preserving spheroid family. It locates an axial saddle pair, an equatorial Morse-Bott saddle circle, the central and boundary transitions, and excludes further stationary components under those assumptions. The oblate interval lambda in [2/5,33/50] has a separate adopted verification record, and the sphere is proved analytically without computational inputs. This v1.0 manuscript remains subject to an independent difference audit. The author has read the entire manuscript using the Japanese reading translation and approves the manuscript and the AI-use disclosure. The author has not personally verified the code, computational records or supplementary materials, and relies on the recorded audits for those materials. Constrained boundary minima are not classified. Code in the source bundle is licensed MIT; the paper and prose materials are CC BY 4.0. The geometry-guided enclosure methodology used in the recorded verification work is published separately as GeoEnclosure (DOI: 10.5281/zenodo.24421364).",
++    "related_identifiers": [
++      {
++        "identifier": "10.5281/zenodo.24421364",
++        "relation": "references",
++        "scheme": "doi"
++      }
++    ]
++  },
++  "release_conditions": [
++    "Independent difference audit of v1.0 and associated source bundle",
++    "Verification of final PDF/source ZIP and SHA-256 checksums",
++    "Judge final authorization for Zenodo publication",
++    "Final Zenodo metadata review before publication"
++  ],
++  "source_parent_commit": "ed0991e80edc837914dc873f3b14295d5722d68f",
++  "author_review_statement": "The author read the entire manuscript using the Japanese reading translation and approved the manuscript and AI-use disclosure; code, computational records and supplements were not personally verified by the author."
++}
