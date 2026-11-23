@@ -1,0 +1,107 @@
+--- a/main.tex
++++ b/main.tex
+@@ -55,7 +55,7 @@
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+-Assuming six explicit finite computational assertions (C1--C6), we classify the interior stationary sets and the full-gradient boundary-trace zeros of this angle energy across all spheroid shapes. A numerical search finds an equatorial saddle circle in a prolate spheroid; how can one exclude a second circle or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Analytically, the sphere has a unique interior stationary minimum, and for $0<\lambda\le 1/32$ the sole interior stationary point is the index-one saddle at the centre, with no full-gradient boundary zeros. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces. The oblate window $\lambda\in[2/5,33/50]$ is separately verified in the author's recorded audit (record V24; see Section~\ref{sec:availability}), and the spherical case $\lambda=1$ is proved analytically without computational input.
++Assuming six explicit finite computational assertions (C1--C6), we classify the interior stationary sets and the full-gradient boundary-trace zeros of this angle energy across all spheroid shapes. A numerical search finds an equatorial saddle circle in a prolate spheroid; how can one exclude a second circle or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 boxes undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Analytically, the sphere has a unique interior stationary minimum, and for $0<\lambda\le 1/32$ the sole interior stationary point is the index-one saddle at the centre, with no full-gradient boundary zeros. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces. The oblate window $\lambda\in[2/5,33/50]$ is separately verified in the author's recorded audit (record V24; see Section~\ref{sec:availability}), and the spherical case $\lambda=1$ is proved analytically without computational input.
+ \end{abstract}
+ \noindent\textbf{Keywords:} spheroid; stationary set; cone volume measure; radial Gauss map; Morse--Bott critical manifold; validated numerics.
+ 
+--- a/zenodo_preparation/PRIMARY_RECORDS_SHA256SUMS.txt
++++ b/zenodo_preparation/PRIMARY_RECORDS_SHA256SUMS.txt
+@@ -1,7 +1,7 @@
+ 89435cf9457f1245c337d4433ad074258dea1c954a3bec90613f03cd2f092c3c  provenance/V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md
+ c2d04a32a06f880c8f6303625f3222b8bebc58ca632060de99d7be5c105cb94a  provenance/C2/C_AXIAL_GLOBAL_COVER_ASSEMBLY_DRAFT_V1.md
+-20f157cfcdbb4972d9bb42d45ea7f5dbebe92a496f9702d6f056cfce616893b7  provenance/EN_SUMMARIES/V24_JUDGE_RULING_SUMMARY_EN.md
++04202518cd786335e5d126b1f588c086d099a8723d33680900c907a430fdc8af  provenance/EN_SUMMARIES/V24_JUDGE_RULING_SUMMARY_EN.md
+ 21fbb63ddd8a878b29f6d62704d331ab6d470888ce0250daf1d7690f027eb21f  provenance/EN_SUMMARIES/C2_AXIS_ASSEMBLY_SUMMARY_EN.md
+ 4fa08d1c28df0eaa91cda4186ddb85b621c774802222d57798072120b6885c7f  zenodo_preparation/PRIMARY_RECORDS_README_EN.md
+ 48c89275835c0ff8a7bd4f14f19229b8ba4ad28c6418be437364df3ed2b6e23f  C2_AXIS_CENSUS_TRACE_v0_5_4.md
+-46d55410e50083d1498f00124ed677765f4f5a7a70977447f9062d6231b23641  CURRENT_REPRODUCTION_v0_5_4.md
++fc0cde5f9e8a727680c17e5509f1ee6ab35e1dd133e8011a956fd6fc8efc43fb  CURRENT_REPRODUCTION_v0_5_4.md
+--- a/zenodo_preparation/PAPER_I_V1_0_ZENODO_METADATA_DRAFT.json
++++ /dev/null
+@@ -1,45 +0,0 @@
+-{
+-  "status": "DRAFT_NOT_SUBMITTED",
+-  "planned_publication_target": "Zenodo",
+-  "source_document": "PAPER_I_V0_5_7_INSTRUCTIONS_20261123.md at 50d1224",
+-  "source_base_commit": "c5501c8214312b00ba971cede00190307c86a8d4",
+-  "metadata": {
+-    "title": "Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes",
+-    "upload_type": "publication",
+-    "publication_type": "preprint",
+-    "creators": [
+-      {
+-        "name": "Furuta, Katsushi",
+-        "affiliation": "DAYBREAK (independent research)",
+-        "orcid": "0009-0005-3129-8043"
+-      }
+-    ],
+-    "version": "v1.0",
+-    "language": "eng",
+-    "license": "cc-by-4.0",
+-    "keywords": [
+-      "spheroid",
+-      "stationary points",
+-      "cone-volume measure",
+-      "equivariant bifurcation",
+-      "validated numerics",
+-      "GeoEnclosure"
+-    ],
+-    "description": "Assuming six explicit finite computational assertions C1-C6, the paper conditionally classifies the stationary sets and full-gradient boundary zeros of a cone-volume-weighted angle energy across the entire volume-preserving spheroid family. It locates an axial saddle pair, an equatorial Morse-Bott saddle circle, the central and boundary transitions, and excludes further stationary components under those assumptions. The oblate interval lambda in [2/5,33/50] has a separate adopted verification record, and the sphere is proved analytically without computational inputs. This v1.0 manuscript remains subject to an independent difference audit. The author has read the entire manuscript using the Japanese reading translation and approves the manuscript and the AI-use disclosure. The author has not personally verified the code, computational records or supplementary materials, and relies on the recorded audits for those materials. Constrained boundary minima are not classified. Code in the source bundle is licensed MIT; the paper and prose materials are CC BY 4.0. The geometry-guided enclosure methodology used in the recorded verification work is published separately as GeoEnclosure (DOI: 10.5281/zenodo.24421364).",
+-    "related_identifiers": [
+-      {
+-        "identifier": "10.5281/zenodo.24421364",
+-        "relation": "references",
+-        "scheme": "doi"
+-      }
+-    ]
+-  },
+-  "release_conditions": [
+-    "Independent difference audit of v1.0 and associated source bundle",
+-    "Verification of final PDF/source ZIP and SHA-256 checksums",
+-    "Judge final authorization for Zenodo publication",
+-    "Final Zenodo metadata review before publication"
+-  ],
+-  "source_parent_commit": "ed0991e80edc837914dc873f3b14295d5722d68f",
+-  "author_review_statement": "The author read the entire manuscript using the Japanese reading translation and approved the manuscript and AI-use disclosure; code, computational records and supplements were not personally verified by the author."
+-}
+--- /dev/null
++++ b/zenodo_preparation/PAPER_I_V1_0_ZENODO_METADATA_FINAL.json
+@@ -0,0 +1,33 @@
++{
++  "metadata": {
++    "title": "Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes",
++    "upload_type": "publication",
++    "publication_type": "preprint",
++    "creators": [
++      {
++        "name": "Furuta, Katsushi",
++        "affiliation": "DAYBREAK (independent research)",
++        "orcid": "0009-0005-3129-8043"
++      }
++    ],
++    "version": "v1.0",
++    "language": "eng",
++    "license": "cc-by-4.0",
++    "keywords": [
++      "spheroid",
++      "stationary points",
++      "cone-volume measure",
++      "equivariant bifurcation",
++      "validated numerics",
++      "GeoEnclosure"
++    ],
++    "description": "Assuming six explicit finite computational assertions C1-C6, the paper conditionally classifies the stationary sets and full-gradient boundary zeros of a cone-volume-weighted angle energy across the entire volume-preserving spheroid family. It locates an axial saddle pair, an equatorial Morse-Bott saddle circle, the central and boundary transitions, and excludes further stationary components under those assumptions. The oblate interval lambda in [2/5,33/50] has a separate adopted verification record, and the sphere is proved analytically without computational inputs. The author has read the entire manuscript using the Japanese reading translation and approves the manuscript and the AI-use disclosure. The author has not personally verified the code, computational records or supplementary materials, and relies on the recorded audits for those materials. Constrained boundary minima are not classified. Code in the source bundle is licensed MIT; the paper and prose materials are CC BY 4.0. The geometry-guided enclosure methodology used in the recorded verification work is published separately as GeoEnclosure (DOI: 10.5281/zenodo.24421364).",
++    "related_identifiers": [
++      {
++        "identifier": "10.5281/zenodo.24421364",
++        "relation": "references",
++        "scheme": "doi"
++      }
++    ]
++  }
++}
