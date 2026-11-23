@@ -1,0 +1,73 @@
+--- a/main.tex
++++ b/main.tex
+@@ -53,14 +53,13 @@
+ \author{Katsushi Furuta\\DAYBREAK (independent research)\\\small ORCID: 0009-0005-3129-8043}
+ \date{Integrated research draft v0.5.7 --- 23 November 2026}
+ \begin{document}
+-\newgeometry{left=18mm,right=18mm,top=12mm,bottom=12mm}
+ \maketitle
+ \begin{abstract}
+-Assuming six explicit finite computational assertions (C1--C6), we classify the interior stationary sets and the full-gradient boundary-trace zeros of this angle energy across all spheroid shapes. A numerical search finds an equatorial saddle circle in a prolate spheroid; how can one exclude a second circle or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Analytically, the sphere has a unique interior stationary minimum, and for $0<\lambda\le 1/32$ the sole interior stationary point is the index-one saddle at the centre, with no full-gradient boundary zeros. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces. The oblate window $\lambda\in[2/5,33/50]$ is separately verified by the V24 ruling, and the spherical case $\lambda=1$ is proved analytically without computational input.
++Assuming six explicit finite computational assertions (C1--C6), we classify the interior stationary sets and the full-gradient boundary-trace zeros of this angle energy across all spheroid shapes. A numerical search finds an equatorial saddle circle in a prolate spheroid; how can one exclude a second circle or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Analytically, the sphere has a unique interior stationary minimum, and for $0<\lambda\le 1/32$ the sole interior stationary point is the index-one saddle at the centre, with no full-gradient boundary zeros. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces. The oblate window $\lambda\in[2/5,33/50]$ is separately verified in the author's recorded audit (record V24; see Section~\ref{sec:availability}), and the spherical case $\lambda=1$ is proved analytically without computational input.
+ \end{abstract}
+ \noindent\textbf{Keywords:} spheroid; stationary set; cone volume measure; radial Gauss map; Morse--Bott critical manifold; validated numerics.
+ 
+-\begingroup\footnotesize\setlength{\parskip}{1pt}\setlength{\abovecaptionskip}{2pt}\setlength{\belowcaptionskip}{2pt}
++\begingroup\normalsize\setlength{\parskip}{3pt}
+ \section*{Main result and status}
+ \noindent\textbf{Conclusion.}
+ For this energy, the bifurcation patterns themselves are classical:
+@@ -142,7 +141,6 @@
+ \end{figure}
+ 
+ \endgroup
+-\restoregeometry
+ \tableofcontents
+ \clearpage
+ \input{sections/core}
+--- a/zenodo_preparation/PAPER_I_V0_5_7_ZENODO_METADATA_DRAFT.json
++++ b/zenodo_preparation/PAPER_I_V0_5_7_ZENODO_METADATA_DRAFT.json
+@@ -25,12 +25,20 @@
+       "validated numerics",
+       "GeoEnclosure"
+     ],
+-    "description": "Assuming six explicit finite computational assertions C1-C6, the paper conditionally classifies the stationary sets and full-gradient boundary zeros of a cone-volume-weighted angle energy across the entire volume-preserving spheroid family. It locates an axial saddle pair, an equatorial Morse-Bott saddle circle, the central and boundary transitions, and excludes further stationary components under those assumptions. The oblate interval lambda in [2/5,33/50] has a separate adopted verification record, and the sphere is proved analytically without computational inputs. This is a draft for independent difference audit; author verification remains pending, and constrained boundary minima are not classified. Code in the source bundle is licensed MIT; the paper and prose materials are CC BY 4.0."
++    "description": "Assuming six explicit finite computational assertions C1-C6, the paper conditionally classifies the stationary sets and full-gradient boundary zeros of a cone-volume-weighted angle energy across the entire volume-preserving spheroid family. It locates an axial saddle pair, an equatorial Morse-Bott saddle circle, the central and boundary transitions, and excludes further stationary components under those assumptions. The oblate interval lambda in [2/5,33/50] has a separate adopted verification record, and the sphere is proved analytically without computational inputs. This is a draft for independent difference audit; author verification remains pending, and constrained boundary minima are not classified. Code in the source bundle is licensed MIT; the paper and prose materials are CC BY 4.0. The geometry-guided enclosure methodology used in the recorded verification work is published separately as GeoEnclosure (DOI: 10.5281/zenodo.24421364).",
++    "related_identifiers": [
++      {
++        "identifier": "10.5281/zenodo.24421364",
++        "relation": "references",
++        "scheme": "doi"
++      }
++    ]
+   },
+   "release_conditions": [
+     "Judge read-through and explicit approval",
+     "Claude delta audit of v0.5.7",
+     "Final PDF/ZIP/hash consistency",
+-    "Zenodo metadata review before publication"
++    "Zenodo metadata review before publication",
++    "Replace the description phrase \"author verification remains pending\" only after the Judge completes the read-through and approves the precise replacement wording"
+   ]
+ }
+--- a/provenance/EN_SUMMARIES/V24_JUDGE_RULING_SUMMARY_EN.md
++++ b/provenance/EN_SUMMARIES/V24_JUDGE_RULING_SUMMARY_EN.md
+@@ -8,6 +8,7 @@
+ provenance/V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md.
+ Verified Git blob SHA-1: 07d30eff3db759abd0e6aab1ef07563cf77049a2.
+ This is a summary prepared by Dig, not an English ruling issued by Judge.
++In this project's governance, "Judge" denotes the author (Katsushi Furuta) acting as final decision-maker.
+ 
+ ## Decided scope
+ Judge adopted the D-OB-GLOBAL theorem and ruled this defined scope CLOSED on
+@@ -21,8 +22,8 @@
+ - lambda_partial <= lambda <= 33/50: the centre alone (1).
+ 
+ At lambda=lambda_c the centre is degenerate, with a negative cubic
+-coefficient in the axial derivative. The intermediate lambda_x is a
+-transverse root at t=1/2, not an additional bifurcation. At
++coefficient in the axial derivative. At the intermediate parameter lambda_x, the axial root passes
++through t=1/2; this is not an additional bifurcation. At
+ lambda=lambda_partial the axial roots reach the boundary poles and
+ are **not** counted as interior stationary points.
+ 
