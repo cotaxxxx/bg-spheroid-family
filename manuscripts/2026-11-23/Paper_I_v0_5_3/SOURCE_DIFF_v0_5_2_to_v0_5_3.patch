@@ -1,0 +1,77 @@
+--- a/main.tex
++++ b/main.tex
+@@ -8,6 +8,12 @@
+ \usepackage{graphicx,xcolor,xurl}
+ \usepackage[round,authoryear]{natbib}
+ \usepackage[hidelinks,breaklinks]{hyperref}
++\hypersetup{
++ pdftitle={Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids},
++ pdfauthor={Katsushi Furuta},
++ pdfsubject={Integrated research draft v0.5.3: conditional stationary-set classification on volume-preserving spheroids},
++ pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
++}
+ \usepackage{enumitem}
+ \setlist{itemsep=3pt,topsep=5pt}
+ \setlength{\emergencystretch}{3em}
+@@ -42,7 +48,7 @@
+ \newcommand{\one}{\mathbf 1}
+ \title{Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids}
+ \author{Katsushi Furuta\\Independent researcher\\\small ORCID: 0009-0005-3129-8043}
+-\date{Integrated research draft v0.5.2 --- 23 November 2026}
++\date{Integrated research draft v0.5.3 --- 23 November 2026}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+@@ -74,8 +80,10 @@
+ verification records (record V24, 16 November 2026;
+ \href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed verification record}; see
+ Section~\ref{sec:availability}), verification for the oblate window
+-$\lambda\in[2/5,33/50]$ was completed, including an independent audit of
+-the supporting computations. Proposition~\ref{prop:sphere} proves the
++$\lambda\in[2/5,33/50]$ was completed, with a separate
++AI-assisted project audit of the mathematical assembly and its
++computational source references, not a fresh numerical replay.
++Proposition~\ref{prop:sphere} proves the
+ spherical case $\lambda=1$ without computational input. This editorial
+ revision changes neither the mathematical claims nor the status of the
+ computational inputs.
+--- a/sections/core.tex
++++ b/sections/core.tex
+@@ -150,12 +150,12 @@
+ The theorem is stated with a named, finite list of inputs so that its current proof status can be assessed. In a certified submission version, C1--C6 must be supplied as established computational propositions with an accessible, fixed reproduction package. Removing the assumption from the wording without establishing those propositions would not strengthen the result.
+ 
+ \noindent\textbf{Scope of the separate oblate verification.}
+-The author's 16 November 2026 verification record
++The author's 16 November 2026 record
+ (\href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed record}; see Section~\ref{sec:availability})
+-documents the oblate window $\lambda\in[2/5,33/50]$, including
+-independent checking of the supporting computations.
+-It applies only within that window and its stated conditions,
+-not to all oblate shapes or the full-family inputs C1--C6.
++covers only $\lambda\in[2/5,33/50]$.
++A separate project AI audit checked the assembly and source citations,
++not the computations anew. Neither record establishes C1--C6 or
++covers all oblate shapes.
+ 
+ \section{Two sign principles and the sphere}\label{sec:principles}
+ 
+--- a/sections/numerical_discussion.tex
++++ b/sections/numerical_discussion.tex
+@@ -188,7 +188,10 @@
+ Record V24 (16 November 2026): \texttt{cotaxxxx/bg-spheroid-family},
+ commit \texttt{127be52046e9498d1306fe3d35c3e02e91c636de},
+ file \href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{\path{JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}}
+-(with the accompanying independent audit).
++(Japanese working record). An exact copy of this primary record is
++included in the accompanying source bundle under \path{provenance/V24/}.
++The accompanying project-level AI audit checked the assembly argument
++and source references; it did not independently rerun the computations.
+ 
+ The accompanying revision bundle contains the manuscript sources,
+ bibliography, vector figures, figure data and reproduction scripts,
+@@ -213,4 +216,4 @@
+ The supplement gives the replay commands, fixed locations and selection rules. The source bundle contains the independent interval calculations and their integer coverage checks.
+ 
+ \paragraph{Use of AI tools.}
+-ChatGPT assisted with exploratory derivations, numerical code, verification scripts, English drafting, revision and typesetting. The source bundle identifies the calculations prepared for this revision. Final scientific review and approval of the manuscript and disclosure rest with the author and are pending.
++ChatGPT assisted with exploratory derivations, numerical code, verification scripts, English drafting, revision and typesetting. Claude assisted with separate project-level AI audits of the argument assembly and source references and with manuscript-difference reviews. These audits do not constitute an independent replay of all computations or external human peer review. The source bundle identifies the calculations prepared for this revision. Final scientific review and approval of the manuscript and disclosure rest with the author and are pending.

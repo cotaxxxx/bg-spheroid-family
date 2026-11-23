@@ -1,0 +1,155 @@
+--- a/main.tex
++++ b/main.tex
+@@ -8,6 +8,12 @@
+ \usepackage{graphicx,xcolor,xurl}
+ \usepackage[round,authoryear]{natbib}
+ \usepackage[hidelinks,breaklinks]{hyperref}
++\hypersetup{
++ pdftitle={Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids},
++ pdfauthor={Katsushi Furuta},
++ pdfsubject={Integrated research draft v0.5.3: conditional stationary-set classification on volume-preserving spheroids},
++ pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
++}
+ \usepackage{enumitem}
+ \setlist{itemsep=3pt,topsep=5pt}
+ \setlength{\emergencystretch}{3em}
+@@ -40,17 +46,47 @@
+ \newcommand{\Sph}{S^2}
+ \newcommand{\dd}{\,d}
+ \newcommand{\one}{\mathbf 1}
+-\newcommand{\statusnote}[1]{\par\smallskip\noindent\fbox{\parbox{.95\linewidth}{\small #1}}\par\medskip}
+ \title{Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids}
+ \author{Katsushi Furuta\\Independent researcher\\\small ORCID: 0009-0005-3129-8043}
+-\date{Integrated research draft v0.4 --- 20 November 2026}
++\date{Integrated research draft v0.5.3 --- 23 November 2026}
+ \begin{document}
+ \maketitle
+-\statusnote{Status of this revision. The analytic arguments are written out and the computational inputs are stated explicitly as Assertions C1--C6. Their source records, implementations and checking coverage are identified. This revision does not itself complete or reclassify the certification of those computational inputs. The classification theorem below therefore states its dependence on C1--C6 explicitly. It is a proof-development manuscript, not a submission-ready certification claim.}
+ \begin{abstract}
+ A numerical search finds an equatorial saddle circle in a prolate spheroid. How can one exclude a second circle, or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces.
+ \end{abstract}
+ \noindent\textbf{Keywords:} spheroid; stationary set; cone volume measure; radial Gauss map; Morse--Bott critical manifold; validated numerics.
++
++\section*{Main result and status}
++\noindent\textbf{Conditional classification.}
++Assuming computational Assertions C1--C6, the only interior stationary
++components over the entire $\lambda>0$ family are the centre, an axial pair
++of index-one saddles for $\cO<\lambda<\bO$, and an equatorial
++Morse--Bott saddle circle for $\bP<\lambda<\cP$.
++The centre changes type at $\cO$ and $\cP$.
++The full-gradient boundary trace vanishes only at the poles when
++$\lambda=\bO$ and on the equatorial circle when $\lambda=\bP$.
++The exact thresholds, indices and exclusions appear in
++Theorem~\ref{thm:classification} and Table~\ref{tab:classification}.
++The approximate thresholds are $\cO\approx0.408$, $\bO\approx0.644$,
++$\bP\approx2.065$ and $\cP\approx4.724$ (Table~\ref{tab:critical}).
++
++\noindent\textbf{Verification status.}
++The analytic arguments are written out, and computational Assertions C1--C6
++are stated explicitly with their source records, implementations and checking
++coverage identified. This manuscript does not itself complete or reclassify
++the certification of those computational inputs: the full-family
++classification remains conditional on C1--C6. It is a proof-development
++manuscript, not a submission-ready certification claim. In the author's
++verification records (record V24, 16 November 2026;
++\href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed verification record}; see
++Section~\ref{sec:availability}), verification for the oblate window
++$\lambda\in[2/5,33/50]$ was completed, with a separate
++AI-assisted project audit of the mathematical assembly and its
++computational source references, not a fresh numerical replay.
++Proposition~\ref{prop:sphere} proves the
++spherical case $\lambda=1$ without computational input. This editorial
++revision changes neither the mathematical claims nor the status of the
++computational inputs.
+ \clearpage
+ \tableofcontents
+ \clearpage
+--- a/sections/core.tex
++++ b/sections/core.tex
+@@ -149,6 +149,14 @@
+ 
+ The theorem is stated with a named, finite list of inputs so that its current proof status can be assessed. In a certified submission version, C1--C6 must be supplied as established computational propositions with an accessible, fixed reproduction package. Removing the assumption from the wording without establishing those propositions would not strengthen the result.
+ 
++\noindent\textbf{Scope of the separate oblate verification.}
++The author's 16 November 2026 record
++(\href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed record}; see Section~\ref{sec:availability})
++covers only $\lambda\in[2/5,33/50]$.
++A separate project AI audit checked the assembly and source citations,
++not the computations anew. Neither record establishes C1--C6 or
++covers all oblate shapes.
++
+ \section{Two sign principles and the sphere}\label{sec:principles}
+ 
+ \subsection{Symmetry factors and crossings}
+@@ -201,16 +209,43 @@
+ \end{equation}
+ The last factor is at least $(1-r)(r+2)>0$, and the other factors are positive in the interior of the integration interval. Since $\nabla\E_1(q)=e'(|q|)q/|q|$, only the centre is stationary. There $e(0)=0$, whereas the integrand in \eqref{eq:sphere_energy} is positive on a set of positive measure for every nonzero basepoint.
+ 
+-The absolutely convergent expansion $\theta=\sum_{n\ge1}r^n\sin(n\psi)/n$, uniformly convergent on compact $r$-intervals in $[0,1)$, permits termwise integration and gives
++For $|r|<1$, the angle also satisfies
++$\theta(-r,\psi)=-\theta(r,\pi-\psi)$.
++Substituting $\psi\mapsto\pi-\psi$ in \eqref{eq:sphere_energy}
++therefore yields $e(-r)=e(r)$.
++Hence every odd Taylor coefficient of $e$ vanishes.
++The absolutely convergent expansion
++$\theta=\sum_{n\ge1}r^n\sin(n\psi)/n$,
++uniformly convergent on compact intervals of $|r|<1$,
++permits termwise integration and gives
+ \begin{align}
+  e(r)&=\frac23r^2-\frac29r^4-\frac{22}{1575}r^6+O(r^8),\label{eq:sphere_series}\\
+  \frac{e'(r)}r&=\frac43-\frac89r^2-\frac{44}{525}r^4+O(r^6).\nonumber
+ \end{align}
+-This proves the centre Hessian. Finally the gradient trace from \eqref{eq:gradient}, or the limit of \eqref{eq:sphere_derivative}, gives
+-\[
+- e'(1^-)=\frac14\int_0^\pi\frac{\pi-\psi}{2}\sin^2\psi\,d\psi=\frac{\pi^2}{32}>0.
+-\]
+-The boundary gradient is therefore nonzero.
++This proves the centre Hessian. To justify taking the boundary limit
++in \eqref{eq:sphere_derivative}, observe that for $1/2\le r<1$,
++\[
++ \Delta=(1-r)^2+2r(1-\cos\psi)\ge2r(1-\cos\psi),
++ \qquad
++ \frac{\sin^2\psi}{\Delta}
++ \le\frac{1+\cos\psi}{2r}\le\frac1r.
++\]
++Also $0\le\theta(r,\psi)\le\pi/2$ and
++$|2-r^2-r\cos\psi|\le3$ in this range.
++Thus the integrand in \eqref{eq:sphere_derivative} is bounded by a
++constant independent of $r$ and $\psi$; dominated convergence applies.
++For $0<\psi<\pi$,
++$\theta(1,\psi)=(\pi-\psi)/2$ and
++$\Delta(1,\psi)=2(1-\cos\psi)$. Consequently,
++\[
++ e'(1^-)=\frac14\int_0^\pi\frac{\pi-\psi}{2}\sin^2\psi\,d\psi
++ =\frac{\pi^2}{32}>0.
++\]
++By rotational symmetry the resulting full-gradient trace is
++$g_\partial(q_0;1)=e'(1^-)q_0$ for every $q_0\in\Sph$.
++This is exactly the trace in Definition~\ref{def:boundary},
++not a constrained tangential gradient on the boundary.
++It is nonzero everywhere on $\Sph$.
+ \end{proof}
+ 
+ The two terms $4/3-8r^2/9$ are a Taylor approximation, not an exact identity or a global lower bound. None of the finite-shape lower bounds used later is derived from that truncation. Proposition~\ref{prop:sphere} has no dependency on an unpublished sphere manuscript.
+--- a/sections/numerical_discussion.tex
++++ b/sections/numerical_discussion.tex
+@@ -185,6 +185,13 @@
+ \citep{data-oblate-analytic,data-prolate-axis}.
+ The sphere proof is given in Section~\ref{sec:sphere} and does
+ not require an unpublished spherical manuscript.
++Record V24 (16 November 2026): \texttt{cotaxxxx/bg-spheroid-family},
++commit \texttt{127be52046e9498d1306fe3d35c3e02e91c636de},
++file \href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{\path{JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}}
++(Japanese working record). An exact copy of this primary record is
++included in the accompanying source bundle under \path{provenance/V24/}.
++The accompanying project-level AI audit checked the assembly argument
++and source references; it did not independently rerun the computations.
+ 
+ The accompanying revision bundle contains the manuscript sources,
+ bibliography, vector figures, figure data and reproduction scripts,
+@@ -209,4 +216,4 @@
+ The supplement gives the replay commands, fixed locations and selection rules. The source bundle contains the independent interval calculations and their integer coverage checks.
+ 
+ \paragraph{Use of AI tools.}
+-ChatGPT assisted with exploratory derivations, numerical code, verification scripts, English drafting, revision and typesetting. The source bundle identifies the calculations prepared for this revision. Final scientific review and approval of the manuscript and disclosure rest with the author and are pending.
++ChatGPT assisted with exploratory derivations, numerical code, verification scripts, English drafting, revision and typesetting. Claude assisted with separate project-level AI audits of the argument assembly and source references and with manuscript-difference reviews. These audits do not constitute an independent replay of all computations or external human peer review. The source bundle identifies the calculations prepared for this revision. Final scientific review and approval of the manuscript and disclosure rest with the author and are pending.
