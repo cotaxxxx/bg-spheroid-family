@@ -1,0 +1,579 @@
+--- a/main.tex
++++ b/main.tex
+@@ -6,12 +6,15 @@
+ \usepackage{amsmath,amssymb,amsthm,mathtools}
+ \usepackage{booktabs,tabularx,longtable,array}
+ \usepackage{graphicx,xcolor,xurl}
++\usepackage{tikz,graphicx}
++\usetikzlibrary{arrows.meta}
++\usepackage{float}
+ \usepackage[round,authoryear]{natbib}
+ \usepackage[hidelinks,breaklinks]{hyperref}
+ \hypersetup{
+- pdftitle={Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids},
++ pdftitle={Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes},
+  pdfauthor={Katsushi Furuta},
+- pdfsubject={Integrated research draft v0.5.6: reviewed conditional stationary-set classification on volume-preserving spheroids},
++ pdfsubject={Integrated research draft v0.5.7: conditional stationary-set classification; delta audit pending},
+  pdfkeywords={spheroid, stationary set, cone volume measure, radial Gauss map, Morse-Bott, validated numerics}
+ }
+ \usepackage{enumitem}
+@@ -46,17 +49,36 @@
+ \newcommand{\Sph}{S^2}
+ \newcommand{\dd}{\,d}
+ \newcommand{\one}{\mathbf 1}
+-\title{Counting stationary points and saddle circles of a cone-volume-weighted angle energy on spheroids}
++\title{\Large\bfseries Saddle pairs, a saddle circle, and nothing else: stationary points of an angle energy across all spheroid shapes}
+ \author{Katsushi Furuta\\DAYBREAK (independent research)\\\small ORCID: 0009-0005-3129-8043}
+-\date{Integrated research draft v0.5.6 --- 23 November 2026}
++\date{Integrated research draft v0.5.7 --- 23 November 2026}
+ \begin{document}
++\newgeometry{left=18mm,right=18mm,top=12mm,bottom=12mm}
+ \maketitle
+ \begin{abstract}
+-A numerical search finds an equatorial saddle circle in a prolate spheroid. How can one exclude a second circle, or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Analytically, the sphere has a unique interior stationary minimum, and for $0<\lambda\le 1/32$ the sole interior stationary point is the index-one saddle at the centre, with no full-gradient boundary zeros. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces.
++Assuming six explicit finite computational assertions (C1--C6), we classify the interior stationary sets and the full-gradient boundary-trace zeros of this angle energy across all spheroid shapes. A numerical search finds an equatorial saddle circle in a prolate spheroid; how can one exclude a second circle or an off-equatorial critical point? For the squared radial--normal angle averaged against cone volume we reduce the full stationary-set diagram to six explicit computational assertions. In particular, rotation turns an entire critical orbit into a scalar root; a fourth derivative in a tangential direction determines its radial crossing. An exploratory transverse-sign cover left 21,254 of 31,340 leaves undecided. Two representations of a tangential fourth derivative give a negative upper bound on all 731 equatorial boxes for aspect ratios from two to five. A second implementation encloses the same boxes with 1,043 terminal pieces. Strict radial monotonicity then reduces the existence of a saddle circle to two endpoint signs. Analytically, the sphere has a unique interior stationary minimum, and for $0<\lambda\le 1/32$ the sole interior stationary point is the index-one saddle at the centre, with no full-gradient boundary zeros. Over the full volume-preserving family, analytic endpoint estimates and the six named inputs yield four transitions involving the centre, axial saddle pairs, an equatorial saddle circle and boundary gradient traces. The oblate window $\lambda\in[2/5,33/50]$ is separately verified by the V24 ruling, and the spherical case $\lambda=1$ is proved analytically without computational input.
+ \end{abstract}
+ \noindent\textbf{Keywords:} spheroid; stationary set; cone volume measure; radial Gauss map; Morse--Bott critical manifold; validated numerics.
+ 
++\begingroup\footnotesize\setlength{\parskip}{1pt}\setlength{\abovecaptionskip}{2pt}\setlength{\belowcaptionskip}{2pt}
+ \section*{Main result and status}
++\noindent\textbf{Conclusion.}
++For this energy, the bifurcation patterns themselves are classical:
++a reflection-symmetric pitchfork at the centre produces an axial pair
++of saddles, and its rotation-symmetric counterpart produces a circle
++of saddles. What this paper determines, across the whole range of
++aspect ratios, is where these patterns occur
++($\cO<\lambda<\bO$ on the axis and $\bP<\lambda<\cP$ on the
++equator), where the stationary sets leave or enter through the boundary
++(the axial pair reaches the poles at $\bO$; the circle enters from
++the boundary equator at $\bP$), and that no further stationary
++components occur. The boundary events and the absence of other
++stationary components do not follow from general bifurcation theory.
++Consequently, an interior local minimizer exists exactly for
++$\cO<\lambda<\cP$, and in this range the centre is the only such
++minimizer. The full-family claims are conditional on C1--C6;
++constrained minimizers on the boundary have not been classified here.
++
+ \noindent\textbf{Conditional classification.}
+ Assuming computational Assertions C1--C6, the only interior stationary
+ components over the entire $\lambda>0$ family are the centre, an axial pair
+@@ -69,28 +91,58 @@
+ Theorem~\ref{thm:classification} and Table~\ref{tab:classification}.
+ The approximate thresholds are $\cO\approx0.408$, $\bO\approx0.644$,
+ $\bP\approx2.065$ and $\cP\approx4.724$ (Table~\ref{tab:critical}).
++Each window is bounded by a change in a central curvature sign and a change in a boundary trace sign (Section~\ref{subsec:why_windows}).
+ 
+ \noindent\textbf{Verification status.}
+-The analytic arguments are written out, and computational Assertions C1--C6
+-are stated explicitly with their source records, implementations and checking
+-coverage identified. This manuscript does not itself complete or reclassify
+-the certification of those computational inputs: the full-family
+-classification remains conditional on C1--C6. It is a proof-development
+-manuscript, not a submission-ready certification claim. In the author's
+-verification records (record V24, 16 November 2026;
+-\href{https://github.com/cotaxxxx/bg-spheroid-family/blob/127be52046e9498d1306fe3d35c3e02e91c636de/runs/2026-11-16/D_OB_GLOBAL_CLOSED_V24/JUDGE_RULING_D_OB_GLOBAL_CLOSED_20261116.md}{fixed verification record}; see
+-Section~\ref{sec:availability}), verification for the oblate window
+-$\lambda\in[2/5,33/50]$ was completed. A separate AI-assisted
+-project audit checked the assembly and computational source references.
+-Supporting interval computations were checked through independent
+-recomputation of selected boxes and exact integer coverage checks,
+-with individual scopes stated in \path{CURRENT_REPRODUCTION_v0_5_4.md}.
+-These checks were not a complete replay of C1--C6.
+-Proposition~\ref{prop:sphere} proves the
+-spherical case $\lambda=1$ without computational input. This editorial
+-revision changes neither the mathematical claims nor the status of the
+-computational inputs.
+-\clearpage
++The full-family classification is conditional on six finite
++computational assertions C1--C6, while the oblate window
++$\lambda\in[2/5,33/50]$ and the sphere $\lambda=1$ have been
++verified separately within their stated scopes; the sampled-box,
++exact-coverage and non-replay limits are detailed in
++Section~\ref{sec:availability}.
++
++
++\begin{figure}[H]
++\centering
++\begin{tikzpicture}[x=1cm,y=0.75cm,>=Latex]
++  \pgfmathsetmacro{\xo}{11.0*ln(0.40795886/0.3)/ln(6/0.3)}
++  \pgfmathsetmacro{\xb}{11.0*ln(0.64354577/0.3)/ln(6/0.3)}
++  \pgfmathsetmacro{\xs}{11.0*ln(1.0/0.3)/ln(6/0.3)}
++  \pgfmathsetmacro{\xp}{11.0*ln(2.06538229/0.3)/ln(6/0.3)}
++  \pgfmathsetmacro{\xc}{11.0*ln(4.72438340/0.3)/ln(6/0.3)}
++  \fill[black!10] (\xo,-0.20) rectangle (\xc,0.18);
++  \draw[->,thick] (0,0)--(11.3,0) node[right] {$\lambda$};
++  \draw[very thick] (\xo,0.45)--(\xc,0.45);
++  \node[font=\scriptsize,anchor=south] at ({0.5*(\xo+\xc)},0.45)
++   {interior local minimum: centre only};
++  \foreach \x/\lab in {
++    \xo/{$c_{\mathrm o}\approx0.408$},
++    \xb/{$b_{\mathrm o}\approx0.644$},
++    \xs/{$1$},
++    \xp/{$b_{\mathrm p}\approx2.065$},
++    \xc/{$c_{\mathrm p}\approx4.724$}
++   } {
++     \draw[thick] (\x,-0.13)--(\x,0.13);
++     \node[font=\scriptsize,anchor=north] at (\x,-0.15) {\lab};
++   }
++  \node[font=\tiny,align=center,anchor=north] at (\xo,-0.62)
++    {axial pair born\\at centre};
++  \node[font=\tiny,align=center,anchor=north] at (\xb,-1.27)
++    {pair exits\\at poles};
++  \node[font=\tiny,align=center,anchor=north] at (\xs,-0.62)
++    {sphere};
++  \node[font=\tiny,align=center,anchor=north] at (\xp,-0.62)
++    {saddle circle enters\\at boundary equator};
++  \node[font=\tiny,align=center,anchor=north] at (\xc,-1.27)
++    {circle ends\\at centre};
++\end{tikzpicture}
++\caption{\footnotesize Aspect-ratio schematic (approximately logarithmic axis; threshold positions from Table~\ref{tab:critical}).
++The full-family stationary-set classification and interior-local-minimum window are conditional on C1--C6; the marked sphere and the adopted oblate window also have their separately stated verification records.}
++\label{fig:aspect-ratio-schematic}
++\end{figure}
++
++\endgroup
++\restoregeometry
+ \tableofcontents
+ \clearpage
+ \input{sections/core}
+--- a/sections/core.tex
++++ b/sections/core.tex
+@@ -5,6 +5,16 @@
+ The second experiment used the vertical derivative away from the equator, then counted scalar crossings on the equator. A third experiment, reported here, asks whether the stronger equatorial monotonicity suggested by point values survives a whole-domain enclosure. The first experiment covers a solid meridian domain and a shape interval; the third covers the equatorial radius and shape only. We use each experiment on its own domain. Together they motivate the question for the full family: how do the number, dimension and type of stationary components change with shape?
+ 
+ An extremizing centre is one part of this question. Saddles also matter, because they record changes in the stationary structure which an extremum selector would discard. Spheroids provide a particularly accessible test: the sphere has one stationary point, but rotational symmetry permits both a pair of isolated axial critical points and a circular critical manifold away from the centre. The purpose of the present classification is to determine when these sets occur and to exclude additional components over a noncompact shape interval.
++
++To read the functional geometrically, $\alpha_p(x)$ is the angle
++between the line of sight from an interior point $p$ to a boundary
++point $x$ and the outward unit normal at $x$. The energy $E_K(p)$
++measures, through the basepoint-dependent cone-volume weighting,
++how nearly front-facing the boundary appears on average when viewed
++from $p$. Smaller energy means a smaller weighted mean squared
++viewing angle; it does not require every boundary point to face $p$
++directly. The relevant local-minimum conclusion is stated after
++Table~\ref{tab:classification}.
+ 
+ \input{sections/related_work}
+ 
+@@ -128,6 +138,11 @@
+ \begin{theorem}[Classification from Assertions C1--C6]\label{thm:classification}
+ Assume the explicitly stated computational Assertions C1--C6 in Section~\ref{sec:computational}. For the energy \eqref{eq:reference_energy}, the interior stationary set is $O$ together with the set in the third column of Table~\ref{tab:classification}, and the full-gradient boundary zero set is the fourth column. There are no additional stationary components.
+ \end{theorem}
++
++Each of C1--C6 is a finite, checkable assertion; any stationary
++point outside the classification would have to violate one of them.
++This conclusion uses the analytic implications proved in the text;
++it does not claim independent recomputation of all six inputs.
+ 
+ \begin{table}[htbp]\centering\small
+ \caption{Classification in reference coordinates. Index counts negative Hessian eigenvalues; for a circle it is the normal index.}\label{tab:classification}
+@@ -145,6 +160,79 @@
+ \end{tabularx}
+ \end{table}
+ 
++\subsection{Why these windows: centre signs versus boundary signs}\label{subsec:why_windows}
++
++The windows in Table~\ref{tab:classification} can be understood by
++comparing a derivative near the centre with its trace at the boundary.
++On the oblate axis, let
++$g(z,\lambda)=\partial_z\mathcal E_\lambda(0,z)$,
++$a_c(\lambda)=g_z(0,\lambda)$, and
++$B_o(\lambda)=g(1^-,\lambda)$.
++Because $g(0,\lambda)=0$, the sign of $g$ for sufficiently small
++$z>0$ is the sign of $a_c$ whenever this curvature is nonzero.
++The signs supplied by the analytic end estimates and C1--C2 are
++\[
++\begin{array}{c|cc}
++\text{oblate range} & a_c(\lambda) & B_o(\lambda)\\ \hline
++0<\lambda<\cO & - & - \\
++\cO<\lambda<\bO & + & - \\
++\bO<\lambda<1 & + & +
++\end{array}
++\]
++Only the middle range has opposite signs. There $g$ is positive
++near the centre and negative at the north pole, so continuity forces
++at least one zero in $0<z<1$; reflection gives a pair on the axis.
++At the roots, C1 supplies positive transverse curvature and C2
++supplies $g_z<0$, making each an index-one saddle.
++
++For the prolate equator, write
++$H(\rho,0;\lambda)=\partial_\rho\mathcal E_\lambda(\rho,0)/\rho$,
++$h_c(\lambda)=H(0,0;\lambda)$, and
++$h_b(\lambda)=H(1^-,0;\lambda)$.
++The corresponding signs (from C3--C4 in the finite prolate range) are
++\[
++\begin{array}{c|cc}
++\text{prolate range} & h_c(\lambda) & h_b(\lambda)\\ \hline
++1<\lambda<\bP & + & + \\
++\bP<\lambda<\cP & + & - \\
++\cP<\lambda\le5 & - & -
++\end{array}
++\]
++In the middle range, $H$ is positive near the centre and negative at
++the equatorial boundary. Continuity gives an interior radial zero,
++and rotation turns that zero into a stationary circle. C3--C4
++supply the vertical exclusion, strict radial monotonicity and normal
++Hessian signs needed for the unique Morse--Bott saddle circle.
++The tail $\lambda\ge5$ is classified separately by C5--C6.
++
++The four window endpoints represent two different events.
++At $\cO$ and $\cP$, a \emph{central curvature} vanishes: the axial
++pair emerges from the centre as $\lambda$ increases past $\cO$,
++and the equatorial circle contracts into the centre as $\lambda$
++increases to $\cP$. In particular, Section~\ref{sec:finite_assembly}
++shows $z_*(\cO+)=0$.
++At $\bO$ and $\bP$, a \emph{boundary trace} vanishes:
++the axial pair reaches the poles at $\bO$ and the equatorial circle
++enters from the boundary at $\bP$. The same axial argument yields
++$z_*(\bO-)=1$.
++
++Opposite endpoint signs establish \emph{existence}, not uniqueness.
++They do not exclude further roots on the same line, nor stationary
++points away from the axis and equator. Those conclusions use the
++transverse sign arguments of Section~\ref{sec:principles}, the
++monotonicity and root counts of Section~\ref{sec:finite_assembly},
++and the specified inputs C1--C6. No extra computational claim is
++introduced here.
++
++\paragraph{Corollary (interior local minimizers).}
++Under Assertions C1--C6, the classification in
++Table~\ref{tab:classification} implies that an interior local
++minimizer exists if and only if $\cO<\lambda<\cP$; in that range
++the centre is the unique interior local minimizer. At $\cO$ and
++$\cP$ the centre is a degenerate saddle, not an additional local
++minimum. The other interior stationary components are saddles.
++This statement does not concern minima constrained to the boundary.
++
+ The interval $(\bO,\bP)$ contains the sphere. A circle is one connected critical manifold, not a finite collection of isolated roots. Its boundary arrival at $\bP$, and the axial pair's arrival at $\bO$, are excluded from the interior count. This classification does not select all constrained global minimizers on the closed body: a constrained boundary minimum can have nonzero normal derivative.
+ 
+ The theorem is stated with a named, finite list of inputs so that its current proof status can be assessed. In a certified submission version, C1--C6 must be supplied as established computational propositions with an accessible, fixed reproduction package. Removing the assumption from the wording without establishing those propositions would not strengthen the result.
+--- a/sections/related_work.tex
++++ b/sections/related_work.tex
+@@ -50,6 +50,54 @@
+ functional considered here.  Nor does uniqueness of a selected global
+ extremizer, by itself, describe every critical point of a different
+ functional.
++
++Two further uniqueness results illustrate how much the assumptions on the
++functional matter.  In the preprint \emph{Uniqueness of radial centers of
++parallel bodies}, O'Hara proves that, for a compact convex set
++$\widetilde\Omega\subset\mathbb R^m$ with piecewise $C^1$ boundary,
++the parallel body $\widetilde\Omega+\delta B^m$ has a unique radial
++centre of every order when
++$\delta\geq\varphi(m)\operatorname{diam}(\widetilde\Omega)$,
++for a positive constant $\varphi(m)$ depending only on the dimension
++\citep{ohara2011parallel}. The author notes that some content of this
++preprint was later incorporated into his study of nearly spherical bodies
++\citep{ohara2022nearly}.
++In a different setting, Cabr\'e and Chanillo prove that a positive,
++semistable classical solution of $-\Delta u=f(u)$ with $u=0$ on the
++boundary has exactly one interior critical point, a nondegenerate maximum,
++when the planar domain is smooth, bounded, and has strictly positive
++boundary curvature and $f$ is smooth and nonnegative. They also obtain
++an analogue for smooth, bounded, strictly convex domains of revolution in
++higher dimensions under corresponding solution assumptions
++\citep{cabreChanillo1998stable}. Their result concerns the critical points
++of a specific elliptic boundary-value problem, not arbitrary functions on
++convex domains, and does not imply uniqueness for the present angular energy.
++
++The \emph{local pattern} by which noncentral stationary sets are born has
++its own prior theory. Golubitsky and Schaeffer develop the classification of
++bifurcations with reflection ($\mathbb Z_2$) symmetry, including the
++pitchfork pattern \citep{golubitskySchaeffer1985}. Golubitsky, Stewart,
++and Schaeffer develop steady-state bifurcation in the presence of continuous
++and discrete symmetries \citep{golubitskyStewartSchaeffer1988}.
++On a reflection-symmetric axis, the appearance of a pair of solutions
++related by $z\mapsto-z$ is the familiar pitchfork-type pattern. In an
++$O(2)$-invariant transverse plane, any one nonzero off-centre critical
++point generates a whole circular group orbit of critical points under
++rotation. Such local configurations are therefore natural from the
++viewpoint of equivariant bifurcation theory; neither the existence of
++the corresponding branch for this particular functional nor the precise
++parameter window or exclusion of other branches is established merely by
++citing that general theory.
++
++The distinction between interior critical points and boundary events also
++has a broader topological setting. Borodzik, N\'emethi and Ranicki develop
++Morse theory on manifolds with boundary and, under additional topological
++hypotheses, move an interior critical point to the boundary where it splits
++into boundary critical points \citep{borodzikNemethiRanicki2016}.
++Their notion of a boundary critical point is not the present paper's
++condition $g_\partial=0$ for the \emph{entire} interior gradient trace.
++In particular, that theory alone does not determine either the pole-arrival
++ratio $\bO$ or the equatorial boundary-entry ratio $\bP$ here.
+ 
+ Our question concerns the squared angle between the direction from $p$ to a
+ boundary point $x$ and the outward normal at $x$, averaged with the
+@@ -121,4 +169,4 @@
+ does not rely on that manuscript. Furuta's earlier local prolate
+ bifurcation calculation \citep{furutaProlate} isolates the zero of the central equatorial quadratic coefficient in
+ $[4.72438340452113340672,4.72438340452113340673]$
+-by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. Under the explicitly stated finite inputs C1--C6, the contribution here is to extend those local bifurcations to an aspect-ratio-wide stationary-set classification: the ranges of the axial saddle pair and equatorial Morse--Bott saddle circle, their boundary-arrival ratios, and the exclusion of further stationary components \citep{furutaProlate,furutaTriax}.
++by Arb endpoint evaluations. Its aspect ratio is our $\lambda$. Changing the transverse length unit or multiplying the quadratic coefficient by a positive normalization leaves this zero fixed. Thus the local threshold and birth of the circle precede this paper. We retain the wider bracket from our full-window cover in Table~\ref{tab:critical} to identify which endpoint calculations enter the global argument. The same project's triaxial record treats a local unfolding, intersection of Hessian degeneracy curves and two axial Morse indices. The symmetry-governed modes of local birth are standard; the novelty claimed here is not a new general pitchfork mechanism. Under the explicitly stated finite inputs C1--C6, the contribution is a classification for this particular angle energy across the entire aspect-ratio range: determining exactly where the axial saddle pair and equatorial Morse--Bott saddle circle occur, where they meet the boundary, and why no further stationary components occur \citep{furutaProlate,furutaTriax}. In particular, the boundary entry and exit thresholds and the global exclusion statements do not follow from local equivariant bifurcation theory.
+--- a/references_additions.bib
++++ b/references_additions.bib
+@@ -128,7 +128,7 @@
+ 
+ @article{boroczky2020gaussimage,
+   author = {B{\"o}r{\"o}czky, K{\'a}roly J. and Lutwak, Erwin and Yang, Deane and Zhang, Gaoyong and Zhao, Yiming},
+-  title = {The Gauss Image Problem},
++  title = {The {G}auss Image Problem},
+   journal = {Communications on Pure and Applied Mathematics},
+   volume = {73},
+   number = {7},
+@@ -139,7 +139,7 @@
+ 
+ @article{bertrand2016gauss,
+   author = {Bertrand, J{\'e}r{\^o}me},
+-  title = {Prescription of Gauss Curvature Using Optimal Mass Transport},
++  title = {Prescription of {G}auss Curvature Using Optimal Mass Transport},
+   journal = {Geometriae Dedicata},
+   volume = {183},
+   pages = {81--99},
+@@ -161,7 +161,7 @@
+ 
+ @misc{furutaGeoEnclosure2026,
+   author = {Furuta, Katsushi},
+-  title = {{GeoEnclosure} research materials (research note and Standard v1.1)},
++  title = {{GeoEnclosure} research materials (research note and {S}tandard v1.1)},
+   year = {2026},
+   publisher = {Zenodo},
+   doi = {10.5281/zenodo.24421364},
+@@ -177,3 +177,64 @@
+   note = {Earlier unpublished spherical manuscript, fixed project snapshot abf704b (July 2026); part of the same functional's research record},
+   howpublished = {\url{https://github.com/cotaxxxx/basepoint-geometry/tree/abf704b8701f3da8eb41d8a99408570a413b2214/01_KAKURON_I}}
+ }
++
++
++% Symmetry and critical-point genesis: checked against publisher records and original theorem statements, 23 Nov 2026.
++@book{golubitskySchaeffer1985,
++  author = {Golubitsky, Martin and Schaeffer, David G.},
++  title = {Singularities and Groups in Bifurcation Theory: Volume I},
++  series = {Applied Mathematical Sciences},
++  volume = {51},
++  publisher = {Springer},
++  address = {New York},
++  year = {1985},
++  doi = {10.1007/978-1-4612-5034-0},
++  note = {See the chapter on bifurcation with $\mathbb{Z}_2$ symmetry}
++}
++
++@book{golubitskyStewartSchaeffer1988,
++  author = {Golubitsky, Martin and Stewart, Ian and Schaeffer, David G.},
++  title = {Singularities and Groups in Bifurcation Theory: Volume II},
++  series = {Applied Mathematical Sciences},
++  volume = {69},
++  publisher = {Springer},
++  address = {New York},
++  year = {1988},
++  doi = {10.1007/978-1-4612-4574-2},
++  note = {Symmetry breaking in steady-state bifurcation; equivariant normal forms}
++}
++
++@article{cabreChanillo1998stable,
++  author = {Cabr{\'e}, Xavier and Chanillo, Sagun},
++  title = {Stable Solutions of Semilinear Elliptic Problems in Convex Domains},
++  journal = {Selecta Mathematica (New Series)},
++  volume = {4},
++  number = {1},
++  pages = {1--10},
++  year = {1998},
++  doi = {10.1007/s000290050022},
++  url = {https://sites.math.rutgers.edu/~chanillo/cabre.pdf}
++}
++
++@misc{ohara2011parallel,
++  author = {O'Hara, Jun},
++  title = {Uniqueness of Radial Centers of Parallel Bodies},
++  year = {2011},
++  eprint = {1109.5069},
++  archivePrefix = {arXiv},
++  primaryClass = {math.DG},
++  url = {https://arxiv.org/abs/1109.5069},
++  note = {Preprint. The author's publication list notes that some of its content was carried forward into the 2022 Mathematika article}
++}
++
++@article{borodzikNemethiRanicki2016,
++  author = {Borodzik, Maciej and N{\'e}methi, Andr{\'a}s and Ranicki, Andrew},
++  title = {Morse Theory for Manifolds with Boundary},
++  journal = {Algebraic \& Geometric Topology},
++  volume = {16},
++  number = {2},
++  pages = {971--1023},
++  year = {2016},
++  doi = {10.2140/agt.2016.16.971},
++  url = {https://doi.org/10.2140/agt.2016.16.971}
++}
+--- a/sections/computational_evidence.tex
++++ b/sections/computational_evidence.tex
+@@ -30,6 +30,66 @@
+ The full-gradient trace condition is distinct from a constrained
+ critical-point condition on the boundary.
+ 
++
++\subsection{Scale and form of the recorded sign enclosures}
++\label{subsec:computational-scale}
++
++An initial exploratory three-dimensional sign cover left
++21,254 of 31,340 terminal boxes without a separated sign; those
++counts are a diagnostic, not an enumeration of stationary points.
++The later proof strategy reduces the geometry to transverse
++exclusion signs and one-dimensional axial or equatorial root
++counts. The strategy uses GeoEnclosure in the sense of
++geometry-guided domain partition, interval enclosures, and exact
++coverage/sign checks \citep{furutaGeoEnclosure2026}.
++The recorded calculations were chiefly executed by their own
++pinned producer kernels, \emph{not} by GeoEncloseReader.
++
++\begin{center}\footnotesize
++\begin{tabularx}{\linewidth}{@{}lp{22mm}XX@{}}
++\toprule
++Input & Claim domain & Recorded scale or check count & Enclosure strategy\\
++\midrule
++C1 & $1/32\le\lambda\le1$ &
++Oblate full-domain producer cover; 123 selected independent
++checks, plus weakest leaf from 277 candidates &
++Signed $H$ or $E_\rho$ interval boxes, separate axial
++and boundary signs; rational/integer cover checks\\
++C2 & $[2/5,33/50]$ &
++10 root-count cases; Gap-1: 160 parameter slabs;
++C1b: 159 intervals (124+35) &
++Axial one-variable monotonicity, sign gates and
++root tubes with explicit endpoint ownership\\
++C3 & $[1,2]$ &
++16 signed trees; 35 selected vertical leaves,
++weakest of 28,358; 176 second-implementation boxes &
++Positive vertical-difference and near-equatorial
++interval enclosures plus boundary-trace signs\\
++C4 & $[2,5]$ &
++731 radial boxes re-enclosed as 1,043 terminal pieces;
++22 selected vertical leaves &
++Vertical sign exclusion, fourth-derivative
++radial-monotonicity enclosure, endpoint sign gates\\
++C5 & $[5,8]$ &
++3 finite bridge bands, six anchors,
++79 refined parent boxes &
++Signed chord-bound interval cover, integer
++coverage checks, separate endpoint integrals\\
++C6 & $(\epsilon,w,u)\in[0,1/5]\times[0,1]^2$ &
++1,024 outer boxes evaluated by second numerical
++integration implementation &
++Polar lower-envelope integral with angular partition
++and exact-rational checker\\
++\bottomrule
++\end{tabularx}
++\end{center}
++
++Counts in this table refer to different populations: producer
++coverage, selected checks, and second-implementation evaluations
++must not be equated. The precise pinned entry points and limits
++are listed by assertion in
++\path{CURRENT_REPRODUCTION_v0_5_4.md}, rows C1--C6.
++
+ \subsection{The finite statements}
+ 
+ \begin{computationalassertion}[Finite oblate transverse and axial signs]
+@@ -57,6 +117,11 @@
+ The corresponding first-derivative signs follow by integrating
+ from $z=0$; on $1/8\leq z\leq1$, $E_z$ is enclosed directly.
+ \end{computationalassertion}
++
++\noindent\emph{Reproduction locator (C1):} \path{CURRENT_REPRODUCTION_v0_5_4.md}, Claims C1--C6 table, row C1: \texttt{D\_OB\_FULL\_FAMILY\_CODEX} producer coverage, ledger paths, and the 123-item independent-check scope.
++
++\noindent\emph{GeoEnclosure sign route (C1):} Split the oblate meridian-and-shape domain into rational boxes, enclose the transverse and axial signs by the producer interval kernels, and check coverage with integer geometry; the selected-box recomputations have the narrower scope recorded above.
++
+ 
+ The archived finite cover uses either $H$ itself or $X=E_\rho$.
+ An $X$ leaf is accepted only when its entire box has $\rho>0$ and
+@@ -120,6 +185,11 @@
+ \end{enumerate}
+ \end{computationalassertion}
+ 
++\noindent\emph{Reproduction locator (C2):} \path{CURRENT_REPRODUCTION_v0_5_4.md}, row C2: the pinned C-axis v1.1 assembly and \path{C2_AXIS_CENSUS_TRACE_v0_5_4.md} ten-case table; no complete one-command C2 replay.
++
++\noindent\emph{GeoEnclosure sign route (C2):} Use symmetry to reduce to the axial scalar root count, partition its parameter line into signed slabs and monotone root tubes, then verify their endpoint ownership and coverage; the fixed gate inputs remain conditional.
++
++
+ The scalar root count is assembled from specified sign gates, not from
+ samples of a plotted branch.  In the lower half, write
+ $g(t,\lambda)=t\Phi(t^2,\lambda)$.
+@@ -205,6 +275,11 @@
+ \]
+ \end{computationalassertion}
+ 
++\noindent\emph{Reproduction locator (C3):} \path{CURRENT_REPRODUCTION_v0_5_4.md}, row C3: the corrected V51 source, 16 trees, selected leaf checks, and the separate 176-box second-implementation scope.
++
++\noindent\emph{GeoEnclosure sign route (C3):} Enclose the vertical difference quotient and near-equatorial Hessian signs on boxes, with separate first-derivative boundary traces; the 176-box cross-implementation comparison is not a whole-C3 replay.
++
++
+ Reflection gives $E_z(\rho,0)=0$, so the first two inequalities imply
+ $V\geq16189/2^{36}$ whenever $z\ne0$.
+ The whole-equator sign and positive boundary value exclude all noncentral equatorial points. The earlier 15-leaf equatorial test instead enclosed either $H\geq1383839082/2^{36}$ or $E_{\rho\rho}\leq-4138135153/2^{36}$ at positive radius. It gives a separate one-way-crossing argument.
+@@ -257,6 +332,11 @@
+ $\rho=1$.
+ \end{computationalassertion}
+ 
++\noindent\emph{Reproduction locator (C4):} \path{CURRENT_REPRODUCTION_v0_5_4.md}, row C4: the finite-window source and 731 radial boxes checked by a second integral implementation; other derivative checks have narrower scope.
++
++\noindent\emph{GeoEnclosure sign route (C4):} Use two equivalent tangential-fourth-derivative integral formulas on subdivided equatorial boxes to certify radial monotonicity, and combine the transverse and shape-sign gates with exact coverage checks.
++
++
+ The first two inequalities give $V\geq3341881/2^{36}$ off the
+ equator.  The fourth-derivative bound gives $H_\rho<0$ for every $0<\rho<1$ by \eqref{eq:fourth_derivative}.
+ A separate parameter-direction cover has alternatives $H>0$,
+@@ -301,6 +381,11 @@
+ \]
+ \end{computationalassertion}
+ 
++\noindent\emph{Reproduction locator (C5):} \path{CURRENT_REPRODUCTION_v0_5_4.md}, row C5: the pinned chord-bridge source, its six anchors and 79 parent refinements; those refinements reuse the original chord kernel.
++
++\noindent\emph{GeoEnclosure sign route (C5):} Partition the finite prolate chord bridge into three $\lambda$ bands, enclose signed chord coefficients on rational boxes and check their coverage; separate Arb anchor checks are not a second derivation of the chord kernel.
++
++
+ These statements concern finite integrals and finite covers only.
+ The extension to all $\lambda\geq5$, including the complementary
+ polar region, follows from the analytic comparison of the coefficients
+@@ -321,6 +406,11 @@
+  [0,1/5]\times[0,1]\times[0,1].
+ \]
+ \end{computationalassertion}
++
++\noindent\emph{Reproduction locator (C6):} \path{CURRENT_REPRODUCTION_v0_5_4.md}, row C6: the polar-envelope source, 1,024 second-integration checks, and the original exact-coverage commands.
++
++\noindent\emph{GeoEnclosure sign route (C6):} Partition the polar cap parameter domain into 1,024 outer boxes, bound the lower-envelope integral with interval quadrature and an independent numerical integration partition, and check the exact-rational cover.
++
+ 
+ Here $z=\sqrt{1-\epsilon^2w^2}$ and $\rho=\epsilon wu$.
+ For $\epsilon>0$, the analytic derivation identifies
+--- a/sections/numerical_discussion.tex
++++ b/sections/numerical_discussion.tex
+@@ -173,6 +173,28 @@
+ For fixed shape near $\cP$, the shape derivative on the first axis is smooth and even in $\rho$. Its constant term vanishes by interchange of the two equatorial axes. Hence $A=O(\rho_*^2)$ as the circle shrinks. The natural quantity to estimate uniformly is $A/\rho_*^2$. Ordinary quadrature gives $0.6744,0.5744,0.4879,0.4399$ at $\lambda=2.1,3,4,4.7$ respectively. A positive uniform lower bound on the full branch remains an open estimate here. The local triaxial study cited in the introduction concerns the neighbourhood of the prolate centre transition. Neither these four samples nor the exact angular equation by itself excludes other critical points over the full triaxial family.
+ 
+ \section{Availability, reproducibility, and status of the draft}
++
++\paragraph{Scope of the first-page verification statement.}
++The analytic arguments are written out, and computational Assertions
++C1--C6 are stated explicitly with their source records,
++implementations and checking coverage identified. This manuscript
++does not itself complete or reclassify the certification of those
++computational inputs: the full-family classification remains
++conditional on C1--C6. It is a proof-development manuscript, not a
++submission-ready certification claim. In the author's verification
++records (record V24, 16 November 2026; see the fixed V24 primary record
++cited below), the oblate window $\lambda\in[2/5,33/50]$ was adopted
++after the recorded verification. A separate AI-assisted project audit
++checked the assembly and computational source references.
++Supporting interval computations were checked through independent
++recomputation of selected boxes and exact integer coverage checks,
++with individual scopes stated in
++\path{CURRENT_REPRODUCTION_v0_5_4.md}. These checks were not a
++complete replay of C1--C6. Proposition~\ref{prop:sphere}
++proves the spherical case $\lambda=1$ without computational input.
++This editorial revision changes neither the mathematical claims nor
++the evidence status of the computational inputs.
++
+ \label{sec:availability}
+ 
+ The computational references identify fixed commits and paths in
