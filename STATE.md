@@ -1,6 +1,6 @@
 # STATE — 工程管理（最初に読む1枚）
 
-版：v1.67（2026-11-24。**第一論文 Paper I v1.0 は2026-11-24にZenodoで公開済み**（版DOI `10.5281/zenodo.24495446`、全版共通 `10.5281/zenodo.24495445`、確認記録 `9dfc0cb`）。**D-OB大域 Judge V24 CLOSED**（内部停留点数1→3→1）。**扁長D-PRO λ∈(1,∞) の内部・境界（条件 B＝(A)）は、Judge V49–V51により研究成果として採用（DIAGNOSTIC_ONLY / NOT_EVIDENCE）**。V51訂正E1〜E3は分類を変更しない。旧P1 Julia第二系統の既存記録は別工程として保持。FT_q V3 DISCHARGED、B7 40/40、D5採用後独立比較2件は補強事項。旧C21・旧B7見張りの終了処理は§7に記録。Paper Iの数学的研究・追加検証はOPEN、Zenodo公開は完了、学術誌投稿はHOLD。運用：**書き換え式**（追記しない。経緯はgit履歴）。150行以下。
+版：v1.68（2026-11-24。**第一論文 Paper I v1.0 は2026-11-24にZenodoで公開済み**（版DOI `10.5281/zenodo.24495446`、全版共通 `10.5281/zenodo.24495445`、確認記録 `9dfc0cb`）。**D-OB大域 Judge V24 CLOSED**（内部停留点数1→3→1）。**扁長D-PRO λ∈(1,∞) の内部・境界（条件 B＝(A)）は、Judge V49–V51により研究成果として採用（DIAGNOSTIC_ONLY / NOT_EVIDENCE）**。V51訂正E1〜E3は分類を変更しない。旧P1 Julia第二系統の既存記録は別工程として保持。FT_q V3 DISCHARGED、B7 40/40、D5採用後独立比較2件は補強事項。旧C21・旧B7見張りの終了処理は§7に記録。Paper Iの数学的研究・追加検証はOPEN、Zenodo公開は完了、学術誌投稿はHOLD。運用：**書き換え式**（追記しない。経緯はgit履歴）。150行以下。
 更新：ChatGPT 起草・push → chat が GitHub で照合。他の AI は書き換えない。新しいセッションの AI は、まずこの1枚だけを読む。
 
 ## 1. 道標
@@ -91,6 +91,7 @@
 | 項目 | 状態 | 根拠 |
 |---|---|---|
 | 公開論文 | **Paper I v1.0 / Zenodo公開済み**。43頁、PDF SHA-256 `fc3e8ea737aa5ceb7e495087fd7949108d6b247542f305c5f3a1367455594cbf`、ソースZIP SHA-256 `16592c00264b36d6f561f5c5825e60a753b6d4c2f542cea2485357e403189282`。公開画面のMD5一致確認は監査原本 `9dfc0cb` §9（Zenodoページの独立取得ではない） | [Zenodo記録](https://zenodo.org/records/24495446)／[監査原本](https://github.com/cotaxxxx/experimental-mathematics-ai-collaboration/blob/9dfc0cb/docs/CHAT_AUDIT_PAPER_I_V1_0_FINAL_BUNDLE_20261124.md) |
+| 次の版の候補 | **Paper I v1.1（Judge承認、2026-11-24、候補の記録のみ・着手時期未定）**。関連研究節・参考文献への5文献追加候補（引用前に原文確認）。v1.0、定理・表・証明・数値・計算資料は不変。作業指示ではない。 | [候補原本](https://github.com/cotaxxxx/experimental-mathematics-ai-collaboration/blob/9edcb5d/docs/PAPER_I_V1_1_CANDIDATES_20261124.md)（`9edcb5d`） |
 | 骨格（旧記録） | v0.2 | `MANUSCRIPT_SKELETON.md` |
 | pin 登録簿 | 昇格済み 1 件（V1 南側 39′） | `UPSTREAM_PINS.md` |
 | 球の解析定理（Paper I v0.4 命題4.2） | **Claude通常監査 PASS・Judge SP-01完了（2026-11-23）**。内部停留点は中心のみ、中心は唯一の大域最小点、Hessian=(4/3)I、境界の全勾配トレースの零集合は空。MS-04への本文補足2件は別工程。 | [Claude監査原本（無改変、SHA-256確認済）](https://github.com/cotaxxxx/experimental-mathematics-ai-collaboration/blob/main/docs/CHAT_AUDIT_PAPER_I_PROP_4_2_20261123.md)／[Judge裁定の受領記録](https://github.com/cotaxxxx/experimental-mathematics-ai-collaboration/blob/main/docs/2026-11-23-SP01-SPHERE-PROP42-AUDIT-RECEIPT.md) |
